@@ -3,6 +3,33 @@
   "sourceCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
   "entries": [
     {
+      "sourcePath": "src/openbook/bewitched.ly.tera",
+      "sourceTitle": "Bewitched",
+      "sourceSha256": "9b96bd5051ab2655c96d62930e45f513b7d8d001d68b18fc989b4c7769a025f1",
+      "canonicalSong": 19,
+      "canonicalTitle": "Bewitched, Bothered, and Bewildered",
+      "sourceComposer": "Richard Rodgers",
+      "canonicalComposer": "Richard Rodgers"
+    },
+    {
+      "sourcePath": "src/openbook/the_christmas_song.ly.tera",
+      "sourceTitle": "The Christmas Song (Chestnuts Roasting On An Open Fire)",
+      "sourceSha256": "e3ef0fb883e3291fab9eb52beade4f7623777df1d6a5d49911155bf4862a7407",
+      "canonicalSong": 37,
+      "canonicalTitle": "The Christmas Song",
+      "sourceComposer": "Mel Torme, Robert Wells",
+      "canonicalComposer": "Mel Torme and Robert Wells"
+    },
+    {
+      "sourcePath": "src/openbook/quiet_nights_of_quiet_stars.ly.tera",
+      "sourceTitle": "Quiet Nights Of Quiet Stars",
+      "sourceSha256": "400e8d47083dd9e16f56fef2bf4783f737107ff51fd40a8140b4e028334384da",
+      "canonicalSong": 40,
+      "canonicalTitle": "Corcovado (Quiet Nights)",
+      "sourceComposer": "Antonio Carlos Jobim",
+      "canonicalComposer": "Antonio Carlos Jobim"
+    },
+    {
       "sourcePath": "src/openbook/corner_pocket.ly.tera",
       "sourceTitle": "Corner Pocket",
       "sourceSha256": "c17f57b89f0173cc2858ef1ad4ad98019ff55128584b7ec78f557ccf269545de",
@@ -102,6 +129,15 @@
       "canonicalComposer": ""
     },
     {
+      "sourcePath": "src/openbook/let_it_snow_let_it_snow_let_it_snow.ly.tera",
+      "sourceTitle": "Let It Snow! Let It Snow! Let It Snow!",
+      "sourceSha256": "cc14099c856969cf72a8b59e55249e875d9feed9f41868c87327cb03209eed42",
+      "canonicalSong": 120,
+      "canonicalTitle": "Let It Snow!",
+      "sourceComposer": "Jule Styne",
+      "canonicalComposer": "Jule Styne"
+    },
+    {
       "sourcePath": "src/openbook/the_masquerade_is_over.ly.tera",
       "sourceTitle": "(I'm Afraid) The Masquerade Is Over",
       "sourceSha256": "31f911a4646892fd4ff7a8293c7e6724604a6e70d6c191cf58d39349188cb0d1",
@@ -109,6 +145,15 @@
       "canonicalTitle": "The Masquerade is Over",
       "sourceComposer": "Allie Wrubel",
       "canonicalComposer": "Allie Wrubel and Herb Magidson"
+    },
+    {
+      "sourcePath": "src/openbook/nancy.ly.tera",
+      "sourceTitle": "Nancy",
+      "sourceSha256": "37ec65e0ec947c9ce12a3c5d5348921db6cbbda72c3e3751c6aa342b3fc9deca",
+      "canonicalSong": 149,
+      "canonicalTitle": "Nancy with the Laughing Face",
+      "sourceComposer": "Jimmy van Heusen",
+      "canonicalComposer": "Jimmy van Heusen"
     },
     {
       "sourcePath": "src/openbook/on_a_clear_day_you_can_see_forever.ly.tera",

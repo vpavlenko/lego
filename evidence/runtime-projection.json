@@ -1,25 +1,25 @@
 {
   "version": 1,
-  "charts": 474,
+  "charts": 483,
   "primaryStandards": 269,
   "originalCharts": 242,
-  "additionalCharts": 232,
+  "additionalCharts": 241,
   "rawSourceIdentities": 349,
   "coverage": {
-    "rawPassages": 9406,
-    "removedPassages": 2717,
-    "keptPassages": 6689,
-    "rawOccurrences": 8881,
-    "removedOccurrences": 2680,
-    "keptOccurrences": 6201,
+    "rawPassages": 9605,
+    "removedPassages": 2794,
+    "keptPassages": 6811,
+    "rawOccurrences": 9066,
+    "removedOccurrences": 2756,
+    "keptOccurrences": 6310,
     "reasons": {
       "single-harmony": {
-        "passages": 2098,
-        "occurrences": 2084
+        "passages": 2158,
+        "occurrences": 2143
       },
       "on-off-family": {
-        "passages": 619,
-        "occurrences": 596
+        "passages": 636,
+        "occurrences": 613
       }
     }
   },
@@ -30,18 +30,18 @@
     "mergedFamilies": 11,
     "removedFamilies": 28,
     "outputFamilies": 123,
-    "rawPassages": 6689,
+    "rawPassages": 6811,
     "mergedPassages": 22,
     "removedPassages": 48,
-    "keptPassages": 6641,
+    "keptPassages": 6763,
     "supportBasis": "distinct standards",
     "minimumTargetStandards": 2,
     "maxVariantDistance": 0.28,
     "ambiguityMargin": 0.025
   },
-  "definitions": 1568,
+  "definitions": 1582,
   "unresolvedOccurrences": 8,
-  "unchangedMusicalDataSha256": "04ea2617f0afc2b9933afbff8d451a6f14c9ad336f380d05fed15f8d672bf871",
+  "unchangedMusicalDataSha256": "5d90fa6271ee2964f0d81773bfb767190763ad2ce734529da04aa6689835c966",
   "decisions": [
     {
       "action": "remove",

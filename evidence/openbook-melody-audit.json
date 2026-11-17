@@ -29,16 +29,17 @@
   ],
   "counts": {
     "originalTitleSources": 206,
-    "validatedArrangements": 193,
-    "notes": 26821,
+    "validatedArrangements": 202,
+    "notes": 28105,
     "attemptsExcluded": 106,
-    "sourceIntervalOverrides": 222,
-    "sourcePickupArrangements": 58,
-    "reviewedTitleAliasArrangements": 16
+    "sourceIntervalOverrides": 256,
+    "sourcePickupArrangements": 59,
+    "reviewedTitleAliasArrangements": 24,
+    "curatedHarmonicReferences": 5
   },
   "policy": {
     "selection": "Only original-catalogue titles or pinned explicit title aliases. Prefer complete Real version, then declared default, then remaining encoded versions; first fully validated arrangement per composition.",
-    "tonic": "Explicit source key/mode only. Source declaration mode differing from original composition harmonic mode is excluded for review; relative-major signatures are not silently treated as actual tonic.",
+    "tonic": "Literal source key/mode retained. Pinned curated harmonic references may select the canonical minor home only with recurring compiled minor-tonic chords and explicit V7-i source resolutions. All other source/canonical mode conflicts remain excluded; no blind relative-major fallback.",
     "skips": "Blank chord-label skips hold preceding harmony with explicit continuation provenance; rests are NC and initial blanks remain NC.",
     "navigation": "Textual DC/DS/Coda excluded. One matching initial source-compiled pickup and final partial measure map are admitted; no inferred return or invented note. Written volta and alternatives unfolded by LilyPond.",
     "timing": "Compiled melody MIDI and independently unfolded chord AST must have equal total duration; every explicit barcheck must be on the source meter grid after the declared pickup. Exact source measure durations retained without padding, cropping or stretching.",
@@ -11951,6 +11952,1420 @@
           "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
         }
       }
+    },
+    {
+      "id": "openbook-bernie-s-tune-fake",
+      "title": "Bernie's Tune",
+      "originalSong": 17,
+      "originalBars": 32,
+      "sourceBars": 64,
+      "notes": 189,
+      "chords": 68,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/bernies_tune.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/bernies_tune.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/bernies_tune.ly.tera",
+        "sha256": "d2212efb6f2c3eba6160a5e6e60135a7f74eaf8da833201a1ae1b7fd9271feb4",
+        "sourceRights": "1953-1954-1955 ATLANTIC MUSIC CORP.",
+        "sourceRightsExtra": "Renewed 1981-1982 Assigned to ATLANTIC MUSIC CORP.",
+        "sourceVersion": "Fake",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "F",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit curated harmonic reference: recurring compiled minor tonic, source V7-i resolution and canonical roadmap tonic; literal source key retained separately",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 54
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 95
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Bernie's Tune",
+          "workTitle": "Bernie's Tune",
+          "movementTitle": null,
+          "filenameTitle": "bernies_tune.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 17,
+          "canonicalTitle": "Bernie's Tune",
+          "sourceTitle": "Bernie's Tune",
+          "canonicalComposer": "Bernie Miller",
+          "sourceComposer": "Bernie Miller",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        },
+        "sourceDeclaredKey": {
+          "root": "F",
+          "mode": "Major"
+        },
+        "normalizationTonic": {
+          "root": "D",
+          "mode": "Minor"
+        },
+        "harmonicTonicReference": {
+          "melodyId": "openbook-bernie-s-tune-fake",
+          "canonicalSong": 17,
+          "sourcePath": "src/openbook/bernies_tune.ly.tera",
+          "sourceVersion": "Fake",
+          "sourceSha256": "d2212efb6f2c3eba6160a5e6e60135a7f74eaf8da833201a1ae1b7fd9271feb4",
+          "sourceDeclaredKey": {
+            "root": "F",
+            "mode": "Major"
+          },
+          "keyDirectives": [
+            {
+              "line": 98,
+              "text": "\\key f \\major"
+            }
+          ],
+          "normalizationTonic": {
+            "root": "D",
+            "mode": "Minor"
+          },
+          "evidence": {
+            "canonicalRoadmap": {
+              "source": "InsightsRoadmapsConsolidated.pdf",
+              "song": 17,
+              "title": "Bernie's Tune",
+              "tonic": [
+                "D",
+                "Minor"
+              ]
+            },
+            "tonicChordEvents": [
+              {
+                "symbol": "Dm6",
+                "start": 0.0,
+                "end": 4.0,
+                "sourceLine": 62,
+                "index": 0
+              },
+              {
+                "symbol": "Dm6",
+                "start": 4.0,
+                "end": 8.0,
+                "sourceLine": 62,
+                "index": 1
+              },
+              {
+                "symbol": "Dm6",
+                "start": 24.0,
+                "end": 28.0,
+                "sourceLine": 63,
+                "index": 6
+              },
+              {
+                "symbol": "Dm6",
+                "start": 28.0,
+                "end": 32.0,
+                "sourceLine": 63,
+                "index": 7
+              },
+              {
+                "symbol": "Dm6",
+                "start": 32.0,
+                "end": 36.0,
+                "sourceLine": 68,
+                "index": 8
+              },
+              {
+                "symbol": "Dm6",
+                "start": 36.0,
+                "end": 40.0,
+                "sourceLine": 68,
+                "index": 9
+              },
+              {
+                "symbol": "Dm6",
+                "start": 56.0,
+                "end": 60.0,
+                "sourceLine": 69,
+                "index": 14
+              },
+              {
+                "symbol": "Dm6",
+                "start": 60.0,
+                "end": 64.0,
+                "sourceLine": 69,
+                "index": 15
+              },
+              {
+                "symbol": "Dm6",
+                "start": 96.0,
+                "end": 100.0,
+                "sourceLine": 80,
+                "index": 26
+              },
+              {
+                "symbol": "Dm6",
+                "start": 100.0,
+                "end": 104.0,
+                "sourceLine": 80,
+                "index": 27
+              },
+              {
+                "symbol": "Dm6",
+                "start": 120.0,
+                "end": 124.0,
+                "sourceLine": 83,
+                "index": 32
+              },
+              {
+                "symbol": "Dm6",
+                "start": 124.0,
+                "end": 128.0,
+                "sourceLine": 83,
+                "index": 33
+              },
+              {
+                "symbol": "Dm6",
+                "start": 128.0,
+                "end": 132.0,
+                "sourceLine": 62,
+                "index": 34
+              },
+              {
+                "symbol": "Dm6",
+                "start": 132.0,
+                "end": 136.0,
+                "sourceLine": 62,
+                "index": 35
+              },
+              {
+                "symbol": "Dm6",
+                "start": 152.0,
+                "end": 156.0,
+                "sourceLine": 63,
+                "index": 40
+              },
+              {
+                "symbol": "Dm6",
+                "start": 156.0,
+                "end": 160.0,
+                "sourceLine": 63,
+                "index": 41
+              },
+              {
+                "symbol": "Dm6",
+                "start": 160.0,
+                "end": 164.0,
+                "sourceLine": 68,
+                "index": 42
+              },
+              {
+                "symbol": "Dm6",
+                "start": 164.0,
+                "end": 168.0,
+                "sourceLine": 68,
+                "index": 43
+              },
+              {
+                "symbol": "Dm6",
+                "start": 184.0,
+                "end": 188.0,
+                "sourceLine": 69,
+                "index": 48
+              },
+              {
+                "symbol": "Dm6",
+                "start": 188.0,
+                "end": 192.0,
+                "sourceLine": 69,
+                "index": 49
+              },
+              {
+                "symbol": "Dm6",
+                "start": 224.0,
+                "end": 228.0,
+                "sourceLine": 80,
+                "index": 60
+              },
+              {
+                "symbol": "Dm6",
+                "start": 228.0,
+                "end": 232.0,
+                "sourceLine": 80,
+                "index": 61
+              },
+              {
+                "symbol": "Dm6",
+                "start": 248.0,
+                "end": 252.0,
+                "sourceLine": 86,
+                "index": 66
+              },
+              {
+                "symbol": "Dm6",
+                "start": 252.0,
+                "end": 256.0,
+                "sourceLine": 86,
+                "index": 67
+              }
+            ],
+            "dominantResolutions": [
+              {
+                "dominant": {
+                  "symbol": "A7",
+                  "start": 20.0,
+                  "end": 24.0,
+                  "sourceLine": 63,
+                  "index": 5
+                },
+                "tonic": {
+                  "symbol": "Dm6",
+                  "start": 24.0,
+                  "end": 28.0,
+                  "sourceLine": 63,
+                  "index": 6
+                }
+              },
+              {
+                "dominant": {
+                  "symbol": "A7",
+                  "start": 52.0,
+                  "end": 56.0,
+                  "sourceLine": 69,
+                  "index": 13
+                },
+                "tonic": {
+                  "symbol": "Dm6",
+                  "start": 56.0,
+                  "end": 60.0,
+                  "sourceLine": 69,
+                  "index": 14
+                }
+              },
+              {
+                "dominant": {
+                  "symbol": "A7",
+                  "start": 92.0,
+                  "end": 96.0,
+                  "sourceLine": 75,
+                  "index": 25
+                },
+                "tonic": {
+                  "symbol": "Dm6",
+                  "start": 96.0,
+                  "end": 100.0,
+                  "sourceLine": 80,
+                  "index": 26
+                }
+              },
+              {
+                "dominant": {
+                  "symbol": "A7",
+                  "start": 116.0,
+                  "end": 120.0,
+                  "sourceLine": 83,
+                  "index": 31
+                },
+                "tonic": {
+                  "symbol": "Dm6",
+                  "start": 120.0,
+                  "end": 124.0,
+                  "sourceLine": 83,
+                  "index": 32
+                }
+              },
+              {
+                "dominant": {
+                  "symbol": "A7",
+                  "start": 148.0,
+                  "end": 152.0,
+                  "sourceLine": 63,
+                  "index": 39
+                },
+                "tonic": {
+                  "symbol": "Dm6",
+                  "start": 152.0,
+                  "end": 156.0,
+                  "sourceLine": 63,
+                  "index": 40
+                }
+              },
+              {
+                "dominant": {
+                  "symbol": "A7",
+                  "start": 180.0,
+                  "end": 184.0,
+                  "sourceLine": 69,
+                  "index": 47
+                },
+                "tonic": {
+                  "symbol": "Dm6",
+                  "start": 184.0,
+                  "end": 188.0,
+                  "sourceLine": 69,
+                  "index": 48
+                }
+              },
+              {
+                "dominant": {
+                  "symbol": "A7",
+                  "start": 220.0,
+                  "end": 224.0,
+                  "sourceLine": 75,
+                  "index": 59
+                },
+                "tonic": {
+                  "symbol": "Dm6",
+                  "start": 224.0,
+                  "end": 228.0,
+                  "sourceLine": 80,
+                  "index": 60
+                }
+              },
+              {
+                "dominant": {
+                  "symbol": "A7",
+                  "start": 244.0,
+                  "end": 248.0,
+                  "sourceLine": 86,
+                  "index": 65
+                },
+                "tonic": {
+                  "symbol": "Dm6",
+                  "start": 248.0,
+                  "end": 252.0,
+                  "sourceLine": 86,
+                  "index": 66
+                }
+              }
+            ],
+            "ending": {
+              "symbol": "Dm6",
+              "start": 252.0,
+              "end": 256.0,
+              "sourceLine": 86,
+              "index": 67
+            },
+            "basis": "Canonical roadmap minor tonic agrees with recurring compiled minor-tonic chords and at least one direct dominant-seventh resolution. The literal source major key declaration is retained separately."
+          }
+        }
+      }
+    },
+    {
+      "id": "openbook-minority-wikifonia",
+      "title": "Minority",
+      "originalSong": 137,
+      "originalBars": 32,
+      "sourceBars": 16,
+      "notes": 49,
+      "chords": 14,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/minority.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/minority.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/minority.ly.tera",
+        "sha256": "d929ec6b6e1203753ecf6febda8592fc6bde5751ddd9a94eddd707a8d384b3bb",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "Ab",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit curated harmonic reference: recurring compiled minor tonic, source V7-i resolution and canonical roadmap tonic; literal source key retained separately",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 41
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 70
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Minority",
+          "workTitle": "Minority",
+          "movementTitle": null,
+          "filenameTitle": "minority.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 137,
+          "canonicalTitle": "Minority",
+          "sourceTitle": "Minority",
+          "canonicalComposer": "Gigi Gryce",
+          "sourceComposer": "Gigi Gryce",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        },
+        "sourceDeclaredKey": {
+          "root": "Ab",
+          "mode": "Major"
+        },
+        "normalizationTonic": {
+          "root": "F",
+          "mode": "Minor"
+        },
+        "harmonicTonicReference": {
+          "melodyId": "openbook-minority-wikifonia",
+          "canonicalSong": 137,
+          "sourcePath": "src/openbook/minority.ly.tera",
+          "sourceVersion": "Wikifonia",
+          "sourceSha256": "d929ec6b6e1203753ecf6febda8592fc6bde5751ddd9a94eddd707a8d384b3bb",
+          "sourceDeclaredKey": {
+            "root": "Ab",
+            "mode": "Major"
+          },
+          "keyDirectives": [
+            {
+              "line": 73,
+              "text": "\\key as \\major"
+            }
+          ],
+          "normalizationTonic": {
+            "root": "F",
+            "mode": "Minor"
+          },
+          "evidence": {
+            "canonicalRoadmap": {
+              "source": "InsightsRoadmapsConsolidated.pdf",
+              "song": 137,
+              "title": "Minority",
+              "tonic": [
+                "F",
+                "Minor"
+              ]
+            },
+            "tonicChordEvents": [
+              {
+                "symbol": "Fm6",
+                "start": 0.0,
+                "end": 8.0,
+                "sourceLine": 47,
+                "index": 0
+              },
+              {
+                "symbol": "Fm6",
+                "start": 16.0,
+                "end": 24.0,
+                "sourceLine": 51,
+                "index": 3
+              }
+            ],
+            "dominantResolutions": [
+              {
+                "dominant": {
+                  "symbol": "C7",
+                  "start": 12.0,
+                  "end": 16.0,
+                  "sourceLine": 50,
+                  "index": 2
+                },
+                "tonic": {
+                  "symbol": "Fm6",
+                  "start": 16.0,
+                  "end": 24.0,
+                  "sourceLine": 51,
+                  "index": 3
+                }
+              }
+            ],
+            "ending": {
+              "symbol": "Daug7",
+              "start": 60.0,
+              "end": 64.0,
+              "sourceLine": 62,
+              "index": 13
+            },
+            "basis": "Canonical roadmap minor tonic agrees with recurring compiled minor-tonic chords and at least one direct dominant-seventh resolution. The literal source major key declaration is retained separately."
+          }
+        }
+      }
+    },
+    {
+      "id": "openbook-recorda-me-wikifonia",
+      "title": "Recorda-Me",
+      "originalSong": 171,
+      "originalBars": 32,
+      "sourceBars": 33,
+      "notes": 128,
+      "chords": 30,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/recorda_me.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/recorda_me.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/recorda_me.ly.tera",
+        "sha256": "d45a7329bb0962f8c330fc41b752ea9e60978b034bd5f04462e0de395e154957",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "C",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit curated harmonic reference: recurring compiled minor tonic, source V7-i resolution and canonical roadmap tonic; literal source key retained separately",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 41
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 79
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Recorda-Me",
+          "workTitle": "Recorda-Me",
+          "movementTitle": null,
+          "filenameTitle": "recorda_me.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 171,
+          "canonicalTitle": "Recorda Me",
+          "sourceTitle": "Recorda-Me",
+          "canonicalComposer": "",
+          "sourceComposer": "Joe Henderson",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        },
+        "sourceDeclaredKey": {
+          "root": "C",
+          "mode": "Major"
+        },
+        "normalizationTonic": {
+          "root": "A",
+          "mode": "Minor"
+        },
+        "harmonicTonicReference": {
+          "melodyId": "openbook-recorda-me-wikifonia",
+          "canonicalSong": 171,
+          "sourcePath": "src/openbook/recorda_me.ly.tera",
+          "sourceVersion": "Wikifonia",
+          "sourceSha256": "d45a7329bb0962f8c330fc41b752ea9e60978b034bd5f04462e0de395e154957",
+          "sourceDeclaredKey": {
+            "root": "C",
+            "mode": "Major"
+          },
+          "keyDirectives": [
+            {
+              "line": 82,
+              "text": "\\key c \\major"
+            }
+          ],
+          "normalizationTonic": {
+            "root": "A",
+            "mode": "Minor"
+          },
+          "evidence": {
+            "canonicalRoadmap": {
+              "source": "InsightsRoadmapsConsolidated.pdf",
+              "song": 171,
+              "title": "Recorda Me",
+              "tonic": [
+                "A",
+                "Minor"
+              ]
+            },
+            "tonicChordEvents": [
+              {
+                "symbol": "Am7",
+                "start": 4.0,
+                "end": 20.0,
+                "sourceLine": 49,
+                "index": 1
+              },
+              {
+                "symbol": "Am7",
+                "start": 68.0,
+                "end": 84.0,
+                "sourceLine": 49,
+                "index": 15
+              }
+            ],
+            "dominantResolutions": [
+              {
+                "dominant": {
+                  "symbol": "E7#9",
+                  "start": 63.0,
+                  "end": 68.0,
+                  "sourceLine": 63,
+                  "index": 14
+                },
+                "tonic": {
+                  "symbol": "Am7",
+                  "start": 68.0,
+                  "end": 84.0,
+                  "sourceLine": 49,
+                  "index": 15
+                }
+              }
+            ],
+            "ending": {
+              "symbol": "E7#9",
+              "start": 128.0,
+              "end": 132.0,
+              "sourceLine": 69,
+              "index": 29
+            },
+            "basis": "Canonical roadmap minor tonic agrees with recurring compiled minor-tonic chords and at least one direct dominant-seventh resolution. The literal source major key declaration is retained separately."
+          }
+        }
+      }
+    },
+    {
+      "id": "openbook-solar-real",
+      "title": "Solar",
+      "originalSong": 188,
+      "originalBars": 12,
+      "sourceBars": 24,
+      "notes": 84,
+      "chords": 24,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/solar.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/solar.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/solar.ly.tera",
+        "sha256": "316900d2c2f3fae3e4b6ec038ae2ac972454e11d321dcf1ebbf838e6e90712b8",
+        "sourceRights": null,
+        "sourceRightsExtra": null,
+        "sourceVersion": "Real",
+        "sourceStructure": "A",
+        "sourceKeySignature": {
+          "root": "C",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit curated harmonic reference: recurring compiled minor tonic, source V7-i resolution and canonical roadmap tonic; literal source key retained separately",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsReal",
+            "startLine": 51
+          },
+          "melody": {
+            "name": "VoiceReal",
+            "startLine": 69
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Solar",
+          "workTitle": "Solar",
+          "movementTitle": null,
+          "filenameTitle": "solar.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 188,
+          "canonicalTitle": "Solar",
+          "sourceTitle": "Solar",
+          "canonicalComposer": "",
+          "sourceComposer": "Miles Davis",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        },
+        "sourceDeclaredKey": {
+          "root": "C",
+          "mode": "Major"
+        },
+        "normalizationTonic": {
+          "root": "C",
+          "mode": "Minor"
+        },
+        "harmonicTonicReference": {
+          "melodyId": "openbook-solar-real",
+          "canonicalSong": 188,
+          "sourcePath": "src/openbook/solar.ly.tera",
+          "sourceVersion": "Real",
+          "sourceSha256": "316900d2c2f3fae3e4b6ec038ae2ac972454e11d321dcf1ebbf838e6e90712b8",
+          "sourceDeclaredKey": {
+            "root": "C",
+            "mode": "Major"
+          },
+          "keyDirectives": [
+            {
+              "line": 72,
+              "text": "\\key c \\major"
+            }
+          ],
+          "normalizationTonic": {
+            "root": "C",
+            "mode": "Minor"
+          },
+          "evidence": {
+            "canonicalRoadmap": {
+              "source": "InsightsRoadmapsConsolidated.pdf",
+              "song": 188,
+              "title": "Solar",
+              "tonic": [
+                "C",
+                "Minor"
+              ]
+            },
+            "tonicChordEvents": [
+              {
+                "symbol": "Cm",
+                "start": 0.0,
+                "end": 8.0,
+                "sourceLine": 59,
+                "index": 0
+              },
+              {
+                "symbol": "Cm",
+                "start": 48.0,
+                "end": 56.0,
+                "sourceLine": 59,
+                "index": 12
+              }
+            ],
+            "dominantResolutions": [
+              {
+                "dominant": {
+                  "symbol": "G7b9",
+                  "start": 46.0,
+                  "end": 48.0,
+                  "sourceLine": 61,
+                  "index": 11
+                },
+                "tonic": {
+                  "symbol": "Cm",
+                  "start": 48.0,
+                  "end": 56.0,
+                  "sourceLine": 59,
+                  "index": 12
+                }
+              }
+            ],
+            "ending": {
+              "symbol": "G7b9",
+              "start": 94.0,
+              "end": 96.0,
+              "sourceLine": 61,
+              "index": 23
+            },
+            "basis": "Canonical roadmap minor tonic agrees with recurring compiled minor-tonic chords and at least one direct dominant-seventh resolution. The literal source major key declaration is retained separately."
+          }
+        }
+      }
+    },
+    {
+      "id": "openbook-beautiful-love-laurent",
+      "title": "Beautiful Love",
+      "originalSong": 15,
+      "originalBars": 32,
+      "sourceBars": 33,
+      "notes": 77,
+      "chords": 36,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/beautiful_love.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/beautiful_love.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/beautiful_love.ly.tera",
+        "sha256": "4a5e9a6e4b2b9b3903df893b83229042b3966aa9cb87d0c97734c39b27fd0a7a",
+        "sourceRights": "1931 and 1959 Movietone Music Corporation, New York, New York",
+        "sourceRightsExtra": "Copyright Renewed",
+        "sourceVersion": "Laurent",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "F",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit curated harmonic reference: recurring compiled minor tonic, source V7-i resolution and canonical roadmap tonic; literal source key retained separately",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsLaurent",
+            "startLine": 152
+          },
+          "melody": {
+            "name": "VoiceLaurent",
+            "startLine": 178
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Beautiful Love",
+          "workTitle": "Beautiful Love",
+          "movementTitle": null,
+          "filenameTitle": "beautiful_love.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "sourceDeclaredKey": {
+          "root": "F",
+          "mode": "Major"
+        },
+        "normalizationTonic": {
+          "root": "D",
+          "mode": "Minor"
+        },
+        "harmonicTonicReference": {
+          "melodyId": "openbook-beautiful-love-laurent",
+          "canonicalSong": 15,
+          "sourcePath": "src/openbook/beautiful_love.ly.tera",
+          "sourceVersion": "Laurent",
+          "sourceSha256": "4a5e9a6e4b2b9b3903df893b83229042b3966aa9cb87d0c97734c39b27fd0a7a",
+          "sourceDeclaredKey": {
+            "root": "F",
+            "mode": "Major"
+          },
+          "keyDirectives": [
+            {
+              "line": 102,
+              "text": "\\numericTimeSignature\\time 4/4 \\key f \\major"
+            },
+            {
+              "line": 181,
+              "text": "\\key f \\major"
+            }
+          ],
+          "normalizationTonic": {
+            "root": "D",
+            "mode": "Minor"
+          },
+          "evidence": {
+            "canonicalRoadmap": {
+              "source": "InsightsRoadmapsConsolidated.pdf",
+              "song": 15,
+              "title": "Beautiful Love",
+              "tonic": [
+                "D",
+                "Minor"
+              ]
+            },
+            "tonicChordEvents": [
+              {
+                "symbol": "Dm7",
+                "start": 12.0,
+                "end": 20.0,
+                "sourceLine": 161,
+                "index": 3
+              },
+              {
+                "symbol": "Dm7",
+                "start": 36.0,
+                "end": 40.0,
+                "sourceLine": 163,
+                "index": 9
+              },
+              {
+                "symbol": "Dm7",
+                "start": 52.0,
+                "end": 56.0,
+                "sourceLine": 166,
+                "index": 14
+              },
+              {
+                "symbol": "Dm7",
+                "start": 76.0,
+                "end": 84.0,
+                "sourceLine": 161,
+                "index": 20
+              },
+              {
+                "symbol": "Dm7",
+                "start": 100.0,
+                "end": 104.0,
+                "sourceLine": 163,
+                "index": 26
+              },
+              {
+                "symbol": "Dm7",
+                "start": 116.0,
+                "end": 118.0,
+                "sourceLine": 169,
+                "index": 31
+              },
+              {
+                "symbol": "Dm7",
+                "start": 124.0,
+                "end": 132.0,
+                "sourceLine": 169,
+                "index": 35
+              }
+            ],
+            "dominantResolutions": [
+              {
+                "dominant": {
+                  "symbol": "A7",
+                  "start": 8.0,
+                  "end": 12.0,
+                  "sourceLine": 161,
+                  "index": 2
+                },
+                "tonic": {
+                  "symbol": "Dm7",
+                  "start": 12.0,
+                  "end": 20.0,
+                  "sourceLine": 161,
+                  "index": 3
+                }
+              },
+              {
+                "dominant": {
+                  "symbol": "A7",
+                  "start": 34.0,
+                  "end": 36.0,
+                  "sourceLine": 162,
+                  "index": 8
+                },
+                "tonic": {
+                  "symbol": "Dm7",
+                  "start": 36.0,
+                  "end": 40.0,
+                  "sourceLine": 163,
+                  "index": 9
+                }
+              },
+              {
+                "dominant": {
+                  "symbol": "A7",
+                  "start": 50.0,
+                  "end": 52.0,
+                  "sourceLine": 163,
+                  "index": 13
+                },
+                "tonic": {
+                  "symbol": "Dm7",
+                  "start": 52.0,
+                  "end": 56.0,
+                  "sourceLine": 166,
+                  "index": 14
+                }
+              },
+              {
+                "dominant": {
+                  "symbol": "A7",
+                  "start": 72.0,
+                  "end": 76.0,
+                  "sourceLine": 161,
+                  "index": 19
+                },
+                "tonic": {
+                  "symbol": "Dm7",
+                  "start": 76.0,
+                  "end": 84.0,
+                  "sourceLine": 161,
+                  "index": 20
+                }
+              },
+              {
+                "dominant": {
+                  "symbol": "A7",
+                  "start": 98.0,
+                  "end": 100.0,
+                  "sourceLine": 162,
+                  "index": 25
+                },
+                "tonic": {
+                  "symbol": "Dm7",
+                  "start": 100.0,
+                  "end": 104.0,
+                  "sourceLine": 163,
+                  "index": 26
+                }
+              },
+              {
+                "dominant": {
+                  "symbol": "A7",
+                  "start": 114.0,
+                  "end": 116.0,
+                  "sourceLine": 163,
+                  "index": 30
+                },
+                "tonic": {
+                  "symbol": "Dm7",
+                  "start": 116.0,
+                  "end": 118.0,
+                  "sourceLine": 169,
+                  "index": 31
+                }
+              },
+              {
+                "dominant": {
+                  "symbol": "A7",
+                  "start": 122.0,
+                  "end": 124.0,
+                  "sourceLine": 169,
+                  "index": 34
+                },
+                "tonic": {
+                  "symbol": "Dm7",
+                  "start": 124.0,
+                  "end": 132.0,
+                  "sourceLine": 169,
+                  "index": 35
+                }
+              }
+            ],
+            "ending": {
+              "symbol": "Dm7",
+              "start": 124.0,
+              "end": 132.0,
+              "sourceLine": 169,
+              "index": 35
+            },
+            "basis": "Canonical roadmap minor tonic agrees with recurring compiled minor-tonic chords and at least one direct dominant-seventh resolution. The literal source major key declaration is retained separately."
+          }
+        }
+      }
+    },
+    {
+      "id": "openbook-bewitched-fake",
+      "title": "Bewitched",
+      "originalSong": 19,
+      "originalBars": 32,
+      "sourceBars": 65,
+      "notes": 218,
+      "chords": 104,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/bewitched.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/bewitched.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/bewitched.ly.tera",
+        "sha256": "9b96bd5051ab2655c96d62930e45f513b7d8d001d68b18fc989b4c7769a025f1",
+        "sourceRights": "1941, by Chappell & Co., Inc. Copyright Renewed",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Fake",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "C",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 71
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 113
+          }
+        },
+        "irregularMeasures": [
+          {
+            "sourceNumber": "0",
+            "start": 0.0,
+            "duration": 1.0,
+            "kind": "pickup"
+          }
+        ],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Bewitched",
+          "workTitle": "Bewitched",
+          "movementTitle": null,
+          "filenameTitle": "bewitched.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, pickup-aligned bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "pickupPolicy": "One matching initial LilyPond PartialSet in both compiled streams. MIDI onsets and durations remain unchanged; source measure0 is the pickup. No padding, cropping or stretching.",
+        "compositionIdentity": {
+          "canonicalSong": 19,
+          "canonicalTitle": "Bewitched, Bothered, and Bewildered",
+          "sourceTitle": "Bewitched",
+          "canonicalComposer": "Richard Rodgers",
+          "sourceComposer": "Richard Rodgers",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
+    },
+    {
+      "id": "openbook-the-christmas-song-chestnuts-roasting-on-an-open-fire-fake",
+      "title": "The Christmas Song (Chestnuts Roasting On An Open Fire)",
+      "originalSong": 37,
+      "originalBars": 38,
+      "sourceBars": 32,
+      "notes": 147,
+      "chords": 77,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/the_christmas_song.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/the_christmas_song.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/the_christmas_song.ly.tera",
+        "sha256": "e3ef0fb883e3291fab9eb52beade4f7623777df1d6a5d49911155bf4862a7407",
+        "sourceRights": "1946, 1967 EDWIN H. MORRIS & COMPANY, A Division of MPL Communications, Inc.",
+        "sourceRightsExtra": "Renewed 1974 EDWIN H. MORRIS & COMPANY, A Division of MPL Communications, Inc. International Copyright Secured. All Rights Reserved.",
+        "sourceVersion": "Fake",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "Eb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 52
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 84
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "The Christmas Song (Chestnuts Roasting On An Open Fire)",
+          "workTitle": "The Christmas Song (Chestnuts Roasting On An Open Fire)",
+          "movementTitle": null,
+          "filenameTitle": "the_christmas_song.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 37,
+          "canonicalTitle": "The Christmas Song",
+          "sourceTitle": "The Christmas Song (Chestnuts Roasting On An Open Fire)",
+          "canonicalComposer": "Mel Torme and Robert Wells",
+          "sourceComposer": "Mel Torme, Robert Wells",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
+    },
+    {
+      "id": "openbook-quiet-nights-of-quiet-stars-fake",
+      "title": "Quiet Nights Of Quiet Stars",
+      "originalSong": 40,
+      "originalBars": 34,
+      "sourceBars": 36,
+      "notes": 113,
+      "chords": 37,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/quiet_nights_of_quiet_stars.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/quiet_nights_of_quiet_stars.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/quiet_nights_of_quiet_stars.ly.tera",
+        "sha256": "400e8d47083dd9e16f56fef2bf4783f737107ff51fd40a8140b4e028334384da",
+        "sourceRights": "1962, 1964 by Antonio Carlos Jobim, Brazil",
+        "sourceRightsExtra": "Sole Selling Agent DUCHESS MUSIC CORPORATION (MCA), New York, NY for all English Speaking Countries",
+        "sourceVersion": "Fake",
+        "sourceStructure": "AA'",
+        "sourceKeySignature": {
+          "root": "C",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 60
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 85
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Quiet Nights Of Quiet Stars",
+          "workTitle": "Quiet Nights Of Quiet Stars",
+          "movementTitle": null,
+          "filenameTitle": "quiet_nights_of_quiet_stars.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 40,
+          "canonicalTitle": "Corcovado (Quiet Nights)",
+          "sourceTitle": "Quiet Nights Of Quiet Stars",
+          "canonicalComposer": "Antonio Carlos Jobim",
+          "sourceComposer": "Antonio Carlos Jobim",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
+    },
+    {
+      "id": "openbook-nancy-wikifonia",
+      "title": "Nancy",
+      "originalSong": 149,
+      "originalBars": 32,
+      "sourceBars": 66,
+      "notes": 279,
+      "chords": 110,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/nancy.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/nancy.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/nancy.ly.tera",
+        "sha256": "37ec65e0ec947c9ce12a3c5d5348921db6cbbda72c3e3751c6aa342b3fc9deca",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": "Archived MusicXML notice retained; underlying music is not relicensed.",
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "Eb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 45
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 100
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Nancy",
+          "workTitle": "Nancy",
+          "movementTitle": null,
+          "filenameTitle": "nancy.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 149,
+          "canonicalTitle": "Nancy with the Laughing Face",
+          "sourceTitle": "Nancy",
+          "canonicalComposer": "Jimmy van Heusen",
+          "sourceComposer": "Jimmy van Heusen",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
     }
   ],
   "excludedAttempts": [
@@ -12487,5 +13902,6 @@
   ],
   "metadataErrors": [],
   "pickupRecovery": "evidence/pickup-source-recovery.json",
-  "titleAliases": "src/music/melody-title-aliases.json"
+  "titleAliases": "src/music/melody-title-aliases.json",
+  "tonicReferences": "src/music/melody-tonic-references.json"
 }

@@ -1,0 +1,789 @@
+{
+  "version": 1,
+  "sourceCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+  "entries": [
+    {
+      "melodyId": "openbook-beautiful-love-laurent",
+      "canonicalSong": 15,
+      "sourcePath": "src/openbook/beautiful_love.ly.tera",
+      "sourceVersion": "Laurent",
+      "sourceSha256": "4a5e9a6e4b2b9b3903df893b83229042b3966aa9cb87d0c97734c39b27fd0a7a",
+      "sourceDeclaredKey": {
+        "root": "F",
+        "mode": "Major"
+      },
+      "keyDirectives": [
+        {
+          "line": 102,
+          "text": "\\numericTimeSignature\\time 4/4 \\key f \\major"
+        },
+        {
+          "line": 181,
+          "text": "\\key f \\major"
+        }
+      ],
+      "normalizationTonic": {
+        "root": "D",
+        "mode": "Minor"
+      },
+      "evidence": {
+        "canonicalRoadmap": {
+          "source": "InsightsRoadmapsConsolidated.pdf",
+          "song": 15,
+          "title": "Beautiful Love",
+          "tonic": [
+            "D",
+            "Minor"
+          ]
+        },
+        "tonicChordEvents": [
+          {
+            "symbol": "Dm7",
+            "start": 12.0,
+            "end": 20.0,
+            "sourceLine": 161,
+            "index": 3
+          },
+          {
+            "symbol": "Dm7",
+            "start": 36.0,
+            "end": 40.0,
+            "sourceLine": 163,
+            "index": 9
+          },
+          {
+            "symbol": "Dm7",
+            "start": 52.0,
+            "end": 56.0,
+            "sourceLine": 166,
+            "index": 14
+          },
+          {
+            "symbol": "Dm7",
+            "start": 76.0,
+            "end": 84.0,
+            "sourceLine": 161,
+            "index": 20
+          },
+          {
+            "symbol": "Dm7",
+            "start": 100.0,
+            "end": 104.0,
+            "sourceLine": 163,
+            "index": 26
+          },
+          {
+            "symbol": "Dm7",
+            "start": 116.0,
+            "end": 118.0,
+            "sourceLine": 169,
+            "index": 31
+          },
+          {
+            "symbol": "Dm7",
+            "start": 124.0,
+            "end": 132.0,
+            "sourceLine": 169,
+            "index": 35
+          }
+        ],
+        "dominantResolutions": [
+          {
+            "dominant": {
+              "symbol": "A7",
+              "start": 8.0,
+              "end": 12.0,
+              "sourceLine": 161,
+              "index": 2
+            },
+            "tonic": {
+              "symbol": "Dm7",
+              "start": 12.0,
+              "end": 20.0,
+              "sourceLine": 161,
+              "index": 3
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "A7",
+              "start": 34.0,
+              "end": 36.0,
+              "sourceLine": 162,
+              "index": 8
+            },
+            "tonic": {
+              "symbol": "Dm7",
+              "start": 36.0,
+              "end": 40.0,
+              "sourceLine": 163,
+              "index": 9
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "A7",
+              "start": 50.0,
+              "end": 52.0,
+              "sourceLine": 163,
+              "index": 13
+            },
+            "tonic": {
+              "symbol": "Dm7",
+              "start": 52.0,
+              "end": 56.0,
+              "sourceLine": 166,
+              "index": 14
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "A7",
+              "start": 72.0,
+              "end": 76.0,
+              "sourceLine": 161,
+              "index": 19
+            },
+            "tonic": {
+              "symbol": "Dm7",
+              "start": 76.0,
+              "end": 84.0,
+              "sourceLine": 161,
+              "index": 20
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "A7",
+              "start": 98.0,
+              "end": 100.0,
+              "sourceLine": 162,
+              "index": 25
+            },
+            "tonic": {
+              "symbol": "Dm7",
+              "start": 100.0,
+              "end": 104.0,
+              "sourceLine": 163,
+              "index": 26
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "A7",
+              "start": 114.0,
+              "end": 116.0,
+              "sourceLine": 163,
+              "index": 30
+            },
+            "tonic": {
+              "symbol": "Dm7",
+              "start": 116.0,
+              "end": 118.0,
+              "sourceLine": 169,
+              "index": 31
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "A7",
+              "start": 122.0,
+              "end": 124.0,
+              "sourceLine": 169,
+              "index": 34
+            },
+            "tonic": {
+              "symbol": "Dm7",
+              "start": 124.0,
+              "end": 132.0,
+              "sourceLine": 169,
+              "index": 35
+            }
+          }
+        ],
+        "ending": {
+          "symbol": "Dm7",
+          "start": 124.0,
+          "end": 132.0,
+          "sourceLine": 169,
+          "index": 35
+        },
+        "basis": "Canonical roadmap minor tonic agrees with recurring compiled minor-tonic chords and at least one direct dominant-seventh resolution. The literal source major key declaration is retained separately."
+      }
+    },
+    {
+      "melodyId": "openbook-bernie-s-tune-fake",
+      "canonicalSong": 17,
+      "sourcePath": "src/openbook/bernies_tune.ly.tera",
+      "sourceVersion": "Fake",
+      "sourceSha256": "d2212efb6f2c3eba6160a5e6e60135a7f74eaf8da833201a1ae1b7fd9271feb4",
+      "sourceDeclaredKey": {
+        "root": "F",
+        "mode": "Major"
+      },
+      "keyDirectives": [
+        {
+          "line": 98,
+          "text": "\\key f \\major"
+        }
+      ],
+      "normalizationTonic": {
+        "root": "D",
+        "mode": "Minor"
+      },
+      "evidence": {
+        "canonicalRoadmap": {
+          "source": "InsightsRoadmapsConsolidated.pdf",
+          "song": 17,
+          "title": "Bernie's Tune",
+          "tonic": [
+            "D",
+            "Minor"
+          ]
+        },
+        "tonicChordEvents": [
+          {
+            "symbol": "Dm6",
+            "start": 0.0,
+            "end": 4.0,
+            "sourceLine": 62,
+            "index": 0
+          },
+          {
+            "symbol": "Dm6",
+            "start": 4.0,
+            "end": 8.0,
+            "sourceLine": 62,
+            "index": 1
+          },
+          {
+            "symbol": "Dm6",
+            "start": 24.0,
+            "end": 28.0,
+            "sourceLine": 63,
+            "index": 6
+          },
+          {
+            "symbol": "Dm6",
+            "start": 28.0,
+            "end": 32.0,
+            "sourceLine": 63,
+            "index": 7
+          },
+          {
+            "symbol": "Dm6",
+            "start": 32.0,
+            "end": 36.0,
+            "sourceLine": 68,
+            "index": 8
+          },
+          {
+            "symbol": "Dm6",
+            "start": 36.0,
+            "end": 40.0,
+            "sourceLine": 68,
+            "index": 9
+          },
+          {
+            "symbol": "Dm6",
+            "start": 56.0,
+            "end": 60.0,
+            "sourceLine": 69,
+            "index": 14
+          },
+          {
+            "symbol": "Dm6",
+            "start": 60.0,
+            "end": 64.0,
+            "sourceLine": 69,
+            "index": 15
+          },
+          {
+            "symbol": "Dm6",
+            "start": 96.0,
+            "end": 100.0,
+            "sourceLine": 80,
+            "index": 26
+          },
+          {
+            "symbol": "Dm6",
+            "start": 100.0,
+            "end": 104.0,
+            "sourceLine": 80,
+            "index": 27
+          },
+          {
+            "symbol": "Dm6",
+            "start": 120.0,
+            "end": 124.0,
+            "sourceLine": 83,
+            "index": 32
+          },
+          {
+            "symbol": "Dm6",
+            "start": 124.0,
+            "end": 128.0,
+            "sourceLine": 83,
+            "index": 33
+          },
+          {
+            "symbol": "Dm6",
+            "start": 128.0,
+            "end": 132.0,
+            "sourceLine": 62,
+            "index": 34
+          },
+          {
+            "symbol": "Dm6",
+            "start": 132.0,
+            "end": 136.0,
+            "sourceLine": 62,
+            "index": 35
+          },
+          {
+            "symbol": "Dm6",
+            "start": 152.0,
+            "end": 156.0,
+            "sourceLine": 63,
+            "index": 40
+          },
+          {
+            "symbol": "Dm6",
+            "start": 156.0,
+            "end": 160.0,
+            "sourceLine": 63,
+            "index": 41
+          },
+          {
+            "symbol": "Dm6",
+            "start": 160.0,
+            "end": 164.0,
+            "sourceLine": 68,
+            "index": 42
+          },
+          {
+            "symbol": "Dm6",
+            "start": 164.0,
+            "end": 168.0,
+            "sourceLine": 68,
+            "index": 43
+          },
+          {
+            "symbol": "Dm6",
+            "start": 184.0,
+            "end": 188.0,
+            "sourceLine": 69,
+            "index": 48
+          },
+          {
+            "symbol": "Dm6",
+            "start": 188.0,
+            "end": 192.0,
+            "sourceLine": 69,
+            "index": 49
+          },
+          {
+            "symbol": "Dm6",
+            "start": 224.0,
+            "end": 228.0,
+            "sourceLine": 80,
+            "index": 60
+          },
+          {
+            "symbol": "Dm6",
+            "start": 228.0,
+            "end": 232.0,
+            "sourceLine": 80,
+            "index": 61
+          },
+          {
+            "symbol": "Dm6",
+            "start": 248.0,
+            "end": 252.0,
+            "sourceLine": 86,
+            "index": 66
+          },
+          {
+            "symbol": "Dm6",
+            "start": 252.0,
+            "end": 256.0,
+            "sourceLine": 86,
+            "index": 67
+          }
+        ],
+        "dominantResolutions": [
+          {
+            "dominant": {
+              "symbol": "A7",
+              "start": 20.0,
+              "end": 24.0,
+              "sourceLine": 63,
+              "index": 5
+            },
+            "tonic": {
+              "symbol": "Dm6",
+              "start": 24.0,
+              "end": 28.0,
+              "sourceLine": 63,
+              "index": 6
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "A7",
+              "start": 52.0,
+              "end": 56.0,
+              "sourceLine": 69,
+              "index": 13
+            },
+            "tonic": {
+              "symbol": "Dm6",
+              "start": 56.0,
+              "end": 60.0,
+              "sourceLine": 69,
+              "index": 14
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "A7",
+              "start": 92.0,
+              "end": 96.0,
+              "sourceLine": 75,
+              "index": 25
+            },
+            "tonic": {
+              "symbol": "Dm6",
+              "start": 96.0,
+              "end": 100.0,
+              "sourceLine": 80,
+              "index": 26
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "A7",
+              "start": 116.0,
+              "end": 120.0,
+              "sourceLine": 83,
+              "index": 31
+            },
+            "tonic": {
+              "symbol": "Dm6",
+              "start": 120.0,
+              "end": 124.0,
+              "sourceLine": 83,
+              "index": 32
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "A7",
+              "start": 148.0,
+              "end": 152.0,
+              "sourceLine": 63,
+              "index": 39
+            },
+            "tonic": {
+              "symbol": "Dm6",
+              "start": 152.0,
+              "end": 156.0,
+              "sourceLine": 63,
+              "index": 40
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "A7",
+              "start": 180.0,
+              "end": 184.0,
+              "sourceLine": 69,
+              "index": 47
+            },
+            "tonic": {
+              "symbol": "Dm6",
+              "start": 184.0,
+              "end": 188.0,
+              "sourceLine": 69,
+              "index": 48
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "A7",
+              "start": 220.0,
+              "end": 224.0,
+              "sourceLine": 75,
+              "index": 59
+            },
+            "tonic": {
+              "symbol": "Dm6",
+              "start": 224.0,
+              "end": 228.0,
+              "sourceLine": 80,
+              "index": 60
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "A7",
+              "start": 244.0,
+              "end": 248.0,
+              "sourceLine": 86,
+              "index": 65
+            },
+            "tonic": {
+              "symbol": "Dm6",
+              "start": 248.0,
+              "end": 252.0,
+              "sourceLine": 86,
+              "index": 66
+            }
+          }
+        ],
+        "ending": {
+          "symbol": "Dm6",
+          "start": 252.0,
+          "end": 256.0,
+          "sourceLine": 86,
+          "index": 67
+        },
+        "basis": "Canonical roadmap minor tonic agrees with recurring compiled minor-tonic chords and at least one direct dominant-seventh resolution. The literal source major key declaration is retained separately."
+      }
+    },
+    {
+      "melodyId": "openbook-minority-wikifonia",
+      "canonicalSong": 137,
+      "sourcePath": "src/openbook/minority.ly.tera",
+      "sourceVersion": "Wikifonia",
+      "sourceSha256": "d929ec6b6e1203753ecf6febda8592fc6bde5751ddd9a94eddd707a8d384b3bb",
+      "sourceDeclaredKey": {
+        "root": "Ab",
+        "mode": "Major"
+      },
+      "keyDirectives": [
+        {
+          "line": 73,
+          "text": "\\key as \\major"
+        }
+      ],
+      "normalizationTonic": {
+        "root": "F",
+        "mode": "Minor"
+      },
+      "evidence": {
+        "canonicalRoadmap": {
+          "source": "InsightsRoadmapsConsolidated.pdf",
+          "song": 137,
+          "title": "Minority",
+          "tonic": [
+            "F",
+            "Minor"
+          ]
+        },
+        "tonicChordEvents": [
+          {
+            "symbol": "Fm6",
+            "start": 0.0,
+            "end": 8.0,
+            "sourceLine": 47,
+            "index": 0
+          },
+          {
+            "symbol": "Fm6",
+            "start": 16.0,
+            "end": 24.0,
+            "sourceLine": 51,
+            "index": 3
+          }
+        ],
+        "dominantResolutions": [
+          {
+            "dominant": {
+              "symbol": "C7",
+              "start": 12.0,
+              "end": 16.0,
+              "sourceLine": 50,
+              "index": 2
+            },
+            "tonic": {
+              "symbol": "Fm6",
+              "start": 16.0,
+              "end": 24.0,
+              "sourceLine": 51,
+              "index": 3
+            }
+          }
+        ],
+        "ending": {
+          "symbol": "Daug7",
+          "start": 60.0,
+          "end": 64.0,
+          "sourceLine": 62,
+          "index": 13
+        },
+        "basis": "Canonical roadmap minor tonic agrees with recurring compiled minor-tonic chords and at least one direct dominant-seventh resolution. The literal source major key declaration is retained separately."
+      }
+    },
+    {
+      "melodyId": "openbook-recorda-me-wikifonia",
+      "canonicalSong": 171,
+      "sourcePath": "src/openbook/recorda_me.ly.tera",
+      "sourceVersion": "Wikifonia",
+      "sourceSha256": "d45a7329bb0962f8c330fc41b752ea9e60978b034bd5f04462e0de395e154957",
+      "sourceDeclaredKey": {
+        "root": "C",
+        "mode": "Major"
+      },
+      "keyDirectives": [
+        {
+          "line": 82,
+          "text": "\\key c \\major"
+        }
+      ],
+      "normalizationTonic": {
+        "root": "A",
+        "mode": "Minor"
+      },
+      "evidence": {
+        "canonicalRoadmap": {
+          "source": "InsightsRoadmapsConsolidated.pdf",
+          "song": 171,
+          "title": "Recorda Me",
+          "tonic": [
+            "A",
+            "Minor"
+          ]
+        },
+        "tonicChordEvents": [
+          {
+            "symbol": "Am7",
+            "start": 4.0,
+            "end": 20.0,
+            "sourceLine": 49,
+            "index": 1
+          },
+          {
+            "symbol": "Am7",
+            "start": 68.0,
+            "end": 84.0,
+            "sourceLine": 49,
+            "index": 15
+          }
+        ],
+        "dominantResolutions": [
+          {
+            "dominant": {
+              "symbol": "E7#9",
+              "start": 63.0,
+              "end": 68.0,
+              "sourceLine": 63,
+              "index": 14
+            },
+            "tonic": {
+              "symbol": "Am7",
+              "start": 68.0,
+              "end": 84.0,
+              "sourceLine": 49,
+              "index": 15
+            }
+          }
+        ],
+        "ending": {
+          "symbol": "E7#9",
+          "start": 128.0,
+          "end": 132.0,
+          "sourceLine": 69,
+          "index": 29
+        },
+        "basis": "Canonical roadmap minor tonic agrees with recurring compiled minor-tonic chords and at least one direct dominant-seventh resolution. The literal source major key declaration is retained separately."
+      }
+    },
+    {
+      "melodyId": "openbook-solar-real",
+      "canonicalSong": 188,
+      "sourcePath": "src/openbook/solar.ly.tera",
+      "sourceVersion": "Real",
+      "sourceSha256": "316900d2c2f3fae3e4b6ec038ae2ac972454e11d321dcf1ebbf838e6e90712b8",
+      "sourceDeclaredKey": {
+        "root": "C",
+        "mode": "Major"
+      },
+      "keyDirectives": [
+        {
+          "line": 72,
+          "text": "\\key c \\major"
+        }
+      ],
+      "normalizationTonic": {
+        "root": "C",
+        "mode": "Minor"
+      },
+      "evidence": {
+        "canonicalRoadmap": {
+          "source": "InsightsRoadmapsConsolidated.pdf",
+          "song": 188,
+          "title": "Solar",
+          "tonic": [
+            "C",
+            "Minor"
+          ]
+        },
+        "tonicChordEvents": [
+          {
+            "symbol": "Cm",
+            "start": 0.0,
+            "end": 8.0,
+            "sourceLine": 59,
+            "index": 0
+          },
+          {
+            "symbol": "Cm",
+            "start": 48.0,
+            "end": 56.0,
+            "sourceLine": 59,
+            "index": 12
+          }
+        ],
+        "dominantResolutions": [
+          {
+            "dominant": {
+              "symbol": "G7b9",
+              "start": 46.0,
+              "end": 48.0,
+              "sourceLine": 61,
+              "index": 11
+            },
+            "tonic": {
+              "symbol": "Cm",
+              "start": 48.0,
+              "end": 56.0,
+              "sourceLine": 59,
+              "index": 12
+            }
+          }
+        ],
+        "ending": {
+          "symbol": "G7b9",
+          "start": 94.0,
+          "end": 96.0,
+          "sourceLine": 61,
+          "index": 23
+        },
+        "basis": "Canonical roadmap minor tonic agrees with recurring compiled minor-tonic chords and at least one direct dominant-seventh resolution. The literal source major key declaration is retained separately."
+      }
+    }
+  ],
+  "held": [
+    {
+      "song": 3,
+      "title": "Airegin",
+      "reason": "The source closes in the declared relative major; harmonic home needs separate review."
+    },
+    {
+      "song": 124,
+      "title": "Love for Sale",
+      "reason": "Minor body and major ending coexist under a major declaration; mode requires separate review."
+    }
+  ]
+}

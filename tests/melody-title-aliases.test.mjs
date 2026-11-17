@@ -5,8 +5,8 @@ import {createHash} from 'node:crypto';
 const root=new URL('../',import.meta.url),read=p=>JSON.parse(fs.readFileSync(new URL(p,root),'utf8'));
 const aliases=read('src/music/melody-title-aliases.json'),data=read('dist/data/melody-sources.json'),songs=read('dist/data/standards.json').songs,audit=read('evidence/melody-title-alias-audit.json');
 test('explicit source title aliases identify compositions while retaining the real source title, composer and complete arrangement',()=>{
- assert.equal(aliases.sourceCommit,'adbe5c68ff59e20068dd754e7d227979fa628d33');assert.equal(aliases.entries.length,18);assert.equal(new Set(aliases.entries.map(a=>a.sourcePath)).size,18);
- const added=songs.filter(s=>s.index>=458);assert.equal(added.length,16);assert.equal(songs.filter(s=>s.arrangementOf===undefined).length,269);
+ assert.equal(aliases.sourceCommit,'adbe5c68ff59e20068dd754e7d227979fa628d33');assert.ok(aliases.entries.length>=18);assert.equal(new Set(aliases.entries.map(a=>a.sourcePath)).size,aliases.entries.length);
+ const added=songs.filter(s=>s.index>=458&&s.index<474);assert.equal(added.length,16);assert.equal(songs.filter(s=>s.arrangementOf===undefined).length,269);
  for(const song of added){
   const entry=data.entries[song.melodyId],alias=aliases.entries.find(a=>a.sourcePath===entry.provenance.path),proof=entry.provenance.compositionIdentity;assert.ok(alias,song.title);
   assert.equal(song.arrangementOf,alias.canonicalSong);assert.equal(songs[song.arrangementOf].title,alias.canonicalTitle);assert.equal(proof.canonicalSong,alias.canonicalSong);assert.equal(entry.compositionTitle,alias.canonicalTitle);

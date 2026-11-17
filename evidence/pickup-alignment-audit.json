@@ -413,14 +413,14 @@
     "priorPerformanceHashesUnchanged": true
   },
   "counts": {
-    "arrangements": 474,
+    "arrangements": 483,
     "compositions": 269,
-    "coveredCompositions": 225,
-    "missingCompositions": 44,
-    "addedArrangements": 58,
-    "addedCompositions": 58,
-    "sourceNotes": 7594,
-    "sourceHarmonyEvents": 3467
+    "coveredCompositions": 234,
+    "missingCompositions": 35,
+    "addedArrangements": 59,
+    "addedCompositions": 59,
+    "sourceNotes": 7812,
+    "sourceHarmonyEvents": 3571
   },
   "records": [
     {
@@ -1350,24 +1350,28 @@
       "sourceSha256": "d33783bc27686afe41c28c80d8f99e21fbff209806c6eeeeb645929a5ff40a40",
       "melodyMidiSha256": "9ae47140eb9f652c149d902044399c5aba31f9cc7fc8931b5368474f0a7c7ae3",
       "performanceSha256": "a03ac6cf3f8a0e32aaffc9d969ebd5ed3a14c2e3a8d03a9bbb63cdc6fe72931c"
+    },
+    {
+      "song": 476,
+      "arrangementOf": 19,
+      "title": "Bewitched",
+      "melodyId": "openbook-bewitched-fake",
+      "notes": 218,
+      "harmonies": 104,
+      "sourceMeasures": 65,
+      "sourceBeats": 257,
+      "pickupBeats": 1,
+      "finalMeasureBeats": 4,
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/bewitched.ly.tera",
+      "sourceSha256": "9b96bd5051ab2655c96d62930e45f513b7d8d001d68b18fc989b4c7769a025f1",
+      "melodyMidiSha256": "0a708252acb62ce59856411f21c543be1ed7e5edaabb22a6ae9ddba5f9149165",
+      "performanceSha256": "ab10a01ebd47eb3650174ca9a7def26bca5987b63a76d504e9486eea8dd766cf"
     }
   ],
   "remaining": [
     {
       "song": 3,
       "title": "Airegin"
-    },
-    {
-      "song": 15,
-      "title": "Beautiful Love"
-    },
-    {
-      "song": 17,
-      "title": "Bernie's Tune"
-    },
-    {
-      "song": 19,
-      "title": "Bewitched, Bothered, and Bewildered"
     },
     {
       "song": 22,
@@ -1396,14 +1400,6 @@
     {
       "song": 35,
       "title": "Chelsea Bridge"
-    },
-    {
-      "song": 37,
-      "title": "The Christmas Song"
-    },
-    {
-      "song": 40,
-      "title": "Corcovado (Quiet Nights)"
     },
     {
       "song": 49,
@@ -1454,14 +1450,6 @@
       "title": "The Masquerade is Over"
     },
     {
-      "song": 137,
-      "title": "Minority"
-    },
-    {
-      "song": 149,
-      "title": "Nancy with the Laughing Face"
-    },
-    {
       "song": 153,
       "title": "A Night in Tunisia"
     },
@@ -1474,16 +1462,8 @@
       "title": "On the Street Where You Live"
     },
     {
-      "song": 171,
-      "title": "Recorda Me"
-    },
-    {
       "song": 177,
       "title": "Santa Claus is Coming to Town"
-    },
-    {
-      "song": 188,
-      "title": "Solar"
     },
     {
       "song": 189,

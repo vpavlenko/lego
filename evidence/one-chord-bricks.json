@@ -6,23 +6,23 @@
       "dist/data/roadmaps.json",
       "dist/data/additional-standards.json"
     ],
-    "standards": 474
+    "standards": 483
   },
   "stats": {
-    "rawPassages": 9406,
-    "removedPassages": 2717,
-    "keptPassages": 6689,
-    "rawOccurrences": 8881,
-    "removedOccurrences": 2680,
-    "keptOccurrences": 6201,
+    "rawPassages": 9605,
+    "removedPassages": 2794,
+    "keptPassages": 6811,
+    "rawOccurrences": 9066,
+    "removedOccurrences": 2756,
+    "keptOccurrences": 6310,
     "reasons": {
       "single-harmony": {
-        "passages": 2098,
-        "occurrences": 2084
+        "passages": 2158,
+        "occurrences": 2143
       },
       "on-off-family": {
-        "passages": 619,
-        "occurrences": 596
+        "passages": 636,
+        "occurrences": 613
       }
     }
   },
@@ -789,6 +789,342 @@
           "bass": null,
           "symbols": [
             "F7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "7sus4 to 3",
+      "slug": "7sus4-to-3",
+      "song": 475,
+      "title": "Bernie's Tune",
+      "row": 0,
+      "startBar": 4,
+      "endBar": 6,
+      "start": 16,
+      "end": 24,
+      "segments": [
+        {
+          "row": 0,
+          "label": "7sus4 to 3",
+          "startBar": 4,
+          "endBar": 6,
+          "start": 4,
+          "end": 6,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "7sus4 to 3"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "A7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "7sus4 to 3",
+      "slug": "7sus4-to-3",
+      "song": 475,
+      "title": "Bernie's Tune",
+      "row": 1,
+      "startBar": 12,
+      "endBar": 14,
+      "start": 48,
+      "end": 56,
+      "segments": [
+        {
+          "row": 1,
+          "label": "7sus4 to 3",
+          "startBar": 12,
+          "endBar": 14,
+          "start": 4,
+          "end": 6,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "7sus4 to 3"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "A7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "7sus4 to 3",
+      "slug": "7sus4-to-3",
+      "song": 475,
+      "title": "Bernie's Tune",
+      "row": 2,
+      "startBar": 22,
+      "endBar": 24,
+      "start": 88,
+      "end": 96,
+      "segments": [
+        {
+          "row": 2,
+          "label": "7sus4 to 3",
+          "startBar": 22,
+          "endBar": 24,
+          "start": 6,
+          "end": 8,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "7sus4 to 3"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "A7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "7sus4 to 3",
+      "slug": "7sus4-to-3",
+      "song": 475,
+      "title": "Bernie's Tune",
+      "row": 3,
+      "startBar": 28,
+      "endBar": 30,
+      "start": 112,
+      "end": 120,
+      "segments": [
+        {
+          "row": 3,
+          "label": "7sus4 to 3",
+          "startBar": 28,
+          "endBar": 30,
+          "start": 4,
+          "end": 6,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "7sus4 to 3"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "A7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "7sus4 to 3",
+      "slug": "7sus4-to-3",
+      "song": 475,
+      "title": "Bernie's Tune",
+      "row": 4,
+      "startBar": 36,
+      "endBar": 38,
+      "start": 144,
+      "end": 152,
+      "segments": [
+        {
+          "row": 4,
+          "label": "7sus4 to 3",
+          "startBar": 36,
+          "endBar": 38,
+          "start": 4,
+          "end": 6,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "7sus4 to 3"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "A7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "7sus4 to 3",
+      "slug": "7sus4-to-3",
+      "song": 475,
+      "title": "Bernie's Tune",
+      "row": 5,
+      "startBar": 44,
+      "endBar": 46,
+      "start": 176,
+      "end": 184,
+      "segments": [
+        {
+          "row": 5,
+          "label": "7sus4 to 3",
+          "startBar": 44,
+          "endBar": 46,
+          "start": 4,
+          "end": 6,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "7sus4 to 3"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "A7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "7sus4 to 3",
+      "slug": "7sus4-to-3",
+      "song": 475,
+      "title": "Bernie's Tune",
+      "row": 6,
+      "startBar": 54,
+      "endBar": 56,
+      "start": 216,
+      "end": 224,
+      "segments": [
+        {
+          "row": 6,
+          "label": "7sus4 to 3",
+          "startBar": 54,
+          "endBar": 56,
+          "start": 6,
+          "end": 8,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "7sus4 to 3"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "A7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "7sus4 to 3",
+      "slug": "7sus4-to-3",
+      "song": 475,
+      "title": "Bernie's Tune",
+      "row": 7,
+      "startBar": 60,
+      "endBar": 62,
+      "start": 240,
+      "end": 248,
+      "segments": [
+        {
+          "row": 7,
+          "label": "7sus4 to 3",
+          "startBar": 60,
+          "endBar": 62,
+          "start": 4,
+          "end": 6,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "7sus4 to 3"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "A7"
           ]
         }
       ],
@@ -39049,6 +39385,502 @@
           "bass": null,
           "symbols": [
             "C69"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 476,
+      "title": "Bewitched",
+      "row": 8,
+      "startBar": 63.25,
+      "endBar": 64.25,
+      "start": 253,
+      "end": 257,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Major On",
+          "startBar": 63.25,
+          "endBar": 64.25,
+          "start": 7,
+          "end": 8,
+          "brick": 7
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 477,
+      "title": "The Christmas Song (Chestnuts Roasting On An Open Fire)",
+      "row": 0,
+      "startBar": 5,
+      "endBar": 5.5,
+      "start": 20,
+      "end": 22,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Major On",
+          "startBar": 5,
+          "endBar": 5.5,
+          "start": 5,
+          "end": 5.5,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Eb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 477,
+      "title": "The Christmas Song (Chestnuts Roasting On An Open Fire)",
+      "row": 1,
+      "startBar": 13,
+      "endBar": 13.5,
+      "start": 52,
+      "end": 54,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Major On",
+          "startBar": 13,
+          "endBar": 13.5,
+          "start": 5,
+          "end": 5.5,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Eb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 2,
+      "startBar": 16,
+      "endBar": 16.75,
+      "start": 64,
+      "end": 67,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 16,
+          "endBar": 16.75,
+          "start": 0,
+          "end": 0.75,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Eb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 2,
+      "startBar": 21,
+      "endBar": 22,
+      "start": 84,
+      "end": 88,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 21,
+          "endBar": 22,
+          "start": 5,
+          "end": 6,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Eb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 6,
+      "startBar": 49,
+      "endBar": 49.75,
+      "start": 196,
+      "end": 199,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Major On",
+          "startBar": 49,
+          "endBar": 49.75,
+          "start": 1,
+          "end": 1.75,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Eb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 6,
+      "startBar": 54,
+      "endBar": 55,
+      "start": 216,
+      "end": 220,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Major On",
+          "startBar": 54,
+          "endBar": 55,
+          "start": 6,
+          "end": 7,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Eb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 8,
+      "startBar": 65,
+      "endBar": 66,
+      "start": 260,
+      "end": 264,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Major On",
+          "startBar": 65,
+          "endBar": 66,
+          "start": 1,
+          "end": 2,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Eb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 480,
+      "title": "Quiet Nights Of Quiet Stars",
+      "row": 0,
+      "startBar": 6.5,
+      "endBar": 7,
+      "start": 26,
+      "end": 28,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Major On",
+          "startBar": 6.5,
+          "endBar": 7,
+          "start": 6.5,
+          "end": 7,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "FM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 480,
+      "title": "Quiet Nights Of Quiet Stars",
+      "row": 0,
+      "startBar": 7,
+      "endBar": 8,
+      "start": 28,
+      "end": 32,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Major On",
+          "startBar": 7,
+          "endBar": 8,
+          "start": 7,
+          "end": 8,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "FM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 480,
+      "title": "Quiet Nights Of Quiet Stars",
+      "row": 2,
+      "startBar": 22.5,
+      "endBar": 23,
+      "start": 90,
+      "end": 92,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 22.5,
+          "endBar": 23,
+          "start": 6.5,
+          "end": 7,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "FM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 480,
+      "title": "Quiet Nights Of Quiet Stars",
+      "row": 2,
+      "startBar": 23,
+      "endBar": 24,
+      "start": 92,
+      "end": 96,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 23,
+          "endBar": 24,
+          "start": 7,
+          "end": 8,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "FM7"
           ]
         }
       ],
@@ -85473,6 +86305,1639 @@
       "reason": "single-harmony"
     },
     {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 474,
+      "title": "Beautiful Love",
+      "row": 0,
+      "startBar": 3,
+      "endBar": 5,
+      "start": 12,
+      "end": 20,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 3,
+          "endBar": 5,
+          "start": 3,
+          "end": 5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 474,
+      "title": "Beautiful Love",
+      "row": 2,
+      "startBar": 19,
+      "endBar": 21,
+      "start": 76,
+      "end": 84,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 19,
+          "endBar": 21,
+          "start": 3,
+          "end": 5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 474,
+      "title": "Beautiful Love",
+      "row": 3,
+      "startBar": 29,
+      "endBar": 29.5,
+      "start": 116,
+      "end": 118,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 29,
+          "endBar": 29.5,
+          "start": 5,
+          "end": 5.5,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 474,
+      "title": "Beautiful Love",
+      "row": 3,
+      "startBar": 31,
+      "endBar": 33,
+      "start": 124,
+      "end": 132,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 31,
+          "endBar": 32,
+          "start": 7,
+          "end": 8,
+          "brick": 5
+        },
+        {
+          "row": 4,
+          "label": "Minor On",
+          "startBar": 32,
+          "endBar": 33,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": true,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 477,
+      "title": "The Christmas Song (Chestnuts Roasting On An Open Fire)",
+      "row": 0,
+      "startBar": 4,
+      "endBar": 4.5,
+      "start": 16,
+      "end": 18,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 4,
+          "endBar": 4.5,
+          "start": 4,
+          "end": 4.5,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 477,
+      "title": "The Christmas Song (Chestnuts Roasting On An Open Fire)",
+      "row": 1,
+      "startBar": 12,
+      "endBar": 12.5,
+      "start": 48,
+      "end": 50,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 12,
+          "endBar": 12.5,
+          "start": 4,
+          "end": 4.5,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 477,
+      "title": "The Christmas Song (Chestnuts Roasting On An Open Fire)",
+      "row": 1,
+      "startBar": 13.5,
+      "endBar": 13.875,
+      "start": 54,
+      "end": 55.5,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 13.5,
+          "endBar": 13.875,
+          "start": 5.5,
+          "end": 5.875,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 477,
+      "title": "The Christmas Song (Chestnuts Roasting On An Open Fire)",
+      "row": 2,
+      "startBar": 17,
+      "endBar": 17.5,
+      "start": 68,
+      "end": 70,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 17,
+          "endBar": 17.5,
+          "start": 1,
+          "end": 1.5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 477,
+      "title": "The Christmas Song (Chestnuts Roasting On An Open Fire)",
+      "row": 3,
+      "startBar": 28.5,
+      "endBar": 29,
+      "start": 114,
+      "end": 116,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 28.5,
+          "endBar": 29,
+          "start": 4.5,
+          "end": 5,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Abm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 478,
+      "title": "Minority",
+      "row": 1,
+      "startBar": 14,
+      "endBar": 15,
+      "start": 56,
+      "end": 60,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 14,
+          "endBar": 15,
+          "start": 6,
+          "end": 7,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Gm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 0,
+      "startBar": 5,
+      "endBar": 6,
+      "start": 20,
+      "end": 24,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 5,
+          "endBar": 6,
+          "start": 5,
+          "end": 6,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Fm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 1,
+      "startBar": 13,
+      "endBar": 14,
+      "start": 52,
+      "end": 56,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 13,
+          "endBar": 14,
+          "start": 5,
+          "end": 6,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Fm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 2,
+      "startBar": 17,
+      "endBar": 18,
+      "start": 68,
+      "end": 72,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 17,
+          "endBar": 18,
+          "start": 1,
+          "end": 2,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 2,
+      "startBar": 19,
+      "endBar": 20,
+      "start": 76,
+      "end": 80,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 19,
+          "endBar": 20,
+          "start": 3,
+          "end": 4,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 2,
+      "startBar": 20.75,
+      "endBar": 21,
+      "start": 83,
+      "end": 84,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 20.75,
+          "endBar": 21,
+          "start": 4.75,
+          "end": 5,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Abm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 2,
+      "startBar": 22,
+      "endBar": 22.5,
+      "start": 88,
+      "end": 90,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 22,
+          "endBar": 22.5,
+          "start": 6,
+          "end": 6.5,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Fm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 2,
+      "startBar": 23,
+      "endBar": 23.25,
+      "start": 92,
+      "end": 93,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 23,
+          "endBar": 23.25,
+          "start": 7,
+          "end": 7.25,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 2,
+      "startBar": 23.25,
+      "endBar": 23.5,
+      "start": 93,
+      "end": 94,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 23.25,
+          "endBar": 23.5,
+          "start": 7.25,
+          "end": 7.5,
+          "brick": 7
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 3,
+      "startBar": 29,
+      "endBar": 30,
+      "start": 116,
+      "end": 120,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 29,
+          "endBar": 30,
+          "start": 5,
+          "end": 6,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Fm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 3,
+      "startBar": 31,
+      "endBar": 31.5,
+      "start": 124,
+      "end": 126,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 31,
+          "endBar": 31.5,
+          "start": 7,
+          "end": 7.5,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 4,
+      "startBar": 38,
+      "endBar": 39,
+      "start": 152,
+      "end": 156,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Minor On",
+          "startBar": 38,
+          "endBar": 39,
+          "start": 6,
+          "end": 7,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Fm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 5,
+      "startBar": 46,
+      "endBar": 47,
+      "start": 184,
+      "end": 188,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Minor On",
+          "startBar": 46,
+          "endBar": 47,
+          "start": 6,
+          "end": 7,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Fm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 6,
+      "startBar": 50,
+      "endBar": 51,
+      "start": 200,
+      "end": 204,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 50,
+          "endBar": 51,
+          "start": 2,
+          "end": 3,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 6,
+      "startBar": 52,
+      "endBar": 53,
+      "start": 208,
+      "end": 212,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 52,
+          "endBar": 53,
+          "start": 4,
+          "end": 5,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 6,
+      "startBar": 53.75,
+      "endBar": 54,
+      "start": 215,
+      "end": 216,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 53.75,
+          "endBar": 54,
+          "start": 5.75,
+          "end": 6,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Abm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 6,
+      "startBar": 55,
+      "endBar": 55.5,
+      "start": 220,
+      "end": 222,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 55,
+          "endBar": 55.5,
+          "start": 7,
+          "end": 7.5,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Fm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 7,
+      "startBar": 56,
+      "endBar": 56.25,
+      "start": 224,
+      "end": 225,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Minor On",
+          "startBar": 56,
+          "endBar": 56.25,
+          "start": 0,
+          "end": 0.25,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 7,
+      "startBar": 56.25,
+      "endBar": 56.5,
+      "start": 225,
+      "end": 226,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Minor On",
+          "startBar": 56.25,
+          "endBar": 56.5,
+          "start": 0.25,
+          "end": 0.5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 479,
+      "title": "Nancy",
+      "row": 7,
+      "startBar": 62,
+      "endBar": 63,
+      "start": 248,
+      "end": 252,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Minor On",
+          "startBar": 62,
+          "endBar": 63,
+          "start": 6,
+          "end": 7,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Fm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 480,
+      "title": "Quiet Nights Of Quiet Stars",
+      "row": 0,
+      "startBar": 4,
+      "endBar": 5,
+      "start": 16,
+      "end": 20,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 4,
+          "endBar": 5,
+          "start": 4,
+          "end": 5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Gm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 480,
+      "title": "Quiet Nights Of Quiet Stars",
+      "row": 1,
+      "startBar": 10,
+      "endBar": 11,
+      "start": 40,
+      "end": 44,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 10,
+          "endBar": 11,
+          "start": 2,
+          "end": 3,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 4,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Em7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 480,
+      "title": "Quiet Nights Of Quiet Stars",
+      "row": 1,
+      "startBar": 13.75,
+      "endBar": 14,
+      "start": 55,
+      "end": 56,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 13.75,
+          "endBar": 14,
+          "start": 5.75,
+          "end": 6,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 480,
+      "title": "Quiet Nights Of Quiet Stars",
+      "row": 1,
+      "startBar": 14,
+      "endBar": 14.75,
+      "start": 56,
+      "end": 59,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 14,
+          "endBar": 14.75,
+          "start": 6,
+          "end": 6.75,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 480,
+      "title": "Quiet Nights Of Quiet Stars",
+      "row": 2,
+      "startBar": 20,
+      "endBar": 21,
+      "start": 80,
+      "end": 84,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 20,
+          "endBar": 21,
+          "start": 4,
+          "end": 5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Gm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 480,
+      "title": "Quiet Nights Of Quiet Stars",
+      "row": 3,
+      "startBar": 24,
+      "endBar": 25,
+      "start": 96,
+      "end": 100,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 24,
+          "endBar": 25,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Fm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 480,
+      "title": "Quiet Nights Of Quiet Stars",
+      "row": 3,
+      "startBar": 30,
+      "endBar": 31,
+      "start": 120,
+      "end": 124,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 30,
+          "endBar": 31,
+          "start": 6,
+          "end": 7,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 4,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Em7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 481,
+      "title": "Recorda-Me",
+      "row": 0,
+      "startBar": 1,
+      "endBar": 5,
+      "start": 4,
+      "end": 20,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 1,
+          "endBar": 5,
+          "start": 1,
+          "end": 5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 481,
+      "title": "Recorda-Me",
+      "row": 2,
+      "startBar": 17,
+      "endBar": 21,
+      "start": 68,
+      "end": 84,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 17,
+          "endBar": 21,
+          "start": 1,
+          "end": 5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 482,
+      "title": "Solar",
+      "row": 0,
+      "startBar": 0,
+      "endBar": 2,
+      "start": 0,
+      "end": 8,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 0,
+          "endBar": 2,
+          "start": 0,
+          "end": 2,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
       "brick": "Minor Perfect",
       "slug": "minor-perfect",
       "song": 71,
@@ -89887,6 +92352,220 @@
       "reason": "on-off-family"
     },
     {
+      "brick": "Off On Minor IV",
+      "slug": "off-on-minor-iv",
+      "song": 476,
+      "title": "Bewitched",
+      "row": 3,
+      "startBar": 16.25,
+      "endBar": 20.25,
+      "start": 65,
+      "end": 81,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Off On Minor IV",
+          "startBar": 16.25,
+          "endBar": 20.25,
+          "start": 0,
+          "end": 4,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Off On Minor IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm"
+          ]
+        },
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Am"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "Off On Minor IV",
+      "slug": "off-on-minor-iv",
+      "song": 476,
+      "title": "Bewitched",
+      "row": 7,
+      "startBar": 48.25,
+      "endBar": 52.25,
+      "start": 193,
+      "end": 209,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Off On Minor IV",
+          "startBar": 48.25,
+          "endBar": 52.25,
+          "start": 0,
+          "end": 4,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Off On Minor IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm"
+          ]
+        },
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Am"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "Off On Minor IV",
+      "slug": "off-on-minor-iv",
+      "song": 479,
+      "title": "Nancy",
+      "row": 0,
+      "startBar": 7,
+      "endBar": 7.5,
+      "start": 28,
+      "end": 30,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Off On Minor IV",
+          "startBar": 7,
+          "endBar": 7.5,
+          "start": 7,
+          "end": 7.5,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Off On Minor IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm"
+          ]
+        },
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Gm7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "Off On Minor IV",
+      "slug": "off-on-minor-iv",
+      "song": 479,
+      "title": "Nancy",
+      "row": 5,
+      "startBar": 40,
+      "endBar": 40.5,
+      "start": 160,
+      "end": 162,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Off On Minor IV",
+          "startBar": 40,
+          "endBar": 40.5,
+          "start": 0,
+          "end": 0.5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Off On Minor IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm"
+          ]
+        },
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Gm7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
       "brick": "Off On Minor VII",
       "slug": "off-on-minor-vii",
       "song": 261,
@@ -93095,6 +95774,324 @@
       "reason": "on-off-family"
     },
     {
+      "brick": "On Off Major III",
+      "slug": "on-off-major-iii",
+      "song": 479,
+      "title": "Nancy",
+      "row": 0,
+      "startBar": 4.5,
+      "endBar": 5,
+      "start": 18,
+      "end": 20,
+      "segments": [
+        {
+          "row": 0,
+          "label": "On Off Major III",
+          "startBar": 4.5,
+          "endBar": 5,
+          "start": 4.5,
+          "end": 5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "On Off Major III"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "D"
+          ]
+        },
+        {
+          "root": 6,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "F#m"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Major III",
+      "slug": "on-off-major-iii",
+      "song": 479,
+      "title": "Nancy",
+      "row": 1,
+      "startBar": 12.5,
+      "endBar": 13,
+      "start": 50,
+      "end": 52,
+      "segments": [
+        {
+          "row": 1,
+          "label": "On Off Major III",
+          "startBar": 12.5,
+          "endBar": 13,
+          "start": 4.5,
+          "end": 5,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "On Off Major III"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "D"
+          ]
+        },
+        {
+          "root": 6,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "F#m"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Major III",
+      "slug": "on-off-major-iii",
+      "song": 479,
+      "title": "Nancy",
+      "row": 3,
+      "startBar": 28.5,
+      "endBar": 29,
+      "start": 114,
+      "end": 116,
+      "segments": [
+        {
+          "row": 3,
+          "label": "On Off Major III",
+          "startBar": 28.5,
+          "endBar": 29,
+          "start": 4.5,
+          "end": 5,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "On Off Major III"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "D"
+          ]
+        },
+        {
+          "root": 6,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "F#m"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Major III",
+      "slug": "on-off-major-iii",
+      "song": 479,
+      "title": "Nancy",
+      "row": 4,
+      "startBar": 37.5,
+      "endBar": 38,
+      "start": 150,
+      "end": 152,
+      "segments": [
+        {
+          "row": 4,
+          "label": "On Off Major III",
+          "startBar": 37.5,
+          "endBar": 38,
+          "start": 5.5,
+          "end": 6,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "On Off Major III"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "D"
+          ]
+        },
+        {
+          "root": 6,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "F#m"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Major III",
+      "slug": "on-off-major-iii",
+      "song": 479,
+      "title": "Nancy",
+      "row": 5,
+      "startBar": 45.5,
+      "endBar": 46,
+      "start": 182,
+      "end": 184,
+      "segments": [
+        {
+          "row": 5,
+          "label": "On Off Major III",
+          "startBar": 45.5,
+          "endBar": 46,
+          "start": 5.5,
+          "end": 6,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "On Off Major III"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "D"
+          ]
+        },
+        {
+          "root": 6,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "F#m"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Major III",
+      "slug": "on-off-major-iii",
+      "song": 479,
+      "title": "Nancy",
+      "row": 7,
+      "startBar": 61.5,
+      "endBar": 62,
+      "start": 246,
+      "end": 248,
+      "segments": [
+        {
+          "row": 7,
+          "label": "On Off Major III",
+          "startBar": 61.5,
+          "endBar": 62,
+          "start": 5.5,
+          "end": 6,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "On Off Major III"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "D"
+          ]
+        },
+        {
+          "root": 6,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "F#m"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
       "brick": "On Off Major IV",
       "slug": "on-off-major-iv",
       "song": 73,
@@ -96075,6 +99072,59 @@
           "bass": null,
           "symbols": [
             "C9"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Major IV",
+      "slug": "on-off-major-iv",
+      "song": 476,
+      "title": "Bewitched",
+      "row": 8,
+      "startBar": 62.25,
+      "endBar": 63.25,
+      "start": 249,
+      "end": 253,
+      "segments": [
+        {
+          "row": 8,
+          "label": "On Off Major IV",
+          "startBar": 62.25,
+          "endBar": 63.25,
+          "start": 6,
+          "end": 7,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "On Off Major IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        },
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "F"
           ]
         }
       ],
@@ -106150,6 +109200,116 @@
       "reason": "on-off-family"
     },
     {
+      "brick": "On Off Minor IV",
+      "slug": "on-off-minor-iv-jwgxd3",
+      "song": 474,
+      "title": "Beautiful Love",
+      "row": 1,
+      "startBar": 9,
+      "endBar": 11,
+      "start": 36,
+      "end": 44,
+      "segments": [
+        {
+          "row": 1,
+          "label": "On Off Minor IV",
+          "startBar": 9,
+          "endBar": 11,
+          "start": 1,
+          "end": 3,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "On Off Minor IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        },
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Gm7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Minor IV",
+      "slug": "on-off-minor-iv-jwgxd3",
+      "song": 474,
+      "title": "Beautiful Love",
+      "row": 3,
+      "startBar": 25,
+      "endBar": 27,
+      "start": 100,
+      "end": 108,
+      "segments": [
+        {
+          "row": 3,
+          "label": "On Off Minor IV",
+          "startBar": 25,
+          "endBar": 27,
+          "start": 1,
+          "end": 3,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "On Off Minor IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        },
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Gm7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
       "brick": "On Off Minor Nowhere",
       "slug": "on-off-minor-nowhere",
       "song": 2,
@@ -107997,6 +111157,165 @@
           "bass": null,
           "symbols": [
             "Bb7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Minor Nowhere",
+      "slug": "on-off-minor-nowhere",
+      "song": 479,
+      "title": "Nancy",
+      "row": 1,
+      "startBar": 15,
+      "endBar": 16,
+      "start": 60,
+      "end": 64,
+      "segments": [
+        {
+          "row": 1,
+          "label": "On Off Minor Nowhere",
+          "startBar": 15,
+          "endBar": 16,
+          "start": 7,
+          "end": 8,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "On Off Minor Nowhere"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm"
+          ]
+        },
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Abm"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Minor Nowhere",
+      "slug": "on-off-minor-nowhere",
+      "song": 479,
+      "title": "Nancy",
+      "row": 6,
+      "startBar": 48,
+      "endBar": 49,
+      "start": 192,
+      "end": 196,
+      "segments": [
+        {
+          "row": 6,
+          "label": "On Off Minor Nowhere",
+          "startBar": 48,
+          "endBar": 49,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "On Off Minor Nowhere"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm"
+          ]
+        },
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Abm"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Minor Nowhere",
+      "slug": "on-off-minor-nowhere",
+      "song": 479,
+      "title": "Nancy",
+      "row": 8,
+      "startBar": 64,
+      "endBar": 65,
+      "start": 256,
+      "end": 260,
+      "segments": [
+        {
+          "row": 8,
+          "label": "On Off Minor Nowhere",
+          "startBar": 64,
+          "endBar": 65,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "On Off Minor Nowhere"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm"
+          ]
+        },
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Abm"
           ]
         }
       ],
@@ -117520,6 +120839,61 @@
           "bass": null,
           "symbols": [
             "Bb6"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off On To V",
+      "slug": "on-off-on-to-v",
+      "song": 477,
+      "title": "The Christmas Song (Chestnuts Roasting On An Open Fire)",
+      "row": 0,
+      "startBar": 0,
+      "endBar": 1.5,
+      "start": 0,
+      "end": 6,
+      "segments": [
+        {
+          "row": 0,
+          "label": "On Off On To V",
+          "startBar": 0,
+          "endBar": 1.5,
+          "start": 0,
+          "end": 1.5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "On Off On To V"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "Eb6"
+          ]
+        },
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Bb7"
           ]
         }
       ],

@@ -17,10 +17,10 @@
     "mergedFamilies": 11,
     "removedFamilies": 28,
     "outputFamilies": 123,
-    "rawPassages": 6689,
+    "rawPassages": 6811,
     "mergedPassages": 22,
     "removedPassages": 48,
-    "keptPassages": 6641,
+    "keptPassages": 6763,
     "supportBasis": "distinct standards",
     "minimumTargetStandards": 2,
     "maxVariantDistance": 0.28,
@@ -37,13 +37,13 @@
     "sourceLabels": "Merged raw row labels remain unchanged and resolve through unioned aliases; unmatched one-standard labels are removed only at audited source positions"
   },
   "integrity": {
-    "standards": 474,
-    "musicBeforeSha256": "04ea2617f0afc2b9933afbff8d451a6f14c9ad336f380d05fed15f8d672bf871",
-    "musicAfterSha256": "04ea2617f0afc2b9933afbff8d451a6f14c9ad336f380d05fed15f8d672bf871",
-    "runtimeSpanSha256": "61d9dee92e60c26cef93e4cc77c1b5ca194e9ee7e5b2d8af39696ee5597aef59",
-    "indexSpanSha256": "61d9dee92e60c26cef93e4cc77c1b5ca194e9ee7e5b2d8af39696ee5597aef59",
-    "runtimePassages": 6641,
-    "indexPassages": 6641,
+    "standards": 483,
+    "musicBeforeSha256": "5d90fa6271ee2964f0d81773bfb767190763ad2ce734529da04aa6689835c966",
+    "musicAfterSha256": "5d90fa6271ee2964f0d81773bfb767190763ad2ce734529da04aa6689835c966",
+    "runtimeSpanSha256": "f72e0a6aa7fcbb1cbe5a42a9bb39a9808f29259c3607dba1525d68b6d8ee6451",
+    "indexSpanSha256": "f72e0a6aa7fcbb1cbe5a42a9bb39a9808f29259c3607dba1525d68b6d8ee6451",
+    "runtimePassages": 6763,
+    "indexPassages": 6763,
     "remainingOneStandardFamilies": 0
   },
   "summary": [
@@ -2095,7 +2095,8 @@
             377,
             386,
             389,
-            436
+            436,
+            476
           ],
           "sourceStructure": {
             "chords": [
@@ -5089,7 +5090,8 @@
             393,
             405,
             410,
-            470
+            470,
+            477
           ],
           "sourceStructure": {
             "chords": [
@@ -7615,7 +7617,8 @@
             429,
             452,
             465,
-            467
+            467,
+            476
           ],
           "sourceStructure": {
             "chords": [
@@ -7961,7 +7964,8 @@
             452,
             454,
             456,
-            464
+            464,
+            477
           ],
           "sourceStructure": {
             "chords": [
@@ -8466,7 +8470,8 @@
             449,
             451,
             463,
-            464
+            464,
+            476
           ],
           "distance": 0,
           "pairs": [
@@ -8533,7 +8538,8 @@
                 449,
                 451,
                 463,
-                464
+                464,
+                476
               ],
               "sourceStructure": {
                 "chords": [
@@ -12927,7 +12933,8 @@
             445,
             450,
             458,
-            470
+            470,
+            474
           ],
           "sourceStructure": {
             "chords": [
@@ -15353,7 +15360,7 @@
       "target": {
         "name": "Amen",
         "slug": "amen",
-        "distinctStandards": 20,
+        "distinctStandards": 21,
         "standards": [
           50,
           66,
@@ -15374,7 +15381,8 @@
           398,
           414,
           446,
-          460
+          460,
+          479
         ]
       },
       "distance": 0.10499999999999998,
@@ -15404,7 +15412,8 @@
             220,
             340,
             377,
-            460
+            460,
+            479
           ],
           "sourceStructure": {
             "chords": [
@@ -15517,7 +15526,8 @@
             398,
             414,
             446,
-            460
+            460,
+            479
           ],
           "distance": 0.10499999999999998,
           "pairs": [
@@ -15546,7 +15556,8 @@
                 220,
                 340,
                 377,
-                460
+                460,
+                479
               ],
               "sourceStructure": {
                 "chords": [
@@ -17225,7 +17236,7 @@
       "target": {
         "name": "Nowhere",
         "slug": "nowhere",
-        "distinctStandards": 93,
+        "distinctStandards": 94,
         "standards": [
           4,
           15,
@@ -17319,7 +17330,8 @@
           465,
           466,
           467,
-          470
+          470,
+          474
         ]
       },
       "distance": 0,
@@ -17602,7 +17614,8 @@
             465,
             466,
             467,
-            470
+            470,
+            474
           ],
           "distance": 0,
           "pairs": [
@@ -18183,7 +18196,8 @@
             429,
             452,
             465,
-            467
+            467,
+            476
           ],
           "sourceStructure": {
             "chords": [
@@ -18374,7 +18388,8 @@
             452,
             454,
             456,
-            464
+            464,
+            477
           ],
           "sourceStructure": {
             "chords": [
@@ -23830,7 +23845,8 @@
             463,
             465,
             467,
-            472
+            472,
+            476
           ],
           "distance": 0.2575,
           "pairs": [
@@ -24223,7 +24239,9 @@
             465,
             466,
             469,
-            471
+            471,
+            474,
+            477
           ],
           "distance": 0.265,
           "pairs": [
@@ -24430,7 +24448,8 @@
             435,
             440,
             443,
-            473
+            473,
+            479
           ],
           "distance": 0.265,
           "pairs": [
@@ -24464,7 +24483,8 @@
                 346,
                 427,
                 440,
-                443
+                443,
+                479
               ],
               "sourceStructure": {
                 "chords": [
@@ -29160,7 +29180,8 @@
             346,
             427,
             440,
-            443
+            443,
+            479
           ],
           "sourceStructure": {
             "chords": [

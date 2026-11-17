@@ -249,6 +249,37 @@ def decode(path,version,lilypond,qualities,source_root,work_dir,allow_source_int
   provenance['validation']='Exact source compiler durations, pickup-aligned bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation'
  return {'id':identifier,'melodyId':identifier,'normalizedTitle':normalize(attrs['title']),'title':attrs['title'],'composer':attrs.get('composer',''),'tonic':tonic,'tonicConfidence':'high','meter':meter,'barBeats':rounded(bar_beats),'bars':len(measures),'totalBeats':rounded(total),'pickupBeats':rounded(pickup),'notes':notes,'chords':chord_events,'measures':measures,'provenance':provenance,'midi':'melodies/'+identifier+'.mid'}
 
+def apply_harmonic_reference(entry,reference,original):
+ """Curated home tonic is distinct from the literal LilyPond key declaration.
+ Only pinned, explicit source chord evidence may establish this exception.
+ No melody, source harmony, duration or declared-key provenance is rewritten.
+ """
+ p=entry['provenance'];declared=reference['sourceDeclaredKey'];target=reference['normalizationTonic']
+ if (entry['id']!=reference['melodyId'] or p['path']!=reference['sourcePath'] or p['sourceVersion']!=reference['sourceVersion'] or p['sha256']!=reference['sourceSha256'] or entry['tonic']!=[declared['root'],declared['mode']] or p['sourceKeySignature']!=declared):raise ValueError('Harmonic reference source identity mismatch')
+ if original['index']!=reference['canonicalSong'] or target['mode']!='Minor' or original['tonic'][1]!='Minor' or pc(target['root'])!=pc(original['tonic'][0]):raise ValueError('Harmonic reference canonical identity mismatch')
+ chords=entry['chords'];tonic=pc(target['root'])
+ def checked(event):
+  index=event['index']
+  if not isinstance(index,int) or index<0 or index>=len(chords):raise ValueError('Harmonic reference event missing')
+  c=chords[index]
+  if any(c.get(key)!=event.get(key) for key in ['symbol','start','end','sourceLine']):raise ValueError('Harmonic reference event changed')
+  match=re.match(r'^([A-G][b#]*)',c['symbol'])
+  if not match:raise ValueError('Harmonic reference event is silent')
+  root=pc(match[1]);intervals={(pitch-root)%12 for pitch in c.get('sourceCorePitches',c['sourcePitches'])}
+  return root,intervals
+ evidence=reference['evidence'];events=evidence['tonicChordEvents'];resolutions=evidence['dominantResolutions']
+ if len(events)<2 or not resolutions:raise ValueError('Insufficient harmonic reference evidence')
+ for event in events:
+  root,intervals=checked(event)
+  if root!=tonic or 3 not in intervals or 4 in intervals:raise ValueError('Harmonic reference tonic is not compiled minor')
+ for resolution in resolutions:
+  d,t=resolution['dominant'],resolution['tonic'];root,intervals=checked(d);tr,ti=checked(t)
+  if t['index']!=d['index']+1 or abs(d['end']-t['start'])>1e-7 or root!=(tonic+7)%12 or not {4,10}<=intervals or tr!=tonic or 3 not in ti or 4 in ti:raise ValueError('Harmonic reference resolution is not an adjacent source V7-i')
+ p['sourceDeclaredKey']=dict(declared);p['normalizationTonic']=dict(target);p['harmonicTonicReference']=reference
+ p['tonicBasis']='Explicit curated harmonic reference: recurring compiled minor tonic, source V7-i resolution and canonical roadmap tonic; literal source key retained separately'
+ entry['tonic']=[target['root'],target['mode']];entry['tonicConfidence']='high'
+ return entry
+
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--source-dir',type=Path,required=True);parser.add_argument('--lilypond',required=True);parser.add_argument('--work-dir',type=Path,default=Path(tempfile.gettempdir())/'insights-openbook-build');parser.add_argument('--archive',type=Path);parser.add_argument('--only',default=None);parser.add_argument('--jobs',type=int,default=4);parser.add_argument('--append-missing',action='store_true');parser.add_argument('--source-intervals',action='store_true');parser.add_argument('--pickups',action='store_true');args=parser.parse_args();args.work_dir.mkdir(parents=True,exist_ok=True)
  prior=json.loads((ROOT/'dist/data/openbook-melodies.json').read_text()) if args.append_missing else None
@@ -263,6 +294,12 @@ def main():
    song=originals[alias['canonicalSong']];key=normalize(alias['sourceTitle'])
    if song['title']!=alias['canonicalTitle'] or song.get('composer','')!=alias['canonicalComposer'] or key in by_title and by_title[key]['index']!=song['index'] or key in aliases:raise ValueError('Ambiguous title alias')
    by_title[key]=song;aliases[key]=alias
+ references_file=ROOT/'src/music/melody-tonic-references.json';references={}
+ if references_file.exists():
+  references_data=json.loads(references_file.read_text())
+  if references_data['sourceCommit']!=COMMIT:raise ValueError('Harmonic reference source commit mismatch')
+  references={r['melodyId']:r for r in references_data['entries']}
+  if len(references)!=len(references_data['entries']):raise ValueError('Duplicate harmonic reference')
  archive=args.archive or args.source_dir.parent/'openbook.tar.gz'
  with tarfile.open(archive) as packed:
   if packed.pax_headers.get('comment')!=COMMIT:raise ValueError('Source archive commit does not match pinned OpenBook revision')
@@ -285,6 +322,7 @@ def main():
     original=by_title[entry['normalizedTitle']]
     alias=aliases.get(entry['normalizedTitle'])
     if alias:entry['compositionTitle']=alias['canonicalTitle'];entry['provenance']['compositionIdentity']={'canonicalSong':alias['canonicalSong'],'canonicalTitle':alias['canonicalTitle'],'sourceTitle':entry['title'],'canonicalComposer':alias['canonicalComposer'],'sourceComposer':entry['composer'],'basis':'Explicit reviewed title alias; source title and credits retained without rewriting'}
+    if entry['id'] in references:entry=apply_harmonic_reference(entry,references[entry['id']],original)
     if entry['tonic'][1].lower()!=original['tonic'][1].lower():raise ValueError('Source key declaration mode disagrees with original harmonic mode; requires tonic review')
     return entry,attempts
    except Exception as error:attempts.append({'title':meta['attributes']['title'],'path':str(path.relative_to(args.source_dir)),'version':version,'reason':str(error)})
@@ -302,7 +340,7 @@ def main():
   for old in (ROOT/'dist/melodies').glob('openbook-*.mid'):
    if old.name not in current_midis:old.unlink()
  output={'version':1,'timeUnit':'quarter-note','pitchBasis':'source','sources':[source],'entries':entries};(ROOT/'dist/data/openbook-melodies.json').write_text(json.dumps(output,separators=(',',':'),ensure_ascii=False)+'\n')
- audit={'version':1,'sources':[source],'counts':{'originalTitleSources':(prior_audit['counts']['originalTitleSources'] if prior_audit else len(paths)),'validatedArrangements':len(entries),'notes':sum(len(e['notes']) for e in entries),'attemptsExcluded':len(failures),'sourceIntervalOverrides':sum('sourceIntervals' in c for e in entries for c in e['chords'])},'policy':{'selection':'Only original-catalogue titles or pinned explicit title aliases. Prefer complete Real version, then declared default, then remaining encoded versions; first fully validated arrangement per composition.','tonic':'Explicit source key/mode only. Source declaration mode differing from original composition harmonic mode is excluded for review; relative-major signatures are not silently treated as actual tonic.','skips':'Blank chord-label skips hold preceding harmony with explicit continuation provenance; rests are NC and initial blanks remain NC.','navigation':'Textual DC/DS/Coda excluded. One matching initial source-compiled pickup and final partial measure map are admitted only with --pickups; no inferred return or invented note. Written volta and alternatives unfolded by LilyPond.','timing':'Compiled melody MIDI and independently unfolded chord AST must have equal total duration; every explicit barcheck must be on the source meter grid after any admitted pickup. Exact source measure durations retained without padding, cropping or stretching.','sourceChordValidation':'Direct syntax agrees exactly with compiled pitches. Where vocabulary differs, independently compiled slash-free source chord cores provide explicit compound intervals; original and core pitch-class sets plus explicit bass must agree.','alignment':'Entries are whole source arrangements. Existing roadmap compatibility still requires exact root/rhythm check; title match alone never authorizes melody overlay.'},'entries':[{'id':e['id'],'title':e['title'],'originalSong':by_title[e['normalizedTitle']]['index'],'originalBars':by_title[e['normalizedTitle']]['bars'],'sourceBars':e['bars'],'notes':len(e['notes']),'chords':len(e['chords']),'provenance':e['provenance']} for e in entries],'excludedAttempts':failures,'metadataErrors':metadata_errors}
+ audit={'version':1,'sources':[source],'counts':{'originalTitleSources':(prior_audit['counts']['originalTitleSources'] if prior_audit else len(paths)),'validatedArrangements':len(entries),'notes':sum(len(e['notes']) for e in entries),'attemptsExcluded':len(failures),'sourceIntervalOverrides':sum('sourceIntervals' in c for e in entries for c in e['chords'])},'policy':{'selection':'Only original-catalogue titles or pinned explicit title aliases. Prefer complete Real version, then declared default, then remaining encoded versions; first fully validated arrangement per composition.','tonic':'Literal source key/mode retained. Pinned curated harmonic references may select the canonical minor home only with recurring compiled minor-tonic chords and explicit V7-i source resolutions. All other source/canonical mode conflicts remain excluded; no blind relative-major fallback.','skips':'Blank chord-label skips hold preceding harmony with explicit continuation provenance; rests are NC and initial blanks remain NC.','navigation':'Textual DC/DS/Coda excluded. One matching initial source-compiled pickup and final partial measure map are admitted only with --pickups; no inferred return or invented note. Written volta and alternatives unfolded by LilyPond.','timing':'Compiled melody MIDI and independently unfolded chord AST must have equal total duration; every explicit barcheck must be on the source meter grid after any admitted pickup. Exact source measure durations retained without padding, cropping or stretching.','sourceChordValidation':'Direct syntax agrees exactly with compiled pitches. Where vocabulary differs, independently compiled slash-free source chord cores provide explicit compound intervals; original and core pitch-class sets plus explicit bass must agree.','alignment':'Entries are whole source arrangements. Existing roadmap compatibility still requires exact root/rhythm check; title match alone never authorizes melody overlay.'},'entries':[{'id':e['id'],'title':e['title'],'originalSong':by_title[e['normalizedTitle']]['index'],'originalBars':by_title[e['normalizedTitle']]['bars'],'sourceBars':e['bars'],'notes':len(e['notes']),'chords':len(e['chords']),'provenance':e['provenance']} for e in entries],'excludedAttempts':failures,'metadataErrors':metadata_errors}
  (ROOT/'evidence/openbook-melody-audit.json').write_text(json.dumps(audit,indent=2,ensure_ascii=False)+'\n');print(json.dumps(audit['counts']))
 
 if __name__=='__main__':main()

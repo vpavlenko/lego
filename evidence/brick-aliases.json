@@ -23,8 +23,8 @@
       "aliases": [
         "Chromatically Descending Dom..."
       ],
-      "standards": 6,
-      "passages": 8
+      "standards": 7,
+      "passages": 9
     },
     {
       "name": "Diatonic I ii iii ii",
@@ -63,8 +63,8 @@
       "aliases": [
         "I¥ n Back"
       ],
-      "standards": 16,
-      "passages": 20
+      "standards": 17,
+      "passages": 24
     },
     {
       "name": "IV n Bauble",
@@ -203,8 +203,8 @@
         "Minor Perfect Cade",
         "Minor Perfect."
       ],
-      "standards": 45,
-      "passages": 102
+      "standards": 46,
+      "passages": 103
     },
     {
       "name": "Nowhere Launcher",
@@ -251,8 +251,8 @@
       "aliases": [
         "On Off Major Ill"
       ],
-      "standards": 12,
-      "passages": 22
+      "standards": 13,
+      "passages": 28
     },
     {
       "name": "On Off Major VII",
@@ -292,8 +292,8 @@
         "Perfect Caden.",
         "Perfect Cadenc..."
       ],
-      "standards": 140,
-      "passages": 476
+      "standards": 141,
+      "passages": 478
     },
     {
       "name": "Sad Launcher",
@@ -319,8 +319,8 @@
         "Straight Appro.",
         "Straight Approa..."
       ],
-      "standards": 166,
-      "passages": 366
+      "standards": 172,
+      "passages": 381
     },
     {
       "name": "Straight Cadence + Dominant Overrun",
