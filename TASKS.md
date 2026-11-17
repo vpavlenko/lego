@@ -21,3 +21,10 @@ Implementation status for the current combined delivery. All requests are implem
 | Public site, no sign-in gate | Live | Root | Native Sites access_mode=public, revision 2; anonymous HTTP and Safari verified |
 | Verified links to existing Rawl renditions | Published | Notation agent + root | 69 verified renditions across 34 standards; header and usage-list links |
 | Integrated validation, exact source sync, deployment | Complete | Root | 42 checks pass; 1,007 generated MIDI roundtrips; version 8 deployed; anonymous access and exact assets verified |
+
+## Catalogue consolidation
+
+| Request | Status | Evidence / next step |
+|---|---|---|
+| Single grouped Bricks catalogue | Verified locally | Bricks navigation and detail back links point to bricks.html; legacy #bricks and atlas.html redirect; alphabetical catalogue removed |
+| AABA subgroups | Auditing | Compare A-ending bricks and B sequences from actual timed source passages |

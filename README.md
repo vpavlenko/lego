@@ -55,7 +55,7 @@ key changes, render callbacks, and playback position. It uses Caplin's 3 px pitc
 axis and 5 px notes, Rawl's colors/corner shapes, and row-local held-note ranges.
 The host owns audio, routing, realization, and download controls.
 
-`#bricks` lists 299 canonical brick identities from the 354 source labels. Each
+`bricks.html` is the single grouped catalogue of 299 canonical brick identities from the 354 source labels. Each
 `#brick/<slug>` page lists every matching standard and its exact source passages.
 Brick links in both score views are reciprocal. Passage links open the standard
 at that beat and highlight its brick label. These are matches in the PDF's
@@ -137,7 +137,7 @@ The join-key lookup uses the region covering the join onset, including joins wit
 
 Typography aliases are explicit in `src/music/brick-aliases.mjs`; `evidence/brick-aliases.json` records the merged groups and counts. Impro-Visor `RoadMapSettings.trimString` and `GraphicBrick` shorten labels to fit pixels. Visible `+` modifiers are retained; an unknown `+...` extension is not equated with a base brick or a guessed Overrun/Dropback. Minor Dropback combines four shortened spellings into one page with nine unique standards and eleven source passages.
 
-`atlas.html` renders every canonical brick on a single full-width page without the reader's top bar or sidebar. Impro-Visor type groups flow into dense columns, each group retaining a vertical stack of complete Rawl previews. Cards link to their standards page and share one playback transport. All previews render together; a single 848 KB dataset supplies the 299 examples.
+`bricks.html` renders every canonical brick on a single full-width page without the reader's top bar or sidebar. Impro-Visor type groups flow into dense columns, each group retaining a vertical stack of complete Rawl previews. Cards link to their standards page and share one playback transport. All previews render together; a single dataset supplies the 299 examples. The Bricks navigation and detail-page back links go directly here. Legacy `#bricks` and `atlas.html` URLs redirect here; the separate alphabetical catalogue has been removed.
 
 Type metadata is pinned in `src/music/brick-types.json` from the inspected `My.dictionary`. Exact types take precedence; multiple declared types use the name's explicit type or the most common declaration. Old Launcher labels correspond to Approach, and explicit type words provide fallbacks for historic names absent from the current dictionary. Classification basis is retained in the atlas data. Truncated names and hidden `+...` modifiers whose type cannot be identified remain Unclassified (51 entries); no missing extension is guessed.
 

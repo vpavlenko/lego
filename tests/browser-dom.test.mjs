@@ -17,7 +17,7 @@ test('Rawl playback, brick pages, deep links and existing chart views work toget
  const ctx={state:'running',get currentTime(){return (Date.now()-stamp)/1000;},destination:{},resume:async()=>{},createGain:()=>({gain:{value:1,setTargetAtTime(){}},connect(){},disconnect(){}})};
  const engine={play(plan,mixers,offset){stamp=Date.now();events.plays.push({plan,offset});return 0;},createClock(plan,start,offset){const beat=()=>Math.min(plan.beats,offset+(Date.now()-stamp)/1000*120/60);return {position:beat,beat};},audition(note){events.auditions.push(note);}};
  globalThis.SoundFontPlayback={getContext:()=>ctx,prepare:async()=>engine,stop(){}};
- await import('../dist/app.js?browser-dom');
+ const {route}=await import('../dist/app.js?browser-dom');
  const $=s=>w.document.querySelector(s);
  await wait(()=>$('#rawl-view [data-note]'));
  assert.equal($('#bass-voice'),null);assert.ok([...w.document.querySelectorAll('#rawl-view [data-note]')].every(el=>el.dataset.voice==='0'));
@@ -53,15 +53,16 @@ test('Rawl playback, brick pages, deep links and existing chart views work toget
  assert.ok($('#midi-download').getAttribute('href').startsWith('./midi/brick-variants/'+entry.slug+'--'));$('#play').click();await wait(()=>$('#play').textContent==='Pause');await wait(()=>$('.variant-rawl .rawln-sounding'));$('#stop').click();assert.equal($('.variant-rawl .rawln-sounding'),null);
  const passage=$('.passages a');w.location.hash=passage.getAttribute('href');await wait(()=>$('#song-view').hidden===false&&$('#play').disabled===false);
  assert.ok($('#score .selected-brick'));assert.equal($('#stop').disabled,false);
- w.location.hash='#bricks';await wait(()=>$('#brick-view h1')?.textContent==='Bricks');assert.equal(w.document.querySelectorAll('.brick-catalog-row').length,299);
+ assert.equal($('#bricks-nav').getAttribute('href'),'./bricks.html');assert.equal($('#brick-view>.back-link').getAttribute('href'),'./bricks.html');assert.equal(w.document.querySelectorAll('.brick-catalog-row').length,0);
  w.location.hash='#brick/minor-dr';await wait(()=>$('#brick-view h1')?.textContent==='Minor Dropback'&&$('.variant-rawl [data-note]'));assert.equal(w.location.hash,'#brick/minor-dropback');assert.equal(new Set([...w.document.querySelectorAll('.brick-match')].map(el=>el.dataset.song)).size,9);assert.equal(w.document.querySelectorAll('.brick-variant').length,6);const second=$('.brick-variant:nth-child(2) .variant-play');second.click();await wait(()=>second.textContent==='Pause');assert.equal($('.brick-variant:nth-child(2)').classList.contains('active-variant'),true);$('#stop').click();
  $('#search').value='Minor Dr';$('#search').dispatchEvent(new w.Event('input'));assert.equal(w.document.querySelectorAll('#songs .song-link').length,2);
  const rawMatch=[...w.document.querySelectorAll('.passages a')].find(a=>a.getAttribute('href').includes('brick=minor-dropback'));w.location.hash=rawMatch.getAttribute('href');await wait(()=>$('#song-view').hidden===false&&!$('#play').disabled);assert.ok($('#score .selected-brick'));assert.ok([...w.document.querySelectorAll('#score .selected-brick')].every(el=>el.textContent==='Minor Dropback'));
- w.location.hash='#bricks';await wait(()=>$('#brick-view h1')?.textContent==='Bricks');
+ w.location.hash='#brick/straight-cadence';await wait(()=>$('#brick-view h1')?.textContent==='Straight Cadence');
  $('#search').value='Straight Cadence';$('#search').dispatchEvent(new w.Event('input'));assert.ok(w.document.querySelectorAll('#songs .song-link').length>0);
  w.location.hash='#012';await wait(()=>$('#title').textContent==='Autumn Leaves'&&!$('#play').disabled);assert.equal($('#tonic').textContent.trim(),'C minor');
  $('#notation-view').click();await wait(()=>$('#rawl-view [data-note]'));assert.equal($('#midi-download').getAttribute('href'),'./midi/012.mid');const rawlLinks=read('data/rawl-links.json').standards[12];assert.ok(rawlLinks.length);assert.equal($('#rawl-links a').href,rawlLinks[0].url);assert.ok([...w.document.querySelectorAll('#rawl-links a')].every(a=>a.target==='_blank'&&a.rel==='noopener'));
  w.location.hash='#brick/yardbird-clipped';await wait(()=>$('#brick-view h1')?.textContent.startsWith('Yardbird'));await wait(()=>$('.unresolved-variants'));assert.equal(w.document.querySelectorAll('.brick-variant').length,0);assert.equal($('#play').disabled,true);w.location.hash='#012';await wait(()=>$('#song-view').hidden===false&&!$('#play').disabled);$('#original').click();assert.equal($('#source-view').hidden,false);assert.equal($('#transport').hidden,true);
  assert.ok(!$('#pdf-link').getAttribute('href').includes('Insights%20in%20Jazz'));
+ history.replaceState(null,'','#bricks');let destination;route(false,url=>{destination=url;});assert.equal(destination,'./bricks.html');
  w.dispatchEvent(new w.Event('beforeunload'));dom.window.close();
 });

@@ -13,7 +13,7 @@ test('atlas covers every canonical brick exactly once and retains source types a
  assert.equal(brickType('Minor Dropback +...',types).type,'Unclassified');assert.equal(brickType('Straight...',types).type,'Unclassified');
 });
 test('standalone atlas renders all previews without navigation and shares one playback transport',async()=>{
- const dom=new JSDOM(fs.readFileSync(new URL('atlas.html',root),'utf8'),{url:'http://localhost:5187/atlas.html',pretendToBeVisual:true}),w=dom.window;
+ const dom=new JSDOM(fs.readFileSync(new URL('bricks.html',root),'utf8'),{url:'http://localhost:5187/bricks.html',pretendToBeVisual:true}),w=dom.window;
  Object.assign(globalThis,{window:w,document:w.document,location:w.location,innerWidth:1400,innerHeight:900,requestAnimationFrame:w.requestAnimationFrame.bind(w),cancelAnimationFrame:w.cancelAnimationFrame.bind(w),matchMedia:()=>({matches:false,addEventListener(){},removeEventListener(){}})});
  Object.defineProperty(globalThis,'navigator',{value:w.navigator,configurable:true});w.HTMLElement.prototype.scrollIntoView=function(){};
  globalThis.fetch=async url=>({ok:true,json:async()=>read(String(url).replace(/^\.\//,''))});
@@ -21,7 +21,7 @@ test('standalone atlas renders all previews without navigation and shares one pl
  globalThis.SoundFontPlayback={getContext:()=>context,prepare:async()=>engine,stop(){}};
  const {ready}=await import('../dist/atlas.js?atlas-test'),atlas=await ready;assert.equal(atlas.cards.size,299);
  await wait(()=>w.document.querySelectorAll('.atlas-preview .rawln').length===299);
- assert.equal(w.document.querySelectorAll('nav,aside,.topbar,#sidebar').length,0);assert.equal(w.document.querySelectorAll('.atlas-card').length,299);assert.equal(w.document.querySelectorAll('.atlas-group').length,read('data/atlas.json').groups.length);
+ assert.equal(w.document.querySelector('h1').firstChild.textContent,'Bricks');assert.equal(w.document.querySelectorAll('nav,aside,.topbar,#sidebar').length,0);assert.equal(w.document.querySelectorAll('.atlas-card').length,299);assert.equal(w.document.querySelectorAll('.atlas-group').length,read('data/atlas.json').groups.length);
  for(const el of w.document.querySelectorAll('.atlas-card')){assert.ok(el.querySelector('[data-note]'));assert.ok(el.querySelector('.rawln-rn'));assert.ok(el.querySelector('h3 a').getAttribute('href').startsWith('./index.html#brick/'));}
  const buttons=[...w.document.querySelectorAll('.atlas-play')];buttons[0].click();await wait(()=>plays===1&&buttons[0].getAttribute('aria-label')==='Pause');buttons[1].click();await wait(()=>plays===2&&buttons[1].getAttribute('aria-label')==='Pause');assert.equal(buttons[0].getAttribute('aria-label'),'Play');assert.equal(w.document.querySelectorAll('.atlas-play[aria-label="Pause"]').length,1);
  buttons[1].click();assert.equal(buttons[1].getAttribute('aria-label'),'Play');atlas.player.stop();assert.equal(w.document.querySelectorAll('.rawln-sounding').length,0);

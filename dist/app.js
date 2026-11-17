@@ -98,19 +98,17 @@ async function openSong(index,params,initial=false){
   setView(view);if(Number.isFinite(seek)){player.seek(seek);scrollToBeat(seek);}
  }catch(error){if(gen!==routeGeneration)return;console.error(error);$('#rawl-view').innerHTML='<span>Unavailable</span> <button id="retry-performance">Retry</button>';$('#retry-performance').onclick=()=>openSong(current,params,true);}
 }
-function brickLink(b){return '#brick/'+b.slug;}
 function standardMatches(matches,b){return matches.map(match=>`<article class="brick-match" data-song="${match.song}"><div class="standard-heading"><a class="standard-title" href="#${pad(match.song)}?brick=${b.slug}&beat=${match.passages[0].start}"><span class="match-number">${pad(match.song+1)}</span>${esc(match.title)}</a>${rawlLinksHTML(match.song)}</div><div class="passages">${match.passages.map(p=>`<a href="#${pad(match.song)}?brick=${b.slug}&beat=${p.start}" title="${Math.floor(p.startBar)+1}–${Math.ceil(p.endBar)}">${Math.floor(p.startBar)+1}–${Math.ceil(p.endBar)}${p.status==='complete'?'':p.status==='partial'?' · Partial':p.status?' · Clipped':''}</a>`).join('')}</div></article>`).join('');}
 function activateVariant(item){if(activeVariant===item)return;player.stop();activeVariant=item;rawl=item.controller;performance=item.variant.performance;currentBeat=null;lastPlaybackRow=-1;player.load(performance);$('#tempo').value=performance.tempo;$('#play').disabled=false;$('#midi-download').href=item.variant.midi;$('#midi-download').download=currentBrick.slug+'--'+item.variant.id+'.mid';for(const other of brickViews)other.element.closest('.brick-variant').classList.toggle('active-variant',other===item);$('#piano-voice').setAttribute('aria-pressed','true');}
-async function openBricks(slug=null,params=new URLSearchParams()){
- restoreTransport();const gen=++routeGeneration;player.stop();destroyViews();performance=null;routeKind=slug?'brick':'bricks';currentBrick=brickBySlug.get(slug)||null;
+async function openBrick(slug,params=new URLSearchParams()){
+ restoreTransport();const gen=++routeGeneration;player.stop();destroyViews();performance=null;routeKind='brick';currentBrick=brickBySlug.get(slug)||null;
+ if(!currentBrick){location.replace('./bricks.html');return;}
  if(currentBrick&&slug!==currentBrick.slug)history.replaceState(null,'','#brick/'+currentBrick.slug+(params.size?'?'+params:''));
  document.body.classList.remove('song-route');$('#song-heading').hidden=true;$('#rawl-links').hidden=true;
  $('#song-view').hidden=true;$('#brick-view').hidden=false;$('#pdf-link').hidden=true;closeMenu();$('#search').value='';
- if(!currentBrick){document.title='Bricks · Insights Roadmaps';$('#brick-view').innerHTML=`<div class="song-eyebrow">${bricks.length} / ${songs.length}</div><h1>Bricks</h1><a class="back-link" href="./atlas.html">Atlas</a><div class="brick-catalog">${bricks.map(b=>`<a class="brick-catalog-row" href="${brickLink(b)}"><span>${esc(b.name)}</span><span>${b.standards.length}</span></a>`).join('')}</div>`;}
- else{const b=currentBrick;document.title=b.name+' · Insights Roadmaps';$('#brick-view').innerHTML=`<a class="back-link" href="#bricks">Bricks</a><h1>${esc(b.name)}</h1><div class="brick-counts"><span>${b.standards.length} <span>standards</span></span><span>${b.passages} <span>passages</span></span></div><div id="brick-preview"><div id="brick-transport"></div><div id="brick-variants">Loading</div></div>`;}
- catalog();window.scrollTo({top:0,behavior:'instant'});if(!currentBrick)return;
+ const b=currentBrick;document.title=b.name+' · Insights Roadmaps';$('#brick-view').innerHTML=`<a class="back-link" href="./bricks.html">Bricks</a><h1>${esc(b.name)}</h1><div class="brick-counts"><span>${b.standards.length} <span>standards</span></span><span>${b.passages} <span>passages</span></span></div><div id="brick-preview"><div id="brick-transport"></div><div id="brick-variants">Loading</div></div>`;
+ catalog();window.scrollTo({top:0,behavior:'instant'});
  $('#brick-transport').replaceWith(transport);transport.hidden=false;$('#play').disabled=true;$('#stop').disabled=true;$('#clipped-status').hidden=true;$('#playback-error').hidden=true;
- const b=currentBrick;
  try{
   const definitions=await fetch(`./data/brick-variants/${b.slug}.json`).then(r=>{if(!r.ok)throw Error(r.status);return r.json();});if(gen!==routeGeneration||routeKind!=='brick')return;
   $('#brick-variants').innerHTML=definitions.variants.map(v=>`<section class="brick-variant" id="${v.id}"><div class="variant-heading"><h2>Variant ${v.number}</h2><button class="variant-play">Play</button><a href="${v.midi}" download>MIDI</a><a class="variant-source" href="#${pad(v.source.song)}?brick=${b.slug}&beat=${v.source.start}">${esc(v.source.title)} · ${Math.floor(v.source.startBar)+1}–${Math.ceil(v.source.endBar)}</a></div><div class="variant-rawl" aria-label="Rawl notation"></div><div class="brick-matches">${standardMatches(v.standards,b)}</div></section>`).join('')+(definitions.unresolvedStandards.length?`<section class="unresolved-variants"><h2>Unresolved</h2><div class="brick-matches">${standardMatches(definitions.unresolvedStandards,b)}</div></section>`:'');
@@ -119,7 +117,7 @@ async function openBricks(slug=null,params=new URLSearchParams()){
   if(brickViews.length)activateVariant(wanted??brickViews[0]);if(wanted)requestAnimationFrame(()=>wanted.element.closest('.brick-variant').scrollIntoView({block:'start'}));
  }catch(error){if(gen!==routeGeneration)return;console.error(error);$('#brick-variants').textContent='Unavailable';}
 }
-function route(initial=false){const [path,query='']=location.hash.slice(1).split('?');if(path==='bricks')return openBricks();if(path.startsWith('brick/'))return openBricks(path.slice(6),new URLSearchParams(query));const index=Number(path);void openSong(Number.isInteger(index)&&index>=0&&index<songs.length?index:0,new URLSearchParams(query),initial);}
+export function route(initial=false,navigate=url=>location.replace(url)){const [path,query='']=location.hash.slice(1).split('?');if(path==='bricks')return navigate('./bricks.html');if(path.startsWith('brick/'))return openBrick(path.slice(6),new URLSearchParams(query));const index=Number(path);void openSong(Number.isInteger(index)&&index>=0&&index<songs.length?index:0,new URLSearchParams(query),initial);}
 $('#search').addEventListener('input',catalog);$('#previous').onclick=()=>location.hash=pad(navigationOrder[navigationOrder.indexOf(current)-1]);$('#next').onclick=()=>location.hash=pad(navigationOrder[navigationOrder.indexOf(current)+1]);
 
 $('#digital').onclick=()=>setView('analysis');$('#notation-view').onclick=()=>setView('rawl');$('#original').onclick=()=>setView('source');
