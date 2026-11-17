@@ -1304,6 +1304,46 @@
       "sourcePath": "leadsheets/melodies/SaturdayMorningHallelujah.ls"
     },
     {
+      "id": "psjazz-realbook-girl-from-ipanema",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 73,
+      "compositionKey": "original-73",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Girl from Ipanema/Girl from Ipanema.musicxml",
+          "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Girl from Ipanema/Girl from Ipanema.musicxml",
+          "sha256": "8675c22c78221382e091b7060bb4429d67471cdca25cd9f1aada3a23d7010bfc",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 76212,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 114,
+            "quote": "Straight"
+          }
+        ],
+        "canonicalAttachment": {
+          "type": "existing-match",
+          "song": 73,
+          "melodyId": "psjazz-realbook-girl-from-ipanema",
+          "transpose": -5,
+          "beatOffset": 0,
+          "basis": "Coalesced chord roots and exact quarter-beat boundaries under one constant transposition",
+          "sourceBeats": 160,
+          "targetBeats": 160,
+          "sourceSegments": 24
+        }
+      },
+      "melodyId": "psjazz-realbook-girl-from-ipanema",
+      "sourceSha256": "8675c22c78221382e091b7060bb4429d67471cdca25cd9f1aada3a23d7010bfc",
+      "sourcePath": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Girl from Ipanema/Girl from Ipanema.musicxml"
+    },
+    {
       "id": "psjazz-realbook-alice-in-wonderland",
       "feel": "swing",
       "ratio": 0.67,

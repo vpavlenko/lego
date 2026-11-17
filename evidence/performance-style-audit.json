@@ -2,10 +2,21 @@
   "version": 1,
   "canonicalCompositions": 269,
   "arrangements": 507,
-  "sourceHeads": 265,
-  "reviewedReferences": 103,
-  "sourceBytesVerified": 514,
+  "sourceHeads": 266,
+  "sourceBackedCharts": 266,
+  "explicitMelodyIdCharts": 265,
+  "existingMatchCharts": 1,
+  "reviewedReferences": 104,
+  "sourceBytesVerified": 515,
   "sources": [
+    {
+      "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Girl from Ipanema/Girl from Ipanema.musicxml",
+      "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Girl from Ipanema/Girl from Ipanema.musicxml",
+      "sha256": "8675c22c78221382e091b7060bb4429d67471cdca25cd9f1aada3a23d7010bfc",
+      "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+      "bytes": 76212,
+      "verified": true
+    },
     {
       "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Alice in wonderland/Alice in wonderland.musicxml",
       "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Alice in wonderland/Alice in wonderland.musicxml",
@@ -5294,12 +5305,12 @@
       "song": 73,
       "title": "The Girl from Ipanema",
       "compositionKey": "original-73",
-      "melodyId": null,
+      "melodyId": "psjazz-realbook-girl-from-ipanema",
       "ownSourceFeel": "straight",
-      "reference": "composition:original-73",
+      "reference": "psjazz-realbook-girl-from-ipanema",
       "effectiveDefault": "straight",
       "timing": {
-        "tuplets": false,
+        "tuplets": true,
         "grace": false,
         "ties": true,
         "swingCommand": false
