@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "sourceCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+  "entries": [
+    {
+      "melodyId": "openbook-too-close-for-comfort-wikifonia",
+      "sourcePath": "src/openbook/too_close_for_comfort.ly.tera",
+      "sourceSha256": "f6c93085cec98fd3ed896efbac5b7baa667617743fbed9a21f02c3119a19e416",
+      "sourceVersion": "Wikifonia",
+      "writtenCluster": "<g, b'>4",
+      "writtenPitches": [
+        43,
+        71
+      ],
+      "selectedPitch": 71,
+      "omittedBassPitch": 43,
+      "events": [
+        {
+          "start": 147.0,
+          "duration": 1.0,
+          "selectedPitch": 71,
+          "omittedPitches": [
+            43
+          ],
+          "sourceLine": 146
+        },
+        {
+          "start": 311.0,
+          "duration": 1.0,
+          "selectedPitch": 71,
+          "omittedPitches": [
+            43
+          ],
+          "sourceLine": 146
+        }
+      ],
+      "evidence": {
+        "sourceLine": 146,
+        "literalReferenceSourceLines": [
+          144,
+          148
+        ],
+        "compiledReferencePhraseStarts": [
+          136,
+          152,
+          300,
+          316
+        ],
+        "compiledReferencePhrase": [
+          {
+            "start": 0.5,
+            "pitch": 75,
+            "duration": 1.0
+          },
+          {
+            "start": 1.5,
+            "pitch": 74,
+            "duration": 0.5
+          },
+          {
+            "start": 2.0,
+            "pitch": 72,
+            "duration": 1.0
+          },
+          {
+            "start": 3.0,
+            "pitch": 71,
+            "duration": 1.0
+          }
+        ],
+        "sourceSelectionPolicy": "Only this pinned source cluster is reviewed. The explicitly written B4 duplicates four complete monophonic source phrase cells; the additional G2 is omitted as a secondary bass voice. No pitches, onsets, durations or velocities of the retained lead are altered."
+      },
+      "rawCompilerNotes": 201,
+      "retainedLeadNotes": 199
+    }
+  ]
+}
