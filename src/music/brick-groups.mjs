@@ -1,4 +1,4 @@
-const order=['Cadence','Approach','Turnaround','Dropback','Overrun','Ending','Opening','Pullback','CESH','On','On-Off','Off-On','On-Off+','Unit','Deceptive-Cadence','Misc','Blues','Unclassified'];
+const order=['Cadence','Approach','Turnaround','Dropback','Overrun','Ending','Opening','Pullback','Dominant Cycle','IV and','CESH','On','On-Off','Off-On','On-Off+','Unit','Deceptive-Cadence','Misc','Blues','Unclassified'];
 const normalized=name=>name.replace(/-/g,' ').replace(/\s+/g,' ').trim();
 export function brickType(name,catalog){
  const lookup=label=>catalog.names[normalized(label)];
@@ -25,8 +25,16 @@ export function brickType(name,catalog){
  if(/^Diatonic |Dominant Cycle/.test(name))return {type:'Unit',types:['Unit'],basis:'label'};
  return {type:'Unclassified',types:[],basis:'unresolved'};
 }
+// Catalogue families do not replace Impro-Visor's per-brick type metadata.
+// Match canonical identities, never a merged source alias of another pattern.
+function familyGroup(name){
+ const label=normalized(name).replace(/[‘’']/g,'');
+ if(/^(?:Reverse )?Dominant Cycle\b/i.test(label))return 'Dominant Cycle';
+ if(/^(?:To )?IV (?:n|and|&)\s+\S/i.test(label))return 'IV and';
+ return null;
+}
 export function groupBricks(bricks,catalog){
  const groups=new Map();
- for(const brick of bricks){const classification=brickType(brick.representativeName??brick.name,catalog);if(!groups.has(classification.type))groups.set(classification.type,[]);groups.get(classification.type).push({...brick,classification});}
+ for(const brick of bricks){const classification=brickType(brick.representativeName??brick.name,catalog),group=familyGroup(brick.name)??classification.type;if(!groups.has(group))groups.set(group,[]);groups.get(group).push({...brick,classification});}
  return [...groups].sort((a,b)=>(order.indexOf(a[0])<0?99:order.indexOf(a[0]))-(order.indexOf(b[0])<0?99:order.indexOf(b[0]))).map(([type,bricks])=>({type,bricks:bricks.sort((a,b)=>(typeof b.standards==='number'?b.standards:b.standardCount??b.standards?.length??0)-(typeof a.standards==='number'?a.standards:a.standardCount??a.standards?.length??0)||a.name.localeCompare(b.name))}));
 }

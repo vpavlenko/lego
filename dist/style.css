@@ -126,3 +126,6 @@ body.song-route .reader-chrome{height:32px}body.song-route main{padding-top:46px
 
 /* Analysis shares Rawl’s measure grid and header component. */
 .analysis-measures{position:absolute;left:0;top:23px;height:42px}.score-row .brick,.form-score .brick{top:0}
+
+.song-link.no-melody,.standard-title.no-melody{color:#555}
+.song-link.no-melody:hover,.standard-title.no-melody:hover,.song-link.no-melody.active{color:#888}

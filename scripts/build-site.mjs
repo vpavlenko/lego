@@ -37,7 +37,6 @@ const reuseAudit=read('evidence/brick-reuse-audit.json');
 fs.writeFileSync(path.join(root,'evidence/brick-reuse-audit.json'),JSON.stringify({...reuseAudit,stats:reuse.stats,integrity:{standards:songs.length,musicBeforeSha256:fingerprint(musicalData(coverage.songs)),musicAfterSha256:fingerprint(musicalData(songs)),runtimeSpanSha256:spanHash(runtimeSpans),indexSpanSha256:spanHash(indexSpans),runtimePassages:runtimeSpans.length,indexPassages:indexSpans.length,remainingOneStandardFamilies:bricks.bricks.filter(b=>b.standards.length<2).length},summary:reuse.decisions.map(d=>({name:d.source.name,slug:d.source.slug,standards:d.source.standards,passages:d.source.passages,action:d.action,target:d.target?.name??null,distance:d.distance??null,reason:d.reason})),decisions:reuse.decisions},null,2));
 const coverageAudit=read('evidence/one-chord-bricks.json');fs.writeFileSync(path.join(root,'evidence/one-chord-bricks.json'),JSON.stringify({...coverageAudit,version:3,source:{files:['dist/data/roadmaps.json','dist/data/additional-standards.json'],standards:rawSongs.length},stats:coverage.stats,removed:coverage.removed},null,2));
 if(songs.some((song,i)=>song.index!==i))throw Error('Non-contiguous standard indices');
-fs.writeFileSync(path.join(root,'dist/data/standards.json'),JSON.stringify({...original,songs}));
 const melodyFile=fs.existsSync(path.join(root,'dist/data/melody-sources.json'))?'dist/data/melody-sources.json':'dist/data/melodies.json',melodyData=fs.existsSync(path.join(root,melodyFile))?read(melodyFile):{entries:{}},melodies=new Map(Object.values(melodyData.entries).map(entry=>[entry.id,entry])),melodyMatches=new Map((melodyData.existingMatches??[]).map(match=>[match.song,match]));
 const modulationRecords=[];
 function realizedView(song,record=false){const performance=realizeSong(song,qualities),projection=cleanModulationRegions(song,performance.changes,vocabulary);if(projection.stats.remainingOneHarmonyModulations)throw Error('Unresolved one-chord modulation in '+song.title);if(record)modulationRecords.push({song:song.index,title:song.title,...projection});return {...performance,sourceChanges:performance.changes,changes:projection.changes};}
@@ -50,11 +49,12 @@ const forms=songs.map(song=>{
 });
 fs.writeFileSync(path.join(root,'dist/data/forms.json'),JSON.stringify({version:3,forms}));
 fs.mkdirSync(path.join(root,'dist/data/performances'),{recursive:true});fs.mkdirSync(path.join(root,'dist/midi'),{recursive:true});
-let total=0,clipped=0;
+let total=0,clipped=0;const melodyStandards=new Set();
 for(const song of songs){
- const alignment=melodyMatches.get(song.index),entry=melodies.get(song.melodyId??alignment?.melodyId),data=attachMelody(realizedView(song,true),song,entry,song.melodyId?null:alignment),id=String(song.index).padStart(3,'0');total+=data.notes.length;clipped+=data.chords.filter(c=>c.clipped).length;
+ const alignment=melodyMatches.get(song.index),entry=melodies.get(song.melodyId??alignment?.melodyId),data=attachMelody(realizedView(song,true),song,entry,song.melodyId?null:alignment),id=String(song.index).padStart(3,'0');if(data.notes.some(note=>note.voice===1))melodyStandards.add(song.arrangementOf??song.index);total+=data.notes.length;clipped+=data.chords.filter(c=>c.clipped).length;
  fs.writeFileSync(path.join(root,`dist/data/performances/${id}.json`),JSON.stringify(data));fs.writeFileSync(path.join(root,`dist/midi/${id}.mid`),encodeMidi(data));
 }
+fs.writeFileSync(path.join(root,'dist/data/standards.json'),JSON.stringify({...original,songs,melodyStandards:[...melodyStandards].sort((a,b)=>a-b)}));
 fs.writeFileSync(path.join(root,'dist/data/modulations.json'),JSON.stringify({version:1,changes:modulationRecords.map(record=>record.changes)}));
 fs.writeFileSync(path.join(root,'evidence/modulation-projection.json'),JSON.stringify({version:1,records:modulationRecords},null,2));
 const previousBricks=read('dist/data/bricks.json').bricks;
