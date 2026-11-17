@@ -31,6 +31,7 @@ function fullQuarterCells(data){
  * cells keep their encoded edges. Source objects and exported MIDI stay intact. */
 export function swungMelody(data){
  const notes=data.notes,style=data.playbackStyle;
+ if(data.performedMelodyNotes){const byId=new Map(data.performedMelodyNotes.map(note=>[note.id,note]));return {notes:notes.map(note=>note.voice===1?byId.get(note.id)??note:note),cells:[],affected:data.performedMelodyNotes.length};}
  if(style?.feel==='straight'||!notes.some(n=>n.voice===1))return {notes,cells:[],affected:0};
  const melody=notes.filter(n=>n.voice===1),edges=melody.flatMap(n=>[n.start,n.start+n.duration]);
  const reviewed=new Map((style?.reviewedCells??[]).map(c=>[Math.round(c.start*1e7),c]));

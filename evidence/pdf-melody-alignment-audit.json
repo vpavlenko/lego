@@ -1,0 +1,4317 @@
+{
+  "version": 1,
+  "policy": "Corpus melody and PDF harmony/brick analysis use independently pinned sources; reharmonization does not prevent a bar-aligned melody overlay.",
+  "sourceReferencesSha256": "07b2eb40f88fffa3be1118e9e2ff974833dda2a28e431f33c9c422d478605bf9",
+  "pdfOverlays": 151,
+  "originalsWithMelody": 152,
+  "originals": 242,
+  "melodyCharts": 417,
+  "melodyCompositions": 258,
+  "notes": 15482,
+  "pickupOverlays": 59,
+  "pickupNotes": 114,
+  "pdfChangesAndBricksRetained": true,
+  "automaticBrickParsingVisible": false,
+  "raw507PerformanceAndMidiExportsUnchanged": true,
+  "mappings": [
+    {
+      "song": 0,
+      "title": "Take The \"A\" Train",
+      "melodyId": "openbook-take-the-a-train-fake",
+      "sourceSha256": "14b409e640365fec4e9a7ae06202c0dd90ea19efa0f98f1e01cb221664ff0b42",
+      "targetSha256": "1d08a667f5e4dd917100918187efa116618c2922c13d27bef02b4c15657592a8",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 1,
+      "title": "Afternoon In Paris",
+      "melodyId": "openbook-afternoon-in-paris-real",
+      "sourceSha256": "e36d59157f5eed52a65c2a349a0bab511310827c31c6eb4b8a0b11cb0319fa90",
+      "targetSha256": "9ab65ee56cbb96fdc7ee1c41aa8455a538103569955bc5d0cd6bf452e556c32d",
+      "transpose": 0,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 2,
+      "title": "Ain't Misbehavin'",
+      "melodyId": "openbook-ain-t-misbehavin-fake",
+      "sourceSha256": "23f42f1568bcfe2f9e2d88a8471e549d7d757fb6b17c49f9884d02d15b987a0e",
+      "targetSha256": "b2fc1ac9122d8f05b97b0248bf9bb5d0daf0b937dc96c7335d487f8a738a2d3b",
+      "transpose": -3,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 4,
+      "title": "Alice In Wonderland",
+      "melodyId": "openbook-alice-in-wonderland-real",
+      "sourceSha256": "3b2793dc1957f9f0df499a954318c71202f63db7f248033e87cec828a856f758",
+      "targetSha256": "9aee4f37cee0bbe9e95c70360f0ea6fad613d54f4e4666dfa06f657d3fe48ea7",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 192,
+          "targetStart": 0,
+          "targetEnd": 192
+        }
+      ]
+    },
+    {
+      "song": 5,
+      "title": "All Of Me",
+      "melodyId": "openbook-all-of-me-real",
+      "sourceSha256": "0e1fb0d4e29aa54dee5eb519d4f109a4e94e05298b5a2fd8df38c9f74b32dd57",
+      "targetSha256": "05af1848cdbe9ffed7ca09afc32b221c80d9467ef2e2b1258d757fd3c591666c",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 6,
+      "title": "All of You",
+      "melodyId": "openbook-all-of-you-fake",
+      "sourceSha256": "9f57f5bc1890ac12c19cc2b08ed7f909963ea32b43e9a73f7d323de3ff7db05a",
+      "targetSha256": "ccec26597acda2e73f18d1afd3d884ff8b0f70e4fb4b85efab1162f7551a2d03",
+      "transpose": -3,
+      "clockOffset": 3,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 131,
+          "targetStart": 0,
+          "targetEnd": 131
+        }
+      ]
+    },
+    {
+      "song": 7,
+      "title": "All the Things You Are",
+      "melodyId": "openbook-all-the-things-you-are-real",
+      "sourceSha256": "f057a234f0a1c5d9d27d5ebbe7c54fe79f1cf034e3eb5775959949f3bc62d893",
+      "targetSha256": "2863b5def7e9725444b29866d4bd2dcff34e9f6ab0624492695ed4b45ef64872",
+      "transpose": 4,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 144,
+          "targetStart": 0,
+          "targetEnd": 144
+        }
+      ]
+    },
+    {
+      "song": 8,
+      "title": "Alone Together",
+      "melodyId": "openbook-alone-together-real",
+      "sourceSha256": "6e90895aba9ec122b3a608c18f0254da06ec97bd8d7589a2a3e041f45be43885",
+      "targetSha256": "f42bac341e0280755dd0afd34356e7d6e6ab96fcfe7bde6281a6e8d608186164",
+      "transpose": -2,
+      "clockOffset": 0.5,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 176.5,
+          "targetStart": 0,
+          "targetEnd": 176.5
+        }
+      ]
+    },
+    {
+      "song": 11,
+      "title": "Autumn in New York",
+      "melodyId": "openbook-autumn-in-new-york-real",
+      "sourceSha256": "6ae7f16b863305e20b50006654f44064d20dcd17d083b032d11b59488cb32485",
+      "targetSha256": "32bb1e9ecfa98fb003039dfc9bf7c281a9dcc86f08291b6e935220b64f0e9f59",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 12,
+      "title": "Autumn Leaves",
+      "melodyId": "openbook-autumn-leaves-real",
+      "sourceSha256": "18d2e0f57236dd4d131b28ae3a1c9f59a190fd50023ed2dbff3bac985e28fe96",
+      "targetSha256": "f151483569517e25cd36b9306fc4e4ca04e660c0ec7c7f1f434d361b55444707",
+      "transpose": -4,
+      "clockOffset": 3,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 131,
+          "targetStart": 0,
+          "targetEnd": 131
+        }
+      ]
+    },
+    {
+      "song": 14,
+      "title": "Baubles, Bangles, and Beads",
+      "melodyId": "openbook-baubles-bangles-and-beads-wikifonia",
+      "sourceSha256": "33b308771c7d4e93c5ac4974cc56236fe201650196940f70b36f9a883464a87f",
+      "targetSha256": "6a19cc06c72e5f66c711ba311cefc9f005a41e36eefd6fee8c97fc55875b95b6",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 108,
+          "targetStart": 0,
+          "targetEnd": 108
+        }
+      ]
+    },
+    {
+      "song": 16,
+      "title": "Bemsha Swing",
+      "melodyId": "openbook-bemsha-swing-wikifonia",
+      "sourceSha256": "53fd9e93a3f6a200bb20b066c00d322421315513f5118f4e2730312d7ff80439",
+      "targetSha256": "2f350e19f7dd56b4ff17d62adc27124b99f5c79e6eb70eabdfdf3c03ae76881d",
+      "transpose": 0,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 65,
+          "targetStart": 0,
+          "targetEnd": 65
+        }
+      ]
+    },
+    {
+      "song": 17,
+      "title": "Bernie's Tune",
+      "melodyId": "openbook-bernie-s-tune-fake",
+      "sourceSha256": "d2212efb6f2c3eba6160a5e6e60135a7f74eaf8da833201a1ae1b7fd9271feb4",
+      "targetSha256": "5ad2e25f393c72d96b2a53ba2f378c3ab6ea8e968880978db1ff505697c71aa1",
+      "transpose": -2,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 18,
+      "title": "Between the Devil and the Deep Blue Sea",
+      "melodyId": "openbook-between-the-devil-and-the-deep-blue-sea-wikifonia",
+      "sourceSha256": "0b06c4cbd1942495460f2da383de7efce5ee3697f23be30a58c44fd16ac841b9",
+      "targetSha256": "d34df2f97f0e370b5599f07520efbd053bc15ea999af3618f47f233e3f720bb3",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 19,
+      "title": "Bewitched, Bothered, and Bewildered",
+      "melodyId": "openbook-bewitched-fake",
+      "sourceSha256": "9b96bd5051ab2655c96d62930e45f513b7d8d001d68b18fc989b4c7769a025f1",
+      "targetSha256": "f0af661ac85d9fd8fd1acd38f2d42dfc48a0d35b2e36c1e84d6a94dd88e24a7f",
+      "transpose": 0,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 20,
+      "title": "Blue and Sentimental",
+      "melodyId": "openbook-blue-and-sentimental-fake",
+      "sourceSha256": "964e939b9fd2ab5d1d51e4b42aa575e6f89868c010164761bfe7b77f0823911b",
+      "targetSha256": "da8c07e38d1c3ac3c7ff773f49a15b3f8c5f84c74abbd5845a1779964678dd7f",
+      "transpose": -3,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 72,
+          "targetStart": 0,
+          "targetEnd": 72
+        }
+      ]
+    },
+    {
+      "song": 21,
+      "title": "Blue Bossa",
+      "melodyId": "openbook-blue-bossa-real",
+      "sourceSha256": "a984d7fd3a2e21ea2ae65c308d263912b826bc35c718ec863c30abf3d03d1b3c",
+      "targetSha256": "c93d912709c7543e63901493f70c33dbfdf35e7dec7a9255b5cec1990e3c5060",
+      "transpose": 0,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 65,
+          "targetStart": 0,
+          "targetEnd": 65
+        }
+      ]
+    },
+    {
+      "song": 28,
+      "title": "Body and Soul",
+      "melodyId": "openbook-body-and-soul-real",
+      "sourceSha256": "0ad0cf688ff3411d8c36ba41a94afe3506448d7e100478fc20bcc784d5bf419e",
+      "targetSha256": "d3c3596a964ee2af79b57c59c09a4ff0d4368dbb202c7598eb92a3a6604d1751",
+      "transpose": -1,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 29,
+      "title": "Broadway",
+      "melodyId": "openbook-broadway-wikifonia",
+      "sourceSha256": "0801477d616eb4a1b5aee2d6b05dc2f0a7c36a516cc9767c1bbdd5807e90b7f0",
+      "targetSha256": "ce86d3e62ce583ce3927b27aba435378ed1d0f4eae25213949ebc61be1025c36",
+      "transpose": 5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 30,
+      "title": "But Beautiful",
+      "melodyId": "openbook-but-beautiful-fake",
+      "sourceSha256": "a1a128f0c0c94a3d077105ae720f1f07e5b1a331fa1826c67e4dc49b6f3baaf9",
+      "targetSha256": "b9b1dcdfb2b4b159426c6db6348d0b04e0aadd110335be33639555a70be091d7",
+      "transpose": 5,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 32,
+      "title": "Bye Bye Blackbird",
+      "melodyId": "openbook-bye-bye-blackbird-laurent",
+      "sourceSha256": "a4c258250ed607df82bc146d96d1e9570a3427d2bd05fc6237a2282b03252676",
+      "targetSha256": "23fbb8630ddaa8f5e8da86f216b860fc66e4d9d5488907a24535916b08fad323",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 36,
+      "title": "Cherokee",
+      "melodyId": "openbook-cherokee-fake",
+      "sourceSha256": "bf511736e8cf486350ff3c0a72d8f2ff85804b9a76e94a41d34b48e986977423",
+      "targetSha256": "54858fb06b4f3d36fa328a2c533ba1410b78ee8d4db3f0f1e4f46e8f8c3e8b8d",
+      "transpose": 2,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 256
+        }
+      ]
+    },
+    {
+      "song": 38,
+      "title": "Come Rain Or Come Shine",
+      "melodyId": "openbook-come-rain-or-come-shine-fake",
+      "sourceSha256": "f82f095982969b3e8ef807c9c47e84c3d50bca3b457de030ed773f5ff54d6e2c",
+      "targetSha256": "a789935078147862a58743bdeedb8796aef54e4856185cde8b753de729c09829",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 39,
+      "title": "Confirmation",
+      "melodyId": "openbook-confirmation-fake",
+      "sourceSha256": "723388ff1278cce179dd943c1865aa85d5d710112f8393592de0703bb2fc7782",
+      "targetSha256": "daf1cd7d0795077e4784c5c29654fcbd13aed6d0dce6b2b6b44a90c040ae3033",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 42,
+      "title": "Cry Me A River",
+      "melodyId": "psjazz-realbook-cry-me-a-river",
+      "sourceSha256": "01450aab1078b2b8ca9331a12a6f2b463176de3cb7caca821999f800cb0b9c4c",
+      "targetSha256": "18af96627bab797c3032bce5cf836df3fbaa14abfbcdd4b87bdb0c01186d34f2",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 43,
+      "title": "Cute",
+      "melodyId": "openbook-cute-fake",
+      "sourceSha256": "bcedf2b809d95f087a34099fc46b16c1435621428bd475bb687a6d4c8fd7f771",
+      "targetSha256": "13710102680a6f1343db5c89ff0f2ba10517b0d0bbaa444133aa91a939d4efce",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 45,
+      "title": "The Days of Wine and Roses",
+      "melodyId": "openbook-days-of-wine-and-roses-real",
+      "sourceSha256": "df8244f17b4b37020dbb3c0a78dfa139306e48e079a9f2507975fdc88787d035",
+      "targetSha256": "2a234febb0f0afa2fba873eb6e2e4a099c887d6542a468c7782c798050243e74",
+      "transpose": -5,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 47,
+      "title": "Dearly Beloved",
+      "melodyId": "openbook-dearly-beloved-fake",
+      "sourceSha256": "427ff47e70d13c8d993e62536193305328439ada732f5ee07f848e95f9f2c611",
+      "targetSha256": "cb44e2ce57315fea72d5f6df8734214576a443e9744a1255d997f61b7335ab71",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 48,
+      "title": "Desafinado",
+      "melodyId": "openbook-desafinado-fake",
+      "sourceSha256": "f14f91b47eeaf7ca3901e77c0ef68dfad788974215330a23054d452409bb87b1",
+      "targetSha256": "162fd04dc8c57e3d6e7b7281aa7f5d6387edbec43ef9d03a48def5a856bc00c4",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 272,
+          "targetStart": 0,
+          "targetEnd": 272
+        }
+      ]
+    },
+    {
+      "song": 49,
+      "title": "Devil May Care",
+      "melodyId": "wikifonia-49-devil-may-care",
+      "sourceSha256": "59eb237fb21dff0f63cffa4032a6e7edaec2893ec32295e9b8bfa29619102187",
+      "targetSha256": "be95e1846dd59cb118401aebc6fac060b8625f37939852e457eaf08e7579ee31",
+      "transpose": 5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 176,
+          "targetStart": 0,
+          "targetEnd": 176
+        }
+      ]
+    },
+    {
+      "song": 53,
+      "title": "Donna Lee",
+      "melodyId": "openbook-donna-lee-real",
+      "sourceSha256": "59c98854c47c735c52e6241952cfc684d5a3db5e46a917cc2f20d84e21328b2a",
+      "targetSha256": "2230e0db3b197b25c22b09b99e88b8705d58e7f02183717f5ede08b32107da70",
+      "transpose": 4,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 54,
+      "title": "Doxy",
+      "melodyId": "openbook-doxy-fake",
+      "sourceSha256": "614e4661b526b5ec917c57c793b4f21332067c307a83c62857ffdeca7b461792",
+      "targetSha256": "c5a16957c8ad8d5f1c44c1c08f0d5bdc518e95a31075fad4f067efd9b1c4996f",
+      "transpose": 2,
+      "clockOffset": 0.5,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 64.5,
+          "targetStart": 0,
+          "targetEnd": 64.5
+        }
+      ]
+    },
+    {
+      "song": 57,
+      "title": "East Of The Sun",
+      "melodyId": "psjazz-realbook-east-of-the-sun",
+      "sourceSha256": "783f5322af91088a246b5dd30a07a9b54fbc9aff923b6c64e024b054d3fc1550",
+      "targetSha256": "54bc67311b115faa885904f2e38091502a03450a9633d66074bcb8213133a61b",
+      "transpose": 5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 144,
+          "targetStart": 0,
+          "targetEnd": 144
+        }
+      ]
+    },
+    {
+      "song": 58,
+      "title": "Easy Living",
+      "melodyId": "openbook-easy-living-real",
+      "sourceSha256": "9f87073195e845fed5eea051eec3cbb8fcfc506649e708f658633ff18473ab7f",
+      "targetSha256": "987de999005a8dd2dfd85e727fa1e44993dc9f481fc60d7cf182227dc6c8c298",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 59,
+      "title": "Embraceable You",
+      "melodyId": "openbook-embraceable-you-wikifonia",
+      "sourceSha256": "17d7aee003e4c3bcd7f5daa52782f293518f5bea85aa4aea8d822825065192a0",
+      "targetSha256": "600a63b1f9fb6587ec19fa58456510d2e7dc04e5ebcbf931bff494d398de30e0",
+      "transpose": 5,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 60,
+      "title": "Emily",
+      "melodyId": "openbook-emily-wikifonia",
+      "sourceSha256": "04efc585c6cff3d160f9cfc9e80261dedde879dab7058aab7f2a71e0377eddfe",
+      "targetSha256": "be68957aa9ccadfbee574deda68d679e2828ed532bc39dcd2f4991237832e928",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 120,
+          "targetStart": 0,
+          "targetEnd": 120
+        }
+      ]
+    },
+    {
+      "song": 62,
+      "title": "Everything Happens To Me",
+      "melodyId": "openbook-everything-happens-to-me-fake",
+      "sourceSha256": "601a32f807d6e90864188b46c87445b06101685cdca6e3c9b2bac7153a222d65",
+      "targetSha256": "a0b62771741f42a9a50b9c03c208d6969792831658c1118fe11a675649b3968a",
+      "transpose": 2,
+      "clockOffset": 0.5,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128.5,
+          "targetStart": 0,
+          "targetEnd": 128.5
+        }
+      ]
+    },
+    {
+      "song": 65,
+      "title": "A Fine Romance",
+      "melodyId": "openbook-a-fine-romance-real",
+      "sourceSha256": "df6bfd22aa7b0a2b18b9ddcccd106d8622372c5a1873838edc19230375f23a57",
+      "targetSha256": "9e59ea3fd41825befa0a56f5a6ef4ca901bee6bca78f485c78c243cbacaf8997",
+      "transpose": 0,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 66,
+      "title": "Flamingo",
+      "melodyId": "openbook-flamingo-fake",
+      "sourceSha256": "ea7e5702a8c76d9c65d9fe9e15111cb88e1f4e533517deb990d7dd38adc7ec28",
+      "targetSha256": "5104eeeb89842480ce336124392928a334b9d35953238e1086809e283c3e0217",
+      "transpose": -5,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 67,
+      "title": "Fly Me To The Moon",
+      "melodyId": "openbook-fly-me-to-the-moon-fake",
+      "sourceSha256": "7f19f569e07275df0d722a8ed9f0df966bd6520d96ede6b295fa09414f8b2bae",
+      "targetSha256": "16320c54f799ba404e7d28e0af02b530a1a591161f36a016d10d30214da2e4ef",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 68,
+      "title": "A Foggy Day",
+      "melodyId": "openbook-a-foggy-day-real",
+      "sourceSha256": "9d0993dc4b5fc266061fc99e8d0b01a4a10921ad698f92fee47633d46cc99d9c",
+      "targetSha256": "61a6e1fd2d79d66a8a6dfc213457097b291b21f6b2831238287ee85d0bd89205",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 136,
+          "targetStart": 0,
+          "targetEnd": 136
+        }
+      ]
+    },
+    {
+      "song": 69,
+      "title": "Four",
+      "melodyId": "openbook-four-fake",
+      "sourceSha256": "6f3830e381705e27ac539652344b9ccb64cdd79067486c0fc0bebc49a61489c4",
+      "targetSha256": "369b55edf86ab9b4f4835a0aa588113f110df93358f31353a791d71738cc0903",
+      "transpose": -3,
+      "clockOffset": 1.5,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129.5,
+          "targetStart": 0,
+          "targetEnd": 129.5
+        }
+      ]
+    },
+    {
+      "song": 70,
+      "title": "Gee, Baby, Ain't I Good to You",
+      "melodyId": "openbook-gee-baby-ain-t-i-good-to-you-fake",
+      "sourceSha256": "0731ef4063961247ab9330bf33c508d2e23ff9e15d6d663bda0208c24921dc69",
+      "targetSha256": "75a4bd7032aa0321686e42fe4c4984c73c1174a33cd84c50d6eef07276f7de51",
+      "transpose": -3,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 64,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 64
+        }
+      ]
+    },
+    {
+      "song": 71,
+      "title": "Georgia",
+      "melodyId": "openbook-georgia-on-my-mind-real",
+      "sourceSha256": "5b4382d17c4462f229fdf815207fc5658258c3af7382b648d65a152b6b19b03c",
+      "targetSha256": "0a4aca30398c232ab6b78f610193d1145a628a236900ecee1d85fbbda7384b14",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 72,
+      "title": "A Ghost of a Chance",
+      "melodyId": "openbook-i-don-t-stand-a-ghost-of-a-chance-fake",
+      "sourceSha256": "f5873dfcd56a340fffeb03f1a2ec6a71b928c599fb377c59a1d730082c1e7136",
+      "targetSha256": "c46a7af34a9f748cfd6fdc4c44b4c08e22ffb0bbcd0b36a410025e1e20725409",
+      "transpose": 0,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 74,
+      "title": "Gone With the Wind",
+      "melodyId": "openbook-gone-with-the-wind-fake",
+      "sourceSha256": "7cdbc262d306f0a641e48d2ec7a24340f37598cea61d64561e943c92b76621a3",
+      "targetSha256": "1dcca160e8c49c43f4f068eefea5bb2ae075ea4f46325615a4803cdffa2b48c2",
+      "transpose": -3,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 75,
+      "title": "On Green Dolphin Street",
+      "melodyId": "improvisor-on-green-dolphin-street-fe6e4cedf4",
+      "sourceSha256": "0e214271731d60ef5532a6b6087a03a17dce6adbfdb0b70fd7c226a2d3a17e9f",
+      "targetSha256": "9d8914130ed82020a6e7043c1f8dd80225fab71e147d7f743298ff2f1c8b9b17",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 76,
+      "title": "Groovin' High",
+      "melodyId": "openbook-groovin-high-fake",
+      "sourceSha256": "f7b25b12fd8349eae42162b40e9d675b57058d61fc42c471a4d65127e6c4eedc",
+      "targetSha256": "03860ab61d422b11bc2a1c546d0f4cf7b4c8a7e051da504b67c50bb26e866a83",
+      "transpose": -3,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 78,
+      "title": "Here's That Rainy Day",
+      "melodyId": "openbook-here-s-that-rainy-day-real",
+      "sourceSha256": "ab4fe3c346261fb9984f30ef540b099829a8e0d2297ffecfa521fdbd363b9077",
+      "targetSha256": "a6910ed776aab7acb1c264743b6e086fa2a9d225d1bc657b9eedf53039ba8480",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 79,
+      "title": "Honeysuckle Rose",
+      "melodyId": "openbook-honeysuckle-rose-fake",
+      "sourceSha256": "3db86d818855a585e20510111d3f4b3b7cd5cadc86e95b1814fc2c35db2a9308",
+      "targetSha256": "1b58d8fcecce9b3304678cbe401b2d53d38bffa13e45a63f4fe924fe37a544c8",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 81,
+      "title": "How About You?",
+      "melodyId": "psjazz-realbook-how-about-you",
+      "sourceSha256": "a353e1557b32a70356cf8dcebb5ff2e070d8c38f3cd94350531f41777eb7ac71",
+      "targetSha256": "0943a1cfb3a669183e4fdf0d3f59900e2865222bc232ca6faf14d73bc5e97e8e",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 82,
+      "title": "I Can't Believe that You're in Love with Me",
+      "melodyId": "openbook-i-can-t-believe-that-you-re-in-love-with-me-wikifonia",
+      "sourceSha256": "8857ee998ba1044db5a7b3d6ea7d25aa5795b2072451a2ff6ca4e948b3099a84",
+      "targetSha256": "18ed33eb655a276d48875f9cd85b6a14d94b0e918a0b9e34927a0c8babb8e650",
+      "transpose": 0,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 83,
+      "title": "I Can't Get Started",
+      "melodyId": "openbook-i-can-t-get-started-fake",
+      "sourceSha256": "4bfaf53c30174035a81f5ba46ef7f4bb78a555abbe802706f2caa19a292664ac",
+      "targetSha256": "f385320f7b199d8aae07dda44429baef12424e8f76d249b5d55ec83fa590b1e2",
+      "transpose": 0,
+      "clockOffset": 1.5,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129.5,
+          "targetStart": 0,
+          "targetEnd": 129.5
+        }
+      ]
+    },
+    {
+      "song": 84,
+      "title": "I Fall in Love Too Easily",
+      "melodyId": "openbook-i-fall-in-love-too-easily-real",
+      "sourceSha256": "4ea4f9fc54e884a97a46fc61f8c9f854efa09f21b0878a694cfc9ed13882cf93",
+      "targetSha256": "4a88a9a651e5d183dad994a6fccd3df0a0496c5c620e733a84adb55db8873fc8",
+      "transpose": -3,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 64,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 64
+        }
+      ]
+    },
+    {
+      "song": 88,
+      "title": "I Love You",
+      "melodyId": "openbook-i-love-you-real",
+      "sourceSha256": "1b13fbbcff2d3a73e4a6a039858e6c04d0b3d71cc13b44f7c9e5913ee29a40f0",
+      "targetSha256": "95d44b7e68b43bc68ef49c112543532be91b3bef00a327713b14eef6a890e31e",
+      "transpose": -5,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 91,
+      "title": "I Remember You",
+      "melodyId": "openbook-i-remember-you-wikifonia",
+      "sourceSha256": "4e3703942d6a300819ba614a4b47fc12e2f999416d567eec6bb4d387e6f721f5",
+      "targetSha256": "a272a365243fa427bd4e1ba4c79b953bac3bf565fd4e39896d8ad010367ce2fc",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 144,
+          "sourceEnd": 288,
+          "targetStart": 0,
+          "targetEnd": 144
+        }
+      ]
+    },
+    {
+      "song": 92,
+      "title": "I Should Care",
+      "melodyId": "openbook-i-should-care-fake",
+      "sourceSha256": "2e5840b63558909f17ebd166a077cc5b319984073923df2c6da0c9b270f7147a",
+      "targetSha256": "0fcb658531111c1cc158288f167481e9193f34fb50b2d14a2a87ff6721ae8d72",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 94,
+      "title": "I Wish You Love",
+      "melodyId": "openbook-i-wish-you-love-fake",
+      "sourceSha256": "e4144fd525fd432bff9794865ff4a2bda09f98532afef088fb32fa84f623c0f8",
+      "targetSha256": "5d1db215c4d02a1f250d02be9b9bb5a88f14c5ab10b3e35ffc2499394edb7cf5",
+      "transpose": -3,
+      "clockOffset": 2,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 130,
+          "targetStart": 0,
+          "targetEnd": 130
+        }
+      ]
+    },
+    {
+      "song": 95,
+      "title": "I'll Remember April",
+      "melodyId": "openbook-i-ll-remember-april-laurent",
+      "sourceSha256": "6a8b524da1990f1eb2b39a167c37249446de06cc6b525a942268a90e27748139",
+      "targetSha256": "8d45955a8639dc7f692ec7b3d8e065546e8aa80e982eba47e242209111ebb938",
+      "transpose": 5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 192,
+          "targetStart": 0,
+          "targetEnd": 192
+        }
+      ]
+    },
+    {
+      "song": 96,
+      "title": "I'm Confessin' that I Love You",
+      "melodyId": "openbook-i-m-confessin-that-i-love-you-fake",
+      "sourceSha256": "15a27f387741d446fea27c33ffbd919858fd2112689923fe48470e071ca90b81",
+      "targetSha256": "3c041f8d1cc78363d4362ad43880f996bbdfc376d8ee114d20c2f421e8c1e62e",
+      "transpose": 5,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 97,
+      "title": "I'm Old Fashioned",
+      "melodyId": "openbook-i-m-old-fashioned-fake",
+      "sourceSha256": "8d1a74b68b989aed41b4f52a03d148a4983590162a64d18e71747aa95accd8dd",
+      "targetSha256": "446c03d44b966eb59bcc3448d4097ef4526693b94e223b9036d394923d398e2b",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 144,
+          "targetStart": 0,
+          "targetEnd": 144
+        }
+      ]
+    },
+    {
+      "song": 101,
+      "title": "I've Grown Accustomed to Her Face",
+      "melodyId": "openbook-i-ve-grown-accustomed-to-her-face-fake",
+      "sourceSha256": "53d07e7267f6e85d2adf83a6c0750495ab9afb5882e001d766d9b4ec2cdaf435",
+      "targetSha256": "783f8446b0567a07054dd359f3e6e46e8184fc7d70b574c4fa57100f35e5c767",
+      "transpose": -3,
+      "clockOffset": 1.5,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 81.5,
+          "targetStart": 0,
+          "targetEnd": 81.5
+        }
+      ]
+    },
+    {
+      "song": 102,
+      "title": "I've Never Been in Love Before",
+      "melodyId": "openbook-i-ve-never-been-in-love-before-wikifonia",
+      "sourceSha256": "20581687c3ac83275d927657df9a1e0d634946df576dff0ae209632fbb2f9aa9",
+      "targetSha256": "1914a0bba86e0904f70c97ad2d08d110df969c988d826e52baf9472e9866bb7f",
+      "transpose": 2,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 103,
+      "title": "If I Had You",
+      "melodyId": "openbook-if-i-had-you-wikifonia",
+      "sourceSha256": "10c958ea6027ac99d9a9abc9cec5f6abe5a47989791d8507c5caef850beb505c",
+      "targetSha256": "b8eea28be9dc01fb1bf3ed537b77f9cf71dd6893d559a71a4969769af572af73",
+      "transpose": 2,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 104,
+      "title": "Imagination",
+      "melodyId": "openbook-imagination-laurent",
+      "sourceSha256": "29ed96c7da55dfcc2967d21ee4ccf6d62b0b47a949484b0e91c64b2fb82d06e8",
+      "targetSha256": "4aa19b5e626699e79cb99fc43402608b6062a1fbeef816abf7ecfb0d0331d731",
+      "transpose": -3,
+      "clockOffset": 1.5,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 145.5,
+          "targetStart": 0,
+          "targetEnd": 145.5
+        }
+      ]
+    },
+    {
+      "song": 106,
+      "title": "Invitation",
+      "melodyId": "openbook-invitation-real",
+      "sourceSha256": "d0df378789a684fef0018e43ae465839019119eda9ebbb472c500a161b41eac4",
+      "targetSha256": "0c41c3ba351a1a14a147d242545192d7d3ed90a309ef8e87b2dcd1472bd0cb4b",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 192,
+          "targetStart": 0,
+          "targetEnd": 192
+        }
+      ]
+    },
+    {
+      "song": 107,
+      "title": "It Could Happen to You",
+      "melodyId": "openbook-it-could-happen-to-you-wikifonia",
+      "sourceSha256": "879aff7e3998ae58dc40382c50f84a0c943b818b4da389959dd10a5f9e2cb91c",
+      "targetSha256": "01f60d7cc00cd5e044f6021cd093cb07417749e2455a43ef26310530a9658ad1",
+      "transpose": 5,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 108,
+      "title": "It Don't Mean a Thing",
+      "melodyId": "openbook-it-don-t-mean-a-thing-real",
+      "sourceSha256": "e717acfcfe249a969efbef3c2bdf90f2021666c98b800b043a2cabe40d4ba30e",
+      "targetSha256": "92bc9f1899df45574d256e166c4a519aac6b738fbf417ebf45e3cf4afe298f96",
+      "transpose": 5,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 110,
+      "title": "It Might As Well Be Spring",
+      "melodyId": "openbook-it-might-as-well-be-spring-fake",
+      "sourceSha256": "b056199f2dc42579ff1896518f399a377aece6128b8fc9c34a21537fb3263af9",
+      "targetSha256": "7e32de89df7db1d439be667d18a5f5afe3baf67fcda7a4460574607e0ae7945c",
+      "transpose": 5,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 161,
+          "targetStart": 0,
+          "targetEnd": 161
+        }
+      ]
+    },
+    {
+      "song": 113,
+      "title": "Just Friends",
+      "melodyId": "openbook-just-friends-real",
+      "sourceSha256": "8b86a4378508bf0be9a1cf3163fa1f2003667fb28033d1009269cf871575a8f3",
+      "targetSha256": "1f410bbe97fe8bc41c78c47c5e3799216300ffad955d095f9c12763d7ae7b349",
+      "transpose": 5,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 114,
+      "title": "Just In Time",
+      "melodyId": "openbook-just-in-time-fake",
+      "sourceSha256": "666ab730fd243214bba7b682ae840021f740ee03be4a2bd9620f0b2becc170d3",
+      "targetSha256": "4258d0b8107580ad6fd169457c8b141048548298df067dc79b95509364170061",
+      "transpose": 2,
+      "clockOffset": 0,
+      "basis": "source-second-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 120,
+      "title": "Let It Snow!",
+      "melodyId": "openbook-let-it-snow-let-it-snow-let-it-snow-fake",
+      "sourceSha256": "cc14099c856969cf72a8b59e55249e875d9feed9f41868c87327cb03209eed42",
+      "targetSha256": "fdd6f99eefa9d6698fb9f336a34e0acad826b4a1c66f511654007652d9fc9a77",
+      "transpose": -5,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 122,
+      "title": "Like Someone in Love",
+      "melodyId": "openbook-like-someone-in-love-laurent",
+      "sourceSha256": "c24a8958c338b1ddfdf043d6ae7893c50d6653e72ba2146233ba9381dd5ca150",
+      "targetSha256": "f02e6ba978eea466bbfa31aa2689e2534c1f9b59f37aaf14beaaa158572229bb",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 125,
+      "title": "Love is Here to Stay",
+      "melodyId": "openbook-love-is-here-to-stay-laurent",
+      "sourceSha256": "63529b8c66be5381346b4f95f063b6c89b6146f2a10bec86819710c8c2c67f54",
+      "targetSha256": "e80f72a672b3e60c3f9376d7e2050de8a18cee1a3f2e6358aa7abf3b351143b5",
+      "transpose": -5,
+      "clockOffset": 3,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 131,
+          "targetStart": 0,
+          "targetEnd": 131
+        }
+      ]
+    },
+    {
+      "song": 126,
+      "title": "Love Walked In",
+      "melodyId": "openbook-love-walked-in-fake",
+      "sourceSha256": "b42ae60ec0e4e53e6d785daefd0c2a93d3dbe6ab6fc206a32991b7d4d7720fed",
+      "targetSha256": "6d95aa3458fec04f0229d26bc4fac61ac5004b18e7a62d1081bd19c696e68d0c",
+      "transpose": -3,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 128,
+      "title": "Lover Man",
+      "melodyId": "openbook-lover-man-laurent",
+      "sourceSha256": "83ca0579cd5b56daf6c920e3790a367223d5bf514b9f16dce6468ca8832743b8",
+      "targetSha256": "de2b7023715d56269fd435334e1d761266cc7479d715c1b72b698041bb3c04b6",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 130,
+      "title": "Lullaby of the Leaves",
+      "melodyId": "openbook-lullaby-of-the-leaves-fake",
+      "sourceSha256": "366cfffcd457a295a8d8c17cf502b3bbd932da90f797ffd093720ff4fec3a5c5",
+      "targetSha256": "7f7529de56297d62e0c2479ab0d406de5b3d52be1045a40e6d957396d49a0d7f",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 132,
+      "title": "Manhattan",
+      "melodyId": "openbook-manhattan-fake",
+      "sourceSha256": "1ef2f701010fa7d6225a7f019a3d1cd8c4926b12d849372e55260fad4e108a40",
+      "targetSha256": "eed45e6f08045c500f53a6a3c75a9fb4fd7e823bf711cf5b1456d472d3f70b05",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 134,
+      "title": "Mean to Me",
+      "melodyId": "openbook-mean-to-me-laurent",
+      "sourceSha256": "8252f190afa0d18e731c3dd47d27a7e3c75ad894c57cb13ac3f2d35cef1ee823",
+      "targetSha256": "2dbf51942c0e1668a35494521fbd408b143650710c561e3e0d236989eb5ab0e8",
+      "transpose": -5,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 136,
+      "title": "Memories of You",
+      "melodyId": "openbook-memories-of-you-fake",
+      "sourceSha256": "1d5abf7850a1c99c470fbaeb440ca3bce7aac598c1e1f4d2bdb5fc422c59425a",
+      "targetSha256": "cab0c1c921c9be4726f4a382c42cdad652ca13f8e0042442c443deb846fdf13e",
+      "transpose": -3,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 138,
+      "title": "Misty",
+      "melodyId": "openbook-misty-real",
+      "sourceSha256": "bb2b4bc7add6df3aa4276750d40156e289854177df9dbbf752117cbee4571378",
+      "targetSha256": "691c99ab41e56969e7195c16839502e94aef54d9d4211c37315d0161d0df266b",
+      "transpose": -3,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 140,
+      "title": "Moonglow",
+      "melodyId": "openbook-moonglow-fake",
+      "sourceSha256": "eb2262c3b50844441a2b90c949ef76b6d8378935e8b0a4bf480481c8192ff5fd",
+      "targetSha256": "5169704081a20f32374471f2c7938e7b7d152a10a9acce26d4046766d6b82ab6",
+      "transpose": 5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 143,
+      "title": "The More I See You",
+      "melodyId": "openbook-the-more-i-see-you-real",
+      "sourceSha256": "ac7cea860494190c7f07c04475dcb17f197b8d32b17d724ea3653c178cc14fef",
+      "targetSha256": "2ab6928a410805b18f8cc1eeb3c36b6beb3ed07bab398311ed00deab00475312",
+      "transpose": -3,
+      "clockOffset": 3,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 131,
+          "targetStart": 0,
+          "targetEnd": 131
+        }
+      ]
+    },
+    {
+      "song": 144,
+      "title": "My Foolish Heart",
+      "melodyId": "openbook-my-foolish-heart-fake",
+      "sourceSha256": "2311793db6f8e9e624a2950035f3a11953f249971e8ccb616651aa8e42519303",
+      "targetSha256": "3121d8aed634d8973781786aa4be8b8643e8e15c8839d3a4418db391483e4bad",
+      "transpose": 2,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 145,
+      "title": "My Funny Valentine",
+      "melodyId": "openbook-my-funny-valentine-fake",
+      "sourceSha256": "8c147c5b52b8dcde0bdab330f9b07a536a5149d0d697239fe25dc8d48bf8819a",
+      "targetSha256": "d1577501a3abc3cc023f76685aa14017a7e4aa6a086a1880d2304065199fb7c7",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 144,
+          "targetStart": 0,
+          "targetEnd": 144
+        }
+      ]
+    },
+    {
+      "song": 146,
+      "title": "My Old Flame",
+      "melodyId": "openbook-my-old-flame-wikifonia",
+      "sourceSha256": "1fb425510de17dcf8af83af99e2405e90325e5b9c6375538d204f66ae93f6110",
+      "targetSha256": "14e6ce4fe067fe3d8a12afec820ae9b6bfc77a1cf5afa7c7c86ff4986a5f32de",
+      "transpose": 5,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 147,
+      "title": "My Romance",
+      "melodyId": "openbook-my-romance-fake",
+      "sourceSha256": "693bc5e81bac62f27bdaeb45c6b7fd3b5012476ae2b1c57e536409e658a0c5b5",
+      "targetSha256": "e78dd29c774b064637e9db65799445f893bbb8eadae382ed6ba5147c3798a1d7",
+      "transpose": 0,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 148,
+      "title": "My Shining Hour",
+      "melodyId": "openbook-my-shining-hour-fake",
+      "sourceSha256": "cd995c1fe2a4112b0f49ebc64b8b49680eb6a8d122ecf6576b9234f4f328eeba",
+      "targetSha256": "c5867f9d958775a47cbf3ebd6a3bcd98bb181571ec81bf6b30eb195e0514a6fa",
+      "transpose": -3,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 150,
+      "title": "The Nearness of You",
+      "melodyId": "openbook-the-nearness-of-you-unknown",
+      "sourceSha256": "9c543e8df9482d94dfbbe39295f8f7e0ddcf4eb5437ce11c6ac9e956ddd9f2c9",
+      "targetSha256": "292e8bfd31282c6c923a95776cb1d47f4ff167d8979435b3bc94a7cf16486b82",
+      "transpose": -3,
+      "clockOffset": 1.5,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 145.5,
+          "targetStart": 0,
+          "targetEnd": 145.5
+        }
+      ]
+    },
+    {
+      "song": 154,
+      "title": "Nobody Else But Me",
+      "melodyId": "openbook-nobody-else-but-me-wikifonia",
+      "sourceSha256": "3394572087313cd1f3fe7e034a71a5126a7d80ddad92d52ea0c7b30643377721",
+      "targetSha256": "e0631b9639f7635e1335286e0c4c317bb09839a28fb17baa9e85ba7cbb8af201",
+      "transpose": 0,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 145,
+          "targetStart": 0,
+          "targetEnd": 145
+        }
+      ]
+    },
+    {
+      "song": 155,
+      "title": "Old Devil Moon",
+      "melodyId": "openbook-old-devil-moon-laurent",
+      "sourceSha256": "06a4217bb4daaaef40a11f3870375c1e9786f0d6726895e216b021f0e32258ab",
+      "targetSha256": "56e27637505a3951653c27b926f1ba48ec473f2fb12a9276e8031d3466a75334",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 192,
+          "targetStart": 0,
+          "targetEnd": 192
+        }
+      ]
+    },
+    {
+      "song": 159,
+      "title": "On the Sunny Side of the Street",
+      "melodyId": "openbook-on-the-sunny-side-of-the-street-fake",
+      "sourceSha256": "dbce7202c932e795a5b20c6d60533232e7d2169ed2f7e4ce2cbc0c1b7d994963",
+      "targetSha256": "a81d47fad746bddf41c21049966d6910166a64ab997def69eb5f01185f23b07a",
+      "transpose": 0,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 160,
+      "title": "Ornithology (How High the Moon)",
+      "melodyId": "openbook-ornithology-fake",
+      "sourceSha256": "0400ad68f40dd51a6f4c855071876e9d30f3e0b1c3afb692fac4e839d454420c",
+      "targetSha256": "c0af3e3fadd1ed4f3d117cb419b222a0d41b857f58f9019ced8f330f157be138",
+      "transpose": 5,
+      "clockOffset": 0.5,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128.5,
+          "targetStart": 0,
+          "targetEnd": 128.5
+        }
+      ]
+    },
+    {
+      "song": 161,
+      "title": "Our Delight",
+      "melodyId": "openbook-our-delight-wikifonia",
+      "sourceSha256": "a5773a069d62992e3d95597d2dbf3d216fa5ca4aa6ede0fa1323b0a7ab7ef6a9",
+      "targetSha256": "8ca45f1c9f087517ec20f28cacc74e7942a91003bfbb5ed6dab5e2ffe5ec064f",
+      "transpose": 4,
+      "clockOffset": 2,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 130,
+          "targetStart": 0,
+          "targetEnd": 130
+        }
+      ]
+    },
+    {
+      "song": 162,
+      "title": "Out of Nowhere",
+      "melodyId": "openbook-out-of-nowhere-real",
+      "sourceSha256": "b5f44c2ec301f2e953065563c9e819f3b8ecc10ebf32d51dc988392727999fa2",
+      "targetSha256": "90420f754bb8fa0656cf4eabc18c1b403b8325fdbee54ac2ac98af71132495d1",
+      "transpose": 5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 163,
+      "title": "Over the Rainbow",
+      "melodyId": "openbook-somewhere-over-the-rainbow-ccb",
+      "sourceSha256": "436704d199a95da36367216d9576a9b08786e6baad08ef7efbc5d36a9c71edb1",
+      "targetSha256": "4cd50bcff9dca9fde1f9376c85c9b97f690c18fc43e070bb935c3b89570c6e96",
+      "transpose": -3,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 164,
+      "title": "(It's Only a) Paper Moon",
+      "melodyId": "openbook-it-s-only-a-paper-moon-fake",
+      "sourceSha256": "c9cabb3963df0d14d9350d5a8aad806217c511a9e218a260ef202ad2bbc31220",
+      "targetSha256": "10b2c3d07c01393500eb39e70865dfb941beda9f1eb0bb1fd256f3e5dcd6cf04",
+      "transpose": 5,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 165,
+      "title": "Peace",
+      "melodyId": "openbook-peace-real",
+      "sourceSha256": "14f9a2e13dd5de2a1a9bbcbafc30ced03e6089536d8ee7802d12faa66947254e",
+      "targetSha256": "16d41ae0f9ca98c90b7ea6f132fb7ac2a18cde52b4395c16cf3c74be0e5ba5d6",
+      "transpose": 2,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 41,
+          "targetStart": 0,
+          "targetEnd": 41
+        }
+      ]
+    },
+    {
+      "song": 166,
+      "title": "Pennies from Heaven",
+      "melodyId": "openbook-pennies-from-heaven-fake",
+      "sourceSha256": "129a14ee75bacd8444d8a483925abbc7e6faf5d2a9bd1e123998c1d36d6aac12",
+      "targetSha256": "e8eaa554d0b096859e588c54a0beacef15e549e782d7c7636435ad18f88fa9e9",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 168,
+      "title": "Polkadots and Moonbeams",
+      "melodyId": "openbook-polka-dots-and-moonbeams-fake",
+      "sourceSha256": "7c7cb4709a21540d2531ea5f691fa7017c5eb9238524b2c4d655d92509320046",
+      "targetSha256": "51c8c5e9d197e5117d6861c851b30cc91b4124f342c610546714923c7244d9e8",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 169,
+      "title": "Poor Butterfly",
+      "melodyId": "openbook-poor-butterfly-fake",
+      "sourceSha256": "b72c297e72554e7c03ebc23af293ba1d63321c4b6c5fb01bb8587ea3f7fadcb7",
+      "targetSha256": "a003351f2abd637fb50db36138495addf40350d29682e5439df1ee2f36f3af6a",
+      "transpose": 4,
+      "clockOffset": 3,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 131,
+          "targetStart": 0,
+          "targetEnd": 131
+        }
+      ]
+    },
+    {
+      "song": 170,
+      "title": "Prelude to a Kiss",
+      "melodyId": "openbook-prelude-to-a-kiss-fake",
+      "sourceSha256": "70d65ad0328bf173f6e58263e696aaada7ef8d7298955805d1e299a3bb964a5f",
+      "targetSha256": "4ec7ac7c9a690bf1a7455512c74e8ffa0e546aac86ab3d6c07d4f44e667abd94",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 172,
+      "title": "Red Sails in the Sunset",
+      "melodyId": "openbook-red-sails-in-the-sunset-fake",
+      "sourceSha256": "d5d98e1b9ca0c44882f4b99055c414566b5d1ce00b1847c9075c3624ae942a08",
+      "targetSha256": "bf1c12f2812a69d44cfc185dcb47904a7cddfe4ddb393301c505eec9df90c7a9",
+      "transpose": 5,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 174,
+      "title": "Rosetta",
+      "melodyId": "openbook-rosetta-fake",
+      "sourceSha256": "47405ed9366581e1a5888f5029ed8bb88849ecd1c720bc02a84c3ca828501d17",
+      "targetSha256": "2f97219711c7859f086210841ef8f7205b3ba24a419034942b297bd2ee36ccd3",
+      "transpose": -5,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 175,
+      "title": "S'Wonderful",
+      "melodyId": "openbook-s-wonderful-wikifonia",
+      "sourceSha256": "1ee2cc27fbfc93c8f1377430c596da798f13879192f433bd00efc202f3b69621",
+      "targetSha256": "0f9f042b545b9c533878e809c08bdadb7876d0fd32cf7d2263b34a994afd75be",
+      "transpose": -3,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 176,
+      "title": "St. Thomas",
+      "melodyId": "openbook-st-thomas-fake",
+      "sourceSha256": "1ed45164882a99e7567d35ea7e7025204b71d26f8301e0dad2c2f6a5f2736aea",
+      "targetSha256": "29e80b6179eab86b23d001cc860e9d90b040306bcea15e326a65043615a23b58",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 64,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 64
+        }
+      ]
+    },
+    {
+      "song": 177,
+      "title": "Santa Claus is Coming to Town",
+      "melodyId": "wikifonia-santa-claus-is-coming-to-town-haven-gillespie-j-fred-coots",
+      "sourceSha256": "63530ec5945189297024888757459461e7e4c7414712002a18b46d83092692ab",
+      "targetSha256": "a9c740b1fa135fc11e4b6f5ef654836720664d290c88af1179f852a703807633",
+      "transpose": 0,
+      "clockOffset": 0.5,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128.5,
+          "targetStart": 0,
+          "targetEnd": 128.5
+        }
+      ]
+    },
+    {
+      "song": 178,
+      "title": "Satin Doll",
+      "melodyId": "openbook-satin-doll-laurent",
+      "sourceSha256": "bc81849b766df62a5825a53c4bd70437877f1a1e69dbb6a3aa417ca9a1e722f5",
+      "targetSha256": "f66e4c59468ca3e77ef96007d254d2a4167cd5eb3c1a179ef9c1288748a5dd2d",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 179,
+      "title": "Scrapple from the Apple",
+      "melodyId": "openbook-scrapple-from-the-apple-fake",
+      "sourceSha256": "39e58635e9cd19203097be4d4fe5b1df6131b9864968b0c07fc0b3e1e59d1f3c",
+      "targetSha256": "a19b0f920603afbc5ef7553cc4ea0d3ae6687f6ff69e1b73c28e251d37123a0b",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 180,
+      "title": "Secret Love",
+      "melodyId": "openbook-secret-love-wikifonia",
+      "sourceSha256": "67bbda0bbb6ef4da18f654c35a1f553261b4a424be54bcddb9dcacee8234b880",
+      "targetSha256": "12e7f73f89f72fbf5ad73e189c564041bf5b890c18f9f03bde489d6f492cee28",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 192,
+          "targetStart": 0,
+          "targetEnd": 192
+        }
+      ]
+    },
+    {
+      "song": 181,
+      "title": "September in the Rain",
+      "melodyId": "openbook-september-in-the-rain-wikifonia",
+      "sourceSha256": "bdd0fb6f5703697ff208b328e590878d209f680adfeb0e984a2ea8f7b40a15e0",
+      "targetSha256": "976d34bf97727a680e26e84da131e9811ae20578ba5ddf848cc339653f0d6d00",
+      "transpose": 0,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 182,
+      "title": "September Song",
+      "melodyId": "openbook-september-song-laurent",
+      "sourceSha256": "b472d8ed60fdb83c0ca11f4abe3c62549f8213a10eda895e6aa05b69ecabeaa9",
+      "targetSha256": "b5dffbddb90465bfe8855767ac090b4c54391f69cee0f952903fee772152ec63",
+      "transpose": 0,
+      "clockOffset": 3,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 131,
+          "targetStart": 0,
+          "targetEnd": 131
+        }
+      ]
+    },
+    {
+      "song": 183,
+      "title": "Shiny Stockings",
+      "melodyId": "openbook-shiny-stockings-fake",
+      "sourceSha256": "0346520b853778e29d2de7a6f8591114cc7e08b14693b10565585992ddeb8ca5",
+      "targetSha256": "2a3b94d27e8397fe9d6381e995cc63c490018b3672ad39ab15dd02b4b02c0ecc",
+      "transpose": 4,
+      "clockOffset": 1.5,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129.5,
+          "targetStart": 0,
+          "targetEnd": 129.5
+        }
+      ]
+    },
+    {
+      "song": 184,
+      "title": "Skylark",
+      "melodyId": "openbook-skylark-fake",
+      "sourceSha256": "d3dd678bc69609fd48fe3c76c13882b070df15c08efd5f1798c3ad058033d2ac",
+      "targetSha256": "7f1e40ad693d8cfb099d1251692b302ce5b8e5c032ba6f048575d07d80a43dfd",
+      "transpose": -3,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 185,
+      "title": "Slow Boat to China",
+      "melodyId": "openbook-on-a-slow-boat-to-china-fake",
+      "sourceSha256": "23e0d02a6a339b0d5e5426234c9621a8ff0ece2a23b82f3ee43a34ffc0758e76",
+      "targetSha256": "335c7c54687ec913195fa964c4a4b04e3e7bc734f631d525aa34db7472e1af33",
+      "transpose": 2,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 186,
+      "title": "Smile",
+      "melodyId": "openbook-smile-wikifonia",
+      "sourceSha256": "39840938109fdc5bdc4e9fc31e8891e25c7bb834e9977c6d767b0c7315702246",
+      "targetSha256": "9606bfc65f9b514f457815117f1180e0511db8d6062d5beeeb346f7ce1315992",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 136,
+          "targetStart": 0,
+          "targetEnd": 136
+        }
+      ]
+    },
+    {
+      "song": 187,
+      "title": "Softly, as in a Morning Sunrise",
+      "melodyId": "openbook-softly-as-in-a-morning-sunrise-real",
+      "sourceSha256": "9a842b473288d788321d3bd4d54d4d2b6271948247e1b2afe828a513519d1f24",
+      "targetSha256": "760de004864ca9270dc99da2784f4a45f681283ef59958eb09dccfbc1711af2d",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 188,
+      "title": "Solar",
+      "melodyId": "openbook-solar-real",
+      "sourceSha256": "316900d2c2f3fae3e4b6ec038ae2ac972454e11d321dcf1ebbf838e6e90712b8",
+      "targetSha256": "d8b8cc0e3ee80c24938ee913c23bf0f15f4c0cef3ccb1aa73c2139074f608a24",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 48,
+          "sourceEnd": 96,
+          "targetStart": 0,
+          "targetEnd": 48
+        }
+      ]
+    },
+    {
+      "song": 189,
+      "title": "Solitude",
+      "melodyId": "openbook-solitude-fake",
+      "sourceSha256": "1c929f7776b9bd827fe8610dc1c608135511c44ea6f63539cf085b82506667c4",
+      "targetSha256": "cc6b52fee463f746837690dde81a39293b1f002674bdf56c556d3786c4ae5c01",
+      "transpose": -3,
+      "clockOffset": 2,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 130,
+          "targetStart": 0,
+          "targetEnd": 130
+        }
+      ]
+    },
+    {
+      "song": 191,
+      "title": "Somebody Loves Me",
+      "melodyId": "openbook-somebody-loves-me-wikifonia",
+      "sourceSha256": "7835164374e6f9df1d9863170cf5659e2f7eb782c943d911583b2690b8b0757c",
+      "targetSha256": "f560af2beeb373681d0aaa2ac42a16ef3093aa2d5ca1ec167b62b16ee47eccc6",
+      "transpose": 5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 192,
+      "title": "Someday My Prince Will Come",
+      "melodyId": "openbook-someday-my-prince-will-come-real",
+      "sourceSha256": "c595bce7e9afb9ec8479f270cba648a8ef3372d8c60f191239347bda93e7aaa6",
+      "targetSha256": "517c79094a8a82ab08a4517a71735c48db3896090497288ac9241157edba0f7c",
+      "transpose": 2,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 96,
+          "targetStart": 0,
+          "targetEnd": 96
+        }
+      ]
+    },
+    {
+      "song": 193,
+      "title": "Soon",
+      "melodyId": "openbook-soon-wikifonia",
+      "sourceSha256": "6fd8d86f9995218773d59cd218e5db6d2e1b157bbed652afeccfb4edd19e5ec4",
+      "targetSha256": "9a4baadb2d59fbccffa361adf82eb8749f4061c45dbec3550db572c76a238f61",
+      "transpose": -3,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 194,
+      "title": "Soul Eyes",
+      "melodyId": "openbook-soul-eyes-fake",
+      "sourceSha256": "448ae1617c5cd52d2c1ff8180fcdf348fefa0a79ad1891152afc8e57c4425b49",
+      "targetSha256": "397dc9d292fd337c31dd03582e07be351489997313c51c28bb4803f9f3a4344b",
+      "transpose": 0,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 195,
+      "title": "Stardust",
+      "melodyId": "openbook-star-dust-real",
+      "sourceSha256": "197d1e9c1782bc19528422a99b8d7ae36102ea3981687fd4391e822008fcbdc9",
+      "targetSha256": "704017194120c1becf3d58faa892842c76723ae2ec6ceae1227750dbf8f08a6d",
+      "transpose": -1,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 192,
+          "targetStart": 0,
+          "targetEnd": 192
+        }
+      ]
+    },
+    {
+      "song": 196,
+      "title": "Star Eyes",
+      "melodyId": "openbook-star-eyes-real",
+      "sourceSha256": "13fb213ade9dbe026e04071cae7785dfb9b948270952d0426d92d0d4d6eb74b9",
+      "targetSha256": "dc3e936af265d1a3b16fd110cd9b20eedf75a37ea55f287058c3cf6693b74ecc",
+      "transpose": -3,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 144,
+          "targetStart": 0,
+          "targetEnd": 144
+        }
+      ]
+    },
+    {
+      "song": 197,
+      "title": "Stars Fell on Alabama",
+      "melodyId": "openbook-stars-fell-on-alabama-wikifonia",
+      "sourceSha256": "de31b3da20f9bca0335ec37322b2ef36cb2b057c5c368348899802a4e247ea45",
+      "targetSha256": "132630da3d8430fdeed792c4858eb62ca1605afed3af310b27422611601ec2be",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 198,
+      "title": "Stella By Starlight",
+      "melodyId": "openbook-stella-by-starlight-real",
+      "sourceSha256": "a081c4a3469286fafe0e5a39194b261edd2495be952cf8bc07f93d829f974e85",
+      "targetSha256": "9a82c5012eba775f6fc6cf9635ed34e725c169a0bf145a315eacf96d80624b79",
+      "transpose": 2,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 201,
+      "title": "Sweet and Lovely",
+      "melodyId": "openbook-sweet-and-lovely-fake",
+      "sourceSha256": "a7d694f079f87e42db5b526c0906d2fc9afc2b7ba8c3f8cbb37acbbb6e9835d7",
+      "targetSha256": "74536d5eaca93cf04e77d29e4c3ac09d7705afc55379d16a08a0eef3adec8d68",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 202,
+      "title": "Sweet Georgia Brown",
+      "melodyId": "openbook-sweet-georgia-brown-laurent",
+      "sourceSha256": "d2530352fa7bc95a7db6d62269bf22a5ee0787aa2eec09e3ae82e888dab21530",
+      "targetSha256": "1524e76331aa6a5a43bcac0fdfc905f615ed7cf1cbf3f0aa6d597fb69c2adc75",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 206,
+      "title": "Tenderly",
+      "melodyId": "openbook-tenderly-fake",
+      "sourceSha256": "f2301346bd7c5e2f65308ae964c0056a4d3576881568990bb63bfa905f525bd1",
+      "targetSha256": "bfa9c756e218979efb795cc6cd8d8d6eac18b85bf511e630a730111ee91721c2",
+      "transpose": -3,
+      "clockOffset": 1.5,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 97.5,
+          "targetStart": 0,
+          "targetEnd": 97.5
+        }
+      ]
+    },
+    {
+      "song": 207,
+      "title": "That's All",
+      "melodyId": "openbook-that-s-all-fake",
+      "sourceSha256": "e0cea9a4cce1fae5778645d914608d5847ece15c3703bce017cc812e76d4b7d7",
+      "targetSha256": "6ced4f4bcd22b800cd1810e0108dd55c055b995c3cc2ee9fc80a93f918bdca95",
+      "transpose": 0,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 208,
+      "title": "There Is No Greater Love",
+      "melodyId": "openbook-there-is-no-greater-love-fake",
+      "sourceSha256": "6376c6c144bc8f620dbc0f0e925c3a417912bda69dcbb81553834f71fbdc13ac",
+      "targetSha256": "74e947e569f29f44ccc6ce9a1f84ce54a8d0c8f140baf107b14cb9d75ab04698",
+      "transpose": 2,
+      "clockOffset": 3,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 131,
+          "targetStart": 0,
+          "targetEnd": 131
+        }
+      ]
+    },
+    {
+      "song": 210,
+      "title": "There Will Never Be Another You",
+      "melodyId": "openbook-there-will-never-be-another-you-real",
+      "sourceSha256": "872c7132e6110c2d262952be7931ff520b60e15134fb90ecfb27c50d66296d8b",
+      "targetSha256": "caa7a4621af18dd2d715e103c7e9bcaa0bc313769666ed4e59ff9db1529144b6",
+      "transpose": -3,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 211,
+      "title": "These Foolish Things",
+      "melodyId": "openbook-these-foolish-things-fake",
+      "sourceSha256": "e3522e7c579d23615ae32a4bc1a8fb0fe0d3a66e513b1e015433ac657cbaf939",
+      "targetSha256": "b36aa7b3c51c111bcc1e1d9f25a59f42cc035f87d40e032c1799f87ff4f0316a",
+      "transpose": -3,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 212,
+      "title": "They Can't Take That Away from Me",
+      "melodyId": "openbook-they-can-t-take-that-away-from-me-fake",
+      "sourceSha256": "b996b82151d029ae81aa0841916229fb92faaac2d6198c5d9ff4ae25e1a453fd",
+      "targetSha256": "799c39670e31c357b5d8ea3cf90e1e4e09aeac8c388deb3f3709d272f8b14325",
+      "transpose": -3,
+      "clockOffset": 3.5,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 147.5,
+          "targetStart": 0,
+          "targetEnd": 147.5
+        }
+      ]
+    },
+    {
+      "song": 218,
+      "title": "Tune Up",
+      "melodyId": "openbook-tune-up-fake",
+      "sourceSha256": "108a712e419a13b745d276637382ad8124a79eefece42ceafcae1ffbb118b5ac",
+      "targetSha256": "417da91481ccdd216df0783c560d9e611a84da4223b5ede1c776014fd003cea7",
+      "transpose": -2,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 219,
+      "title": "Undecided",
+      "melodyId": "openbook-undecided-fake",
+      "sourceSha256": "cb7b3c002063f0de34676ffc263b99d4502534205381cceb17ffddf3166a7f32",
+      "targetSha256": "136d794fee3cd2e9c1c705086ce546dcfe51617a704a692edbdc87d22ff5b7fa",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 220,
+      "title": "Under a Blanket of Blue",
+      "melodyId": "openbook-under-a-blanket-of-blue-fake",
+      "sourceSha256": "f9429388de77616a02d203a7e1d578e145111ae675a9e33b8f8e796743ace397",
+      "targetSha256": "386d3d95258e1a6bf877521658fb4e3501edc22aa54662fa256fa5dba16f3c7b",
+      "transpose": -3,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 221,
+      "title": "Violets for Your Furs",
+      "melodyId": "openbook-violets-for-your-furs-fake",
+      "sourceSha256": "3735561328e64fbbe7d2f3e8a9fae1132d8b2b4b016a1c19aebe5309f8a5a6f7",
+      "targetSha256": "51a59ea7843b73caf5c6a9af3a24162be537afe0f9a3c1b69a66468c60bf05c0",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 222,
+      "title": "Wave",
+      "melodyId": "openbook-wave-real",
+      "sourceSha256": "d781c958ec637c61d7f63082db5950e4517c6f5ba605cf60393dd7c802aebdad",
+      "targetSha256": "9cdda949d3c5e03c307717d67b3a05dbf2b3d440dce53445ab453023673b1aa1",
+      "transpose": -2,
+      "clockOffset": 2,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 178,
+          "targetStart": 0,
+          "targetEnd": 178
+        }
+      ]
+    },
+    {
+      "song": 224,
+      "title": "(You're a) Weaver of Dreams",
+      "melodyId": "openbook-a-weaver-of-dreams-wikifonia",
+      "sourceSha256": "e6cdc39890c5e85f9ef1a68c3fe91ba49198e5e2d73b454849bfb66b6f3b5b11",
+      "targetSha256": "37f4096f1534bc1c8a6e63181e4d77518ffd613cb06732550fe7d9de47bc567e",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 225,
+      "title": "What's New",
+      "melodyId": "openbook-what-s-new-fake",
+      "sourceSha256": "9efaf61648ff80789dca9007c4001acd4c3912dd8a364f257b3acf6faee55789",
+      "targetSha256": "bd62c3a14ed50b86dc726a379f131216fb077bd81bb54167a0d0f41ec68e4178",
+      "transpose": 0,
+      "clockOffset": 2,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 130,
+          "targetStart": 0,
+          "targetEnd": 130
+        }
+      ]
+    },
+    {
+      "song": 229,
+      "title": "When I Fall in Love",
+      "melodyId": "openbook-when-i-fall-in-love-fake",
+      "sourceSha256": "a433af6b83decb53798bf0e3c0764c0fe2f24a005344d2fa9d49d108fa7885bd",
+      "targetSha256": "f2ed16ea482b69aad95df1c1eb5c3f4f0a341dbeecbf671f6f41e729ab661183",
+      "transpose": -3,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 230,
+      "title": "When You Wish Upon a Star",
+      "melodyId": "openbook-when-you-wish-upon-a-star-real",
+      "sourceSha256": "cd0bfe13d3d8794f47ab47cfbca42cba3cd14a9f358f2db6e3579108fa6bbfa7",
+      "targetSha256": "cbe7f2991c5ab94d2bd40693c1f8762fb9f9aa3577a9400ad2d7dd87b4357c43",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 235,
+      "title": "Woody 'n You",
+      "melodyId": "openbook-woody-n-you-wikifonia",
+      "sourceSha256": "82dee956e8deccbc8842a3a56cb50bb2e1487981149f213e0515c60c31b567d2",
+      "targetSha256": "40b80089a6df09887b70da7d7a00bfaad077bb8d7f363e0859e833a418eedd9e",
+      "transpose": -1,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 236,
+      "title": "Wrap Your Troubles in Dreams",
+      "melodyId": "openbook-wrap-your-troubles-in-dreams-and-dream-your-troubles-away-fake",
+      "sourceSha256": "d33783bc27686afe41c28c80d8f99e21fbff209806c6eeeeb645929a5ff40a40",
+      "targetSha256": "430a67c6eb9a8fca1d058d79cb6c3b0c008af4d632ad6107b447acb7cb178e8f",
+      "transpose": 0,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 129,
+          "targetStart": 0,
+          "targetEnd": 129
+        }
+      ]
+    },
+    {
+      "song": 237,
+      "title": "You Go to My Head",
+      "melodyId": "openbook-you-go-to-my-head-laurent",
+      "sourceSha256": "2788e8fc14617fa8f33862e104f06553e517b8d3b9f84e1d939cc4c8554a1be1",
+      "targetSha256": "cead446c23112757112cd45cdfb32386c269a3d82d783f00ffd78554893c4c70",
+      "transpose": 0,
+      "clockOffset": 1,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 161,
+          "targetStart": 0,
+          "targetEnd": 161
+        }
+      ]
+    },
+    {
+      "song": 238,
+      "title": "You Stepped out of a Dream",
+      "melodyId": "openbook-you-stepped-out-of-a-dream-wikifonia",
+      "sourceSha256": "e3cfec3f84d9a5da72e74ccb1cbbc593e693b87422fa259f9e797ea76f190e40",
+      "targetSha256": "dad14360a3a016777fb947efd74a6de6c6e4a07000b20dc30c6a61d3764a5ecc",
+      "transpose": 0,
+      "clockOffset": 0,
+      "basis": "bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 128,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    },
+    {
+      "song": 239,
+      "title": "You Turned the Tables on Me",
+      "melodyId": "openbook-you-turned-the-tables-on-me-fake",
+      "sourceSha256": "94325669b3e3e8f9d99f92ac65b7a1563488b5a411de9845a41cbe37ac0c036e",
+      "targetSha256": "6e1dc10ec11fddfc12d1f211e2ed6fdde07c474cc68c5a103182caea7acde8d9",
+      "transpose": -5,
+      "clockOffset": 3.5,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 131.5,
+          "targetStart": 0,
+          "targetEnd": 131.5
+        }
+      ]
+    },
+    {
+      "song": 240,
+      "title": "You'd Be So Nice to Come Home To",
+      "melodyId": "openbook-you-d-be-so-nice-to-come-home-to-fake",
+      "sourceSha256": "d8fde32166338e9cf0680694845a403f688321009643685c8b3f8158d00b5dc3",
+      "targetSha256": "7739f37eac06b443cc2a49e0504e0163d7c465a45b3b1c675bec9bc0a3bd476a",
+      "transpose": 3,
+      "clockOffset": 2,
+      "basis": "pickup-bar-grid",
+      "segments": [
+        {
+          "sourceStart": 0,
+          "sourceEnd": 130,
+          "targetStart": 0,
+          "targetEnd": 130
+        }
+      ]
+    },
+    {
+      "song": 241,
+      "title": "Yours Is My Heart Alone",
+      "melodyId": "openbook-yours-is-my-heart-alone-wikifonia",
+      "sourceSha256": "7b6d8f0402f38c81276e86bad72af4478cbfb4f08765ec3cbb70343d20bdf593",
+      "targetSha256": "28bc55f2357b99e102b12bf571d829b3254ef44ebf0566608479ada261c49de7",
+      "transpose": -5,
+      "clockOffset": 0,
+      "basis": "source-repeat-chorus",
+      "segments": [
+        {
+          "sourceStart": 128,
+          "sourceEnd": 256,
+          "targetStart": 0,
+          "targetEnd": 128
+        }
+      ]
+    }
+  ],
+  "pending": [
+    {
+      "song": 3,
+      "title": "Airegin",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-airegin-fake",
+          "sourceBars": 51,
+          "sourceBeats": 204,
+          "targetBeats": 144,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "da3d8175f5c51173a3579b6dd35963fdece2308edec014945889103d89e9bf7e"
+        }
+      ]
+    },
+    {
+      "song": 9,
+      "title": "Angel Eyes",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-angel-eyes-fake",
+          "sourceBars": 34,
+          "sourceBeats": 136,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "cc012ab3da99c9bff56f5c1e9f86617c927a92f418e1ad3db2877fec2e920f5f"
+        }
+      ]
+    },
+    {
+      "song": 10,
+      "title": "Anything Goes",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-anything-goes-wikifonia",
+          "sourceBars": 33,
+          "sourceBeats": 132,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "97f6a7ab9eb18832eaa0a9b6f60ce2eaf5e089c45cdd8739b02206c75f4843c1"
+        }
+      ]
+    },
+    {
+      "song": 13,
+      "title": "Avalon",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-avalon-wikifonia",
+          "sourceBars": 33,
+          "sourceBeats": 132,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "db473d2c597ca329766eef31a90f13dd1902ca3ff28ff27c3e226d1f18bb4ccb"
+        }
+      ]
+    },
+    {
+      "song": 15,
+      "title": "Beautiful Love",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-beautiful-love-laurent",
+          "sourceBars": 33,
+          "sourceBeats": 132,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "4a5e9a6e4b2b9b3903df893b83229042b3966aa9cb87d0c97734c39b27fd0a7a"
+        }
+      ]
+    },
+    {
+      "song": 22,
+      "title": "Blue Lou",
+      "reason": "no admitted encoded head",
+      "candidates": []
+    },
+    {
+      "song": 23,
+      "title": "Blue Moon",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-blue-moon-wikifonia",
+          "sourceBars": 65,
+          "sourceBeats": 260,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "7ca3ad1e851c51a702b9d918efa5c279d7cee723cfb4811f15e1471904ec1c60"
+        }
+      ]
+    },
+    {
+      "song": 24,
+      "title": "Blues #1",
+      "reason": "no admitted encoded head",
+      "candidates": []
+    },
+    {
+      "song": 25,
+      "title": "Blues #2",
+      "reason": "no admitted encoded head",
+      "candidates": []
+    },
+    {
+      "song": 26,
+      "title": "Blues #3",
+      "reason": "no admitted encoded head",
+      "candidates": []
+    },
+    {
+      "song": 27,
+      "title": "Blues #4",
+      "reason": "no admitted encoded head",
+      "candidates": []
+    },
+    {
+      "song": 31,
+      "title": "But Not For Me",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-but-not-for-me-laurent",
+          "sourceBars": 33,
+          "sourceBeats": 132,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "dee785bfe0d0eaa797c5f65cf7ccc08c80a66a407328f61748d589594fa673e4"
+        }
+      ]
+    },
+    {
+      "song": 33,
+      "title": "Ceora",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "psjazz-realbook-ceora",
+          "sourceBars": 37,
+          "sourceBeats": 148,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "dfd2d89f037a1cc0a4009d6d4b3f24ec8ad9dbb8093269cbb722b0a36bbec776"
+        },
+        {
+          "id": "openbook-ceora-real",
+          "sourceBars": 65,
+          "sourceBeats": 260,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "5a780f2038e62263b774ad3d6344584e5917025503faccf0714326940408b8c9"
+        }
+      ]
+    },
+    {
+      "song": 34,
+      "title": "Cheek to Cheek",
+      "reason": "no admitted encoded head",
+      "candidates": []
+    },
+    {
+      "song": 35,
+      "title": "Chelsea Bridge",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-chelsea-bridge-fake",
+          "sourceBars": 32,
+          "sourceBeats": 127,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 3,
+          "sourceSha256": "8d43e2d2719dae13650ab9f10aaf562fe6572fde2d611ab22c6c563fda600175"
+        }
+      ]
+    },
+    {
+      "song": 37,
+      "title": "The Christmas Song",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-the-christmas-song-chestnuts-roasting-on-an-open-fire-fake",
+          "sourceBars": 32,
+          "sourceBeats": 128,
+          "targetBeats": 152,
+          "sourceMeter": [
+            2,
+            2
+          ],
+          "pickup": 0,
+          "sourceSha256": "e3ef0fb883e3291fab9eb52beade4f7623777df1d6a5d49911155bf4862a7407"
+        }
+      ]
+    },
+    {
+      "song": 40,
+      "title": "Corcovado (Quiet Nights)",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-quiet-nights-of-quiet-stars-fake",
+          "sourceBars": 36,
+          "sourceBeats": 144,
+          "targetBeats": 136,
+          "sourceMeter": [
+            2,
+            2
+          ],
+          "pickup": 0,
+          "sourceSha256": "400e8d47083dd9e16f56fef2bf4783f737107ff51fd40a8140b4e028334384da"
+        }
+      ]
+    },
+    {
+      "song": 41,
+      "title": "Corner Pocket (Until I Met You)",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-corner-pocket-wikifonia",
+          "sourceBars": 33,
+          "sourceBeats": 132,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "c17f57b89f0173cc2858ef1ad4ad98019ff55128584b7ec78f557ccf269545de"
+        }
+      ]
+    },
+    {
+      "song": 44,
+      "title": "Danny Boy (Londonderry Air)",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-danny-boy-wikifonia",
+          "sourceBars": 33,
+          "sourceBeats": 132,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "a6e5aa5dfb816b9b81b1057ce7af4f92ddcdaa80da030d44e2f64fae7e213152"
+        }
+      ]
+    },
+    {
+      "song": 46,
+      "title": "Dear Old Stockholm",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "improvisor-dear-old-stockholm-9c4641933d",
+          "sourceBars": 46,
+          "sourceBeats": 184,
+          "targetBeats": 120,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "b6a6bcde94c1b832695bc70da10915a1253a892d6805ad4ef01394391770924e"
+        }
+      ]
+    },
+    {
+      "song": 50,
+      "title": "Don't Go To Strangers",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-don-t-go-to-strangers-wikifonia",
+          "sourceBars": 63,
+          "sourceBeats": 252,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "9f5b434c8dd7199b6ac1d7cfe160c2fb44ccc5ffcaefdab63d4063c5af46baf5"
+        }
+      ]
+    },
+    {
+      "song": 51,
+      "title": "Don't Take Your Love From Me",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-don-t-take-your-love-from-me-fake",
+          "sourceBars": 44,
+          "sourceBeats": 176,
+          "targetBeats": 128,
+          "sourceMeter": [
+            2,
+            2
+          ],
+          "pickup": 0,
+          "sourceSha256": "ab33fbbfc97db08ba8241a79dc446a8a2dff5e5cf1563aa4ac3f0fb052049ac5"
+        }
+      ]
+    },
+    {
+      "song": 52,
+      "title": "Don't Worry About Me",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-don-t-worry-bout-me-wikifonia",
+          "sourceBars": 65,
+          "sourceBeats": 260,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "5fd3134b7195b50e2a54a2bee027699f76639ab286a2473bfc2755bfd07b9054"
+        }
+      ]
+    },
+    {
+      "song": 55,
+      "title": "Dream Dancing",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-dream-dancing-wikifonia",
+          "sourceBars": 105,
+          "sourceBeats": 420,
+          "targetBeats": 144,
+          "sourceMeter": [
+            2,
+            2
+          ],
+          "pickup": 0,
+          "sourceSha256": "64d9ae64f50e15ebcbbfed8e8d81758b3acf326b994b960b0610f54c2f92e814"
+        }
+      ]
+    },
+    {
+      "song": 56,
+      "title": "A Dream Is A Wish Your Heart Makes",
+      "reason": "no admitted encoded head",
+      "candidates": []
+    },
+    {
+      "song": 61,
+      "title": "Every Time We Say Goodbye",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-ev-ry-time-we-say-goodbye-fake",
+          "sourceBars": 68,
+          "sourceBeats": 272,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "96624ad0ce3e02930e6219b5d182fedf2d60bedd5314ff11fe6af23f5aa2e87f"
+        }
+      ]
+    },
+    {
+      "song": 63,
+      "title": "Everything I Love",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-ev-rything-i-love-wikifonia",
+          "sourceBars": 96,
+          "sourceBeats": 384,
+          "targetBeats": 128,
+          "sourceMeter": [
+            2,
+            2
+          ],
+          "pickup": 0,
+          "sourceSha256": "40805b3690130a1e174866cfcb7fbc875c66f8ece02783d30749ed14b8e9c1e6"
+        }
+      ]
+    },
+    {
+      "song": 64,
+      "title": "Falling In Love With Love",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-falling-in-love-with-love-fake",
+          "sourceBars": 64,
+          "sourceBeats": 192,
+          "targetBeats": 128,
+          "sourceMeter": [
+            3,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "2f42c36dffb6c2904f2a7094c2cb4c70acbcf3e83d953bac7ff3137b7f1e8dac"
+        }
+      ]
+    },
+    {
+      "song": 77,
+      "title": "Have You Met Miss Jones",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-have-you-met-miss-jones-fake",
+          "sourceBars": 40,
+          "sourceBeats": 160,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "c0620318fb818d31aa27e6d59809d2845f27f7c794ff605dc32c507b7091cfdd"
+        }
+      ]
+    },
+    {
+      "song": 80,
+      "title": "A House is Not a Home",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-a-house-is-not-a-home-wikifonia",
+          "sourceBars": 78,
+          "sourceBeats": 304,
+          "targetBeats": 152,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "ef058c419d3c9389fdfa6da3e9a89565b9cbeb642d60236326e3096c6aba16d8"
+        }
+      ]
+    },
+    {
+      "song": 85,
+      "title": "I Get Along Without You Very Well",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-i-get-along-without-you-very-well-wikifonia",
+          "sourceBars": 128,
+          "sourceBeats": 512,
+          "targetBeats": 200,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "0329db182e70a9ae4bf4b48dacb5255a620d4b7adaa1ce576986a4e38e1520dd"
+        }
+      ]
+    },
+    {
+      "song": 86,
+      "title": "I Got It Bad",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-i-got-it-bad-and-that-ain-t-good-wikifonia",
+          "sourceBars": 49,
+          "sourceBeats": 196,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "c67dbe9c1a06a1efede6fafe59797c1055d5a87ab1f3e8b8d6e5fe2d3c36ab81"
+        }
+      ]
+    },
+    {
+      "song": 87,
+      "title": "I Guess I'll Hang My Tears Out to Dry",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-guess-i-ll-hang-my-tears-out-to-dry-wikifonia",
+          "sourceBars": 72,
+          "sourceBeats": 288,
+          "targetBeats": 140,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "f362d2ab8e6ec6da1097b69f2d317a8cf198f64c48e5dde14611e342be82ac0e"
+        }
+      ]
+    },
+    {
+      "song": 89,
+      "title": "I Loves You Porgy",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-i-loves-you-porgy-fake",
+          "sourceBars": 25,
+          "sourceBeats": 97.5,
+          "targetBeats": 132,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 1.5,
+          "sourceSha256": "d2511ecc37e85b80ee6f38a109089ec7ac01dbd844bf928db9e3a754c6742548"
+        }
+      ]
+    },
+    {
+      "song": 90,
+      "title": "I Remember Clifford",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-i-remember-clifford-laurent",
+          "sourceBars": 38,
+          "sourceBeats": 152,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "4ad74aaf15771a05fe1bdbf585a60083375357ab59cc18b282eb2f81e77d5271"
+        }
+      ]
+    },
+    {
+      "song": 93,
+      "title": "I Thought About You",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-i-thought-about-you-wikifonia",
+          "sourceBars": 65,
+          "sourceBeats": 260,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "37e2e526bf9ea061faceb96aff00141349bd6ccbbb391520d117cfd7931707dd"
+        }
+      ]
+    },
+    {
+      "song": 98,
+      "title": "I've Got a Crush on You",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-i-ve-got-a-crush-on-you-wikifonia",
+          "sourceBars": 19,
+          "sourceBeats": 76,
+          "targetBeats": 72,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "154bd0c41b5b8d3198e3a5f973a9c0b913e1021e96b8c41e8de81e22a9754c6a"
+        }
+      ]
+    },
+    {
+      "song": 99,
+      "title": "I've Got the World on a String",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-i-ve-got-the-world-on-a-string-wikifonia",
+          "sourceBars": 33,
+          "sourceBeats": 132,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "d5dc55a07eb298aa07b004e6c3edc23cc6b5dc4f3c708d2763b461faa4496612"
+        }
+      ]
+    },
+    {
+      "song": 100,
+      "title": "I've Got Rhythm",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-i-got-rhythm-laurent",
+          "sourceBars": 38,
+          "sourceBeats": 152,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "40413fa91bb83f4f20c5244a4915248ddc433f4e91ef9cadc156c8c32d8160c6"
+        }
+      ]
+    },
+    {
+      "song": 105,
+      "title": "In A Mellow Tone",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-in-a-mellow-tone-wikifonia",
+          "sourceBars": 32,
+          "sourceBeats": 127,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 3,
+          "sourceSha256": "d5c10d14a6fc270ab5057dd592e8204d09a3830d48549d6833c28bbef61222f8"
+        }
+      ]
+    },
+    {
+      "song": 109,
+      "title": "It Had to Be You",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-it-had-to-be-you-wikifonia",
+          "sourceBars": 66,
+          "sourceBeats": 264,
+          "targetBeats": 128,
+          "sourceMeter": [
+            2,
+            2
+          ],
+          "pickup": 0,
+          "sourceSha256": "daaec60406cc678971ee0e96ceee524469704a8563c8a6446183d8a153c8fc23"
+        }
+      ]
+    },
+    {
+      "song": 111,
+      "title": "It's You or No One",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-it-s-you-or-no-one-wikifonia",
+          "sourceBars": 63,
+          "sourceBeats": 252,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "aa5fb929eaeb4e36b8db864925b7faeef241921ec655f36973808f7887a8a7f7"
+        }
+      ]
+    },
+    {
+      "song": 112,
+      "title": "The Joint is Jumpin'",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-the-joint-is-jumpin-fake",
+          "sourceBars": 76,
+          "sourceBeats": 304,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "e8e7bc99e0d94acb9ef460cda274cf34934567fe39c2964369b5147b7c8f596e"
+        }
+      ]
+    },
+    {
+      "song": 115,
+      "title": "Just the Way You Are",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "psjazz-realbook-just-the-way-you-are",
+          "sourceBars": 84,
+          "sourceBeats": 336,
+          "targetBeats": 216,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "d6cbbfe4fe42c1264359a7f432d3daf6bd6ca377097a4a5ddbb77f6eabac35d8"
+        }
+      ]
+    },
+    {
+      "song": 116,
+      "title": "Lady Be Good",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-oh-lady-be-good-wikifonia",
+          "sourceBars": 65,
+          "sourceBeats": 260,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "c80652305566cecca7552d57ec5aa58a4b0db201393e509bdfb99aaab6b13e9d"
+        }
+      ]
+    },
+    {
+      "song": 117,
+      "title": "Ladybird",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-lady-bird-real",
+          "sourceBars": 31,
+          "sourceBeats": 124,
+          "targetBeats": 64,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "110f0c8290b841ea03dc97feccf2d295d7e18e3c2d6e3a93d2425d608ad6081e"
+        }
+      ]
+    },
+    {
+      "song": 118,
+      "title": "Lady Is A Tramp",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-the-lady-is-a-tramp-fake",
+          "sourceBars": 48,
+          "sourceBeats": 192,
+          "targetBeats": 128,
+          "sourceMeter": [
+            2,
+            2
+          ],
+          "pickup": 0,
+          "sourceSha256": "7ed933d2df33521610615bd92a70a756aca27279ab4d25a073ff2fc7d8fb77d9"
+        }
+      ]
+    },
+    {
+      "song": 119,
+      "title": "Laura",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-laura-laurent",
+          "sourceBars": 67,
+          "sourceBeats": 268,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "87d34d3e9a895398762b7eeb62efc3c4f31f0ede4f110a03d7279fe0b860dc83"
+        }
+      ]
+    },
+    {
+      "song": 121,
+      "title": "Li'l Darlin'",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-li-l-darlin-fake",
+          "sourceBars": 40,
+          "sourceBeats": 160,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "2b80e3a574661034c4e0a2a4a0d25ab7b759414a4944b6362415483dc8b4579b"
+        }
+      ]
+    },
+    {
+      "song": 123,
+      "title": "Love Came on Stealthy Fingers",
+      "reason": "no admitted encoded head",
+      "candidates": []
+    },
+    {
+      "song": 124,
+      "title": "Love for Sale",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-love-for-sale-fake",
+          "sourceBars": 144,
+          "sourceBeats": 576,
+          "targetBeats": 192,
+          "sourceMeter": [
+            2,
+            2
+          ],
+          "pickup": 0,
+          "sourceSha256": "03c3a69492a35c06ab1a44c44875278c82635088bb8b5035b017615f69fd06b3"
+        }
+      ]
+    },
+    {
+      "song": 127,
+      "title": "Lover",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-lover-wikifonia",
+          "sourceBars": 64,
+          "sourceBeats": 192,
+          "targetBeats": 192,
+          "sourceMeter": [
+            3,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "00d2cb776483a7874819f18a377146db9f6a46d188d48f1e57fbb36985c00896"
+        }
+      ]
+    },
+    {
+      "song": 129,
+      "title": "Lullaby of Birdland",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-lullaby-of-birdland-fake",
+          "sourceBars": 42,
+          "sourceBeats": 168,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "0925080643d8010b7716d8b14ddb3fcd6e9a48728159774c5252925acabb439c"
+        }
+      ]
+    },
+    {
+      "song": 131,
+      "title": "Makin' Whoopee",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-makin-whoopee-wikifonia",
+          "sourceBars": 34,
+          "sourceBeats": 131,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 1.5,
+          "sourceSha256": "d22b79bfabd5ff75dd772968af267d0b17c44c681cdf77f535226133d909db96"
+        }
+      ]
+    },
+    {
+      "song": 133,
+      "title": "The Masquerade is Over",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-i-m-afraid-the-masquerade-is-over-fake",
+          "sourceBars": 57,
+          "sourceBeats": 225,
+          "targetBeats": 160,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 1,
+          "sourceSha256": "31f911a4646892fd4ff7a8293c7e6724604a6e70d6c191cf58d39349188cb0d1"
+        }
+      ]
+    },
+    {
+      "song": 135,
+      "title": "Meditation",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-meditation-laurent",
+          "sourceBars": 56,
+          "sourceBeats": 224,
+          "targetBeats": 160,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "3702ade7c0494bf813d7ebc5f282ff435abe720fc538c42ef4d804ccef6fba4d"
+        }
+      ]
+    },
+    {
+      "song": 137,
+      "title": "Minority",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-minority-wikifonia",
+          "sourceBars": 16,
+          "sourceBeats": 64,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "d929ec6b6e1203753ecf6febda8592fc6bde5751ddd9a94eddd707a8d384b3bb"
+        }
+      ]
+    },
+    {
+      "song": 139,
+      "title": "Moment's Notice",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-moment-s-notice-real",
+          "sourceBars": 38,
+          "sourceBeats": 152,
+          "targetBeats": 148,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "dd2b8f2beb8d24e78526921fde2b35ff35bad616a7bf5462c6c0b05ea02df1db"
+        }
+      ]
+    },
+    {
+      "song": 141,
+      "title": "Moonlight in Vermont",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-moonlight-in-vermont-fake",
+          "sourceBars": 28,
+          "sourceBeats": 112,
+          "targetBeats": 104,
+          "sourceMeter": [
+            2,
+            2
+          ],
+          "pickup": 0,
+          "sourceSha256": "2df82215c4f3923c8bc32199671dc9c7819b1db2e8d37c7a399eb953f6934887"
+        }
+      ]
+    },
+    {
+      "song": 142,
+      "title": "Moon River",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-moon-river-real",
+          "sourceBars": 77,
+          "sourceBeats": 231,
+          "targetBeats": 120,
+          "sourceMeter": [
+            3,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "0d997b15ad81bb1fe5e30b3220364c22eb023aba1b678bc85673608601450801"
+        }
+      ]
+    },
+    {
+      "song": 149,
+      "title": "Nancy with the Laughing Face",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-nancy-wikifonia",
+          "sourceBars": 66,
+          "sourceBeats": 264,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "37ec65e0ec947c9ce12a3c5d5348921db6cbbda72c3e3751c6aa342b3fc9deca"
+        }
+      ]
+    },
+    {
+      "song": 151,
+      "title": "Never Let Me Go",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-never-let-me-go-wikifonia",
+          "sourceBars": 54,
+          "sourceBeats": 216,
+          "targetBeats": 112,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "3d9d3630b3a8f4741f1a75b57d41c2c6422949b5a4972b5704e9235eef0416cf"
+        }
+      ]
+    },
+    {
+      "song": 152,
+      "title": "Night and Day",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-night-and-day-real",
+          "sourceBars": 49,
+          "sourceBeats": 194,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 2,
+          "sourceSha256": "c5e5a696e6eb7d2ca2b0465a56c3e20c4eb20f16e25ff6ca73a9597b99f8d70e"
+        }
+      ]
+    },
+    {
+      "song": 153,
+      "title": "A Night in Tunisia",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-a-night-in-tunisia-fake",
+          "sourceBars": 33,
+          "sourceBeats": 128.5,
+          "targetBeats": 160,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0.5,
+          "sourceSha256": "070d45e2fecf4e2fc84545237efca4e5c7bfa15e4770b8346545c02ae80157e8"
+        }
+      ]
+    },
+    {
+      "song": 156,
+      "title": "On a Clear Day",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-on-a-clear-day-you-can-see-forever-fake",
+          "sourceBars": 37,
+          "sourceBeats": 146,
+          "targetBeats": 136,
+          "sourceMeter": [
+            2,
+            2
+          ],
+          "pickup": 2,
+          "sourceSha256": "a9fa1e32de8bd217e0cf501af6980fa6fdbca828c8bbf0f62d0ae8a2ec9d19e1"
+        }
+      ]
+    },
+    {
+      "song": 157,
+      "title": "On a Misty Night",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-on-a-misty-night-wikifonia",
+          "sourceBars": 99,
+          "sourceBeats": 396,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "16324f58973116627238d4b30adb50b7e29a97002becb5fe3a06468af965d8a3"
+        }
+      ]
+    },
+    {
+      "song": 158,
+      "title": "On the Street Where You Live",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-on-the-street-where-you-live-fake",
+          "sourceBars": 65,
+          "sourceBeats": 258,
+          "targetBeats": 192,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 2,
+          "sourceSha256": "d59db049f09a8fb0f8e1c5f06413036f33afef3fb0b15d1624a849a837fef9bc"
+        }
+      ]
+    },
+    {
+      "song": 167,
+      "title": "Perdido",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-perdido-laurent",
+          "sourceBars": 25,
+          "sourceBeats": 96.5,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0.5,
+          "sourceSha256": "40f964831a8b125d138fac51c45e9c62ae50d8a027f513513ec371363a47bee0"
+        }
+      ]
+    },
+    {
+      "song": 171,
+      "title": "Recorda Me",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-recorda-me-wikifonia",
+          "sourceBars": 33,
+          "sourceBeats": 132,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "d45a7329bb0962f8c330fc41b752ea9e60978b034bd5f04462e0de395e154957"
+        }
+      ]
+    },
+    {
+      "song": 173,
+      "title": "Remember",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-remember-wikifonia",
+          "sourceBars": 66,
+          "sourceBeats": 198,
+          "targetBeats": 128,
+          "sourceMeter": [
+            3,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "f293c38ab7c30f2009534990af602f92b889089940a76da6c66e0df531f5070a"
+        }
+      ]
+    },
+    {
+      "song": 190,
+      "title": "Some Other Time",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-some-other-time-wikifonia",
+          "sourceBars": 72,
+          "sourceBeats": 288,
+          "targetBeats": 128,
+          "sourceMeter": [
+            2,
+            2
+          ],
+          "pickup": 0,
+          "sourceSha256": "16f2d948c363b4b3427ed03dcc1fd40a70312f9d3e15908e258fed7ec1095f7e"
+        }
+      ]
+    },
+    {
+      "song": 199,
+      "title": "Strike Up the Band",
+      "reason": "no admitted encoded head",
+      "candidates": []
+    },
+    {
+      "song": 200,
+      "title": "Summertime",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-summertime-fake",
+          "sourceBars": 38,
+          "sourceBeats": 150,
+          "targetBeats": 64,
+          "sourceMeter": [
+            2,
+            2
+          ],
+          "pickup": 2,
+          "sourceSha256": "4a31b81b684adcb4c0fcb103f8580b801f18b2066061eebf4ee24afe23519f16"
+        }
+      ]
+    },
+    {
+      "song": 203,
+      "title": "Taking a Chance on Love",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-taking-a-chance-on-love-wikifonia",
+          "sourceBars": 34,
+          "sourceBeats": 136,
+          "targetBeats": 128,
+          "sourceMeter": [
+            2,
+            2
+          ],
+          "pickup": 0,
+          "sourceSha256": "8b77ddd8c8b4a213305a1304a590813a44bcb174c5ab40b48820f002ae78dc4a"
+        }
+      ]
+    },
+    {
+      "song": 204,
+      "title": "Tangerine",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-tangerine-wikifonia",
+          "sourceBars": 34,
+          "sourceBeats": 136,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "b84b3d2f18f7ac227657e9b4bd1926fcf99654488737cd0db98d892381a7669f"
+        }
+      ]
+    },
+    {
+      "song": 205,
+      "title": "Teach Me Tonight",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-teach-me-tonight-wikifonia",
+          "sourceBars": 65,
+          "sourceBeats": 260,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "3af11ab079c95419e18aae7b1b923076e6e04264aa9adfa87b3d53471533c6e8"
+        }
+      ]
+    },
+    {
+      "song": 209,
+      "title": "There's No You",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-there-s-no-you-wikifonia",
+          "sourceBars": 40,
+          "sourceBeats": 160,
+          "targetBeats": 128,
+          "sourceMeter": [
+            2,
+            2
+          ],
+          "pickup": 0,
+          "sourceSha256": "44255902a72793009c4f516558a7bdca5ec5bd2ad2077637a968c6413d7b734d"
+        }
+      ]
+    },
+    {
+      "song": 213,
+      "title": "Thunderbirds (theme)",
+      "reason": "no admitted encoded head",
+      "candidates": []
+    },
+    {
+      "song": 214,
+      "title": "A Time for Love",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-a-time-for-love-wikifonia",
+          "sourceBars": 39,
+          "sourceBeats": 156,
+          "targetBeats": 152,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "c85679f21c6db63cf6b6e0142a5f20fd9e71bd765fb981b0f918fd425eb25097"
+        }
+      ]
+    },
+    {
+      "song": 215,
+      "title": "Too Close for Comfort",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-too-close-for-comfort-wikifonia",
+          "sourceBars": 82,
+          "sourceBeats": 328,
+          "targetBeats": 160,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "f6c93085cec98fd3ed896efbac5b7baa667617743fbed9a21f02c3119a19e416"
+        }
+      ]
+    },
+    {
+      "song": 216,
+      "title": "Too Marvelous for Words",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-too-marvelous-for-words-wikifonia",
+          "sourceBars": 65,
+          "sourceBeats": 260,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "6344bcd07058fd3254320510f3b25624f88311dbe0fd9cfaea6afe65d27947f1"
+        }
+      ]
+    },
+    {
+      "song": 217,
+      "title": "The Touch of Your Lips",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-the-touch-of-your-lips-fake",
+          "sourceBars": 65,
+          "sourceBeats": 256,
+          "targetBeats": 128,
+          "sourceMeter": [
+            2,
+            2
+          ],
+          "pickup": 1,
+          "sourceSha256": "c232232477d102f8c0471f498dc9af510328a5fe5eca90193737f22f648f3dc7"
+        }
+      ]
+    },
+    {
+      "song": 223,
+      "title": "We'll Be Together Again",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-we-ll-be-together-again-wikifonia",
+          "sourceBars": 65,
+          "sourceBeats": 260,
+          "targetBeats": 128,
+          "sourceMeter": [
+            2,
+            2
+          ],
+          "pickup": 0,
+          "sourceSha256": "82cd100c47769531b2bf4467dfbbdbd75c17da21c4daa3462babc1b2db5a82f3"
+        }
+      ]
+    },
+    {
+      "song": 226,
+      "title": "What a Little Moonlight Can Do",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-what-a-little-moonlight-can-do-wikifonia",
+          "sourceBars": 62,
+          "sourceBeats": 248,
+          "targetBeats": 256,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "759cbc122aef4a3522422045d33001e2f2161166e408c054b6edb08fd2727824"
+        }
+      ]
+    },
+    {
+      "song": 227,
+      "title": "What Am I Here For?",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-what-am-i-here-for-wikifonia",
+          "sourceBars": 48,
+          "sourceBeats": 192,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 0,
+          "sourceSha256": "c234295b367c85f0a4afe9b8bf3fabf264e5afa8a97cb5d03753a5eab7fffdcc"
+        }
+      ]
+    },
+    {
+      "song": 228,
+      "title": "What is This Thing Called Love?",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-what-is-this-thing-called-love-wikifonia",
+          "sourceBars": 81,
+          "sourceBeats": 324,
+          "targetBeats": 128,
+          "sourceMeter": [
+            2,
+            2
+          ],
+          "pickup": 0,
+          "sourceSha256": "8703250bde849038a1bd98837df865bd3ad9884f299aad1206d695e69f60fb77"
+        }
+      ]
+    },
+    {
+      "song": 231,
+      "title": "Whisper Not",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-whisper-not-laurent",
+          "sourceBars": 49,
+          "sourceBeats": 193,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 1,
+          "sourceSha256": "020a67b42be1bd23fe501fd5a02662853f5feac7f4d02ec319718d4904cf939b"
+        }
+      ]
+    },
+    {
+      "song": 232,
+      "title": "White Christmas",
+      "reason": "no admitted encoded head",
+      "candidates": []
+    },
+    {
+      "song": 233,
+      "title": "Willow Weep for Me",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-willow-weep-for-me-fake",
+          "sourceBars": 31,
+          "sourceBeats": 124,
+          "targetBeats": 128,
+          "sourceMeter": [
+            2,
+            2
+          ],
+          "pickup": 0,
+          "sourceSha256": "a423c94908e547d9d3b2db45ce6226a92ff1262b68a8332d4f769b0c4a43290d"
+        }
+      ]
+    },
+    {
+      "song": 234,
+      "title": "Winter Wonderland",
+      "reason": "source form or measure correspondence unresolved",
+      "candidates": [
+        {
+          "id": "openbook-winter-wonderland-wikifonia",
+          "sourceBars": 34,
+          "sourceBeats": 133,
+          "targetBeats": 128,
+          "sourceMeter": [
+            4,
+            4
+          ],
+          "pickup": 1,
+          "sourceSha256": "832b29394104ae416b0dbc94532e8a6d4c4ce7aa363a84da8a29cb92bda154a6"
+        }
+      ]
+    }
+  ]
+}

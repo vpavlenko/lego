@@ -1,5 +1,8 @@
 import test from 'node:test';import assert from 'node:assert/strict';
 import {recolorModulation,recolorBoundary} from '../src/music/recolor.mjs';
+import {mergePDFMelody} from '../src/music/pdf-melody.mjs';
+import {performedNotes} from '../src/music/performance-style.mjs';
+import {melodyDisplay} from '../src/music/melody-display.mjs';
 const changes=[{beat:0,tonic:0,root:'C'},{beat:16,tonic:5,root:'F',join:true,name:'Bootstrap'},{beat:32,tonic:7,root:'G'}];
 test('Rawl tonic choice replaces one boundary until the next, retaining times and source input',()=>{const before=structuredClone(changes),next=recolorModulation(changes,16,62);assert.deepEqual(next.map(c=>[c.beat,c.tonic,c.root]),[[0,0,'C'],[16,2,'D'],[32,7,'G']]);assert.equal(next[1].name,'Bootstrap');assert.deepEqual(changes,before);});
 test('Rawl removes consecutive equal tonic regions and supports a newly selected measure',()=>{assert.deepEqual(recolorModulation(changes,16,60).map(c=>[c.beat,c.tonic]),[[0,0],[32,7]]);assert.deepEqual(recolorModulation(changes,8,68).map(c=>[c.beat,c.tonic]),[[0,0],[8,8],[16,5],[32,7]]);assert.deepEqual(recolorModulation(changes,16,67).map(c=>[c.beat,c.tonic]),[[0,0],[16,7]]);});
@@ -11,7 +14,7 @@ test('measure selection previews tonic on hover, restores on leave/Escape, and n
  const dom=new JSDOM(fs.readFileSync(new URL('index.html',dist),'utf8'),{url:'http://localhost/#074',pretendToBeVisual:true}),w=dom.window;
  Object.assign(globalThis,{window:w,document:w.document,location:w.location,localStorage:w.localStorage,history:w.history,innerWidth:1280,innerHeight:900,requestAnimationFrame:w.requestAnimationFrame.bind(w),cancelAnimationFrame:w.cancelAnimationFrame.bind(w),matchMedia:()=>({matches:false,addEventListener(){},removeEventListener(){}})});Object.defineProperty(globalThis,'navigator',{value:w.navigator,configurable:true});w.scrollTo=()=>{};w.HTMLElement.prototype.scrollIntoView=function(){};
  globalThis.fetch=async url=>({ok:true,json:async()=>read(String(url).replace(/^\.\//,''))});let auditions=0,plays=0;globalThis.SoundFontPlayback={getContext:()=>({resume:async()=>{}}),prepare:async()=>({audition(){auditions++;},play(){plays++;}}),stop(){}};
- const $=s=>w.document.querySelector(s),p=read('data/performances/074.json');
+ const $=s=>w.document.querySelector(s),reference=read('data/standards.json').pdfMelodies?.[74],p=mergePDFMelody(read('data/performances/074.json'),reference?read(reference.url.replace(/^\.\//,'')):null);
  try{
   await import('../dist/app.js?recolor-test');await wait(()=>$('#rawl-view .rawln-measure-number[data-modulation="true"]')&&!$('#play').disabled);
   const label=$('#rawl-view .rawln-measure-number[data-modulation="true"]'),beat=Number(label.dataset.beat),region=p.changes.find(c=>c.beat===beat),next=p.changes.find(c=>c.beat>beat&&c.tonic!==region.tonic)?.beat??p.beats;
@@ -20,7 +23,8 @@ test('measure selection previews tonic on hover, restores on leave/Escape, and n
   choiceEl().dispatchEvent(new w.MouseEvent('mouseout',{bubbles:true,relatedTarget:w.document.body}));await wait(()=>targetEl().dataset.degree===old);
   choiceEl().dispatchEvent(new w.MouseEvent('mouseover',{bubbles:true}));await wait(()=>targetEl().dataset.degree===expected);w.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Escape'}));await wait(()=>targetEl().dataset.degree===old);assert.equal($(selector).getAttribute('aria-pressed'),'false');
   $(selector).click();await wait(()=>$(selector).getAttribute('aria-pressed')==='true');choiceEl().click();await wait(()=>targetEl().dataset.degree===expected);assert.equal($(selector).getAttribute('aria-pressed'),'false');assert.equal(auditions,0);assert.equal($('#stop').disabled,true);assert.equal(plays,0);
-  assert.deepEqual([...w.document.querySelectorAll('#rawl-view [data-note]')].map(el=>[el.dataset.note,el.dataset.pitch]),p.notes.map(n=>[n.id,String(n.pitch)]));
+  const unique=values=>[...new Map(values).entries()].sort((a,b)=>a[0].localeCompare(b[0]));
+  assert.deepEqual(unique([...w.document.querySelectorAll('#rawl-view [data-note]')].map(el=>[el.dataset.note,el.dataset.pitch])),unique(melodyDisplay(performedNotes(p)).notes.map(n=>[n.id,String(n.pitch)])));
  }finally{w.dispatchEvent(new w.Event('beforeunload'));dom.window.close();}
 });
 

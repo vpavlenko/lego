@@ -1,6 +1,7 @@
 import {buildBrickComparisons} from '../src/music/brick-comparisons.mjs';
-import {performanceStyle} from '../src/music/performance-style.mjs';
+import {performanceStyle,performedNotes} from '../src/music/performance-style.mjs';
 import {visibleAnalysis} from '../src/music/visible-analysis.mjs';
+import {mapPDFMelody,mergePDFMelody,mappedMelodyStyle,withMelodyPrelude} from '../src/music/pdf-melody.mjs';
 import {pitch} from '../dist/harmony.mjs';
 import {buildCadenceSystem} from '../src/music/cadence-system.mjs';
 import fs from 'node:fs';
@@ -21,6 +22,7 @@ import {buildBrickIndex,brickExample} from '../src/music/bricks.mjs';
 import {analyzeForm} from '../src/music/forms.mjs';
 import {phraseGrid} from '../src/music/phrases.mjs';
 import {alignRepeatedSubphrases} from '../src/music/section-layout.mjs';
+import {sourceMeasureMap} from '../src/music/measure-map.mjs';
 import {groupBricks} from '../src/music/brick-groups.mjs';
 import {cleanModulationRegions} from '../src/music/modulation-regions.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
@@ -46,7 +48,13 @@ const melodyFile=fs.existsSync(path.join(root,'dist/data/melody-sources.json'))?
 const modulationRecords=[];
 const styleReferences=fs.existsSync(path.join(root,'src/music/performance-style-references.json'))?read('src/music/performance-style-references.json'):{entries:[]};
 const swingReviews=fs.existsSync(path.join(root,'src/music/swing-cell-reviews.json'))?read('src/music/swing-cell-reviews.json'):{entries:[]};
-fs.writeFileSync(path.join(root,'dist/data/performance-styles.json'),JSON.stringify({version:1,styles:songs.map(song=>performanceStyle(song,melodies.get(song.melodyId??melodyMatches.get(song.index)?.melodyId),styleReferences,swingReviews))}));
+const pdfAlignments=fs.existsSync(path.join(root,'src/music/pdf-melody-alignments.json'))?read('src/music/pdf-melody-alignments.json').entries:[],pdfBySong=new Map(pdfAlignments.map(a=>[a.song,a]));
+if(pdfBySong.size!==pdfAlignments.length)throw Error('Duplicate PDF melody target');
+for(const alignment of pdfAlignments){
+ const song=sourceSongs[alignment.song],entry=melodies.get(alignment.melodyId);
+ if(alignment.targetSha256!==fingerprint(JSON.stringify(song))||alignment.evidence.sourceNotesSha256!==fingerprint(JSON.stringify(entry?.notes)))throw Error('PDF melody pinned musical data changed: '+alignment.song);
+}
+fs.writeFileSync(path.join(root,'dist/data/performance-styles.json'),JSON.stringify({version:1,styles:songs.map(song=>{const alignment=pdfBySong.get(song.index),entry=melodies.get(alignment?.melodyId??song.melodyId??melodyMatches.get(song.index)?.melodyId),style=performanceStyle(song,entry,styleReferences,swingReviews);return alignment?mappedMelodyStyle(style,alignment):style;})}));
 function realizedView(song,record=false){const performance=realizeSong(song,qualities),projection=cleanModulationRegions(song,performance.changes,vocabulary);if(projection.stats.remainingOneHarmonyModulations)throw Error('Unresolved one-chord modulation in '+song.title);if(record)modulationRecords.push({song:song.index,title:song.title,...projection});return {...performance,sourceChanges:performance.changes,changes:projection.changes};}
 fs.copyFileSync(path.join(root,'src/music/rawl-links.json'),path.join(root,'dist/data/rawl-links.json'));
 const brickMap=new Map(bricks.bricks.flatMap(b=>[b.name,...b.aliases,...(b.sourceNames??[])].map(name=>[name,b])));
@@ -57,15 +65,25 @@ const forms=songs.map(song=>{
 });
 fs.writeFileSync(path.join(root,'dist/data/forms.json'),JSON.stringify({version:3,forms}));
 fs.mkdirSync(path.join(root,'dist/data/performances'),{recursive:true});fs.mkdirSync(path.join(root,'dist/midi'),{recursive:true});
-let total=0,clipped=0;const melodyStandards=new Set(),melodyCharts=new Set();
+let total=0,clipped=0;const melodyStandards=new Set(),melodyCharts=new Set(),pdfMelodies={};
+fs.mkdirSync(path.join(root,'dist/data/pdf-melodies'),{recursive:true});fs.mkdirSync(path.join(root,'dist/midi/pdf-melodies'),{recursive:true});
 for(const song of songs){
  // Public color contexts follow visible analyses. Source exports retain their
  // existing bytes, including the archived parser evidence.
  realizedView(song,true);
  const alignment=melodyMatches.get(song.index),entry=melodies.get(song.melodyId??alignment?.melodyId),data=attachMelody(realizedView(sourceSongs[song.index]),song,entry,song.melodyId?null:alignment),id=String(song.index).padStart(3,'0');if(data.notes.some(note=>note.voice===1)){melodyStandards.add(song.arrangementOf??song.index);melodyCharts.add(song.index);}total+=data.notes.length;clipped+=data.chords.filter(c=>c.clipped).length;
  fs.writeFileSync(path.join(root,`dist/data/performances/${id}.json`),JSON.stringify(data));fs.writeFileSync(path.join(root,`dist/midi/${id}.mid`),encodeMidi(data));
+ const pdfAlignment=pdfBySong.get(song.index);
+ if(pdfAlignment){
+  if(song.index>=original.songs.length||data.notes.some(note=>note.voice===1))throw Error('PDF overlay must target an unfilled original chart');
+  const source=melodies.get(pdfAlignment.melodyId),target=withMelodyPrelude(data,pdfAlignment.clockOffset??0),overlay={...mapPDFMelody(target,source,pdfAlignment),clockOffset:pdfAlignment.clockOffset??0},sourcePlayed=performedNotes({notes:source.notes.map(note=>({...note,voice:1})),beats:source.totalBeats,measureMap:sourceMeasureMap(source)??undefined,playbackStyle:performanceStyle(song,source,styleReferences,swingReviews)});
+  overlay.performedNotes=mapPDFMelody(target,source,pdfAlignment,{notes:sourcePlayed}).notes;
+  const mapped=mergePDFMelody(data,overlay);
+  fs.writeFileSync(path.join(root,`dist/data/pdf-melodies/${id}.json`),JSON.stringify(overlay));fs.writeFileSync(path.join(root,`dist/midi/pdf-melodies/${id}.mid`),encodeMidi(mapped));
+  pdfMelodies[song.index]={url:`./data/pdf-melodies/${id}.json`,midi:`./midi/pdf-melodies/${id}.mid`,melodyId:source.id,source:source.provenance.url};melodyStandards.add(song.index);melodyCharts.add(song.index);
+ }
 }
-fs.writeFileSync(path.join(root,'dist/data/standards.json'),JSON.stringify({...original,songs,melodyStandards:[...melodyStandards].sort((a,b)=>a-b),melodyCharts:[...melodyCharts].sort((a,b)=>a-b)}));
+fs.writeFileSync(path.join(root,'dist/data/standards.json'),JSON.stringify({...original,songs,pdfMelodies,melodyStandards:[...melodyStandards].sort((a,b)=>a-b),melodyCharts:[...melodyCharts].sort((a,b)=>a-b)}));
 fs.writeFileSync(path.join(root,'dist/data/modulations.json'),JSON.stringify({version:1,changes:modulationRecords.map(record=>record.changes)}));
 fs.writeFileSync(path.join(root,'evidence/modulation-projection.json'),JSON.stringify({version:1,records:modulationRecords},null,2));
 const previousBricks=read('dist/data/bricks.json').bricks;
@@ -112,6 +130,7 @@ fs.copyFileSync(path.join(libraryDist,'provenance.json'),path.join(root,'dist/li
 fs.copyFileSync(libraryFile('browser/soundfont-playback-sax.js'),path.join(root,'dist/soundfont-playback.js'));
 await build({entryPoints:[path.join(root,'src/rawl-view.jsx')],outfile:path.join(root,'dist/rawl-view.js'),bundle:true,format:'esm',platform:'browser',target:['es2020'],jsx:'automatic',minify:true,legalComments:'eof',define:{'process.env.NODE_ENV':'"production"'}});
 await build({entryPoints:[path.join(root,'src/audio-player.mjs')],outfile:path.join(root,'dist/audio-player.js'),bundle:true,format:'esm',platform:'browser',target:['es2020'],minify:true});
+await build({entryPoints:[path.join(root,'src/music/pdf-melody.mjs')],outfile:path.join(root,'dist/pdf-melody.js'),bundle:true,format:'esm',platform:'browser',target:['es2020'],minify:true});
 await build({entryPoints:[path.join(root,'src/music/modulations.mjs')],outfile:path.join(root,'dist/modulations.js'),bundle:true,format:'esm',platform:'browser',target:['es2020'],minify:true});
 await build({entryPoints:[path.join(root,'src/music/aaba-groups.mjs')],outfile:path.join(root,'dist/aaba-groups.js'),bundle:true,format:'esm',platform:'browser',target:['es2020'],minify:true});
 console.log(JSON.stringify({songs:songs.length,bricks:bricks.bricks.length,notes:total,clipped,coverage:coverage.stats,reuse:reuse.stats,status:'built'}));
