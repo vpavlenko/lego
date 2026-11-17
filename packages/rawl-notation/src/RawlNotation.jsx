@@ -1,15 +1,41 @@
-import React,{forwardRef,useImperativeHandle,useLayoutEffect,useMemo,useRef} from 'react';
-import {pitchRange,staveGeometry,tonalSegments,tonalLines,tonicAt,mod,NOTE_HEIGHT,keyMarkers,TONIC_NAMES,modulationLabelOffset} from './geometry.mjs';
+import React,{forwardRef,useImperativeHandle,useLayoutEffect,useMemo,useRef,useState} from 'react';
+import {pitchRange,staveGeometry,tonalSegments,tonalLines,tonicAt,mod,NOTE_HEIGHT,TONIC_NAMES,measureHeaderLayout} from './geometry.mjs';
 import {RAWL_COLORS} from './palette.mjs';
 
 const names=['C','D♭','D','E♭','E','F','F♯','G','A♭','A','B♭','B'];
 const noteName=p=>names[mod(p)]+(Math.floor(p/12)-1);
 
+/** Rawl AnalysisGrid's header and vertical grid, shared by all host views. */
+export function RawlMeasureHeader({row,height='100%',tonic=0,changes=[],barBeats=4,beatBeats=1,phraseStarts,selectedMeasure=null,onMeasureSelect,hideInitialTonic=false}){
+ const element=useRef(null),[width,setWidth]=useState(0);
+ useLayoutEffect(()=>{
+  const el=element.current,view=el.ownerDocument.defaultView,fit=()=>{const next=el.getBoundingClientRect().width||el.clientWidth;setWidth(previous=>previous===next?previous:next);},Observer=view?.ResizeObserver??globalThis.ResizeObserver;
+  fit();const observer=Observer?new Observer(fit):null;observer?.observe(el);view?.addEventListener('resize',fit);
+  return()=>{observer?.disconnect();view?.removeEventListener('resize',fit);};
+ },[]);
+ const {measures,beats,markers}=useMemo(()=>measureHeaderLayout({row,tonic,changes,barBeats,beatBeats,phraseStarts,width,selectedMeasure,hideInitialTonic}),[row,tonic,changes,barBeats,beatBeats,phraseStarts,width,selectedMeasure,hideInitialTonic]);
+ const x=beat=>(beat-row.start)/(row.end-row.start)*100;
+ return <div ref={element} className="rawln-measure-grid" style={{height}}>
+  {measures.map(measure=><div className={'rawln-bar'+(measure.isPhraseStart?' rawln-phrase-bar':'')} key={'bar-'+measure.beat} data-beat={measure.beat} data-phrase-boundary={measure.isPhraseStart?'true':undefined} data-terminal={measure.terminal?'true':undefined} style={{left:`calc(${measure.left}% - 1px)`,backgroundColor:measure.isPhraseStart?'#bbb':'#444'}}/>)}
+  {beats.map(beat=><div className="rawln-beat-bar" key={'beat-'+beat} data-beat={beat} style={{left:x(beat)+'%'}}/>)}
+  <div className="rawln-modulations">
+   {markers.map(marker=><div key={marker.beat} className="rawln-modulation" data-beat={marker.beat} data-tonic={marker.tonic} data-join={marker.join?marker.name:undefined} data-onset-override={marker.onsetOverride?'true':undefined} data-continued={marker.continued?'true':undefined} style={{left:marker.pixelOffset?`calc(${marker.left}% - 1px)`:marker.left+'%'}} title={marker.name}>
+    {marker.delta!==null&&<div className="rawln-modulation-flag" data-degree={mod(marker.delta)} style={{background:RAWL_COLORS[mod(marker.delta)].background}}/>}
+    <span className="rawln-modulation-label" style={{left:marker.labelOffset}}>
+     {marker.delta!==null&&<><svg viewBox="0 0 24 24" aria-hidden="true">{marker.delta<0?<><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></>:<><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></>}</svg>{Math.abs(marker.delta)} </>}{TONIC_NAMES[marker.tonic]}
+    </span>
+   </div>)}
+  </div>
+  <div className="rawln-measure-labels" aria-hidden={onMeasureSelect?undefined:true}>
+   {measures.filter(measure=>!measure.terminal).map(measure=><div className="rawln-measure-number" role={onMeasureSelect?'button':undefined} tabIndex={onMeasureSelect?0:undefined} aria-pressed={onMeasureSelect?selectedMeasure===measure.beat:undefined} onClick={onMeasureSelect?event=>{event.stopPropagation();onMeasureSelect(measure.beat);}:undefined} onKeyDown={onMeasureSelect?event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();event.stopPropagation();onMeasureSelect(measure.beat);}}:undefined} key={measure.beat} data-beat={measure.beat} data-modulation={measure.hasModulation?'true':undefined} style={{left:`calc(${measure.left}% + 6px)`,color:measure.color,pointerEvents:onMeasureSelect?'auto':undefined,cursor:onMeasureSelect?'pointer':undefined}}><span>{measure.number}</span></div>)}
+  </div>
+ </div>;
+}
+
 /** A host-independent Rawl score. Times are quarter-note beats, pitches MIDI. */
-export const RawlNotation=forwardRef(function RawlNotation({notes,beats,rows,tonic=0,changes=[],barBeats=4,hideInitialTonic=false,position=null,mutedVoices=[],onSeek,onNote,onNoteHover,onMeasureSelect,selectedMeasure=null,renderHeader,renderFooter,className='',style},ref){
+export const RawlNotation=forwardRef(function RawlNotation({notes,beats,rows,tonic=0,changes=[],barBeats=4,beatBeats=1,phraseStarts,hideInitialTonic=false,position=null,mutedVoices=[],onSeek,onNote,onNoteHover,onMeasureSelect,selectedMeasure=null,renderHeader,renderFooter,className='',style},ref){
  const root=useRef(null),noteElements=useRef(new Map()),hoveredId=useRef(null);
  const spans=rows?.length?rows:[{start:0,end:beats,label:1}];
- const markers=useMemo(()=>keyMarkers(tonic,changes),[tonic,changes]);
  const prepared=useMemo(()=>spans.map(row=>{
   const visible=notes.filter(n=>n.start<row.end-1e-6&&n.start+n.duration>row.start+1e-6),range=pitchRange(visible),axis=staveGeometry(range);
   return {row,visible,range,axis,regions:tonalSegments(tonic,changes,row.start,row.end)};
@@ -27,25 +53,13 @@ export const RawlNotation=forwardRef(function RawlNotation({notes,beats,rows,ton
  return <div className={'rawln'+(className?' '+className:'')} style={style} ref={root}>
   {prepared.map(({row,visible,range,axis,regions},ri)=>{
    const span=row.end-row.start,x=beat=>(beat-row.start)/span*100;
-   const bars=[];for(let beat=Math.ceil((row.start-1e-6)/barBeats)*barBeats;beat<row.end-1e-6;beat+=barBeats)bars.push(beat);
    return <div className="rawln-row" data-section={row.section} key={`${row.start}-${row.end}`} data-start={row.start} data-end={row.end} style={row.style}>
     {renderHeader&&<div className="rawln-header">{renderHeader(row)}</div>}
     <div className="rawln-score" role="group" aria-label="Rawl notation" style={{height:axis.notesBottom}} onClick={e=>{const box=e.currentTarget.getBoundingClientRect();if(box.width>0)onSeek?.(row.start+Math.max(0,Math.min(1,(e.clientX-box.left)/box.width))*span);}}>
      <div className="rawln-grid" aria-hidden="true">
       {regions.flatMap((region,i)=>tonalLines(range,axis,region.tonic).map((line,j)=><div key={`${i}-${j}`} data-tonic={region.tonic} className={`rawln-${line.kind}-line`} style={{left:x(region.start)+'%',width:(region.end-region.start)/span*100+'%',top:line.y}}/>))}
-      {bars.map(beat=><div className="rawln-bar" key={beat} style={{left:x(beat)+'%'}}/>)}
      </div>
-     <div className="rawln-modulations">
-      {markers.filter(m=>m.beat>=row.start&&m.beat<row.end&&m.delta!==0&&!(hideInitialTonic&&m.previousTonic===null)).map(m=><div key={m.beat} className="rawln-modulation" data-beat={m.beat} data-tonic={m.tonic} data-join={m.join?m.name:undefined} style={{left:x(m.beat)+'%'}} title={m.name}>
-       {m.delta!==null&&<div className="rawln-modulation-flag" data-degree={mod(m.delta)} style={{background:RAWL_COLORS[mod(m.delta)].background}}/>}
-       <span className="rawln-modulation-label" style={{left:modulationLabelOffset(m.beat,barBeats)}}>
-        {m.delta!==null&&<><svg viewBox="0 0 24 24" aria-hidden="true">{m.delta<0?<><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></>:<><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></>}</svg>{Math.abs(m.delta)} </>}{TONIC_NAMES[m.tonic]}
-       </span>
-      </div>)}
-     </div>
-     <div className="rawln-measure-labels" aria-hidden={onMeasureSelect?undefined:true}>
-      {bars.map(beat=>{const hasFlag=markers.some(m=>m.beat===beat&&m.delta!==null&&m.delta!==0);return <span className="rawln-measure-number" role={onMeasureSelect?'button':undefined} tabIndex={onMeasureSelect?0:undefined} aria-pressed={onMeasureSelect?selectedMeasure===beat:undefined} onClick={onMeasureSelect?e=>{e.stopPropagation();onMeasureSelect(beat);}:undefined} onKeyDown={onMeasureSelect?e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();e.stopPropagation();onMeasureSelect(beat);}}:undefined} key={beat} data-beat={beat} data-modulation={hasFlag?'true':undefined} style={{left:x(beat)+'%',color:selectedMeasure===beat?'red':hasFlag?'black':undefined,pointerEvents:onMeasureSelect?'auto':undefined,cursor:onMeasureSelect?'pointer':undefined}}>{Math.round(beat/barBeats)+1}</span>;})}
-     </div>
+     <RawlMeasureHeader row={row} height={axis.notesBottom} tonic={tonic} changes={changes} barBeats={barBeats} beatBeats={beatBeats} phraseStarts={phraseStarts} selectedMeasure={selectedMeasure} onMeasureSelect={onMeasureSelect} hideInitialTonic={hideInitialTonic}/>
      {visible.map(note=>{
       const start=Math.max(row.start,note.start),end=Math.min(row.end,note.start+note.duration),degree=mod(note.pitch-tonicAt(tonic,changes,note.start+note.duration/2)),color=RAWL_COLORS[degree];
       return <button key={`${note.id}-${ri}`} ref={el=>{const key=`${note.id}-${ri}`;if(el)noteElements.current.set(key,{el,note,row,baseTop:axis.pitchToY(note.pitch),active:false,hover:hoveredId.current===key});else noteElements.current.delete(key);}} type="button" tabIndex={-1} aria-label={noteName(note.pitch)} title={noteName(note.pitch)} data-note={note.id} data-pitch={note.pitch} data-degree={degree} data-voice={note.voice} className={`rawln-note rawln-voice-${note.voice}${mutedVoices.includes(note.voice)?' rawln-muted':''}`} style={{left:x(start)+'%',top:axis.pitchToY(note.pitch),width:(end-start)/span*100+'%',height:NOTE_HEIGHT,background:color.background,zIndex:100+(84-note.pitch)+(note.voice===1?128:0)}} onMouseEnter={()=>{const item=noteElements.current.get(`${note.id}-${ri}`);hoveredId.current=`${note.id}-${ri}`;if(item){item.hover=true;updateNote(item);}onNoteHover?.(note);}} onMouseLeave={()=>{const item=noteElements.current.get(`${note.id}-${ri}`);hoveredId.current=null;if(item){item.hover=false;updateNote(item);}onNoteHover?.(null);}} onClick={e=>{e.stopPropagation();onNote?.(note);}}>

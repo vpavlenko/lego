@@ -1,8 +1,8 @@
 import {groupAABA} from './aaba-groups.js';
 import {transposeRoot,transposeChord,prettyRoot,chordParts,chordDisplay,roman,pitch,mod} from './harmony.mjs';
 import {RAWL_COLORS,colorIndex} from './rawl-colors.mjs';
-import {songModulations,modulationAt,modulationDelta,modulationLabelOffset,recolorModulation,recolorBoundary,TONIC_NAMES} from './modulations.js';
-import {mountRawlView,bindHarmonyHover} from './rawl-view.js';
+import {songModulations,modulationAt,recolorModulation,recolorBoundary} from './modulations.js';
+import {mountRawlView,mountRawlMeasureHeader,bindHarmonyHover} from './rawl-view.js';
 import {createPlayer,encodeMidi} from './audio-player.js';
 const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const [data,brickData,formData,rawlLinkData,modulationData]=await Promise.all(['./data/standards.json','./data/bricks.json','./data/forms.json','./data/rawl-links.json','./data/modulations.json'].map(url=>fetch(url).then(r=>{if(!r.ok)throw Error(r.status);return r.json();})));
@@ -16,12 +16,13 @@ let aabaGrouping=localStorage.getItem('insights-aaba-grouping')??'b-key';
 let melodyVisible=localStorage.getItem('insights-melody')!=='hidden';
 let rawl=null,performance=null,currentBeat=null,selected=null,routeGeneration=0,detailTimer,lastPlaybackRow=-1;
 const transport=$('#transport'),songRawl=$('#rawl-view');
+let analysisHeaders=[];
 let brickViews=[],activeVariant=null,recolorSelection=null,recolorMeasure=null,recolorPreview=null,recolorSaved=null;
 const rawlElement=()=>routeKind==='brick'?activeVariant?.element??$('#brick-variants'):songRawl;
-function destroyViews(){if(brickViews.length)brickViews.forEach(v=>v.controller.destroy());else rawl?.destroy();brickViews=[];activeVariant=null;rawl=null;}
+function destroyAnalysisHeaders(){analysisHeaders.forEach(header=>header.destroy());analysisHeaders=[];}
+function destroyViews(){destroyAnalysisHeaders();if(brickViews.length)brickViews.forEach(v=>v.controller.destroy());else rawl?.destroy();brickViews=[];activeVariant=null;rawl=null;}
 function restoreTransport(){$('#reader-tools').append(transport);}
 const cache=new Map(),pad=n=>String(n).padStart(3,'0');
-const arrow=delta=>`<svg class="lucide lucide-arrow-${delta<0?'down':'up'}" viewBox="0 0 24 24" aria-hidden="true">${delta<0?'<path d="M12 5v14"/><path d="m19 12-7 7-7-7"/>':'<path d="m5 12 7-7 7 7"/><path d="M12 19V5"/>'}</svg>`;
 const playIcon=pause=>`<svg class="lucide lucide-${pause?'pause':'play'}" viewBox="0 0 24 24" aria-hidden="true">${pause?'<rect x="14" y="3" width="5" height="18" rx="1"/><rect x="5" y="3" width="5" height="18" rx="1"/>':'<path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/>'}</svg>`;
 const token=(text,semitones)=>`<span class="degree-color" data-degree="${colorIndex(semitones)}">${esc(text)}</span>`;
 const externalIcon='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M10 14 21 3M21 14v7H3V3h7"/></svg>';
@@ -48,10 +49,7 @@ function catalog(){
 }
 function at(c,scale){return `left:${c.start/scale*100}%;width:${Math.max(0,c.end-c.start)/scale*100}%`;}
 function rowHTML(row,song,rowIndex){
- const scale=row.section?row.bars:song.columns,tonic=song.tonic[0],barBeats=song.meter[0]*4/song.meter[1];let html=`<div class="score-row" data-row="${rowIndex}" data-start="${row.startBar*barBeats}" data-end="${(row.startBar+row.bars)*barBeats}" ${row.section?`data-section="${row.section}" style="grid-row:${row.layoutRow+1};grid-column:${row.layoutColumn+1} / span ${row.bars}"`: ''} aria-label="${row.startBar+1}–${row.startBar+row.bars}"><div class="bar-ticks">`;
- for(let n=0;n<=row.bars;n++)html+=`<div class="bar-tick${n===row.bars?' end':''}${displayChanges(song.index).some((e,i)=>i>0&&e.beat===(row.startBar+n)*barBeats&&e.tonic!==displayChanges(song.index)[i-1].tonic)?' modulation-bar':''}" style="left:${n/scale*100}%">${n<row.bars?`<span>${row.startBar+n+1}</span>`:''}</div>`;
- html+='</div>';
-
+ const scale=row.section?row.bars:song.columns,tonic=song.tonic[0],barBeats=song.meter[0]*4/song.meter[1];let html=`<div class="score-row" data-row="${rowIndex}" data-start="${row.startBar*barBeats}" data-end="${(row.startBar+row.bars)*barBeats}" ${row.section?`data-section="${row.section}" style="grid-row:${row.layoutRow+1};grid-column:${row.layoutColumn+1} / span ${row.bars}"`: ''} aria-label="${row.startBar+1}–${row.startBar+row.bars}"><div class="analysis-measures" style="width:${row.bars/scale*100}%"></div>`;
  for(const b of row.bricks)if(b.name)html+=`<a data-brick="${brickMap.get(b.name).slug}" data-brick-start="${(row.startBar+b.start)*barBeats}" data-brick-end="${(row.startBar+b.end)*barBeats}" class="brick${selected===brickMap.get(b.name).name?' selected-brick':''}" style="${at(b,scale)}" title="${esc(b.name)}" href="#brick/${brickMap.get(b.name).slug}?song=${song.index}&beat=${(row.startBar+b.start)*barBeats}">${esc(brickMap.get(b.name).name)}</a>`;
  html+='<div class="analysis-harmony harmony-stripe"><div class="harmony-chords">';
  const cells=row.chords.map(c=>{const symbol=transposeChord(c.symbol,tonic),parts=chordParts(symbol),base=modulationAt(displayChanges(song.index),(row.startBar+c.start)*barBeats).root,degree=mod(pitch(symbol)-pitch(base)),rn=roman(symbol,base);return {c,symbol,parts,display:chordDisplay(symbol,base),degree,rn};});
@@ -59,17 +57,16 @@ function rowHTML(row,song,rowIndex){
  html+='</div><div class="harmony-rns">';
  for(const {c,rn,display,degree}of cells)html+=`<div class="rn harmony-cell" data-degree="${degree}" style="${at(c,scale)};color:${RAWL_COLORS[degree].background}" title="${esc(rn)}">${display.bass?`${esc(rn.slice(0,rn.lastIndexOf('/')))}<span class="chord-slash">/</span><span class="chord-bass" data-degree="${display.bass.degree}" style="color:${RAWL_COLORS[display.bass.degree].background}">${esc(rn.slice(rn.lastIndexOf('/')+1))}</span>`:esc(rn)}</div>`;
  html+='</div></div>';
- const events=displayChanges(song.index);
- for(let i=0;i<events.length;i++){
-  const event=events[i],bar=event.beat/barBeats;if(bar<row.startBar||bar>=row.startBar+row.bars)continue;
-  const delta=i?modulationDelta(events[i-1].tonic,event.tonic):null;if(delta===0)continue;
-  html+=`<div class="rawln-modulation" data-beat="${event.beat}" data-tonic="${event.tonic}" ${event.join?`data-join="${esc(event.name)}"`:''} style="left:${(bar-row.startBar)/scale*100}%" title="${esc(event.name||TONIC_NAMES[event.tonic])}">${delta===null?'':`<div class="rawln-modulation-flag degree-color" data-degree="${colorIndex(delta)}"></div>`}<span class="rawln-modulation-label" style="left:${modulationLabelOffset(event.beat,barBeats)}px">${delta===null?'':arrow(delta)+Math.abs(delta)+' '}${TONIC_NAMES[event.tonic]}</span></div>`;
- }
-
  return html+'</div>';
 }
 function sliceFormRows(song,form){return (form.layoutSections??form.sections).map(s=>({startBar:s.start,bars:s.bars,section:s.label,layoutRow:s.layoutRow,layoutColumn:s.layoutColumn,bricks:song.rows.flatMap(r=>r.bricks.map(b=>({...b,start:r.startBar+b.start,end:r.startBar+b.end}))).filter(b=>b.start<s.end&&b.end>s.start).map(b=>({...b,start:Math.max(b.start,s.start)-s.start,end:Math.min(b.end,s.end)-s.start})),chords:song.rows.flatMap(r=>r.chords.map(c=>({...c,start:r.startBar+c.start,end:r.startBar+c.end}))).filter(c=>c.start<s.end&&c.end>s.start).map(c=>({...c,start:Math.max(c.start,s.start)-s.start,end:Math.min(c.end,s.end)-s.start}))}));}
-function score(){const s=songs[current],form=forms[current],aligned=form.layoutAligned??form.aligned,el=$('#score');el.classList.toggle('form-score',aligned);el.style.gridTemplateColumns=aligned?`repeat(${form.layoutColumns??form.columns},minmax(0,1fr))`:'';el.style.minWidth=aligned?Math.max(1,(form.layoutColumns??form.columns)/(form.layoutSections??form.sections)[0].bars)*300+'px':'';el.innerHTML=(aligned?sliceFormRows(s,form):s.rows).map((r,i)=>rowHTML(r,s,i)).join('');}
+function score(){
+ destroyAnalysisHeaders();
+ const s=songs[current],form=forms[current],aligned=form.layoutAligned??form.aligned,el=$('#score'),rows=aligned?sliceFormRows(s,form):s.rows,barBeats=s.meter[0]*4/s.meter[1];
+ el.classList.toggle('form-score',aligned);el.style.gridTemplateColumns=aligned?`repeat(${form.layoutColumns??form.columns},minmax(0,1fr))`:'';el.style.minWidth=aligned?Math.max(1,(form.layoutColumns??form.columns)/(form.layoutSections??form.sections)[0].bars)*300+'px':'';
+ el.innerHTML=rows.map((r,i)=>rowHTML(r,s,i)).join('');
+ analysisHeaders=[...el.querySelectorAll('.analysis-measures')].map((element,i)=>mountRawlMeasureHeader(element,{row:{start:rows[i].startBar*barBeats,end:(rows[i].startBar+rows[i].bars)*barBeats},height:42,tonic:0,changes:displayChanges(current),barBeats,beatBeats:4/s.meter[1],phraseStarts:form.phraseStarts,selectedMeasure:recolorMeasure,onMeasureSelect:performance?selectRecolor:undefined}));
+}
 
 
 function displayChanges(index=current){return index===current?(recolorPreview??recolorSaved??modulationMap[index]):modulationMap[index];}
@@ -88,7 +85,7 @@ function ensureRawl(){if(!performance)return;if(rawl)rawl.update(rawlOptions());
 function setView(mode){
  if(mode!=='rawl'&&recolorSelection!==null){recolorSelection=null;recolorMeasure=null;recolorPreview=null;redrawColors();}view=mode;localStorage.setItem('insights-view',mode);$('#analysis').hidden=mode!=='analysis';$('#rawl-view').hidden=mode!=='rawl';$('#source-view').hidden=mode!=='source';$('#transport').hidden=mode==='source';
  $('#digital').setAttribute('aria-pressed',mode==='analysis');$('#notation-view').setAttribute('aria-pressed',mode==='rawl');$('#original').setAttribute('aria-pressed',mode==='source');
- if(mode==='rawl')ensureRawl();if(mode==='source'&&(player.state==='playing'||player.state==='loading'))player.pause();
+ if(mode==='analysis')score();if(mode==='rawl')ensureRawl();if(mode==='source'&&(player.state==='playing'||player.state==='loading'))player.pause();
 }
 function melodyControls(){const available=routeKind==='song'&&performance?.notes.some(note=>note.voice===1);$('#melody-voice').hidden=!available;$('#melody-voice').setAttribute('aria-pressed',String(melodyVisible));player.setMuted(1,!melodyVisible);}
 function fetchPerformance(index){if(!cache.has(index))cache.set(index,fetch(`./data/performances/${pad(index)}.json`).then(r=>{if(!r.ok)throw Error(r.status);return r.json();}).catch(e=>{cache.delete(index);throw e;}));return cache.get(index);}

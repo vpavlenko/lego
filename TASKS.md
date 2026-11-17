@@ -9,6 +9,8 @@ choices and alternate arrangements.
 
 | Request | Implemented result | Evidence |
 |---|---|---|
+| Four-bar phrase grid | All360 arrangements; source-audited House and Blue and Sentimental exceptions; no unaligned rendition transfers | phrase-grid-audit.json; seven phrase tests |
+| Rawl measure headers | Shared Analysis/Rawl component copies source fonts, offsets, bars, flags and stacking | measure-header tests; Safari preview |
 | Header controls | Counter and arrows replaced by synchronized Lucide play/pause | browser DOM; Safari playback |
 | Melody drawing order | Melody notes always above piano chord notes | melody integration; Safari |
 | Broader melody coverage | 219 encoded heads:131 PSjazzEval +79 OpenBook +9 explicit Impro-Visor heads | source-specific audits and MIDI tests |

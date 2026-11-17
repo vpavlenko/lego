@@ -123,3 +123,6 @@ body.song-route .reader-chrome{height:32px}body.song-route main{padding-top:46px
 #rawl-view{padding-left:24px;margin-left:-24px}#score-scroll{padding-left:24px;margin-left:-24px}
 
 #arrangement{max-width:160px}
+
+/* Analysis shares Rawl’s measure grid and header component. */
+.analysis-measures{position:absolute;left:0;top:23px;height:42px}.score-row .brick,.form-score .brick{top:0}

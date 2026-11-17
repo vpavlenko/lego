@@ -13,6 +13,7 @@ import {refineSingleUseFamilies} from '../src/music/brick-reuse.mjs';
 import {buildBrickVariants} from '../src/music/brick-variants.mjs';
 import {buildBrickIndex,brickExample} from '../src/music/bricks.mjs';
 import {analyzeForm} from '../src/music/forms.mjs';
+import {phraseGrid} from '../src/music/phrases.mjs';
 import {alignRepeatedSubphrases} from '../src/music/section-layout.mjs';
 import {groupBricks} from '../src/music/brick-groups.mjs';
 import {cleanModulationRegions} from '../src/music/modulation-regions.mjs';
@@ -40,7 +41,12 @@ const modulationRecords=[];
 function realizedView(song,record=false){const performance=realizeSong(song,qualities),projection=cleanModulationRegions(song,performance.changes,vocabulary);if(projection.stats.remainingOneHarmonyModulations)throw Error('Unresolved one-chord modulation in '+song.title);if(record)modulationRecords.push({song:song.index,title:song.title,...projection});return {...performance,sourceChanges:performance.changes,changes:projection.changes};}
 fs.copyFileSync(path.join(root,'src/music/rawl-links.json'),path.join(root,'dist/data/rawl-links.json'));
 const brickMap=new Map(bricks.bricks.flatMap(b=>[b.name,...b.aliases,...(b.sourceNames??[])].map(name=>[name,b])));
-fs.writeFileSync(path.join(root,'dist/data/forms.json'),JSON.stringify({version:2,forms:songs.map(song=>alignRepeatedSubphrases(song,analyzeForm(song),brickMap))}));
+const phraseReferences=read('evidence/rawl-phrase-sources.json').records;
+const forms=songs.map(song=>{
+ const form=alignRepeatedSubphrases(song,analyzeForm(song),brickMap),grid=phraseGrid(song,form,{references:phraseReferences.filter(reference=>reference.standardIndex===song.index)});
+ return {...form,phraseStarts:[...grid.starts,...(grid.closesAtEnd?[grid.end]:[])],phraseBasis:grid.basis,phraseExceptions:grid.exceptions};
+});
+fs.writeFileSync(path.join(root,'dist/data/forms.json'),JSON.stringify({version:3,forms}));
 fs.mkdirSync(path.join(root,'dist/data/performances'),{recursive:true});fs.mkdirSync(path.join(root,'dist/midi'),{recursive:true});
 let total=0,clipped=0;
 for(const song of songs){

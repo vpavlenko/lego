@@ -1,6 +1,6 @@
 import React,{useEffect,useState,useRef} from 'react';
 import {createRoot} from 'react-dom/client';
-import {RawlNotation} from '../packages/rawl-notation/src/RawlNotation.jsx';
+import {RawlNotation,RawlMeasureHeader} from '../packages/rawl-notation/src/RawlNotation.jsx';
 import {pitch,mod,chordParts,chordDisplay,roman} from '../dist/harmony.mjs';
 import {modulationAt} from './music/modulations.mjs';
 import {notationRows} from './music/notation-rows.mjs';
@@ -27,12 +27,17 @@ function HostView({song,performance,brickMap,onSeek,onNote,onNoteHover,onMeasure
    <div className="harmony-rns">{cells.map(({c,rn,display,degree,style})=><div key={c.id} className={'rawln-rn harmony-cell'+(c.clipped?' uncertain':'')} data-degree={degree} style={style} title={rn}>{display?.bass?<>{rn.slice(0,rn.lastIndexOf('/'))}<span className="chord-slash">/</span><span className="chord-bass" data-degree={display.bass.degree} style={{color:RAWL_COLORS[display.bass.degree].background}}>{rn.slice(rn.lastIndexOf('/')+1)}</span></>:rn}</div>)}</div>
   </div>;
  };
- return <RawlNotation className={(form?.layoutAligned??form?.aligned)&&!compact?'rawln-form':''} style={(form?.layoutAligned??form?.aligned)&&!compact?{gridTemplateColumns:`repeat(${form.layoutColumns??form.columns},minmax(0,1fr))`,minWidth:Math.max(1,(form.layoutColumns??form.columns)/(form.layoutSections??form.sections)[0].bars)*300}:undefined} ref={notation} notes={performance.notes} beats={performance.beats} rows={rows} tonic={0} changes={changes} barBeats={performance.barBeats} hideInitialTonic={compact} mutedVoices={mutedVoices} onSeek={onSeek} onNote={onNote} onNoteHover={onNoteHover} onMeasureSelect={onMeasureSelect} selectedMeasure={selectedMeasure} renderHeader={compact?undefined:header} renderFooter={footer}/>;
+ return <RawlNotation className={(form?.layoutAligned??form?.aligned)&&!compact?'rawln-form':''} style={(form?.layoutAligned??form?.aligned)&&!compact?{gridTemplateColumns:`repeat(${form.layoutColumns??form.columns},minmax(0,1fr))`,minWidth:Math.max(1,(form.layoutColumns??form.columns)/(form.layoutSections??form.sections)[0].bars)*300}:undefined} ref={notation} notes={performance.notes} beats={performance.beats} rows={rows} tonic={0} changes={changes} barBeats={performance.barBeats} beatBeats={4/(song.meter?.[1]??4)} phraseStarts={form?.phraseStarts} hideInitialTonic={compact} mutedVoices={mutedVoices} onSeek={onSeek} onNote={onNote} onNoteHover={onNoteHover} onMeasureSelect={onMeasureSelect} selectedMeasure={selectedMeasure} renderHeader={compact?undefined:header} renderFooter={footer}/>;
 }
 export function mountRawlView(element,options){
  const root=createRoot(element),controller={current:null,position:null};let props=options;
  const render=()=>root.render(<HostView {...props} controller={controller}/>);render();
  return {setPosition(position){controller.position=position;controller.current?.setPosition(position);},update(next){props={...props,...next};render();},destroy(){root.unmount();controller.current=null;}};
+}
+
+export function mountRawlMeasureHeader(element,options){
+ const root=createRoot(element);root.render(<RawlMeasureHeader {...options}/>);
+ return {destroy(){root.unmount();}};
 }
 
 const harmonyBindings=new WeakMap();

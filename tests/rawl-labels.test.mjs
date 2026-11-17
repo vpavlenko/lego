@@ -9,11 +9,13 @@ import {modulationLabelOffset as analysisOffset} from '../src/music/modulations.
 const root=fileURLToPath(new URL('../',import.meta.url));
 const wait=async fn=>{for(let i=0;i<100;i++){if(fn())return;await new Promise(r=>setTimeout(r,10));}assert.ok(fn(),'Notation did not settle');};
 
-test('modulation labels clear only the printed measure-number width',()=>{
- assert.equal(modulationLabelOffset(0,4),12);assert.equal(modulationLabelOffset(32,4),12);
- assert.equal(modulationLabelOffset(36,4),17);assert.equal(modulationLabelOffset(96,4),17);
- assert.equal(modulationLabelOffset(396,4),23);assert.equal(modulationLabelOffset(96,3),17);
- assert.equal(modulationLabelOffset(98,4),2);assert.equal(modulationLabelOffset(1,4),2);
+test('modulation labels use Rawl initial, later and onset-override offsets',()=>{
+ assert.equal(modulationLabelOffset(0,4),18);assert.equal(modulationLabelOffset(32,4),30);
+ assert.equal(modulationLabelOffset(36,4),30);assert.equal(modulationLabelOffset(96,4),30);
+ assert.equal(modulationLabelOffset(396,4),30);assert.equal(modulationLabelOffset(96,3),30);
+ assert.equal(modulationLabelOffset(98,4),0);assert.equal(modulationLabelOffset(1,4),0);
+ assert.equal(modulationLabelOffset(396,4,{initial:true}),34);assert.equal(modulationLabelOffset(96,4,{onsetOverride:true}),0);
+ assert.equal(modulationLabelOffset(98,4,{continued:true}),30);
  assert.equal(analysisOffset,modulationLabelOffset);
 });
 
@@ -35,14 +37,14 @@ test('compact scores hide only the initial tonic label and retain all tonal stat
   assert.equal(w.document.querySelector('#hidden .rawln-modulation[data-beat="0"]'),null);assert.equal(w.document.querySelector('#host .rawln-modulation[data-beat="0"]'),null);
   for(const id of ['full','hidden','host']){
    assert.equal(w.document.querySelector('#'+id+' .rawln-modulation[data-beat="2"]'),null);
-   for(const [beat,offset] of [[4,12],[96,17],[98,2],[396,23]])assert.equal(w.document.querySelector('#'+id+' .rawln-modulation[data-beat="'+beat+'"] .rawln-modulation-label').style.left,offset+'px');
+   for(const [beat,offset] of [[4,30],[96,30],[98,0],[396,30]])assert.equal(w.document.querySelector('#'+id+' .rawln-modulation[data-beat="'+beat+'"] .rawln-modulation-label').style.left,offset+'px');
   }
   const noteState=selector=>[...w.document.querySelectorAll(selector+' [data-note]')].map(n=>[n.dataset.note,n.dataset.degree,n.style.cssText]);
   assert.deepEqual(noteState('#full'),noteState('#hidden'));
   const tonalState=selector=>[...w.document.querySelectorAll(selector+' .rawln-grid [data-tonic]')].map(n=>[n.dataset.tonic,n.className,n.style.cssText]);
   assert.deepEqual(tonalState('#full'),tonalState('#hidden'));assert.equal(keyMarkers(0,changes)[0].tonic,0);assert.equal(tonicAt(0,changes,99),9);
   assert.equal(w.document.querySelector('#host .rawln-row').style.width,'8568px');assert.equal(w.document.querySelectorAll('#host .rawln-row').length,1);
-  const measure=w.document.querySelector('#hidden .rawln-measure-number[data-modulation="true"]');assert.equal(measure.textContent,'2');assert.equal(measure.style.color,'black');assert.equal(w.getComputedStyle(measure.parentElement).zIndex,'15');assert.equal(w.getComputedStyle(w.document.querySelector('#hidden .rawln-modulation-flag')).zIndex,'3');
+  const measure=w.document.querySelector('#hidden .rawln-measure-number[data-modulation="true"]');assert.equal(measure.textContent,'2');assert.equal(measure.style.color,'black');assert.equal(w.getComputedStyle(measure).zIndex,'15');assert.equal(w.getComputedStyle(w.document.querySelector('#hidden .rawln-modulation-flag')).zIndex,'3');
  }finally{host.destroy();full.unmount();hidden.unmount();dom.window.close();}
 });
 

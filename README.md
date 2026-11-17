@@ -247,3 +247,20 @@ printed row breaks as musical structure.29 charts receive longer phrase grouping
 Love for Sale displays0–16 A /16–32 A +32–48 B. Existing fine brick-sized layouts
 remain. Formal metadata and every source event time stay intact. Section letters
 are enclosed in square boxes. `general-section-layout.json` records every case.
+
+
+Measure grids use the Rawl AnalysisGrid Measure and NewTonicSymbol source at
+Rawl commit73fe6ab. Rawl and Analysis share one React header component: full-height
+1px bars, brighter phrase-start bars, 12px sans-serif measure numbers offset6px
+from the measure boundary and−4px vertically, and80×12px fading modulation flags.
+The original Lucide join arrows and interactive tonic recoloring remain.
+
+Every arrangement has an explicit quarter-beat phrase grid in forms.json.
+Four measures are the default, independent of printed rows, bricks and modulations.
+The source-audited10+10+8+10 House arrangement resets its grid at each section;
+Blue and Sentimental retains its expanded ending. The audit records uncertain
+final remainders instead of assigning unsupported irregular phrase analyses.
+See evidence/phrase-grid-audit.json and evidence/rawl-phrase-sources.json. The
+69 linked Rawl renditions were checked against their public encoded measure grids;
+none has verified exact arrangement alignment, so their phrase patches are kept
+as references. The source research follows https://rawl.rocks/s/hypermeter/.
