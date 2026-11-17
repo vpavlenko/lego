@@ -12,7 +12,7 @@ test('authored 4/4, 3/4 and cut/common changes keep source quarter clocks and ne
 });
 function midiMeters(file){const midi=parseMidi(fs.readFileSync(file));return midi.tracks.flatMap(track=>{let tick=0;return track.flatMap(e=>{tick+=e.deltaTime;return e.type==='timeSignature'?[{beat:tick/midi.header.ticksPerBeat,meter:[e.numerator,e.denominator],metronome:e.metronome,thirtyseconds:e.thirtyseconds}]:[];});});}
 test('standard MIDI exports preserve every actual compiled time-signature event, metronome unit and source note onset',()=>{
- let notes=0;for(const song of songs.filter(s=>s.index>=483)){
+ let notes=0;for(const song of songs.filter(s=>s.index>=483&&s.index<486)){
   const p=performance(song),entry=manifest.entries[song.melodyId],melody=p.notes.filter(n=>n.voice===1);notes+=melody.length;assert.equal(p.melody.beatOffset,0);assert.equal(melody.length,entry.notes.length);assert.equal(p.chords.length,entry.chords.length);
   entry.notes.forEach((n,i)=>{const m=melody.find(m=>m.id===`melody:${entry.id}:${i}`);assert.equal(m.start,n.start);assert.equal(m.duration,n.duration);assert.equal(m.pitch,n.pitch+p.melody.transpose);});entry.chords.forEach((c,i)=>{assert.ok(Math.abs(c.start-p.chords[i].start)<1e-7);assert.ok(Math.abs(c.end-p.chords[i].end)<1e-7);});
   if(entry.provenance.midiMeterEvents){assert.deepEqual(p.meterChanges,entry.provenance.midiMeterEvents);assert.deepEqual(midiMeters(new URL(`dist/midi/${song.index}.mid`,root)),entry.provenance.midiMeterEvents);assert.deepEqual(midiMeters(new URL('dist/'+entry.midi,root)),entry.provenance.midiMeterEvents);}

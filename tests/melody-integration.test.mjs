@@ -39,7 +39,7 @@ test('all imported source arrangements and verified original matches export sepa
   source.notes.forEach((note,i)=>{const actual=byId.get('melody:'+source.id+':'+i);assert.ok(actual,song.title);assert.equal(actual.pitch,note.pitch+performance.melody.transpose,song.title);assert.equal(actual.start,note.start+performance.melody.beatOffset,song.title);assert.equal(actual.duration,note.duration,song.title);});
   const midi=parseMidi(fs.readFileSync(new URL('midi/'+pad(song.index)+'.mid',root)));assert.equal(midi.tracks.length,3,song.title);
   assert.deepEqual(midi.tracks.flatMap(track=>track.filter(event=>event.type==='programChange').map(event=>[event.channel,event.programNumber])),[[0,0],[1,65]],song.title);
-  const expected=melody.map(note=>{const start=Math.round(note.start*480),end=Math.round((note.start+note.duration)*480);return[note.pitch,start,end-start,note.velocity];}).sort((a,b)=>a[1]-b[1]||a[0]-b[0]||a[2]-b[2]);
+  const expected=melody.map(note=>{const start=Math.round(note.start*midi.header.ticksPerBeat),end=Math.round((note.start+note.duration)*midi.header.ticksPerBeat);return[note.pitch,start,end-start,note.velocity];}).sort((a,b)=>a[1]-b[1]||a[0]-b[0]||a[2]-b[2]);
   assert.deepEqual(midiNotes(midi,1),expected,song.title);
  }
  const expectedMelodySongs=new Set([...additional.map(song=>song.index),...(manifest.existingMatches??[]).map(match=>match.song)]);assert.deepEqual(withMelody,[...expectedMelodySongs].sort((a,b)=>a-b));assert.ok(withMelody.length>=119);

@@ -1,7 +1,7 @@
 import {BRICK_NAME_PROPOSALS,COMPOUND_DISPLAY_NAMES} from './brick-display-names.mjs';
 import {slugify} from './bricks.mjs';
 
-const displayNames={'Whoopee':'vii°7/ii–ii–V–I','Whoopee Turnaround':'I–vii°/ii–ii–V'};
+const displayNames={'Whoopee':'vii°7/ii ii V I','Whoopee Turnaround':'I vii°/ii ii V'};
 const roles=['Approach','Cadence','Launcher'];
 const clipped=name=>/\.{2,}|…/.test(name);
 const tidy=name=>name.replace(/\s+/g,' ').trim();

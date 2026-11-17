@@ -3,20 +3,20 @@
   "date": "2026-11-17",
   "counts": {
     "canonical": 269,
-    "arrangements": 486,
-    "encodedHeads": 345,
-    "melodyCharts": 245,
-    "coveredCompositions": 237,
+    "arrangements": 507,
+    "encodedHeads": 366,
+    "melodyCharts": 266,
+    "coveredCompositions": 258,
     "priorCoveredCompositions": 113,
-    "newlyCoveredCompositions": 124,
-    "missingCompositions": 32,
-    "newArrangements": 126,
-    "newNotes": 18237,
-    "sourceIntervalCells": 268,
+    "newlyCoveredCompositions": 145,
+    "missingCompositions": 11,
+    "newArrangements": 147,
+    "newNotes": 21222,
+    "sourceIntervalCells": 324,
     "unsupportedGenuineChordCells": 0,
-    "missingWithPickupSources": 10,
-    "missingWithTextNavigation": 8,
-    "missingWithUnadmittedEncodedHeads": 1
+    "missingWithPickupSources": 0,
+    "missingWithTextNavigation": 1,
+    "missingWithUnadmittedEncodedHeads": 0
   },
   "implemented": [
     {
@@ -9356,12 +9356,1840 @@
         }
       ],
       "explicitNC": []
+    },
+    {
+      "song": 486,
+      "arrangementOf": 3,
+      "title": "Airegin",
+      "melodyId": "openbook-airegin-fake",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/airegin.ly.tera",
+      "bars": 51,
+      "notes": 141,
+      "sourceIntervalCells": [
+        {
+          "symbol": "C7b5#9",
+          "start": 68,
+          "end": 72,
+          "sourceSymbol": "c:7.5-.9+",
+          "sourceLine": 60,
+          "sourceIntervals": [
+            0,
+            4,
+            6,
+            10,
+            15
+          ],
+          "sourceCorePitches": [
+            60,
+            64,
+            66,
+            70,
+            75
+          ],
+          "sourcePitches": [
+            60,
+            64,
+            66,
+            70,
+            75
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch c:7.5-.9+ [0, 3, 4, 6, 10] != [0, 3, 4, 6, 7, 10]"
+        }
+      ],
+      "explicitNC": []
+    },
+    {
+      "song": 487,
+      "arrangementOf": 153,
+      "title": "A Night In Tunisia",
+      "melodyId": "openbook-a-night-in-tunisia-fake",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/a_night_in_tunisia.ly.tera",
+      "bars": 32.125,
+      "notes": 153,
+      "sourceIntervalCells": [
+        {
+          "symbol": "Dm6",
+          "start": 4.5,
+          "end": 8.5,
+          "sourceSymbol": "d:m6",
+          "sourceLine": 58,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "sourcePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch d:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Dm6",
+          "start": 12.5,
+          "end": 16.5,
+          "sourceSymbol": "d:m6",
+          "sourceLine": 58,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "sourcePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch d:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Dm6",
+          "start": 20.5,
+          "end": 24.5,
+          "sourceSymbol": "d:m6",
+          "sourceLine": 59,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "sourcePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch d:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "A7b5b9",
+          "start": 26.5,
+          "end": 28,
+          "sourceSymbol": "a4.:7.5-.9-",
+          "sourceLine": 59,
+          "sourceIntervals": [
+            0,
+            4,
+            6,
+            10,
+            13
+          ],
+          "sourceCorePitches": [
+            69,
+            73,
+            75,
+            79,
+            82
+          ],
+          "sourcePitches": [
+            69,
+            73,
+            75,
+            79,
+            82
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch a4.:7.5-.9- [0, 1, 4, 6, 10] != [0, 1, 4, 6, 7, 10]"
+        },
+        {
+          "symbol": "Dm6",
+          "start": 28,
+          "end": 28.5,
+          "sourceSymbol": "d8:m6",
+          "sourceLine": 59,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "sourcePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch d8:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Dm6",
+          "start": 28.5,
+          "end": 32.5,
+          "sourceSymbol": "d1:m6",
+          "sourceLine": 62,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "sourcePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch d1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Dm6",
+          "start": 36.5,
+          "end": 40.5,
+          "sourceSymbol": "d:m6",
+          "sourceLine": 58,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "sourcePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch d:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Dm6",
+          "start": 44.5,
+          "end": 48.5,
+          "sourceSymbol": "d:m6",
+          "sourceLine": 58,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "sourcePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch d:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Dm6",
+          "start": 52.5,
+          "end": 56.5,
+          "sourceSymbol": "d:m6",
+          "sourceLine": 59,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "sourcePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch d:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "A7b5b9",
+          "start": 58.5,
+          "end": 60,
+          "sourceSymbol": "a4.:7.5-.9-",
+          "sourceLine": 59,
+          "sourceIntervals": [
+            0,
+            4,
+            6,
+            10,
+            13
+          ],
+          "sourceCorePitches": [
+            69,
+            73,
+            75,
+            79,
+            82
+          ],
+          "sourcePitches": [
+            69,
+            73,
+            75,
+            79,
+            82
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch a4.:7.5-.9- [0, 1, 4, 6, 10] != [0, 1, 4, 6, 7, 10]"
+        },
+        {
+          "symbol": "Dm6",
+          "start": 60,
+          "end": 60.5,
+          "sourceSymbol": "d8:m6",
+          "sourceLine": 59,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "sourcePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch d8:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Dm6",
+          "start": 60.5,
+          "end": 64.5,
+          "sourceSymbol": "d1:m6",
+          "sourceLine": 65,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "sourcePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch d1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Gm6",
+          "start": 72.5,
+          "end": 74.5,
+          "sourceSymbol": "g2:m6",
+          "sourceLine": 72,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "sourcePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch g2:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Gm6",
+          "start": 76.5,
+          "end": 80.5,
+          "sourceSymbol": "g1:m6",
+          "sourceLine": 72,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "sourcePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch g1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Dm6",
+          "start": 100.5,
+          "end": 104.5,
+          "sourceSymbol": "d:m6",
+          "sourceLine": 78,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "sourcePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch d:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Dm6",
+          "start": 108.5,
+          "end": 112.5,
+          "sourceSymbol": "d:m6",
+          "sourceLine": 78,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "sourcePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch d:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Dm6",
+          "start": 116.5,
+          "end": 120.5,
+          "sourceSymbol": "d:m6",
+          "sourceLine": 79,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "sourcePitches": [
+            62,
+            65,
+            69,
+            71
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch d:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        }
+      ],
+      "explicitNC": [
+        {
+          "symbol": "NC",
+          "start": 0,
+          "end": 0.5,
+          "sourceSymbol": "s8",
+          "sourceLine": 53,
+          "sourcePitches": []
+        }
+      ]
+    },
+    {
+      "song": 488,
+      "arrangementOf": 35,
+      "title": "Chelsea Bridge",
+      "melodyId": "openbook-chelsea-bridge-fake",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/chelsea_bridge.ly.tera",
+      "bars": 31.75,
+      "notes": 112,
+      "sourceIntervalCells": [],
+      "explicitNC": [
+        {
+          "symbol": "NC",
+          "start": 0,
+          "end": 3,
+          "sourceSymbol": "s2.",
+          "sourceLine": 57,
+          "sourcePitches": []
+        }
+      ]
+    },
+    {
+      "song": 489,
+      "arrangementOf": 49,
+      "title": "Devil May Care",
+      "melodyId": "wikifonia-49-devil-may-care",
+      "source": "https://web.archive.org/web/20140701055029id_/http://www.synthzone.com/files/Wikifonia/Wikifonia.zip",
+      "bars": 44,
+      "notes": 127,
+      "sourceIntervalCells": [],
+      "explicitNC": []
+    },
+    {
+      "song": 490,
+      "arrangementOf": 51,
+      "title": "Don't Take Your Love From Me",
+      "melodyId": "openbook-don-t-take-your-love-from-me-fake",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/dont_take_your_love_from_me.ly.tera",
+      "bars": 44,
+      "notes": 153,
+      "sourceIntervalCells": [
+        {
+          "symbol": "Fm6",
+          "start": 4,
+          "end": 8,
+          "sourceSymbol": "f1:m6",
+          "sourceLine": 60,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Fm6",
+          "start": 20,
+          "end": 24,
+          "sourceSymbol": "f1:m6",
+          "sourceLine": 60,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Fm6",
+          "start": 36,
+          "end": 40,
+          "sourceSymbol": "f:m6",
+          "sourceLine": 69,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        }
+      ],
+      "explicitNC": []
+    },
+    {
+      "song": 491,
+      "arrangementOf": 72,
+      "title": "(I Don't Stand) A Ghost Of A Chance",
+      "melodyId": "openbook-i-don-t-stand-a-ghost-of-a-chance-fake",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/a_ghost_of_a_chance.ly.tera",
+      "bars": 32.25,
+      "notes": 105,
+      "sourceIntervalCells": [],
+      "explicitNC": [
+        {
+          "symbol": "NC",
+          "start": 0,
+          "end": 1,
+          "sourceSymbol": "s4",
+          "sourceLine": 57,
+          "sourcePitches": []
+        }
+      ]
+    },
+    {
+      "song": 492,
+      "arrangementOf": 89,
+      "title": "I Loves You Porgy",
+      "melodyId": "openbook-i-loves-you-porgy-fake",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/i_loves_you_porgy.ly.tera",
+      "bars": 24.375,
+      "notes": 122,
+      "sourceIntervalCells": [
+        {
+          "symbol": "Am6",
+          "start": 33.5,
+          "end": 37.5,
+          "sourceSymbol": "a1:m6",
+          "sourceLine": 68,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            69,
+            72,
+            76,
+            78
+          ],
+          "sourcePitches": [
+            69,
+            72,
+            76,
+            78
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch a1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Am6",
+          "start": 41.5,
+          "end": 45.5,
+          "sourceSymbol": "a1:m6",
+          "sourceLine": 68,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            69,
+            72,
+            76,
+            78
+          ],
+          "sourcePitches": [
+            69,
+            72,
+            76,
+            78
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch a1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Cm6",
+          "start": 49.5,
+          "end": 53.5,
+          "sourceSymbol": "c1:m6",
+          "sourceLine": 69,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            60,
+            63,
+            67,
+            69
+          ],
+          "sourcePitches": [
+            60,
+            63,
+            67,
+            69
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch c1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Gm6",
+          "start": 57.5,
+          "end": 59.5,
+          "sourceSymbol": "g:m6",
+          "sourceLine": 69,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "sourcePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch g:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Fm6",
+          "start": 61.5,
+          "end": 63.5,
+          "sourceSymbol": "f:m6",
+          "sourceLine": 69,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        }
+      ],
+      "explicitNC": [
+        {
+          "symbol": "NC",
+          "start": 0,
+          "end": 1.5,
+          "sourceSymbol": "s4.",
+          "sourceLine": 58,
+          "sourcePitches": []
+        }
+      ]
+    },
+    {
+      "song": 493,
+      "arrangementOf": 108,
+      "title": "It Don't Mean A Thing",
+      "melodyId": "openbook-it-don-t-mean-a-thing-real",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/it_dont_mean_a_thing.ly.tera",
+      "bars": 32.25,
+      "notes": 102,
+      "sourceIntervalCells": [
+        {
+          "symbol": "Gm6",
+          "start": 13,
+          "end": 17,
+          "sourceSymbol": "g1:m6",
+          "sourceLine": 74,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "sourcePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch g1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Gm6",
+          "start": 45,
+          "end": 49,
+          "sourceSymbol": "g1:m6",
+          "sourceLine": 80,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "sourcePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch g1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Gm6",
+          "start": 109,
+          "end": 113,
+          "sourceSymbol": "g1:m6",
+          "sourceLine": 92,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "sourcePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch g1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        }
+      ],
+      "explicitNC": [
+        {
+          "symbol": "NC",
+          "start": 0,
+          "end": 1,
+          "sourceSymbol": "s4",
+          "sourceLine": 70,
+          "sourcePitches": []
+        }
+      ]
+    },
+    {
+      "song": 494,
+      "arrangementOf": 120,
+      "title": "Let It Snow! Let It Snow! Let It Snow!",
+      "melodyId": "openbook-let-it-snow-let-it-snow-let-it-snow-fake",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/let_it_snow_let_it_snow_let_it_snow.ly.tera",
+      "bars": 32.25,
+      "notes": 132,
+      "sourceIntervalCells": [],
+      "explicitNC": [
+        {
+          "symbol": "NC",
+          "start": 0,
+          "end": 1,
+          "sourceSymbol": "s4",
+          "sourceLine": 56,
+          "sourcePitches": []
+        }
+      ]
+    },
+    {
+      "song": 495,
+      "arrangementOf": 124,
+      "title": "Love For Sale",
+      "melodyId": "openbook-love-for-sale-fake",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/love_for_sale.ly.tera",
+      "bars": 144,
+      "notes": 294,
+      "sourceIntervalCells": [],
+      "explicitNC": []
+    },
+    {
+      "song": 496,
+      "arrangementOf": 131,
+      "title": "Makin' Whoopee",
+      "melodyId": "openbook-makin-whoopee-wikifonia",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/makin_whoopee.ly.tera",
+      "bars": 32.75,
+      "notes": 122,
+      "sourceIntervalCells": [],
+      "explicitNC": [
+        {
+          "symbol": "NC",
+          "start": 0,
+          "end": 1.5,
+          "sourceSymbol": "s4.",
+          "sourceLine": 52,
+          "sourcePitches": []
+        }
+      ]
+    },
+    {
+      "song": 497,
+      "arrangementOf": 157,
+      "title": "On A Misty Night",
+      "melodyId": "openbook-on-a-misty-night-wikifonia",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/on_a_misty_night.ly.tera",
+      "bars": 99,
+      "notes": 255,
+      "sourceIntervalCells": [
+        {
+          "symbol": "Bbsus4add7add9",
+          "start": 374,
+          "end": 376,
+          "sourceSymbol": "bes2:sus4.7.9",
+          "sourceLine": 88,
+          "sourceIntervals": [
+            0,
+            5,
+            7,
+            10,
+            14
+          ],
+          "sourceCorePitches": [
+            70,
+            75,
+            77,
+            80,
+            84
+          ],
+          "sourcePitches": [
+            70,
+            75,
+            77,
+            80,
+            84
+          ],
+          "vocabularyDifference": "Unsupported chord quality bes2:sus4.7.9 -> sus4add7add9"
+        }
+      ],
+      "explicitNC": []
+    },
+    {
+      "song": 498,
+      "arrangementOf": 158,
+      "title": "On The Street Where You Live",
+      "melodyId": "openbook-on-the-street-where-you-live-fake",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/on_the_street_where_you_live.ly.tera",
+      "bars": 64.5,
+      "notes": 162,
+      "sourceIntervalCells": [
+        {
+          "symbol": "Ebm6",
+          "start": 146,
+          "end": 150,
+          "sourceSymbol": "ees1:m6",
+          "sourceLine": 79,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            63,
+            66,
+            70,
+            72
+          ],
+          "sourcePitches": [
+            63,
+            66,
+            70,
+            72
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch ees1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Ebm6/Gb",
+          "start": 150,
+          "end": 152,
+          "sourceSymbol": "ees2:m6/ges",
+          "sourceLine": 79,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            63,
+            66,
+            70,
+            72
+          ],
+          "sourcePitches": [
+            54,
+            58,
+            60,
+            63
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch ees2:m6/ges [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        }
+      ],
+      "explicitNC": [
+        {
+          "symbol": "NC",
+          "start": 0,
+          "end": 2,
+          "sourceSymbol": "s2",
+          "sourceLine": 58,
+          "sourcePitches": []
+        }
+      ]
+    },
+    {
+      "song": 499,
+      "arrangementOf": 177,
+      "title": "Santa Claus Is Comin' to Town",
+      "melodyId": "wikifonia-santa-claus-is-coming-to-town-haven-gillespie-j-fred-coots",
+      "source": "https://web.archive.org/web/20140701055029id_/http://www.synthzone.com/files/Wikifonia/Wikifonia.zip",
+      "bars": 32.125,
+      "notes": 111,
+      "sourceIntervalCells": [],
+      "explicitNC": []
+    },
+    {
+      "song": 500,
+      "arrangementOf": 189,
+      "title": "Solitude",
+      "melodyId": "openbook-solitude-fake",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/solitude.ly.tera",
+      "bars": 32.5,
+      "notes": 82,
+      "sourceIntervalCells": [],
+      "explicitNC": [
+        {
+          "symbol": "NC",
+          "start": 0,
+          "end": 2,
+          "sourceSymbol": "s2",
+          "sourceLine": 56,
+          "sourcePitches": []
+        }
+      ]
+    },
+    {
+      "song": 501,
+      "arrangementOf": 194,
+      "title": "Soul Eyes",
+      "melodyId": "openbook-soul-eyes-fake",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/soul_eyes.ly.tera",
+      "bars": 32.25,
+      "notes": 77,
+      "sourceIntervalCells": [],
+      "explicitNC": [
+        {
+          "symbol": "NC",
+          "start": 0,
+          "end": 1,
+          "sourceSymbol": "s4",
+          "sourceLine": 55,
+          "sourcePitches": []
+        }
+      ]
+    },
+    {
+      "song": 502,
+      "arrangementOf": 215,
+      "title": "Too Close For Comfort",
+      "melodyId": "openbook-too-close-for-comfort-wikifonia",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/too_close_for_comfort.ly.tera",
+      "bars": 82,
+      "notes": 199,
+      "sourceIntervalCells": [
+        {
+          "symbol": "Cm6",
+          "start": 8,
+          "end": 12,
+          "sourceSymbol": "c1:m6",
+          "sourceLine": 50,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            60,
+            63,
+            67,
+            69
+          ],
+          "sourcePitches": [
+            60,
+            63,
+            67,
+            69
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch c1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Gm6",
+          "start": 12,
+          "end": 16,
+          "sourceSymbol": "g1:m6",
+          "sourceLine": 51,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "sourcePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch g1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Fm6",
+          "start": 20,
+          "end": 24,
+          "sourceSymbol": "f1:m6",
+          "sourceLine": 53,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Cm6",
+          "start": 40,
+          "end": 44,
+          "sourceSymbol": "c1:m6",
+          "sourceLine": 58,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            60,
+            63,
+            67,
+            69
+          ],
+          "sourcePitches": [
+            60,
+            63,
+            67,
+            69
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch c1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Gm6",
+          "start": 44,
+          "end": 48,
+          "sourceSymbol": "g1:m6",
+          "sourceLine": 59,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "sourcePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch g1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Fm6",
+          "start": 52,
+          "end": 56,
+          "sourceSymbol": "f1:m6",
+          "sourceLine": 61,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Fm6",
+          "start": 72,
+          "end": 75,
+          "sourceSymbol": "f2.:m6",
+          "sourceLine": 66,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f2.:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Fm6",
+          "start": 88,
+          "end": 91,
+          "sourceSymbol": "f2.:m6",
+          "sourceLine": 70,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f2.:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Cm6",
+          "start": 104,
+          "end": 108,
+          "sourceSymbol": "c1:m6",
+          "sourceLine": 74,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            60,
+            63,
+            67,
+            69
+          ],
+          "sourcePitches": [
+            60,
+            63,
+            67,
+            69
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch c1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Gm6",
+          "start": 108,
+          "end": 112,
+          "sourceSymbol": "g1:m6",
+          "sourceLine": 75,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "sourcePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch g1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Fm6",
+          "start": 116,
+          "end": 120,
+          "sourceSymbol": "f1:m6",
+          "sourceLine": 77,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Fm6",
+          "start": 135.5,
+          "end": 136.5,
+          "sourceSymbol": "f8:m6",
+          "sourceLine": 81,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f8:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Cm6",
+          "start": 172,
+          "end": 176,
+          "sourceSymbol": "c1:m6",
+          "sourceLine": 50,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            60,
+            63,
+            67,
+            69
+          ],
+          "sourcePitches": [
+            60,
+            63,
+            67,
+            69
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch c1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Gm6",
+          "start": 176,
+          "end": 180,
+          "sourceSymbol": "g1:m6",
+          "sourceLine": 51,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "sourcePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch g1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Fm6",
+          "start": 184,
+          "end": 188,
+          "sourceSymbol": "f1:m6",
+          "sourceLine": 53,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Cm6",
+          "start": 204,
+          "end": 208,
+          "sourceSymbol": "c1:m6",
+          "sourceLine": 58,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            60,
+            63,
+            67,
+            69
+          ],
+          "sourcePitches": [
+            60,
+            63,
+            67,
+            69
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch c1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Gm6",
+          "start": 208,
+          "end": 212,
+          "sourceSymbol": "g1:m6",
+          "sourceLine": 59,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "sourcePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch g1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Fm6",
+          "start": 216,
+          "end": 220,
+          "sourceSymbol": "f1:m6",
+          "sourceLine": 61,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Fm6",
+          "start": 236,
+          "end": 239,
+          "sourceSymbol": "f2.:m6",
+          "sourceLine": 66,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f2.:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Fm6",
+          "start": 252,
+          "end": 255,
+          "sourceSymbol": "f2.:m6",
+          "sourceLine": 70,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f2.:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Cm6",
+          "start": 268,
+          "end": 272,
+          "sourceSymbol": "c1:m6",
+          "sourceLine": 74,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            60,
+            63,
+            67,
+            69
+          ],
+          "sourcePitches": [
+            60,
+            63,
+            67,
+            69
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch c1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Gm6",
+          "start": 272,
+          "end": 276,
+          "sourceSymbol": "g1:m6",
+          "sourceLine": 75,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "sourcePitches": [
+            67,
+            70,
+            74,
+            76
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch g1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Fm6",
+          "start": 280,
+          "end": 284,
+          "sourceSymbol": "f1:m6",
+          "sourceLine": 77,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Fm6",
+          "start": 299.5,
+          "end": 300.5,
+          "sourceSymbol": "f8:m6",
+          "sourceLine": 81,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f8:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        }
+      ],
+      "explicitNC": [
+        {
+          "symbol": "NC",
+          "start": 0,
+          "end": 4,
+          "sourceSymbol": "s1",
+          "sourceLine": 48,
+          "sourcePitches": []
+        }
+      ]
+    },
+    {
+      "song": 503,
+      "arrangementOf": 219,
+      "title": "Undecided",
+      "melodyId": "openbook-undecided-fake",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/undecided.ly.tera",
+      "bars": 32,
+      "notes": 146,
+      "sourceIntervalCells": [],
+      "explicitNC": []
+    },
+    {
+      "song": 504,
+      "arrangementOf": 221,
+      "title": "Violets For Your Furs",
+      "melodyId": "openbook-violets-for-your-furs-fake",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/violets_for_your_furs.ly.tera",
+      "bars": 32,
+      "notes": 139,
+      "sourceIntervalCells": [],
+      "explicitNC": []
+    },
+    {
+      "song": 505,
+      "arrangementOf": 231,
+      "title": "Whisper Not",
+      "melodyId": "openbook-whisper-not-laurent",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/whisper_not.ly.tera",
+      "bars": 48.25,
+      "notes": 185,
+      "sourceIntervalCells": [],
+      "explicitNC": [
+        {
+          "symbol": "NC",
+          "start": 0,
+          "end": 1,
+          "sourceSymbol": "s4",
+          "sourceLine": 39,
+          "sourcePitches": []
+        }
+      ]
+    },
+    {
+      "song": 506,
+      "arrangementOf": 240,
+      "title": "You'd Be So Nice To Come Home To",
+      "melodyId": "openbook-you-d-be-so-nice-to-come-home-to-fake",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/youd_be_so_nice_to_come_home_to.ly.tera",
+      "bars": 32.5,
+      "notes": 66,
+      "sourceIntervalCells": [],
+      "explicitNC": [
+        {
+          "symbol": "NC",
+          "start": 0,
+          "end": 2,
+          "sourceSymbol": "s2",
+          "sourceLine": 56,
+          "sourcePitches": []
+        }
+      ]
     }
   ],
   "newlyCovered": [
     {
       "song": 1,
       "title": "Afternoon In Paris"
+    },
+    {
+      "song": 3,
+      "title": "Airegin"
     },
     {
       "song": 6,
@@ -9412,6 +11240,10 @@
       "title": "But Beautiful"
     },
     {
+      "song": 35,
+      "title": "Chelsea Bridge"
+    },
+    {
       "song": 37,
       "title": "The Christmas Song"
     },
@@ -9442,6 +11274,14 @@
     {
       "song": 48,
       "title": "Desafinado"
+    },
+    {
+      "song": 49,
+      "title": "Devil May Care"
+    },
+    {
+      "song": 51,
+      "title": "Don't Take Your Love From Me"
     },
     {
       "song": 52,
@@ -9496,6 +11336,10 @@
       "title": "Georgia"
     },
     {
+      "song": 72,
+      "title": "A Ghost of a Chance"
+    },
+    {
       "song": 74,
       "title": "Gone With the Wind"
     },
@@ -9526,6 +11370,10 @@
     {
       "song": 88,
       "title": "I Love You"
+    },
+    {
+      "song": 89,
+      "title": "I Loves You Porgy"
     },
     {
       "song": 91,
@@ -9576,6 +11424,10 @@
       "title": "It Could Happen to You"
     },
     {
+      "song": 108,
+      "title": "It Don't Mean a Thing"
+    },
+    {
       "song": 110,
       "title": "It Might As Well Be Spring"
     },
@@ -9600,8 +11452,16 @@
       "title": "Laura"
     },
     {
+      "song": 120,
+      "title": "Let It Snow!"
+    },
+    {
       "song": 121,
       "title": "Li'l Darlin'"
+    },
+    {
+      "song": 124,
+      "title": "Love for Sale"
     },
     {
       "song": 125,
@@ -9622,6 +11482,10 @@
     {
       "song": 130,
       "title": "Lullaby of the Leaves"
+    },
+    {
+      "song": 131,
+      "title": "Makin' Whoopee"
     },
     {
       "song": 133,
@@ -9680,6 +11544,10 @@
       "title": "Night and Day"
     },
     {
+      "song": 153,
+      "title": "A Night in Tunisia"
+    },
+    {
       "song": 154,
       "title": "Nobody Else But Me"
     },
@@ -9690,6 +11558,14 @@
     {
       "song": 156,
       "title": "On a Clear Day"
+    },
+    {
+      "song": 157,
+      "title": "On a Misty Night"
+    },
+    {
+      "song": 158,
+      "title": "On the Street Where You Live"
     },
     {
       "song": 159,
@@ -9732,6 +11608,10 @@
       "title": "Rosetta"
     },
     {
+      "song": 177,
+      "title": "Santa Claus is Coming to Town"
+    },
+    {
       "song": 181,
       "title": "September in the Rain"
     },
@@ -9756,12 +11636,20 @@
       "title": "Solar"
     },
     {
+      "song": 189,
+      "title": "Solitude"
+    },
+    {
       "song": 190,
       "title": "Some Other Time"
     },
     {
       "song": 191,
       "title": "Somebody Loves Me"
+    },
+    {
+      "song": 194,
+      "title": "Soul Eyes"
     },
     {
       "song": 196,
@@ -9804,6 +11692,10 @@
       "title": "They Can't Take That Away from Me"
     },
     {
+      "song": 215,
+      "title": "Too Close for Comfort"
+    },
+    {
       "song": 216,
       "title": "Too Marvelous for Words"
     },
@@ -9812,8 +11704,16 @@
       "title": "The Touch of Your Lips"
     },
     {
+      "song": 219,
+      "title": "Undecided"
+    },
+    {
       "song": 220,
       "title": "Under a Blanket of Blue"
+    },
+    {
+      "song": 221,
+      "title": "Violets for Your Furs"
     },
     {
       "song": 222,
@@ -9840,6 +11740,10 @@
       "title": "When I Fall in Love"
     },
     {
+      "song": 231,
+      "title": "Whisper Not"
+    },
+    {
       "song": 234,
       "title": "Winter Wonderland"
     },
@@ -9854,34 +11758,13 @@
     {
       "song": 239,
       "title": "You Turned the Tables on Me"
+    },
+    {
+      "song": 240,
+      "title": "You'd Be So Nice to Come Home To"
     }
   ],
   "missing": [
-    {
-      "song": 3,
-      "title": "Airegin",
-      "composer": "Sonny Rollins",
-      "encodedHeads": [
-        {
-          "id": "psjazz-realbook-airegin",
-          "source": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Airegin/Airegin.musicxml",
-          "bars": 46,
-          "reasons": [
-            "irregular source measures"
-          ]
-        }
-      ],
-      "openbookAttempts": [
-        {
-          "path": "src/openbook/airegin.ly.tera",
-          "version": "Fake",
-          "reason": "Source key declaration mode disagrees with original harmonic mode; requires tonic review",
-          "title": "Airegin",
-          "pickup": false,
-          "textNavigation": false
-        }
-      ]
-    },
     {
       "song": 22,
       "title": "Blue Lou",
@@ -9934,102 +11817,9 @@
       ]
     },
     {
-      "song": 35,
-      "title": "Chelsea Bridge",
-      "composer": "Billy Strayhorn",
-      "encodedHeads": [],
-      "openbookAttempts": [
-        {
-          "path": "src/openbook/chelsea_bridge.ly.tera",
-          "version": "Fake",
-          "reason": "Textual navigation or pickup requires explicit source review",
-          "title": "Chelsea Bridge",
-          "pickup": true,
-          "textNavigation": false
-        }
-      ]
-    },
-    {
-      "song": 49,
-      "title": "Devil May Care",
-      "composer": "Bob Dorough and Terrell Kirk",
-      "encodedHeads": [],
-      "openbookAttempts": []
-    },
-    {
-      "song": 51,
-      "title": "Don't Take Your Love From Me",
-      "composer": "Hery Nemo",
-      "encodedHeads": [],
-      "openbookAttempts": [
-        {
-          "path": "src/openbook/dont_take_your_love_from_me.ly.tera",
-          "version": "Fake",
-          "reason": "Textual navigation or pickup requires explicit source review",
-          "title": "Don't Take Your Love From Me",
-          "pickup": false,
-          "textNavigation": true
-        }
-      ]
-    },
-    {
       "song": 56,
       "title": "A Dream Is A Wish Your Heart Makes",
       "composer": "",
-      "encodedHeads": [],
-      "openbookAttempts": []
-    },
-    {
-      "song": 72,
-      "title": "A Ghost of a Chance",
-      "composer": "Victor Young, Bing Crosby, Ned Washington",
-      "encodedHeads": [],
-      "openbookAttempts": []
-    },
-    {
-      "song": 89,
-      "title": "I Loves You Porgy",
-      "composer": "George Gershwin",
-      "encodedHeads": [],
-      "openbookAttempts": [
-        {
-          "path": "src/openbook/i_loves_you_porgy.ly.tera",
-          "version": "Fake",
-          "reason": "Textual navigation or pickup requires explicit source review",
-          "title": "I Loves You Porgy",
-          "pickup": true,
-          "textNavigation": true
-        }
-      ]
-    },
-    {
-      "song": 108,
-      "title": "It Don't Mean a Thing",
-      "composer": "Duke Ellington",
-      "encodedHeads": [],
-      "openbookAttempts": [
-        {
-          "path": "src/openbook/it_dont_mean_a_thing.ly.tera",
-          "version": "Real",
-          "reason": "Textual navigation or pickup requires explicit source review",
-          "title": "It Don't Mean A Thing",
-          "pickup": true,
-          "textNavigation": false
-        },
-        {
-          "path": "src/openbook/it_dont_mean_a_thing.ly.tera",
-          "version": "Laurent",
-          "reason": "Textual navigation or pickup requires explicit source review",
-          "title": "It Don't Mean A Thing",
-          "pickup": true,
-          "textNavigation": false
-        }
-      ]
-    },
-    {
-      "song": 120,
-      "title": "Let It Snow!",
-      "composer": "Jule Styne",
       "encodedHeads": [],
       "openbookAttempts": []
     },
@@ -10039,133 +11829,6 @@
       "composer": "",
       "encodedHeads": [],
       "openbookAttempts": []
-    },
-    {
-      "song": 124,
-      "title": "Love for Sale",
-      "composer": "Cole Porter",
-      "encodedHeads": [],
-      "openbookAttempts": [
-        {
-          "path": "src/openbook/love_for_sale.ly.tera",
-          "version": "Fake",
-          "reason": "Source key declaration mode disagrees with original harmonic mode; requires tonic review",
-          "title": "Love For Sale",
-          "pickup": false,
-          "textNavigation": false
-        }
-      ]
-    },
-    {
-      "song": 131,
-      "title": "Makin' Whoopee",
-      "composer": "Walter Donaldson and Gus Kahn",
-      "encodedHeads": [],
-      "openbookAttempts": [
-        {
-          "path": "src/openbook/makin_whoopee.ly.tera",
-          "version": "Wikifonia",
-          "reason": "Textual navigation or pickup requires explicit source review",
-          "title": "Makin' Whoopee",
-          "pickup": true,
-          "textNavigation": false
-        }
-      ]
-    },
-    {
-      "song": 153,
-      "title": "A Night in Tunisia",
-      "composer": "Dizzy Gillespie",
-      "encodedHeads": [],
-      "openbookAttempts": [
-        {
-          "path": "src/openbook/a_night_in_tunisia.ly.tera",
-          "version": "Fake",
-          "reason": "Textual navigation or pickup requires explicit source review",
-          "title": "A Night In Tunisia",
-          "pickup": true,
-          "textNavigation": false
-        },
-        {
-          "path": "src/openbook/a_night_in_tunisia.ly.tera",
-          "version": "Laurent",
-          "reason": "Textual navigation or pickup requires explicit source review",
-          "title": "A Night In Tunisia",
-          "pickup": true,
-          "textNavigation": false
-        }
-      ]
-    },
-    {
-      "song": 157,
-      "title": "On a Misty Night",
-      "composer": "Tadd Dameron",
-      "encodedHeads": [],
-      "openbookAttempts": [
-        {
-          "path": "src/openbook/on_a_misty_night.ly.tera",
-          "version": "Wikifonia",
-          "reason": "Textual navigation or pickup requires explicit source review",
-          "title": "On A Misty Night",
-          "pickup": false,
-          "textNavigation": true
-        }
-      ]
-    },
-    {
-      "song": 158,
-      "title": "On the Street Where You Live",
-      "composer": "Frederick Loewe",
-      "encodedHeads": [],
-      "openbookAttempts": [
-        {
-          "path": "src/openbook/on_the_street_where_you_live.ly.tera",
-          "version": "Fake",
-          "reason": "Textual navigation or pickup requires explicit source review",
-          "title": "On The Street Where You Live",
-          "pickup": true,
-          "textNavigation": true
-        }
-      ]
-    },
-    {
-      "song": 177,
-      "title": "Santa Claus is Coming to Town",
-      "composer": "",
-      "encodedHeads": [],
-      "openbookAttempts": []
-    },
-    {
-      "song": 189,
-      "title": "Solitude",
-      "composer": "Duke Ellington",
-      "encodedHeads": [],
-      "openbookAttempts": [
-        {
-          "path": "src/openbook/solitude.ly.tera",
-          "version": "Fake",
-          "reason": "Textual navigation or pickup requires explicit source review",
-          "title": "Solitude",
-          "pickup": true,
-          "textNavigation": true
-        }
-      ]
-    },
-    {
-      "song": 194,
-      "title": "Soul Eyes",
-      "composer": "Mal Waldron",
-      "encodedHeads": [],
-      "openbookAttempts": [
-        {
-          "path": "src/openbook/soul_eyes.ly.tera",
-          "version": "Fake",
-          "reason": "Textual navigation or pickup requires explicit source review",
-          "title": "Soul Eyes",
-          "pickup": true,
-          "textNavigation": false
-        }
-      ]
     },
     {
       "song": 199,
@@ -10191,91 +11854,11 @@
       "openbookAttempts": []
     },
     {
-      "song": 215,
-      "title": "Too Close for Comfort",
-      "composer": "Jerry Bock, Larry Holofcener, George Weiss",
-      "encodedHeads": [],
-      "openbookAttempts": [
-        {
-          "path": "src/openbook/too_close_for_comfort.ly.tera",
-          "version": "Wikifonia",
-          "reason": "Polyphonic source melody requires voice selection review",
-          "title": "Too Close For Comfort",
-          "pickup": false,
-          "textNavigation": false
-        }
-      ]
-    },
-    {
-      "song": 219,
-      "title": "Undecided",
-      "composer": "Charlie Shavers",
-      "encodedHeads": [],
-      "openbookAttempts": [
-        {
-          "path": "src/openbook/undecided.ly.tera",
-          "version": "Fake",
-          "reason": "Textual navigation or pickup requires explicit source review",
-          "title": "Undecided",
-          "pickup": false,
-          "textNavigation": true
-        }
-      ]
-    },
-    {
-      "song": 221,
-      "title": "Violets for Your Furs",
-      "composer": "Tom Adair and Matt Dennis",
-      "encodedHeads": [],
-      "openbookAttempts": [
-        {
-          "path": "src/openbook/violets_for_your_furs.ly.tera",
-          "version": "Fake",
-          "reason": "Textual navigation or pickup requires explicit source review",
-          "title": "Violets For Your Furs",
-          "pickup": false,
-          "textNavigation": true
-        }
-      ]
-    },
-    {
-      "song": 231,
-      "title": "Whisper Not",
-      "composer": "Benny Golson",
-      "encodedHeads": [],
-      "openbookAttempts": [
-        {
-          "path": "src/openbook/whisper_not.ly.tera",
-          "version": "Laurent",
-          "reason": "Textual navigation or pickup requires explicit source review",
-          "title": "Whisper Not",
-          "pickup": true,
-          "textNavigation": false
-        }
-      ]
-    },
-    {
       "song": 232,
       "title": "White Christmas",
       "composer": "Irving Berlin",
       "encodedHeads": [],
       "openbookAttempts": []
-    },
-    {
-      "song": 240,
-      "title": "You'd Be So Nice to Come Home To",
-      "composer": "Cole Porter",
-      "encodedHeads": [],
-      "openbookAttempts": [
-        {
-          "path": "src/openbook/youd_be_so_nice_to_come_home_to.ly.tera",
-          "version": "Fake",
-          "reason": "Textual navigation or pickup requires explicit source review",
-          "title": "You'd Be So Nice To Come Home To",
-          "pickup": true,
-          "textNavigation": false
-        }
-      ]
     }
   ],
   "validation": {
@@ -12091,12 +13674,12 @@
     ],
     "sourceArchive": "1e2764df825094a499273bba1349f26ae28991bd79cb05a665604cd533bbe095",
     "sourceCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
-    "midiRoundtrip": "Every OpenBook MIDI note pitch/onset/duration/velocity checked; 10080 PPQ",
+    "midiRoundtrip": "Every source melody pitch/onset/duration/velocity verified against its source compiler/voice and GM65 MIDI; new source grace notes use384 melody PPQ and1920 standard PPQ.",
     "sourceChordPolicy": "Direct syntax agrees exactly with compiled pitches. Where vocabulary differs, independently compiled slash-free source chord cores provide explicit compound intervals; original and core pitch-class sets plus explicit bass must agree."
   },
   "unresolved": {
-    "pickups": "Matching source-compiled initial pickups and final partial measures use explicit runtime boundaries without moving MIDI notes or source harmony. Unmatched stream declarations and mid-score pickups remain excluded.",
-    "navigation": "Text-only DC/DS/coda requires exact source return/end mapping; compiler does not infer it.",
+    "pickups": "Matching source pickups and explicitly reviewed repeated partials retain exact typed measure boundaries; unmatched/malformed source measures stay excluded.",
+    "navigation": "Seven reviewed whole-event return routes and two literal source ties are admitted with pinned written landmarks; unreviewed navigation stays excluded.",
     "other": "Missing/changing meter, malformed source measures and unconfirmed tonic modes remain excluded. Source raw heads failing chart admission are not shown as melody-enabled charts.",
     "improvisor": "Only explicitly marked Head parts admitted. Improvisations and transcribed solos are not heads."
   }

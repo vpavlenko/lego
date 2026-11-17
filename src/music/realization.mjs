@@ -39,7 +39,7 @@ export function realizeSong(song,qualities,{tempo=120}={}){
    c.pitches.forEach((p,i)=>notes.push({id:`${id}-${i}`,pitch:p,start,duration:end-start,voice:0,velocity:74,chord:id}));
   }
  }
- return {version:3,voicing:'root-position',song:song.index,title:song.title,tempo,meter:song.meter,beats:song.bars*barBeats,barBeats,rows,...(meterChanges?.length?{meterChanges}:{}),...(song.measureMap?{measureMap:song.measureMap}:{}),tonic:0,changes,notes,chords};
+ return {version:3,voicing:'root-position',song:song.index,title:song.title,tempo,meter:song.meter,beats:song.bars*barBeats,barBeats,rows,...(song.midiPPQ?{midiPPQ:song.midiPPQ}:{}),...(meterChanges?.length?{meterChanges}:{}),...(song.measureMap?{measureMap:song.measureMap}:{}),tonic:0,changes,notes,chords};
 }
 export function playbackPlan(data,tempo=data.tempo){
  const notes=data.notes.map(n=>{const voice=n.voice??0;return {...n,voice,velocity:n.velocity??(voice===1?80:74),channel:voice,group:voice,end:n.start+n.duration};});

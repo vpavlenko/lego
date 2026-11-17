@@ -1,0 +1,447 @@
+{
+  "status": "PASS",
+  "melodyId": "openbook-love-for-sale-fake",
+  "sourceSha256": "03c3a69492a35c06ab1a44c44875278c82635088bb8b5035b017615f69fd06b3",
+  "noteCount": 294,
+  "totalBeats": 576,
+  "canonicalSong": 124,
+  "sourceFile": "/private/tmp/insights-pickup-recovery/book-openbook-adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/love_for_sale.ly.tera",
+  "midiFile": "/private/tmp/insights-more-batch21/melodies/openbook-love-for-sale-fake.mid",
+  "compilerFile": "/private/tmp/insights-more-batch21/compiler/import-openbook-melodies.py",
+  "compilerSha256": "72fcfa3cbd860887593168e664cb90cafd3b77063574a34d7c83e8a4838b34bf",
+  "sourceCompilerMidiFile": "/private/tmp/insights-more-batch21/compiled/openbook-love-for-sale-fake/love-for-sale-ly-fake.midi",
+  "sourceCompilerMidiSha256": "df376b7b32974aad6c4a9c3929e4614d75a8b34d772ce3cfe426b68e4070f4da",
+  "sourceCompilerLog": "/private/tmp/insights-more-batch21/compiled/openbook-love-for-sale-fake/love-for-sale-ly-fake.log",
+  "sourceCompilerLogSha256": "4ec03f3c237446a4e197ffcb774e150efce4257ca4a13e779eefcfac350fade9",
+  "sourceCompilerNotes": 294,
+  "sourceCompilerPPQ": 384,
+  "explicitOmissions": [],
+  "sourceLinearNotesExact": true,
+  "sourceHarmonyValidatedByCompiler": true,
+  "approvedNotesUnchanged": true,
+  "approvedHarmonyUnchanged": true,
+  "approvedMeasureGeometryUnchanged": true,
+  "normalizedMidiNotesExact": true,
+  "normalizedMidiPPQ": 10080,
+  "harmonicTonicReference": {
+    "melodyId": "openbook-love-for-sale-fake",
+    "canonicalSong": 124,
+    "sourcePath": "src/openbook/love_for_sale.ly.tera",
+    "sourceVersion": "Fake",
+    "sourceSha256": "03c3a69492a35c06ab1a44c44875278c82635088bb8b5035b017615f69fd06b3",
+    "sourceDeclaredKey": {
+      "root": "Bb",
+      "mode": "Major"
+    },
+    "keyDirectives": [
+      {
+        "line": 89,
+        "text": "\\key bes \\major"
+      }
+    ],
+    "normalizationTonic": {
+      "root": "Bb",
+      "mode": "Minor"
+    },
+    "evidence": {
+      "canonicalRoadmap": {
+        "source": "InsightsRoadmapsConsolidated.pdf",
+        "song": 124,
+        "title": "Love for Sale",
+        "tonic": [
+          "Bb",
+          "Minor"
+        ]
+      },
+      "tonicChordEvents": [
+        {
+          "symbol": "Bbm",
+          "start": 8,
+          "end": 12,
+          "sourceLine": 42,
+          "index": 2
+        },
+        {
+          "symbol": "Bbm",
+          "start": 12,
+          "end": 16,
+          "sourceLine": 42,
+          "index": 3
+        },
+        {
+          "symbol": "Bbm",
+          "start": 24,
+          "end": 28,
+          "sourceLine": 43,
+          "index": 6
+        },
+        {
+          "symbol": "Bbm",
+          "start": 28,
+          "end": 32,
+          "sourceLine": 43,
+          "index": 7
+        },
+        {
+          "symbol": "Bbm",
+          "start": 56,
+          "end": 60,
+          "sourceLine": 45,
+          "index": 14
+        },
+        {
+          "symbol": "Bbm",
+          "start": 60,
+          "end": 64,
+          "sourceLine": 45,
+          "index": 15
+        },
+        {
+          "symbol": "Bbm",
+          "start": 72,
+          "end": 76,
+          "sourceLine": 50,
+          "index": 18
+        },
+        {
+          "symbol": "Bbm",
+          "start": 76,
+          "end": 80,
+          "sourceLine": 50,
+          "index": 19
+        },
+        {
+          "symbol": "Bbm",
+          "start": 88,
+          "end": 92,
+          "sourceLine": 51,
+          "index": 22
+        },
+        {
+          "symbol": "Bbm",
+          "start": 92,
+          "end": 96,
+          "sourceLine": 51,
+          "index": 23
+        },
+        {
+          "symbol": "Bbm",
+          "start": 120,
+          "end": 124,
+          "sourceLine": 53,
+          "index": 30
+        },
+        {
+          "symbol": "Bbm7",
+          "start": 124,
+          "end": 128,
+          "sourceLine": 53,
+          "index": 31
+        },
+        {
+          "symbol": "Bbm7",
+          "start": 156,
+          "end": 160,
+          "sourceLine": 59,
+          "index": 40
+        },
+        {
+          "symbol": "Bbm",
+          "start": 200,
+          "end": 204,
+          "sourceLine": 66,
+          "index": 51
+        },
+        {
+          "symbol": "Bbm",
+          "start": 204,
+          "end": 208,
+          "sourceLine": 66,
+          "index": 52
+        },
+        {
+          "symbol": "Bbm",
+          "start": 216,
+          "end": 220,
+          "sourceLine": 67,
+          "index": 55
+        },
+        {
+          "symbol": "Bbm",
+          "start": 220,
+          "end": 224,
+          "sourceLine": 67,
+          "index": 56
+        },
+        {
+          "symbol": "Bbm",
+          "start": 248,
+          "end": 252,
+          "sourceLine": 69,
+          "index": 63
+        },
+        {
+          "symbol": "Bbm7/Ab",
+          "start": 252,
+          "end": 256,
+          "sourceLine": 69,
+          "index": 64
+        },
+        {
+          "symbol": "Bbm",
+          "start": 272,
+          "end": 276,
+          "sourceLine": 71,
+          "index": 71
+        },
+        {
+          "symbol": "Bbm",
+          "start": 296,
+          "end": 300,
+          "sourceLine": 42,
+          "index": 77
+        },
+        {
+          "symbol": "Bbm",
+          "start": 300,
+          "end": 304,
+          "sourceLine": 42,
+          "index": 78
+        },
+        {
+          "symbol": "Bbm",
+          "start": 312,
+          "end": 316,
+          "sourceLine": 43,
+          "index": 81
+        },
+        {
+          "symbol": "Bbm",
+          "start": 316,
+          "end": 320,
+          "sourceLine": 43,
+          "index": 82
+        },
+        {
+          "symbol": "Bbm",
+          "start": 344,
+          "end": 348,
+          "sourceLine": 45,
+          "index": 89
+        },
+        {
+          "symbol": "Bbm",
+          "start": 348,
+          "end": 352,
+          "sourceLine": 45,
+          "index": 90
+        },
+        {
+          "symbol": "Bbm",
+          "start": 360,
+          "end": 364,
+          "sourceLine": 50,
+          "index": 93
+        },
+        {
+          "symbol": "Bbm",
+          "start": 364,
+          "end": 368,
+          "sourceLine": 50,
+          "index": 94
+        },
+        {
+          "symbol": "Bbm",
+          "start": 376,
+          "end": 380,
+          "sourceLine": 51,
+          "index": 97
+        },
+        {
+          "symbol": "Bbm",
+          "start": 380,
+          "end": 384,
+          "sourceLine": 51,
+          "index": 98
+        },
+        {
+          "symbol": "Bbm",
+          "start": 408,
+          "end": 412,
+          "sourceLine": 53,
+          "index": 105
+        },
+        {
+          "symbol": "Bbm7",
+          "start": 412,
+          "end": 416,
+          "sourceLine": 53,
+          "index": 106
+        },
+        {
+          "symbol": "Bbm7",
+          "start": 444,
+          "end": 448,
+          "sourceLine": 59,
+          "index": 115
+        },
+        {
+          "symbol": "Bbm",
+          "start": 488,
+          "end": 492,
+          "sourceLine": 66,
+          "index": 126
+        },
+        {
+          "symbol": "Bbm",
+          "start": 492,
+          "end": 496,
+          "sourceLine": 66,
+          "index": 127
+        },
+        {
+          "symbol": "Bbm",
+          "start": 504,
+          "end": 508,
+          "sourceLine": 67,
+          "index": 130
+        },
+        {
+          "symbol": "Bbm",
+          "start": 508,
+          "end": 512,
+          "sourceLine": 67,
+          "index": 131
+        },
+        {
+          "symbol": "Bbm",
+          "start": 536,
+          "end": 540,
+          "sourceLine": 69,
+          "index": 138
+        },
+        {
+          "symbol": "Bbm7/Ab",
+          "start": 540,
+          "end": 544,
+          "sourceLine": 69,
+          "index": 139
+        },
+        {
+          "symbol": "Bbm",
+          "start": 560,
+          "end": 564,
+          "sourceLine": 71,
+          "index": 146
+        }
+      ],
+      "dominantResolutions": [
+        {
+          "dominant": {
+            "symbol": "F7#5",
+            "start": 52,
+            "end": 56,
+            "sourceLine": 45,
+            "index": 13
+          },
+          "tonic": {
+            "symbol": "Bbm",
+            "start": 56,
+            "end": 60,
+            "sourceLine": 45,
+            "index": 14
+          }
+        },
+        {
+          "dominant": {
+            "symbol": "F7#5",
+            "start": 116,
+            "end": 120,
+            "sourceLine": 53,
+            "index": 29
+          },
+          "tonic": {
+            "symbol": "Bbm",
+            "start": 120,
+            "end": 124,
+            "sourceLine": 53,
+            "index": 30
+          }
+        },
+        {
+          "dominant": {
+            "symbol": "F7#5",
+            "start": 244,
+            "end": 248,
+            "sourceLine": 69,
+            "index": 62
+          },
+          "tonic": {
+            "symbol": "Bbm",
+            "start": 248,
+            "end": 252,
+            "sourceLine": 69,
+            "index": 63
+          }
+        },
+        {
+          "dominant": {
+            "symbol": "F7#5",
+            "start": 340,
+            "end": 344,
+            "sourceLine": 45,
+            "index": 88
+          },
+          "tonic": {
+            "symbol": "Bbm",
+            "start": 344,
+            "end": 348,
+            "sourceLine": 45,
+            "index": 89
+          }
+        },
+        {
+          "dominant": {
+            "symbol": "F7#5",
+            "start": 404,
+            "end": 408,
+            "sourceLine": 53,
+            "index": 104
+          },
+          "tonic": {
+            "symbol": "Bbm",
+            "start": 408,
+            "end": 412,
+            "sourceLine": 53,
+            "index": 105
+          }
+        },
+        {
+          "dominant": {
+            "symbol": "F7#5",
+            "start": 532,
+            "end": 536,
+            "sourceLine": 69,
+            "index": 137
+          },
+          "tonic": {
+            "symbol": "Bbm",
+            "start": 536,
+            "end": 540,
+            "sourceLine": 69,
+            "index": 138
+          }
+        }
+      ],
+      "ending": {
+        "symbol": "Bb",
+        "start": 572,
+        "end": 576,
+        "sourceLine": 77,
+        "index": 149
+      },
+      "endingContext": "Airegin retains its written relative-major Ab ending after repeated Fm tonic regions; Love for Sale retains its written Bb major ending after recurring Bbm regions. Neither ending is altered or used to overwrite the source home reference."
+    }
+  },
+  "notesSha256": "a4e32f53e7b7da805105c8fae635ffad581fe1a5b80d0ec1b3360cae496b9f91"
+}

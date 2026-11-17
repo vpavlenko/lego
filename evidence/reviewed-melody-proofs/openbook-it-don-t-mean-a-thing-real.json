@@ -1,0 +1,241 @@
+{
+  "status": "PASS",
+  "melodyId": "openbook-it-don-t-mean-a-thing-real",
+  "sourceSha256": "e717acfcfe249a969efbef3c2bdf90f2021666c98b800b043a2cabe40d4ba30e",
+  "noteCount": 102,
+  "totalBeats": 129,
+  "canonicalSong": 108,
+  "sourceFile": "/private/tmp/insights-pickup-recovery/book-openbook-adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/it_dont_mean_a_thing.ly.tera",
+  "midiFile": "/private/tmp/insights-more-batch21/melodies/openbook-it-don-t-mean-a-thing-real.mid",
+  "compilerFile": "/private/tmp/insights-more-batch21/compiler/import-openbook-melodies.py",
+  "compilerSha256": "72fcfa3cbd860887593168e664cb90cafd3b77063574a34d7c83e8a4838b34bf",
+  "sourceCompilerMidiFile": "/private/tmp/insights-more-batch21/compiled/openbook-it-don-t-mean-a-thing-real/it-dont-mean-a-thing-ly-real.midi",
+  "sourceCompilerMidiSha256": "67273e68a1fddc63e2358a10e23cec89380d9feb177508be203cb45cdac12160",
+  "sourceCompilerLog": "/private/tmp/insights-more-batch21/compiled/openbook-it-don-t-mean-a-thing-real/it-dont-mean-a-thing-ly-real.log",
+  "sourceCompilerLogSha256": "a1120175f440b1a6608e10a73adec058c5b3f2929f8d395b4d811317482dd123",
+  "sourceCompilerNotes": 102,
+  "sourceCompilerPPQ": 384,
+  "explicitOmissions": [],
+  "sourceLinearNotesExact": true,
+  "sourceHarmonyValidatedByCompiler": true,
+  "approvedNotesUnchanged": true,
+  "approvedHarmonyUnchanged": true,
+  "approvedMeasureGeometryUnchanged": true,
+  "normalizedMidiNotesExact": true,
+  "normalizedMidiPPQ": 10080,
+  "harmonicTonicReference": {
+    "melodyId": "openbook-it-don-t-mean-a-thing-real",
+    "canonicalSong": 108,
+    "canonicalTitle": "It Don't Mean a Thing",
+    "sourcePath": "src/openbook/it_dont_mean_a_thing.ly.tera",
+    "sourceVersion": "Real",
+    "sourceSha256": "e717acfcfe249a969efbef3c2bdf90f2021666c98b800b043a2cabe40d4ba30e",
+    "sourceDeclaredKey": {
+      "root": "Bb",
+      "mode": "Major"
+    },
+    "normalizationTonic": {
+      "root": "G",
+      "mode": "Minor"
+    },
+    "evidence": {
+      "tonicChordEvents": [
+        {
+          "index": 1,
+          "symbol": "Gm",
+          "start": 1,
+          "end": 3,
+          "sourceLine": 74
+        },
+        {
+          "index": 2,
+          "symbol": "Gm/F#",
+          "start": 3,
+          "end": 5,
+          "sourceLine": 74
+        },
+        {
+          "index": 3,
+          "symbol": "Gm/F",
+          "start": 5,
+          "end": 7,
+          "sourceLine": 74
+        },
+        {
+          "index": 4,
+          "symbol": "Gm/E",
+          "start": 7,
+          "end": 9,
+          "sourceLine": 74
+        },
+        {
+          "index": 7,
+          "symbol": "Gm6",
+          "start": 13,
+          "end": 17,
+          "sourceLine": 74
+        },
+        {
+          "index": 12,
+          "symbol": "Gm",
+          "start": 33,
+          "end": 35,
+          "sourceLine": 80
+        },
+        {
+          "index": 13,
+          "symbol": "Gm/F#",
+          "start": 35,
+          "end": 37,
+          "sourceLine": 80
+        },
+        {
+          "index": 14,
+          "symbol": "Gm/F",
+          "start": 37,
+          "end": 39,
+          "sourceLine": 80
+        },
+        {
+          "index": 15,
+          "symbol": "Gm/E",
+          "start": 39,
+          "end": 41,
+          "sourceLine": 80
+        },
+        {
+          "index": 18,
+          "symbol": "Gm6",
+          "start": 45,
+          "end": 49,
+          "sourceLine": 80
+        },
+        {
+          "index": 25,
+          "symbol": "Gm7",
+          "start": 81,
+          "end": 85,
+          "sourceLine": 87
+        },
+        {
+          "index": 29,
+          "symbol": "Gm",
+          "start": 97,
+          "end": 99,
+          "sourceLine": 92
+        },
+        {
+          "index": 30,
+          "symbol": "Gm/F#",
+          "start": 99,
+          "end": 101,
+          "sourceLine": 92
+        },
+        {
+          "index": 31,
+          "symbol": "Gm/F",
+          "start": 101,
+          "end": 103,
+          "sourceLine": 92
+        },
+        {
+          "index": 32,
+          "symbol": "Gm/E",
+          "start": 103,
+          "end": 105,
+          "sourceLine": 92
+        },
+        {
+          "index": 35,
+          "symbol": "Gm6",
+          "start": 109,
+          "end": 113,
+          "sourceLine": 92
+        }
+      ],
+      "dominantResolutions": [
+        {
+          "dominant": {
+            "index": 6,
+            "symbol": "D7",
+            "start": 11,
+            "end": 13,
+            "sourceLine": 74
+          },
+          "tonic": {
+            "index": 7,
+            "symbol": "Gm6",
+            "start": 13,
+            "end": 17,
+            "sourceLine": 74
+          }
+        },
+        {
+          "dominant": {
+            "index": 11,
+            "symbol": "D7#5",
+            "start": 29,
+            "end": 33,
+            "sourceLine": 75
+          },
+          "tonic": {
+            "index": 12,
+            "symbol": "Gm",
+            "start": 33,
+            "end": 35,
+            "sourceLine": 80
+          }
+        },
+        {
+          "dominant": {
+            "index": 17,
+            "symbol": "D7",
+            "start": 43,
+            "end": 45,
+            "sourceLine": 80
+          },
+          "tonic": {
+            "index": 18,
+            "symbol": "Gm6",
+            "start": 45,
+            "end": 49,
+            "sourceLine": 80
+          }
+        },
+        {
+          "dominant": {
+            "index": 28,
+            "symbol": "D7",
+            "start": 93,
+            "end": 97,
+            "sourceLine": 87
+          },
+          "tonic": {
+            "index": 29,
+            "symbol": "Gm",
+            "start": 97,
+            "end": 99,
+            "sourceLine": 92
+          }
+        },
+        {
+          "dominant": {
+            "index": 34,
+            "symbol": "D7",
+            "start": 107,
+            "end": 109,
+            "sourceLine": 92
+          },
+          "tonic": {
+            "index": 35,
+            "symbol": "Gm6",
+            "start": 109,
+            "end": 113,
+            "sourceLine": 92
+          }
+        }
+      ]
+    }
+  },
+  "notesSha256": "e869c7de9ab8e23950c0a9ad2dd81c6bfc858f55a423eaf929066524d874fa0d"
+}

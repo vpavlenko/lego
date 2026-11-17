@@ -1,0 +1,212 @@
+{
+  "status": "PASS",
+  "melodyId": "openbook-whisper-not-laurent",
+  "sourceSha256": "020a67b42be1bd23fe501fd5a02662853f5feac7f4d02ec319718d4904cf939b",
+  "noteCount": 185,
+  "totalBeats": 193,
+  "canonicalSong": 231,
+  "sourceFile": "/private/tmp/insights-pickup-recovery/book-openbook-adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/whisper_not.ly.tera",
+  "midiFile": "/private/tmp/insights-more-batch21/melodies/openbook-whisper-not-laurent.mid",
+  "compilerFile": "/private/tmp/insights-more-batch21/compiler/import-openbook-melodies.py",
+  "compilerSha256": "72fcfa3cbd860887593168e664cb90cafd3b77063574a34d7c83e8a4838b34bf",
+  "sourceCompilerMidiFile": "/private/tmp/insights-more-batch21/compiled/openbook-whisper-not-laurent/whisper-not-ly-laurent.midi",
+  "sourceCompilerMidiSha256": "9631e7b86bb56774e3b43a762af2a0f5c0ec61eb82d99c4233951b4d4d339ee7",
+  "sourceCompilerLog": "/private/tmp/insights-more-batch21/compiled/openbook-whisper-not-laurent/whisper-not-ly-laurent.log",
+  "sourceCompilerLogSha256": "2e509b24d946deb3893adf81248f3e43b8b0aeab0ad93d93b69103964daf76ee",
+  "sourceCompilerNotes": 185,
+  "sourceCompilerPPQ": 384,
+  "explicitOmissions": [],
+  "sourceLinearNotesExact": true,
+  "sourceHarmonyValidatedByCompiler": true,
+  "approvedNotesUnchanged": true,
+  "approvedHarmonyUnchanged": true,
+  "approvedMeasureGeometryUnchanged": true,
+  "normalizedMidiNotesExact": true,
+  "normalizedMidiPPQ": 384,
+  "harmonicTonicReference": {
+    "melodyId": "openbook-whisper-not-laurent",
+    "canonicalSong": 231,
+    "sourcePath": "src/openbook/whisper_not.ly.tera",
+    "sourceVersion": "Laurent",
+    "sourceSha256": "020a67b42be1bd23fe501fd5a02662853f5feac7f4d02ec319718d4904cf939b",
+    "sourceDeclaredKey": {
+      "root": "F",
+      "mode": "Major"
+    },
+    "keyDirectives": [
+      {
+        "line": 89,
+        "text": "\\key f \\major"
+      }
+    ],
+    "normalizationTonic": {
+      "root": "C",
+      "mode": "Minor"
+    },
+    "evidence": {
+      "canonicalRoadmap": {
+        "source": "InsightsRoadmapsConsolidated.pdf",
+        "song": 231,
+        "title": "Whisper Not",
+        "tonic": [
+          "D",
+          "Minor"
+        ]
+      },
+      "tonicChordEvents": [
+        {
+          "symbol": "Cm7",
+          "start": 1,
+          "end": 3,
+          "sourceLine": 44,
+          "index": 1
+        },
+        {
+          "symbol": "Cm7/Bb",
+          "start": 3,
+          "end": 5,
+          "sourceLine": 44,
+          "index": 2
+        },
+        {
+          "symbol": "Cm7",
+          "start": 33,
+          "end": 35,
+          "sourceLine": 44,
+          "index": 17
+        },
+        {
+          "symbol": "Cm7/Bb",
+          "start": 35,
+          "end": 37,
+          "sourceLine": 44,
+          "index": 18
+        },
+        {
+          "symbol": "Cm7",
+          "start": 97,
+          "end": 99,
+          "sourceLine": 63,
+          "index": 41
+        },
+        {
+          "symbol": "Cm7/Bb",
+          "start": 99,
+          "end": 101,
+          "sourceLine": 63,
+          "index": 42
+        },
+        {
+          "symbol": "Cm7",
+          "start": 129,
+          "end": 131,
+          "sourceLine": 70,
+          "index": 56
+        },
+        {
+          "symbol": "Cm7/Bb",
+          "start": 131,
+          "end": 133,
+          "sourceLine": 70,
+          "index": 57
+        },
+        {
+          "symbol": "Cm7",
+          "start": 161,
+          "end": 163,
+          "sourceLine": 70,
+          "index": 71
+        },
+        {
+          "symbol": "Cm7/Bb",
+          "start": 163,
+          "end": 165,
+          "sourceLine": 70,
+          "index": 72
+        }
+      ],
+      "dominantResolutions": [
+        {
+          "dominant": {
+            "symbol": "G7b9",
+            "start": 31,
+            "end": 33,
+            "sourceLine": 47,
+            "index": 16
+          },
+          "tonic": {
+            "symbol": "Cm7",
+            "start": 33,
+            "end": 35,
+            "sourceLine": 44,
+            "index": 17
+          }
+        },
+        {
+          "dominant": {
+            "symbol": "G13",
+            "start": 93,
+            "end": 97,
+            "sourceLine": 58,
+            "index": 40
+          },
+          "tonic": {
+            "symbol": "Cm7",
+            "start": 97,
+            "end": 99,
+            "sourceLine": 63,
+            "index": 41
+          }
+        },
+        {
+          "dominant": {
+            "symbol": "G7#5",
+            "start": 127,
+            "end": 129,
+            "sourceLine": 64,
+            "index": 55
+          },
+          "tonic": {
+            "symbol": "Cm7",
+            "start": 129,
+            "end": 131,
+            "sourceLine": 70,
+            "index": 56
+          }
+        },
+        {
+          "dominant": {
+            "symbol": "G7",
+            "start": 157,
+            "end": 161,
+            "sourceLine": 74,
+            "index": 70
+          },
+          "tonic": {
+            "symbol": "Cm7",
+            "start": 161,
+            "end": 163,
+            "sourceLine": 70,
+            "index": 71
+          }
+        }
+      ],
+      "ending": {
+        "symbol": "Bb7",
+        "start": 192,
+        "end": 193,
+        "sourceLine": 77,
+        "index": 86
+      },
+      "basis": "Recurring compiled minor-tonic chords and adjacent source V7-i resolutions establish the source home; literal key signature, all notes and all harmony remain unchanged."
+    },
+    "sourceTransposition": {
+      "canonicalTonic": [
+        "D",
+        "Minor"
+      ],
+      "semitones": 10
+    }
+  },
+  "notesSha256": "1d7560bf1216a5aab32d1bc2a9951bfcb10532d2b03e46ea956bff4d438b14af"
+}

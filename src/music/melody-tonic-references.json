@@ -772,6 +772,1747 @@
         },
         "basis": "Canonical roadmap minor tonic agrees with recurring compiled minor-tonic chords and at least one direct dominant-seventh resolution. The literal source major key declaration is retained separately."
       }
+    },
+    {
+      "melodyId": "openbook-airegin-fake",
+      "canonicalSong": 3,
+      "sourcePath": "src/openbook/airegin.ly.tera",
+      "sourceVersion": "Fake",
+      "sourceSha256": "da3d8175f5c51173a3579b6dd35963fdece2308edec014945889103d89e9bf7e",
+      "sourceDeclaredKey": {
+        "root": "Ab",
+        "mode": "Major"
+      },
+      "keyDirectives": [
+        {
+          "line": 84,
+          "text": "\\key aes \\major"
+        }
+      ],
+      "normalizationTonic": {
+        "root": "F",
+        "mode": "Minor"
+      },
+      "evidence": {
+        "canonicalRoadmap": {
+          "source": "InsightsRoadmapsConsolidated.pdf",
+          "song": 3,
+          "title": "Airegin",
+          "tonic": [
+            "F",
+            "Minor"
+          ]
+        },
+        "tonicChordEvents": [
+          {
+            "symbol": "Fm7",
+            "start": 0.0,
+            "end": 4.0,
+            "sourceLine": 58,
+            "index": 0
+          },
+          {
+            "symbol": "Fm7",
+            "start": 8.0,
+            "end": 12.0,
+            "sourceLine": 58,
+            "index": 2
+          },
+          {
+            "symbol": "Fm7",
+            "start": 16.0,
+            "end": 20.0,
+            "sourceLine": 58,
+            "index": 4
+          },
+          {
+            "symbol": "Fm7",
+            "start": 24.0,
+            "end": 28.0,
+            "sourceLine": 59,
+            "index": 6
+          },
+          {
+            "symbol": "Fm7",
+            "start": 32.0,
+            "end": 36.0,
+            "sourceLine": 59,
+            "index": 8
+          },
+          {
+            "symbol": "Fm7",
+            "start": 40.0,
+            "end": 44.0,
+            "sourceLine": 59,
+            "index": 10
+          },
+          {
+            "symbol": "Fm7",
+            "start": 48.0,
+            "end": 52.0,
+            "sourceLine": 60,
+            "index": 12
+          },
+          {
+            "symbol": "Fm7",
+            "start": 56.0,
+            "end": 60.0,
+            "sourceLine": 60,
+            "index": 14
+          },
+          {
+            "symbol": "Fm7",
+            "start": 64.0,
+            "end": 68.0,
+            "sourceLine": 60,
+            "index": 16
+          },
+          {
+            "symbol": "Fm7",
+            "start": 72.0,
+            "end": 76.0,
+            "sourceLine": 65,
+            "index": 18
+          },
+          {
+            "symbol": "Fm7",
+            "start": 144.0,
+            "end": 148.0,
+            "sourceLine": 72,
+            "index": 41
+          },
+          {
+            "symbol": "Fm7",
+            "start": 152.0,
+            "end": 156.0,
+            "sourceLine": 72,
+            "index": 43
+          },
+          {
+            "symbol": "Fm7",
+            "start": 160.0,
+            "end": 164.0,
+            "sourceLine": 72,
+            "index": 45
+          },
+          {
+            "symbol": "Fm7",
+            "start": 168.0,
+            "end": 172.0,
+            "sourceLine": 73,
+            "index": 47
+          }
+        ],
+        "dominantResolutions": [
+          {
+            "dominant": {
+              "symbol": "C7b5#9",
+              "start": 68.0,
+              "end": 72.0,
+              "sourceLine": 60,
+              "index": 17
+            },
+            "tonic": {
+              "symbol": "Fm7",
+              "start": 72.0,
+              "end": 76.0,
+              "sourceLine": 65,
+              "index": 18
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "C7",
+              "start": 142.0,
+              "end": 144.0,
+              "sourceLine": 67,
+              "index": 40
+            },
+            "tonic": {
+              "symbol": "Fm7",
+              "start": 144.0,
+              "end": 148.0,
+              "sourceLine": 72,
+              "index": 41
+            }
+          }
+        ],
+        "ending": {
+          "symbol": "Ab",
+          "start": 200.0,
+          "end": 204.0,
+          "sourceLine": 74,
+          "index": 55
+        },
+        "endingContext": "Airegin retains its written relative-major Ab ending after repeated Fm tonic regions; Love for Sale retains its written Bb major ending after recurring Bbm regions. Neither ending is altered or used to overwrite the source home reference."
+      }
+    },
+    {
+      "melodyId": "openbook-love-for-sale-fake",
+      "canonicalSong": 124,
+      "sourcePath": "src/openbook/love_for_sale.ly.tera",
+      "sourceVersion": "Fake",
+      "sourceSha256": "03c3a69492a35c06ab1a44c44875278c82635088bb8b5035b017615f69fd06b3",
+      "sourceDeclaredKey": {
+        "root": "Bb",
+        "mode": "Major"
+      },
+      "keyDirectives": [
+        {
+          "line": 89,
+          "text": "\\key bes \\major"
+        }
+      ],
+      "normalizationTonic": {
+        "root": "Bb",
+        "mode": "Minor"
+      },
+      "evidence": {
+        "canonicalRoadmap": {
+          "source": "InsightsRoadmapsConsolidated.pdf",
+          "song": 124,
+          "title": "Love for Sale",
+          "tonic": [
+            "Bb",
+            "Minor"
+          ]
+        },
+        "tonicChordEvents": [
+          {
+            "symbol": "Bbm",
+            "start": 8.0,
+            "end": 12.0,
+            "sourceLine": 42,
+            "index": 2
+          },
+          {
+            "symbol": "Bbm",
+            "start": 12.0,
+            "end": 16.0,
+            "sourceLine": 42,
+            "index": 3
+          },
+          {
+            "symbol": "Bbm",
+            "start": 24.0,
+            "end": 28.0,
+            "sourceLine": 43,
+            "index": 6
+          },
+          {
+            "symbol": "Bbm",
+            "start": 28.0,
+            "end": 32.0,
+            "sourceLine": 43,
+            "index": 7
+          },
+          {
+            "symbol": "Bbm",
+            "start": 56.0,
+            "end": 60.0,
+            "sourceLine": 45,
+            "index": 14
+          },
+          {
+            "symbol": "Bbm",
+            "start": 60.0,
+            "end": 64.0,
+            "sourceLine": 45,
+            "index": 15
+          },
+          {
+            "symbol": "Bbm",
+            "start": 72.0,
+            "end": 76.0,
+            "sourceLine": 50,
+            "index": 18
+          },
+          {
+            "symbol": "Bbm",
+            "start": 76.0,
+            "end": 80.0,
+            "sourceLine": 50,
+            "index": 19
+          },
+          {
+            "symbol": "Bbm",
+            "start": 88.0,
+            "end": 92.0,
+            "sourceLine": 51,
+            "index": 22
+          },
+          {
+            "symbol": "Bbm",
+            "start": 92.0,
+            "end": 96.0,
+            "sourceLine": 51,
+            "index": 23
+          },
+          {
+            "symbol": "Bbm",
+            "start": 120.0,
+            "end": 124.0,
+            "sourceLine": 53,
+            "index": 30
+          },
+          {
+            "symbol": "Bbm7",
+            "start": 124.0,
+            "end": 128.0,
+            "sourceLine": 53,
+            "index": 31
+          },
+          {
+            "symbol": "Bbm7",
+            "start": 156.0,
+            "end": 160.0,
+            "sourceLine": 59,
+            "index": 40
+          },
+          {
+            "symbol": "Bbm",
+            "start": 200.0,
+            "end": 204.0,
+            "sourceLine": 66,
+            "index": 51
+          },
+          {
+            "symbol": "Bbm",
+            "start": 204.0,
+            "end": 208.0,
+            "sourceLine": 66,
+            "index": 52
+          },
+          {
+            "symbol": "Bbm",
+            "start": 216.0,
+            "end": 220.0,
+            "sourceLine": 67,
+            "index": 55
+          },
+          {
+            "symbol": "Bbm",
+            "start": 220.0,
+            "end": 224.0,
+            "sourceLine": 67,
+            "index": 56
+          },
+          {
+            "symbol": "Bbm",
+            "start": 248.0,
+            "end": 252.0,
+            "sourceLine": 69,
+            "index": 63
+          },
+          {
+            "symbol": "Bbm7/Ab",
+            "start": 252.0,
+            "end": 256.0,
+            "sourceLine": 69,
+            "index": 64
+          },
+          {
+            "symbol": "Bbm",
+            "start": 272.0,
+            "end": 276.0,
+            "sourceLine": 71,
+            "index": 71
+          },
+          {
+            "symbol": "Bbm",
+            "start": 296.0,
+            "end": 300.0,
+            "sourceLine": 42,
+            "index": 77
+          },
+          {
+            "symbol": "Bbm",
+            "start": 300.0,
+            "end": 304.0,
+            "sourceLine": 42,
+            "index": 78
+          },
+          {
+            "symbol": "Bbm",
+            "start": 312.0,
+            "end": 316.0,
+            "sourceLine": 43,
+            "index": 81
+          },
+          {
+            "symbol": "Bbm",
+            "start": 316.0,
+            "end": 320.0,
+            "sourceLine": 43,
+            "index": 82
+          },
+          {
+            "symbol": "Bbm",
+            "start": 344.0,
+            "end": 348.0,
+            "sourceLine": 45,
+            "index": 89
+          },
+          {
+            "symbol": "Bbm",
+            "start": 348.0,
+            "end": 352.0,
+            "sourceLine": 45,
+            "index": 90
+          },
+          {
+            "symbol": "Bbm",
+            "start": 360.0,
+            "end": 364.0,
+            "sourceLine": 50,
+            "index": 93
+          },
+          {
+            "symbol": "Bbm",
+            "start": 364.0,
+            "end": 368.0,
+            "sourceLine": 50,
+            "index": 94
+          },
+          {
+            "symbol": "Bbm",
+            "start": 376.0,
+            "end": 380.0,
+            "sourceLine": 51,
+            "index": 97
+          },
+          {
+            "symbol": "Bbm",
+            "start": 380.0,
+            "end": 384.0,
+            "sourceLine": 51,
+            "index": 98
+          },
+          {
+            "symbol": "Bbm",
+            "start": 408.0,
+            "end": 412.0,
+            "sourceLine": 53,
+            "index": 105
+          },
+          {
+            "symbol": "Bbm7",
+            "start": 412.0,
+            "end": 416.0,
+            "sourceLine": 53,
+            "index": 106
+          },
+          {
+            "symbol": "Bbm7",
+            "start": 444.0,
+            "end": 448.0,
+            "sourceLine": 59,
+            "index": 115
+          },
+          {
+            "symbol": "Bbm",
+            "start": 488.0,
+            "end": 492.0,
+            "sourceLine": 66,
+            "index": 126
+          },
+          {
+            "symbol": "Bbm",
+            "start": 492.0,
+            "end": 496.0,
+            "sourceLine": 66,
+            "index": 127
+          },
+          {
+            "symbol": "Bbm",
+            "start": 504.0,
+            "end": 508.0,
+            "sourceLine": 67,
+            "index": 130
+          },
+          {
+            "symbol": "Bbm",
+            "start": 508.0,
+            "end": 512.0,
+            "sourceLine": 67,
+            "index": 131
+          },
+          {
+            "symbol": "Bbm",
+            "start": 536.0,
+            "end": 540.0,
+            "sourceLine": 69,
+            "index": 138
+          },
+          {
+            "symbol": "Bbm7/Ab",
+            "start": 540.0,
+            "end": 544.0,
+            "sourceLine": 69,
+            "index": 139
+          },
+          {
+            "symbol": "Bbm",
+            "start": 560.0,
+            "end": 564.0,
+            "sourceLine": 71,
+            "index": 146
+          }
+        ],
+        "dominantResolutions": [
+          {
+            "dominant": {
+              "symbol": "F7#5",
+              "start": 52.0,
+              "end": 56.0,
+              "sourceLine": 45,
+              "index": 13
+            },
+            "tonic": {
+              "symbol": "Bbm",
+              "start": 56.0,
+              "end": 60.0,
+              "sourceLine": 45,
+              "index": 14
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "F7#5",
+              "start": 116.0,
+              "end": 120.0,
+              "sourceLine": 53,
+              "index": 29
+            },
+            "tonic": {
+              "symbol": "Bbm",
+              "start": 120.0,
+              "end": 124.0,
+              "sourceLine": 53,
+              "index": 30
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "F7#5",
+              "start": 244.0,
+              "end": 248.0,
+              "sourceLine": 69,
+              "index": 62
+            },
+            "tonic": {
+              "symbol": "Bbm",
+              "start": 248.0,
+              "end": 252.0,
+              "sourceLine": 69,
+              "index": 63
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "F7#5",
+              "start": 340.0,
+              "end": 344.0,
+              "sourceLine": 45,
+              "index": 88
+            },
+            "tonic": {
+              "symbol": "Bbm",
+              "start": 344.0,
+              "end": 348.0,
+              "sourceLine": 45,
+              "index": 89
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "F7#5",
+              "start": 404.0,
+              "end": 408.0,
+              "sourceLine": 53,
+              "index": 104
+            },
+            "tonic": {
+              "symbol": "Bbm",
+              "start": 408.0,
+              "end": 412.0,
+              "sourceLine": 53,
+              "index": 105
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "F7#5",
+              "start": 532.0,
+              "end": 536.0,
+              "sourceLine": 69,
+              "index": 137
+            },
+            "tonic": {
+              "symbol": "Bbm",
+              "start": 536.0,
+              "end": 540.0,
+              "sourceLine": 69,
+              "index": 138
+            }
+          }
+        ],
+        "ending": {
+          "symbol": "Bb",
+          "start": 572.0,
+          "end": 576.0,
+          "sourceLine": 77,
+          "index": 149
+        },
+        "endingContext": "Airegin retains its written relative-major Ab ending after repeated Fm tonic regions; Love for Sale retains its written Bb major ending after recurring Bbm regions. Neither ending is altered or used to overwrite the source home reference."
+      }
+    },
+    {
+      "melodyId": "openbook-it-don-t-mean-a-thing-real",
+      "canonicalSong": 108,
+      "canonicalTitle": "It Don't Mean a Thing",
+      "sourcePath": "src/openbook/it_dont_mean_a_thing.ly.tera",
+      "sourceVersion": "Real",
+      "sourceSha256": "e717acfcfe249a969efbef3c2bdf90f2021666c98b800b043a2cabe40d4ba30e",
+      "sourceDeclaredKey": {
+        "root": "Bb",
+        "mode": "Major"
+      },
+      "normalizationTonic": {
+        "root": "G",
+        "mode": "Minor"
+      },
+      "evidence": {
+        "tonicChordEvents": [
+          {
+            "index": 1,
+            "symbol": "Gm",
+            "start": 1.0,
+            "end": 3.0,
+            "sourceLine": 74
+          },
+          {
+            "index": 2,
+            "symbol": "Gm/F#",
+            "start": 3.0,
+            "end": 5.0,
+            "sourceLine": 74
+          },
+          {
+            "index": 3,
+            "symbol": "Gm/F",
+            "start": 5.0,
+            "end": 7.0,
+            "sourceLine": 74
+          },
+          {
+            "index": 4,
+            "symbol": "Gm/E",
+            "start": 7.0,
+            "end": 9.0,
+            "sourceLine": 74
+          },
+          {
+            "index": 7,
+            "symbol": "Gm6",
+            "start": 13.0,
+            "end": 17.0,
+            "sourceLine": 74
+          },
+          {
+            "index": 12,
+            "symbol": "Gm",
+            "start": 33.0,
+            "end": 35.0,
+            "sourceLine": 80
+          },
+          {
+            "index": 13,
+            "symbol": "Gm/F#",
+            "start": 35.0,
+            "end": 37.0,
+            "sourceLine": 80
+          },
+          {
+            "index": 14,
+            "symbol": "Gm/F",
+            "start": 37.0,
+            "end": 39.0,
+            "sourceLine": 80
+          },
+          {
+            "index": 15,
+            "symbol": "Gm/E",
+            "start": 39.0,
+            "end": 41.0,
+            "sourceLine": 80
+          },
+          {
+            "index": 18,
+            "symbol": "Gm6",
+            "start": 45.0,
+            "end": 49.0,
+            "sourceLine": 80
+          },
+          {
+            "index": 25,
+            "symbol": "Gm7",
+            "start": 81.0,
+            "end": 85.0,
+            "sourceLine": 87
+          },
+          {
+            "index": 29,
+            "symbol": "Gm",
+            "start": 97.0,
+            "end": 99.0,
+            "sourceLine": 92
+          },
+          {
+            "index": 30,
+            "symbol": "Gm/F#",
+            "start": 99.0,
+            "end": 101.0,
+            "sourceLine": 92
+          },
+          {
+            "index": 31,
+            "symbol": "Gm/F",
+            "start": 101.0,
+            "end": 103.0,
+            "sourceLine": 92
+          },
+          {
+            "index": 32,
+            "symbol": "Gm/E",
+            "start": 103.0,
+            "end": 105.0,
+            "sourceLine": 92
+          },
+          {
+            "index": 35,
+            "symbol": "Gm6",
+            "start": 109.0,
+            "end": 113.0,
+            "sourceLine": 92
+          }
+        ],
+        "dominantResolutions": [
+          {
+            "dominant": {
+              "index": 6,
+              "symbol": "D7",
+              "start": 11.0,
+              "end": 13.0,
+              "sourceLine": 74
+            },
+            "tonic": {
+              "index": 7,
+              "symbol": "Gm6",
+              "start": 13.0,
+              "end": 17.0,
+              "sourceLine": 74
+            }
+          },
+          {
+            "dominant": {
+              "index": 11,
+              "symbol": "D7#5",
+              "start": 29.0,
+              "end": 33.0,
+              "sourceLine": 75
+            },
+            "tonic": {
+              "index": 12,
+              "symbol": "Gm",
+              "start": 33.0,
+              "end": 35.0,
+              "sourceLine": 80
+            }
+          },
+          {
+            "dominant": {
+              "index": 17,
+              "symbol": "D7",
+              "start": 43.0,
+              "end": 45.0,
+              "sourceLine": 80
+            },
+            "tonic": {
+              "index": 18,
+              "symbol": "Gm6",
+              "start": 45.0,
+              "end": 49.0,
+              "sourceLine": 80
+            }
+          },
+          {
+            "dominant": {
+              "index": 28,
+              "symbol": "D7",
+              "start": 93.0,
+              "end": 97.0,
+              "sourceLine": 87
+            },
+            "tonic": {
+              "index": 29,
+              "symbol": "Gm",
+              "start": 97.0,
+              "end": 99.0,
+              "sourceLine": 92
+            }
+          },
+          {
+            "dominant": {
+              "index": 34,
+              "symbol": "D7",
+              "start": 107.0,
+              "end": 109.0,
+              "sourceLine": 92
+            },
+            "tonic": {
+              "index": 35,
+              "symbol": "Gm6",
+              "start": 109.0,
+              "end": 113.0,
+              "sourceLine": 92
+            }
+          }
+        ]
+      }
+    },
+    {
+      "melodyId": "openbook-a-night-in-tunisia-fake",
+      "canonicalSong": 153,
+      "canonicalTitle": "A Night in Tunisia",
+      "sourcePath": "src/openbook/a_night_in_tunisia.ly.tera",
+      "sourceVersion": "Fake",
+      "sourceSha256": "070d45e2fecf4e2fc84545237efca4e5c7bfa15e4770b8346545c02ae80157e8",
+      "sourceDeclaredKey": {
+        "root": "F",
+        "mode": "Major"
+      },
+      "normalizationTonic": {
+        "root": "D",
+        "mode": "Minor"
+      },
+      "evidence": {
+        "tonicChordEvents": [
+          {
+            "index": 2,
+            "symbol": "Dm6",
+            "start": 4.5,
+            "end": 8.5,
+            "sourceLine": 58
+          },
+          {
+            "index": 4,
+            "symbol": "Dm6",
+            "start": 12.5,
+            "end": 16.5,
+            "sourceLine": 58
+          },
+          {
+            "index": 6,
+            "symbol": "Dm6",
+            "start": 20.5,
+            "end": 24.5,
+            "sourceLine": 59
+          },
+          {
+            "index": 9,
+            "symbol": "Dm6",
+            "start": 28.0,
+            "end": 28.5,
+            "sourceLine": 59
+          },
+          {
+            "index": 10,
+            "symbol": "Dm6",
+            "start": 28.5,
+            "end": 32.5,
+            "sourceLine": 62
+          },
+          {
+            "index": 12,
+            "symbol": "Dm6",
+            "start": 36.5,
+            "end": 40.5,
+            "sourceLine": 58
+          },
+          {
+            "index": 14,
+            "symbol": "Dm6",
+            "start": 44.5,
+            "end": 48.5,
+            "sourceLine": 58
+          },
+          {
+            "index": 16,
+            "symbol": "Dm6",
+            "start": 52.5,
+            "end": 56.5,
+            "sourceLine": 59
+          },
+          {
+            "index": 19,
+            "symbol": "Dm6",
+            "start": 60.0,
+            "end": 60.5,
+            "sourceLine": 59
+          },
+          {
+            "index": 20,
+            "symbol": "Dm6",
+            "start": 60.5,
+            "end": 64.5,
+            "sourceLine": 65
+          },
+          {
+            "index": 32,
+            "symbol": "Dm6",
+            "start": 100.5,
+            "end": 104.5,
+            "sourceLine": 78
+          },
+          {
+            "index": 34,
+            "symbol": "Dm6",
+            "start": 108.5,
+            "end": 112.5,
+            "sourceLine": 78
+          },
+          {
+            "index": 36,
+            "symbol": "Dm6",
+            "start": 116.5,
+            "end": 120.5,
+            "sourceLine": 79
+          },
+          {
+            "index": 39,
+            "symbol": "DmM7",
+            "start": 124.5,
+            "end": 128.5,
+            "sourceLine": 79
+          }
+        ],
+        "dominantResolutions": [
+          {
+            "dominant": {
+              "index": 8,
+              "symbol": "A7b5b9",
+              "start": 26.5,
+              "end": 28.0,
+              "sourceLine": 59
+            },
+            "tonic": {
+              "index": 9,
+              "symbol": "Dm6",
+              "start": 28.0,
+              "end": 28.5,
+              "sourceLine": 59
+            }
+          },
+          {
+            "dominant": {
+              "index": 18,
+              "symbol": "A7b5b9",
+              "start": 58.5,
+              "end": 60.0,
+              "sourceLine": 59
+            },
+            "tonic": {
+              "index": 19,
+              "symbol": "Dm6",
+              "start": 60.0,
+              "end": 60.5,
+              "sourceLine": 59
+            }
+          },
+          {
+            "dominant": {
+              "index": 38,
+              "symbol": "A7b5",
+              "start": 122.5,
+              "end": 124.5,
+              "sourceLine": 79
+            },
+            "tonic": {
+              "index": 39,
+              "symbol": "DmM7",
+              "start": 124.5,
+              "end": 128.5,
+              "sourceLine": 79
+            }
+          }
+        ]
+      }
+    },
+    {
+      "melodyId": "openbook-soul-eyes-fake",
+      "canonicalSong": 194,
+      "sourcePath": "src/openbook/soul_eyes.ly.tera",
+      "sourceVersion": "Fake",
+      "sourceSha256": "448ae1617c5cd52d2c1ff8180fcdf348fefa0a79ad1891152afc8e57c4425b49",
+      "sourceDeclaredKey": {
+        "root": "Eb",
+        "mode": "Major"
+      },
+      "keyDirectives": [
+        {
+          "line": 81,
+          "text": "\\key ees \\major"
+        }
+      ],
+      "normalizationTonic": {
+        "root": "C",
+        "mode": "Minor"
+      },
+      "evidence": {
+        "canonicalRoadmap": {
+          "source": "InsightsRoadmapsConsolidated.pdf",
+          "song": 194,
+          "title": "Soul Eyes",
+          "tonic": [
+            "C",
+            "Minor"
+          ]
+        },
+        "tonicChordEvents": [
+          {
+            "symbol": "CmM7",
+            "start": 1.0,
+            "end": 5.0,
+            "sourceLine": 60,
+            "index": 1
+          },
+          {
+            "symbol": "Cm7",
+            "start": 9.0,
+            "end": 13.0,
+            "sourceLine": 60,
+            "index": 4
+          },
+          {
+            "symbol": "CmM7",
+            "start": 65.0,
+            "end": 69.0,
+            "sourceLine": 60,
+            "index": 21
+          },
+          {
+            "symbol": "Cm7",
+            "start": 73.0,
+            "end": 77.0,
+            "sourceLine": 60,
+            "index": 24
+          }
+        ],
+        "dominantResolutions": [
+          {
+            "dominant": {
+              "symbol": "G7b9",
+              "start": 7.0,
+              "end": 9.0,
+              "sourceLine": 60,
+              "index": 3
+            },
+            "tonic": {
+              "symbol": "Cm7",
+              "start": 9.0,
+              "end": 13.0,
+              "sourceLine": 60,
+              "index": 4
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "G7#5",
+              "start": 63.0,
+              "end": 65.0,
+              "sourceLine": 65,
+              "index": 20
+            },
+            "tonic": {
+              "symbol": "CmM7",
+              "start": 65.0,
+              "end": 69.0,
+              "sourceLine": 60,
+              "index": 21
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "G7b9",
+              "start": 71.0,
+              "end": 73.0,
+              "sourceLine": 60,
+              "index": 23
+            },
+            "tonic": {
+              "symbol": "Cm7",
+              "start": 73.0,
+              "end": 77.0,
+              "sourceLine": 60,
+              "index": 24
+            }
+          }
+        ],
+        "ending": {
+          "symbol": "EbM7",
+          "start": 121.0,
+          "end": 129.0,
+          "sourceLine": 69,
+          "index": 37
+        },
+        "basis": "Recurring compiled minor-tonic chords and adjacent source V7-i resolutions establish the source home; literal key signature, all notes and all harmony remain unchanged."
+      }
+    },
+    {
+      "melodyId": "openbook-you-d-be-so-nice-to-come-home-to-fake",
+      "canonicalSong": 240,
+      "sourcePath": "src/openbook/youd_be_so_nice_to_come_home_to.ly.tera",
+      "sourceVersion": "Fake",
+      "sourceSha256": "d8fde32166338e9cf0680694845a403f688321009643685c8b3f8158d00b5dc3",
+      "sourceDeclaredKey": {
+        "root": "C",
+        "mode": "Major"
+      },
+      "keyDirectives": [
+        {
+          "line": 89,
+          "text": "\\key c \\major"
+        }
+      ],
+      "normalizationTonic": {
+        "root": "A",
+        "mode": "Minor"
+      },
+      "evidence": {
+        "canonicalRoadmap": {
+          "source": "InsightsRoadmapsConsolidated.pdf",
+          "song": 240,
+          "title": "You'd Be So Nice to Come Home To",
+          "tonic": [
+            "G",
+            "Minor"
+          ]
+        },
+        "tonicChordEvents": [
+          {
+            "symbol": "Am",
+            "start": 2.0,
+            "end": 6.0,
+            "sourceLine": 60,
+            "index": 1
+          },
+          {
+            "symbol": "Am",
+            "start": 10.0,
+            "end": 12.0,
+            "sourceLine": 60,
+            "index": 4
+          },
+          {
+            "symbol": "Am",
+            "start": 14.0,
+            "end": 18.0,
+            "sourceLine": 60,
+            "index": 6
+          },
+          {
+            "symbol": "Am",
+            "start": 46.0,
+            "end": 48.0,
+            "sourceLine": 66,
+            "index": 16
+          },
+          {
+            "symbol": "Am7/G",
+            "start": 48.0,
+            "end": 50.0,
+            "sourceLine": 66,
+            "index": 17
+          },
+          {
+            "symbol": "Am",
+            "start": 66.0,
+            "end": 70.0,
+            "sourceLine": 72,
+            "index": 24
+          },
+          {
+            "symbol": "Am",
+            "start": 74.0,
+            "end": 76.0,
+            "sourceLine": 72,
+            "index": 27
+          },
+          {
+            "symbol": "Am",
+            "start": 78.0,
+            "end": 82.0,
+            "sourceLine": 72,
+            "index": 29
+          }
+        ],
+        "dominantResolutions": [
+          {
+            "dominant": {
+              "symbol": "E7",
+              "start": 8.0,
+              "end": 10.0,
+              "sourceLine": 60,
+              "index": 3
+            },
+            "tonic": {
+              "symbol": "Am",
+              "start": 10.0,
+              "end": 12.0,
+              "sourceLine": 60,
+              "index": 4
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "E7",
+              "start": 12.0,
+              "end": 14.0,
+              "sourceLine": 60,
+              "index": 5
+            },
+            "tonic": {
+              "symbol": "Am",
+              "start": 14.0,
+              "end": 18.0,
+              "sourceLine": 60,
+              "index": 6
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "E7b9",
+              "start": 42.0,
+              "end": 46.0,
+              "sourceLine": 66,
+              "index": 15
+            },
+            "tonic": {
+              "symbol": "Am",
+              "start": 46.0,
+              "end": 48.0,
+              "sourceLine": 66,
+              "index": 16
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "E7",
+              "start": 62.0,
+              "end": 66.0,
+              "sourceLine": 67,
+              "index": 23
+            },
+            "tonic": {
+              "symbol": "Am",
+              "start": 66.0,
+              "end": 70.0,
+              "sourceLine": 72,
+              "index": 24
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "E7",
+              "start": 72.0,
+              "end": 74.0,
+              "sourceLine": 72,
+              "index": 26
+            },
+            "tonic": {
+              "symbol": "Am",
+              "start": 74.0,
+              "end": 76.0,
+              "sourceLine": 72,
+              "index": 27
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "E7",
+              "start": 76.0,
+              "end": 78.0,
+              "sourceLine": 72,
+              "index": 28
+            },
+            "tonic": {
+              "symbol": "Am",
+              "start": 78.0,
+              "end": 82.0,
+              "sourceLine": 72,
+              "index": 29
+            }
+          }
+        ],
+        "ending": {
+          "symbol": "C",
+          "start": 122.0,
+          "end": 130.0,
+          "sourceLine": 79,
+          "index": 43
+        },
+        "basis": "Recurring compiled minor-tonic chords and adjacent source V7-i resolutions establish the source home; literal key signature, all notes and all harmony remain unchanged."
+      },
+      "sourceTransposition": {
+        "canonicalTonic": [
+          "G",
+          "Minor"
+        ],
+        "semitones": 2
+      }
+    },
+    {
+      "melodyId": "openbook-whisper-not-laurent",
+      "canonicalSong": 231,
+      "sourcePath": "src/openbook/whisper_not.ly.tera",
+      "sourceVersion": "Laurent",
+      "sourceSha256": "020a67b42be1bd23fe501fd5a02662853f5feac7f4d02ec319718d4904cf939b",
+      "sourceDeclaredKey": {
+        "root": "F",
+        "mode": "Major"
+      },
+      "keyDirectives": [
+        {
+          "line": 89,
+          "text": "\\key f \\major"
+        }
+      ],
+      "normalizationTonic": {
+        "root": "C",
+        "mode": "Minor"
+      },
+      "evidence": {
+        "canonicalRoadmap": {
+          "source": "InsightsRoadmapsConsolidated.pdf",
+          "song": 231,
+          "title": "Whisper Not",
+          "tonic": [
+            "D",
+            "Minor"
+          ]
+        },
+        "tonicChordEvents": [
+          {
+            "symbol": "Cm7",
+            "start": 1.0,
+            "end": 3.0,
+            "sourceLine": 44,
+            "index": 1
+          },
+          {
+            "symbol": "Cm7/Bb",
+            "start": 3.0,
+            "end": 5.0,
+            "sourceLine": 44,
+            "index": 2
+          },
+          {
+            "symbol": "Cm7",
+            "start": 33.0,
+            "end": 35.0,
+            "sourceLine": 44,
+            "index": 17
+          },
+          {
+            "symbol": "Cm7/Bb",
+            "start": 35.0,
+            "end": 37.0,
+            "sourceLine": 44,
+            "index": 18
+          },
+          {
+            "symbol": "Cm7",
+            "start": 97.0,
+            "end": 99.0,
+            "sourceLine": 63,
+            "index": 41
+          },
+          {
+            "symbol": "Cm7/Bb",
+            "start": 99.0,
+            "end": 101.0,
+            "sourceLine": 63,
+            "index": 42
+          },
+          {
+            "symbol": "Cm7",
+            "start": 129.0,
+            "end": 131.0,
+            "sourceLine": 70,
+            "index": 56
+          },
+          {
+            "symbol": "Cm7/Bb",
+            "start": 131.0,
+            "end": 133.0,
+            "sourceLine": 70,
+            "index": 57
+          },
+          {
+            "symbol": "Cm7",
+            "start": 161.0,
+            "end": 163.0,
+            "sourceLine": 70,
+            "index": 71
+          },
+          {
+            "symbol": "Cm7/Bb",
+            "start": 163.0,
+            "end": 165.0,
+            "sourceLine": 70,
+            "index": 72
+          }
+        ],
+        "dominantResolutions": [
+          {
+            "dominant": {
+              "symbol": "G7b9",
+              "start": 31.0,
+              "end": 33.0,
+              "sourceLine": 47,
+              "index": 16
+            },
+            "tonic": {
+              "symbol": "Cm7",
+              "start": 33.0,
+              "end": 35.0,
+              "sourceLine": 44,
+              "index": 17
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "G13",
+              "start": 93.0,
+              "end": 97.0,
+              "sourceLine": 58,
+              "index": 40
+            },
+            "tonic": {
+              "symbol": "Cm7",
+              "start": 97.0,
+              "end": 99.0,
+              "sourceLine": 63,
+              "index": 41
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "G7#5",
+              "start": 127.0,
+              "end": 129.0,
+              "sourceLine": 64,
+              "index": 55
+            },
+            "tonic": {
+              "symbol": "Cm7",
+              "start": 129.0,
+              "end": 131.0,
+              "sourceLine": 70,
+              "index": 56
+            }
+          },
+          {
+            "dominant": {
+              "symbol": "G7",
+              "start": 157.0,
+              "end": 161.0,
+              "sourceLine": 74,
+              "index": 70
+            },
+            "tonic": {
+              "symbol": "Cm7",
+              "start": 161.0,
+              "end": 163.0,
+              "sourceLine": 70,
+              "index": 71
+            }
+          }
+        ],
+        "ending": {
+          "symbol": "Bb7",
+          "start": 192.0,
+          "end": 193.0,
+          "sourceLine": 77,
+          "index": 86
+        },
+        "basis": "Recurring compiled minor-tonic chords and adjacent source V7-i resolutions establish the source home; literal key signature, all notes and all harmony remain unchanged."
+      },
+      "sourceTransposition": {
+        "canonicalTonic": [
+          "D",
+          "Minor"
+        ],
+        "semitones": 10
+      }
+    },
+    {
+      "canonicalSong": 49,
+      "canonicalTitle": "Devil May Care",
+      "canonicalRoadmapTonic": [
+        "A",
+        "Minor"
+      ],
+      "sourceDeclaredKey": {
+        "root": "Bb",
+        "mode": "Major",
+        "fifths": -2
+      },
+      "normalizationTonic": {
+        "root": "G",
+        "mode": "Minor"
+      },
+      "sourceSha256": "59eb237fb21dff0f63cffa4032a6e7edaec2893ec32295e9b8bfa29619102187",
+      "sourceMember": "Wikifonia/Bob Dorough, Terrell P. Kirk - Devil May Care.mxl",
+      "evidence": {
+        "tonicChordEvents": [
+          {
+            "index": 0,
+            "symbol": "Gm",
+            "start": 0.0,
+            "end": 2.0,
+            "sourceSymbol": "Gm"
+          },
+          {
+            "index": 4,
+            "symbol": "Gm",
+            "start": 8.0,
+            "end": 10.0,
+            "sourceSymbol": "Gm"
+          },
+          {
+            "index": 8,
+            "symbol": "Gm",
+            "start": 16.0,
+            "end": 20.0,
+            "sourceSymbol": "Gm"
+          },
+          {
+            "index": 12,
+            "symbol": "Gm",
+            "start": 32.0,
+            "end": 34.0,
+            "sourceSymbol": "Gm"
+          },
+          {
+            "index": 16,
+            "symbol": "Gm",
+            "start": 40.0,
+            "end": 42.0,
+            "sourceSymbol": "Gm"
+          },
+          {
+            "index": 21,
+            "symbol": "Gm",
+            "start": 56.0,
+            "end": 62.0,
+            "sourceSymbol": "Gm"
+          },
+          {
+            "index": 41,
+            "symbol": "Gm",
+            "start": 128.0,
+            "end": 130.0,
+            "sourceSymbol": "Gm"
+          },
+          {
+            "index": 45,
+            "symbol": "Gm",
+            "start": 136.0,
+            "end": 138.0,
+            "sourceSymbol": "Gm"
+          },
+          {
+            "index": 49,
+            "symbol": "Gm",
+            "start": 144.0,
+            "end": 146.0,
+            "sourceSymbol": "Gm"
+          },
+          {
+            "index": 55,
+            "symbol": "Gm6",
+            "start": 168.0,
+            "end": 176.0,
+            "sourceSymbol": "Gm6"
+          }
+        ],
+        "dominantResolutions": [
+          {
+            "dominant": {
+              "index": 3,
+              "symbol": "D7b9",
+              "start": 6.0,
+              "end": 8.0,
+              "sourceSymbol": "D7 add b9"
+            },
+            "tonic": {
+              "index": 4,
+              "symbol": "Gm",
+              "start": 8.0,
+              "end": 10.0,
+              "sourceSymbol": "Gm"
+            }
+          },
+          {
+            "dominant": {
+              "index": 7,
+              "symbol": "D7b9",
+              "start": 14.0,
+              "end": 16.0,
+              "sourceSymbol": "D7 add b9"
+            },
+            "tonic": {
+              "index": 8,
+              "symbol": "Gm",
+              "start": 16.0,
+              "end": 20.0,
+              "sourceSymbol": "Gm"
+            }
+          },
+          {
+            "dominant": {
+              "index": 11,
+              "symbol": "D7b9",
+              "start": 28.0,
+              "end": 32.0,
+              "sourceSymbol": "D7 add b9"
+            },
+            "tonic": {
+              "index": 12,
+              "symbol": "Gm",
+              "start": 32.0,
+              "end": 34.0,
+              "sourceSymbol": "Gm"
+            }
+          },
+          {
+            "dominant": {
+              "index": 15,
+              "symbol": "D7b9",
+              "start": 38.0,
+              "end": 40.0,
+              "sourceSymbol": "D7 add b9"
+            },
+            "tonic": {
+              "index": 16,
+              "symbol": "Gm",
+              "start": 40.0,
+              "end": 42.0,
+              "sourceSymbol": "Gm"
+            }
+          },
+          {
+            "dominant": {
+              "index": 20,
+              "symbol": "D7#5b9",
+              "start": 52.0,
+              "end": 56.0,
+              "sourceSymbol": "D7 alter #5 add b9"
+            },
+            "tonic": {
+              "index": 21,
+              "symbol": "Gm",
+              "start": 56.0,
+              "end": 62.0,
+              "sourceSymbol": "Gm"
+            }
+          },
+          {
+            "dominant": {
+              "index": 40,
+              "symbol": "D7",
+              "start": 126.0,
+              "end": 128.0,
+              "sourceSymbol": "D7"
+            },
+            "tonic": {
+              "index": 41,
+              "symbol": "Gm",
+              "start": 128.0,
+              "end": 130.0,
+              "sourceSymbol": "Gm"
+            }
+          },
+          {
+            "dominant": {
+              "index": 44,
+              "symbol": "D7b9",
+              "start": 134.0,
+              "end": 136.0,
+              "sourceSymbol": "D7 add b9"
+            },
+            "tonic": {
+              "index": 45,
+              "symbol": "Gm",
+              "start": 136.0,
+              "end": 138.0,
+              "sourceSymbol": "Gm"
+            }
+          },
+          {
+            "dominant": {
+              "index": 48,
+              "symbol": "D7b9",
+              "start": 142.0,
+              "end": 144.0,
+              "sourceSymbol": "D7 add b9"
+            },
+            "tonic": {
+              "index": 49,
+              "symbol": "Gm",
+              "start": 144.0,
+              "end": 146.0,
+              "sourceSymbol": "Gm"
+            }
+          },
+          {
+            "dominant": {
+              "index": 54,
+              "symbol": "D7#5b9",
+              "start": 164.0,
+              "end": 168.0,
+              "sourceSymbol": "D7 alter #5 add b9"
+            },
+            "tonic": {
+              "index": 55,
+              "symbol": "Gm6",
+              "start": 168.0,
+              "end": 176.0,
+              "sourceSymbol": "Gm6"
+            }
+          }
+        ],
+        "canonicalRoadmap": {
+          "tonic": [
+            "A",
+            "Minor"
+          ]
+        },
+        "pitchBasis": "Direct source MusicXML chord symbols; these pitch arrays represent encoded harmony semantics, not an encoded accompaniment performance"
+      },
+      "basis": "Recurring explicitly notated G-minor chords and adjacent D7-to-Gm resolutions establish this source arrangement in G minor; the literal B-flat-major signature and unchanged A-minor roadmap are retained independently.",
+      "melodyId": "wikifonia-49-devil-may-care",
+      "sourcePath": "Wikifonia/Bob Dorough, Terrell P. Kirk - Devil May Care.mxl",
+      "sourceVersion": "Wikifonia",
+      "sourceTransposition": {
+        "canonicalTonic": [
+          "A",
+          "Minor"
+        ],
+        "semitones": 10
+      }
     }
   ],
   "held": [

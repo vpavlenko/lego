@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "melodyId": "openbook-too-close-for-comfort-wikifonia",
+  "sourceSha256": "f6c93085cec98fd3ed896efbac5b7baa667617743fbed9a21f02c3119a19e416",
+  "noteCount": 199,
+  "totalBeats": 328,
+  "canonicalSong": 215,
+  "sourceFile": "/private/tmp/insights-pickup-recovery/book-openbook-adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/too_close_for_comfort.ly.tera",
+  "midiFile": "/private/tmp/insights-more-batch21/melodies/openbook-too-close-for-comfort-wikifonia.mid",
+  "compilerFile": "/private/tmp/insights-more-batch21/compiler/import-openbook-melodies.py",
+  "compilerSha256": "72fcfa3cbd860887593168e664cb90cafd3b77063574a34d7c83e8a4838b34bf",
+  "sourceCompilerMidiFile": "/private/tmp/insights-more-batch21/compiled/openbook-too-close-for-comfort-wikifonia/too-close-for-comfort-ly-wikifonia.midi",
+  "sourceCompilerMidiSha256": "7f84e09eab874536aaeac3588ff5adb773fe900c5e8ec7ded4e52c3cc796b6d6",
+  "sourceCompilerLog": "/private/tmp/insights-more-batch21/compiled/openbook-too-close-for-comfort-wikifonia/too-close-for-comfort-ly-wikifonia.log",
+  "sourceCompilerLogSha256": "00e53c9faf04caa2deb2a83c52182552247c904a5fcc75168eaa87028a9a5403",
+  "sourceCompilerNotes": 201,
+  "sourceCompilerPPQ": 384,
+  "explicitOmissions": [
+    {
+      "pitch": 43,
+      "start": 147,
+      "duration": 1,
+      "velocity": 90
+    },
+    {
+      "pitch": 43,
+      "start": 311,
+      "duration": 1,
+      "velocity": 90
+    }
+  ],
+  "sourceLinearNotesExact": true,
+  "sourceHarmonyValidatedByCompiler": true,
+  "approvedNotesUnchanged": true,
+  "approvedHarmonyUnchanged": true,
+  "approvedMeasureGeometryUnchanged": true,
+  "normalizedMidiNotesExact": true,
+  "normalizedMidiPPQ": 10080,
+  "primaryVoiceReference": {
+    "melodyId": "openbook-too-close-for-comfort-wikifonia",
+    "sourcePath": "src/openbook/too_close_for_comfort.ly.tera",
+    "sourceSha256": "f6c93085cec98fd3ed896efbac5b7baa667617743fbed9a21f02c3119a19e416",
+    "sourceVersion": "Wikifonia",
+    "writtenCluster": "<g, b'>4",
+    "writtenPitches": [
+      43,
+      71
+    ],
+    "selectedPitch": 71,
+    "omittedBassPitch": 43,
+    "events": [
+      {
+        "start": 147,
+        "duration": 1,
+        "selectedPitch": 71,
+        "omittedPitches": [
+          43
+        ],
+        "sourceLine": 146
+      },
+      {
+        "start": 311,
+        "duration": 1,
+        "selectedPitch": 71,
+        "omittedPitches": [
+          43
+        ],
+        "sourceLine": 146
+      }
+    ],
+    "evidence": {
+      "sourceLine": 146,
+      "literalReferenceSourceLines": [
+        144,
+        148
+      ],
+      "compiledReferencePhraseStarts": [
+        136,
+        152,
+        300,
+        316
+      ],
+      "compiledReferencePhrase": [
+        {
+          "start": 0.5,
+          "pitch": 75,
+          "duration": 1
+        },
+        {
+          "start": 1.5,
+          "pitch": 74,
+          "duration": 0.5
+        },
+        {
+          "start": 2,
+          "pitch": 72,
+          "duration": 1
+        },
+        {
+          "start": 3,
+          "pitch": 71,
+          "duration": 1
+        }
+      ],
+      "sourceSelectionPolicy": "Only this pinned source cluster is reviewed. The explicitly written B4 duplicates four complete monophonic source phrase cells; the additional G2 is omitted as a secondary bass voice. No pitches, onsets, durations or velocities of the retained lead are altered."
+    },
+    "rawCompilerNotes": 201,
+    "retainedLeadNotes": 199
+  },
+  "notesSha256": "c2524141943fdcd1841102905a8a71fa52277dd58a045b01ec239e96afb72fb6"
+}

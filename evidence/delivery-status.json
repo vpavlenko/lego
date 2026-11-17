@@ -2,32 +2,35 @@
   "date": "2026-11-17",
   "library": {
     "repository": "https://github.com/vpavlenko/librawl",
-    "lego": "0.3.1",
+    "lego": "0.3.2",
     "rawl": "0.3.0",
     "caplin": "0.3.0",
-    "tests": 54
+    "tests": 56
   },
   "implementations": {
     "grouping": "shared Dominant Cycle / IV and / II and / Diatonic families",
     "names": "50 RN prototypes with original Cork aliases",
     "coloring": "representative root chunks; exact user Autumn Leaves mapping",
     "definitions": "representative RN sequence beside every brick title",
-    "cadences": "all twelve supplied patterns plus separately classified generalizations",
+    "cadences": "Only populated classes; source-style bracket/arc diagrams and one right-aligned vertical list",
     "comparisons": "four complete source variants, 100px/bar, visual alignment only",
     "recoloring": "shared per-score measure selection, preview, commit, Escape",
-    "tempo": "shared Rawl coarse/fine keys connected to all three hosts"
+    "tempo": "shared Rawl coarse/fine keys connected to all three hosts",
+    "noteTooltips": "Suppressed in shared native notes, including plain, bent, quartertone and drums; accessible labels retained"
   },
   "melodies": {
-    "arrangements": 486,
+    "arrangements": 507,
     "compositions": 269,
-    "covered": 237,
-    "missing": 32,
-    "separateSourceArrangements": true
+    "covered": 258,
+    "missing": 11,
+    "separateSourceArrangements": true,
+    "newHeads": 21,
+    "newNotes": 2985
   },
   "validation": {
     "reader": {
-      "tests": 215,
-      "pass": 215,
+      "tests": 236,
+      "pass": 236,
       "fail": 0,
       "skip": 0
     },
@@ -47,7 +50,14 @@
       "byteIdentical": true,
       "aggregateSha256": "099315aa502bb7bda6b646531873ec5f992b8498b03ffd7bb136cf95dd7441da"
     },
-    "browser": "Current UI verified through actual React/JSDOM; native Chrome displayed stale assets and could not provide a final current visual comparison"
+    "browser": "Current UI verified through actual React/JSDOM; native Chrome displayed stale assets and could not provide a final current visual comparison",
+    "previousBatch": {
+      "arrangements": 486,
+      "files": 972,
+      "byteIdentical": true,
+      "commit": "255773719b63388b783d3fe9831223595c94a198",
+      "audit": "evidence/reviewed-melody-preservation.json"
+    }
   },
   "publication": {
     "raw": "https://rawl.rocks/",
@@ -68,16 +78,17 @@
     }
   },
   "remaining": {
-    "melodies": 32,
-    "sourceNavigationCases": [
-      "Let It Snow",
-      "I Loves You Porgy"
-    ],
-    "ambiguousSourceTonicCases": [
-      "Airegin",
-      "Love for Sale"
-    ],
-    "unidentifiedHeads": "Four generic blues entries",
-    "canonicalCaplinPush": "pre-existing oversized archives in unpushed history; history preserved"
+    "melodies": 11,
+    "sourceNavigationCases": [],
+    "ambiguousSourceTonicCases": [],
+    "unidentifiedHeads": "The four John Elliott Blues entries are source harmony exercises with zero melody notes, not missing transcriptions",
+    "canonicalCaplinPush": "pre-existing oversized archives in unpushed history; history preserved",
+    "heldSources": [
+      "Blue Lou: native BIAB timeline unverified",
+      "Cheek to Cheek: malformed source measure",
+      "Dream: ambiguous source harmony offsets",
+      "Strike Up the Band / White Christmas: conflicting source harmony onsets",
+      "Love Came on Stealthy Fingers / Thunderbirds: identified encoded head not found"
+    ]
   }
 }

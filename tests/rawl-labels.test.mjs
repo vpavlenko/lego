@@ -48,9 +48,9 @@ test('compact scores hide only the initial tonic label and retain all tonal stat
  }finally{host.destroy();full.unmount();hidden.unmount();dom.window.close();}
 });
 
-test('favicon uses an upward Rawl 2–4–6 gradient over transparent ii superscript seven',()=>{
+test('favicon uses three solid Rawl 2–4–6 bands over transparent ii superscript seven',()=>{
  const svg=fs.readFileSync(new URL('../dist/icons/favicon.svg',import.meta.url),'utf8'),dom=new JSDOM(svg,{contentType:'image/svg+xml'}),document=dom.window.document;
  assert.equal(document.documentElement.getAttribute('viewBox'),'0 0 64 64');assert.equal(document.documentElement.getAttribute('aria-label'),'ii⁷');assert.equal(document.querySelector('rect'),null);
- assert.equal(document.querySelector('g').getAttribute('fill'),'url(#rawl246)');assert.equal(document.querySelector('linearGradient').getAttribute('y1'),'64');assert.equal(document.querySelector('linearGradient').getAttribute('y2'),'0');assert.deepEqual([...document.querySelectorAll('stop')].map(s=>s.getAttribute('stop-color')),['red','#00fb47','#ea7eff']);assert.equal(document.querySelectorAll('circle').length,2);assert.ok(document.querySelector('path').getAttribute('d').includes('M41 0h23'));
+ assert.equal(document.querySelector('g').getAttribute('fill'),'url(#rawl246)');assert.equal(document.querySelector('linearGradient').getAttribute('y1'),'64');assert.equal(document.querySelector('linearGradient').getAttribute('y2'),'0');assert.deepEqual([...document.querySelectorAll('stop')].map(s=>s.getAttribute('stop-color')),['red','red','#00fb47','#00fb47','#ea7eff','#ea7eff']);assert.equal(document.querySelectorAll('circle').length,2);assert.deepEqual([...document.querySelectorAll('stop')].map(s=>s.getAttribute('offset')),['0','.333333','.333333','.666667','.666667','1']);assert.equal(document.querySelector('svg>path').getAttribute('fill'),'black');assert.ok(document.querySelector('svg>path').getAttribute('d').includes('M41 0h23'));
  assert.ok(!/background/i.test(svg));dom.window.close();
 });

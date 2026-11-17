@@ -1,0 +1,271 @@
+{
+  "status": "PASS",
+  "melodyId": "openbook-solitude-fake",
+  "sourceSha256": "1c929f7776b9bd827fe8610dc1c608135511c44ea6f63539cf085b82506667c4",
+  "noteCount": 82,
+  "totalBeats": 130,
+  "canonicalSong": 189,
+  "sourceFile": "/private/tmp/insights-pickup-recovery/book-openbook-adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/solitude.ly.tera",
+  "midiFile": "/private/tmp/insights-more-batch21/melodies/openbook-solitude-fake.mid",
+  "compilerFile": "/private/tmp/insights-more-batch21/compiler/import-openbook-melodies.py",
+  "compilerSha256": "72fcfa3cbd860887593168e664cb90cafd3b77063574a34d7c83e8a4838b34bf",
+  "sourceCompilerMidiFile": "/private/tmp/insights-more-batch21/compiled/openbook-solitude-fake/solitude-ly-fake.midi",
+  "sourceCompilerMidiSha256": "e953d9b0f3e49942823ac4b623ad4d4427021213fb94ca1f4f564b944896bc8d",
+  "sourceCompilerLog": "/private/tmp/insights-more-batch21/compiled/openbook-solitude-fake/solitude-ly-fake.log",
+  "sourceCompilerLogSha256": "be4d780a087860112968109f40594b2077d8ba33b1f077c4ec1dc84783dfc686",
+  "sourceCompilerNotes": 69,
+  "sourceCompilerPPQ": 384,
+  "explicitOmissions": [],
+  "sourceLinearNotesExact": true,
+  "sourceHarmonyValidatedByCompiler": true,
+  "approvedNotesUnchanged": true,
+  "approvedHarmonyUnchanged": true,
+  "approvedMeasureGeometryUnchanged": true,
+  "normalizedMidiNotesExact": true,
+  "normalizedMidiPPQ": 10080,
+  "reviewedNavigation": {
+    "plan": {
+      "canonicalSong": 189,
+      "canonicalTitle": "Solitude",
+      "sourcePath": "src/openbook/solitude.ly.tera",
+      "sourceSha256": "1c929f7776b9bd827fe8610dc1c608135511c44ea6f63539cf085b82506667c4",
+      "sourceVersion": "Fake",
+      "linearTotalBeats": 106,
+      "playbackRanges": [
+        [
+          0,
+          98
+        ],
+        [
+          2,
+          26
+        ],
+        [
+          98,
+          106
+        ]
+      ],
+      "playbackTotalBeats": 130,
+      "compilerLandmarks": [
+        {
+          "pattern": "\"To\" \"Coda\"",
+          "end": 26
+        },
+        {
+          "pattern": "D.[SC].",
+          "end": 98
+        },
+        {
+          "pattern": "scripts.segno",
+          "at": 2
+        }
+      ]
+    },
+    "linearNotesSha256": "ebef4a5d3a8fc53e5367d8579464e8879ca82d2e9a22617bb9d0d4422958bba8",
+    "linearChordsSha256": "ff1b55152244120b50d04a4095d085b1ea06512628a6ad71456971ff19f67d30",
+    "trace": [
+      {
+        "route": 0,
+        "sourceStart": 0,
+        "sourceEnd": 98,
+        "performedStart": 0,
+        "performedEnd": 98,
+        "sourceEventIndexes": {
+          "notes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67
+          ],
+          "chords": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "measures": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ]
+        }
+      },
+      {
+        "route": 1,
+        "sourceStart": 2,
+        "sourceEnd": 26,
+        "performedStart": 98,
+        "performedEnd": 122,
+        "sourceEventIndexes": {
+          "notes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "chords": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "measures": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      },
+      {
+        "route": 2,
+        "sourceStart": 98,
+        "sourceEnd": 106,
+        "performedStart": 122,
+        "performedEnd": 130,
+        "sourceEventIndexes": {
+          "notes": [
+            68
+          ],
+          "chords": [
+            32
+          ],
+          "measures": [
+            25,
+            26
+          ]
+        }
+      }
+    ],
+    "policy": "Whole compiler events copied in the explicitly reviewed written return/end order; no pitches, durations, velocities or source harmonies inferred or clipped."
+  },
+  "notesSha256": "ea7919b0754f2bb17fb7456ca9008ec58a615a41fe71f4eeefb1577620d73928"
+}

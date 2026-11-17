@@ -1,0 +1,201 @@
+{
+  "status": "PASS",
+  "melodyId": "openbook-airegin-fake",
+  "sourceSha256": "da3d8175f5c51173a3579b6dd35963fdece2308edec014945889103d89e9bf7e",
+  "noteCount": 141,
+  "totalBeats": 204,
+  "canonicalSong": 3,
+  "sourceFile": "/private/tmp/insights-pickup-recovery/book-openbook-adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/airegin.ly.tera",
+  "midiFile": "/private/tmp/insights-more-batch21/melodies/openbook-airegin-fake.mid",
+  "compilerFile": "/private/tmp/insights-more-batch21/compiler/import-openbook-melodies.py",
+  "compilerSha256": "72fcfa3cbd860887593168e664cb90cafd3b77063574a34d7c83e8a4838b34bf",
+  "sourceCompilerMidiFile": "/private/tmp/insights-more-batch21/compiled/openbook-airegin-fake/airegin-ly-fake.midi",
+  "sourceCompilerMidiSha256": "2d2622c0ce4dfeb97d6bf69b68fa5764c3b2feffda2b71a55822df22842f1b2c",
+  "sourceCompilerLog": "/private/tmp/insights-more-batch21/compiled/openbook-airegin-fake/airegin-ly-fake.log",
+  "sourceCompilerLogSha256": "76c91ddaaab4b796d756aff9902fc40d436240e77b7165a352129913904fe5ca",
+  "sourceCompilerNotes": 141,
+  "sourceCompilerPPQ": 384,
+  "explicitOmissions": [],
+  "sourceLinearNotesExact": true,
+  "sourceHarmonyValidatedByCompiler": true,
+  "approvedNotesUnchanged": true,
+  "approvedHarmonyUnchanged": true,
+  "approvedMeasureGeometryUnchanged": true,
+  "normalizedMidiNotesExact": true,
+  "normalizedMidiPPQ": 10080,
+  "harmonicTonicReference": {
+    "melodyId": "openbook-airegin-fake",
+    "canonicalSong": 3,
+    "sourcePath": "src/openbook/airegin.ly.tera",
+    "sourceVersion": "Fake",
+    "sourceSha256": "da3d8175f5c51173a3579b6dd35963fdece2308edec014945889103d89e9bf7e",
+    "sourceDeclaredKey": {
+      "root": "Ab",
+      "mode": "Major"
+    },
+    "keyDirectives": [
+      {
+        "line": 84,
+        "text": "\\key aes \\major"
+      }
+    ],
+    "normalizationTonic": {
+      "root": "F",
+      "mode": "Minor"
+    },
+    "evidence": {
+      "canonicalRoadmap": {
+        "source": "InsightsRoadmapsConsolidated.pdf",
+        "song": 3,
+        "title": "Airegin",
+        "tonic": [
+          "F",
+          "Minor"
+        ]
+      },
+      "tonicChordEvents": [
+        {
+          "symbol": "Fm7",
+          "start": 0,
+          "end": 4,
+          "sourceLine": 58,
+          "index": 0
+        },
+        {
+          "symbol": "Fm7",
+          "start": 8,
+          "end": 12,
+          "sourceLine": 58,
+          "index": 2
+        },
+        {
+          "symbol": "Fm7",
+          "start": 16,
+          "end": 20,
+          "sourceLine": 58,
+          "index": 4
+        },
+        {
+          "symbol": "Fm7",
+          "start": 24,
+          "end": 28,
+          "sourceLine": 59,
+          "index": 6
+        },
+        {
+          "symbol": "Fm7",
+          "start": 32,
+          "end": 36,
+          "sourceLine": 59,
+          "index": 8
+        },
+        {
+          "symbol": "Fm7",
+          "start": 40,
+          "end": 44,
+          "sourceLine": 59,
+          "index": 10
+        },
+        {
+          "symbol": "Fm7",
+          "start": 48,
+          "end": 52,
+          "sourceLine": 60,
+          "index": 12
+        },
+        {
+          "symbol": "Fm7",
+          "start": 56,
+          "end": 60,
+          "sourceLine": 60,
+          "index": 14
+        },
+        {
+          "symbol": "Fm7",
+          "start": 64,
+          "end": 68,
+          "sourceLine": 60,
+          "index": 16
+        },
+        {
+          "symbol": "Fm7",
+          "start": 72,
+          "end": 76,
+          "sourceLine": 65,
+          "index": 18
+        },
+        {
+          "symbol": "Fm7",
+          "start": 144,
+          "end": 148,
+          "sourceLine": 72,
+          "index": 41
+        },
+        {
+          "symbol": "Fm7",
+          "start": 152,
+          "end": 156,
+          "sourceLine": 72,
+          "index": 43
+        },
+        {
+          "symbol": "Fm7",
+          "start": 160,
+          "end": 164,
+          "sourceLine": 72,
+          "index": 45
+        },
+        {
+          "symbol": "Fm7",
+          "start": 168,
+          "end": 172,
+          "sourceLine": 73,
+          "index": 47
+        }
+      ],
+      "dominantResolutions": [
+        {
+          "dominant": {
+            "symbol": "C7b5#9",
+            "start": 68,
+            "end": 72,
+            "sourceLine": 60,
+            "index": 17
+          },
+          "tonic": {
+            "symbol": "Fm7",
+            "start": 72,
+            "end": 76,
+            "sourceLine": 65,
+            "index": 18
+          }
+        },
+        {
+          "dominant": {
+            "symbol": "C7",
+            "start": 142,
+            "end": 144,
+            "sourceLine": 67,
+            "index": 40
+          },
+          "tonic": {
+            "symbol": "Fm7",
+            "start": 144,
+            "end": 148,
+            "sourceLine": 72,
+            "index": 41
+          }
+        }
+      ],
+      "ending": {
+        "symbol": "Ab",
+        "start": 200,
+        "end": 204,
+        "sourceLine": 74,
+        "index": 55
+      },
+      "endingContext": "Airegin retains its written relative-major Ab ending after repeated Fm tonic regions; Love for Sale retains its written Bb major ending after recurring Bbm regions. Neither ending is altered or used to overwrite the source home reference."
+    }
+  },
+  "notesSha256": "7566b7314d306237a202816c6ab0cabb1308b6140d4a689ea8a26d4497ae81aa"
+}

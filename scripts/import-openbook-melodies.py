@@ -109,8 +109,9 @@ def vlq(value):
  while value:result.insert(0,(value&127)|128);value>>=7
  return bytes(result)
 
-def midi_bytes(notes,title,total,meter_events=None):
- ppq=10080;name=title.encode();events=[(0,-2,b'\xff\x51\x03\x07\xa1\x20'),(0,-1,b'\xc0\x41'),(0,0,b'\xff\x03'+vlq(len(name))+name)]
+def midi_bytes(notes,title,total,meter_events=None,ppq=10080):
+ if not isinstance(ppq,int) or not 0<ppq<32768:raise ValueError('Invalid source MIDI resolution')
+ name=title.encode();events=[(0,-2,b'\xff\x51\x03\x07\xa1\x20'),(0,-1,b'\xc0\x41'),(0,0,b'\xff\x03'+vlq(len(name))+name)]
  for event in meter_events or []:
   n,d=event['meter'];events.append((round(event['beat']*ppq),0,b'\xff\x58\x04'+bytes([n,int(d).bit_length()-1,event.get('metronome',24),event.get('thirtyseconds',8)])))
  for n in notes:
@@ -199,18 +200,44 @@ def compiled_meter_grid(events,total,bar_beats,allow_pickups):
  if any(e['kind']=='BAR' and not any(abs(float(e['start']-b))<1e-7 for b in edges) for e in events):raise ValueError('Source barcheck off authored meter map')
  return pickup,measures
 
-def decode(path,version,lilypond,qualities,source_root,work_dir,allow_source_intervals=False,allow_pickups=False,allow_meter_changes=False,allow_notated_alternatives=False):
+def compiled_repeated_partial_grid(events,total,bar_beats):
+ partials={s:[(e['start'],e['duration']) for e in events if e['stream']==s and e['kind']=='PARTIAL'] for s in ('chords','voice')}
+ if len(partials['voice'])<2 or partials['voice']!=partials['chords'] or partials['voice'][0][0]!=0:raise ValueError('Repeated pickups require matching source declarations')
+ if len(dict(partials['voice']))!=len(partials['voice']):raise ValueError('Duplicate repeated pickup declaration')
+ schedule=sorted([e for e in events if e['stream']=='voice' and e['kind']=='METER'],key=lambda e:e['start'])
+ if not schedule or schedule[0]['start']!=0:raise ValueError('Missing source repeated-pickup meter')
+ declarations=dict(partials['voice']);measures=[];cursor=Fraction(0);number=1
+ while cursor<total:
+  current=[e for e in schedule if e['start']<=cursor][-1];duration=declarations.get(cursor,current['duration'])
+  if not 0<duration<=current['duration'] or cursor+duration>total or any(cursor<t<cursor+duration for t in declarations):raise ValueError('Repeated pickup breaks source measure boundaries')
+  partial=cursor in declarations
+  measures.append({'sourceNumber':'0' if partial else str(number),'start':rounded(cursor),'duration':rounded(duration),'meter':current['pitches'],'beatBeats':4/current['pitches'][1]})
+  if not partial:number+=1
+  cursor+=duration
+ edges={Fraction(str(m['start'])) for m in measures}|{total}
+ if any(e['kind']=='BAR' and not any(abs(float(e['start']-b))<1e-7 for b in edges) for e in events):raise ValueError('Repeated pickup source barcheck mismatch')
+ if not all(t in edges for t in declarations):raise ValueError('Unvisited source pickup')
+ return partials['voice'][0][1],measures
+
+def decode(path,version,lilypond,qualities,source_root,work_dir,allow_source_intervals=False,allow_pickups=False,allow_meter_changes=False,allow_notated_alternatives=False,reviewed_navigation=False,ignore_engraving_grace=False,reviewed_repeated_partials=False,reviewed_primary=None):
  text=path.read_text();meta=tomllib.loads(re.search(r'{#(.*?)#}',text,re.S)[1]);attrs=meta['attributes'];raw_chords,chord_line=section(text,'Chords'+version);raw_voice,voice_line=section(text,'Voice'+version)
  combined=raw_chords+'\n'+raw_voice
  if r'\transpose' in combined:raise ValueError('Source transposition wrapper requires explicit key review')
  navigation=r'(?i)D\s*\.\s*[CS]\s*\.|al\s+coda|dal\s+segno|da\s+capo|\\(?:segno|coda|repeat\s+segno)\b'
- if re.search(navigation,combined) or not allow_pickups and re.search(r'\\partial\b',combined):raise ValueError('Textual navigation or pickup requires explicit source review')
+ if re.search(navigation,combined) and not reviewed_navigation or not allow_pickups and re.search(r'\\partial\b',combined):raise ValueError('Textual navigation or pickup requires explicit source review')
  keys=re.findall(r'\\key\s+([a-g](?:(?:is|es)*|s))\s+\\(major|minor)',raw_voice)
  meters=re.findall(r'\\time\s+(\d+)\s*/\s*(\d+)',raw_voice)
  if not keys:raise ValueError('No explicit source tonic/mode')
  if not meters or not allow_meter_changes and len(set(meters))!=1:raise ValueError('Missing or changing source meter')
  tonic=[root_name(keys[0][0]),keys[0][1].capitalize()];meter=list(map(int,meters[0]));bar_beats=Fraction(meter[0]*4,meter[1])
- chords=clean(raw_chords);voice=clean(raw_voice);prefix=SCHEME+'\nchords = \\dump "chords" '+chords+'\n'
+ scheme=SCHEME
+ if ignore_engraving_grace:scheme=scheme.replace("((eq? name 'EventChord)","((eq? name 'GraceMusic) #f) ((eq? name 'EventChord)")
+ if reviewed_navigation:
+  scheme=scheme.replace("((eq? name 'EventChord)","((eq? name 'NoteEvent) (emit \"NOTE\" start m)) ((eq? name 'EventChord)")
+  diagnostic=r'''(for-each (lambda (event) (let ((text (ly:music-property event 'text))) (if (not (null? text)) (format #t "NAV\t~a\t~a\t~a\t~s\n" start (dur m) (cadr loc) text)))) (append (ly:music-property m 'elements) (ly:music-property m 'articulations) (append-map (lambda (n) (ly:music-property n 'articulations)) ns))) '''
+  # Keep the generated line count unchanged: original source locations remain exact.
+  scheme=scheme.replace('(let ((primary',diagnostic+'(let ((primary')
+ chords=clean(raw_chords);voice=clean(raw_voice);prefix=scheme+'\nchords = \\dump "chords" '+chords+'\n'
  if allow_source_intervals:
   core_chords=re.sub(r'/\+?[a-g](?:(?:is|es)*|s)[,\']*','',chords)
   prefix+='\ncoreChords = \\dump "coreChords" '+core_chords+'\n'
@@ -220,16 +247,18 @@ def decode(path,version,lilypond,qualities,source_root,work_dir,allow_source_int
  log=result.stdout+'\n'+result.stderr;(work_dir/(stem+'.log')).write_text(log)
  if result.returncode:raise ValueError('LilyPond compilation failed: '+next((l for l in log.splitlines() if 'error:' in l),'unknown error'))
  if re.search(r'warning:.*(?:barcheck failed|strange time|unterminated|cannot find|unknown|not enough|too many|duplicate|music is polyphonic)',log):raise ValueError('LilyPond structural warning')
- raw_events=[];totals={};current=None
+ raw_events=[];totals={};current=None;navigation_marks=[]
  for line in log.splitlines():
   if line.startswith('BEGIN\t'):current=line.split('\t')[1]
   elif line.startswith('TOTAL\t'):
    _,label,value=line.split('\t');totals[label]=Fraction(value)
   elif line.startswith('DATA\t'):
    _,kind,start,duration,lineno,char,pitches=line.split('\t');raw_events.append({'stream':current,'kind':kind,'start':Fraction(start),'duration':Fraction(duration),'line':int(lineno),'char':int(char),'pitches':[int(x) for x in pitches.split(',') if x]})
+  elif line.startswith('NAV\t'):
+   _,start,duration,lineno,text=line.split('\t',4);navigation_marks.append({'stream':current,'start':rounded(Fraction(start)),'duration':rounded(Fraction(duration)),'generatedLine':int(lineno),'text':text})
  if totals.get('chords')!=totals.get('voice') or not totals.get('voice'):raise ValueError('Chord/melody source length mismatch '+str(totals))
  total=totals['voice']
- pickup,measures=(compiled_meter_grid(raw_events,total,bar_beats,allow_pickups) if allow_meter_changes else compiled_measure_grid(raw_events,total,bar_beats,allow_pickups))
+ pickup,measures=(compiled_repeated_partial_grid(raw_events,total,bar_beats) if reviewed_repeated_partials else compiled_meter_grid(raw_events,total,bar_beats,allow_pickups) if allow_meter_changes else compiled_measure_grid(raw_events,total,bar_beats,allow_pickups))
  lines=generated.splitlines();chord_events=[]
  # Prefix adds one line before the extracted chord section. All clean operations
  # preserve newlines, so source line provenance is exact even after unfolding.
@@ -275,11 +304,24 @@ def decode(path,version,lilypond,qualities,source_root,work_dir,allow_source_int
    if {n['pitch'] for n in matches}!={chosen,*omitted}:raise ValueError('Source optional-note MIDI mismatch')
    notes=[n for n in notes if n not in matches or n['pitch']==chosen]
    alternatives.append({'start':rounded(event['start']),'duration':rounded(event['duration']),'sourceLine':voice_line+event['line']-(generated[:generated.index('\\dump "voice"')].count('\n')+1),'selectedPitch':chosen,'omittedParenthesizedPitches':sorted(omitted)})
+ if reviewed_primary:
+  if reviewed_primary['sourcePath']!=path.relative_to(source_root).as_posix() or reviewed_primary['sourceSha256']!=sha(path) or reviewed_primary['sourceVersion']!=version:raise ValueError('Primary voice source identity mismatch')
+  evidence=reviewed_primary['evidence'];expected=evidence['compiledReferencePhrase'];starts=evidence['compiledReferencePhraseStarts']
+  for start in starts:
+   phrase=[{'start':rounded(n['start']-start),'pitch':n['pitch'],'duration':n['duration']} for n in notes if start-1e-7<=n['start']<start+4-1e-7]
+   if phrase!=expected:raise ValueError('Primary voice repeated source phrase differs')
+  for event in reviewed_primary['events']:
+   matching=[n for n in notes if abs(n['start']-event['start'])<1e-7 and abs(n['duration']-event['duration'])<1e-7]
+   if {n['pitch'] for n in matching}!={event['selectedPitch'],*event['omittedPitches']}:raise ValueError('Primary voice written source cluster differs')
+   notes=[n for n in notes if n not in matching or n['pitch']==event['selectedPitch']]
  for a,b in zip(notes,notes[1:]):
   if a['start']+a['duration']>b['start']+1e-7:raise ValueError('Polyphonic source melody requires voice selection review')
  local=path.relative_to(source_root).as_posix();identifier='openbook-'+slug(attrs['title'])+'-'+slug(version)
  provenance={'format':'LilyPond','repository':REPO,'repositoryCommit':COMMIT,'path':local,'url':REPO+'/blob/'+COMMIT+'/'+local,'rawUrl':'https://raw.githubusercontent.com/veltzer/book-openbook/'+COMMIT+'/'+local,'sha256':sha(path),'sourceRights':attrs.get('copyright'),'sourceRightsExtra':attrs.get('copyrightextra'),'sourceVersion':version,'sourceStructure':attrs.get('structure'),'sourceKeySignature':{'root':tonic[0],'mode':tonic[1]},'tonicBasis':'Explicit initial LilyPond key and mode; no pitch-distribution estimate','sourceMeters':['/'.join(map(str,meter))],'unfoldStatus':'expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats','tiesMerged':True,'decoder':'LilyPond 2.26.0','sourcePPQ':ppq,'sections':{'chords':{'name':'Chords'+version,'startLine':chord_line},'melody':{'name':'Voice'+version,'startLine':voice_line}},'irregularMeasures':[],'leadOverfullMeasures':[],'leadUnderfullMeasures':[],'conflictingHarmonies':[],'omittedHarmonyAnnotations':[],'titleMetadata':{'selectedFrom':'source attributes.title','printedTitle':attrs['title'],'workTitle':attrs['title'],'movementTitle':None,'filenameTitle':path.name},'skipPolicy':'SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.','sourceIntervalPolicy':'Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.' if allow_source_intervals else None,'validation':'Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation'}
  if alternatives:provenance['notatedAlternatives']={'policy':'Retain the sole unparenthesized written pitch; explicitly parenthesized alternatives are omitted, without moving any note.','events':alternatives}
+ if reviewed_navigation:provenance['compilerNavigationMarks']=[{**mark,'sourceLine':voice_line+mark['generatedLine']-(generated[:generated.index('\\dump "voice"')].count('\n')+1)} for mark in navigation_marks if mark['stream']=='voice']
+ if ignore_engraving_grace:provenance['engravingGraceTraversal']='Ignore zero-main-duration GraceMusic only in diagnostic traversal; actual compiler MIDI notes remain untouched.'
+ if reviewed_primary:provenance['curatedPrimaryVoice']={'events':reviewed_primary['events'],'evidence':reviewed_primary['evidence']}
  if allow_meter_changes:
   provenance['midiMeterEvents']=midi_meters
   provenance['sourceMeters']=list(dict.fromkeys('/'.join(m) for m in meters));provenance['compiledMeterEvents']=[{'start':rounded(e['start']),'meter':e['pitches'],'sourceLine':voice_line+e['line']-(generated[:generated.index('\\dump "voice"')].count('\n')+1)} for e in raw_events if e['stream']=='voice' and e['kind']=='METER'];provenance['meterMapPolicy']='Source TimeSignatureMusic durations and matching explicit bar checks; authored quarter-beat timing retained without padding or stretching.'
@@ -289,7 +331,12 @@ def decode(path,version,lilypond,qualities,source_root,work_dir,allow_source_int
   provenance['irregularMeasures']=[{**measure,'kind':'pickup' if i==0 else 'source-tail'} for i,measure in enumerate(measures) if abs(measure['duration']-float(bar_beats))>1e-8]
   provenance['pickupPolicy']='One matching initial LilyPond PartialSet in both compiled streams. MIDI onsets and durations remain unchanged; source measure0 is the pickup. No padding, cropping or stretching.'
   provenance['validation']='Exact source compiler durations, pickup-aligned bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation'
- return {'id':identifier,'melodyId':identifier,'normalizedTitle':normalize(attrs['title']),'title':attrs['title'],'composer':attrs.get('composer',''),'tonic':tonic,'tonicConfidence':'high','meter':meter,'barBeats':rounded(bar_beats),'bars':len(measures),'totalBeats':rounded(total),'pickupBeats':rounded(pickup),'notes':notes,'chords':chord_events,'measures':measures,'provenance':provenance,'midi':'melodies/'+identifier+'.mid'}
+ if reviewed_repeated_partials:
+  partials=[{'start':m['start'],'duration':m['duration']} for m in measures if m['sourceNumber']=='0']
+  provenance['repeatedPartialReview']={'sourceSha256':sha(path),'sourcePath':local,'sourceVersion':version,'partialEvents':partials,'sourceFullMeasureCount':len(measures)-len(partials)}
+  provenance['pickupPolicy']='Matching compiled pickup declarations at written repeat starts are retained without padding or trimming.'
+  provenance['irregularMeasures']=[{**m,'kind':'source-pickup'} for m in measures if m['sourceNumber']=='0']
+ return {'id':identifier,'melodyId':identifier,'normalizedTitle':normalize(attrs['title']),'title':attrs['title'],'composer':attrs.get('composer',''),'tonic':tonic,'tonicConfidence':'high','meter':meter,'barBeats':rounded(bar_beats),'bars':len(measures),'totalBeats':rounded(total),'pickupBeats':rounded(pickup),**({'sourceFullMeasureCount':provenance['repeatedPartialReview']['sourceFullMeasureCount']} if reviewed_repeated_partials else {}),'notes':notes,'chords':chord_events,'measures':measures,'provenance':provenance,'midi':'melodies/'+identifier+'.mid'}
 
 def apply_harmonic_reference(entry,reference,original):
  """Curated home tonic is distinct from the literal LilyPond key declaration.
@@ -298,7 +345,10 @@ def apply_harmonic_reference(entry,reference,original):
  """
  p=entry['provenance'];declared=reference['sourceDeclaredKey'];target=reference['normalizationTonic']
  if (entry['id']!=reference['melodyId'] or p['path']!=reference['sourcePath'] or p['sourceVersion']!=reference['sourceVersion'] or p['sha256']!=reference['sourceSha256'] or entry['tonic']!=[declared['root'],declared['mode']] or p['sourceKeySignature']!=declared):raise ValueError('Harmonic reference source identity mismatch')
- if original['index']!=reference['canonicalSong'] or target['mode']!='Minor' or original['tonic'][1]!='Minor' or pc(target['root'])!=pc(original['tonic'][0]):raise ValueError('Harmonic reference canonical identity mismatch')
+ transposition=reference.get('sourceTransposition')
+ same_home=pc(target['root'])==pc(original['tonic'][0])
+ reviewed_transposition=transposition and transposition.get('canonicalTonic')==original['tonic'] and transposition.get('semitones')==(pc(target['root'])-pc(original['tonic'][0]))%12
+ if original['index']!=reference['canonicalSong'] or target['mode']!='Minor' or original['tonic'][1]!='Minor' or not (same_home or reviewed_transposition):raise ValueError('Harmonic reference canonical identity mismatch')
  chords=entry['chords'];tonic=pc(target['root'])
  def checked(event):
   index=event['index']

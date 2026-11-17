@@ -2,6 +2,23 @@ const EPS=1e-7;
 /** Compiler-verified pickups, authored meter changes and final partial maps.
  * Time is always authored quarter beats. No normalization moves notes/chords. */
 export function sourceMeasureMap(entry){
+ const xml=entry.provenance?.musicXmlMeasureReview,repeated=entry.provenance?.repeatedPartialReview;
+ if(xml||repeated){
+  const p=entry.provenance,map=entry.measures,bpb=entry.barBeats;
+  if(!Array.isArray(map)||map.length!==entry.bars||!map.length)throw Error('invalid-reviewed-measure-map');
+  if(xml&&(p.format!=='MusicXML'||xml.sourceSha256!==p.sha256||xml.member!==p.path||JSON.stringify(xml.measures)!==JSON.stringify(map)))throw Error('invalid-xml-measure-review');
+  if(repeated&&(p.format!=='LilyPond'||repeated.sourceSha256!==p.sha256||repeated.sourcePath!==p.path||repeated.sourceVersion!==p.sourceVersion))throw Error('invalid-repeated-pickup-review');
+  let cursor=0,number=1,full=0;const partials=[];
+  for(const [i,m]of map.entries()){
+   const expected=m.meter?.[0]*4/m.meter?.[1]||bpb,partial=String(m.sourceNumber)==='0';
+   if(!Number.isFinite(m.start)||!Number.isFinite(expected)||!(expected>0)||Math.abs(m.start-cursor)>EPS||!(m.duration>0)||m.duration>expected+EPS||m.meter&&m.beatBeats!==4/m.meter[1])throw Error('invalid-reviewed-measure-timing');
+   if(partial){if(!repeated&&i!==0||!(m.duration<expected))throw Error('unreviewed-midscore-pickup');partials.push({start:m.start,duration:m.duration});}
+   else{if(String(m.sourceNumber)!==String(number++)||Math.abs(m.duration-expected)>EPS)throw Error('invalid-reviewed-full-measure');full++;}
+   cursor=m.start+m.duration;
+  }
+  if(Math.abs(cursor-entry.totalBeats)>EPS||full!==entry.sourceFullMeasureCount||!partials.length||Math.abs(partials[0].duration-entry.pickupBeats)>EPS||repeated&&JSON.stringify(partials)!==JSON.stringify(repeated.partialEvents))throw Error('reviewed-measure-evidence-mismatch');
+  return map.map(m=>({...m}));
+ }
  const metered=!!entry.provenance?.meterMapPolicy,pickup=entry.pickupBeats>EPS;
  if(!pickup&&!metered)return null;
  const p=entry.provenance??{},map=entry.measures,total=entry.totalBeats,bpb=entry.barBeats;

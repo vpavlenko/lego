@@ -1,0 +1,147 @@
+{
+  "status": "PASS",
+  "melodyId": "openbook-soul-eyes-fake",
+  "sourceSha256": "448ae1617c5cd52d2c1ff8180fcdf348fefa0a79ad1891152afc8e57c4425b49",
+  "noteCount": 77,
+  "totalBeats": 129,
+  "canonicalSong": 194,
+  "sourceFile": "/private/tmp/insights-pickup-recovery/book-openbook-adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/soul_eyes.ly.tera",
+  "midiFile": "/private/tmp/insights-more-batch21/melodies/openbook-soul-eyes-fake.mid",
+  "compilerFile": "/private/tmp/insights-more-batch21/compiler/import-openbook-melodies.py",
+  "compilerSha256": "72fcfa3cbd860887593168e664cb90cafd3b77063574a34d7c83e8a4838b34bf",
+  "sourceCompilerMidiFile": "/private/tmp/insights-more-batch21/compiled/openbook-soul-eyes-fake/soul-eyes-ly-fake.midi",
+  "sourceCompilerMidiSha256": "884eb1a82f11b2a92323a447f9f5d18d6effcef187559c48beb164405d15bf08",
+  "sourceCompilerLog": "/private/tmp/insights-more-batch21/compiled/openbook-soul-eyes-fake/soul-eyes-ly-fake.log",
+  "sourceCompilerLogSha256": "ee76a8f6e1056333662fb5de55ee889705f0203838262595bdb1478f96e9ca30",
+  "sourceCompilerNotes": 77,
+  "sourceCompilerPPQ": 384,
+  "explicitOmissions": [],
+  "sourceLinearNotesExact": true,
+  "sourceHarmonyValidatedByCompiler": true,
+  "approvedNotesUnchanged": true,
+  "approvedHarmonyUnchanged": true,
+  "approvedMeasureGeometryUnchanged": true,
+  "normalizedMidiNotesExact": true,
+  "normalizedMidiPPQ": 10080,
+  "harmonicTonicReference": {
+    "melodyId": "openbook-soul-eyes-fake",
+    "canonicalSong": 194,
+    "sourcePath": "src/openbook/soul_eyes.ly.tera",
+    "sourceVersion": "Fake",
+    "sourceSha256": "448ae1617c5cd52d2c1ff8180fcdf348fefa0a79ad1891152afc8e57c4425b49",
+    "sourceDeclaredKey": {
+      "root": "Eb",
+      "mode": "Major"
+    },
+    "keyDirectives": [
+      {
+        "line": 81,
+        "text": "\\key ees \\major"
+      }
+    ],
+    "normalizationTonic": {
+      "root": "C",
+      "mode": "Minor"
+    },
+    "evidence": {
+      "canonicalRoadmap": {
+        "source": "InsightsRoadmapsConsolidated.pdf",
+        "song": 194,
+        "title": "Soul Eyes",
+        "tonic": [
+          "C",
+          "Minor"
+        ]
+      },
+      "tonicChordEvents": [
+        {
+          "symbol": "CmM7",
+          "start": 1,
+          "end": 5,
+          "sourceLine": 60,
+          "index": 1
+        },
+        {
+          "symbol": "Cm7",
+          "start": 9,
+          "end": 13,
+          "sourceLine": 60,
+          "index": 4
+        },
+        {
+          "symbol": "CmM7",
+          "start": 65,
+          "end": 69,
+          "sourceLine": 60,
+          "index": 21
+        },
+        {
+          "symbol": "Cm7",
+          "start": 73,
+          "end": 77,
+          "sourceLine": 60,
+          "index": 24
+        }
+      ],
+      "dominantResolutions": [
+        {
+          "dominant": {
+            "symbol": "G7b9",
+            "start": 7,
+            "end": 9,
+            "sourceLine": 60,
+            "index": 3
+          },
+          "tonic": {
+            "symbol": "Cm7",
+            "start": 9,
+            "end": 13,
+            "sourceLine": 60,
+            "index": 4
+          }
+        },
+        {
+          "dominant": {
+            "symbol": "G7#5",
+            "start": 63,
+            "end": 65,
+            "sourceLine": 65,
+            "index": 20
+          },
+          "tonic": {
+            "symbol": "CmM7",
+            "start": 65,
+            "end": 69,
+            "sourceLine": 60,
+            "index": 21
+          }
+        },
+        {
+          "dominant": {
+            "symbol": "G7b9",
+            "start": 71,
+            "end": 73,
+            "sourceLine": 60,
+            "index": 23
+          },
+          "tonic": {
+            "symbol": "Cm7",
+            "start": 73,
+            "end": 77,
+            "sourceLine": 60,
+            "index": 24
+          }
+        }
+      ],
+      "ending": {
+        "symbol": "EbM7",
+        "start": 121,
+        "end": 129,
+        "sourceLine": 69,
+        "index": 37
+      },
+      "basis": "Recurring compiled minor-tonic chords and adjacent source V7-i resolutions establish the source home; literal key signature, all notes and all harmony remain unchanged."
+    }
+  },
+  "notesSha256": "74c513e9903a341e9bc825d489699b5938d90fe5456ce3294805dd63fc809a09"
+}

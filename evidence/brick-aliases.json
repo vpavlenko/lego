@@ -1,6 +1,6 @@
 {
-  "sourceLabels": 412,
-  "canonicalBricks": 349,
+  "sourceLabels": 414,
+  "canonicalBricks": 351,
   "groups": [
     {
       "name": "Autumn Leaves Opening +...",
@@ -23,8 +23,8 @@
       "aliases": [
         "Chromatically Descending Dom..."
       ],
-      "standards": 7,
-      "passages": 9
+      "standards": 8,
+      "passages": 10
     },
     {
       "name": "Diatonic I ii iii ii",
@@ -180,8 +180,8 @@
         "Minor Dropb",
         "Minor Dropbac"
       ],
-      "standards": 12,
-      "passages": 16
+      "standards": 13,
+      "passages": 17
     },
     {
       "name": "Minor Dropback +...",
@@ -203,8 +203,8 @@
         "Minor Perfect Cade",
         "Minor Perfect."
       ],
-      "standards": 46,
-      "passages": 103
+      "standards": 49,
+      "passages": 107
     },
     {
       "name": "Nowhere Launcher",
@@ -219,8 +219,8 @@
       "aliases": [
         "Off On Minor bil"
       ],
-      "standards": 6,
-      "passages": 14
+      "standards": 7,
+      "passages": 17
     },
     {
       "name": "On Off Major #IV",
@@ -275,16 +275,16 @@
       "aliases": [
         "On Off Minor bil"
       ],
-      "standards": 9,
-      "passages": 17
+      "standards": 10,
+      "passages": 28
     },
     {
       "name": "On Off Minor bIII",
       "aliases": [
         "On Off Minor blll"
       ],
-      "standards": 9,
-      "passages": 14
+      "standards": 10,
+      "passages": 16
     },
     {
       "name": "Perfect Cadence",
@@ -292,8 +292,8 @@
         "Perfect Caden.",
         "Perfect Cadenc..."
       ],
-      "standards": 142,
-      "passages": 486
+      "standards": 153,
+      "passages": 538
     },
     {
       "name": "Sad Launcher",
@@ -309,8 +309,8 @@
       "aliases": [
         "Somewhere/Nowhere Approi"
       ],
-      "standards": 10,
-      "passages": 16
+      "standards": 12,
+      "passages": 20
     },
     {
       "name": "Straight Approach",
@@ -319,8 +319,8 @@
         "Straight Appro.",
         "Straight Approa..."
       ],
-      "standards": 173,
-      "passages": 387
+      "standards": 182,
+      "passages": 408
     },
     {
       "name": "Straight Cadence + Dominant Overrun",
@@ -388,8 +388,8 @@
       "aliases": [
         "Wonderful Gpening"
       ],
-      "standards": 4,
-      "passages": 4
+      "standards": 5,
+      "passages": 5
     },
     {
       "name": "Yardbird Launcher",

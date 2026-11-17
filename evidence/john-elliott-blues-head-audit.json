@@ -1,0 +1,212 @@
+[
+  {
+    "song": 24,
+    "title": "Blues #1",
+    "sourceTitle": "Blues Number 1",
+    "composer": "John Elliott",
+    "path": "leadsheets/insights/BluesNumber1.ls",
+    "repository": "https://github.com/Impro-Visor/Impro-Visor",
+    "repositoryCommit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+    "sha256": "a4cfcf7dd7d4a4d66a0a294b23709c768c120c9e85b0a251f1b91e2e406fe45b",
+    "bars": 12,
+    "totalBeats": 48,
+    "parts": [
+      {
+        "metadata": {
+          "type": "melody",
+          "title": "",
+          "composer": "",
+          "instrument": "11",
+          "volume": "85",
+          "key": "0",
+          "stave": "treble"
+        },
+        "notes": [],
+        "rests": [
+          {
+            "start": 0,
+            "duration": 48
+          }
+        ],
+        "totalBeats": 48,
+        "sourceTokens": [
+          {
+            "token": "r1+1+1+1+1+1+1+1+1+1+1+1",
+            "start": 0,
+            "duration": 48
+          }
+        ]
+      }
+    ],
+    "chordComparison": {
+      "sourceEvents": 12,
+      "roadmapEvents": 12,
+      "differences": [
+        {
+          "source": {
+            "symbol": "F#o7",
+            "start": 20,
+            "end": 24
+          },
+          "roadmap": {
+            "symbol": "F#o",
+            "start": 20,
+            "end": 24
+          }
+        }
+      ]
+    },
+    "result": "Source melody part contains only twelve-bar rest; no head is encoded."
+  },
+  {
+    "song": 25,
+    "title": "Blues #2",
+    "sourceTitle": "Blues Number 2",
+    "composer": "John Elliott",
+    "path": "leadsheets/insights/BluesNumber2.ls",
+    "repository": "https://github.com/Impro-Visor/Impro-Visor",
+    "repositoryCommit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+    "sha256": "13e30dc654a07a3678418b1dbf358dc763f2a66f82ad74b8e9b098e60027e873",
+    "bars": 12,
+    "totalBeats": 48,
+    "parts": [
+      {
+        "metadata": {
+          "type": "melody",
+          "title": "",
+          "composer": "",
+          "instrument": "11",
+          "volume": "85",
+          "key": "0",
+          "stave": "treble"
+        },
+        "notes": [],
+        "rests": [
+          {
+            "start": 0,
+            "duration": 48
+          }
+        ],
+        "totalBeats": 48,
+        "sourceTokens": [
+          {
+            "token": "r1+1+1+1+1+1+1+1+1+1+1+1",
+            "start": 0,
+            "duration": 48
+          }
+        ]
+      }
+    ],
+    "chordComparison": {
+      "sourceEvents": 15,
+      "roadmapEvents": 15,
+      "differences": [
+        {
+          "source": {
+            "symbol": "D#o7",
+            "start": 6,
+            "end": 8
+          },
+          "roadmap": {
+            "symbol": "D#o",
+            "start": 6,
+            "end": 8
+          }
+        }
+      ]
+    },
+    "result": "Source melody part contains only twelve-bar rest; no head is encoded."
+  },
+  {
+    "song": 26,
+    "title": "Blues #3",
+    "sourceTitle": "Blues Number 3",
+    "composer": "John Elliott",
+    "path": "leadsheets/insights/BluesNumber3.ls",
+    "repository": "https://github.com/Impro-Visor/Impro-Visor",
+    "repositoryCommit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+    "sha256": "471e3e334680850e3dcb6ee4c5d173753a9649bb62ee79cbb34a992295206ce0",
+    "bars": 12,
+    "totalBeats": 48,
+    "parts": [
+      {
+        "metadata": {
+          "type": "melody",
+          "title": "",
+          "composer": "",
+          "instrument": "11",
+          "volume": "85",
+          "key": "0",
+          "stave": "treble"
+        },
+        "notes": [],
+        "rests": [
+          {
+            "start": 0,
+            "duration": 48
+          }
+        ],
+        "totalBeats": 48,
+        "sourceTokens": [
+          {
+            "token": "r1+1+1+1+1+1+1+1+1+1+1+1",
+            "start": 0,
+            "duration": 48
+          }
+        ]
+      }
+    ],
+    "chordComparison": {
+      "sourceEvents": 15,
+      "roadmapEvents": 15,
+      "differences": []
+    },
+    "result": "Source melody part contains only twelve-bar rest; no head is encoded."
+  },
+  {
+    "song": 27,
+    "title": "Blues #4",
+    "sourceTitle": "Blues Number 4",
+    "composer": "John Elliott",
+    "path": "leadsheets/insights/BluesNumber4.ls",
+    "repository": "https://github.com/Impro-Visor/Impro-Visor",
+    "repositoryCommit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+    "sha256": "bc6872c6a7eaae96ebb598fcf4852f0dd371cd088a386befd688b6a276c40398",
+    "bars": 12,
+    "totalBeats": 48,
+    "parts": [
+      {
+        "metadata": {
+          "type": "melody",
+          "title": "",
+          "composer": "",
+          "instrument": "11",
+          "volume": "85",
+          "key": "0",
+          "stave": "treble"
+        },
+        "notes": [],
+        "rests": [
+          {
+            "start": 0,
+            "duration": 48
+          }
+        ],
+        "totalBeats": 48,
+        "sourceTokens": [
+          {
+            "token": "r1+1+1+1+1+1+1+1+1+1+1+1",
+            "start": 0,
+            "duration": 48
+          }
+        ]
+      }
+    ],
+    "chordComparison": {
+      "sourceEvents": 15,
+      "roadmapEvents": 15,
+      "differences": []
+    },
+    "result": "Source melody part contains only twelve-bar rest; no head is encoded."
+  }
+]

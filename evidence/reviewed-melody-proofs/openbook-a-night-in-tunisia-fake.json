@@ -1,0 +1,195 @@
+{
+  "status": "PASS",
+  "melodyId": "openbook-a-night-in-tunisia-fake",
+  "sourceSha256": "070d45e2fecf4e2fc84545237efca4e5c7bfa15e4770b8346545c02ae80157e8",
+  "noteCount": 153,
+  "totalBeats": 128.5,
+  "canonicalSong": 153,
+  "sourceFile": "/private/tmp/insights-pickup-recovery/book-openbook-adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/a_night_in_tunisia.ly.tera",
+  "midiFile": "/private/tmp/insights-more-batch21/melodies/openbook-a-night-in-tunisia-fake.mid",
+  "compilerFile": "/private/tmp/insights-more-batch21/compiler/import-openbook-melodies.py",
+  "compilerSha256": "72fcfa3cbd860887593168e664cb90cafd3b77063574a34d7c83e8a4838b34bf",
+  "sourceCompilerMidiFile": "/private/tmp/insights-more-batch21/compiled/openbook-a-night-in-tunisia-fake/a-night-in-tunisia-ly-fake.midi",
+  "sourceCompilerMidiSha256": "d74c1f441f0a3031d5c240e590edf56830cbc6e986eb54418896eaee3e4ae1c4",
+  "sourceCompilerLog": "/private/tmp/insights-more-batch21/compiled/openbook-a-night-in-tunisia-fake/a-night-in-tunisia-ly-fake.log",
+  "sourceCompilerLogSha256": "03c0b0dc34ac7e01484a9d48eed6166c49c3e6fc8cd1f01d92590acbcd7d9d76",
+  "sourceCompilerNotes": 153,
+  "sourceCompilerPPQ": 384,
+  "explicitOmissions": [],
+  "sourceLinearNotesExact": true,
+  "sourceHarmonyValidatedByCompiler": true,
+  "approvedNotesUnchanged": true,
+  "approvedHarmonyUnchanged": true,
+  "approvedMeasureGeometryUnchanged": true,
+  "normalizedMidiNotesExact": true,
+  "normalizedMidiPPQ": 384,
+  "harmonicTonicReference": {
+    "melodyId": "openbook-a-night-in-tunisia-fake",
+    "canonicalSong": 153,
+    "canonicalTitle": "A Night in Tunisia",
+    "sourcePath": "src/openbook/a_night_in_tunisia.ly.tera",
+    "sourceVersion": "Fake",
+    "sourceSha256": "070d45e2fecf4e2fc84545237efca4e5c7bfa15e4770b8346545c02ae80157e8",
+    "sourceDeclaredKey": {
+      "root": "F",
+      "mode": "Major"
+    },
+    "normalizationTonic": {
+      "root": "D",
+      "mode": "Minor"
+    },
+    "evidence": {
+      "tonicChordEvents": [
+        {
+          "index": 2,
+          "symbol": "Dm6",
+          "start": 4.5,
+          "end": 8.5,
+          "sourceLine": 58
+        },
+        {
+          "index": 4,
+          "symbol": "Dm6",
+          "start": 12.5,
+          "end": 16.5,
+          "sourceLine": 58
+        },
+        {
+          "index": 6,
+          "symbol": "Dm6",
+          "start": 20.5,
+          "end": 24.5,
+          "sourceLine": 59
+        },
+        {
+          "index": 9,
+          "symbol": "Dm6",
+          "start": 28,
+          "end": 28.5,
+          "sourceLine": 59
+        },
+        {
+          "index": 10,
+          "symbol": "Dm6",
+          "start": 28.5,
+          "end": 32.5,
+          "sourceLine": 62
+        },
+        {
+          "index": 12,
+          "symbol": "Dm6",
+          "start": 36.5,
+          "end": 40.5,
+          "sourceLine": 58
+        },
+        {
+          "index": 14,
+          "symbol": "Dm6",
+          "start": 44.5,
+          "end": 48.5,
+          "sourceLine": 58
+        },
+        {
+          "index": 16,
+          "symbol": "Dm6",
+          "start": 52.5,
+          "end": 56.5,
+          "sourceLine": 59
+        },
+        {
+          "index": 19,
+          "symbol": "Dm6",
+          "start": 60,
+          "end": 60.5,
+          "sourceLine": 59
+        },
+        {
+          "index": 20,
+          "symbol": "Dm6",
+          "start": 60.5,
+          "end": 64.5,
+          "sourceLine": 65
+        },
+        {
+          "index": 32,
+          "symbol": "Dm6",
+          "start": 100.5,
+          "end": 104.5,
+          "sourceLine": 78
+        },
+        {
+          "index": 34,
+          "symbol": "Dm6",
+          "start": 108.5,
+          "end": 112.5,
+          "sourceLine": 78
+        },
+        {
+          "index": 36,
+          "symbol": "Dm6",
+          "start": 116.5,
+          "end": 120.5,
+          "sourceLine": 79
+        },
+        {
+          "index": 39,
+          "symbol": "DmM7",
+          "start": 124.5,
+          "end": 128.5,
+          "sourceLine": 79
+        }
+      ],
+      "dominantResolutions": [
+        {
+          "dominant": {
+            "index": 8,
+            "symbol": "A7b5b9",
+            "start": 26.5,
+            "end": 28,
+            "sourceLine": 59
+          },
+          "tonic": {
+            "index": 9,
+            "symbol": "Dm6",
+            "start": 28,
+            "end": 28.5,
+            "sourceLine": 59
+          }
+        },
+        {
+          "dominant": {
+            "index": 18,
+            "symbol": "A7b5b9",
+            "start": 58.5,
+            "end": 60,
+            "sourceLine": 59
+          },
+          "tonic": {
+            "index": 19,
+            "symbol": "Dm6",
+            "start": 60,
+            "end": 60.5,
+            "sourceLine": 59
+          }
+        },
+        {
+          "dominant": {
+            "index": 38,
+            "symbol": "A7b5",
+            "start": 122.5,
+            "end": 124.5,
+            "sourceLine": 79
+          },
+          "tonic": {
+            "index": 39,
+            "symbol": "DmM7",
+            "start": 124.5,
+            "end": 128.5,
+            "sourceLine": 79
+          }
+        }
+      ]
+    }
+  },
+  "notesSha256": "a0148d87abefd0050a3a0ed8339e0b9d3d1235f05c2ecd0401b6e118c608486f"
+}

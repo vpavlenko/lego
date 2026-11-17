@@ -8,7 +8,7 @@ import {buildLearnerBrickIndex} from '../src/music/brick-families.mjs';
 const {songs}=JSON.parse(fs.readFileSync(new URL('../dist/data/roadmaps.json',import.meta.url),'utf8'));
 const source=buildBrickIndex(songs),learner=buildLearnerBrickIndex(source);
 const named=name=>learner.bricks.find(b=>b.name===name||b.aliases.includes(name));
-const displayName=family=>BRICK_NAME_PROPOSALS.find(p=>p.cork===family)?.name??COMPOUND_DISPLAY_NAMES[family]??({'Whoopee':'vii°7/ii–ii–V–I','Whoopee Turnaround':'I–vii°/ii–ii–V'})[family]??family;
+const displayName=family=>BRICK_NAME_PROPOSALS.find(p=>p.cork===family)?.name??COMPOUND_DISPLAY_NAMES[family]??({'Whoopee':'vii°7/ii ii V I','Whoopee Turnaround':'I vii°/ii ii V'})[family]??family;
 const containing=name=>learner.bricks.find(b=>b.sourceNames.includes(name));
 const spans=index=>index.bricks.flatMap(b=>b.standards.flatMap(s=>s.passages.map(p=>JSON.stringify([s.song,p.row,p.startBar,p.endBar,p.start,p.end,p.label])))).sort();
 
@@ -80,7 +80,7 @@ test('previous wrapper-family routes and aliases resolve to the main family',()=
 
 test('combined original and additional source usages and every source route remain intact',()=>{
  const additional=JSON.parse(fs.readFileSync(new URL('../dist/data/additional-standards.json',import.meta.url),'utf8')).songs,combined=buildBrickIndex([...songs,...additional]),before=JSON.stringify(combined),index=buildLearnerBrickIndex(combined);
- assert.equal(index.bricks.length,215);assert.deepEqual(spans(index),spans(combined));assert.equal(JSON.stringify(combined),before);
+ assert.equal(index.bricks.length,217);assert.deepEqual(spans(index),spans(combined));assert.equal(JSON.stringify(combined),before);
  assert.equal(familyFor(index,'Dogleg Slow Launcher'),familyFor(index,'Dogleg Cadence'));
  const routes=new Map();for(const b of index.bricks)for(const slug of [b.slug,...b.aliasSlugs]){assert.ok(!routes.has(slug),slug);routes.set(slug,b);}
  for(const b of combined.bricks)for(const slug of [b.slug,...b.aliasSlugs])assert.equal(routes.get(slug),familyFor(index,b.name),slug);

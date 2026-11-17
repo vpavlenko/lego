@@ -1,0 +1,766 @@
+{
+  "status": "PASS",
+  "melodyId": "wikifonia-49-devil-may-care",
+  "sourceSha256": "59eb237fb21dff0f63cffa4032a6e7edaec2893ec32295e9b8bfa29619102187",
+  "noteCount": 127,
+  "totalBeats": 176,
+  "canonicalSong": 49,
+  "sourceFile": "/private/tmp/insights-more-batch21/sources/wikifonia-49-devil-may-care.mxl",
+  "midiFile": "/private/tmp/insights-more-batch21/melodies/wikifonia-49-devil-may-care.mid",
+  "originalArchiveSha256": "e7bce509462a73cee175308b6a3cdafa9effd6e8958b3ce03b4edb293cc6b691",
+  "originalMember": "Wikifonia/Bob Dorough, Terrell P. Kirk - Devil May Care.mxl",
+  "originalXmlSha256": "ca0d62d7bc4975ef33d42cea6ffd9ad18ec5cf73fbc7175789b6cd96868ee5b4",
+  "normalizedXmlSha256": "f88adfc5cfb087b0c8ca84a0311808638f164384917a96a68fa05e67f3804afc",
+  "sourceRawNotesExact": true,
+  "sourceRawMeasureGeometryExact": true,
+  "sourceRawPrimaryMeasures": [
+    {
+      "sourceNumber": "1",
+      "start": 0,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "2",
+      "start": 4,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "3",
+      "start": 8,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "4",
+      "start": 12,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "5",
+      "start": 16,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "6",
+      "start": 20,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "7",
+      "start": 24,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "8",
+      "start": 28,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "9",
+      "start": 32,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "10",
+      "start": 36,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "11",
+      "start": 40,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "12",
+      "start": 44,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "13",
+      "start": 48,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "14",
+      "start": 52,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "15",
+      "start": 56,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "16",
+      "start": 60,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "17",
+      "start": 64,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "18",
+      "start": 68,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "19",
+      "start": 72,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "20",
+      "start": 76,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "21",
+      "start": 80,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "22",
+      "start": 84,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "23",
+      "start": 88,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "24",
+      "start": 92,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "25",
+      "start": 96,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "26",
+      "start": 100,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "27",
+      "start": 104,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "28",
+      "start": 108,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "29",
+      "start": 112,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "30",
+      "start": 116,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "31",
+      "start": 120,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "32",
+      "start": 124,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "33",
+      "start": 128,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "34",
+      "start": 132,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "35",
+      "start": 136,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "36",
+      "start": 140,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "37",
+      "start": 144,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "38",
+      "start": 148,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "39",
+      "start": 152,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "40",
+      "start": 156,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "41",
+      "start": 160,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "42",
+      "start": 164,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "43",
+      "start": 168,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "44",
+      "start": 172,
+      "duration": 4
+    }
+  ],
+  "onlyPitchedVoice": "1",
+  "secondaryVoiceRestOnly": true,
+  "noClusters": true,
+  "noGraceNotes": true,
+  "exactHarmonyViaMusicXml": true,
+  "removedProvedHarmonyMirrors": [
+    [
+      "1",
+      6,
+      2
+    ],
+    [
+      "2",
+      3,
+      2
+    ],
+    [
+      "3",
+      4,
+      2
+    ],
+    [
+      "4",
+      3,
+      2
+    ],
+    [
+      "9",
+      5,
+      2
+    ],
+    [
+      "10",
+      3,
+      2
+    ],
+    [
+      "11",
+      3,
+      2
+    ],
+    [
+      "16",
+      2,
+      2
+    ],
+    [
+      "23",
+      3,
+      4
+    ],
+    [
+      "23",
+      4,
+      6
+    ],
+    [
+      "23",
+      7,
+      2
+    ],
+    [
+      "24",
+      3,
+      2
+    ],
+    [
+      "32",
+      3,
+      4
+    ],
+    [
+      "32",
+      4,
+      6
+    ],
+    [
+      "32",
+      7,
+      2
+    ],
+    [
+      "33",
+      5,
+      2
+    ],
+    [
+      "34",
+      4,
+      2
+    ],
+    [
+      "35",
+      5,
+      4
+    ],
+    [
+      "35",
+      6,
+      6
+    ],
+    [
+      "35",
+      9,
+      2
+    ],
+    [
+      "36",
+      3,
+      2
+    ],
+    [
+      "37",
+      6,
+      2
+    ]
+  ],
+  "normalizedMidiNotesExact": true,
+  "independentRawDecoderFile": "/private/tmp/insights-more-batch21/prepare_xml.py",
+  "independentRawDecoderSha256": "75a8ed71a277a867b7881112aba32f74de65a38ddeaee5b33cc633169d4d6e5a",
+  "harmonicTonicReference": {
+    "canonicalSong": 49,
+    "canonicalTitle": "Devil May Care",
+    "canonicalRoadmapTonic": [
+      "A",
+      "Minor"
+    ],
+    "sourceDeclaredKey": {
+      "root": "Bb",
+      "mode": "Major",
+      "fifths": -2
+    },
+    "normalizationTonic": {
+      "root": "G",
+      "mode": "Minor"
+    },
+    "sourceSha256": "59eb237fb21dff0f63cffa4032a6e7edaec2893ec32295e9b8bfa29619102187",
+    "sourceMember": "Wikifonia/Bob Dorough, Terrell P. Kirk - Devil May Care.mxl",
+    "evidence": {
+      "tonicChordEvents": [
+        {
+          "index": 0,
+          "symbol": "Gm",
+          "start": 0,
+          "end": 2,
+          "sourceSymbol": "Gm"
+        },
+        {
+          "index": 4,
+          "symbol": "Gm",
+          "start": 8,
+          "end": 10,
+          "sourceSymbol": "Gm"
+        },
+        {
+          "index": 8,
+          "symbol": "Gm",
+          "start": 16,
+          "end": 20,
+          "sourceSymbol": "Gm"
+        },
+        {
+          "index": 12,
+          "symbol": "Gm",
+          "start": 32,
+          "end": 34,
+          "sourceSymbol": "Gm"
+        },
+        {
+          "index": 16,
+          "symbol": "Gm",
+          "start": 40,
+          "end": 42,
+          "sourceSymbol": "Gm"
+        },
+        {
+          "index": 21,
+          "symbol": "Gm",
+          "start": 56,
+          "end": 62,
+          "sourceSymbol": "Gm"
+        },
+        {
+          "index": 41,
+          "symbol": "Gm",
+          "start": 128,
+          "end": 130,
+          "sourceSymbol": "Gm"
+        },
+        {
+          "index": 45,
+          "symbol": "Gm",
+          "start": 136,
+          "end": 138,
+          "sourceSymbol": "Gm"
+        },
+        {
+          "index": 49,
+          "symbol": "Gm",
+          "start": 144,
+          "end": 146,
+          "sourceSymbol": "Gm"
+        },
+        {
+          "index": 55,
+          "symbol": "Gm6",
+          "start": 168,
+          "end": 176,
+          "sourceSymbol": "Gm6"
+        }
+      ],
+      "dominantResolutions": [
+        {
+          "dominant": {
+            "index": 3,
+            "symbol": "D7b9",
+            "start": 6,
+            "end": 8,
+            "sourceSymbol": "D7 add b9"
+          },
+          "tonic": {
+            "index": 4,
+            "symbol": "Gm",
+            "start": 8,
+            "end": 10,
+            "sourceSymbol": "Gm"
+          }
+        },
+        {
+          "dominant": {
+            "index": 7,
+            "symbol": "D7b9",
+            "start": 14,
+            "end": 16,
+            "sourceSymbol": "D7 add b9"
+          },
+          "tonic": {
+            "index": 8,
+            "symbol": "Gm",
+            "start": 16,
+            "end": 20,
+            "sourceSymbol": "Gm"
+          }
+        },
+        {
+          "dominant": {
+            "index": 11,
+            "symbol": "D7b9",
+            "start": 28,
+            "end": 32,
+            "sourceSymbol": "D7 add b9"
+          },
+          "tonic": {
+            "index": 12,
+            "symbol": "Gm",
+            "start": 32,
+            "end": 34,
+            "sourceSymbol": "Gm"
+          }
+        },
+        {
+          "dominant": {
+            "index": 15,
+            "symbol": "D7b9",
+            "start": 38,
+            "end": 40,
+            "sourceSymbol": "D7 add b9"
+          },
+          "tonic": {
+            "index": 16,
+            "symbol": "Gm",
+            "start": 40,
+            "end": 42,
+            "sourceSymbol": "Gm"
+          }
+        },
+        {
+          "dominant": {
+            "index": 20,
+            "symbol": "D7#5b9",
+            "start": 52,
+            "end": 56,
+            "sourceSymbol": "D7 alter #5 add b9"
+          },
+          "tonic": {
+            "index": 21,
+            "symbol": "Gm",
+            "start": 56,
+            "end": 62,
+            "sourceSymbol": "Gm"
+          }
+        },
+        {
+          "dominant": {
+            "index": 40,
+            "symbol": "D7",
+            "start": 126,
+            "end": 128,
+            "sourceSymbol": "D7"
+          },
+          "tonic": {
+            "index": 41,
+            "symbol": "Gm",
+            "start": 128,
+            "end": 130,
+            "sourceSymbol": "Gm"
+          }
+        },
+        {
+          "dominant": {
+            "index": 44,
+            "symbol": "D7b9",
+            "start": 134,
+            "end": 136,
+            "sourceSymbol": "D7 add b9"
+          },
+          "tonic": {
+            "index": 45,
+            "symbol": "Gm",
+            "start": 136,
+            "end": 138,
+            "sourceSymbol": "Gm"
+          }
+        },
+        {
+          "dominant": {
+            "index": 48,
+            "symbol": "D7b9",
+            "start": 142,
+            "end": 144,
+            "sourceSymbol": "D7 add b9"
+          },
+          "tonic": {
+            "index": 49,
+            "symbol": "Gm",
+            "start": 144,
+            "end": 146,
+            "sourceSymbol": "Gm"
+          }
+        },
+        {
+          "dominant": {
+            "index": 54,
+            "symbol": "D7#5b9",
+            "start": 164,
+            "end": 168,
+            "sourceSymbol": "D7 alter #5 add b9"
+          },
+          "tonic": {
+            "index": 55,
+            "symbol": "Gm6",
+            "start": 168,
+            "end": 176,
+            "sourceSymbol": "Gm6"
+          }
+        }
+      ],
+      "canonicalRoadmap": {
+        "tonic": [
+          "A",
+          "Minor"
+        ]
+      },
+      "pitchBasis": "Direct source MusicXML chord symbols; these pitch arrays represent encoded harmony semantics, not an encoded accompaniment performance"
+    },
+    "basis": "Recurring explicitly notated G-minor chords and adjacent D7-to-Gm resolutions establish this source arrangement in G minor; the literal B-flat-major signature and unchanged A-minor roadmap are retained independently.",
+    "melodyId": "wikifonia-49-devil-may-care",
+    "sourcePath": "Wikifonia/Bob Dorough, Terrell P. Kirk - Devil May Care.mxl",
+    "sourceVersion": "Wikifonia",
+    "sourceTransposition": {
+      "canonicalTonic": [
+        "A",
+        "Minor"
+      ],
+      "semitones": 10
+    }
+  },
+  "sourceSerializationReview": {
+    "policy": "Drop only semantically identical harmony mirrors after a complete four-beat primary voice or repeated at the exact same valid in-bar onset. All primary melody/rest events and original root/kind/bass labels are unchanged.",
+    "removed": [
+      {
+        "measure": "1",
+        "at": 2,
+        "kind": "identical-in-measure-voice-mirror",
+        "sourceChild": 6
+      },
+      {
+        "measure": "2",
+        "at": 2,
+        "kind": "identical-in-measure-voice-mirror",
+        "sourceChild": 3
+      },
+      {
+        "measure": "3",
+        "at": 2,
+        "kind": "identical-in-measure-voice-mirror",
+        "sourceChild": 4
+      },
+      {
+        "measure": "4",
+        "at": 2,
+        "kind": "identical-in-measure-voice-mirror",
+        "sourceChild": 3
+      },
+      {
+        "measure": "9",
+        "at": 2,
+        "kind": "identical-in-measure-voice-mirror",
+        "sourceChild": 5
+      },
+      {
+        "measure": "10",
+        "at": 2,
+        "kind": "identical-in-measure-voice-mirror",
+        "sourceChild": 3
+      },
+      {
+        "measure": "11",
+        "at": 2,
+        "kind": "identical-in-measure-voice-mirror",
+        "sourceChild": 3
+      },
+      {
+        "measure": "16",
+        "at": 2,
+        "kind": "identical-in-measure-voice-mirror",
+        "sourceChild": 2
+      },
+      {
+        "measure": "23",
+        "at": 4,
+        "kind": "identical-voice-mirror-after-full-primary-measure",
+        "matchesSourceChild": 0,
+        "sourceChild": 3
+      },
+      {
+        "measure": "23",
+        "at": 6,
+        "kind": "identical-voice-mirror-after-full-primary-measure",
+        "matchesSourceChild": 1,
+        "sourceChild": 4
+      },
+      {
+        "measure": "23",
+        "at": 2,
+        "kind": "identical-in-measure-voice-mirror",
+        "sourceChild": 7
+      },
+      {
+        "measure": "24",
+        "at": 2,
+        "kind": "identical-in-measure-voice-mirror",
+        "sourceChild": 3
+      },
+      {
+        "measure": "32",
+        "at": 4,
+        "kind": "identical-voice-mirror-after-full-primary-measure",
+        "matchesSourceChild": 0,
+        "sourceChild": 3
+      },
+      {
+        "measure": "32",
+        "at": 6,
+        "kind": "identical-voice-mirror-after-full-primary-measure",
+        "matchesSourceChild": 1,
+        "sourceChild": 4
+      },
+      {
+        "measure": "32",
+        "at": 2,
+        "kind": "identical-in-measure-voice-mirror",
+        "sourceChild": 7
+      },
+      {
+        "measure": "33",
+        "at": 2,
+        "kind": "identical-in-measure-voice-mirror",
+        "sourceChild": 5
+      },
+      {
+        "measure": "34",
+        "at": 2,
+        "kind": "identical-in-measure-voice-mirror",
+        "sourceChild": 4
+      },
+      {
+        "measure": "35",
+        "at": 4,
+        "kind": "identical-voice-mirror-after-full-primary-measure",
+        "matchesSourceChild": 0,
+        "sourceChild": 5
+      },
+      {
+        "measure": "35",
+        "at": 6,
+        "kind": "identical-voice-mirror-after-full-primary-measure",
+        "matchesSourceChild": 2,
+        "sourceChild": 6
+      },
+      {
+        "measure": "35",
+        "at": 2,
+        "kind": "identical-in-measure-voice-mirror",
+        "sourceChild": 9
+      },
+      {
+        "measure": "36",
+        "at": 2,
+        "kind": "identical-in-measure-voice-mirror",
+        "sourceChild": 3
+      },
+      {
+        "measure": "37",
+        "at": 2,
+        "kind": "identical-in-measure-voice-mirror",
+        "sourceChild": 6
+      }
+    ],
+    "originalXmlSha256": "ca0d62d7bc4975ef33d42cea6ffd9ad18ec5cf73fbc7175789b6cd96868ee5b4",
+    "normalizedXmlSha256": "f88adfc5cfb087b0c8ca84a0311808638f164384917a96a68fa05e67f3804afc",
+    "rawMelodyProof": "devil-harmony-dedup-proof.json",
+    "sourceNotesExact": true,
+    "rawPrimaryMeasureCount": 44,
+    "onlyPitchedVoice": "1",
+    "secondaryVoiceRestOnly": true
+  },
+  "notesSha256": "eace25813f2b292d551c41ec7c852c3fb1e1a19891faed708d6e9cd7ffb8e031"
+}

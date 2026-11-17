@@ -1,0 +1,230 @@
+{
+  "status": "PASS",
+  "melodyId": "openbook-you-d-be-so-nice-to-come-home-to-fake",
+  "sourceSha256": "d8fde32166338e9cf0680694845a403f688321009643685c8b3f8158d00b5dc3",
+  "noteCount": 66,
+  "totalBeats": 130,
+  "canonicalSong": 240,
+  "sourceFile": "/private/tmp/insights-pickup-recovery/book-openbook-adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/youd_be_so_nice_to_come_home_to.ly.tera",
+  "midiFile": "/private/tmp/insights-more-batch21/melodies/openbook-you-d-be-so-nice-to-come-home-to-fake.mid",
+  "compilerFile": "/private/tmp/insights-more-batch21/compiler/import-openbook-melodies.py",
+  "compilerSha256": "72fcfa3cbd860887593168e664cb90cafd3b77063574a34d7c83e8a4838b34bf",
+  "sourceCompilerMidiFile": "/private/tmp/insights-more-batch21/compiled/openbook-you-d-be-so-nice-to-come-home-to-fake/youd-be-so-nice-to-come-home-to-ly-fake.midi",
+  "sourceCompilerMidiSha256": "e3fcc77532cebe4b727a30bc485ba61e699f0aaca2c48a886274d32a06dbfc4b",
+  "sourceCompilerLog": "/private/tmp/insights-more-batch21/compiled/openbook-you-d-be-so-nice-to-come-home-to-fake/youd-be-so-nice-to-come-home-to-ly-fake.log",
+  "sourceCompilerLogSha256": "8bcb35160d50655352e420cc446d143d4398fc8fdca215f2de694012e32e9068",
+  "sourceCompilerNotes": 66,
+  "sourceCompilerPPQ": 384,
+  "explicitOmissions": [],
+  "sourceLinearNotesExact": true,
+  "sourceHarmonyValidatedByCompiler": true,
+  "approvedNotesUnchanged": true,
+  "approvedHarmonyUnchanged": true,
+  "approvedMeasureGeometryUnchanged": true,
+  "normalizedMidiNotesExact": true,
+  "normalizedMidiPPQ": 10080,
+  "harmonicTonicReference": {
+    "melodyId": "openbook-you-d-be-so-nice-to-come-home-to-fake",
+    "canonicalSong": 240,
+    "sourcePath": "src/openbook/youd_be_so_nice_to_come_home_to.ly.tera",
+    "sourceVersion": "Fake",
+    "sourceSha256": "d8fde32166338e9cf0680694845a403f688321009643685c8b3f8158d00b5dc3",
+    "sourceDeclaredKey": {
+      "root": "C",
+      "mode": "Major"
+    },
+    "keyDirectives": [
+      {
+        "line": 89,
+        "text": "\\key c \\major"
+      }
+    ],
+    "normalizationTonic": {
+      "root": "A",
+      "mode": "Minor"
+    },
+    "evidence": {
+      "canonicalRoadmap": {
+        "source": "InsightsRoadmapsConsolidated.pdf",
+        "song": 240,
+        "title": "You'd Be So Nice to Come Home To",
+        "tonic": [
+          "G",
+          "Minor"
+        ]
+      },
+      "tonicChordEvents": [
+        {
+          "symbol": "Am",
+          "start": 2,
+          "end": 6,
+          "sourceLine": 60,
+          "index": 1
+        },
+        {
+          "symbol": "Am",
+          "start": 10,
+          "end": 12,
+          "sourceLine": 60,
+          "index": 4
+        },
+        {
+          "symbol": "Am",
+          "start": 14,
+          "end": 18,
+          "sourceLine": 60,
+          "index": 6
+        },
+        {
+          "symbol": "Am",
+          "start": 46,
+          "end": 48,
+          "sourceLine": 66,
+          "index": 16
+        },
+        {
+          "symbol": "Am7/G",
+          "start": 48,
+          "end": 50,
+          "sourceLine": 66,
+          "index": 17
+        },
+        {
+          "symbol": "Am",
+          "start": 66,
+          "end": 70,
+          "sourceLine": 72,
+          "index": 24
+        },
+        {
+          "symbol": "Am",
+          "start": 74,
+          "end": 76,
+          "sourceLine": 72,
+          "index": 27
+        },
+        {
+          "symbol": "Am",
+          "start": 78,
+          "end": 82,
+          "sourceLine": 72,
+          "index": 29
+        }
+      ],
+      "dominantResolutions": [
+        {
+          "dominant": {
+            "symbol": "E7",
+            "start": 8,
+            "end": 10,
+            "sourceLine": 60,
+            "index": 3
+          },
+          "tonic": {
+            "symbol": "Am",
+            "start": 10,
+            "end": 12,
+            "sourceLine": 60,
+            "index": 4
+          }
+        },
+        {
+          "dominant": {
+            "symbol": "E7",
+            "start": 12,
+            "end": 14,
+            "sourceLine": 60,
+            "index": 5
+          },
+          "tonic": {
+            "symbol": "Am",
+            "start": 14,
+            "end": 18,
+            "sourceLine": 60,
+            "index": 6
+          }
+        },
+        {
+          "dominant": {
+            "symbol": "E7b9",
+            "start": 42,
+            "end": 46,
+            "sourceLine": 66,
+            "index": 15
+          },
+          "tonic": {
+            "symbol": "Am",
+            "start": 46,
+            "end": 48,
+            "sourceLine": 66,
+            "index": 16
+          }
+        },
+        {
+          "dominant": {
+            "symbol": "E7",
+            "start": 62,
+            "end": 66,
+            "sourceLine": 67,
+            "index": 23
+          },
+          "tonic": {
+            "symbol": "Am",
+            "start": 66,
+            "end": 70,
+            "sourceLine": 72,
+            "index": 24
+          }
+        },
+        {
+          "dominant": {
+            "symbol": "E7",
+            "start": 72,
+            "end": 74,
+            "sourceLine": 72,
+            "index": 26
+          },
+          "tonic": {
+            "symbol": "Am",
+            "start": 74,
+            "end": 76,
+            "sourceLine": 72,
+            "index": 27
+          }
+        },
+        {
+          "dominant": {
+            "symbol": "E7",
+            "start": 76,
+            "end": 78,
+            "sourceLine": 72,
+            "index": 28
+          },
+          "tonic": {
+            "symbol": "Am",
+            "start": 78,
+            "end": 82,
+            "sourceLine": 72,
+            "index": 29
+          }
+        }
+      ],
+      "ending": {
+        "symbol": "C",
+        "start": 122,
+        "end": 130,
+        "sourceLine": 79,
+        "index": 43
+      },
+      "basis": "Recurring compiled minor-tonic chords and adjacent source V7-i resolutions establish the source home; literal key signature, all notes and all harmony remain unchanged."
+    },
+    "sourceTransposition": {
+      "canonicalTonic": [
+        "G",
+        "Minor"
+      ],
+      "semitones": 2
+    }
+  },
+  "notesSha256": "0cb818910d09cbb66ec3bfcce244e9d34bf962f692330c4a6b439a6e03e164e1"
+}

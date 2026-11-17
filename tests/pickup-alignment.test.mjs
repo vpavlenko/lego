@@ -14,7 +14,7 @@ const read=p=>JSON.parse(fs.readFileSync(new URL('../'+p,import.meta.url),'utf8'
 const qualities=read('src/music/chord-vocabulary.json').qualities,all=read('dist/data/openbook-melodies.json').entries,entries=all.filter(e=>e.pickupBeats>0),songs=read('dist/data/additional-standards.json').songs,EPS=1e-7;
 const near=(a,b)=>assert.ok(Math.abs(a-b)<EPS,`${a} != ${b}`);
 test('all pickup arrangements retain exact authored note/harmony times and truthful measure boundaries',()=>{
- assert.equal(entries.length,60);
+ assert.equal(entries.length,72);
  for(const entry of entries){
   const song=songs.find(s=>s.melodyId===entry.id);assert.ok(song,entry.title);assert.ok(Number.isInteger(song.arrangementOf),entry.title);
   assert.deepEqual(song.measureMap,entry.measures);near(song.bars*entry.barBeats,entry.totalBeats);

@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "melodyId": "openbook-makin-whoopee-wikifonia",
+  "sourceSha256": "d22b79bfabd5ff75dd772968af267d0b17c44c681cdf77f535226133d909db96",
+  "noteCount": 122,
+  "totalBeats": 131,
+  "canonicalSong": 131,
+  "sourceFile": "/private/tmp/insights-pickup-recovery/book-openbook-adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/makin_whoopee.ly.tera",
+  "midiFile": "/private/tmp/insights-more-batch21/melodies/openbook-makin-whoopee-wikifonia.mid",
+  "compilerFile": "/private/tmp/insights-more-batch21/compiler/import-openbook-melodies.py",
+  "compilerSha256": "72fcfa3cbd860887593168e664cb90cafd3b77063574a34d7c83e8a4838b34bf",
+  "sourceCompilerMidiFile": "/private/tmp/insights-more-batch21/compiled/openbook-makin-whoopee-wikifonia/makin-whoopee-ly-wikifonia.midi",
+  "sourceCompilerMidiSha256": "401700383680ed9db6f76b9d755610fb52ef58142b3925dcaf625d8d06ef817a",
+  "sourceCompilerLog": "/private/tmp/insights-more-batch21/compiled/openbook-makin-whoopee-wikifonia/makin-whoopee-ly-wikifonia.log",
+  "sourceCompilerLogSha256": "d53d6e392a35030b684b06150fc43a2169665b8dd7e6d65bff8ce614f7c92920",
+  "sourceCompilerNotes": 122,
+  "sourceCompilerPPQ": 384,
+  "explicitOmissions": [],
+  "sourceLinearNotesExact": true,
+  "sourceHarmonyValidatedByCompiler": true,
+  "approvedNotesUnchanged": true,
+  "approvedHarmonyUnchanged": true,
+  "approvedMeasureGeometryUnchanged": true,
+  "normalizedMidiNotesExact": true,
+  "normalizedMidiPPQ": 10080,
+  "repeatedPartialReview": {
+    "sourceSha256": "d22b79bfabd5ff75dd772968af267d0b17c44c681cdf77f535226133d909db96",
+    "sourcePath": "src/openbook/makin_whoopee.ly.tera",
+    "sourceVersion": "Wikifonia",
+    "partialEvents": [
+      {
+        "start": 0,
+        "duration": 1.5
+      },
+      {
+        "start": 33.5,
+        "duration": 1.5
+      }
+    ],
+    "sourceFullMeasureCount": 32
+  },
+  "notesSha256": "b0098f57ccc95fb0dc282a97904e58a4c9c70a2d1f601e87b2f5a79bbc48b758"
+}

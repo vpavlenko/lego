@@ -1,53 +1,48 @@
 {
   "version": 1,
-  "charts": 486,
+  "charts": 507,
   "primaryStandards": 269,
   "originalCharts": 242,
-  "additionalCharts": 244,
-  "rawSourceIdentities": 349,
+  "additionalCharts": 265,
+  "rawSourceIdentities": 351,
   "coverage": {
-    "rawPassages": 9784,
-    "removedPassages": 2915,
-    "keptPassages": 6869,
-    "rawOccurrences": 9231,
-    "removedOccurrences": 2876,
-    "keptOccurrences": 6355,
+    "rawPassages": 10357,
+    "removedPassages": 3166,
+    "keptPassages": 7191,
+    "rawOccurrences": 9765,
+    "removedOccurrences": 3121,
+    "keptOccurrences": 6644,
     "reasons": {
       "single-harmony": {
-        "passages": 2261,
-        "occurrences": 2245
+        "passages": 2449,
+        "occurrences": 2431
       },
       "on-off-family": {
-        "passages": 654,
-        "occurrences": 631
+        "passages": 717,
+        "occurrences": 690
       }
     }
   },
   "reuse": {
-    "inputFamilies": 162,
-    "singleStandardFamilies": 39,
-    "reusableTargets": 123,
-    "mergedFamilies": 11,
+    "inputFamilies": 164,
+    "singleStandardFamilies": 38,
+    "reusableTargets": 126,
+    "mergedFamilies": 10,
     "removedFamilies": 28,
-    "outputFamilies": 123,
-    "rawPassages": 6869,
-    "mergedPassages": 22,
-    "removedPassages": 48,
-    "keptPassages": 6821,
+    "outputFamilies": 126,
+    "rawPassages": 7191,
+    "mergedPassages": 20,
+    "removedPassages": 46,
+    "keptPassages": 7145,
     "supportBasis": "distinct standards",
     "minimumTargetStandards": 2,
     "maxVariantDistance": 0.28,
     "ambiguityMargin": 0.025
   },
-  "definitions": 1589,
+  "definitions": 1650,
   "unresolvedOccurrences": 8,
-  "unchangedMusicalDataSha256": "cc2a60efe74d61c1ae82680da1e8b6834335a5ec28b600c1e27b8330d9457415",
+  "unchangedMusicalDataSha256": "9a29d7f1443b04fa9c784a38d7ccbbd14742ccc02c64d280e3c6ef38c76d320a",
   "decisions": [
-    {
-      "action": "remove",
-      "source": "Ascending Major CESH",
-      "reason": "no-clear-supported-harmonic-variant"
-    },
     {
       "action": "remove",
       "source": "Bemsha Turnaround 1",
@@ -96,7 +91,7 @@
     },
     {
       "action": "remove",
-      "source": "Dizzy Sub Turnaround",
+      "source": "Dizzy Cadence with bIII7",
       "reason": "no-clear-supported-harmonic-variant"
     },
     {
@@ -117,7 +112,7 @@
     {
       "action": "merge",
       "source": "Four Star",
-      "target": "♯ivø–VII7→iii–VI7→ii–V",
+      "target": "♯ivø VII7 iii VI7 ii V",
       "reason": "clear-supported-harmonic-variant"
     },
     {
@@ -144,7 +139,7 @@
     {
       "action": "merge",
       "source": "IV to II",
-      "target": "♯ivø–VII7→iii–VI7",
+      "target": "♯ivø VII7 iii VI7",
       "reason": "clear-supported-harmonic-variant"
     },
     {
@@ -174,6 +169,11 @@
       "source": "Nowhere...",
       "target": "Nowhere",
       "reason": "clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Passacaglia",
+      "reason": "no-clear-supported-harmonic-variant"
     },
     {
       "action": "remove",
@@ -215,7 +215,7 @@
     {
       "action": "merge",
       "source": "Starlight Dropback",
-      "target": "♯ivø–VII7→iii–VI7",
+      "target": "♯ivø VII7 iii VI7",
       "reason": "clear-supported-harmonic-variant"
     },
     {
@@ -232,12 +232,6 @@
       "action": "remove",
       "source": "To IV n Bird POT",
       "reason": "no-clear-supported-harmonic-variant"
-    },
-    {
-      "action": "merge",
-      "source": "To IV n Yak Turnaround",
-      "target": "v–I7→IV–♭VII7",
-      "reason": "clear-supported-harmonic-variant"
     },
     {
       "action": "remove",

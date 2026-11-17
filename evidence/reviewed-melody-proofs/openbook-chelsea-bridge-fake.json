@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "melodyId": "openbook-chelsea-bridge-fake",
+  "sourceSha256": "8d43e2d2719dae13650ab9f10aaf562fe6572fde2d611ab22c6c563fda600175",
+  "noteCount": 112,
+  "totalBeats": 127,
+  "canonicalSong": 35,
+  "sourceFile": "/private/tmp/insights-pickup-recovery/book-openbook-adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/chelsea_bridge.ly.tera",
+  "midiFile": "/private/tmp/insights-more-batch21/melodies/openbook-chelsea-bridge-fake.mid",
+  "compilerFile": "/private/tmp/insights-more-batch21/compiler/import-openbook-melodies.py",
+  "compilerSha256": "72fcfa3cbd860887593168e664cb90cafd3b77063574a34d7c83e8a4838b34bf",
+  "sourceCompilerMidiFile": "/private/tmp/insights-more-batch21/compiled/openbook-chelsea-bridge-fake/chelsea-bridge-ly-fake.midi",
+  "sourceCompilerMidiSha256": "e6cb24db4aea3d2003195023b4ac59479102e390e2d1d5eb407ba584ebe46417",
+  "sourceCompilerLog": "/private/tmp/insights-more-batch21/compiled/openbook-chelsea-bridge-fake/chelsea-bridge-ly-fake.log",
+  "sourceCompilerLogSha256": "7d8b74cde5d3a97c3956e8b97ad1e706fad7450f49d2c62b0e0b30cb7fbcbca8",
+  "sourceCompilerNotes": 112,
+  "sourceCompilerPPQ": 384,
+  "explicitOmissions": [],
+  "sourceLinearNotesExact": true,
+  "sourceHarmonyValidatedByCompiler": true,
+  "approvedNotesUnchanged": true,
+  "approvedHarmonyUnchanged": true,
+  "approvedMeasureGeometryUnchanged": true,
+  "normalizedMidiNotesExact": true,
+  "normalizedMidiPPQ": 10080,
+  "sourceArrangementReference": {
+    "canonicalSong": 35,
+    "canonicalTitle": "Chelsea Bridge",
+    "canonicalRoadmapTonic": [
+      "Bb",
+      "Minor"
+    ],
+    "sourceDeclaredKey": {
+      "root": "Db",
+      "mode": "Major"
+    },
+    "normalizationTonic": {
+      "root": "Db",
+      "mode": "Major"
+    },
+    "sourceSha256": "8d43e2d2719dae13650ab9f10aaf562fe6572fde2d611ab22c6c563fda600175",
+    "sourcePath": "src/openbook/chelsea_bridge.ly.tera",
+    "sourceVersion": "Fake",
+    "melodyId": "openbook-chelsea-bridge-fake",
+    "evidence": {
+      "tonicChordEvents": [
+        {
+          "index": 8,
+          "symbol": "Db6",
+          "start": 27,
+          "end": 31,
+          "sourceLine": 63
+        },
+        {
+          "index": 19,
+          "symbol": "Db6",
+          "start": 59,
+          "end": 63,
+          "sourceLine": 63
+        },
+        {
+          "index": 20,
+          "symbol": "Db6",
+          "start": 63,
+          "end": 65,
+          "sourceLine": 69
+        },
+        {
+          "index": 47,
+          "symbol": "Db6",
+          "start": 123,
+          "end": 127,
+          "sourceLine": 83
+        }
+      ],
+      "dominantResolutions": [
+        {
+          "dominant": {
+            "index": 7,
+            "symbol": "Ab13",
+            "start": 23,
+            "end": 27,
+            "sourceLine": 63
+          },
+          "tonic": {
+            "index": 8,
+            "symbol": "Db6",
+            "start": 27,
+            "end": 31,
+            "sourceLine": 63
+          }
+        },
+        {
+          "dominant": {
+            "index": 18,
+            "symbol": "Ab13",
+            "start": 55,
+            "end": 59,
+            "sourceLine": 63
+          },
+          "tonic": {
+            "index": 19,
+            "symbol": "Db6",
+            "start": 59,
+            "end": 63,
+            "sourceLine": 63
+          }
+        },
+        {
+          "dominant": {
+            "index": 46,
+            "symbol": "Ab13",
+            "start": 119,
+            "end": 123,
+            "sourceLine": 83
+          },
+          "tonic": {
+            "index": 47,
+            "symbol": "Db6",
+            "start": 123,
+            "end": 127,
+            "sourceLine": 83
+          }
+        }
+      ],
+      "finalChord": {
+        "index": 47,
+        "symbol": "Db6",
+        "start": 123,
+        "end": 127,
+        "sourceLine": 83
+      }
+    },
+    "basis": "Literal authored Db-major key, three complete Ab13→Db6 cadences and final Db6. This independent source arrangement retains Db-major normalization; the original Bb-minor roadmap is unchanged. No relative-key guess or source note edit."
+  },
+  "notesSha256": "09212f08825571013b65d52a6f5c5d0d36d78378d2dad51ade55d1875a8b7f03"
+}

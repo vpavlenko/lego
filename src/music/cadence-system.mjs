@@ -63,7 +63,7 @@ export function popularBrickVariant(variants,songs){
 export function structuralSummary(definitions,{songs}={}){
  const variants=definitions.variants??[],variant=popularBrickVariant(variants,songs);if(!variant)return null;
  const chords=variant.structure?.chords??[],tokens=chords.map(chord=>({text:roman(chord.symbol,'C'),degree:chord.harmony?.[0]??pitch(chord.symbol),symbol:chord.symbol,harmony:chord.harmony}));
- return {slug:definitions.slug,variantId:variant.id,standards:variantPopularity(variant,songs),variantCount:variants.length,tokens,text:tokens.map(token=>token.text).join('–'),cadences:cadenceWindows(variant)};
+ return {slug:definitions.slug,variantId:variant.id,standards:variantPopularity(variant,songs),variantCount:variants.length,tokens,text:tokens.map(token=>token.text).join(' '),cadences:cadenceWindows(variant)};
 }
 /** A separate catalogue index; this supplements, rather than replaces, the
  * catalogue's existing Impro-Visor/family groups and source brick identities. */

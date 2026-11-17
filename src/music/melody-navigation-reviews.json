@@ -1,0 +1,310 @@
+{
+  "version": 1,
+  "sourceCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+  "plans": [
+    {
+      "canonicalSong": 89,
+      "canonicalTitle": "I Loves You Porgy",
+      "sourcePath": "src/openbook/i_loves_you_porgy.ly.tera",
+      "sourceSha256": "d2511ecc37e85b80ee6f38a109089ec7ac01dbd844bf928db9e3a754c6742548",
+      "sourceVersion": "Fake",
+      "linearTotalBeats": 65.5,
+      "playbackRanges": [
+        [
+          0,
+          65.5
+        ],
+        [
+          1.5,
+          33.5
+        ]
+      ],
+      "playbackTotalBeats": 97.5,
+      "compilerLandmarks": [
+        {
+          "pattern": "scripts.segno",
+          "at": 1.5
+        },
+        {
+          "pattern": "italic-markup.*\"Fine\"",
+          "end": 33.5
+        },
+        {
+          "pattern": "D.S.",
+          "end": 65.5
+        }
+      ]
+    },
+    {
+      "canonicalSong": 72,
+      "canonicalTitle": "A Ghost of a Chance",
+      "sourcePath": "src/openbook/a_ghost_of_a_chance.ly.tera",
+      "sourceSha256": "f5873dfcd56a340fffeb03f1a2ec6a71b928c599fb377c59a1d730082c1e7136",
+      "sourceVersion": "Fake",
+      "linearTotalBeats": 105.0,
+      "playbackRanges": [
+        [
+          0,
+          97
+        ],
+        [
+          1,
+          25
+        ],
+        [
+          97,
+          105
+        ]
+      ],
+      "playbackTotalBeats": 129,
+      "compilerLandmarks": [
+        {
+          "pattern": "scripts.segno",
+          "at": 1
+        },
+        {
+          "pattern": "\"To\" \"Coda\"",
+          "end": 25
+        },
+        {
+          "pattern": "D.S.",
+          "end": 97
+        }
+      ]
+    },
+    {
+      "canonicalSong": 120,
+      "canonicalTitle": "Let It Snow!",
+      "sourcePath": "src/openbook/let_it_snow_let_it_snow_let_it_snow.ly.tera",
+      "sourceSha256": "cc14099c856969cf72a8b59e55249e875d9feed9f41868c87327cb03209eed42",
+      "sourceVersion": "Fake",
+      "linearTotalBeats": 129.0,
+      "playbackRanges": [
+        [
+          0,
+          65
+        ],
+        [
+          97,
+          129
+        ],
+        [
+          65,
+          97
+        ]
+      ],
+      "playbackTotalBeats": 129,
+      "compilerLandmarks": [
+        {
+          "pattern": "\"To\" \"next\" \"Strain\"",
+          "at": 64
+        },
+        {
+          "pattern": "scripts.segno",
+          "at": 65
+        },
+        {
+          "pattern": "italic-markup.*\"Fine\"",
+          "end": 97
+        },
+        {
+          "pattern": "D.S.",
+          "end": 129
+        }
+      ],
+      "voltaReview": {
+        "firstPassVoltas": [
+          1,
+          2
+        ],
+        "returnVolta": 3,
+        "matchedMainPhraseRanges": [
+          [
+            1,
+            29
+          ],
+          [
+            65,
+            93
+          ]
+        ],
+        "instruction": "To next Strain after the second ending; D.S. al Fine returns with the third ending."
+      }
+    },
+    {
+      "canonicalSong": 51,
+      "canonicalTitle": "Don't Take Your Love From Me",
+      "sourcePath": "src/openbook/dont_take_your_love_from_me.ly.tera",
+      "sourceSha256": "ab33fbbfc97db08ba8241a79dc446a8a2dff5e5cf1563aa4ac3f0fb052049ac5",
+      "sourceVersion": "Fake",
+      "linearTotalBeats": 152,
+      "playbackRanges": [
+        [
+          0,
+          112
+        ],
+        [
+          48,
+          72
+        ],
+        [
+          112,
+          152
+        ]
+      ],
+      "playbackTotalBeats": 176,
+      "sourceLandmarks": [
+        {
+          "sourceLine": 113,
+          "sourceText": "g4^\\markup { \\musicglyph #\"scripts.segno\" } e e8 d4 d8~ | d2. c8 d | b4 a' a2~ | a2. a8 b |",
+          "attachedNoteBeat": 48,
+          "navigationBoundary": 48
+        },
+        {
+          "sourceLine": 114,
+          "sourceText": "a4 f f8 e4 e8~ | e2. d8 e^\\markup { To Coda \\musicglyph #\"scripts.coda\" } | c4 b' b2~ | b1 |",
+          "attachedNoteBeat": 71.5,
+          "navigationBoundary": 72
+        },
+        {
+          "sourceLine": 118,
+          "sourceText": "c4 d, f e | d2. e4 | \\tuplet 3/2 { g4 g g } bes4. aes8 | g2. g8 a^\\markup { D.S. al Coda } |",
+          "attachedNoteBeat": 111.5,
+          "navigationBoundary": 112
+        },
+        {
+          "sourceLine": 121,
+          "sourceText": "c,4^\\markup { \\musicglyph #\"scripts.coda\" } c' c2~ | c2. c4 | e4 d d c | c aes8 aes~ aes2 | r4 d8 c g4 e |",
+          "attachedNoteBeat": 112,
+          "navigationBoundary": 112
+        }
+      ],
+      "cutValidation": "Every route boundary lies at a compiled chord and notated measure boundary; no note or chord is clipped. First pass plays introduction,A,B; D.S. returns to A at48; the second pass jumps after ToCoda measure at72 to written Coda112.",
+      "compilerLandmarks": [
+        {
+          "pattern": "scripts.segno",
+          "at": 48
+        },
+        {
+          "pattern": "\"To\" \"Coda\"",
+          "end": 72
+        },
+        {
+          "pattern": "D.S.",
+          "end": 112
+        },
+        {
+          "pattern": "scripts.coda",
+          "at": 112
+        }
+      ]
+    },
+    {
+      "canonicalSong": 158,
+      "canonicalTitle": "On the Street Where You Live",
+      "sourcePath": "src/openbook/on_the_street_where_you_live.ly.tera",
+      "sourceSha256": "d59db049f09a8fb0f8e1c5f06413036f33afef3fb0b15d1624a849a837fef9bc",
+      "sourceVersion": "Fake",
+      "linearTotalBeats": 226.0,
+      "playbackRanges": [
+        [
+          0,
+          194
+        ],
+        [
+          2,
+          34
+        ],
+        [
+          194,
+          226
+        ]
+      ],
+      "playbackTotalBeats": 258,
+      "compilerLandmarks": [
+        {
+          "pattern": "\"To\" \"Coda\"",
+          "end": 34
+        },
+        {
+          "pattern": "D.[SC].",
+          "end": 194
+        },
+        {
+          "pattern": "scripts.segno",
+          "at": 2
+        }
+      ]
+    },
+    {
+      "canonicalSong": 189,
+      "canonicalTitle": "Solitude",
+      "sourcePath": "src/openbook/solitude.ly.tera",
+      "sourceSha256": "1c929f7776b9bd827fe8610dc1c608135511c44ea6f63539cf085b82506667c4",
+      "sourceVersion": "Fake",
+      "linearTotalBeats": 106.0,
+      "playbackRanges": [
+        [
+          0,
+          98
+        ],
+        [
+          2,
+          26
+        ],
+        [
+          98,
+          106
+        ]
+      ],
+      "playbackTotalBeats": 130,
+      "compilerLandmarks": [
+        {
+          "pattern": "\"To\" \"Coda\"",
+          "end": 26
+        },
+        {
+          "pattern": "D.[SC].",
+          "end": 98
+        },
+        {
+          "pattern": "scripts.segno",
+          "at": 2
+        }
+      ]
+    },
+    {
+      "canonicalSong": 221,
+      "canonicalTitle": "Violets for Your Furs",
+      "sourcePath": "src/openbook/violets_for_your_furs.ly.tera",
+      "sourceSha256": "3735561328e64fbbe7d2f3e8a9fae1132d8b2b4b016a1c19aebe5309f8a5a6f7",
+      "sourceVersion": "Fake",
+      "linearTotalBeats": 104.0,
+      "playbackRanges": [
+        [
+          0,
+          64
+        ],
+        [
+          0,
+          24
+        ],
+        [
+          64,
+          104
+        ]
+      ],
+      "playbackTotalBeats": 128,
+      "compilerLandmarks": [
+        {
+          "pattern": "\"To\" \"Coda\"",
+          "end": 24
+        },
+        {
+          "pattern": "D.[SC].",
+          "end": 64
+        }
+      ]
+    }
+  ]
+}

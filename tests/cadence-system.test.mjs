@@ -20,7 +20,7 @@ test('generalization identifies dogleg/repetition/altered-minor cells without fa
 });
 test('all catalogue bricks have source-derived summaries; exact and generalized indexes retain every matching source window',()=>{
  const read=file=>JSON.parse(fs.readFileSync(new URL('../'+file,import.meta.url),'utf8')),bricks=read('dist/data/bricks.json').bricks,songs=read('dist/data/standards.json').songs,definitions=bricks.map(brick=>read('dist/data/brick-variants/'+brick.slug+'.json')),before=JSON.stringify(definitions),system=buildCadenceSystem(definitions,{songs});
- assert.equal(Object.keys(system.summaries).length,bricks.length);for(const definition of definitions){const summary=structuralSummary(definition,{songs});assert.ok(summary);const variant=definition.variants.find(v=>v.id===summary.variantId);assert.equal(summary.tokens.length,variant.structure.chords.length);assert.equal(summary.text,summary.tokens.map(t=>t.text).join('–'));}
+ assert.equal(Object.keys(system.summaries).length,bricks.length);for(const definition of definitions){const summary=structuralSummary(definition,{songs});assert.ok(summary);const variant=definition.variants.find(v=>v.id===summary.variantId);assert.equal(summary.tokens.length,variant.structure.chords.length);assert.equal(summary.text,summary.tokens.map(t=>t.text).join(' '));}
  const expected=definitions.reduce((sum,d)=>sum+d.variants.reduce((n,v)=>n+cadenceWindows(v).length,0),0),actual=system.rows.reduce((sum,row)=>sum+row.matches.length,0)+system.generalized.reduce((sum,g)=>sum+g.matches.length,0);assert.equal(actual,expected);assert.equal(JSON.stringify(definitions),before);
  for(const row of system.rows)for(const match of row.matches)assert.deepEqual(match.roots,row.roots);
 });

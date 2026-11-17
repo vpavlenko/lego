@@ -1,0 +1,597 @@
+{
+  "status": "PASS",
+  "melodyId": "wikifonia-santa-claus-is-coming-to-town-haven-gillespie-j-fred-coots",
+  "sourceSha256": "63530ec5945189297024888757459461e7e4c7414712002a18b46d83092692ab",
+  "noteCount": 111,
+  "totalBeats": 128.5,
+  "canonicalSong": 177,
+  "sourceFile": "/private/tmp/insights-more-batch21/sources/wikifonia-santa-claus-is-coming-to-town-haven-gillespie-j-fred-coots.mxl",
+  "midiFile": "/private/tmp/insights-more-batch21/melodies/wikifonia-santa-claus-is-coming-to-town-haven-gillespie-j-fred-coots.mid",
+  "originalArchiveSha256": "e7bce509462a73cee175308b6a3cdafa9effd6e8958b3ce03b4edb293cc6b691",
+  "originalMember": "Wikifonia/Haven Gillespie, J. Fred Coots - Santa Claus Is Coming To Town.mxl",
+  "originalXmlSha256": "02c33894802ec2b5ab7a72ae48047f1c8a7ae5659a6f16bd0a98a35cef349fbf",
+  "normalizedXmlSha256": "dbb6c73fc4e4369fff30988b1fa3aa4327630a294f6046808a93c8dff174f9b1",
+  "sourceRawNotesExact": true,
+  "sourceRawMeasureGeometryExact": true,
+  "sourceRawPrimaryMeasures": [
+    {
+      "sourceNumber": "1",
+      "start": 0,
+      "duration": 0.5
+    },
+    {
+      "sourceNumber": "2",
+      "start": 0.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "3",
+      "start": 4.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "4",
+      "start": 8.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "5",
+      "start": 12.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "6",
+      "start": 16.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "7",
+      "start": 20.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "8",
+      "start": 24.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "9",
+      "start": 28.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "10",
+      "start": 32.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "11",
+      "start": 36.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "12",
+      "start": 40.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "13",
+      "start": 44.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "14",
+      "start": 48.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "15",
+      "start": 52.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "16",
+      "start": 56.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "17",
+      "start": 60.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "18",
+      "start": 64.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "19",
+      "start": 68.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "20",
+      "start": 72.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "21",
+      "start": 76.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "22",
+      "start": 80.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "23",
+      "start": 84.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "24",
+      "start": 88.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "25",
+      "start": 92.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "26",
+      "start": 96.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "27",
+      "start": 100.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "28",
+      "start": 104.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "29",
+      "start": 108.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "30",
+      "start": 112.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "31",
+      "start": 116.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "32",
+      "start": 120.5,
+      "duration": 4
+    },
+    {
+      "sourceNumber": "33",
+      "start": 124.5,
+      "duration": 4
+    }
+  ],
+  "onlyPitchedVoice": "1",
+  "secondaryVoiceRestOnly": true,
+  "noClusters": true,
+  "noGraceNotes": true,
+  "exactHarmonyViaMusicXml": true,
+  "removedProvedHarmonyMirrors": [],
+  "normalizedMidiNotesExact": true,
+  "independentRawDecoderFile": "/private/tmp/insights-more-batch21/prepare_xml.py",
+  "independentRawDecoderSha256": "75a8ed71a277a867b7881112aba32f74de65a38ddeaee5b33cc633169d4d6e5a",
+  "musicXmlMeasureReview": {
+    "sourceSha256": "63530ec5945189297024888757459461e7e4c7414712002a18b46d83092692ab",
+    "member": "Wikifonia/Haven Gillespie, J. Fred Coots - Santa Claus Is Coming To Town.mxl",
+    "extractedXmlSha256": "02c33894802ec2b5ab7a72ae48047f1c8a7ae5659a6f16bd0a98a35cef349fbf",
+    "measures": [
+      {
+        "sourceNumber": "0",
+        "start": 0,
+        "duration": 0.5,
+        "paddingLeft": 3.5,
+        "writtenSourceNumber": "1",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "1",
+        "start": 0.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "2",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "2",
+        "start": 4.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "3",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "3",
+        "start": 8.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "4",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "4",
+        "start": 12.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "5",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "5",
+        "start": 16.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "6",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "6",
+        "start": 20.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "7",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "7",
+        "start": 24.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "8",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "8",
+        "start": 28.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "9",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "9",
+        "start": 32.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "10",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "10",
+        "start": 36.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "11",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "11",
+        "start": 40.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "12",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "12",
+        "start": 44.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "13",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "13",
+        "start": 48.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "14",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "14",
+        "start": 52.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "15",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "15",
+        "start": 56.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "16",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "16",
+        "start": 60.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "17",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "17",
+        "start": 64.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "18",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "18",
+        "start": 68.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "19",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "19",
+        "start": 72.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "20",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "20",
+        "start": 76.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "21",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "21",
+        "start": 80.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "22",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "22",
+        "start": 84.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "23",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "23",
+        "start": 88.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "24",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "24",
+        "start": 92.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "25",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "25",
+        "start": 96.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "26",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "26",
+        "start": 100.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "27",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "27",
+        "start": 104.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "28",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "28",
+        "start": 108.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "29",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "29",
+        "start": 112.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "30",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "30",
+        "start": 116.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "31",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "31",
+        "start": 120.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "32",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      },
+      {
+        "sourceNumber": "32",
+        "start": 124.5,
+        "duration": 4,
+        "paddingLeft": 0,
+        "writtenSourceNumber": "33",
+        "meter": [
+          4,
+          4
+        ],
+        "beatBeats": 1
+      }
+    ],
+    "validation": "Independently decoded raw MusicXML sequential cursor equals all 33 source measure starts and durations; written source measures1 through33 become pickup0 and full measures1 through32. No padding or duration changes."
+  },
+  "notesSha256": "c71cb7c1356e930e43872da16ed4f0fb722c218fa28705b7d6b435f07fbb7b00"
+}
