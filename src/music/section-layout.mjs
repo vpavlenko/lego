@@ -93,7 +93,7 @@ function progression(events,span){
 }
 // Uniform full-duration comparison, independent of the form classifier's
 // opening-weighted score. One constant transposition covers the entire phrase.
-function timedComparison(events,a,b){
+function timedComparison(events,a,b,minimum=.9){
  const length=a.end-a.start;if(!same(length,b.end-b.start))return null;
  const left=progression(events,a),right=progression(events,b);if(!left||!right)return null;
  const edges=[...new Set([0,length,...left.flatMap(c=>[c.start,c.end]),...right.flatMap(c=>[c.start,c.end])])].sort((x,y)=>x-y),slices=[];
@@ -109,7 +109,38 @@ function timedComparison(events,a,b){
   comparisons.push({score:.75*roots+.25*qualities,rootScore:roots,qualityScore:qualities,shift});
  }
  const best=comparisons.sort((a,b)=>b.score-a.score||b.rootScore-a.rootScore||a.shift-b.shift)[0];
- return best.score>=.9-EPS&&best.rootScore>=.9-EPS?best:null;
+ return best.score>=minimum-EPS&&best.rootScore>=minimum-EPS&&(minimum>=.9||best.qualityScore>=minimum-EPS)?best:null;
+}
+
+// A repeated chorus must not conceal its inner AABA. The opening-weighted
+// form comparison admits a varied cadence, but every complete A must also
+// retain at least three quarters of both its root motion and chord qualities.
+// This is a visual partition only; formal labels and musical times stay intact.
+function innerAABA(song,outer){
+ if(song.measureMap||!Number.isInteger(song.bars))return null;
+ const longest=Math.max(0,...outer.layoutSections.map(s=>s.bars));
+ const events=chordTimeline(song).sort((a,b)=>a.start-b.start||a.end-b.end);
+ const match=(a,b)=>{const opening=compareSections(events,a,b);if(opening.score<.82||opening.rootScore<.78)return null;const whole=timedComparison(events,a,b,.75);return whole?{...whole,openingScore:opening.score}:null;};
+ for(const unit of [4,8,16]){
+  if(unit>=longest-EPS||song.bars%(unit*4)!==0)continue;
+  const representatives=[],sections=[];let valid=true;
+  for(let start=0;start<song.bars;start+=unit){
+   const span={start,end:start+unit};if(!progression(events,span)){valid=false;break;}
+   let best=null;
+   for(let i=0;i<representatives.length;i++){const comparison=match(representatives[i],span);if(comparison&&(!best||comparison.score>best.score))best={...comparison,index:i};}
+   const index=best?.index??representatives.length;if(!best)representatives.push(span);
+   sections.push({...span,bars:unit,label:String.fromCharCode(65+index),similarity:best?.score??1,transpose:best?.shift??0,...(best?{phraseComparison:best}:{})});
+  }
+  if(!valid)continue;
+  // Require a contrasting third part in every complete four-part cycle.
+  // Mere repeated harmony or an opening shared by otherwise different ideas
+  // cannot turn a long phrase into several purported AABA choruses.
+  for(let i=0;i<sections.length;i+=4){const [a,b,c,d]=sections.slice(i,i+4);if(a.label!=='A'||b.label!=='A'||c.label==='A'||d.label!=='A'){valid=false;break;}}
+  if(!valid)continue;
+  let row=-1,column=0;for(const section of sections){if(section.label==='A'){row++;column=0;}section.layoutRow=row;section.layoutColumn=column;column+=unit;}
+  return {sections,unit,columns:unit*2,pattern:sections.map(s=>s.label).join(''),minimumScore:Math.min(...sections.filter(s=>s.phraseComparison).map(s=>s.similarity))};
+ }
+ return null;
 }
 function groupedSourceRows(song,form){
  const rows=[...song.rows].sort((a,b)=>a.startBar-b.startBar);let cursor=0;
@@ -152,12 +183,13 @@ function groupedSourceRows(song,form){
  return candidates.sort((a,b)=>b.repeatedBars-a.repeatedBars||b.length-a.length||b.minimumScore-a.minimumScore||a.columns-b.columns)[0]??null;
 }
 
-/** Keep formal analysis separate from a display grouping supported by complete
- * repeated music. Fine repeated bricks take priority; otherwise longer
- * primitive printed-row groups may supply the vertical phrase alignment. */
+/** Keep formal analysis separate from display partitions. Inner AABA cycles
+ * take priority over repeated whole choruses; complete brick halves and larger
+ * primitive source-row groups provide the remaining vertical alignment. */
 export function alignRepeatedSubphrases(song,form,brickMap){
  const fine=alignBrickHalves(song,form,brickMap);
- if(fine.layoutSections.length>fine.sections.length)return {...fine,layoutAligned:true,layoutBasis:'repeated-brick-halves'};
- const grouped=groupedSourceRows(song,form);if(!grouped)return fine;
- return {...fine,layoutSections:grouped.sections,layoutColumns:grouped.columns,layoutAligned:true,layoutBasis:'repeated-source-row-groups',layoutPhraseBars:grouped.length,layoutEvidence:{repeatedBars:grouped.repeatedBars,previousRepeatedBars:grouped.previousRepeatedBars,minimumScore:grouped.minimumScore}};
+ const grouped=fine.layoutSections.length>fine.sections.length?null:groupedSourceRows(song,form);
+ const outer=fine.layoutSections.length>fine.sections.length?{...fine,layoutAligned:true,layoutBasis:'repeated-brick-halves'}:grouped?{...fine,layoutSections:grouped.sections,layoutColumns:grouped.columns,layoutAligned:true,layoutBasis:'repeated-source-row-groups',layoutPhraseBars:grouped.length,layoutEvidence:{repeatedBars:grouped.repeatedBars,previousRepeatedBars:grouped.previousRepeatedBars,minimumScore:grouped.minimumScore}}:fine;
+ const inner=innerAABA(song,outer);
+ return inner?{...outer,layoutSections:inner.sections,layoutColumns:inner.columns,layoutAligned:true,layoutBasis:'inner-aaba',layoutPhraseBars:inner.unit,layoutEvidence:{pattern:inner.pattern,minimumScore:inner.minimumScore,outerBasis:outer.layoutBasis??form.basis,outerPhraseBars:Math.max(...outer.layoutSections.map(s=>s.bars))}}:outer;
 }

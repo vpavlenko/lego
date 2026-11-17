@@ -1,0 +1,784 @@
+{
+  "version": 1,
+  "date": "2026-11-17",
+  "source": "dist/data/standards.json",
+  "policy": {
+    "priority": "Inner AABA before repeated complete choruses; display partition only",
+    "units": [
+      4,
+      8,
+      16
+    ],
+    "minimumOpeningScore": 0.82,
+    "minimumOpeningRoots": 0.78,
+    "minimumWholeRoots": 0.75,
+    "minimumWholeQualities": 0.75,
+    "fullFourPartCyclesRequired": true,
+    "contrastRequired": true,
+    "authoredMeasureMapPolicy": "Preserve existing source pickup/meter geometry; no new uniform partition"
+  },
+  "counts": {
+    "arrangements": 507,
+    "affected": 10
+  },
+  "preservation": {
+    "songsUnchanged": true,
+    "formalSectionsUnchanged": true,
+    "familiesUnchanged": true,
+    "patternsUnchanged": true,
+    "chronologicalCoverage": true,
+    "sourceHarmoniesSha256": "10f2532df03fb6324cb622f83581b3f3dd9eac711a17bc4507693e21b38e06dd"
+  },
+  "records": [
+    {
+      "song": 303,
+      "canonicalSong": 79,
+      "title": "Honeysuckle Rose",
+      "melodyId": "openbook-honeysuckle-rose-fake",
+      "bars": 64,
+      "meter": [
+        2,
+        2
+      ],
+      "formalPattern": "ABAB",
+      "formalFamily": "ABAB",
+      "innerPattern": "AABAAABA",
+      "phraseBars": 8,
+      "minimumWholePhraseScore": 0.75,
+      "previousPhraseBars": 32,
+      "sections": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "A",
+          "row": 0,
+          "column": 0
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "A",
+          "row": 1,
+          "column": 0
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "B",
+          "row": 1,
+          "column": 8
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "A",
+          "row": 2,
+          "column": 0
+        },
+        {
+          "start": 32,
+          "end": 40,
+          "label": "A",
+          "row": 3,
+          "column": 0
+        },
+        {
+          "start": 40,
+          "end": 48,
+          "label": "A",
+          "row": 4,
+          "column": 0
+        },
+        {
+          "start": 48,
+          "end": 56,
+          "label": "B",
+          "row": 4,
+          "column": 8
+        },
+        {
+          "start": 56,
+          "end": 64,
+          "label": "A",
+          "row": 5,
+          "column": 0
+        }
+      ]
+    },
+    {
+      "song": 313,
+      "canonicalSong": 164,
+      "title": "It's Only A Paper Moon",
+      "melodyId": "openbook-it-s-only-a-paper-moon-fake",
+      "bars": 64,
+      "meter": [
+        2,
+        2
+      ],
+      "formalPattern": "ABAB",
+      "formalFamily": "ABAB",
+      "innerPattern": "AABAAABA",
+      "phraseBars": 8,
+      "minimumWholePhraseScore": 0.9375,
+      "previousPhraseBars": 32,
+      "sections": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "A",
+          "row": 0,
+          "column": 0
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "A",
+          "row": 1,
+          "column": 0
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "B",
+          "row": 1,
+          "column": 8
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "A",
+          "row": 2,
+          "column": 0
+        },
+        {
+          "start": 32,
+          "end": 40,
+          "label": "A",
+          "row": 3,
+          "column": 0
+        },
+        {
+          "start": 40,
+          "end": 48,
+          "label": "A",
+          "row": 4,
+          "column": 0
+        },
+        {
+          "start": 48,
+          "end": 56,
+          "label": "B",
+          "row": 4,
+          "column": 8
+        },
+        {
+          "start": 56,
+          "end": 64,
+          "label": "A",
+          "row": 5,
+          "column": 0
+        }
+      ]
+    },
+    {
+      "song": 320,
+      "canonicalSong": 136,
+      "title": "Memories Of You",
+      "melodyId": "openbook-memories-of-you-fake",
+      "bars": 64,
+      "meter": [
+        2,
+        2
+      ],
+      "formalPattern": "ABAB",
+      "formalFamily": "ABAB",
+      "innerPattern": "AABAAABA",
+      "phraseBars": 8,
+      "minimumWholePhraseScore": 0.9453125,
+      "previousPhraseBars": 32,
+      "sections": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "A",
+          "row": 0,
+          "column": 0
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "A",
+          "row": 1,
+          "column": 0
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "B",
+          "row": 1,
+          "column": 8
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "A",
+          "row": 2,
+          "column": 0
+        },
+        {
+          "start": 32,
+          "end": 40,
+          "label": "A",
+          "row": 3,
+          "column": 0
+        },
+        {
+          "start": 40,
+          "end": 48,
+          "label": "A",
+          "row": 4,
+          "column": 0
+        },
+        {
+          "start": 48,
+          "end": 56,
+          "label": "B",
+          "row": 4,
+          "column": 8
+        },
+        {
+          "start": 56,
+          "end": 64,
+          "label": "A",
+          "row": 5,
+          "column": 0
+        }
+      ]
+    },
+    {
+      "song": 369,
+      "canonicalSong": 70,
+      "title": "Gee Baby, Ain't I Good To You",
+      "melodyId": "openbook-gee-baby-ain-t-i-good-to-you-fake",
+      "bars": 32,
+      "meter": [
+        4,
+        4
+      ],
+      "formalPattern": "ABAB",
+      "formalFamily": "ABAB",
+      "innerPattern": "AABAAABA",
+      "phraseBars": 4,
+      "minimumWholePhraseScore": 0.765625,
+      "previousPhraseBars": 16,
+      "sections": [
+        {
+          "start": 0,
+          "end": 4,
+          "label": "A",
+          "row": 0,
+          "column": 0
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "label": "A",
+          "row": 1,
+          "column": 0
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "label": "B",
+          "row": 1,
+          "column": 4
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "label": "A",
+          "row": 2,
+          "column": 0
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "label": "A",
+          "row": 3,
+          "column": 0
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "label": "A",
+          "row": 4,
+          "column": 0
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "label": "B",
+          "row": 4,
+          "column": 4
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "label": "A",
+          "row": 5,
+          "column": 0
+        }
+      ]
+    },
+    {
+      "song": 373,
+      "canonicalSong": 103,
+      "title": "If I Had You",
+      "melodyId": "openbook-if-i-had-you-wikifonia",
+      "bars": 64,
+      "meter": [
+        4,
+        4
+      ],
+      "formalPattern": "ABAB",
+      "formalFamily": "ABAB",
+      "innerPattern": "AABAAABA",
+      "phraseBars": 8,
+      "minimumWholePhraseScore": 0.828125,
+      "previousPhraseBars": 32,
+      "sections": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "A",
+          "row": 0,
+          "column": 0
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "A",
+          "row": 1,
+          "column": 0
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "B",
+          "row": 1,
+          "column": 8
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "A",
+          "row": 2,
+          "column": 0
+        },
+        {
+          "start": 32,
+          "end": 40,
+          "label": "A",
+          "row": 3,
+          "column": 0
+        },
+        {
+          "start": 40,
+          "end": 48,
+          "label": "A",
+          "row": 4,
+          "column": 0
+        },
+        {
+          "start": 48,
+          "end": 56,
+          "label": "B",
+          "row": 4,
+          "column": 8
+        },
+        {
+          "start": 56,
+          "end": 64,
+          "label": "A",
+          "row": 5,
+          "column": 0
+        }
+      ]
+    },
+    {
+      "song": 375,
+      "canonicalSong": 96,
+      "title": "I'm Confessin' That I Love You",
+      "melodyId": "openbook-i-m-confessin-that-i-love-you-fake",
+      "bars": 64,
+      "meter": [
+        2,
+        2
+      ],
+      "formalPattern": "ABAB",
+      "formalFamily": "ABAB",
+      "innerPattern": "AABAAABA",
+      "phraseBars": 8,
+      "minimumWholePhraseScore": 0.828125,
+      "previousPhraseBars": 32,
+      "sections": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "A",
+          "row": 0,
+          "column": 0
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "A",
+          "row": 1,
+          "column": 0
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "B",
+          "row": 1,
+          "column": 8
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "A",
+          "row": 2,
+          "column": 0
+        },
+        {
+          "start": 32,
+          "end": 40,
+          "label": "A",
+          "row": 3,
+          "column": 0
+        },
+        {
+          "start": 40,
+          "end": 48,
+          "label": "A",
+          "row": 4,
+          "column": 0
+        },
+        {
+          "start": 48,
+          "end": 56,
+          "label": "B",
+          "row": 4,
+          "column": 8
+        },
+        {
+          "start": 56,
+          "end": 64,
+          "label": "A",
+          "row": 5,
+          "column": 0
+        }
+      ]
+    },
+    {
+      "song": 386,
+      "canonicalSong": 130,
+      "title": "Lullaby Of The Leaves",
+      "melodyId": "openbook-lullaby-of-the-leaves-fake",
+      "bars": 64,
+      "meter": [
+        2,
+        2
+      ],
+      "formalPattern": "ABAB",
+      "formalFamily": "ABAB",
+      "innerPattern": "AABAAABA",
+      "phraseBars": 8,
+      "minimumWholePhraseScore": 0.8125,
+      "previousPhraseBars": 32,
+      "sections": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "A",
+          "row": 0,
+          "column": 0
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "A",
+          "row": 1,
+          "column": 0
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "B",
+          "row": 1,
+          "column": 8
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "A",
+          "row": 2,
+          "column": 0
+        },
+        {
+          "start": 32,
+          "end": 40,
+          "label": "A",
+          "row": 3,
+          "column": 0
+        },
+        {
+          "start": 40,
+          "end": 48,
+          "label": "A",
+          "row": 4,
+          "column": 0
+        },
+        {
+          "start": 48,
+          "end": 56,
+          "label": "B",
+          "row": 4,
+          "column": 8
+        },
+        {
+          "start": 56,
+          "end": 64,
+          "label": "A",
+          "row": 5,
+          "column": 0
+        }
+      ]
+    },
+    {
+      "song": 392,
+      "canonicalSong": 172,
+      "title": "Red Sails In The Sunset",
+      "melodyId": "openbook-red-sails-in-the-sunset-fake",
+      "bars": 64,
+      "meter": [
+        2,
+        2
+      ],
+      "formalPattern": "ABAB",
+      "formalFamily": "ABAB",
+      "innerPattern": "AABAAABA",
+      "phraseBars": 8,
+      "minimumWholePhraseScore": 0.9375,
+      "previousPhraseBars": 32,
+      "sections": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "A",
+          "row": 0,
+          "column": 0
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "A",
+          "row": 1,
+          "column": 0
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "B",
+          "row": 1,
+          "column": 8
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "A",
+          "row": 2,
+          "column": 0
+        },
+        {
+          "start": 32,
+          "end": 40,
+          "label": "A",
+          "row": 3,
+          "column": 0
+        },
+        {
+          "start": 40,
+          "end": 48,
+          "label": "A",
+          "row": 4,
+          "column": 0
+        },
+        {
+          "start": 48,
+          "end": 56,
+          "label": "B",
+          "row": 4,
+          "column": 8
+        },
+        {
+          "start": 56,
+          "end": 64,
+          "label": "A",
+          "row": 5,
+          "column": 0
+        }
+      ]
+    },
+    {
+      "song": 397,
+      "canonicalSong": 211,
+      "title": "These Foolish Things",
+      "melodyId": "openbook-these-foolish-things-fake",
+      "bars": 64,
+      "meter": [
+        2,
+        2
+      ],
+      "formalPattern": "ABAB",
+      "formalFamily": "ABAB",
+      "innerPattern": "AABAAABA",
+      "phraseBars": 8,
+      "minimumWholePhraseScore": 0.828125,
+      "previousPhraseBars": 32,
+      "sections": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "A",
+          "row": 0,
+          "column": 0
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "A",
+          "row": 1,
+          "column": 0
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "B",
+          "row": 1,
+          "column": 8
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "A",
+          "row": 2,
+          "column": 0
+        },
+        {
+          "start": 32,
+          "end": 40,
+          "label": "A",
+          "row": 3,
+          "column": 0
+        },
+        {
+          "start": 40,
+          "end": 48,
+          "label": "A",
+          "row": 4,
+          "column": 0
+        },
+        {
+          "start": 48,
+          "end": 56,
+          "label": "B",
+          "row": 4,
+          "column": 8
+        },
+        {
+          "start": 56,
+          "end": 64,
+          "label": "A",
+          "row": 5,
+          "column": 0
+        }
+      ]
+    },
+    {
+      "song": 475,
+      "canonicalSong": 17,
+      "title": "Bernie's Tune",
+      "melodyId": "openbook-bernie-s-tune-fake",
+      "bars": 64,
+      "meter": [
+        4,
+        4
+      ],
+      "formalPattern": "ABAB",
+      "formalFamily": "ABAB",
+      "innerPattern": "AABAAABA",
+      "phraseBars": 8,
+      "minimumWholePhraseScore": 1,
+      "previousPhraseBars": 32,
+      "sections": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "A",
+          "row": 0,
+          "column": 0
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "A",
+          "row": 1,
+          "column": 0
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "B",
+          "row": 1,
+          "column": 8
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "A",
+          "row": 2,
+          "column": 0
+        },
+        {
+          "start": 32,
+          "end": 40,
+          "label": "A",
+          "row": 3,
+          "column": 0
+        },
+        {
+          "start": 40,
+          "end": 48,
+          "label": "A",
+          "row": 4,
+          "column": 0
+        },
+        {
+          "start": 48,
+          "end": 56,
+          "label": "B",
+          "row": 4,
+          "column": 8
+        },
+        {
+          "start": 56,
+          "end": 64,
+          "label": "A",
+          "row": 5,
+          "column": 0
+        }
+      ]
+    }
+  ]
+}
