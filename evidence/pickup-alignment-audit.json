@@ -413,14 +413,14 @@
     "priorPerformanceHashesUnchanged": true
   },
   "counts": {
-    "arrangements": 483,
+    "arrangements": 486,
     "compositions": 269,
-    "coveredCompositions": 234,
-    "missingCompositions": 35,
-    "addedArrangements": 59,
-    "addedCompositions": 59,
-    "sourceNotes": 7812,
-    "sourceHarmonyEvents": 3571
+    "coveredCompositions": 237,
+    "missingCompositions": 32,
+    "addedArrangements": 62,
+    "addedCompositions": 62,
+    "sourceNotes": 8526,
+    "sourceHarmonyEvents": 3888
   },
   "records": [
     {
@@ -1366,6 +1366,54 @@
       "sourceSha256": "9b96bd5051ab2655c96d62930e45f513b7d8d001d68b18fc989b4c7769a025f1",
       "melodyMidiSha256": "0a708252acb62ce59856411f21c543be1ed7e5edaabb22a6ae9ddba5f9149165",
       "performanceSha256": "ab10a01ebd47eb3650174ca9a7def26bca5987b63a76d504e9486eea8dd766cf"
+    },
+    {
+      "song": 483,
+      "arrangementOf": 80,
+      "title": "A House Is Not A Home",
+      "melodyId": "openbook-a-house-is-not-a-home-wikifonia",
+      "notes": 338,
+      "harmonies": 95,
+      "sourceMeasures": 78,
+      "sourceBeats": 304,
+      "pickupBeats": 0,
+      "finalMeasureBeats": 4,
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/a_house_is_not_a_home.ly.tera",
+      "sourceSha256": "ef058c419d3c9389fdfa6da3e9a89565b9cbeb642d60236326e3096c6aba16d8",
+      "melodyMidiSha256": "500dc656ce7768e5fb84f9a471f1c132d014239d68691a7f0815bfedb02f13de",
+      "performanceSha256": "534af5ecefeaace7de140e23d97e8fbbb0e786380c6d3cd62034d2d7a517d564"
+    },
+    {
+      "song": 484,
+      "arrangementOf": 133,
+      "title": "(I'm Afraid) The Masquerade Is Over",
+      "melodyId": "openbook-i-m-afraid-the-masquerade-is-over-fake",
+      "notes": 141,
+      "harmonies": 82,
+      "sourceMeasures": 57,
+      "sourceBeats": 225,
+      "pickupBeats": 1,
+      "finalMeasureBeats": 4,
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/the_masquerade_is_over.ly.tera",
+      "sourceSha256": "31f911a4646892fd4ff7a8293c7e6724604a6e70d6c191cf58d39349188cb0d1",
+      "melodyMidiSha256": "a8159f9ca3551ba8ebc7d2efe2e467b849686c6a0f17bf9e6977965e1a500bb9",
+      "performanceSha256": "58a3a849f2f91202c858f7953174ef15a1a3dbc604b3f31501239f07efbd5bd1"
+    },
+    {
+      "song": 485,
+      "arrangementOf": 190,
+      "title": "Some Other Time",
+      "melodyId": "openbook-some-other-time-wikifonia",
+      "notes": 235,
+      "harmonies": 140,
+      "sourceMeasures": 72,
+      "sourceBeats": 288,
+      "pickupBeats": 0,
+      "finalMeasureBeats": 4,
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/some_other_time.ly.tera",
+      "sourceSha256": "16f2d948c363b4b3427ed03dcc1fd40a70312f9d3e15908e258fed7ec1095f7e",
+      "melodyMidiSha256": "db98283270bc0bc3bfbfcf39f50a540fe7c3dbb316381ff23aa0adef673c8f42",
+      "performanceSha256": "b4c072f7f7737285beff0a44f329dff8058cd87960b8aa4c495b3ad35d015b3c"
     }
   ],
   "remaining": [
@@ -1418,10 +1466,6 @@
       "title": "A Ghost of a Chance"
     },
     {
-      "song": 80,
-      "title": "A House is Not a Home"
-    },
-    {
       "song": 89,
       "title": "I Loves You Porgy"
     },
@@ -1446,10 +1490,6 @@
       "title": "Makin' Whoopee"
     },
     {
-      "song": 133,
-      "title": "The Masquerade is Over"
-    },
-    {
       "song": 153,
       "title": "A Night in Tunisia"
     },
@@ -1468,10 +1508,6 @@
     {
       "song": 189,
       "title": "Solitude"
-    },
-    {
-      "song": 190,
-      "title": "Some Other Time"
     },
     {
       "song": 194,
@@ -1513,8 +1549,8 @@
   "policy": {
     "alignment": "Source MIDI notes and complete source harmony retain exact quarter-beat onsets/durations. No padding, truncation or time shifts. Every source row/measure is visual geometry only.",
     "arrangements": "Different source changes/forms remain separate arrangements of the original composition.",
-    "measureMap": "One matching initial compiler PartialSet in both streams; explicit contiguous source boundaries. Initial source measure0, then full measures and optional final partial.",
-    "form": "Pickup arrangements currently retain source row geometry rather than inheriting unaudited uniform-bar form alignment.",
+    "measureMap": "Matching initial compiler PartialSet when present, plus authored TimeSignatureMusic changes and contiguous source boundaries. Quarter-beat note/harmony clocks remain unchanged; standard MIDI retains actual source time-signature events.",
+    "form": "Explicit source-measure arrangements retain authored row geometry rather than inheriting unaudited uniform-bar form alignment.",
     "rights": "Each source composition retains its original rights notice and pinned source URL. Repository license alone is not composition permission."
   }
 }

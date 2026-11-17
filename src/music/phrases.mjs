@@ -42,7 +42,7 @@ export function phraseGrid(song,form,sourceEvidence){
  if(!(song.bars>0)||!Number.isFinite(song.bars)||!(barBeats>0)||!Number.isFinite(barBeats))throw Error('Invalid phrase measure map');
  if(song.measureMap){
   const full=song.measureMap.filter(m=>Number(m.sourceNumber)>0),starts=full.filter((m,i)=>i%4===0).map(m=>m.start),tail=full.at(-1),closesAtEnd=full.length%4===0&&same(tail.duration,barBeats);
-  return {starts,end,closesAtEnd,basis:'four-bar-default-source-measures',exceptions:song.measureMap.filter(m=>!same(m.duration,barBeats)).map(m=>({kind:Number(m.sourceNumber)===0?'source-pickup':'source-tail',start:m.start,end:m.start+m.duration,bars:m.duration/barBeats,source:song.source})),uncertainty:[]};
+  return {starts,end,closesAtEnd,basis:'four-bar-default-source-measures',exceptions:song.measureMap.filter(m=>!same(m.duration,barBeats)).map(m=>({kind:Number(m.sourceNumber)===0?'source-pickup':m.meter&&same(m.duration,m.meter[0]*4/m.meter[1])?'source-meter':'source-tail',start:m.start,end:m.start+m.duration,bars:m.duration/barBeats,source:song.source})),uncertainty:[]};
  }
  const evidence=explicitEvidence(sourceEvidence,song,barBeats,end);if(evidence&&!evidence.rejected)return evidence;
  const uncertainty=evidence?.rejected?[evidence.rejected]:[],sections=reviewedSections(song,form);

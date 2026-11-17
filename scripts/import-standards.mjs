@@ -41,7 +41,7 @@ function rowsFor(song,segments){
   }
  }
  regions.forEach((region,i)=>{region.end=regions[i+1]?.start??song.bars;});
- const edges=song.measureMap?[0,...song.measureMap.filter((m,i)=>i>0&&(i-1)%song.columns===0).map(m=>m.start/(song.meter[0]*4/song.meter[1])),song.bars]:Array.from({length:Math.ceil(song.bars/song.columns)+1},(_,i)=>Math.min(song.bars,i*song.columns));
+ const edges=song.measureMap?[0,...song.measureMap.filter((m,i)=>i>0&&(i-(song.pickupBeats>0?1:0))%song.columns===0).map(m=>m.start/(song.meter[0]*4/song.meter[1])),song.bars]:Array.from({length:Math.ceil(song.bars/song.columns)+1},(_,i)=>Math.min(song.bars,i*song.columns));
  const rows=[];for(let ri=0;ri<edges.length-1;ri++){const startBar=edges[ri],end=edges[ri+1],slice=items=>items.filter(c=>c.start<end-EPS&&c.end>startBar+EPS).map(c=>({...c,start:Math.max(c.start,startBar)-startBar,end:Math.min(c.end,end)-startBar}));
   const bricks=segments.filter(s=>s.kind==='known'||s.kind==='discovered').map(s=>({start:s.start,end:s.end,name:s.name,analysisId:s.analysisId,basis:s.kind==='known'?'dictionary-parser':'repeated-source-pattern',...(s.definition?{definition:s.definition}:{}),...(s.patternId?{patternId:s.patternId}:{})}));
   rows.push({startBar,bars:end-startBar,keys:slice(regions),bricks:slice(bricks),chords:slice(song._chords),joins:joins.filter(j=>j.at>=startBar-EPS&&j.at<end-EPS).map(j=>({...j,at:j.at-startBar}))});

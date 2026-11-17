@@ -28,11 +28,13 @@ SCHEME=r'''\version "2.26.0"
 #(define (dur m) (* 4 (ly:moment-main (ly:music-length m))))
 #(define (emit kind start m)
  (let* ((origin (ly:music-property m 'origin)) (loc (if (ly:input-location? origin) (ly:input-file-line-char-column origin) '("" 0 0 0))) (ns (filter (lambda (x) (ly:pitch? (ly:music-property x 'pitch))) (ly:music-property m 'elements))))
- (format #t "DATA\t~a\t~a\t~a\t~a\t~a\t~a\n" kind start (dur m) (cadr loc) (caddr loc) (string-join (map (lambda (n) (number->string (+ 60 (ly:pitch-semitones (ly:music-property n 'pitch))))) ns) ","))))
+ (format #t "DATA\t~a\t~a\t~a\t~a\t~a\t~a\n" kind start (dur m) (cadr loc) (caddr loc) (string-join (map (lambda (n) (number->string (+ 60 (ly:pitch-semitones (ly:music-property n 'pitch))))) ns) ","))
+ (let ((primary (filter (lambda (n) (not (assoc-get 'parenthesized (ly:music-property n 'tweaks)))) ns))) (if (and (> (length ns) 1) (= (length primary) 1)) (format #t "DATA\tPRIMARY\t~a\t~a\t~a\t~a\t~a\n" start (dur m) (cadr loc) (caddr loc) (+ 60 (ly:pitch-semitones (ly:music-property (car primary) 'pitch))))))))
 #(define (walk m start)
  (let ((name (ly:music-property m 'name)) (es (ly:music-property m 'elements)) (e (ly:music-property m 'element)))
  (cond ((eq? name 'EventChord) (emit "CHORD" start m))
  ((eq? name 'SequentialMusic) (fold (lambda (x at) (walk x at) (+ at (dur x))) start es))
+ ((eq? name 'ReferenceTimeSignatureMusic) (let* ((ts (ly:music-property m 'time-signature)) (n (car ts)) (d (cdr ts)) (origin (ly:music-property m 'origin)) (loc (if (ly:input-location? origin) (ly:input-file-line-char-column origin) '("" 0 0 0)))) (format #t "DATA\tMETER\t~a\t~a\t~a\t~a\t~a,~a\n" start (/ (* 4 n) d) (cadr loc) (caddr loc) n d)))
  ((eq? name 'BarCheckEvent) (emit "BAR" start m))
  ((eq? name 'PartialSet) (let* ((d (ly:music-property m 'duration)) (origin (ly:music-property m 'origin)) (loc (if (ly:input-location? origin) (ly:input-file-line-char-column origin) '("" 0 0 0)))) (format #t "DATA\tPARTIAL\t~a\t~a\t~a\t~a\t\n" start (* 4 (ly:moment-main (ly:duration->moment d))) (cadr loc) (caddr loc))))
  ((eq? name 'RestEvent) (emit "REST" start m))
@@ -107,8 +109,10 @@ def vlq(value):
  while value:result.insert(0,(value&127)|128);value>>=7
  return bytes(result)
 
-def midi_bytes(notes,title,total):
+def midi_bytes(notes,title,total,meter_events=None):
  ppq=10080;name=title.encode();events=[(0,-2,b'\xff\x51\x03\x07\xa1\x20'),(0,-1,b'\xc0\x41'),(0,0,b'\xff\x03'+vlq(len(name))+name)]
+ for event in meter_events or []:
+  n,d=event['meter'];events.append((round(event['beat']*ppq),0,b'\xff\x58\x04'+bytes([n,int(d).bit_length()-1,event.get('metronome',24),event.get('thirtyseconds',8)])))
  for n in notes:
   start=round(n['start']*ppq);end=round((n['start']+n['duration'])*ppq)
   events.extend([(start,2,bytes([0x90,n['pitch'],n['velocity']])),(max(start+1,end),1,bytes([0x80,n['pitch'],0]))])
@@ -117,8 +121,8 @@ def midi_bytes(notes,title,total):
  track.extend(vlq(max(0,round(total*ppq)-previous))+b'\xff\x2f\x00')
  return b'MThd'+struct.pack('>IHHH',6,0,1,ppq)+b'MTrk'+struct.pack('>I',len(track))+track
 
-def decode_midi(path):
- data=path.read_bytes();length,fmt,tracks,ppq=struct.unpack('>IHHH',data[4:14]);offset=8+length;notes=[]
+def decode_midi(path,include_meters=False):
+ data=path.read_bytes();length,fmt,tracks,ppq=struct.unpack('>IHHH',data[4:14]);offset=8+length;notes=[];signatures=[]
  def read_vlq(buf,pos):
   n=0
   while True:
@@ -132,7 +136,9 @@ def decode_midi(path):
    if status>=128:pos+=1;running=status
    else:status=running
    if status==255:
-    pos+=1;n,pos=read_vlq(buf,pos);pos+=n;continue
+    kind=buf[pos];pos+=1;n,pos=read_vlq(buf,pos)
+    if kind==88 and n==4:signatures.append({'beat':rounded(Fraction(tick,ppq)),'meter':[buf[pos],2**buf[pos+1]],'metronome':buf[pos+2],'thirtyseconds':buf[pos+3]})
+    pos+=n;continue
    if status in (240,247):n,pos=read_vlq(buf,pos);pos+=n;continue
    kind=status>>4;channel=status&15;n=1 if kind in (12,13) else 2;values=buf[pos:pos+n];pos+=n
    if kind==9 and values[1]:active.setdefault((channel,values[0]),[]).append((tick,values[1]))
@@ -141,7 +147,8 @@ def decode_midi(path):
     if not active.get(key):raise ValueError('Unpaired MIDI release')
     start,velocity=active[key].pop(0);notes.append({'pitch':values[0],'start':rounded(Fraction(start,ppq)),'duration':rounded(Fraction(tick-start,ppq)),'velocity':velocity})
   if any(active.values()):raise ValueError('Unclosed MIDI notes')
- return sorted(notes,key=lambda n:(n['start'],n['pitch'],n['duration'])),ppq
+ result=sorted(notes,key=lambda n:(n['start'],n['pitch'],n['duration']))
+ return (result,ppq,signatures) if include_meters else (result,ppq)
 
 def compiled_measure_grid(events,total,bar_beats,allow_pickups=False):
  """Use compiler duration events, never the spelling of a duration token.
@@ -171,7 +178,28 @@ def compiled_measure_grid(events,total,bar_beats,allow_pickups=False):
  if pickup and not any(end-start==bar_beats for start,end in zip(boundaries,boundaries[1:])):raise ValueError('Pickup source contains no complete measure')
  return pickup,measures
 
-def decode(path,version,lilypond,qualities,source_root,work_dir,allow_source_intervals=False,allow_pickups=False):
+def compiled_meter_grid(events,total,bar_beats,allow_pickups):
+ declarations={stream:[e for e in events if e['stream']==stream and e['kind']=='PARTIAL'] for stream in ('chords','voice')};pickup=Fraction(0)
+ if any(declarations.values()):
+  if not allow_pickups or any(len(v)!=1 or v[0]['start']!=0 for v in declarations.values()):raise ValueError('Pickup must be one matching initial compiler declaration in both streams')
+  lengths={v[0]['duration'] for v in declarations.values()}
+  if len(lengths)!=1:raise ValueError('Chord/melody pickup duration mismatch')
+  pickup=lengths.pop()
+  if not 0<pickup<bar_beats:raise ValueError('Invalid source pickup duration')
+ schedule=sorted([e for e in events if e['stream']=='voice' and e['kind']=='METER'],key=lambda e:e['start'])
+ if not schedule or schedule[0]['start']!=0:raise ValueError('Missing compiled initial meter')
+ measures=[];cursor=Fraction(0)
+ if pickup:measures.append({'sourceNumber':'0','start':0.0,'duration':rounded(pickup),'meter':schedule[0]['pitches'],'beatBeats':4/schedule[0]['pitches'][1]});cursor=pickup
+ while cursor<total:
+  current=[e for e in schedule if e['start']<=cursor][-1];length=current['duration'];end=min(cursor+length,total)
+  if end<cursor+length and not pickup:raise ValueError('Incomplete authored meter bar')
+  if any(cursor<e['start']<end for e in schedule):raise ValueError('Meter change inside incomplete source bar')
+  measures.append({'sourceNumber':str(len(measures) if pickup else len(measures)+1),'start':rounded(cursor),'duration':rounded(end-cursor),'meter':current['pitches'],'beatBeats':4/current['pitches'][1]});cursor=end
+ edges={Fraction(str(m['start'])) for m in measures}|{total}
+ if any(e['kind']=='BAR' and not any(abs(float(e['start']-b))<1e-7 for b in edges) for e in events):raise ValueError('Source barcheck off authored meter map')
+ return pickup,measures
+
+def decode(path,version,lilypond,qualities,source_root,work_dir,allow_source_intervals=False,allow_pickups=False,allow_meter_changes=False,allow_notated_alternatives=False):
  text=path.read_text();meta=tomllib.loads(re.search(r'{#(.*?)#}',text,re.S)[1]);attrs=meta['attributes'];raw_chords,chord_line=section(text,'Chords'+version);raw_voice,voice_line=section(text,'Voice'+version)
  combined=raw_chords+'\n'+raw_voice
  if r'\transpose' in combined:raise ValueError('Source transposition wrapper requires explicit key review')
@@ -180,7 +208,7 @@ def decode(path,version,lilypond,qualities,source_root,work_dir,allow_source_int
  keys=re.findall(r'\\key\s+([a-g](?:(?:is|es)*|s))\s+\\(major|minor)',raw_voice)
  meters=re.findall(r'\\time\s+(\d+)\s*/\s*(\d+)',raw_voice)
  if not keys:raise ValueError('No explicit source tonic/mode')
- if not meters or len(set(meters))!=1:raise ValueError('Missing or changing source meter')
+ if not meters or not allow_meter_changes and len(set(meters))!=1:raise ValueError('Missing or changing source meter')
  tonic=[root_name(keys[0][0]),keys[0][1].capitalize()];meter=list(map(int,meters[0]));bar_beats=Fraction(meter[0]*4,meter[1])
  chords=clean(raw_chords);voice=clean(raw_voice);prefix=SCHEME+'\nchords = \\dump "chords" '+chords+'\n'
  if allow_source_intervals:
@@ -201,7 +229,7 @@ def decode(path,version,lilypond,qualities,source_root,work_dir,allow_source_int
    _,kind,start,duration,lineno,char,pitches=line.split('\t');raw_events.append({'stream':current,'kind':kind,'start':Fraction(start),'duration':Fraction(duration),'line':int(lineno),'char':int(char),'pitches':[int(x) for x in pitches.split(',') if x]})
  if totals.get('chords')!=totals.get('voice') or not totals.get('voice'):raise ValueError('Chord/melody source length mismatch '+str(totals))
  total=totals['voice']
- pickup,measures=compiled_measure_grid(raw_events,total,bar_beats,allow_pickups)
+ pickup,measures=(compiled_meter_grid(raw_events,total,bar_beats,allow_pickups) if allow_meter_changes else compiled_measure_grid(raw_events,total,bar_beats,allow_pickups))
  lines=generated.splitlines();chord_events=[]
  # Prefix adds one line before the extracted chord section. All clean operations
  # preserve newlines, so source line provenance is exact even after unfolding.
@@ -236,12 +264,26 @@ def decode(path,version,lilypond,qualities,source_root,work_dir,allow_source_int
  if not chord_events or chord_events[0]['start']!=0 or abs(chord_events[-1]['end']-float(total))>1e-8:raise ValueError('Incomplete harmony coverage')
  for a,b in zip(chord_events,chord_events[1:]):
   if abs(a['end']-b['start'])>1e-8:raise ValueError('Harmony gap or overlap')
- notes,ppq=decode_midi(work_dir/(stem+'.midi'))
+ notes,ppq,midi_meters=decode_midi(work_dir/(stem+'.midi'),True)
  if not notes or any(n['duration']<=0 or n['start']<0 or n['start']+n['duration']>float(total)+1e-7 for n in notes):raise ValueError('Invalid source MIDI bounds')
+ alternatives=[]
+ if allow_notated_alternatives:
+  for event in [e for e in raw_events if e['stream']=='voice' and e['kind']=='PRIMARY']:
+   written=[e for e in raw_events if e['stream']=='voice' and e['kind']=='CHORD' and e['start']==event['start'] and e['duration']==event['duration']]
+   if len(written)!=1 or len(event['pitches'])!=1:raise ValueError('Ambiguous source parenthesized alternative')
+   chosen=event['pitches'][0];omitted=set(written[0]['pitches'])-{chosen};matches=[n for n in notes if abs(n['start']-float(event['start']))<1e-7 and abs(n['duration']-float(event['duration']))<1e-7]
+   if {n['pitch'] for n in matches}!={chosen,*omitted}:raise ValueError('Source optional-note MIDI mismatch')
+   notes=[n for n in notes if n not in matches or n['pitch']==chosen]
+   alternatives.append({'start':rounded(event['start']),'duration':rounded(event['duration']),'sourceLine':voice_line+event['line']-(generated[:generated.index('\\dump "voice"')].count('\n')+1),'selectedPitch':chosen,'omittedParenthesizedPitches':sorted(omitted)})
  for a,b in zip(notes,notes[1:]):
   if a['start']+a['duration']>b['start']+1e-7:raise ValueError('Polyphonic source melody requires voice selection review')
  local=path.relative_to(source_root).as_posix();identifier='openbook-'+slug(attrs['title'])+'-'+slug(version)
  provenance={'format':'LilyPond','repository':REPO,'repositoryCommit':COMMIT,'path':local,'url':REPO+'/blob/'+COMMIT+'/'+local,'rawUrl':'https://raw.githubusercontent.com/veltzer/book-openbook/'+COMMIT+'/'+local,'sha256':sha(path),'sourceRights':attrs.get('copyright'),'sourceRightsExtra':attrs.get('copyrightextra'),'sourceVersion':version,'sourceStructure':attrs.get('structure'),'sourceKeySignature':{'root':tonic[0],'mode':tonic[1]},'tonicBasis':'Explicit initial LilyPond key and mode; no pitch-distribution estimate','sourceMeters':['/'.join(map(str,meter))],'unfoldStatus':'expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats','tiesMerged':True,'decoder':'LilyPond 2.26.0','sourcePPQ':ppq,'sections':{'chords':{'name':'Chords'+version,'startLine':chord_line},'melody':{'name':'Voice'+version,'startLine':voice_line}},'irregularMeasures':[],'leadOverfullMeasures':[],'leadUnderfullMeasures':[],'conflictingHarmonies':[],'omittedHarmonyAnnotations':[],'titleMetadata':{'selectedFrom':'source attributes.title','printedTitle':attrs['title'],'workTitle':attrs['title'],'movementTitle':None,'filenameTitle':path.name},'skipPolicy':'SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.','sourceIntervalPolicy':'Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.' if allow_source_intervals else None,'validation':'Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation'}
+ if alternatives:provenance['notatedAlternatives']={'policy':'Retain the sole unparenthesized written pitch; explicitly parenthesized alternatives are omitted, without moving any note.','events':alternatives}
+ if allow_meter_changes:
+  provenance['midiMeterEvents']=midi_meters
+  provenance['sourceMeters']=list(dict.fromkeys('/'.join(m) for m in meters));provenance['compiledMeterEvents']=[{'start':rounded(e['start']),'meter':e['pitches'],'sourceLine':voice_line+e['line']-(generated[:generated.index('\\dump "voice"')].count('\n')+1)} for e in raw_events if e['stream']=='voice' and e['kind']=='METER'];provenance['meterMapPolicy']='Source TimeSignatureMusic durations and matching explicit bar checks; authored quarter-beat timing retained without padding or stretching.'
+  provenance['irregularMeasures']=[{**m,'kind':'source-meter'} for m in measures if m['duration']!=float(bar_beats)]
  if not allow_source_intervals:provenance.pop('sourceIntervalPolicy',None)
  if pickup:
   provenance['irregularMeasures']=[{**measure,'kind':'pickup' if i==0 else 'source-tail'} for i,measure in enumerate(measures) if abs(measure['duration']-float(bar_beats))>1e-8]
@@ -281,7 +323,7 @@ def apply_harmonic_reference(entry,reference,original):
  return entry
 
 def main():
- parser=argparse.ArgumentParser();parser.add_argument('--source-dir',type=Path,required=True);parser.add_argument('--lilypond',required=True);parser.add_argument('--work-dir',type=Path,default=Path(tempfile.gettempdir())/'insights-openbook-build');parser.add_argument('--archive',type=Path);parser.add_argument('--only',default=None);parser.add_argument('--jobs',type=int,default=4);parser.add_argument('--append-missing',action='store_true');parser.add_argument('--source-intervals',action='store_true');parser.add_argument('--pickups',action='store_true');args=parser.parse_args();args.work_dir.mkdir(parents=True,exist_ok=True)
+ parser=argparse.ArgumentParser();parser.add_argument('--source-dir',type=Path,required=True);parser.add_argument('--lilypond',required=True);parser.add_argument('--work-dir',type=Path,default=Path(tempfile.gettempdir())/'insights-openbook-build');parser.add_argument('--archive',type=Path);parser.add_argument('--only',default=None);parser.add_argument('--jobs',type=int,default=4);parser.add_argument('--append-missing',action='store_true');parser.add_argument('--source-intervals',action='store_true');parser.add_argument('--pickups',action='store_true');parser.add_argument('--meter-changes',action='store_true');parser.add_argument('--notated-alternatives',action='store_true');args=parser.parse_args();args.work_dir.mkdir(parents=True,exist_ok=True)
  prior=json.loads((ROOT/'dist/data/openbook-melodies.json').read_text()) if args.append_missing else None
  prior_audit=json.loads((ROOT/'evidence/openbook-melody-audit.json').read_text()) if args.append_missing else None
  existing_titles={e['normalizedTitle'] for e in prior['entries']} if prior else set()
@@ -318,7 +360,7 @@ def main():
   for version in versions:
    if version not in meta.get('versions',{}):continue
    try:
-    entry=decode(path,version,args.lilypond,qualities,args.source_dir,args.work_dir,args.source_intervals,args.pickups)
+    entry=decode(path,version,args.lilypond,qualities,args.source_dir,args.work_dir,args.source_intervals,args.pickups,args.meter_changes,args.notated_alternatives)
     original=by_title[entry['normalizedTitle']]
     alias=aliases.get(entry['normalizedTitle'])
     if alias:entry['compositionTitle']=alias['canonicalTitle'];entry['provenance']['compositionIdentity']={'canonicalSong':alias['canonicalSong'],'canonicalTitle':alias['canonicalTitle'],'sourceTitle':entry['title'],'canonicalComposer':alias['canonicalComposer'],'sourceComposer':entry['composer'],'basis':'Explicit reviewed title alias; source title and credits retained without rewriting'}
@@ -332,7 +374,7 @@ def main():
   for i,(entry,attempts) in enumerate(pool.map(run,paths)):
    failures.extend(attempts)
    if entry:
-    entries.append(entry);target=ROOT/'dist'/entry['midi'];target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(midi_bytes(entry['notes'],entry['title'],entry['totalBeats']))
+    entries.append(entry);target=ROOT/'dist'/entry['midi'];target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(midi_bytes(entry['notes'],entry['title'],entry['totalBeats'],entry['provenance'].get('midiMeterEvents')))
    print(str(i+1)+'/'+str(len(paths)),entry['title'] if entry else 'excluded',flush=True)
  entries.sort(key=lambda e:(e['normalizedTitle'],e['id']));source={'archiveSha256':sha(archive),'archivePaxCommit':COMMIT,'name':'OpenBook','repository':REPO,'commit':COMMIT,'format':'LilyPond','downloaded':'2026-11-17','repositoryLicenseFile':(args.source_dir/'LICENSE').read_text(),'repositoryReadmeRights':'README states GPL version 3; current LICENSE file is MIT. Source compositions retain individual copyright notices.','licenseFileSha256':sha(args.source_dir/'LICENSE')}
  if not args.only:

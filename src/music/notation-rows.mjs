@@ -4,6 +4,10 @@ export function notationRows({song,performance,form=null,compact=false,mobile=fa
  if((form?.layoutAligned??form?.aligned)&&!compact)return (form.layoutSections??form.sections).map(s=>({start:s.start*performance.barBeats,end:s.end*performance.barBeats,section:s.label,style:{gridRow:s.layoutRow+1,gridColumn:`${s.layoutColumn+1} / span ${s.bars}`}}));
  const sourceCapacity=song.columns??Math.max(...performance.rows.map(r=>(r.end-r.start)/performance.barBeats));
  const capacity=barsPerRow??Math.max(1,Math.min(compact||mobile?4:8,sourceCapacity)),step=capacity*performance.barBeats,rows=[];
+ if(performance.measureMap){
+  for(const source of performance.rows){const measures=performance.measureMap.filter(m=>m.start>=source.start-1e-7&&m.start<source.end-1e-7);for(let i=0;i<measures.length;i+=capacity){const group=measures.slice(i,i+capacity),start=group[0].start,end=Math.min(source.end,group.at(-1).start+group.at(-1).duration),bars=(end-start)/performance.barBeats;rows.push({start,end,style:{width:measureWidth?bars*measureWidth:bars/capacity*100+'%'}});}}
+  return rows;
+ }
  for(const source of performance.rows)for(let start=source.start;start<source.end;start+=step){const end=Math.min(source.end,start+step),bars=(end-start)/performance.barBeats;rows.push({start,end,style:{width:measureWidth?bars*measureWidth:bars/capacity*100+'%'}});}
  return rows;
 }

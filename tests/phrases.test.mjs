@@ -47,7 +47,7 @@ test('every original and imported chart receives a complete stable grid without 
  const file=new URL('../dist/data/additional-standards.json',import.meta.url),additional=fs.existsSync(file)?JSON.parse(fs.readFileSync(file,'utf8')).songs:[];let audited=0;
  for(const song of [...original,...additional]){
   const form=alignRepeatedSubphrases(song,analyzeForm(song)),before=JSON.stringify({song,form}),grid=phraseGrid(song,form);assert.equal(JSON.stringify({song,form}),before);assert.equal(grid.starts[0],song.pickupBeats??0);assert.equal(grid.end,song.bars*song.meter[0]*4/song.meter[1]);assert.ok(grid.starts.every((beat,i)=>beat>=0&&beat<grid.end&&(!i||beat>grid.starts[i-1])));
-  if(grid.basis==='source-audited-sections')audited++;else for(let i=1;i<grid.starts.length;i++)assert.equal(grid.starts[i]-grid.starts[i-1],song.meter[0]*4/song.meter[1]*4);
+  if(grid.basis==='source-audited-sections')audited++;else if(song.measureMap)assert.deepEqual(grid.starts,song.measureMap.filter(m=>Number(m.sourceNumber)>0).filter((_,i)=>i%4===0).map(m=>m.start));else for(let i=1;i<grid.starts.length;i++)assert.equal(grid.starts[i]-grid.starts[i-1],song.meter[0]*4/song.meter[1]*4);
  }
  assert.equal(audited,2);
 });

@@ -11,7 +11,9 @@ function track(events,endTick){
 }
 export function encodeMidi(performance){
  const ppq=480,end=Math.round(performance.beats*ppq),us=Math.round(60000000/performance.tempo);
- const tracks=[track([{tick:0,kind:'meta',data:meta(3,bytes(performance.title))},{tick:0,kind:'meta',data:meta(81,[(us>>>16)&255,(us>>>8)&255,us&255])},{tick:0,kind:'meta',data:meta(88,[performance.meter[0],Math.round(Math.log2(performance.meter[1])),24,8])}],end)];
+ const signatures=performance.meterChanges?.length?performance.meterChanges:[{beat:0,meter:performance.meter,metronome:24,thirtyseconds:8}];
+ for(const s of signatures)if(!Number.isFinite(s.beat)||s.beat<0||s.beat>performance.beats||!Number.isInteger(s.meter?.[0])||s.meter[0]<=0||!Number.isInteger(Math.log2(s.meter[1])))throw Error('Invalid MIDI meter event');
+ const tracks=[track([{tick:0,kind:'meta',data:meta(3,bytes(performance.title))},{tick:0,kind:'meta',data:meta(81,[(us>>>16)&255,(us>>>8)&255,us&255])},...signatures.map(s=>({tick:Math.round(s.beat*ppq),kind:'meta',data:meta(88,[s.meter[0],Math.round(Math.log2(s.meter[1])),s.metronome??24,s.thirtyseconds??8])}))],end)];
  const plan=playbackPlan(performance);
  for(const {voice,program,name} of plan.voices){
   const events=[{tick:0,kind:'meta',data:meta(3,bytes(name))},{tick:0,kind:'program',data:[192+voice,program]}];

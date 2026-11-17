@@ -20,6 +20,7 @@ function rootPosition(parsed){
 }
 export function realizeSong(song,qualities,{tempo=120}={}){
  const barBeats=song.meter[0]*4/song.meter[1],notes=[],chords=[],changes=songModulations(song),rows=[];
+ const mappedMeters=song.measureMap?.filter(m=>m.meter),meterChanges=song.provenance?.midiMeterEvents??mappedMeters?.filter((m,i)=>!i||JSON.stringify(mappedMeters[i-1].meter)!==JSON.stringify(m.meter)).map(m=>({beat:m.start,meter:m.meter,metronome:96/m.meter[1],thirtyseconds:8}));
  const sourceTiming=!!song.measureMap||song.sourceTimeline==='compiled-quarter-beats';
  for(let ri=0;ri<song.rows.length;ri++){
   const row=song.rows[ri];rows.push({start:row.startBar*barBeats,end:(row.startBar+row.bars)*barBeats,label:row.startBar+1});
@@ -38,7 +39,7 @@ export function realizeSong(song,qualities,{tempo=120}={}){
    c.pitches.forEach((p,i)=>notes.push({id:`${id}-${i}`,pitch:p,start,duration:end-start,voice:0,velocity:74,chord:id}));
   }
  }
- return {version:3,voicing:'root-position',song:song.index,title:song.title,tempo,meter:song.meter,beats:song.bars*barBeats,barBeats,rows,...(song.measureMap?{measureMap:song.measureMap}:{}),tonic:0,changes,notes,chords};
+ return {version:3,voicing:'root-position',song:song.index,title:song.title,tempo,meter:song.meter,beats:song.bars*barBeats,barBeats,rows,...(meterChanges?.length?{meterChanges}:{}),...(song.measureMap?{measureMap:song.measureMap}:{}),tonic:0,changes,notes,chords};
 }
 export function playbackPlan(data,tempo=data.tempo){
  const notes=data.notes.map(n=>{const voice=n.voice??0;return {...n,voice,velocity:n.velocity??(voice===1?80:74),channel:voice,group:voice,end:n.start+n.duration};});

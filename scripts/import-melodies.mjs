@@ -27,8 +27,8 @@ export function tonicEvidence(entry){
 
 export function melodyEligibility(entry,qualities){
  const p=entry.provenance,reasons=[];let mapped=false;
- if(entry.pickupBeats){try{mapped=!!sourceMeasureMap(entry);}catch{reasons.push('pickup');}}
- if(p.sourceMeters.length!==1)reasons.push('meter changes');
+ if(entry.pickupBeats||p.meterMapPolicy){try{mapped=!!sourceMeasureMap(entry);}catch{reasons.push('pickup');}}
+ if(!mapped&&p.sourceMeters.length!==1)reasons.push('meter changes');
  if(p.unfoldStatus==='unresolved')reasons.push('unresolved repeats');
  if(!mapped&&p.irregularMeasures.length||p.leadOverfullMeasures?.length||p.leadUnderfullMeasures?.length)reasons.push('irregular source measures');
  if(!Number.isInteger(entry.bars)||!mapped&&!close(entry.totalBeats,entry.bars*entry.barBeats))reasons.push('incomplete bar grid');

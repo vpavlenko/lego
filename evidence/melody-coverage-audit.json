@@ -3,16 +3,16 @@
   "date": "2026-11-17",
   "counts": {
     "canonical": 269,
-    "arrangements": 483,
-    "encodedHeads": 342,
-    "melodyCharts": 242,
-    "coveredCompositions": 234,
+    "arrangements": 486,
+    "encodedHeads": 345,
+    "melodyCharts": 245,
+    "coveredCompositions": 237,
     "priorCoveredCompositions": 113,
-    "newlyCoveredCompositions": 121,
-    "missingCompositions": 35,
-    "newArrangements": 123,
-    "newNotes": 17523,
-    "sourceIntervalCells": 256,
+    "newlyCoveredCompositions": 124,
+    "missingCompositions": 32,
+    "newArrangements": 126,
+    "newNotes": 18237,
+    "sourceIntervalCells": 268,
     "unsupportedGenuineChordCells": 0,
     "missingWithPickupSources": 10,
     "missingWithTextNavigation": 8,
@@ -8954,6 +8954,408 @@
       "notes": 84,
       "sourceIntervalCells": [],
       "explicitNC": []
+    },
+    {
+      "song": 483,
+      "arrangementOf": 80,
+      "title": "A House Is Not A Home",
+      "melodyId": "openbook-a-house-is-not-a-home-wikifonia",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/a_house_is_not_a_home.ly.tera",
+      "bars": 76,
+      "notes": 338,
+      "sourceIntervalCells": [
+        {
+          "symbol": "Ab11",
+          "start": 36,
+          "end": 40,
+          "sourceSymbol": "aes1:11",
+          "sourceLine": 62,
+          "sourceIntervals": [
+            0,
+            4,
+            7,
+            10,
+            14,
+            17
+          ],
+          "sourceCorePitches": [
+            68,
+            72,
+            75,
+            78,
+            82,
+            85
+          ],
+          "sourcePitches": [
+            68,
+            72,
+            75,
+            78,
+            82,
+            85
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch aes1:11 [0, 2, 4, 5, 7, 10] != [0, 2, 5, 7, 10]"
+        },
+        {
+          "symbol": "Ab11",
+          "start": 76,
+          "end": 80,
+          "sourceSymbol": "aes1:11",
+          "sourceLine": 72,
+          "sourceIntervals": [
+            0,
+            4,
+            7,
+            10,
+            14,
+            17
+          ],
+          "sourceCorePitches": [
+            68,
+            72,
+            75,
+            78,
+            82,
+            85
+          ],
+          "sourcePitches": [
+            68,
+            72,
+            75,
+            78,
+            82,
+            85
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch aes1:11 [0, 2, 4, 5, 7, 10] != [0, 2, 5, 7, 10]"
+        },
+        {
+          "symbol": "Ab11",
+          "start": 144,
+          "end": 148,
+          "sourceSymbol": "aes1:11",
+          "sourceLine": 90,
+          "sourceIntervals": [
+            0,
+            4,
+            7,
+            10,
+            14,
+            17
+          ],
+          "sourceCorePitches": [
+            68,
+            72,
+            75,
+            78,
+            82,
+            85
+          ],
+          "sourcePitches": [
+            68,
+            72,
+            75,
+            78,
+            82,
+            85
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch aes1:11 [0, 2, 4, 5, 7, 10] != [0, 2, 5, 7, 10]"
+        },
+        {
+          "symbol": "Ab11",
+          "start": 184,
+          "end": 188,
+          "sourceSymbol": "aes1:11",
+          "sourceLine": 62,
+          "sourceIntervals": [
+            0,
+            4,
+            7,
+            10,
+            14,
+            17
+          ],
+          "sourceCorePitches": [
+            68,
+            72,
+            75,
+            78,
+            82,
+            85
+          ],
+          "sourcePitches": [
+            68,
+            72,
+            75,
+            78,
+            82,
+            85
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch aes1:11 [0, 2, 4, 5, 7, 10] != [0, 2, 5, 7, 10]"
+        },
+        {
+          "symbol": "Ab11",
+          "start": 224,
+          "end": 228,
+          "sourceSymbol": "aes1:11",
+          "sourceLine": 72,
+          "sourceIntervals": [
+            0,
+            4,
+            7,
+            10,
+            14,
+            17
+          ],
+          "sourceCorePitches": [
+            68,
+            72,
+            75,
+            78,
+            82,
+            85
+          ],
+          "sourcePitches": [
+            68,
+            72,
+            75,
+            78,
+            82,
+            85
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch aes1:11 [0, 2, 4, 5, 7, 10] != [0, 2, 5, 7, 10]"
+        },
+        {
+          "symbol": "Ab11",
+          "start": 292,
+          "end": 296,
+          "sourceSymbol": "aes1:11",
+          "sourceLine": 90,
+          "sourceIntervals": [
+            0,
+            4,
+            7,
+            10,
+            14,
+            17
+          ],
+          "sourceCorePitches": [
+            68,
+            72,
+            75,
+            78,
+            82,
+            85
+          ],
+          "sourcePitches": [
+            68,
+            72,
+            75,
+            78,
+            82,
+            85
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch aes1:11 [0, 2, 4, 5, 7, 10] != [0, 2, 5, 7, 10]"
+        }
+      ],
+      "explicitNC": [
+        {
+          "symbol": "NC",
+          "start": 0,
+          "end": 4,
+          "sourceSymbol": "s1",
+          "sourceLine": 52,
+          "sourcePitches": []
+        }
+      ]
+    },
+    {
+      "song": 484,
+      "arrangementOf": 133,
+      "title": "(I'm Afraid) The Masquerade Is Over",
+      "melodyId": "openbook-i-m-afraid-the-masquerade-is-over-fake",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/the_masquerade_is_over.ly.tera",
+      "bars": 56.25,
+      "notes": 141,
+      "sourceIntervalCells": [
+        {
+          "symbol": "Abm6",
+          "start": 45,
+          "end": 49,
+          "sourceSymbol": "aes:m6",
+          "sourceLine": 43,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            68,
+            71,
+            75,
+            77
+          ],
+          "sourcePitches": [
+            68,
+            71,
+            75,
+            77
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch aes:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Abm6",
+          "start": 109,
+          "end": 113,
+          "sourceSymbol": "aes:m6",
+          "sourceLine": 43,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            68,
+            71,
+            75,
+            77
+          ],
+          "sourcePitches": [
+            68,
+            71,
+            75,
+            77
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch aes:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        }
+      ],
+      "explicitNC": [
+        {
+          "symbol": "NC",
+          "start": 0,
+          "end": 1,
+          "sourceSymbol": "s4",
+          "sourceLine": 36,
+          "sourcePitches": []
+        }
+      ]
+    },
+    {
+      "song": 485,
+      "arrangementOf": 190,
+      "title": "Some Other Time",
+      "melodyId": "openbook-some-other-time-wikifonia",
+      "source": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/some_other_time.ly.tera",
+      "bars": 72,
+      "notes": 235,
+      "sourceIntervalCells": [
+        {
+          "symbol": "Fm6",
+          "start": 47,
+          "end": 48,
+          "sourceSymbol": "f4:m6",
+          "sourceLine": 59,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f4:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Fm6",
+          "start": 79,
+          "end": 80,
+          "sourceSymbol": "f4:m6",
+          "sourceLine": 67,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f4:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Fm6",
+          "start": 175,
+          "end": 176,
+          "sourceSymbol": "f4:m6",
+          "sourceLine": 59,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f4:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        },
+        {
+          "symbol": "Fm6",
+          "start": 207,
+          "end": 208,
+          "sourceSymbol": "f4:m6",
+          "sourceLine": 67,
+          "sourceIntervals": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "sourceCorePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "sourcePitches": [
+            65,
+            68,
+            72,
+            74
+          ],
+          "vocabularyDifference": "Source/compiler chord mismatch f4:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+        }
+      ],
+      "explicitNC": []
     }
   ],
   "newlyCovered": [
@@ -9102,6 +9504,10 @@
       "title": "Groovin' High"
     },
     {
+      "song": 80,
+      "title": "A House is Not a Home"
+    },
+    {
       "song": 82,
       "title": "I Can't Believe that You're in Love with Me"
     },
@@ -9216,6 +9622,10 @@
     {
       "song": 130,
       "title": "Lullaby of the Leaves"
+    },
+    {
+      "song": 133,
+      "title": "The Masquerade is Over"
     },
     {
       "song": 134,
@@ -9344,6 +9754,10 @@
     {
       "song": 188,
       "title": "Solar"
+    },
+    {
+      "song": 190,
+      "title": "Some Other Time"
     },
     {
       "song": 191,
@@ -9573,22 +9987,6 @@
       "openbookAttempts": []
     },
     {
-      "song": 80,
-      "title": "A House is Not a Home",
-      "composer": "",
-      "encodedHeads": [],
-      "openbookAttempts": [
-        {
-          "path": "src/openbook/a_house_is_not_a_home.ly.tera",
-          "version": "Wikifonia",
-          "reason": "Missing or changing source meter",
-          "title": "A House Is Not A Home",
-          "pickup": false,
-          "textNavigation": false
-        }
-      ]
-    },
-    {
       "song": 89,
       "title": "I Loves You Porgy",
       "composer": "George Gershwin",
@@ -9675,13 +10073,6 @@
       ]
     },
     {
-      "song": 133,
-      "title": "The Masquerade is Over",
-      "composer": "Allie Wrubel and Herb Magidson",
-      "encodedHeads": [],
-      "openbookAttempts": []
-    },
-    {
       "song": 153,
       "title": "A Night in Tunisia",
       "composer": "Dizzy Gillespie",
@@ -9757,22 +10148,6 @@
           "title": "Solitude",
           "pickup": true,
           "textNavigation": true
-        }
-      ]
-    },
-    {
-      "song": 190,
-      "title": "Some Other Time",
-      "composer": "",
-      "encodedHeads": [],
-      "openbookAttempts": [
-        {
-          "path": "src/openbook/some_other_time.ly.tera",
-          "version": "Wikifonia",
-          "reason": "Missing or changing source meter",
-          "title": "Some Other Time",
-          "pickup": false,
-          "textNavigation": false
         }
       ]
     },

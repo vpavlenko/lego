@@ -29,13 +29,15 @@
   ],
   "counts": {
     "originalTitleSources": 206,
-    "validatedArrangements": 202,
-    "notes": 28105,
+    "validatedArrangements": 205,
+    "notes": 28819,
     "attemptsExcluded": 106,
-    "sourceIntervalOverrides": 256,
-    "sourcePickupArrangements": 59,
+    "sourceIntervalOverrides": 268,
+    "sourcePickupArrangements": 60,
     "reviewedTitleAliasArrangements": 24,
-    "curatedHarmonicReferences": 5
+    "curatedHarmonicReferences": 5,
+    "authoredMeterArrangements": 2,
+    "explicitOptionalPitchSelections": 1
   },
   "policy": {
     "selection": "Only original-catalogue titles or pinned explicit title aliases. Prefer complete Real version, then declared default, then remaining encoded versions; first fully validated arrangement per composition.",
@@ -13366,6 +13368,518 @@
           "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
         }
       }
+    },
+    {
+      "id": "openbook-a-house-is-not-a-home-wikifonia",
+      "title": "A House Is Not A Home",
+      "originalSong": 80,
+      "originalBars": 38,
+      "sourceBars": 78,
+      "notes": 338,
+      "chords": 95,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/a_house_is_not_a_home.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/a_house_is_not_a_home.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/a_house_is_not_a_home.ly.tera",
+        "sha256": "ef058c419d3c9389fdfa6da3e9a89565b9cbeb642d60236326e3096c6aba16d8",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": "Archived MusicXML notice retained; underlying music is not relicensed.",
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "Db",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4",
+          "3/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 46
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 107
+          }
+        },
+        "irregularMeasures": [
+          {
+            "sourceNumber": "24",
+            "start": 92.0,
+            "duration": 3.0,
+            "meter": [
+              3,
+              4
+            ],
+            "beatBeats": 1.0,
+            "kind": "source-meter"
+          },
+          {
+            "sourceNumber": "25",
+            "start": 95.0,
+            "duration": 3.0,
+            "meter": [
+              3,
+              4
+            ],
+            "beatBeats": 1.0,
+            "kind": "source-meter"
+          },
+          {
+            "sourceNumber": "27",
+            "start": 102.0,
+            "duration": 3.0,
+            "meter": [
+              3,
+              4
+            ],
+            "beatBeats": 1.0,
+            "kind": "source-meter"
+          },
+          {
+            "sourceNumber": "28",
+            "start": 105.0,
+            "duration": 3.0,
+            "meter": [
+              3,
+              4
+            ],
+            "beatBeats": 1.0,
+            "kind": "source-meter"
+          },
+          {
+            "sourceNumber": "62",
+            "start": 240.0,
+            "duration": 3.0,
+            "meter": [
+              3,
+              4
+            ],
+            "beatBeats": 1.0,
+            "kind": "source-meter"
+          },
+          {
+            "sourceNumber": "63",
+            "start": 243.0,
+            "duration": 3.0,
+            "meter": [
+              3,
+              4
+            ],
+            "beatBeats": 1.0,
+            "kind": "source-meter"
+          },
+          {
+            "sourceNumber": "65",
+            "start": 250.0,
+            "duration": 3.0,
+            "meter": [
+              3,
+              4
+            ],
+            "beatBeats": 1.0,
+            "kind": "source-meter"
+          },
+          {
+            "sourceNumber": "66",
+            "start": 253.0,
+            "duration": 3.0,
+            "meter": [
+              3,
+              4
+            ],
+            "beatBeats": 1.0,
+            "kind": "source-meter"
+          }
+        ],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "A House Is Not A Home",
+          "workTitle": "A House Is Not A Home",
+          "movementTitle": null,
+          "filenameTitle": "a_house_is_not_a_home.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "midiMeterEvents": [
+          {
+            "beat": 0.0,
+            "meter": [
+              4,
+              4
+            ],
+            "metronome": 24,
+            "thirtyseconds": 8
+          },
+          {
+            "beat": 92.0,
+            "meter": [
+              3,
+              4
+            ],
+            "metronome": 24,
+            "thirtyseconds": 8
+          },
+          {
+            "beat": 98.0,
+            "meter": [
+              4,
+              4
+            ],
+            "metronome": 24,
+            "thirtyseconds": 8
+          },
+          {
+            "beat": 102.0,
+            "meter": [
+              3,
+              4
+            ],
+            "metronome": 24,
+            "thirtyseconds": 8
+          },
+          {
+            "beat": 108.0,
+            "meter": [
+              4,
+              4
+            ],
+            "metronome": 24,
+            "thirtyseconds": 8
+          },
+          {
+            "beat": 240.0,
+            "meter": [
+              3,
+              4
+            ],
+            "metronome": 24,
+            "thirtyseconds": 8
+          },
+          {
+            "beat": 246.0,
+            "meter": [
+              4,
+              4
+            ],
+            "metronome": 24,
+            "thirtyseconds": 8
+          },
+          {
+            "beat": 250.0,
+            "meter": [
+              3,
+              4
+            ],
+            "metronome": 24,
+            "thirtyseconds": 8
+          },
+          {
+            "beat": 256.0,
+            "meter": [
+              4,
+              4
+            ],
+            "metronome": 24,
+            "thirtyseconds": 8
+          }
+        ],
+        "compiledMeterEvents": [
+          {
+            "start": 0.0,
+            "meter": [
+              4,
+              4
+            ],
+            "sourceLine": 109
+          },
+          {
+            "start": 92.0,
+            "meter": [
+              3,
+              4
+            ],
+            "sourceLine": 136
+          },
+          {
+            "start": 98.0,
+            "meter": [
+              4,
+              4
+            ],
+            "sourceLine": 138
+          },
+          {
+            "start": 102.0,
+            "meter": [
+              3,
+              4
+            ],
+            "sourceLine": 139
+          },
+          {
+            "start": 108.0,
+            "meter": [
+              4,
+              4
+            ],
+            "sourceLine": 141
+          },
+          {
+            "start": 240.0,
+            "meter": [
+              3,
+              4
+            ],
+            "sourceLine": 136
+          },
+          {
+            "start": 246.0,
+            "meter": [
+              4,
+              4
+            ],
+            "sourceLine": 138
+          },
+          {
+            "start": 250.0,
+            "meter": [
+              3,
+              4
+            ],
+            "sourceLine": 139
+          },
+          {
+            "start": 256.0,
+            "meter": [
+              4,
+              4
+            ],
+            "sourceLine": 141
+          }
+        ],
+        "meterMapPolicy": "Source TimeSignatureMusic durations and matching explicit bar checks; authored quarter-beat timing retained without padding or stretching."
+      }
+    },
+    {
+      "id": "openbook-some-other-time-wikifonia",
+      "title": "Some Other Time",
+      "originalSong": 190,
+      "originalBars": 32,
+      "sourceBars": 72,
+      "notes": 235,
+      "chords": 140,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/some_other_time.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/some_other_time.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/some_other_time.ly.tera",
+        "sha256": "16f2d948c363b4b3427ed03dcc1fd40a70312f9d3e15908e258fed7ec1095f7e",
+        "sourceRights": "1945 Warner Bros. Inc. (Renewed) All Riehrs Reserved Lleed bu Permiceiam",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "C",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2",
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 41
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 103
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Some Other Time",
+          "workTitle": "Some Other Time",
+          "movementTitle": null,
+          "filenameTitle": "some_other_time.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "midiMeterEvents": [
+          {
+            "beat": 0.0,
+            "meter": [
+              2,
+              2
+            ],
+            "metronome": 48,
+            "thirtyseconds": 8
+          },
+          {
+            "beat": 32.0,
+            "meter": [
+              4,
+              4
+            ],
+            "metronome": 24,
+            "thirtyseconds": 8
+          },
+          {
+            "beat": 160.0,
+            "meter": [
+              4,
+              4
+            ],
+            "metronome": 24,
+            "thirtyseconds": 8
+          }
+        ],
+        "compiledMeterEvents": [
+          {
+            "start": 0.0,
+            "meter": [
+              2,
+              2
+            ],
+            "sourceLine": 105
+          },
+          {
+            "start": 32.0,
+            "meter": [
+              4,
+              4
+            ],
+            "sourceLine": 117
+          },
+          {
+            "start": 160.0,
+            "meter": [
+              4,
+              4
+            ],
+            "sourceLine": 117
+          }
+        ],
+        "meterMapPolicy": "Source TimeSignatureMusic durations and matching explicit bar checks; authored quarter-beat timing retained without padding or stretching."
+      }
+    },
+    {
+      "id": "openbook-i-m-afraid-the-masquerade-is-over-fake",
+      "title": "(I'm Afraid) The Masquerade Is Over",
+      "originalSong": 133,
+      "originalBars": 40,
+      "sourceBars": 57,
+      "notes": 141,
+      "chords": 82,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/the_masquerade_is_over.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/the_masquerade_is_over.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/the_masquerade_is_over.ly.tera",
+        "sha256": "31f911a4646892fd4ff7a8293c7e6724604a6e70d6c191cf58d39349188cb0d1",
+        "sourceRights": null,
+        "sourceRightsExtra": null,
+        "sourceVersion": "Fake",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "Eb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 32
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 72
+          }
+        },
+        "irregularMeasures": [
+          {
+            "sourceNumber": "0",
+            "start": 0.0,
+            "duration": 1.0,
+            "kind": "pickup"
+          }
+        ],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "(I'm Afraid) The Masquerade Is Over",
+          "workTitle": "(I'm Afraid) The Masquerade Is Over",
+          "movementTitle": null,
+          "filenameTitle": "the_masquerade_is_over.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, pickup-aligned bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "notatedAlternatives": {
+          "policy": "Retain the sole unparenthesized written pitch; explicitly parenthesized alternatives are omitted, without moving any note.",
+          "events": [
+            {
+              "start": 160.0,
+              "duration": 1.0,
+              "sourceLine": 95,
+              "selectedPitch": 58,
+              "omittedParenthesizedPitches": [
+                66
+              ]
+            }
+          ]
+        },
+        "pickupPolicy": "One matching initial LilyPond PartialSet in both compiled streams. MIDI onsets and durations remain unchanged; source measure0 is the pickup. No padding, cropping or stretching.",
+        "compositionIdentity": {
+          "canonicalSong": 133,
+          "canonicalTitle": "The Masquerade is Over",
+          "sourceTitle": "(I'm Afraid) The Masquerade Is Over",
+          "canonicalComposer": "Allie Wrubel and Herb Magidson",
+          "sourceComposer": "Allie Wrubel",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
     }
   ],
   "excludedAttempts": [
@@ -13903,5 +14417,6 @@
   "metadataErrors": [],
   "pickupRecovery": "evidence/pickup-source-recovery.json",
   "titleAliases": "src/music/melody-title-aliases.json",
-  "tonicReferences": "src/music/melody-tonic-references.json"
+  "tonicReferences": "src/music/melody-tonic-references.json",
+  "authoredMeterAudit": "evidence/melody-meter-audit.json"
 }

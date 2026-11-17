@@ -6,23 +6,23 @@
       "dist/data/roadmaps.json",
       "dist/data/additional-standards.json"
     ],
-    "standards": 483
+    "standards": 486
   },
   "stats": {
-    "rawPassages": 9605,
-    "removedPassages": 2794,
-    "keptPassages": 6811,
-    "rawOccurrences": 9066,
-    "removedOccurrences": 2756,
-    "keptOccurrences": 6310,
+    "rawPassages": 9784,
+    "removedPassages": 2915,
+    "keptPassages": 6869,
+    "rawOccurrences": 9231,
+    "removedOccurrences": 2876,
+    "keptOccurrences": 6355,
     "reasons": {
       "single-harmony": {
-        "passages": 2158,
-        "occurrences": 2143
+        "passages": 2261,
+        "occurrences": 2245
       },
       "on-off-family": {
-        "passages": 636,
-        "occurrences": 613
+        "passages": 654,
+        "occurrences": 631
       }
     }
   },
@@ -39881,6 +39881,2134 @@
           "bass": null,
           "symbols": [
             "FM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 0,
+      "startBar": 1,
+      "endBar": 1.5,
+      "start": 4,
+      "end": 6,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Major On",
+          "startBar": 1,
+          "endBar": 1.5,
+          "start": 1,
+          "end": 1.5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 1,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "DbM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 0,
+      "startBar": 3,
+      "endBar": 4,
+      "start": 12,
+      "end": 16,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Major On",
+          "startBar": 3,
+          "endBar": 4,
+          "start": 3,
+          "end": 4,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 1,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "DbM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 1,
+      "startBar": 10,
+      "endBar": 11.5,
+      "start": 40,
+      "end": 46,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Major On",
+          "startBar": 10,
+          "endBar": 11.5,
+          "start": 2,
+          "end": 3.5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 1,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "DbM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 1,
+      "startBar": 13,
+      "endBar": 14,
+      "start": 52,
+      "end": 56,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Major On",
+          "startBar": 13,
+          "endBar": 14,
+          "start": 5,
+          "end": 6,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 1,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "DbM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 2,
+      "startBar": 20,
+      "endBar": 21,
+      "start": 80,
+      "end": 84,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 20,
+          "endBar": 21,
+          "start": 4,
+          "end": 5,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 1,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "DbM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 2,
+      "startBar": 23,
+      "endBar": 25.5,
+      "start": 92,
+      "end": 102,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 23,
+          "endBar": 23.75,
+          "start": 7,
+          "end": 7.75,
+          "brick": 5
+        },
+        {
+          "row": 3,
+          "label": "Major On",
+          "startBar": 23.75,
+          "endBar": 25.5,
+          "start": 0,
+          "end": 1.75,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": true,
+      "harmonies": [
+        {
+          "root": 1,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Db"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 4,
+      "startBar": 37,
+      "endBar": 38,
+      "start": 148,
+      "end": 152,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Major On",
+          "startBar": 37,
+          "endBar": 38,
+          "start": 6,
+          "end": 7,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 1,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "DbM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 4,
+      "startBar": 38,
+      "endBar": 38.5,
+      "start": 152,
+      "end": 154,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Major On",
+          "startBar": 38,
+          "endBar": 38.5,
+          "start": 7,
+          "end": 7.5,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 1,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "DbM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 5,
+      "startBar": 40,
+      "endBar": 41,
+      "start": 160,
+      "end": 164,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Major On",
+          "startBar": 40,
+          "endBar": 41,
+          "start": 1,
+          "end": 2,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 1,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "DbM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 6,
+      "startBar": 47,
+      "endBar": 48.5,
+      "start": 188,
+      "end": 194,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Major On",
+          "startBar": 47,
+          "endBar": 48.5,
+          "start": 0,
+          "end": 1.5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 1,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "DbM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 6,
+      "startBar": 50,
+      "endBar": 51,
+      "start": 200,
+      "end": 204,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Major On",
+          "startBar": 50,
+          "endBar": 51,
+          "start": 3,
+          "end": 4,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 1,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "DbM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 7,
+      "startBar": 57,
+      "endBar": 58,
+      "start": 228,
+      "end": 232,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Major On",
+          "startBar": 57,
+          "endBar": 58,
+          "start": 2,
+          "end": 3,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 1,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "DbM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 7,
+      "startBar": 60,
+      "endBar": 62.5,
+      "start": 240,
+      "end": 250,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Major On",
+          "startBar": 60,
+          "endBar": 62.5,
+          "start": 5,
+          "end": 7.5,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 1,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Db"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 9,
+      "startBar": 74,
+      "endBar": 76,
+      "start": 296,
+      "end": 304,
+      "segments": [
+        {
+          "row": 9,
+          "label": "Major On",
+          "startBar": 74,
+          "endBar": 76,
+          "start": 4,
+          "end": 6,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 1,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "DbM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 484,
+      "title": "(I'm Afraid) The Masquerade Is Over",
+      "row": 1,
+      "startBar": 0.25,
+      "endBar": 1.25,
+      "start": 1,
+      "end": 5,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Major On",
+          "startBar": 0.25,
+          "endBar": 1.25,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Eb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 484,
+      "title": "(I'm Afraid) The Masquerade Is Over",
+      "row": 5,
+      "startBar": 33.5,
+      "endBar": 34.25,
+      "start": 134,
+      "end": 137,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Major On",
+          "startBar": 33.5,
+          "endBar": 34.25,
+          "start": 1.25,
+          "end": 2,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "Eb6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 484,
+      "title": "(I'm Afraid) The Masquerade Is Over",
+      "row": 5,
+      "startBar": 37.25,
+      "endBar": 37.75,
+      "start": 149,
+      "end": 151,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Major On",
+          "startBar": 37.25,
+          "endBar": 37.75,
+          "start": 5,
+          "end": 5.5,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "GM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 484,
+      "title": "(I'm Afraid) The Masquerade Is Over",
+      "row": 5,
+      "startBar": 37.75,
+      "endBar": 38.25,
+      "start": 151,
+      "end": 153,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Major On",
+          "startBar": 37.75,
+          "endBar": 38.25,
+          "start": 5.5,
+          "end": 6,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "G6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 484,
+      "title": "(I'm Afraid) The Masquerade Is Over",
+      "row": 6,
+      "startBar": 40.25,
+      "endBar": 41.25,
+      "start": 161,
+      "end": 165,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Major On",
+          "startBar": 40.25,
+          "endBar": 41.25,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Eb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 484,
+      "title": "(I'm Afraid) The Masquerade Is Over",
+      "row": 7,
+      "startBar": 50.25,
+      "endBar": 51.25,
+      "start": 201,
+      "end": 205,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Major On",
+          "startBar": 50.25,
+          "endBar": 51.25,
+          "start": 2,
+          "end": 3,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 484,
+      "title": "(I'm Afraid) The Masquerade Is Over",
+      "row": 7,
+      "startBar": 54.25,
+      "endBar": 56.25,
+      "start": 217,
+      "end": 225,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Major On",
+          "startBar": 54.25,
+          "endBar": 56.25,
+          "start": 6,
+          "end": 8,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "Eb6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 0,
+      "startBar": 4,
+      "endBar": 4.33333333325,
+      "start": 16,
+      "end": 17.333333333,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Major On",
+          "startBar": 4,
+          "endBar": 4.33333333325,
+          "start": 4,
+          "end": 4.33333333325,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 1,
+      "startBar": 9,
+      "endBar": 9.25,
+      "start": 36,
+      "end": 37,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Major On",
+          "startBar": 9,
+          "endBar": 9.25,
+          "start": 1,
+          "end": 1.25,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 1,
+      "startBar": 11.5,
+      "endBar": 11.75,
+      "start": 46,
+      "end": 47,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Major On",
+          "startBar": 11.5,
+          "endBar": 11.75,
+          "start": 3.5,
+          "end": 3.75,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "F6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 1,
+      "startBar": 13,
+      "endBar": 13.25,
+      "start": 52,
+      "end": 53,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Major On",
+          "startBar": 13,
+          "endBar": 13.25,
+          "start": 5,
+          "end": 5.25,
+          "brick": 7
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "F6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 1,
+      "startBar": 14,
+      "endBar": 14.25,
+      "start": 56,
+      "end": 57,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Major On",
+          "startBar": 14,
+          "endBar": 14.25,
+          "start": 6,
+          "end": 6.25,
+          "brick": 9
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 2,
+      "startBar": 17,
+      "endBar": 17.25,
+      "start": 68,
+      "end": 69,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 17,
+          "endBar": 17.25,
+          "start": 1,
+          "end": 1.25,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 2,
+      "startBar": 19.5,
+      "endBar": 19.75,
+      "start": 78,
+      "end": 79,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 19.5,
+          "endBar": 19.75,
+          "start": 3.5,
+          "end": 3.75,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "F6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 2,
+      "startBar": 21,
+      "endBar": 21.25,
+      "start": 84,
+      "end": 85,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 21,
+          "endBar": 21.25,
+          "start": 5,
+          "end": 5.25,
+          "brick": 7
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "F6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 2,
+      "startBar": 22,
+      "endBar": 22.25,
+      "start": 88,
+      "end": 89,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 22,
+          "endBar": 22.25,
+          "start": 6,
+          "end": 6.25,
+          "brick": 9
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 3,
+      "startBar": 25,
+      "endBar": 25.25,
+      "start": 100,
+      "end": 101,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Major On",
+          "startBar": 25,
+          "endBar": 25.25,
+          "start": 1,
+          "end": 1.25,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 3,
+      "startBar": 27,
+      "endBar": 27.25,
+      "start": 108,
+      "end": 109,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Major On",
+          "startBar": 27,
+          "endBar": 27.25,
+          "start": 3,
+          "end": 3.25,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 4,
+      "startBar": 33,
+      "endBar": 33.25,
+      "start": 132,
+      "end": 133,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Major On",
+          "startBar": 33,
+          "endBar": 33.25,
+          "start": 1,
+          "end": 1.25,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 4,
+      "startBar": 35.5,
+      "endBar": 36,
+      "start": 142,
+      "end": 144,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Major On",
+          "startBar": 35.5,
+          "endBar": 36,
+          "start": 3.5,
+          "end": 4,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "F6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 4,
+      "startBar": 37,
+      "endBar": 37.25,
+      "start": 148,
+      "end": 149,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Major On",
+          "startBar": 37,
+          "endBar": 37.25,
+          "start": 5,
+          "end": 5.25,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "F6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 4,
+      "startBar": 38,
+      "endBar": 38.25,
+      "start": 152,
+      "end": 153,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Major On",
+          "startBar": 38,
+          "endBar": 38.25,
+          "start": 6,
+          "end": 6.25,
+          "brick": 8
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 5,
+      "startBar": 41,
+      "endBar": 41.25,
+      "start": 164,
+      "end": 165,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Major On",
+          "startBar": 41,
+          "endBar": 41.25,
+          "start": 1,
+          "end": 1.25,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 5,
+      "startBar": 43.5,
+      "endBar": 43.75,
+      "start": 174,
+      "end": 175,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Major On",
+          "startBar": 43.5,
+          "endBar": 43.75,
+          "start": 3.5,
+          "end": 3.75,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "F6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 5,
+      "startBar": 45,
+      "endBar": 45.25,
+      "start": 180,
+      "end": 181,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Major On",
+          "startBar": 45,
+          "endBar": 45.25,
+          "start": 5,
+          "end": 5.25,
+          "brick": 7
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "F6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 5,
+      "startBar": 46,
+      "endBar": 46.25,
+      "start": 184,
+      "end": 185,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Major On",
+          "startBar": 46,
+          "endBar": 46.25,
+          "start": 6,
+          "end": 6.25,
+          "brick": 9
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 6,
+      "startBar": 49,
+      "endBar": 49.25,
+      "start": 196,
+      "end": 197,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Major On",
+          "startBar": 49,
+          "endBar": 49.25,
+          "start": 1,
+          "end": 1.25,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 6,
+      "startBar": 51.5,
+      "endBar": 51.75,
+      "start": 206,
+      "end": 207,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Major On",
+          "startBar": 51.5,
+          "endBar": 51.75,
+          "start": 3.5,
+          "end": 3.75,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "F6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 6,
+      "startBar": 53,
+      "endBar": 53.25,
+      "start": 212,
+      "end": 213,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Major On",
+          "startBar": 53,
+          "endBar": 53.25,
+          "start": 5,
+          "end": 5.25,
+          "brick": 7
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "F6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 6,
+      "startBar": 54,
+      "endBar": 54.25,
+      "start": 216,
+      "end": 217,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Major On",
+          "startBar": 54,
+          "endBar": 54.25,
+          "start": 6,
+          "end": 6.25,
+          "brick": 9
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 7,
+      "startBar": 57,
+      "endBar": 57.25,
+      "start": 228,
+      "end": 229,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Major On",
+          "startBar": 57,
+          "endBar": 57.25,
+          "start": 1,
+          "end": 1.25,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 7,
+      "startBar": 59,
+      "endBar": 59.25,
+      "start": 236,
+      "end": 237,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Major On",
+          "startBar": 59,
+          "endBar": 59.25,
+          "start": 3,
+          "end": 3.25,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 8,
+      "startBar": 65,
+      "endBar": 65.25,
+      "start": 260,
+      "end": 261,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Major On",
+          "startBar": 65,
+          "endBar": 65.25,
+          "start": 1,
+          "end": 1.25,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 8,
+      "startBar": 67.5,
+      "endBar": 68,
+      "start": 270,
+      "end": 272,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Major On",
+          "startBar": 67.5,
+          "endBar": 68,
+          "start": 3.5,
+          "end": 4,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "F6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 8,
+      "startBar": 69,
+      "endBar": 69.25,
+      "start": 276,
+      "end": 277,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Major On",
+          "startBar": 69,
+          "endBar": 69.25,
+          "start": 5,
+          "end": 5.25,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "F6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 8,
+      "startBar": 70,
+      "endBar": 70.25,
+      "start": 280,
+      "end": 281,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Major On",
+          "startBar": 70,
+          "endBar": 70.25,
+          "start": 6,
+          "end": 6.25,
+          "brick": 8
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 8,
+      "startBar": 71,
+      "endBar": 72,
+      "start": 284,
+      "end": 288,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Major On",
+          "startBar": 71,
+          "endBar": 72,
+          "start": 7,
+          "end": 8,
+          "brick": 10
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
           ]
         }
       ],
@@ -87938,6 +90066,2139 @@
       "reason": "single-harmony"
     },
     {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 0,
+      "startBar": 6,
+      "endBar": 6.5,
+      "start": 24,
+      "end": 26,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 6,
+          "endBar": 6.5,
+          "start": 6,
+          "end": 6.5,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 2,
+      "startBar": 16,
+      "endBar": 16.5,
+      "start": 64,
+      "end": 66,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 16,
+          "endBar": 16.5,
+          "start": 0,
+          "end": 0.5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 3,
+      "startBar": 25.5,
+      "endBar": 27,
+      "start": 102,
+      "end": 108,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 25.5,
+          "endBar": 27,
+          "start": 1.75,
+          "end": 3.25,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            3,
+            7,
+            10,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "Fm9"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 4,
+      "startBar": 33,
+      "endBar": 33.5,
+      "start": 132,
+      "end": 134,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Minor On",
+          "startBar": 33,
+          "endBar": 33.5,
+          "start": 2,
+          "end": 2.5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 5,
+      "startBar": 43,
+      "endBar": 43.5,
+      "start": 172,
+      "end": 174,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Minor On",
+          "startBar": 43,
+          "endBar": 43.5,
+          "start": 4,
+          "end": 4.5,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 6,
+      "startBar": 53,
+      "endBar": 53.5,
+      "start": 212,
+      "end": 214,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 53,
+          "endBar": 53.5,
+          "start": 6,
+          "end": 6.5,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 8,
+      "startBar": 62.5,
+      "endBar": 64,
+      "start": 250,
+      "end": 256,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Minor On",
+          "startBar": 62.5,
+          "endBar": 64,
+          "start": 0,
+          "end": 1.5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            3,
+            7,
+            10,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "Fm9"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 483,
+      "title": "A House Is Not A Home",
+      "row": 9,
+      "startBar": 70,
+      "endBar": 70.5,
+      "start": 280,
+      "end": 282,
+      "segments": [
+        {
+          "row": 9,
+          "label": "Minor On",
+          "startBar": 70,
+          "endBar": 70.5,
+          "start": 0,
+          "end": 0.5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 484,
+      "title": "(I'm Afraid) The Masquerade Is Over",
+      "row": 1,
+      "startBar": 2.25,
+      "endBar": 3,
+      "start": 9,
+      "end": 12,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 2.25,
+          "endBar": 3,
+          "start": 2,
+          "end": 2.75,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 484,
+      "title": "(I'm Afraid) The Masquerade Is Over",
+      "row": 1,
+      "startBar": 3,
+      "endBar": 3.25,
+      "start": 12,
+      "end": 13,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 3,
+          "endBar": 3.25,
+          "start": 2.75,
+          "end": 3,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 484,
+      "title": "(I'm Afraid) The Masquerade Is Over",
+      "row": 3,
+      "startBar": 18.25,
+      "endBar": 19,
+      "start": 73,
+      "end": 76,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 18.25,
+          "endBar": 19,
+          "start": 2,
+          "end": 2.75,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 484,
+      "title": "(I'm Afraid) The Masquerade Is Over",
+      "row": 3,
+      "startBar": 19,
+      "endBar": 19.25,
+      "start": 76,
+      "end": 77,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 19,
+          "endBar": 19.25,
+          "start": 2.75,
+          "end": 3,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 484,
+      "title": "(I'm Afraid) The Masquerade Is Over",
+      "row": 5,
+      "startBar": 38.25,
+      "endBar": 39.25,
+      "start": 153,
+      "end": 157,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Minor On",
+          "startBar": 38.25,
+          "endBar": 39.25,
+          "start": 6,
+          "end": 7,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Fm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 484,
+      "title": "(I'm Afraid) The Masquerade Is Over",
+      "row": 6,
+      "startBar": 42.25,
+      "endBar": 43,
+      "start": 169,
+      "end": 172,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 42.25,
+          "endBar": 43,
+          "start": 2,
+          "end": 2.75,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 484,
+      "title": "(I'm Afraid) The Masquerade Is Over",
+      "row": 6,
+      "startBar": 43,
+      "endBar": 43.25,
+      "start": 172,
+      "end": 173,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 43,
+          "endBar": 43.25,
+          "start": 2.75,
+          "end": 3,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 484,
+      "title": "(I'm Afraid) The Masquerade Is Over",
+      "row": 7,
+      "startBar": 53.25,
+      "endBar": 54,
+      "start": 213,
+      "end": 216,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Minor On",
+          "startBar": 53.25,
+          "endBar": 54,
+          "start": 5,
+          "end": 5.75,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Fm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 0,
+      "startBar": 4.33333333325,
+      "endBar": 5,
+      "start": 17.333333333,
+      "end": 20,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 4.33333333325,
+          "endBar": 5,
+          "start": 4.33333333325,
+          "end": 5,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Gm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 1,
+      "startBar": 8.5,
+      "endBar": 9,
+      "start": 34,
+      "end": 36,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 8.5,
+          "endBar": 9,
+          "start": 0.5,
+          "end": 1,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 1,
+      "startBar": 9.25,
+      "endBar": 10,
+      "start": 37,
+      "end": 40,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 9.25,
+          "endBar": 10,
+          "start": 1.25,
+          "end": 2,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 1,
+      "startBar": 12,
+      "endBar": 13,
+      "start": 48,
+      "end": 52,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 12,
+          "endBar": 13,
+          "start": 4,
+          "end": 5,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 4,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Em7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 1,
+      "startBar": 13.25,
+      "endBar": 14,
+      "start": 53,
+      "end": 56,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 13.25,
+          "endBar": 14,
+          "start": 5.25,
+          "end": 6,
+          "brick": 8
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 1,
+      "startBar": 14.25,
+      "endBar": 15,
+      "start": 57,
+      "end": 60,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 14.25,
+          "endBar": 15,
+          "start": 6.25,
+          "end": 7,
+          "brick": 10
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 2,
+      "startBar": 16.5,
+      "endBar": 17,
+      "start": 66,
+      "end": 68,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 16.5,
+          "endBar": 17,
+          "start": 0.5,
+          "end": 1,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 2,
+      "startBar": 17.25,
+      "endBar": 18,
+      "start": 69,
+      "end": 72,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 17.25,
+          "endBar": 18,
+          "start": 1.25,
+          "end": 2,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 2,
+      "startBar": 20,
+      "endBar": 21,
+      "start": 80,
+      "end": 84,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 20,
+          "endBar": 21,
+          "start": 4,
+          "end": 5,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 4,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Em7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 2,
+      "startBar": 21.25,
+      "endBar": 22,
+      "start": 85,
+      "end": 88,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 21.25,
+          "endBar": 22,
+          "start": 5.25,
+          "end": 6,
+          "brick": 8
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 2,
+      "startBar": 22.25,
+      "endBar": 23,
+      "start": 89,
+      "end": 92,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 22.25,
+          "endBar": 23,
+          "start": 6.25,
+          "end": 7,
+          "brick": 10
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 3,
+      "startBar": 24.5,
+      "endBar": 25,
+      "start": 98,
+      "end": 100,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 24.5,
+          "endBar": 25,
+          "start": 0.5,
+          "end": 1,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 3,
+      "startBar": 25.25,
+      "endBar": 26,
+      "start": 101,
+      "end": 104,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 25.25,
+          "endBar": 26,
+          "start": 1.25,
+          "end": 2,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 3,
+      "startBar": 27.25,
+      "endBar": 28,
+      "start": 109,
+      "end": 112,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 27.25,
+          "endBar": 28,
+          "start": 3.25,
+          "end": 4,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 4,
+      "startBar": 33.25,
+      "endBar": 34,
+      "start": 133,
+      "end": 136,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Minor On",
+          "startBar": 33.25,
+          "endBar": 34,
+          "start": 1.25,
+          "end": 2,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 4,
+      "startBar": 36,
+      "endBar": 37,
+      "start": 144,
+      "end": 148,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Minor On",
+          "startBar": 36,
+          "endBar": 37,
+          "start": 4,
+          "end": 5,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 4,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Em"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 4,
+      "startBar": 37.25,
+      "endBar": 38,
+      "start": 149,
+      "end": 152,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Minor On",
+          "startBar": 37.25,
+          "endBar": 38,
+          "start": 5.25,
+          "end": 6,
+          "brick": 7
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 4,
+      "startBar": 38.25,
+      "endBar": 39,
+      "start": 153,
+      "end": 156,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Minor On",
+          "startBar": 38.25,
+          "endBar": 39,
+          "start": 6.25,
+          "end": 7,
+          "brick": 9
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 5,
+      "startBar": 40.5,
+      "endBar": 41,
+      "start": 162,
+      "end": 164,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Minor On",
+          "startBar": 40.5,
+          "endBar": 41,
+          "start": 0.5,
+          "end": 1,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 5,
+      "startBar": 41.25,
+      "endBar": 42,
+      "start": 165,
+      "end": 168,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Minor On",
+          "startBar": 41.25,
+          "endBar": 42,
+          "start": 1.25,
+          "end": 2,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 5,
+      "startBar": 44,
+      "endBar": 45,
+      "start": 176,
+      "end": 180,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Minor On",
+          "startBar": 44,
+          "endBar": 45,
+          "start": 4,
+          "end": 5,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 4,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Em7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 5,
+      "startBar": 45.25,
+      "endBar": 46,
+      "start": 181,
+      "end": 184,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Minor On",
+          "startBar": 45.25,
+          "endBar": 46,
+          "start": 5.25,
+          "end": 6,
+          "brick": 8
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 5,
+      "startBar": 46.25,
+      "endBar": 47,
+      "start": 185,
+      "end": 188,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Minor On",
+          "startBar": 46.25,
+          "endBar": 47,
+          "start": 6.25,
+          "end": 7,
+          "brick": 10
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 6,
+      "startBar": 48.5,
+      "endBar": 49,
+      "start": 194,
+      "end": 196,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 48.5,
+          "endBar": 49,
+          "start": 0.5,
+          "end": 1,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 6,
+      "startBar": 49.25,
+      "endBar": 50,
+      "start": 197,
+      "end": 200,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 49.25,
+          "endBar": 50,
+          "start": 1.25,
+          "end": 2,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 6,
+      "startBar": 52,
+      "endBar": 53,
+      "start": 208,
+      "end": 212,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 52,
+          "endBar": 53,
+          "start": 4,
+          "end": 5,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 4,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Em7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 6,
+      "startBar": 53.25,
+      "endBar": 54,
+      "start": 213,
+      "end": 216,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 53.25,
+          "endBar": 54,
+          "start": 5.25,
+          "end": 6,
+          "brick": 8
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 6,
+      "startBar": 54.25,
+      "endBar": 55,
+      "start": 217,
+      "end": 220,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 54.25,
+          "endBar": 55,
+          "start": 6.25,
+          "end": 7,
+          "brick": 10
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 7,
+      "startBar": 56.5,
+      "endBar": 57,
+      "start": 226,
+      "end": 228,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Minor On",
+          "startBar": 56.5,
+          "endBar": 57,
+          "start": 0.5,
+          "end": 1,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 7,
+      "startBar": 57.25,
+      "endBar": 58,
+      "start": 229,
+      "end": 232,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Minor On",
+          "startBar": 57.25,
+          "endBar": 58,
+          "start": 1.25,
+          "end": 2,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 7,
+      "startBar": 59.25,
+      "endBar": 60,
+      "start": 237,
+      "end": 240,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Minor On",
+          "startBar": 59.25,
+          "endBar": 60,
+          "start": 3.25,
+          "end": 4,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 8,
+      "startBar": 65.25,
+      "endBar": 66,
+      "start": 261,
+      "end": 264,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Minor On",
+          "startBar": 65.25,
+          "endBar": 66,
+          "start": 1.25,
+          "end": 2,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 8,
+      "startBar": 68,
+      "endBar": 69,
+      "start": 272,
+      "end": 276,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Minor On",
+          "startBar": 68,
+          "endBar": 69,
+          "start": 4,
+          "end": 5,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 4,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Em"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 8,
+      "startBar": 69.25,
+      "endBar": 70,
+      "start": 277,
+      "end": 280,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Minor On",
+          "startBar": 69.25,
+          "endBar": 70,
+          "start": 5.25,
+          "end": 6,
+          "brick": 7
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 8,
+      "startBar": 70.25,
+      "endBar": 71,
+      "start": 281,
+      "end": 284,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Minor On",
+          "startBar": 70.25,
+          "endBar": 71,
+          "start": 6.25,
+          "end": 7,
+          "brick": 9
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
       "brick": "Minor Perfect",
       "slug": "minor-perfect",
       "song": 71,
@@ -92547,6 +96808,222 @@
           "bass": null,
           "symbols": [
             "Cm"
+          ]
+        },
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Gm7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "Off On Minor IV",
+      "slug": "off-on-minor-iv",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 0,
+      "startBar": 0,
+      "endBar": 1,
+      "start": 0,
+      "end": 4,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Off On Minor IV",
+          "startBar": 0,
+          "endBar": 1,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Off On Minor IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        },
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Gm7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "Off On Minor IV",
+      "slug": "off-on-minor-iv",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 0,
+      "startBar": 1,
+      "endBar": 2,
+      "start": 4,
+      "end": 8,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Off On Minor IV",
+          "startBar": 1,
+          "endBar": 2,
+          "start": 1,
+          "end": 2,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Off On Minor IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        },
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Gm7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "Off On Minor IV",
+      "slug": "off-on-minor-iv",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 0,
+      "startBar": 2,
+      "endBar": 3,
+      "start": 8,
+      "end": 12,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Off On Minor IV",
+          "startBar": 2,
+          "endBar": 3,
+          "start": 2,
+          "end": 3,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Off On Minor IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        },
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Gm7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "Off On Minor IV",
+      "slug": "off-on-minor-iv",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 0,
+      "startBar": 3,
+      "endBar": 4,
+      "start": 12,
+      "end": 16,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Off On Minor IV",
+          "startBar": 3,
+          "endBar": 4,
+          "start": 3,
+          "end": 4,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Off On Minor IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
           ]
         },
         {
@@ -101045,6 +105522,326 @@
       "reason": "on-off-family"
     },
     {
+      "brick": "On Off Major Somewhere",
+      "slug": "on-off-major-somewhere",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 3,
+      "startBar": 26,
+      "endBar": 27,
+      "start": 104,
+      "end": 108,
+      "segments": [
+        {
+          "row": 3,
+          "label": "On Off Major Somewhere",
+          "startBar": 26,
+          "endBar": 27,
+          "start": 2,
+          "end": 3,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "On Off Major Somewhere"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab"
+          ]
+        },
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbm"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Major Somewhere",
+      "slug": "on-off-major-somewhere",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 3,
+      "startBar": 28,
+      "endBar": 29,
+      "start": 112,
+      "end": 116,
+      "segments": [
+        {
+          "row": 3,
+          "label": "On Off Major Somewhere",
+          "startBar": 28,
+          "endBar": 29,
+          "start": 4,
+          "end": 5,
+          "brick": 7
+        }
+      ],
+      "labels": [
+        "On Off Major Somewhere"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab"
+          ]
+        },
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbm"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Major Somewhere",
+      "slug": "on-off-major-somewhere",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 4,
+      "startBar": 32,
+      "endBar": 33,
+      "start": 128,
+      "end": 132,
+      "segments": [
+        {
+          "row": 4,
+          "label": "On Off Major Somewhere",
+          "startBar": 32,
+          "endBar": 33,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "On Off Major Somewhere"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        },
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Major Somewhere",
+      "slug": "on-off-major-somewhere",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 7,
+      "startBar": 58,
+      "endBar": 59,
+      "start": 232,
+      "end": 236,
+      "segments": [
+        {
+          "row": 7,
+          "label": "On Off Major Somewhere",
+          "startBar": 58,
+          "endBar": 59,
+          "start": 2,
+          "end": 3,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "On Off Major Somewhere"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab"
+          ]
+        },
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbm"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Major Somewhere",
+      "slug": "on-off-major-somewhere",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 7,
+      "startBar": 60,
+      "endBar": 61,
+      "start": 240,
+      "end": 244,
+      "segments": [
+        {
+          "row": 7,
+          "label": "On Off Major Somewhere",
+          "startBar": 60,
+          "endBar": 61,
+          "start": 4,
+          "end": 5,
+          "brick": 7
+        }
+      ],
+      "labels": [
+        "On Off Major Somewhere"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab"
+          ]
+        },
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbm"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Major Somewhere",
+      "slug": "on-off-major-somewhere",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 8,
+      "startBar": 64,
+      "endBar": 65,
+      "start": 256,
+      "end": 260,
+      "segments": [
+        {
+          "row": 8,
+          "label": "On Off Major Somewhere",
+          "startBar": 64,
+          "endBar": 65,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "On Off Major Somewhere"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        },
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
       "brick": "On Off Major V",
       "slug": "on-off-major-v",
       "song": 44,
@@ -105805,6 +110602,114 @@
           "bass": null,
           "symbols": [
             "F"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Minor bIII",
+      "slug": "on-off-minor-biii",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 3,
+      "startBar": 29,
+      "endBar": 30,
+      "start": 116,
+      "end": 120,
+      "segments": [
+        {
+          "row": 3,
+          "label": "On Off Minor bIII",
+          "startBar": 29,
+          "endBar": 30,
+          "start": 5,
+          "end": 6,
+          "brick": 8
+        }
+      ],
+      "labels": [
+        "On Off Minor bIII"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        },
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Minor bIII",
+      "slug": "on-off-minor-biii",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 7,
+      "startBar": 61,
+      "endBar": 62,
+      "start": 244,
+      "end": 248,
+      "segments": [
+        {
+          "row": 7,
+          "label": "On Off Minor bIII",
+          "startBar": 61,
+          "endBar": 62,
+          "start": 5,
+          "end": 6,
+          "brick": 8
+        }
+      ],
+      "labels": [
+        "On Off Minor bIII"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        },
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
           ]
         }
       ],
@@ -117827,6 +122732,330 @@
           "bass": null,
           "symbols": [
             "EbM7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off On To II",
+      "slug": "on-off-on-to-ii",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 1,
+      "startBar": 10,
+      "endBar": 11.5,
+      "start": 40,
+      "end": 46,
+      "segments": [
+        {
+          "row": 1,
+          "label": "On Off On To II",
+          "startBar": 10,
+          "endBar": 11.5,
+          "start": 2,
+          "end": 3.5,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "On Off On To II"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        },
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off On To II",
+      "slug": "on-off-on-to-ii",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 2,
+      "startBar": 18,
+      "endBar": 19.5,
+      "start": 72,
+      "end": 78,
+      "segments": [
+        {
+          "row": 2,
+          "label": "On Off On To II",
+          "startBar": 18,
+          "endBar": 19.5,
+          "start": 2,
+          "end": 3.5,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "On Off On To II"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        },
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off On To II",
+      "slug": "on-off-on-to-ii",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 4,
+      "startBar": 34,
+      "endBar": 35.5,
+      "start": 136,
+      "end": 142,
+      "segments": [
+        {
+          "row": 4,
+          "label": "On Off On To II",
+          "startBar": 34,
+          "endBar": 35.5,
+          "start": 2,
+          "end": 3.5,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "On Off On To II"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        },
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off On To II",
+      "slug": "on-off-on-to-ii",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 5,
+      "startBar": 42,
+      "endBar": 43.5,
+      "start": 168,
+      "end": 174,
+      "segments": [
+        {
+          "row": 5,
+          "label": "On Off On To II",
+          "startBar": 42,
+          "endBar": 43.5,
+          "start": 2,
+          "end": 3.5,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "On Off On To II"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        },
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off On To II",
+      "slug": "on-off-on-to-ii",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 6,
+      "startBar": 50,
+      "endBar": 51.5,
+      "start": 200,
+      "end": 206,
+      "segments": [
+        {
+          "row": 6,
+          "label": "On Off On To II",
+          "startBar": 50,
+          "endBar": 51.5,
+          "start": 2,
+          "end": 3.5,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "On Off On To II"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        },
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off On To II",
+      "slug": "on-off-on-to-ii",
+      "song": 485,
+      "title": "Some Other Time",
+      "row": 8,
+      "startBar": 66,
+      "endBar": 67.5,
+      "start": 264,
+      "end": 270,
+      "segments": [
+        {
+          "row": 8,
+          "label": "On Off On To II",
+          "startBar": 66,
+          "endBar": 67.5,
+          "start": 2,
+          "end": 3.5,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "On Off On To II"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        },
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
           ]
         }
       ],

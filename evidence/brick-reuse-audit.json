@@ -17,10 +17,10 @@
     "mergedFamilies": 11,
     "removedFamilies": 28,
     "outputFamilies": 123,
-    "rawPassages": 6811,
+    "rawPassages": 6869,
     "mergedPassages": 22,
     "removedPassages": 48,
-    "keptPassages": 6763,
+    "keptPassages": 6821,
     "supportBasis": "distinct standards",
     "minimumTargetStandards": 2,
     "maxVariantDistance": 0.28,
@@ -37,13 +37,13 @@
     "sourceLabels": "Merged raw row labels remain unchanged and resolve through unioned aliases; unmatched one-standard labels are removed only at audited source positions"
   },
   "integrity": {
-    "standards": 483,
-    "musicBeforeSha256": "5d90fa6271ee2964f0d81773bfb767190763ad2ce734529da04aa6689835c966",
-    "musicAfterSha256": "5d90fa6271ee2964f0d81773bfb767190763ad2ce734529da04aa6689835c966",
-    "runtimeSpanSha256": "f72e0a6aa7fcbb1cbe5a42a9bb39a9808f29259c3607dba1525d68b6d8ee6451",
-    "indexSpanSha256": "f72e0a6aa7fcbb1cbe5a42a9bb39a9808f29259c3607dba1525d68b6d8ee6451",
-    "runtimePassages": 6763,
-    "indexPassages": 6763,
+    "standards": 486,
+    "musicBeforeSha256": "cc2a60efe74d61c1ae82680da1e8b6834335a5ec28b600c1e27b8330d9457415",
+    "musicAfterSha256": "cc2a60efe74d61c1ae82680da1e8b6834335a5ec28b600c1e27b8330d9457415",
+    "runtimeSpanSha256": "221351277b36fbb887765adbcd9245570641d75565a3e9d5bd64b3a51b551b78",
+    "indexSpanSha256": "221351277b36fbb887765adbcd9245570641d75565a3e9d5bd64b3a51b551b78",
+    "runtimePassages": 6821,
+    "indexPassages": 6821,
     "remainingOneStandardFamilies": 0
   },
   "summary": [
@@ -4766,7 +4766,8 @@
             261,
             376,
             384,
-            430
+            430,
+            483
           ],
           "sourceStructure": {
             "chords": [
@@ -7965,7 +7966,8 @@
             454,
             456,
             464,
-            477
+            477,
+            483
           ],
           "sourceStructure": {
             "chords": [
@@ -18389,7 +18391,8 @@
             454,
             456,
             464,
-            477
+            477,
+            483
           ],
           "sourceStructure": {
             "chords": [
@@ -23846,7 +23849,9 @@
             465,
             467,
             472,
-            476
+            476,
+            484,
+            485
           ],
           "distance": 0.2575,
           "pairs": [
@@ -26447,7 +26452,9 @@
             398,
             410,
             451,
-            452
+            452,
+            484,
+            485
           ],
           "sourceStructure": {
             "chords": [

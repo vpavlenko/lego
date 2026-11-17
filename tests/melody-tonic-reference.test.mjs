@@ -27,7 +27,7 @@ test('curated-reference decoder rejects identity changes, altered event times an
  const result=spawnSync(python,['-c',code,new URL('scripts/import-openbook-melodies.py',root).pathname],{input:JSON.stringify({entry,reference:ref,original:songs[ref.canonicalSong]}),encoding:'utf8'});assert.equal(result.status,0,result.stderr);assert.match(result.stdout,/passed/);
 });
 test('nine new arrangements keep exact source notes/harmony and all 474 earlier performance bytes',()=>{
- const added=songs.filter(s=>s.index>=474);assert.equal(added.length,9);let notes=0;
+ const added=songs.filter(s=>s.index>=474&&s.index<483);assert.equal(added.length,9);let notes=0;
  for(const song of added){
   const entry=manifest.entries[song.melodyId],performance=read(`dist/data/performances/${song.index}.json`),melody=performance.notes.filter(n=>n.voice===1);assert.equal(performance.melody.beatOffset,0);assert.equal(performance.beats,entry.totalBeats);assert.equal(melody.length,entry.notes.length);assert.equal(performance.chords.length,entry.chords.length);
   entry.notes.forEach((n,i)=>{const m=melody.find(m=>m.id===`melody:${entry.id}:${i}`);assert.equal(m.start,n.start);assert.equal(m.duration,n.duration);assert.equal(m.pitch,n.pitch+performance.melody.transpose);});
