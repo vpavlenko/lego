@@ -8,7 +8,7 @@ const root=new URL('../dist/',import.meta.url),read=p=>JSON.parse(fs.readFileSyn
 const wait=async fn=>{for(let i=0;i<100;i++){if(fn())return;await new Promise(r=>setTimeout(r,10));}assert.ok(fn(),'DOM did not settle');};
 
 test('Rawl playback, brick pages, deep links and existing chart views work together',async()=>{
- const dom=new JSDOM(fs.readFileSync(new URL('index.html',root),'utf8'),{url:'http://localhost:5187/',pretendToBeVisual:true});
+ const dom=new JSDOM(fs.readFileSync(new URL('index.html',root),'utf8'),{url:'http://localhost:5187/#000',pretendToBeVisual:true});
  const w=dom.window;Object.assign(globalThis,{window:w,document:w.document,location:w.location,localStorage:w.localStorage,history:w.history,innerWidth:1280,innerHeight:900,requestAnimationFrame:w.requestAnimationFrame.bind(w),cancelAnimationFrame:w.cancelAnimationFrame.bind(w)});
  Object.defineProperty(globalThis,'navigator',{value:w.navigator,configurable:true});
  const media={matches:false,addEventListener(){},removeEventListener(){}};globalThis.matchMedia=()=>media;

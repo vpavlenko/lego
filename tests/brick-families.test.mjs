@@ -96,7 +96,7 @@ test('tails and uniquely resolved clipped roles fold without merging unrelated p
  assert.equal(containing('Straight...'),named('Straight'));
  // Ending, Opening, Turnaround, POT, and Start are outside the role merge.
  assert.notEqual(containing('Starlight Opening'),named('Starlight'));
- assert.notEqual(containing('Nowhere Turnaround'),named('Nowhere'));
+ assert.notEqual(containing('Nowhere Turnaround'),named(displayName('Nowhere')));
  assert.notEqual(containing('Dominant Cycle Minor'),containing('Dominant Cycle'));
  assert.equal(containing('Pullback to Cadence').name,'Pullback to Cadence');
  for(const label of ['Bemsha Turnaround 1','Bemsha Turnaround 2','Bemsha Turnaround 3'])assert.equal(containing(label).name,label);

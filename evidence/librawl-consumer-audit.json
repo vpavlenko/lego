@@ -2,14 +2,14 @@
   "version": 2,
   "date": "2026-11-17",
   "library": {
-    "dependency": "file:vendor/librawl-0.3.2.tgz",
-    "version": "0.3.2",
-    "archiveSha256": "22c90894ee055808df3c56fb66c7339a7862bd3b3f38b8bfbd32a9900b995ea7",
-    "archiveIntegrity": "sha512-z/X1ojP+O1MxFuYe6Sz13YsKpLdZBSVD1fZtjVCw8QBATO9ux++po0d6A/LzevaZimFeNKN1Ouz+FoE3qesxvg==",
+    "dependency": "file:vendor/librawl-0.3.3.tgz",
+    "version": "0.3.3",
+    "archiveSha256": "894c89df46cfc7132f2007356bf01607ab6e9195e0340b3f92e3b7ed6ccbe742",
+    "archiveIntegrity": "sha512-mPMbx5JpAeVQH0V0JP+tKkc5wD6T0eAKuplT8JwSSEJDd0w6o5TxWBG2FV5P64rVvyoye+Fw2fNNs/tB27i2EQ==",
     "react": "19.3.1",
     "reactDOM": "19.3.1",
     "audioSourceSha256": "1950f8ca50b0b94fa1b6151f1a309a2413e8c0643f095f3ce0582bb45234c149",
-    "archiveBytes": 237063,
+    "archiveBytes": 239126,
     "archiveFiles": 49,
     "distArtifacts": 29,
     "status": "frozen package; consumer integration verified locally; publication tracked separately"
@@ -28,12 +28,12 @@
     {
       "destination": "dist/soundfont-playback.js",
       "packageArtifact": "browser/soundfont-playback-sax.js",
-      "sha256": "4653ef9217f7743834d56d91402896b73c39d8ecb01ba28f9d69d47b883eb3cf"
+      "sha256": "d41054982f14d73c8b03a39e8f34aae7b96f724ed26dd454a1599868e04b3ce4"
     },
     {
       "destination": "dist/rawl-colors.mjs",
       "packageArtifact": "palette.js",
-      "sha256": "3148a0fffe15241dcfccad9511cdb2fe4aafdeeeeabd1f3e658b45bedf5b77c9"
+      "sha256": "8069ec55a45892dbe60973423d215bd538272d24c8cb0771a3bfbc621f04ee6f"
     },
     {
       "destination": "dist/RAWL-LICENSE.txt",
@@ -48,7 +48,7 @@
     {
       "destination": "dist/librawl-provenance.json",
       "packageArtifact": "provenance.json",
-      "sha256": "5c16c7e868e5350b174ee461a70fcb02351a7ed21d27aec138dfe5cffa5e8f21"
+      "sha256": "b23bcb74ba2c14401614506d63b0634148475bcd47c88e0d8bcca96bf1726ba6"
     }
   ],
   "scope": {

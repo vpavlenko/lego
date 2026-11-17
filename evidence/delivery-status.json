@@ -2,10 +2,10 @@
   "date": "2026-11-17",
   "library": {
     "repository": "https://github.com/vpavlenko/librawl",
-    "lego": "0.3.2",
-    "rawl": "0.3.0",
+    "lego": "0.3.3",
+    "rawl": "0.3.2",
     "caplin": "0.3.0",
-    "tests": 56
+    "tests": 62
   },
   "implementations": {
     "grouping": "shared Dominant Cycle / IV and / II and / Diatonic families",
@@ -16,7 +16,11 @@
     "comparisons": "four complete source variants, 100px/bar, visual alignment only",
     "recoloring": "shared per-score measure selection, preview, commit, Escape",
     "tempo": "shared Rawl coarse/fine keys connected to all three hosts",
-    "noteTooltips": "Suppressed in shared native notes, including plain, bent, quartertone and drums; accessible labels retained"
+    "noteTooltips": "Suppressed in shared native notes, including plain, bent, quartertone and drums; accessible labels retained",
+    "shiftHover": "Shared library gesture and original-note audition callback; Lego source/UI integration validated",
+    "favicon": "Three solid degree2/4/6 bands only on ii; superscript7 black",
+    "standardNavigation": "One composition entry links directly to a melody arrangement where available; exact source/brick-passage addresses retained",
+    "nowhereName": "Primary learner names replace Nowhere with♭VI; Cork aliases/routes retained"
   },
   "melodies": {
     "arrangements": 507,
@@ -61,19 +65,19 @@
   },
   "publication": {
     "raw": "https://rawl.rocks/",
-    "rawCommit": "1f79832aaaaa9ac65b8b6f2c78367f834ce4d830",
+    "rawCommit": "c99678c53",
     "caplin": "https://caplin.cxielamiko.chatgpt.site",
     "caplinVersion": 207,
     "lego": {
       "url": "https://insights-roadmaps.cxielamiko.chatgpt.site",
-      "version": 15,
-      "sourceCommit": "78ab10471e780142b48017de6b57aafe9ac426ec",
+      "version": 16,
+      "sourceCommit": "8ebff9a711e4bfc5464ed56f22a84cd5985d50ac",
       "status": "succeeded",
       "anonymousReadback": {
-        "charts": 486,
-        "melodyCompositions": 237,
-        "comparisons": 4,
-        "library": "0.3.1"
+        "charts": 507,
+        "melodyCompositions": 258,
+        "melodyCharts": 266,
+        "library": "0.3.2"
       }
     }
   },
@@ -89,6 +93,10 @@
       "Dream: ambiguous source harmony offsets",
       "Strike Up the Band / White Christmas: conflicting source harmony onsets",
       "Love Came on Stealthy Fingers / Thunderbirds: identified encoded head not found"
+    ],
+    "currentRelease": [
+      "Publish shared Shift-hover and♭VI learner names",
+      "Remove tempo-change note retriggers across shared SoundFont hosts"
     ]
   }
 }

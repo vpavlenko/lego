@@ -39,6 +39,11 @@ export const DEFERRED_QUOTATION_SLUGS=['foolish','foggy-turnaround','raindrop'];
 // Compound nicknames and acronyms expose a representative functional pattern;
 // source identity and every alternate definition remain separate.
 export const COMPOUND_DISPLAY_NAMES={
+ 'Nowhere':'♭VI',
+ 'Nowhere Minor':'♭VI Minor',
+ 'Nowhere Turnaround':'♭VI Turnaround',
+ 'Nowhere Turnaround Minor':'♭VI Turnaround Minor',
+ 'Somewhere/Nowhere':'Somewhere/♭VI',
  'IV n Mack':'IV iv I',
  'IV n Back':'IV ♯iv° I',
  'IV n Hack':'IV ♯iv VII7',
