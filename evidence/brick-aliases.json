@@ -1,6 +1,6 @@
 {
-  "sourceLabels": 402,
-  "canonicalBricks": 339,
+  "sourceLabels": 407,
+  "canonicalBricks": 344,
   "groups": [
     {
       "name": "Autumn Leaves Opening +...",
@@ -63,8 +63,8 @@
       "aliases": [
         "I¥ n Back"
       ],
-      "standards": 14,
-      "passages": 18
+      "standards": 16,
+      "passages": 20
     },
     {
       "name": "IV n Bauble",
@@ -79,8 +79,8 @@
       "aliases": [
         "I¥ n Bird"
       ],
-      "standards": 7,
-      "passages": 9
+      "standards": 10,
+      "passages": 17
     },
     {
       "name": "IV n Bird +...",
@@ -127,8 +127,8 @@
       "aliases": [
         "I¥ n Mack"
       ],
-      "standards": 1,
-      "passages": 4
+      "standards": 3,
+      "passages": 6
     },
     {
       "name": "IV n Yak +...",
@@ -169,8 +169,8 @@
         "Minor Chrom...",
         "Minor Chroma..."
       ],
-      "standards": 13,
-      "passages": 28
+      "standards": 17,
+      "passages": 38
     },
     {
       "name": "Minor Dropback",
@@ -203,8 +203,8 @@
         "Minor Perfect Cade",
         "Minor Perfect."
       ],
-      "standards": 42,
-      "passages": 97
+      "standards": 44,
+      "passages": 101
     },
     {
       "name": "Nowhere Launcher",
@@ -219,8 +219,8 @@
       "aliases": [
         "Off On Minor bil"
       ],
-      "standards": 4,
-      "passages": 12
+      "standards": 6,
+      "passages": 14
     },
     {
       "name": "On Off Major #IV",
@@ -235,8 +235,8 @@
       "aliases": [
         "On Off Major bil"
       ],
-      "standards": 7,
-      "passages": 12
+      "standards": 9,
+      "passages": 14
     },
     {
       "name": "On Off Major bIII",
@@ -251,16 +251,16 @@
       "aliases": [
         "On Off Major Ill"
       ],
-      "standards": 8,
-      "passages": 12
+      "standards": 11,
+      "passages": 20
     },
     {
       "name": "On Off Major VII",
       "aliases": [
         "On Off Major Vil"
       ],
-      "standards": 14,
-      "passages": 22
+      "standards": 15,
+      "passages": 23
     },
     {
       "name": "On Off Minor #IV",
@@ -275,16 +275,16 @@
       "aliases": [
         "On Off Minor bil"
       ],
-      "standards": 7,
-      "passages": 11
+      "standards": 9,
+      "passages": 17
     },
     {
       "name": "On Off Minor bIII",
       "aliases": [
         "On Off Minor blll"
       ],
-      "standards": 7,
-      "passages": 10
+      "standards": 8,
+      "passages": 12
     },
     {
       "name": "Perfect Cadence",
@@ -292,8 +292,8 @@
         "Perfect Caden.",
         "Perfect Cadenc..."
       ],
-      "standards": 105,
-      "passages": 337
+      "standards": 131,
+      "passages": 407
     },
     {
       "name": "Sad Launcher",
@@ -309,8 +309,8 @@
       "aliases": [
         "Somewhere/Nowhere Approi"
       ],
-      "standards": 6,
-      "passages": 11
+      "standards": 10,
+      "passages": 16
     },
     {
       "name": "Straight Approach",
@@ -319,8 +319,8 @@
         "Straight Appro.",
         "Straight Approa..."
       ],
-      "standards": 124,
-      "passages": 258
+      "standards": 155,
+      "passages": 338
     },
     {
       "name": "Straight Cadence + Dominant Overrun",

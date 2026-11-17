@@ -19,7 +19,7 @@ test('all OpenBook candidates retain pinned provenance, exact harmony coverage a
  assert.ok(data.entries.length>=79);assert.equal(data.entries.length,audit.counts.validatedArrangements);assert.equal(data.timeUnit,'quarter-note');assert.equal(data.pitchBasis,'source');assert.equal(new Set(data.entries.map(e=>e.id)).size,data.entries.length);
  assert.match(data.sources[0].repositoryLicenseFile,/MIT License/);assert.match(data.sources[0].repositoryReadmeRights,/GPL/);
  for(const e of data.entries){
-  assert.equal(e.id,e.melodyId);assert.equal(e.tonicConfidence,'high');assert.match(e.provenance.tonicBasis,/Explicit/);assert.match(e.provenance.url,/adbe5c68ff59e20068dd754e7d227979fa628d33/);assert.match(e.provenance.sha256,/^[a-f0-9]{64}$/);assert.equal(e.provenance.decoder,'LilyPond 2.26.0');assert.deepEqual(melodyEligibility(e,qualities),[],e.title);assert.equal(e.totalBeats,e.barBeats*e.bars);assert.equal(e.pickupBeats,0);const original=songs[audit.entries.find(a=>a.id===e.id).originalSong];assert.equal(e.tonic[1].toLowerCase(),original.tonic[1].toLowerCase());
+  assert.equal(e.id,e.melodyId);assert.equal(e.tonicConfidence,'high');assert.match(e.provenance.tonicBasis,/Explicit/);assert.match(e.provenance.url,/adbe5c68ff59e20068dd754e7d227979fa628d33/);assert.match(e.provenance.sha256,/^[a-f0-9]{64}$/);assert.equal(e.provenance.decoder,'LilyPond 2.26.0');assert.deepEqual(melodyEligibility(e,qualities),[],e.title);if(e.pickupBeats){assert.equal(e.measures[0].duration,e.pickupBeats);assert.equal(e.measures.at(-1).start+e.measures.at(-1).duration,e.totalBeats);}else assert.equal(e.totalBeats,e.barBeats*e.bars);const original=songs[audit.entries.find(a=>a.id===e.id).originalSong];assert.equal(e.tonic[1].toLowerCase(),original.tonic[1].toLowerCase());
   assert.equal(e.chords[0].start,0);assert.equal(e.chords.at(-1).end,e.totalBeats);
   for(let i=0;i<e.chords.length;i++){const c=e.chords[i];assert.ok(c.end>c.start);if(i)assert.ok(Math.abs(c.start-e.chords[i-1].end)<1e-7,e.title);assert.ok(c.sourceLine>=e.provenance.sections.chords.startLine);if(c.symbol==='NC')continue;const parsed=parseChord(c.symbol,qualities,c);assert.ok(parsed,c.symbol);const expected=new Set(parsed.intervals.map(x=>mod(parsed.root+x)));if(parsed.slash)expected.add(parsed.bass);assert.deepEqual([...new Set(c.sourcePitches.map(mod))].sort((a,b)=>a-b),[...expected].sort((a,b)=>a-b),e.title+' '+c.symbol);}
   const {midi,notes}=notesFromMidi(fs.readFileSync(new URL('dist/'+e.midi,root)));assert.ok(midi.tracks.flat().some(e=>e.type==='programChange'&&e.programNumber===65));assert.equal(notes.length,e.notes.length,e.title);
@@ -110,7 +110,7 @@ test('opt-in pickup decoding preserves actual notes and source measure0 without 
  assert.deepEqual(e.notes.map(n=>[n.pitch,n.start,n.duration]),[[55,0,1],[60,1,4],[65,5,4]]);
  assert.deepEqual(e.chords.map(c=>[c.symbol,c.start,c.end]),[['G7',0,1],['C',1,5],['F',5,9]]);
  assert.deepEqual(e.provenance.irregularMeasures.map(m=>[m.sourceNumber,m.kind,m.duration]),[['0','pickup',1]]);assert.match(e.provenance.pickupPolicy,/No padding/);
- assert.ok(melodyEligibility(e,qualities).length,'Irregular candidate is not silently admitted by the regular-grid runtime');
+ assert.deepEqual(melodyEligibility(e,qualities),[],'Compiler-verified pickup is admitted with its explicit source map');
 });
 
 test('pickup length comes from LilyPond duration semantics including dots and multipliers',{skip:!python||!lilypond?'Requires Python 3.11+ and LilyPond':false},()=>{

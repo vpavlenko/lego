@@ -83,10 +83,10 @@ test('additional imports keep original indices intact and use the same source ar
  const reversed=prepareAdditionalStandards([...entries].reverse(),{originalSongs:originals,dictionary,qualities,includeArrangements:false});assert.deepEqual(reversed.songs,result.songs);
 });
 
-test('pickups are excluded, and unsupported source harmony stays clipped rather than receiving invented notes',()=>{
+test('unverified pickups are excluded, and unsupported source harmony stays clipped rather than receiving invented notes',()=>{
  const pickup=xmlEntry('pickup','Pickup');pickup.pickupBeats=1;
  const unknown=xmlEntry('unknown','Unknown',['Dm7','G7','Cunknown-quality']);
- const result=prepareAdditionalStandards([pickup,unknown],{originalSongs:[],dictionary,qualities});assert.equal(result.songs.length,1);assert.ok(result.audit.rejected.some(r=>r.reason==='pickup-measure'));const cells=result.songs[0].rows.flatMap(r=>r.chords);assert.equal(cells.at(-1).symbol,'Cunknown-quality');assert.equal(cells.at(-1).clipped,true);assert.equal(cells.at(-1).end-cells.at(-1).start,2);
+ const result=prepareAdditionalStandards([pickup,unknown],{originalSongs:[],dictionary,qualities});assert.equal(result.songs.length,1);assert.ok(result.audit.rejected.some(r=>r.reason==='unsupported-pickup-measure-map'));const cells=result.songs[0].rows.flatMap(r=>r.chords);assert.equal(cells.at(-1).symbol,'Cunknown-quality');assert.equal(cells.at(-1).clipped,true);assert.equal(cells.at(-1).end-cells.at(-1).start,2);
  assert.equal(result.audit.records[0].unsupported[0].symbol,'Cunknown-quality');
 });
 

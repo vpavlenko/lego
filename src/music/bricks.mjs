@@ -1,3 +1,4 @@
+import {sliceMeasureMap} from './measure-map.mjs';
 export function slugify(name){return name.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\+/g,' plus ').replace(/[…]|\.{2,}/g,' clipped ').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')||'brick';}
 function suffix(name){let h=2166136261;for(const c of name)h=Math.imul(h^c.charCodeAt(0),16777619);return (h>>>0).toString(36);}
 export function buildBrickIndex(songs){
@@ -31,7 +32,7 @@ export function brickExample(brick,songs){
  const {song,row,start,end,passage}=candidates[0],key=row.keys.find(k=>start>=k.start-1e-6&&start<k.end-1e-6)||{root:song.tonic[0],mode:song.tonic[1]};
  const slice=items=>items.filter(x=>x.start<end&&x.end>start).map(x=>({...x,start:Math.max(x.start,start)-start,end:Math.min(x.end,end)-start}));
  const keys=slice(row.keys);if(!keys.length||keys[0].start>0)keys.unshift({...key,start:0,end:keys[0]?.start??end-start});
- const previewSong={index:song.index,title:brick.name,tonic:[key.root,key.mode],meter:song.meter,bars:end-start,columns:end-start,rows:[{startBar:0,bars:end-start,keys,chords:slice(row.chords),bricks:[{start:0,end:end-start,name:brick.name}],joins:row.joins.filter(j=>j.at>start&&j.at<end).map(j=>({...j,at:j.at-start}))}]};
+ const previewSong={index:song.index,title:brick.name,tonic:[key.root,key.mode],meter:song.meter,bars:end-start,columns:end-start,...sliceMeasureMap(song,passage.startBar,passage.endBar),rows:[{startBar:0,bars:end-start,keys,chords:slice(row.chords),bricks:[{start:0,end:end-start,name:brick.name}],joins:row.joins.filter(j=>j.at>start&&j.at<end).map(j=>({...j,at:j.at-start}))}]};
  return {previewSong,source:{song:song.index,title:song.title,...passage}};
 }
 import {brickIdentity} from './brick-aliases.mjs';

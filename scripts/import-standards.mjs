@@ -5,6 +5,7 @@ import {createHash} from 'node:crypto';
 import {parseBrickDictionary,createBrickParser,discoverRepeatedPatterns} from '../src/music/brick-parser.mjs';
 import {parseChord} from '../src/music/realization.mjs';
 import {brickIdentity} from '../src/music/bricks.mjs';
+import {sourceMeasureMap} from '../src/music/measure-map.mjs';
 import {mod,pitch} from '../dist/harmony.mjs';
 
 const project=fileURLToPath(new URL('../',import.meta.url)),EPS=1e-7;
@@ -40,17 +41,16 @@ function rowsFor(song,segments){
   }
  }
  regions.forEach((region,i)=>{region.end=regions[i+1]?.start??song.bars;});
- const rows=[];for(let startBar=0;startBar<song.bars;startBar+=song.columns){const end=Math.min(song.bars,startBar+song.columns),slice=items=>items.filter(c=>c.start<end-EPS&&c.end>startBar+EPS).map(c=>({...c,start:Math.max(c.start,startBar)-startBar,end:Math.min(c.end,end)-startBar}));
+ const edges=song.measureMap?[0,...song.measureMap.filter((m,i)=>i>0&&(i-1)%song.columns===0).map(m=>m.start/(song.meter[0]*4/song.meter[1])),song.bars]:Array.from({length:Math.ceil(song.bars/song.columns)+1},(_,i)=>Math.min(song.bars,i*song.columns));
+ const rows=[];for(let ri=0;ri<edges.length-1;ri++){const startBar=edges[ri],end=edges[ri+1],slice=items=>items.filter(c=>c.start<end-EPS&&c.end>startBar+EPS).map(c=>({...c,start:Math.max(c.start,startBar)-startBar,end:Math.min(c.end,end)-startBar}));
   const bricks=segments.filter(s=>s.kind==='known'||s.kind==='discovered').map(s=>({start:s.start,end:s.end,name:s.name,analysisId:s.analysisId,basis:s.kind==='known'?'dictionary-parser':'repeated-source-pattern',...(s.definition?{definition:s.definition}:{}),...(s.patternId?{patternId:s.patternId}:{})}));
   rows.push({startBar,bars:end-startBar,keys:slice(regions),bricks:slice(bricks),chords:slice(song._chords),joins:joins.filter(j=>j.at>=startBar-EPS&&j.at<end-EPS).map(j=>({...j,at:j.at-startBar}))});
  }
  return rows;
 }
 
-/** Append-only import of validated source arrangements. Pickups and changing
- * meter await explicit runtime measure-map support; they are never stretched
- * into regular bars. Original roadmap songs remain untouched.
- */
+/** Append-only source arrangements. Explicit compiler measure maps preserve
+ * pickup/tail durations; parser coordinates remain continuous meter units. */
 export function prepareAdditionalStandards(entries,{originalSongs,priorSongs=[],dictionary,qualities,minimumSupport=3,includeArrangements=true,existingMatches=[]}={}){
  const originals=originalKeys([...originalSongs,...priorSongs]),seen=new Map(),sourceIds=new Set(priorSongs.map(song=>song.melodyId)),matchedIds=new Set(existingMatches.map(m=>m.melodyId)),rejected=[],prepared=[],parser=createBrickParser(dictionary,{qualities}),startIndex=Math.max(241,...originalSongs.map(s=>s.index),...priorSongs.map(s=>s.index))+1;
  const candidates=[...entries].sort((a,b)=>compositionKey(a.title).localeCompare(compositionKey(b.title))||String(a.id).localeCompare(String(b.id)));
@@ -72,16 +72,16 @@ export function prepareAdditionalStandards(entries,{originalSongs,priorSongs=[],
   const printedIdentity=['printed title credit','source attributes.title'].includes(titleMetadata?.selectedFrom)&&compositionKey(titleMetadata.printedTitle)===key;
   const verifiedHead=entry.provenance?.format==='Impro-Visor leadsheet'&&/^Explicit source melody-part title beginning Head/.test(entry.provenance?.headEvidence??'');
   if(sourcePath&&compositionKey(path.basename(sourcePath).replace(/\.(?:musicxml|xml|mxl|ly\.tera|ly|ls)$/i,''))!==key&&!printedIdentity&&!verifiedHead){reject('source-title-conflict');continue;}
-  if(entry.pickupBeats>EPS){reject('pickup-measure');continue;}
   if(!entry.meter||entry.meter.length!==2||!Number.isFinite(entry.barBeats)||entry.barBeats<=0||!Number.isInteger(entry.bars)||entry.bars<=0||!Array.isArray(entry.chords)||!entry.chords.length){reject('unsupported-measure-map');continue;}
   const total=entry.totalBeats??entry.bars*entry.barBeats;
-  if(Math.abs(total-entry.bars*entry.barBeats)>EPS){reject('nonuniform-measures');continue;}
+  let measureMap;try{measureMap=sourceMeasureMap(entry);}catch(error){reject(error.message);continue;}
+  if(!measureMap&&Math.abs(total-entry.bars*entry.barBeats)>EPS){reject('nonuniform-measures');continue;}
   if(!entry.tonic||!Number.isFinite(pitch(entry.tonic[0]))||!['Major','Minor'].includes(entry.tonic[1])){reject('missing-tonic-reference');continue;}
   if(!entry.notes?.length||entry.notes.some(n=>!Number.isFinite(n.pitch)||n.pitch<0||n.pitch>127||!Number.isFinite(n.start)||!(n.duration>0)||n.start<-EPS||n.start+n.duration>total+EPS)){reject('invalid-melody-timeline');continue;}
   try{
    const {chords,unsupported,noHarmony}=cleanChords(entry,qualities),index=startIndex+prepared.length,result=parser.parse(chords);
    const arrangementOf=originalIndex??seen.get(identity)??null;
-   prepared.push({index,title:entry.title,normalizedTitle:key,compositionKey:identity,composer:entry.composer??'',tonic:[...entry.tonic],meter:[...entry.meter],bars:entry.bars,columns:Math.min(8,entry.bars),page:null,image:null,melodyId:entry.id,...(arrangementOf===null?{}:{arrangementOf}),source:sourceInfo(entry),provenance:{...entry.provenance,analysisBasis:'conservative-dictionary-parser',melodyArrangement:'same-source'},encodedChanges:entry.chords.map(c=>({...c})),_chords:chords,_parse:result,_unsupported:unsupported,_noHarmony:noHarmony});if(!seen.has(identity))seen.set(identity,index);sourceIds.add(entry.id);
+   prepared.push({index,title:entry.title,normalizedTitle:key,compositionKey:identity,composer:entry.composer??'',tonic:[...entry.tonic],meter:[...entry.meter],bars:measureMap?total/entry.barBeats:entry.bars,columns:Math.min(8,entry.bars),...(measureMap?{measureMap,pickupBeats:entry.pickupBeats,totalBeats:total,sourceMeasureCount:entry.bars}:{}),page:null,image:null,melodyId:entry.id,...(arrangementOf===null?{}:{arrangementOf}),source:sourceInfo(entry),provenance:{...entry.provenance,analysisBasis:'conservative-dictionary-parser',melodyArrangement:'same-source'},encodedChanges:entry.chords.map(c=>({...c})),_chords:chords,_parse:result,_unsupported:unsupported,_noHarmony:noHarmony});if(!seen.has(identity))seen.set(identity,index);sourceIds.add(entry.id);
   }catch(error){reject(error.message);}
  }
  const discoveryInput=prepared.map(s=>({index:s.index,title:s.title,normalizedTitle:s.compositionKey,chords:s._chords,parse:s._parse})),patterns=discoverRepeatedPatterns(discoveryInput,{qualities,minimumStandards:minimumSupport});

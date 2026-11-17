@@ -1,3 +1,4 @@
+import {sliceMeasureMap} from './measure-map.mjs';
 import {pitch,mod,transposeChord} from '../../dist/harmony.mjs';
 import {parseChord} from './realization.mjs';
 import {buildBrickIndex,brickIdentity} from './bricks.mjs';
@@ -82,7 +83,7 @@ export function occurrencePreview(brick,song,source){
  let cursor=0,gap=false;for(const c of chords){if(c.start>cursor+EPS)gap=true;cursor=Math.max(cursor,c.end);}if(cursor<bars-EPS)gap=true;
  const partial=partialStart||partialEnd||gap||declared.some(b=>b.partial||b.incomplete);
  const joins=song.rows.flatMap(row=>row.joins.map(j=>({...j,at:row.startBar+j.at-start}))).filter(j=>j.at>EPS&&j.at<bars-EPS);
- const previewSong={index:song.index,title:brick.name,tonic:[tonic.root,tonic.mode],meter:[...song.meter],bars,columns:bars,rows:[{startBar:0,bars,keys,chords:chords.map(({_row,...c})=>c),bricks:[{start:0,end:bars,name:brick.name}],joins}]};
+ const previewSong={index:song.index,title:brick.name,tonic:[tonic.root,tonic.mode],meter:[...song.meter],bars,columns:bars,...sliceMeasureMap(song,start,end),rows:[{startBar:0,bars,keys,chords:chords.map(({_row,...c})=>c),bricks:[{start:0,end:bars,name:brick.name}],joins}]};
  return {previewSong,partial,partialStart,partialEnd,unknown,gap,coalescedRowChords};
 }
 

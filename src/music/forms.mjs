@@ -24,6 +24,7 @@ function rhythmBridge(events,tonic){
  return count===4;
 }
 export function analyzeForm(song){
+ if(song.measureMap)return {song:song.index,basis:'source-measure-map',family:'Other',pattern:null,aligned:false,columns:song.columns,sections:[]};
  const events=chordTimeline(song),tonic=pitch(song.tonic[0]);let spans=[];
  if(song.index===73&&song.bars===40){spans=[[0,8],[8,16],[16,32],[32,40]].map(([start,end])=>({start,end}));}
  else if(song.index===80&&song.bars===38){spans=[[0,10],[10,20],[20,28],[28,38]].map(([start,end])=>({start,end}));}

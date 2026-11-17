@@ -1,47 +1,47 @@
 {
   "version": 1,
-  "charts": 403,
+  "charts": 458,
   "primaryStandards": 269,
   "originalCharts": 242,
-  "additionalCharts": 161,
-  "rawSourceIdentities": 339,
+  "additionalCharts": 216,
+  "rawSourceIdentities": 344,
   "coverage": {
-    "rawPassages": 7631,
-    "removedPassages": 2165,
-    "keptPassages": 5466,
-    "rawOccurrences": 7244,
-    "removedOccurrences": 2134,
-    "keptOccurrences": 5110,
+    "rawPassages": 8910,
+    "removedPassages": 2534,
+    "keptPassages": 6376,
+    "rawOccurrences": 8417,
+    "removedOccurrences": 2500,
+    "keptOccurrences": 5917,
     "reasons": {
       "single-harmony": {
-        "passages": 1662,
-        "occurrences": 1650
+        "passages": 1949,
+        "occurrences": 1937
       },
       "on-off-family": {
-        "passages": 503,
-        "occurrences": 484
+        "passages": 585,
+        "occurrences": 563
       }
     }
   },
   "reuse": {
-    "inputFamilies": 157,
-    "singleStandardFamilies": 38,
-    "reusableTargets": 119,
+    "inputFamilies": 159,
+    "singleStandardFamilies": 37,
+    "reusableTargets": 122,
     "mergedFamilies": 10,
-    "removedFamilies": 28,
-    "outputFamilies": 119,
-    "rawPassages": 5466,
+    "removedFamilies": 27,
+    "outputFamilies": 122,
+    "rawPassages": 6376,
     "mergedPassages": 18,
-    "removedPassages": 49,
-    "keptPassages": 5417,
+    "removedPassages": 45,
+    "keptPassages": 6331,
     "supportBasis": "distinct standards",
     "minimumTargetStandards": 2,
     "maxVariantDistance": 0.28,
     "ambiguityMargin": 0.025
   },
-  "definitions": 1366,
+  "definitions": 1514,
   "unresolvedOccurrences": 8,
-  "unchangedMusicalDataSha256": "a84b119cd5c1ff9755e6c700def185c9c6cf999005f12e8d91223727db648d3d",
+  "unchangedMusicalDataSha256": "8721609ab8c3698fa8f7a6238fe996b1ed263a62d2850ffbf62447e89bc7f7a9",
   "decisions": [
     {
       "action": "remove",
@@ -61,6 +61,11 @@
     {
       "action": "remove",
       "source": "Bemsha Turnaround 3",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Cadence+TTFA Dropback",
       "reason": "no-clear-supported-harmonic-variant"
     },
     {
@@ -128,17 +133,7 @@
     },
     {
       "action": "remove",
-      "source": "Giant Step",
-      "reason": "no-clear-supported-harmonic-variant"
-    },
-    {
-      "action": "remove",
       "source": "IV n Bauble",
-      "reason": "no-clear-supported-harmonic-variant"
-    },
-    {
-      "action": "remove",
-      "source": "IV n Mack",
       "reason": "no-clear-supported-harmonic-variant"
     },
     {
@@ -208,6 +203,11 @@
     },
     {
       "action": "remove",
+      "source": "Somewhere Turnaround",
+      "reason": "ambiguous-supported-families"
+    },
+    {
+      "action": "remove",
       "source": "To II n Back",
       "reason": "no-clear-supported-harmonic-variant"
     },
@@ -221,11 +221,6 @@
       "source": "To IV n Mack",
       "target": "To IV",
       "reason": "clear-supported-harmonic-variant"
-    },
-    {
-      "action": "remove",
-      "source": "To IV n Mack Turnaround",
-      "reason": "no-clear-supported-harmonic-variant"
     },
     {
       "action": "merge",

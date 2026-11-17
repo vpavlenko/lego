@@ -1,0 +1,1853 @@
+{
+  "version": 1,
+  "date": "2026-11-17",
+  "recovery": {
+    "openbook": {
+      "sha256": "fadf1ae2f2daf201fa2386e31dec5ca1f680797a853e1b201336973f3492079c",
+      "pax": {
+        "comment": "adbe5c68ff59e20068dd754e7d227979fa628d33"
+      },
+      "root": "book-openbook-adbe5c68ff59e20068dd754e7d227979fa628d33"
+    },
+    "lilypond": {
+      "sha256": "18ffc454fef3753c26a015d95a3c232f89b22f052b897c046e0198740a1221be",
+      "pax": {},
+      "root": "lilypond-2.26.0"
+    },
+    "candidateSourceHashChecks": {
+      "matched": 75,
+      "distinctFiles": 60
+    },
+    "existingImportedSourceHashChecks": 122,
+    "importerTests": {
+      "command": "LILYPOND=/private/tmp/insights-pickup-recovery/lilypond-2.26.0/bin/lilypond OPENBOOK_PYTHON=/opt/homebrew/bin/python3.11 /Users/chipfocus/.nvm/versions/node/v24.12.0/bin/node --test tests/openbook-import.test.mjs",
+      "workingDirectory": "/Users/chipfocus/repos/lego/insights-melody-alignment",
+      "tests": 9,
+      "passed": 9,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "audit": {
+    "source": {
+      "archiveSha256": "fadf1ae2f2daf201fa2386e31dec5ca1f680797a853e1b201336973f3492079c",
+      "archivePaxCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+      "name": "OpenBook",
+      "repository": "https://github.com/veltzer/book-openbook",
+      "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+      "format": "LilyPond",
+      "downloaded": "2026-11-17",
+      "repositoryLicenseFile": "MIT License\n\nCopyright (c) 2026 Mark Veltzer <mark.veltzer@gmail.com>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "repositoryReadmeRights": "README states GPL version 3; current LICENSE file is MIT. Source compositions retain individual copyright notices.",
+      "licenseFileSha256": "25e69406e3bf22ab64caf9586b77d2078ea1c3daecea6fb3a9ac016e5e623aee"
+    },
+    "priorImportedSourceFilesMatched": 122,
+    "counts": {
+      "compositions": 65,
+      "attempts": 83,
+      "compilerValidatedAttempts": 75,
+      "modeConsistentAttempts": 68,
+      "selectedCompositions": 55,
+      "selectedNotes": 7074,
+      "selectedChords": 3270,
+      "selectedPickupCompositions": 55,
+      "selectedFinalPartialCompositions": 1
+    },
+    "compositions": [
+      {
+        "song": 1,
+        "title": "Afternoon In Paris",
+        "selected": "openbook-afternoon-in-paris-real",
+        "attempts": [
+          {
+            "song": 1,
+            "title": "Afternoon In Paris",
+            "path": "src/openbook/afternoon_in_paris.ly.tera",
+            "version": "Real",
+            "status": "validated",
+            "id": "openbook-afternoon-in-paris-real",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 130,
+            "chords": 45,
+            "midiSha256": "061b99c7340ae82d2d5db15858f3c7686166398fb04fe82413d16da88f5ff500",
+            "compiledMidiSha256": "30ebc6960e0f9dea8556d48e5289c47fce45ab242f84864460483b8a1c9c3154",
+            "sourceSha256": "e36d59157f5eed52a65c2a349a0bab511310827c31c6eb4b8a0b11cb0319fa90"
+          },
+          {
+            "song": 1,
+            "title": "Afternoon In Paris",
+            "path": "src/openbook/afternoon_in_paris.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-afternoon-in-paris-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 145,
+            "chords": 45,
+            "midiSha256": "cafb4211a0212bfdac8aa1ae4e0a0aa78fb607b4dd62ce24446d8761d579dbbe",
+            "compiledMidiSha256": "00fc0ec277c6f2c0a28f7c603672f5752245be6f857104fb494b5a3654d61b05",
+            "sourceSha256": "e36d59157f5eed52a65c2a349a0bab511310827c31c6eb4b8a0b11cb0319fa90"
+          }
+        ]
+      },
+      {
+        "song": 6,
+        "title": "All of You",
+        "selected": "openbook-all-of-you-fake",
+        "attempts": [
+          {
+            "song": 6,
+            "title": "All of You",
+            "path": "src/openbook/all_of_you.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-all-of-you-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 3.0,
+            "bars": 65,
+            "totalBeats": 259.0,
+            "notes": 146,
+            "chords": 78,
+            "midiSha256": "2b28c1fdacd25883b47eb863f2972c9f43665d13c630d0f4e3264df2d68c4a88",
+            "compiledMidiSha256": "d6a7358a4ea84a9d3fc18232a611255012db48b731065bf970362c555b8b601c",
+            "sourceSha256": "9f57f5bc1890ac12c19cc2b08ed7f909963ea32b43e9a73f7d323de3ff7db05a"
+          }
+        ]
+      },
+      {
+        "song": 8,
+        "title": "Alone Together",
+        "selected": "openbook-alone-together-real",
+        "attempts": [
+          {
+            "song": 8,
+            "title": "Alone Together",
+            "path": "src/openbook/alone_together.ly.tera",
+            "version": "Real",
+            "status": "validated",
+            "id": "openbook-alone-together-real",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 0.5,
+            "bars": 45,
+            "totalBeats": 176.5,
+            "notes": 97,
+            "chords": 64,
+            "midiSha256": "bf6a717e0609a0bfe2aacb5552e1049c4feded5cdd9c58e2ed23c0978532fab6",
+            "compiledMidiSha256": "d9417380d305983f1309f9916a6b0f6ad04678f6a67ebacdcc28d196e9d07fe0",
+            "sourceSha256": "6e90895aba9ec122b3a608c18f0254da06ec97bd8d7589a2a3e041f45be43885"
+          }
+        ]
+      },
+      {
+        "song": 12,
+        "title": "Autumn Leaves",
+        "selected": "openbook-autumn-leaves-real",
+        "attempts": [
+          {
+            "song": 12,
+            "title": "Autumn Leaves",
+            "path": "src/openbook/autumn_leaves.ly.tera",
+            "version": "Real",
+            "status": "validated",
+            "id": "openbook-autumn-leaves-real",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 3.0,
+            "bars": 33,
+            "totalBeats": 131.0,
+            "notes": 71,
+            "chords": 30,
+            "midiSha256": "98dd1f90ab4cb1759c7686f6b632e71e0ef330b32fbfc656f235c28fff3d6411",
+            "compiledMidiSha256": "2e5b5e88195164acfd4f92028f24d1901c81dc6471a1c2855435574ecd08dba4",
+            "sourceSha256": "18d2e0f57236dd4d131b28ae3a1c9f59a190fd50023ed2dbff3bac985e28fe96"
+          },
+          {
+            "song": 12,
+            "title": "Autumn Leaves",
+            "path": "src/openbook/autumn_leaves.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-autumn-leaves-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 3.0,
+            "bars": 33,
+            "totalBeats": 131.0,
+            "notes": 68,
+            "chords": 35,
+            "midiSha256": "5bc4577af8a5df9b76ee6d2f1910c4fc87a9a328a0803cc3ee2a10a885b3732d",
+            "compiledMidiSha256": "2323b5bf23ddb08332f16241eff714ad0e557537488a5ee27577b87676b05fcb",
+            "sourceSha256": "18d2e0f57236dd4d131b28ae3a1c9f59a190fd50023ed2dbff3bac985e28fe96"
+          },
+          {
+            "song": 12,
+            "title": "Autumn Leaves",
+            "path": "src/openbook/autumn_leaves.ly.tera",
+            "version": "Laurent",
+            "status": "validated",
+            "id": "openbook-autumn-leaves-laurent",
+            "modeMatchesOriginal": false,
+            "pickupBeats": 3.0,
+            "bars": 33,
+            "totalBeats": 131.0,
+            "notes": 68,
+            "chords": 33,
+            "midiSha256": "05be4565d8ea5a63cb993ae3412922d1e2ad6c44ccc140088b3de5baf50533f8",
+            "compiledMidiSha256": "cb14cf6059760551847399019b0b16b62c9526d133f307c60a0fad79c248c3be",
+            "sourceSha256": "18d2e0f57236dd4d131b28ae3a1c9f59a190fd50023ed2dbff3bac985e28fe96"
+          }
+        ]
+      },
+      {
+        "song": 16,
+        "title": "Bemsha Swing",
+        "selected": "openbook-bemsha-swing-wikifonia",
+        "attempts": [
+          {
+            "song": 16,
+            "title": "Bemsha Swing",
+            "path": "src/openbook/bemsha_swing.ly.tera",
+            "version": "Wikifonia",
+            "status": "validated",
+            "id": "openbook-bemsha-swing-wikifonia",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 112,
+            "chords": 65,
+            "midiSha256": "996dd33e193b7ec749f1fa9b0c689fc215160186bebf98ede87e959f7a975c15",
+            "compiledMidiSha256": "8e1714bb61217ccc14af2e18d2b2d058494ce1ace39a918b33bb1f52420265e1",
+            "sourceSha256": "53fd9e93a3f6a200bb20b066c00d322421315513f5118f4e2730312d7ff80439"
+          }
+        ]
+      },
+      {
+        "song": 21,
+        "title": "Blue Bossa",
+        "selected": "openbook-blue-bossa-real",
+        "attempts": [
+          {
+            "song": 21,
+            "title": "Blue Bossa",
+            "path": "src/openbook/blue_bossa.ly.tera",
+            "version": "Real",
+            "status": "validated",
+            "id": "openbook-blue-bossa-real",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 49,
+            "totalBeats": 193.0,
+            "notes": 114,
+            "chords": 39,
+            "midiSha256": "323479c6cf56b071859a99e74dbf3c6b1ae22f921e54ae37adbbb06d4e8fc21a",
+            "compiledMidiSha256": "a9308154a369c944b567835533500cf8244e087c4dc60a948aa550eb3d692efa",
+            "sourceSha256": "a984d7fd3a2e21ea2ae65c308d263912b826bc35c718ec863c30abf3d03d1b3c"
+          }
+        ]
+      },
+      {
+        "song": 30,
+        "title": "But Beautiful",
+        "selected": "openbook-but-beautiful-fake",
+        "attempts": [
+          {
+            "song": 30,
+            "title": "But Beautiful",
+            "path": "src/openbook/but_beautiful.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-but-beautiful-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 65,
+            "totalBeats": 257.0,
+            "notes": 194,
+            "chords": 99,
+            "midiSha256": "12cb0548be2be542cba4e5e580e2b6c622952cf2844d9abda52a09635c748161",
+            "compiledMidiSha256": "99d4fdf21e4389d4477de2d2cf3c47bb00ec42e5f06b70b2ac2052ae1fcc38bf",
+            "sourceSha256": "a1a128f0c0c94a3d077105ae720f1f07e5b1a331fa1826c67e4dc49b6f3baaf9"
+          }
+        ]
+      },
+      {
+        "song": 35,
+        "title": "Chelsea Bridge",
+        "selected": null,
+        "attempts": [
+          {
+            "song": 35,
+            "title": "Chelsea Bridge",
+            "path": "src/openbook/chelsea_bridge.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-chelsea-bridge-fake",
+            "modeMatchesOriginal": false,
+            "pickupBeats": 3.0,
+            "bars": 32,
+            "totalBeats": 127.0,
+            "notes": 112,
+            "chords": 48,
+            "midiSha256": "20b4c28df1c418f8891a793d19e890249c1ddfe64c34526f47c66b2af773d499",
+            "compiledMidiSha256": "e6cb24db4aea3d2003195023b4ac59479102e390e2d1d5eb407ba584ebe46417",
+            "sourceSha256": "8d43e2d2719dae13650ab9f10aaf562fe6572fde2d611ab22c6c563fda600175"
+          }
+        ]
+      },
+      {
+        "song": 45,
+        "title": "The Days of Wine and Roses",
+        "selected": "openbook-days-of-wine-and-roses-real",
+        "attempts": [
+          {
+            "song": 45,
+            "title": "The Days of Wine and Roses",
+            "path": "src/openbook/days_of_wine_and_roses.ly.tera",
+            "version": "Real",
+            "status": "validated",
+            "id": "openbook-days-of-wine-and-roses-real",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 65,
+            "totalBeats": 257.0,
+            "notes": 154,
+            "chords": 75,
+            "midiSha256": "5d210f89735a90125b424e64e8260d7fdb727fc68ea0e4c8b0b4decc28375233",
+            "compiledMidiSha256": "37c3a662e5ef099c52c518c43069036a948c1fc36441d370ef93f20f9b31097f",
+            "sourceSha256": "df8244f17b4b37020dbb3c0a78dfa139306e48e079a9f2507975fdc88787d035"
+          }
+        ]
+      },
+      {
+        "song": 54,
+        "title": "Doxy",
+        "selected": "openbook-doxy-fake",
+        "attempts": [
+          {
+            "song": 54,
+            "title": "Doxy",
+            "path": "src/openbook/doxy.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-doxy-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 0.5,
+            "bars": 17,
+            "totalBeats": 64.5,
+            "notes": 77,
+            "chords": 24,
+            "midiSha256": "c02322ba48e29d5fe64fe9d261c12b7897f39b0d1d668b934bb890397b7d1564",
+            "compiledMidiSha256": "d5a9fc40629cbf5f42032bbaa3c2a3e68b543b164fb1dde81c2d5998297201be",
+            "sourceSha256": "614e4661b526b5ec917c57c793b4f21332067c307a83c62857ffdeca7b461792"
+          }
+        ]
+      },
+      {
+        "song": 62,
+        "title": "Everything Happens To Me",
+        "selected": "openbook-everything-happens-to-me-fake",
+        "attempts": [
+          {
+            "song": 62,
+            "title": "Everything Happens To Me",
+            "path": "src/openbook/everything_happens_to_me.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-everything-happens-to-me-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 0.5,
+            "bars": 33,
+            "totalBeats": 128.5,
+            "notes": 191,
+            "chords": 69,
+            "midiSha256": "8f29dd10c151bfd62d63ed53481cc7ef64816d74cd2f73bffa60399209a53068",
+            "compiledMidiSha256": "35ea552c18c7d483a78065998bc73b5e609556830dd30e93b4b0df4aada86ffe",
+            "sourceSha256": "601a32f807d6e90864188b46c87445b06101685cdca6e3c9b2bac7153a222d65"
+          },
+          {
+            "song": 62,
+            "title": "Everything Happens To Me",
+            "path": "src/openbook/everything_happens_to_me.ly.tera",
+            "version": "Laurent",
+            "status": "validated",
+            "id": "openbook-everything-happens-to-me-laurent",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 0.5,
+            "bars": 33,
+            "totalBeats": 128.5,
+            "notes": 191,
+            "chords": 64,
+            "midiSha256": "8f29dd10c151bfd62d63ed53481cc7ef64816d74cd2f73bffa60399209a53068",
+            "compiledMidiSha256": "35ea552c18c7d483a78065998bc73b5e609556830dd30e93b4b0df4aada86ffe",
+            "sourceSha256": "601a32f807d6e90864188b46c87445b06101685cdca6e3c9b2bac7153a222d65"
+          },
+          {
+            "song": 62,
+            "title": "Everything Happens To Me",
+            "path": "src/openbook/everything_happens_to_me.ly.tera",
+            "version": "Laurent2",
+            "status": "validated",
+            "id": "openbook-everything-happens-to-me-laurent2",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 0.5,
+            "bars": 33,
+            "totalBeats": 128.5,
+            "notes": 191,
+            "chords": 61,
+            "midiSha256": "8f29dd10c151bfd62d63ed53481cc7ef64816d74cd2f73bffa60399209a53068",
+            "compiledMidiSha256": "35ea552c18c7d483a78065998bc73b5e609556830dd30e93b4b0df4aada86ffe",
+            "sourceSha256": "601a32f807d6e90864188b46c87445b06101685cdca6e3c9b2bac7153a222d65"
+          }
+        ]
+      },
+      {
+        "song": 65,
+        "title": "A Fine Romance",
+        "selected": "openbook-a-fine-romance-real",
+        "attempts": [
+          {
+            "song": 65,
+            "title": "A Fine Romance",
+            "path": "src/openbook/a_fine_romance.ly.tera",
+            "version": "Real",
+            "status": "validated",
+            "id": "openbook-a-fine-romance-real",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 79,
+            "chords": 44,
+            "midiSha256": "698c6907db0e0c57a80d67c6d1f85c2aac1ce46590ef77218a35fe93e87004d7",
+            "compiledMidiSha256": "0840baef74705562d2e0c07b7d80c57e7853fd78b587162ef874d58422237a5c",
+            "sourceSha256": "df6bfd22aa7b0a2b18b9ddcccd106d8622372c5a1873838edc19230375f23a57"
+          },
+          {
+            "song": 65,
+            "title": "A Fine Romance",
+            "path": "src/openbook/a_fine_romance.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-a-fine-romance-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 65,
+            "totalBeats": 257.0,
+            "notes": 158,
+            "chords": 94,
+            "midiSha256": "9f421a693f3902ce3a9b1120c32a192a50a24aa6a015bab43084c5553a001d95",
+            "compiledMidiSha256": "1fef9260a7e270b7b15f4927265593df78394c734ed1fea56cfaf570c7ffc911",
+            "sourceSha256": "df6bfd22aa7b0a2b18b9ddcccd106d8622372c5a1873838edc19230375f23a57"
+          }
+        ]
+      },
+      {
+        "song": 66,
+        "title": "Flamingo",
+        "selected": "openbook-flamingo-fake",
+        "attempts": [
+          {
+            "song": 66,
+            "title": "Flamingo",
+            "path": "src/openbook/flamingo.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-flamingo-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 87,
+            "chords": 58,
+            "midiSha256": "aa18bb02cf129197d4e7fbae10199e0f97fd49b8b4d8f677818e457723f33929",
+            "compiledMidiSha256": "4b33b67a33a19fc065b5423fb52045865e129017d31ba2c8232264b5f2d93ea1",
+            "sourceSha256": "ea7e5702a8c76d9c65d9fe9e15111cb88e1f4e533517deb990d7dd38adc7ec28"
+          }
+        ]
+      },
+      {
+        "song": 69,
+        "title": "Four",
+        "selected": "openbook-four-fake",
+        "attempts": [
+          {
+            "song": 69,
+            "title": "Four",
+            "path": "src/openbook/four.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-four-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.5,
+            "bars": 33,
+            "totalBeats": 129.5,
+            "notes": 125,
+            "chords": 34,
+            "midiSha256": "d12454e8ce635280422e36b945f4f6d3b73c5ebe9d8eb524c3c8e6a44b83d754",
+            "compiledMidiSha256": "87d499e05200805d72e999719037ecd7d1601bae6e16762c2af7fedff6969096",
+            "sourceSha256": "6f3830e381705e27ac539652344b9ccb64cdd79067486c0fc0bebc49a61489c4"
+          },
+          {
+            "song": 69,
+            "title": "Four",
+            "path": "src/openbook/four.ly.tera",
+            "version": "Laurent",
+            "status": "excluded",
+            "reason": "Textual navigation or pickup requires explicit source review"
+          }
+        ]
+      },
+      {
+        "song": 76,
+        "title": "Groovin' High",
+        "selected": "openbook-groovin-high-fake",
+        "attempts": [
+          {
+            "song": 76,
+            "title": "Groovin' High",
+            "path": "src/openbook/groovin_high.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-groovin-high-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 65,
+            "totalBeats": 257.0,
+            "notes": 282,
+            "chords": 85,
+            "midiSha256": "08fe769093b2a8abb2bf62d5073aac0811bedbddcfb3200dce99aaac560ebb1e",
+            "compiledMidiSha256": "d0d23ab65a9edd23003701abcd740d641528c416cc519dee7024226c20f7932f",
+            "sourceSha256": "f7b25b12fd8349eae42162b40e9d675b57058d61fc42c471a4d65127e6c4eedc"
+          }
+        ]
+      },
+      {
+        "song": 82,
+        "title": "I Can't Believe that You're in Love with Me",
+        "selected": "openbook-i-can-t-believe-that-you-re-in-love-with-me-wikifonia",
+        "attempts": [
+          {
+            "song": 82,
+            "title": "I Can't Believe that You're in Love with Me",
+            "path": "src/openbook/i_cant_believe_that_youre_in_love_with_me.ly.tera",
+            "version": "Wikifonia",
+            "status": "validated",
+            "id": "openbook-i-can-t-believe-that-you-re-in-love-with-me-wikifonia",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 98,
+            "chords": 31,
+            "midiSha256": "ca0cfb0f6ccdfd26fbcdab377c2b745606c3732b5886e42c63de8ce4e08448ba",
+            "compiledMidiSha256": "b32ebc7a8593d71c6a111dd1ffa68b842f5422f2cca518f5c6d5f142ba1aebfa",
+            "sourceSha256": "8857ee998ba1044db5a7b3d6ea7d25aa5795b2072451a2ff6ca4e948b3099a84"
+          }
+        ]
+      },
+      {
+        "song": 83,
+        "title": "I Can't Get Started",
+        "selected": "openbook-i-can-t-get-started-fake",
+        "attempts": [
+          {
+            "song": 83,
+            "title": "I Can't Get Started",
+            "path": "src/openbook/i_cant_get_started.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-i-can-t-get-started-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.5,
+            "bars": 65,
+            "totalBeats": 257.5,
+            "notes": 254,
+            "chords": 150,
+            "midiSha256": "65c10a817cc496c9f61bd27a7aaef0c790eab041207bf72f88712caa1711ec83",
+            "compiledMidiSha256": "dbfbeff028073a49871673033cca42f66f8bbde4132033d26ad5315fcae057c6",
+            "sourceSha256": "4bfaf53c30174035a81f5ba46ef7f4bb78a555abbe802706f2caa19a292664ac"
+          }
+        ]
+      },
+      {
+        "song": 88,
+        "title": "I Love You",
+        "selected": "openbook-i-love-you-real",
+        "attempts": [
+          {
+            "song": 88,
+            "title": "I Love You",
+            "path": "src/openbook/i_love_you.ly.tera",
+            "version": "Real",
+            "status": "validated",
+            "id": "openbook-i-love-you-real",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 70,
+            "chords": 32,
+            "midiSha256": "da73eecceda083ac6558cbf3dfe6e19abe9f8d9d3921c27f7b565bcfc7f94eab",
+            "compiledMidiSha256": "8ccf21e02c12ef960b0846c25c039e8a38cb4a6dfba6ad6a9ba560052ed58372",
+            "sourceSha256": "1b13fbbcff2d3a73e4a6a039858e6c04d0b3d71cc13b44f7c9e5913ee29a40f0"
+          },
+          {
+            "song": 88,
+            "title": "I Love You",
+            "path": "src/openbook/i_love_you.ly.tera",
+            "version": "Laurent",
+            "status": "validated",
+            "id": "openbook-i-love-you-laurent",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 69,
+            "chords": 34,
+            "midiSha256": "bb44795855e8b79a2a47386fcfbdfaf7d427b87492d6b0c9571bedb88e9d67b0",
+            "compiledMidiSha256": "b5cd628f76f8f255a21c8312e5166e07b7481ca6f075668a7444520181ac08bb",
+            "sourceSha256": "1b13fbbcff2d3a73e4a6a039858e6c04d0b3d71cc13b44f7c9e5913ee29a40f0"
+          }
+        ]
+      },
+      {
+        "song": 89,
+        "title": "I Loves You Porgy",
+        "selected": null,
+        "attempts": [
+          {
+            "song": 89,
+            "title": "I Loves You Porgy",
+            "path": "src/openbook/i_loves_you_porgy.ly.tera",
+            "version": "Fake",
+            "status": "excluded",
+            "reason": "Textual navigation or pickup requires explicit source review"
+          }
+        ]
+      },
+      {
+        "song": 94,
+        "title": "I Wish You Love",
+        "selected": "openbook-i-wish-you-love-fake",
+        "attempts": [
+          {
+            "song": 94,
+            "title": "I Wish You Love",
+            "path": "src/openbook/i_wish_you_love.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-i-wish-you-love-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 2.0,
+            "bars": 65,
+            "totalBeats": 258.0,
+            "notes": 224,
+            "chords": 90,
+            "midiSha256": "541845308e4da995266fcc8096c4ef8f020fe7da19bef07ecb6076ff791f873e",
+            "compiledMidiSha256": "a430445dc420130c41c16041051983a0612d39147f4d4a177b4286fbde17a8b6",
+            "sourceSha256": "e4144fd525fd432bff9794865ff4a2bda09f98532afef088fb32fa84f623c0f8"
+          }
+        ]
+      },
+      {
+        "song": 101,
+        "title": "I've Grown Accustomed to Her Face",
+        "selected": "openbook-i-ve-grown-accustomed-to-her-face-fake",
+        "attempts": [
+          {
+            "song": 101,
+            "title": "I've Grown Accustomed to Her Face",
+            "path": "src/openbook/ive_grown_accustomed_to_her_face.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-i-ve-grown-accustomed-to-her-face-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.5,
+            "bars": 41,
+            "totalBeats": 161.5,
+            "notes": 206,
+            "chords": 93,
+            "midiSha256": "7d1d8aebf11242233999007dc99b47dc7b8a5a682dfbb3f1f3cf8a6346a4211d",
+            "compiledMidiSha256": "ee5b5200e7dfc097314431610cb918a427862b77da21fcf7d58e454461c49405",
+            "sourceSha256": "53d07e7267f6e85d2adf83a6c0750495ab9afb5882e001d766d9b4ec2cdaf435"
+          }
+        ]
+      },
+      {
+        "song": 102,
+        "title": "I've Never Been in Love Before",
+        "selected": "openbook-i-ve-never-been-in-love-before-wikifonia",
+        "attempts": [
+          {
+            "song": 102,
+            "title": "I've Never Been in Love Before",
+            "path": "src/openbook/ive_never_been_in_love_before.ly.tera",
+            "version": "Wikifonia",
+            "status": "validated",
+            "id": "openbook-i-ve-never-been-in-love-before-wikifonia",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 82,
+            "chords": 58,
+            "midiSha256": "aad1ef33c12f9c3dbd9c320c4153a497cb9c6ded8c58ffd9d061e0eec8ce3418",
+            "compiledMidiSha256": "da719bb4233af676c9bfa7eae26912968d0f43823bf5f9d600cf4eb976fe3ba6",
+            "sourceSha256": "20581687c3ac83275d927657df9a1e0d634946df576dff0ae209632fbb2f9aa9"
+          }
+        ]
+      },
+      {
+        "song": 104,
+        "title": "Imagination",
+        "selected": "openbook-imagination-laurent",
+        "attempts": [
+          {
+            "song": 104,
+            "title": "Imagination",
+            "path": "src/openbook/imagination.ly.tera",
+            "version": "Laurent",
+            "status": "validated",
+            "id": "openbook-imagination-laurent",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.5,
+            "bars": 37,
+            "totalBeats": 145.5,
+            "notes": 128,
+            "chords": 59,
+            "midiSha256": "fca5bc8567df047b46c223d65153b2d39deddde31fac58643a34e6f44e510a0f",
+            "compiledMidiSha256": "c40cc8c7a1f542cded094da092944d2c12bc54d3633d86591c24eb0ec04968e0",
+            "sourceSha256": "29ed96c7da55dfcc2967d21ee4ccf6d62b0b47a949484b0e91c64b2fb82d06e8"
+          }
+        ]
+      },
+      {
+        "song": 105,
+        "title": "In A Mellow Tone",
+        "selected": "openbook-in-a-mellow-tone-wikifonia",
+        "attempts": [
+          {
+            "song": 105,
+            "title": "In A Mellow Tone",
+            "path": "src/openbook/in_a_mellow_tone.ly.tera",
+            "version": "Wikifonia",
+            "status": "validated",
+            "id": "openbook-in-a-mellow-tone-wikifonia",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 3.0,
+            "bars": 32,
+            "totalBeats": 127.0,
+            "notes": 75,
+            "chords": 33,
+            "midiSha256": "664fca0f78e31109d14a74414f2c3c66298fb3f4a36d61fd5c68b3456fa69b4d",
+            "compiledMidiSha256": "8cef51b9bbf56a3b843567ffc2930b871cc32bfcb0477152dbd66b48c6a26352",
+            "sourceSha256": "d5c10d14a6fc270ab5057dd592e8204d09a3830d48549d6833c28bbef61222f8"
+          }
+        ]
+      },
+      {
+        "song": 108,
+        "title": "It Don't Mean a Thing",
+        "selected": null,
+        "attempts": [
+          {
+            "song": 108,
+            "title": "It Don't Mean a Thing",
+            "path": "src/openbook/it_dont_mean_a_thing.ly.tera",
+            "version": "Real",
+            "status": "validated",
+            "id": "openbook-it-don-t-mean-a-thing-real",
+            "modeMatchesOriginal": false,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 102,
+            "chords": 39,
+            "midiSha256": "a85eee68f96beebd8b4f375917c320d5c36a577e714fac6f1c21593fc2be023e",
+            "compiledMidiSha256": "67273e68a1fddc63e2358a10e23cec89380d9feb177508be203cb45cdac12160",
+            "sourceSha256": "e717acfcfe249a969efbef3c2bdf90f2021666c98b800b043a2cabe40d4ba30e"
+          },
+          {
+            "song": 108,
+            "title": "It Don't Mean a Thing",
+            "path": "src/openbook/it_dont_mean_a_thing.ly.tera",
+            "version": "Laurent",
+            "status": "validated",
+            "id": "openbook-it-don-t-mean-a-thing-laurent",
+            "modeMatchesOriginal": false,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 102,
+            "chords": 41,
+            "midiSha256": "7c3b49a117f9be6e54ee72bfb960a3704b50e6350941898cce6e1b19a589a5a8",
+            "compiledMidiSha256": "f0f0a80cd8b08fc0fdfc6043470df865cb70bc4306388dd14d966a5a9b39f8a7",
+            "sourceSha256": "e717acfcfe249a969efbef3c2bdf90f2021666c98b800b043a2cabe40d4ba30e"
+          }
+        ]
+      },
+      {
+        "song": 110,
+        "title": "It Might As Well Be Spring",
+        "selected": "openbook-it-might-as-well-be-spring-fake",
+        "attempts": [
+          {
+            "song": 110,
+            "title": "It Might As Well Be Spring",
+            "path": "src/openbook/it_might_as_well_be_spring.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-it-might-as-well-be-spring-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 41,
+            "totalBeats": 161.0,
+            "notes": 176,
+            "chords": 89,
+            "midiSha256": "b4d6d61980e2f1d6421c0ea8e5cb7074f09c624e1e4c0ab40eec34402e23d7fc",
+            "compiledMidiSha256": "1677832ffbda349715efb52f5884922e342efe7b57917281c99e63aa5255a51d",
+            "sourceSha256": "b056199f2dc42579ff1896518f399a377aece6128b8fc9c34a21537fb3263af9"
+          }
+        ]
+      },
+      {
+        "song": 113,
+        "title": "Just Friends",
+        "selected": "openbook-just-friends-real",
+        "attempts": [
+          {
+            "song": 113,
+            "title": "Just Friends",
+            "path": "src/openbook/just_friends.ly.tera",
+            "version": "Real",
+            "status": "validated",
+            "id": "openbook-just-friends-real",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 70,
+            "chords": 31,
+            "midiSha256": "9b27d35d95137a6fbeb0fb6cd0dbde56d5e26f2816a9bd6f34ad5b1b5da99fbd",
+            "compiledMidiSha256": "0ac4b1fffbf306ae80eeeaf1fa6c0e955ca3240d1b8d7e22cb4df141f2e867b6",
+            "sourceSha256": "8b86a4378508bf0be9a1cf3163fa1f2003667fb28033d1009269cf871575a8f3"
+          },
+          {
+            "song": 113,
+            "title": "Just Friends",
+            "path": "src/openbook/just_friends.ly.tera",
+            "version": "Laurent",
+            "status": "validated",
+            "id": "openbook-just-friends-laurent",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 2.0,
+            "bars": 33,
+            "totalBeats": 130.0,
+            "notes": 69,
+            "chords": 32,
+            "midiSha256": "66e73fed532b13bc7cc898ca9be0eae42dc7c35ae7307c82fc9e738999092dd2",
+            "compiledMidiSha256": "9ccd5cf3ad0112c134a78b5f0a2340f974387236bf53c8ea756d1a1dffe98bea",
+            "sourceSha256": "8b86a4378508bf0be9a1cf3163fa1f2003667fb28033d1009269cf871575a8f3"
+          }
+        ]
+      },
+      {
+        "song": 125,
+        "title": "Love is Here to Stay",
+        "selected": "openbook-love-is-here-to-stay-laurent",
+        "attempts": [
+          {
+            "song": 125,
+            "title": "Love is Here to Stay",
+            "path": "src/openbook/love_is_here_to_stay.ly.tera",
+            "version": "Laurent",
+            "status": "validated",
+            "id": "openbook-love-is-here-to-stay-laurent",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 3.0,
+            "bars": 33,
+            "totalBeats": 131.0,
+            "notes": 95,
+            "chords": 49,
+            "midiSha256": "8f702330c2df80d11ced3fed6d22f297e2b421139a8b98052f066cc2c30527fb",
+            "compiledMidiSha256": "8cb8205589caeef7c39be6654bbf81c516d5112f1dd04ee92530fa9e0f644480",
+            "sourceSha256": "63529b8c66be5381346b4f95f063b6c89b6146f2a10bec86819710c8c2c67f54"
+          }
+        ]
+      },
+      {
+        "song": 131,
+        "title": "Makin' Whoopee",
+        "selected": null,
+        "attempts": [
+          {
+            "song": 131,
+            "title": "Makin' Whoopee",
+            "path": "src/openbook/makin_whoopee.ly.tera",
+            "version": "Wikifonia",
+            "status": "excluded",
+            "reason": "Pickup must be one matching initial compiler declaration in both streams"
+          }
+        ]
+      },
+      {
+        "song": 134,
+        "title": "Mean to Me",
+        "selected": "openbook-mean-to-me-laurent",
+        "attempts": [
+          {
+            "song": 134,
+            "title": "Mean to Me",
+            "path": "src/openbook/mean_to_me.ly.tera",
+            "version": "Laurent",
+            "status": "validated",
+            "id": "openbook-mean-to-me-laurent",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 100,
+            "chords": 58,
+            "midiSha256": "c4c4881e77ab90148d201505972d96dac96eba3c4acc6e4fc347e116d1255577",
+            "compiledMidiSha256": "41a4cd2571f1702ff19b3e101c46136151151227a04adbcb597d1e99a5ecea07",
+            "sourceSha256": "8252f190afa0d18e731c3dd47d27a7e3c75ad894c57cb13ac3f2d35cef1ee823"
+          }
+        ]
+      },
+      {
+        "song": 138,
+        "title": "Misty",
+        "selected": "openbook-misty-real",
+        "attempts": [
+          {
+            "song": 138,
+            "title": "Misty",
+            "path": "src/openbook/misty.ly.tera",
+            "version": "Real",
+            "status": "validated",
+            "id": "openbook-misty-real",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 152,
+            "chords": 49,
+            "midiSha256": "6515128a74cdbbef0420a7ef5928bef26ad21008daca15842dbf097d4fb58224",
+            "compiledMidiSha256": "a608f0a080cfd684ec12b25ad7d143611602c834355913dad68b2ff5ca68bc41",
+            "sourceSha256": "bb2b4bc7add6df3aa4276750d40156e289854177df9dbbf752117cbee4571378"
+          },
+          {
+            "song": 138,
+            "title": "Misty",
+            "path": "src/openbook/misty.ly.tera",
+            "version": "Fake",
+            "status": "excluded",
+            "reason": "Textual navigation or pickup requires explicit source review"
+          }
+        ]
+      },
+      {
+        "song": 143,
+        "title": "The More I See You",
+        "selected": "openbook-the-more-i-see-you-real",
+        "attempts": [
+          {
+            "song": 143,
+            "title": "The More I See You",
+            "path": "src/openbook/the_more_i_see_you.ly.tera",
+            "version": "Real",
+            "status": "validated",
+            "id": "openbook-the-more-i-see-you-real",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 3.0,
+            "bars": 65,
+            "totalBeats": 259.0,
+            "notes": 165,
+            "chords": 95,
+            "midiSha256": "bb5f527679b98ff75295e6180dc22e4cd3626d383f9a344e38d8b5354c35181e",
+            "compiledMidiSha256": "82afd7aefc5c0af713f127618a747f14c9d7783e5b4b05859f2ab6f1e4b6d5a2",
+            "sourceSha256": "ac7cea860494190c7f07c04475dcb17f197b8d32b17d724ea3653c178cc14fef"
+          }
+        ]
+      },
+      {
+        "song": 144,
+        "title": "My Foolish Heart",
+        "selected": "openbook-my-foolish-heart-fake",
+        "attempts": [
+          {
+            "song": 144,
+            "title": "My Foolish Heart",
+            "path": "src/openbook/my_foolish_heart.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-my-foolish-heart-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 65,
+            "totalBeats": 257.0,
+            "notes": 258,
+            "chords": 92,
+            "midiSha256": "5fce7490a596c0ab4fc6607ff8b8122a51eb4b62087a2183ea0e5e7bb3ac9882",
+            "compiledMidiSha256": "f9fe8e8ace93ab066eedcc3727bd8cb9078c059d2653957ca7016ecbc9faa82b",
+            "sourceSha256": "2311793db6f8e9e624a2950035f3a11953f249971e8ccb616651aa8e42519303"
+          },
+          {
+            "song": 144,
+            "title": "My Foolish Heart",
+            "path": "src/openbook/my_foolish_heart.ly.tera",
+            "version": "Laurent",
+            "status": "validated",
+            "id": "openbook-my-foolish-heart-laurent",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 123,
+            "chords": 63,
+            "midiSha256": "3ed64a0e3c034ce6e3e19f0a9225376514061784fa08e2806110ebd5211f2a27",
+            "compiledMidiSha256": "f2988554faa9885470baebbbccf79ab3fe3161b7f4a14f4e864e2aae0577e302",
+            "sourceSha256": "2311793db6f8e9e624a2950035f3a11953f249971e8ccb616651aa8e42519303"
+          }
+        ]
+      },
+      {
+        "song": 147,
+        "title": "My Romance",
+        "selected": "openbook-my-romance-fake",
+        "attempts": [
+          {
+            "song": 147,
+            "title": "My Romance",
+            "path": "src/openbook/my_romance.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-my-romance-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 92,
+            "chords": 62,
+            "midiSha256": "4433e7721054c21c29f1936bfe17aaeea6d3316fcba3a6dd6df92663170768d9",
+            "compiledMidiSha256": "532fce76589c9de9a56a89095f035e6619e9c62d3c67bcbe3a0a0bc407a9c954",
+            "sourceSha256": "693bc5e81bac62f27bdaeb45c6b7fd3b5012476ae2b1c57e536409e658a0c5b5"
+          }
+        ]
+      },
+      {
+        "song": 150,
+        "title": "The Nearness of You",
+        "selected": "openbook-the-nearness-of-you-unknown",
+        "attempts": [
+          {
+            "song": 150,
+            "title": "The Nearness of You",
+            "path": "src/openbook/the_nearness_of_you.ly.tera",
+            "version": "Unknown",
+            "status": "validated",
+            "id": "openbook-the-nearness-of-you-unknown",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.5,
+            "bars": 37,
+            "totalBeats": 145.5,
+            "notes": 103,
+            "chords": 54,
+            "midiSha256": "4b9c9fba58e751c4e0dabe6a62df84891a37401139a548c343aefbe63b122bff",
+            "compiledMidiSha256": "4e081c900ea52ac6d3308ddce6069e97211f27d88ade7d517ee0d1dedbff9490",
+            "sourceSha256": "9c543e8df9482d94dfbbe39295f8f7e0ddcf4eb5437ce11c6ac9e956ddd9f2c9"
+          }
+        ]
+      },
+      {
+        "song": 152,
+        "title": "Night and Day",
+        "selected": "openbook-night-and-day-real",
+        "attempts": [
+          {
+            "song": 152,
+            "title": "Night and Day",
+            "path": "src/openbook/night_and_day.ly.tera",
+            "version": "Real",
+            "status": "validated",
+            "id": "openbook-night-and-day-real",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 2.0,
+            "bars": 49,
+            "totalBeats": 194.0,
+            "notes": 136,
+            "chords": 43,
+            "midiSha256": "44f42fd40eb3e0750babf8d13b28fbcdf76698b7bb3b9fd251c093bb9621a4c6",
+            "compiledMidiSha256": "13872d7969c0df6fb92515fc69552f6c7fba284f9d4d3d2b6cb4b78ea3e6f8b8",
+            "sourceSha256": "c5e5a696e6eb7d2ca2b0465a56c3e20c4eb20f16e25ff6ca73a9597b99f8d70e"
+          },
+          {
+            "song": 152,
+            "title": "Night and Day",
+            "path": "src/openbook/night_and_day.ly.tera",
+            "version": "Laurent",
+            "status": "validated",
+            "id": "openbook-night-and-day-laurent",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 2.0,
+            "bars": 49,
+            "totalBeats": 194.0,
+            "notes": 141,
+            "chords": 43,
+            "midiSha256": "b20b85cba41123756415a4d835a0d107440016d0cc5fa875e0800043dae6212b",
+            "compiledMidiSha256": "46e1feee0a3e081e5073f2855cf60572bcd226c31fec803f73c41c54afe1ac28",
+            "sourceSha256": "c5e5a696e6eb7d2ca2b0465a56c3e20c4eb20f16e25ff6ca73a9597b99f8d70e"
+          }
+        ]
+      },
+      {
+        "song": 153,
+        "title": "A Night in Tunisia",
+        "selected": null,
+        "attempts": [
+          {
+            "song": 153,
+            "title": "A Night in Tunisia",
+            "path": "src/openbook/a_night_in_tunisia.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-a-night-in-tunisia-fake",
+            "modeMatchesOriginal": false,
+            "pickupBeats": 0.5,
+            "bars": 33,
+            "totalBeats": 128.5,
+            "notes": 153,
+            "chords": 40,
+            "midiSha256": "a072a0c8ea8b8bd1edb4ff91aecdf692070da43f176f98a8e6151555e379eed4",
+            "compiledMidiSha256": "d74c1f441f0a3031d5c240e590edf56830cbc6e986eb54418896eaee3e4ae1c4",
+            "sourceSha256": "070d45e2fecf4e2fc84545237efca4e5c7bfa15e4770b8346545c02ae80157e8"
+          },
+          {
+            "song": 153,
+            "title": "A Night in Tunisia",
+            "path": "src/openbook/a_night_in_tunisia.ly.tera",
+            "version": "Laurent",
+            "status": "excluded",
+            "reason": "Pickup must be one matching initial compiler declaration in both streams"
+          }
+        ]
+      },
+      {
+        "song": 154,
+        "title": "Nobody Else But Me",
+        "selected": "openbook-nobody-else-but-me-wikifonia",
+        "attempts": [
+          {
+            "song": 154,
+            "title": "Nobody Else But Me",
+            "path": "src/openbook/nobody_else_but_me.ly.tera",
+            "version": "Wikifonia",
+            "status": "validated",
+            "id": "openbook-nobody-else-but-me-wikifonia",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 37,
+            "totalBeats": 145.0,
+            "notes": 104,
+            "chords": 49,
+            "midiSha256": "9dedc34980d624b42bde67e0570d096c4b0a409c0c17b6b8193c6c1a37697960",
+            "compiledMidiSha256": "0e0b167fd11b876950a31fbf1383f5f48315047693900bcfb4b718c4602ad8c3",
+            "sourceSha256": "3394572087313cd1f3fe7e034a71a5126a7d80ddad92d52ea0c7b30643377721"
+          }
+        ]
+      },
+      {
+        "song": 158,
+        "title": "On the Street Where You Live",
+        "selected": null,
+        "attempts": [
+          {
+            "song": 158,
+            "title": "On the Street Where You Live",
+            "path": "src/openbook/on_the_street_where_you_live.ly.tera",
+            "version": "Fake",
+            "status": "excluded",
+            "reason": "Textual navigation or pickup requires explicit source review"
+          }
+        ]
+      },
+      {
+        "song": 159,
+        "title": "On the Sunny Side of the Street",
+        "selected": "openbook-on-the-sunny-side-of-the-street-fake",
+        "attempts": [
+          {
+            "song": 159,
+            "title": "On the Sunny Side of the Street",
+            "path": "src/openbook/on_the_sunny_side_of_the_street.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-on-the-sunny-side-of-the-street-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 65,
+            "totalBeats": 257.0,
+            "notes": 216,
+            "chords": 104,
+            "midiSha256": "9c1d5a5655344065a331205d43fcb9ec00b836859177606cc56160ec6782dab0",
+            "compiledMidiSha256": "d1f5600e5e31179557a4a5ea462745ecdcf4ce7100373592848101dd87682146",
+            "sourceSha256": "dbce7202c932e795a5b20c6d60533232e7d2169ed2f7e4ce2cbc0c1b7d994963"
+          }
+        ]
+      },
+      {
+        "song": 161,
+        "title": "Our Delight",
+        "selected": "openbook-our-delight-wikifonia",
+        "attempts": [
+          {
+            "song": 161,
+            "title": "Our Delight",
+            "path": "src/openbook/our_delight.ly.tera",
+            "version": "Wikifonia",
+            "status": "validated",
+            "id": "openbook-our-delight-wikifonia",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 2.0,
+            "bars": 33,
+            "totalBeats": 130.0,
+            "notes": 89,
+            "chords": 49,
+            "midiSha256": "d9279b9ec6d9b35eceb43075ad6ae267c6784b2ce512ce115ed58d9f3fee184f",
+            "compiledMidiSha256": "b3f467633072e4899728158777f3afaf34bc0e323d98cc3dd80b6470a5d7fcfa",
+            "sourceSha256": "a5773a069d62992e3d95597d2dbf3d216fa5ca4aa6ede0fa1323b0a7ab7ef6a9"
+          }
+        ]
+      },
+      {
+        "song": 165,
+        "title": "Peace",
+        "selected": "openbook-peace-real",
+        "attempts": [
+          {
+            "song": 165,
+            "title": "Peace",
+            "path": "src/openbook/peace.ly.tera",
+            "version": "Real",
+            "status": "validated",
+            "id": "openbook-peace-real",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 41,
+            "totalBeats": 161.0,
+            "notes": 184,
+            "chords": 73,
+            "midiSha256": "fedaf6d13957b902d3130e67bdb27dc88cb00935cb0109852ab0457a4f7281a2",
+            "compiledMidiSha256": "d6f65e3de88d96841446c40570e30b47baa8723fde8e4c493850d1c2d8488262",
+            "sourceSha256": "14f9a2e13dd5de2a1a9bbcbafc30ced03e6089536d8ee7802d12faa66947254e"
+          }
+        ]
+      },
+      {
+        "song": 167,
+        "title": "Perdido",
+        "selected": "openbook-perdido-laurent",
+        "attempts": [
+          {
+            "song": 167,
+            "title": "Perdido",
+            "path": "src/openbook/perdido.ly.tera",
+            "version": "Laurent",
+            "status": "validated",
+            "id": "openbook-perdido-laurent",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 0.5,
+            "bars": 25,
+            "totalBeats": 96.5,
+            "notes": 77,
+            "chords": 35,
+            "midiSha256": "97cca1d054fae8a627faf923c855fbb669bf450c013255daff9123a940366eec",
+            "compiledMidiSha256": "2220ec540b1e75ea7cca4a3db4f2244e658a485291deef59b1cc79efc578bbd8",
+            "sourceSha256": "40f964831a8b125d138fac51c45e9c62ae50d8a027f513513ec371363a47bee0"
+          }
+        ]
+      },
+      {
+        "song": 169,
+        "title": "Poor Butterfly",
+        "selected": "openbook-poor-butterfly-fake",
+        "attempts": [
+          {
+            "song": 169,
+            "title": "Poor Butterfly",
+            "path": "src/openbook/poor_butterfly.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-poor-butterfly-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 3.0,
+            "bars": 33,
+            "totalBeats": 131.0,
+            "notes": 86,
+            "chords": 28,
+            "midiSha256": "6a6f46ca755fffeb62984d5a987a3a2626fb982227d06b25b3910da26e7c4449",
+            "compiledMidiSha256": "e8d53fa64bfcdc2603edcf338dfd47c6d5c37f19c113465a9fd9b8725ca38188",
+            "sourceSha256": "b72c297e72554e7c03ebc23af293ba1d63321c4b6c5fb01bb8587ea3f7fadcb7"
+          }
+        ]
+      },
+      {
+        "song": 174,
+        "title": "Rosetta",
+        "selected": "openbook-rosetta-fake",
+        "attempts": [
+          {
+            "song": 174,
+            "title": "Rosetta",
+            "path": "src/openbook/rosetta.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-rosetta-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 62,
+            "chords": 36,
+            "midiSha256": "f7c0a5229cdf7c86d4d29c1c54fd335d8fc467e64ad5a462c453f4f1426183a6",
+            "compiledMidiSha256": "1e09974284da1042773960f06ad03228a3bb61f074777044e21fba4bd1653550",
+            "sourceSha256": "47405ed9366581e1a5888f5029ed8bb88849ecd1c720bc02a84c3ca828501d17"
+          }
+        ]
+      },
+      {
+        "song": 181,
+        "title": "September in the Rain",
+        "selected": "openbook-september-in-the-rain-wikifonia",
+        "attempts": [
+          {
+            "song": 181,
+            "title": "September in the Rain",
+            "path": "src/openbook/september_in_the_rain.ly.tera",
+            "version": "Wikifonia",
+            "status": "validated",
+            "id": "openbook-september-in-the-rain-wikifonia",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 75,
+            "chords": 43,
+            "midiSha256": "2bc7d69219fe566d6f84d72f4a1e68901ccb27f98afbb2cf60d77e5a022a548f",
+            "compiledMidiSha256": "0023651d1e7559dae3fc3aab34c8406045cc07b932a1b1f5fec50527f57f0a2c",
+            "sourceSha256": "bdd0fb6f5703697ff208b328e590878d209f680adfeb0e984a2ea8f7b40a15e0"
+          }
+        ]
+      },
+      {
+        "song": 182,
+        "title": "September Song",
+        "selected": "openbook-september-song-laurent",
+        "attempts": [
+          {
+            "song": 182,
+            "title": "September Song",
+            "path": "src/openbook/september_song.ly.tera",
+            "version": "Laurent",
+            "status": "validated",
+            "id": "openbook-september-song-laurent",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 3.0,
+            "bars": 33,
+            "totalBeats": 131.0,
+            "notes": 79,
+            "chords": 34,
+            "midiSha256": "85b071d8efc75cca6c0a5ed844636a4b1cd541b4dc52a533b64cf1978bc53cc3",
+            "compiledMidiSha256": "9fee90c5d19053ef098ba29d92f0a25007e76749f72442e97f160402f60a4674",
+            "sourceSha256": "b472d8ed60fdb83c0ca11f4abe3c62549f8213a10eda895e6aa05b69ecabeaa9"
+          }
+        ]
+      },
+      {
+        "song": 183,
+        "title": "Shiny Stockings",
+        "selected": "openbook-shiny-stockings-fake",
+        "attempts": [
+          {
+            "song": 183,
+            "title": "Shiny Stockings",
+            "path": "src/openbook/shiny_stockings.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-shiny-stockings-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.5,
+            "bars": 33,
+            "totalBeats": 129.5,
+            "notes": 98,
+            "chords": 36,
+            "midiSha256": "9cf4b7b67bab3a1073aeeec4330fdce27fc7638fce44e2d839d49b7ad573ae8a",
+            "compiledMidiSha256": "d357146503c9496b4833d2727496f9c6e5c712eeffac9e301225c392684523fa",
+            "sourceSha256": "0346520b853778e29d2de7a6f8591114cc7e08b14693b10565585992ddeb8ca5"
+          }
+        ]
+      },
+      {
+        "song": 189,
+        "title": "Solitude",
+        "selected": null,
+        "attempts": [
+          {
+            "song": 189,
+            "title": "Solitude",
+            "path": "src/openbook/solitude.ly.tera",
+            "version": "Fake",
+            "status": "excluded",
+            "reason": "Textual navigation or pickup requires explicit source review"
+          }
+        ]
+      },
+      {
+        "song": 194,
+        "title": "Soul Eyes",
+        "selected": null,
+        "attempts": [
+          {
+            "song": 194,
+            "title": "Soul Eyes",
+            "path": "src/openbook/soul_eyes.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-soul-eyes-fake",
+            "modeMatchesOriginal": false,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 77,
+            "chords": 38,
+            "midiSha256": "0c0fafe5eed7808ce5779cca95c80617302b26bb3ee0c10603707f0c1fe64817",
+            "compiledMidiSha256": "884eb1a82f11b2a92323a447f9f5d18d6effcef187559c48beb164405d15bf08",
+            "sourceSha256": "448ae1617c5cd52d2c1ff8180fcdf348fefa0a79ad1891152afc8e57c4425b49"
+          }
+        ]
+      },
+      {
+        "song": 198,
+        "title": "Stella By Starlight",
+        "selected": "openbook-stella-by-starlight-real",
+        "attempts": [
+          {
+            "song": 198,
+            "title": "Stella By Starlight",
+            "path": "src/openbook/stella_by_starlight.ly.tera",
+            "version": "Real",
+            "status": "validated",
+            "id": "openbook-stella-by-starlight-real",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 63,
+            "chords": 31,
+            "midiSha256": "ef93ff5522c169247001bb2aca3a13f49ea7818ce7599d01a86612d79a158436",
+            "compiledMidiSha256": "a1162c28183c3e6adec3e4cdaf73af2ce5866b06d0136c28cf8d8912214de1ec",
+            "sourceSha256": "a081c4a3469286fafe0e5a39194b261edd2495be952cf8bc07f93d829f974e85"
+          }
+        ]
+      },
+      {
+        "song": 200,
+        "title": "Summertime",
+        "selected": "openbook-summertime-fake",
+        "attempts": [
+          {
+            "song": 200,
+            "title": "Summertime",
+            "path": "src/openbook/summertime.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-summertime-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 2.0,
+            "bars": 38,
+            "totalBeats": 150.0,
+            "notes": 88,
+            "chords": 76,
+            "midiSha256": "1e4cdf27db7670c0d2b8cc02b482f3ebee9b39b6773fac3f966dfa08f888b963",
+            "compiledMidiSha256": "79963e5ce844a6a3e6ee5704cfaa475c79785197c01998c7d5e6c77af1aad739",
+            "sourceSha256": "4a31b81b684adcb4c0fcb103f8580b801f18b2066061eebf4ee24afe23519f16"
+          },
+          {
+            "song": 200,
+            "title": "Summertime",
+            "path": "src/openbook/summertime.ly.tera",
+            "version": "Aebersold",
+            "status": "validated",
+            "id": "openbook-summertime-aebersold",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 84,
+            "chords": 29,
+            "midiSha256": "b2d10057dfbf82dce5059e8da71643b6a96b467a515ee6c69f2305f08d58a64c",
+            "compiledMidiSha256": "79b74575083e9c6bb8c0ec7077cc39d24d2849bc62495ccb848afbab5a593ddd",
+            "sourceSha256": "4a31b81b684adcb4c0fcb103f8580b801f18b2066061eebf4ee24afe23519f16"
+          },
+          {
+            "song": 200,
+            "title": "Summertime",
+            "path": "src/openbook/summertime.ly.tera",
+            "version": "Laurent",
+            "status": "validated",
+            "id": "openbook-summertime-laurent",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 82,
+            "chords": 25,
+            "midiSha256": "8403e90eeb612c11db6e3aaced1b0b21403e8d35e4118234dd9841323f0c539c",
+            "compiledMidiSha256": "1ccb87ba823d5310f08d4b089c27e11527dd82d98bd6a6efb6c316c38980e41a",
+            "sourceSha256": "4a31b81b684adcb4c0fcb103f8580b801f18b2066061eebf4ee24afe23519f16"
+          }
+        ]
+      },
+      {
+        "song": 206,
+        "title": "Tenderly",
+        "selected": "openbook-tenderly-fake",
+        "attempts": [
+          {
+            "song": 206,
+            "title": "Tenderly",
+            "path": "src/openbook/tenderly.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-tenderly-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.5,
+            "bars": 33,
+            "totalBeats": 97.5,
+            "notes": 82,
+            "chords": 41,
+            "midiSha256": "4c152f1a6d6a99625091729273bf4680c235180a3b461dcd3d41fc96a6881688",
+            "compiledMidiSha256": "e73aba0224fb393ac4d0300554669eee39ba2c10ec5c618ba006185dfa70dba5",
+            "sourceSha256": "f2301346bd7c5e2f65308ae964c0056a4d3576881568990bb63bfa905f525bd1"
+          },
+          {
+            "song": 206,
+            "title": "Tenderly",
+            "path": "src/openbook/tenderly.ly.tera",
+            "version": "Laurent",
+            "status": "validated",
+            "id": "openbook-tenderly-laurent",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.5,
+            "bars": 33,
+            "totalBeats": 129.5,
+            "notes": 82,
+            "chords": 41,
+            "midiSha256": "1aae30fa27ab77cada31e47a5480c06a3049c13478cd83fc38f90a9f3d72ee6b",
+            "compiledMidiSha256": "0696eaaa11c5f3b94a1cb9ee1f69ac9887c8ef78a0bbeba5321ccd043fd63b59",
+            "sourceSha256": "f2301346bd7c5e2f65308ae964c0056a4d3576881568990bb63bfa905f525bd1"
+          }
+        ]
+      },
+      {
+        "song": 207,
+        "title": "That's All",
+        "selected": "openbook-that-s-all-fake",
+        "attempts": [
+          {
+            "song": 207,
+            "title": "That's All",
+            "path": "src/openbook/thats_all.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-that-s-all-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 158,
+            "chords": 70,
+            "midiSha256": "84bd5d5d440ef9c69842c8ffdbb1c4d5658da2d44bb6c29b8ad457d1f9c6a477",
+            "compiledMidiSha256": "10626b192d613538ff449fb6dbf125f0abe8f1f3cd3c4be5d805cb4437004388",
+            "sourceSha256": "e0cea9a4cce1fae5778645d914608d5847ece15c3703bce017cc812e76d4b7d7"
+          }
+        ]
+      },
+      {
+        "song": 208,
+        "title": "There Is No Greater Love",
+        "selected": "openbook-there-is-no-greater-love-fake",
+        "attempts": [
+          {
+            "song": 208,
+            "title": "There Is No Greater Love",
+            "path": "src/openbook/there_is_no_greater_love.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-there-is-no-greater-love-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 3.0,
+            "bars": 33,
+            "totalBeats": 131.0,
+            "notes": 83,
+            "chords": 42,
+            "midiSha256": "7981cc493920bf0b61f435267ea8320695a4270665b048002bb2d6a8a3696750",
+            "compiledMidiSha256": "9aa7201d699747d0a4f5f5b0961e0de56e255686e39635ac4a4f3854cac50842",
+            "sourceSha256": "6376c6c144bc8f620dbc0f0e925c3a417912bda69dcbb81553834f71fbdc13ac"
+          }
+        ]
+      },
+      {
+        "song": 210,
+        "title": "There Will Never Be Another You",
+        "selected": "openbook-there-will-never-be-another-you-real",
+        "attempts": [
+          {
+            "song": 210,
+            "title": "There Will Never Be Another You",
+            "path": "src/openbook/there_will_never_be_another_you.ly.tera",
+            "version": "Real",
+            "status": "validated",
+            "id": "openbook-there-will-never-be-another-you-real",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 92,
+            "chords": 37,
+            "midiSha256": "2ab3466ed06da117cdd360fca493586128bd35251b6cc72a4a4b87ae71f3c181",
+            "compiledMidiSha256": "c07a68b5b91bca37f10cc48e5064b6043f34cf51df652be583e3710a604358be",
+            "sourceSha256": "872c7132e6110c2d262952be7931ff520b60e15134fb90ecfb27c50d66296d8b"
+          },
+          {
+            "song": 210,
+            "title": "There Will Never Be Another You",
+            "path": "src/openbook/there_will_never_be_another_you.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-there-will-never-be-another-you-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 33,
+            "totalBeats": 129.0,
+            "notes": 92,
+            "chords": 34,
+            "midiSha256": "68c10426ed7e1210ce851ac84f859e49d98adc692cabd09ce2ecd6fc50082632",
+            "compiledMidiSha256": "ea4e8fa9e996dcdb534d77ab6fae21e3297809f3676f086244872abf69ca1463",
+            "sourceSha256": "872c7132e6110c2d262952be7931ff520b60e15134fb90ecfb27c50d66296d8b"
+          }
+        ]
+      },
+      {
+        "song": 212,
+        "title": "They Can't Take That Away from Me",
+        "selected": "openbook-they-can-t-take-that-away-from-me-fake",
+        "attempts": [
+          {
+            "song": 212,
+            "title": "They Can't Take That Away from Me",
+            "path": "src/openbook/they_cant_take_that_away_from_me.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-they-can-t-take-that-away-from-me-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 3.5,
+            "bars": 37,
+            "totalBeats": 147.5,
+            "notes": 120,
+            "chords": 66,
+            "midiSha256": "da6c8d057093cc14151c6f596790f71652b30a470dc7226da247c310b695afb9",
+            "compiledMidiSha256": "e2abc2d5eea50f8c42544e7036977d3b7550357d45e668ca2e33094fc0c50674",
+            "sourceSha256": "b996b82151d029ae81aa0841916229fb92faaac2d6198c5d9ff4ae25e1a453fd"
+          }
+        ]
+      },
+      {
+        "song": 217,
+        "title": "The Touch of Your Lips",
+        "selected": "openbook-the-touch-of-your-lips-fake",
+        "attempts": [
+          {
+            "song": 217,
+            "title": "The Touch of Your Lips",
+            "path": "src/openbook/the_touch_of_your_lips.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-the-touch-of-your-lips-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 65,
+            "totalBeats": 256.0,
+            "notes": 128,
+            "chords": 109,
+            "midiSha256": "5cdb43cd64c67b2a689b91c1dba04cbf0792f601e20c13af8f207d3055875b21",
+            "compiledMidiSha256": "faff4baef1c50443f04440a9e567ec802900be116cbcc5fe0caac2c9bb3cef73",
+            "sourceSha256": "c232232477d102f8c0471f498dc9af510328a5fe5eca90193737f22f648f3dc7"
+          }
+        ]
+      },
+      {
+        "song": 222,
+        "title": "Wave",
+        "selected": "openbook-wave-real",
+        "attempts": [
+          {
+            "song": 222,
+            "title": "Wave",
+            "path": "src/openbook/wave.ly.tera",
+            "version": "Real",
+            "status": "validated",
+            "id": "openbook-wave-real",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 2.0,
+            "bars": 89,
+            "totalBeats": 354.0,
+            "notes": 305,
+            "chords": 124,
+            "midiSha256": "124b8916cdbb627c154fb262c7379ebb11e0a5ab142a651699b7bf32e1976762",
+            "compiledMidiSha256": "884cec75ae31c346076b1625a26998aa007e0069cb7fcdf5cbf9eae74c4d6fc1",
+            "sourceSha256": "d781c958ec637c61d7f63082db5950e4517c6f5ba605cf60393dd7c802aebdad"
+          }
+        ]
+      },
+      {
+        "song": 225,
+        "title": "What's New",
+        "selected": "openbook-what-s-new-fake",
+        "attempts": [
+          {
+            "song": 225,
+            "title": "What's New",
+            "path": "src/openbook/whats_new.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-what-s-new-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 2.0,
+            "bars": 33,
+            "totalBeats": 130.0,
+            "notes": 101,
+            "chords": 64,
+            "midiSha256": "707faae18ba2eca97c4b8ed08aeead738a87ce0b91960ac1e0f8e8ead9162313",
+            "compiledMidiSha256": "2815165e569b5c0863388a9cd5b6ab52867c91369529f23473a5c6902e7980f5",
+            "sourceSha256": "9efaf61648ff80789dca9007c4001acd4c3912dd8a364f257b3acf6faee55789"
+          }
+        ]
+      },
+      {
+        "song": 231,
+        "title": "Whisper Not",
+        "selected": null,
+        "attempts": [
+          {
+            "song": 231,
+            "title": "Whisper Not",
+            "path": "src/openbook/whisper_not.ly.tera",
+            "version": "Laurent",
+            "status": "excluded",
+            "reason": "Skip does not follow harmony continuously"
+          }
+        ]
+      },
+      {
+        "song": 234,
+        "title": "Winter Wonderland",
+        "selected": "openbook-winter-wonderland-wikifonia",
+        "attempts": [
+          {
+            "song": 234,
+            "title": "Winter Wonderland",
+            "path": "src/openbook/winter_wonderland.ly.tera",
+            "version": "Wikifonia",
+            "status": "validated",
+            "id": "openbook-winter-wonderland-wikifonia",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 34,
+            "totalBeats": 133.0,
+            "notes": 138,
+            "chords": 25,
+            "midiSha256": "1cde90c4ef0516b32465913cceb7f5b372aa13ac2d512bf0a647bed6f89eedd2",
+            "compiledMidiSha256": "ace4c79ef1ea4471e077e2932e02ceaaa719b63e73ad472183a6fd8ee9e64aa3",
+            "sourceSha256": "832b29394104ae416b0dbc94532e8a6d4c4ce7aa363a84da8a29cb92bda154a6"
+          }
+        ]
+      },
+      {
+        "song": 237,
+        "title": "You Go to My Head",
+        "selected": "openbook-you-go-to-my-head-laurent",
+        "attempts": [
+          {
+            "song": 237,
+            "title": "You Go to My Head",
+            "path": "src/openbook/you_go_to_my_head.ly.tera",
+            "version": "Laurent",
+            "status": "validated",
+            "id": "openbook-you-go-to-my-head-laurent",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 1.0,
+            "bars": 41,
+            "totalBeats": 161.0,
+            "notes": 173,
+            "chords": 75,
+            "midiSha256": "116dbce4d1696c71f53a310c1fa4b8e0a360447cabe9e27feb155629816cf79d",
+            "compiledMidiSha256": "0e4deba26731c63244462d0b03565a75949618d1f692afbd904488b0a95bff52",
+            "sourceSha256": "2788e8fc14617fa8f33862e104f06553e517b8d3b9f84e1d939cc4c8554a1be1"
+          }
+        ]
+      },
+      {
+        "song": 239,
+        "title": "You Turned the Tables on Me",
+        "selected": "openbook-you-turned-the-tables-on-me-fake",
+        "attempts": [
+          {
+            "song": 239,
+            "title": "You Turned the Tables on Me",
+            "path": "src/openbook/you_turned_the_tables_on_me.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-you-turned-the-tables-on-me-fake",
+            "modeMatchesOriginal": true,
+            "pickupBeats": 3.5,
+            "bars": 33,
+            "totalBeats": 131.5,
+            "notes": 130,
+            "chords": 46,
+            "midiSha256": "06eeb6851318b3a3fa98bd1226434f4310fc9a6ab9a5f034a7fbaae4ac4ef72c",
+            "compiledMidiSha256": "aaf7bb31350e719c7183c136004283604445ef35f738b7e9338b65e556c81276",
+            "sourceSha256": "94325669b3e3e8f9d99f92ac65b7a1563488b5a411de9845a41cbe37ac0c036e"
+          }
+        ]
+      },
+      {
+        "song": 240,
+        "title": "You'd Be So Nice to Come Home To",
+        "selected": null,
+        "attempts": [
+          {
+            "song": 240,
+            "title": "You'd Be So Nice to Come Home To",
+            "path": "src/openbook/youd_be_so_nice_to_come_home_to.ly.tera",
+            "version": "Fake",
+            "status": "validated",
+            "id": "openbook-you-d-be-so-nice-to-come-home-to-fake",
+            "modeMatchesOriginal": false,
+            "pickupBeats": 2.0,
+            "bars": 33,
+            "totalBeats": 130.0,
+            "notes": 66,
+            "chords": 44,
+            "midiSha256": "c5840f0d8e7053f78cae43877575769ec067698e96459a499f2bca73206bcda0",
+            "compiledMidiSha256": "e3fcc77532cebe4b727a30bc485ba61e699f0aaca2c48a886274d32a06dbfc4b",
+            "sourceSha256": "d8fde32166338e9cf0680694845a403f688321009643685c8b3f8158d00b5dc3"
+          }
+        ]
+      }
+    ]
+  }
+}

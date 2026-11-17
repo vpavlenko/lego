@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import {resolve} from 'node:path';
 import {pitch,mod} from '../dist/harmony.mjs';
+import {sourceMeasureMap} from '../src/music/measure-map.mjs';
 import {parseChord} from '../src/music/realization.mjs';
 
 const ROOTS=['C','Db','D','Eb','E','F','Gb','G','Ab','A','Bb','B'];
@@ -25,12 +26,12 @@ export function tonicEvidence(entry){
 }
 
 export function melodyEligibility(entry,qualities){
- const p=entry.provenance,reasons=[];
- if(entry.pickupBeats)reasons.push('pickup');
+ const p=entry.provenance,reasons=[];let mapped=false;
+ if(entry.pickupBeats){try{mapped=!!sourceMeasureMap(entry);}catch{reasons.push('pickup');}}
  if(p.sourceMeters.length!==1)reasons.push('meter changes');
  if(p.unfoldStatus==='unresolved')reasons.push('unresolved repeats');
- if(p.irregularMeasures.length||p.leadOverfullMeasures?.length||p.leadUnderfullMeasures?.length)reasons.push('irregular source measures');
- if(!Number.isInteger(entry.bars)||!close(entry.totalBeats,entry.bars*entry.barBeats))reasons.push('incomplete bar grid');
+ if(!mapped&&p.irregularMeasures.length||p.leadOverfullMeasures?.length||p.leadUnderfullMeasures?.length)reasons.push('irregular source measures');
+ if(!Number.isInteger(entry.bars)||!mapped&&!close(entry.totalBeats,entry.bars*entry.barBeats))reasons.push('incomplete bar grid');
  if(p.conflictingHarmonies?.length)reasons.push('conflicting harmonies');
  if(p.omittedHarmonyAnnotations.some(c=>c.kind!=='none'))reasons.push('unsupported source harmony');
  if(entry.chords.some(c=>c.symbol!=='NC'&&!parseChord(c.symbol,qualities,c)))reasons.push('unsupported chord vocabulary');

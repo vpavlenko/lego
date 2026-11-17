@@ -24,7 +24,12 @@ export function realizeSong(song,qualities,{tempo=120}={}){
   const row=song.rows[ri];rows.push({start:row.startBar*barBeats,end:(row.startBar+row.bars)*barBeats,label:row.startBar+1});
   for(const cell of row.chords){
    const symbol=transposeChord(cell.symbol,song.tonic[0]),start=(row.startBar+cell.start)*barBeats,end=(row.startBar+cell.end)*barBeats,id=chords.length;
-   const c={id,row:ri,start,end,symbol,sourceSymbol:cell.symbol,clipped:!!cell.clipped};chords.push(c);
+   // A visual source row cut is not another authored chord attack.
+   const previous=chords.at(-1);
+   if(song.measureMap&&previous&&previous.sourceIndex===cell.sourceIndex&&Math.abs(previous.end-start)<1e-7){
+    previous.end=end;for(const note of notes)if(note.chord===previous.id)note.duration=end-note.start;continue;
+   }
+   const c={id,row:ri,start,end,symbol,sourceSymbol:cell.symbol,clipped:!!cell.clipped,...(song.measureMap?{sourceIndex:cell.sourceIndex}:{})};chords.push(c);
    // A source ellipsis conceals chord tones. Preserve its time as a marked gap.
    if(c.clipped){c.pitches=[];continue;}
    const parsed=parseChord(symbol,qualities,cell);if(!parsed)throw Error('Unsupported chord '+symbol+' in '+song.title);
@@ -32,7 +37,7 @@ export function realizeSong(song,qualities,{tempo=120}={}){
    c.pitches.forEach((p,i)=>notes.push({id:`${id}-${i}`,pitch:p,start,duration:end-start,voice:0,velocity:74,chord:id}));
   }
  }
- return {version:3,voicing:'root-position',song:song.index,title:song.title,tempo,meter:song.meter,beats:song.bars*barBeats,barBeats,rows,tonic:0,changes,notes,chords};
+ return {version:3,voicing:'root-position',song:song.index,title:song.title,tempo,meter:song.meter,beats:song.bars*barBeats,barBeats,rows,...(song.measureMap?{measureMap:song.measureMap}:{}),tonic:0,changes,notes,chords};
 }
 export function playbackPlan(data,tempo=data.tempo){
  const notes=data.notes.map(n=>{const voice=n.voice??0;return {...n,voice,velocity:n.velocity??(voice===1?80:74),channel:voice,group:voice,end:n.start+n.duration};});
