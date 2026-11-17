@@ -7,7 +7,7 @@ const wait=async fn=>{for(let i=0;i<100;i++){if(fn())return;await new Promise(r=
 
 test('Rawl playback, brick pages, deep links and existing chart views work together',async()=>{
  const dom=new JSDOM(fs.readFileSync(new URL('index.html',root),'utf8'),{url:'http://localhost:5187/',pretendToBeVisual:true});
- const w=dom.window;Object.assign(globalThis,{window:w,document:w.document,location:w.location,localStorage:w.localStorage,innerWidth:1280,innerHeight:900,requestAnimationFrame:w.requestAnimationFrame.bind(w),cancelAnimationFrame:w.cancelAnimationFrame.bind(w)});
+ const w=dom.window;Object.assign(globalThis,{window:w,document:w.document,location:w.location,localStorage:w.localStorage,history:w.history,innerWidth:1280,innerHeight:900,requestAnimationFrame:w.requestAnimationFrame.bind(w),cancelAnimationFrame:w.cancelAnimationFrame.bind(w)});
  Object.defineProperty(globalThis,'navigator',{value:w.navigator,configurable:true});
  const media={matches:false,addEventListener(){},removeEventListener(){}};globalThis.matchMedia=()=>media;
  w.scrollTo=()=>{};w.HTMLElement.prototype.scrollIntoView=function(){};
@@ -48,7 +48,11 @@ test('Rawl playback, brick pages, deep links and existing chart views work toget
  assert.equal($('#midi-download').getAttribute('href'),'./midi/bricks/'+entry.slug+'.mid');$('#play').click();await wait(()=>$('#play').textContent==='Pause');await wait(()=>$('#brick-rawl .rawln-sounding'));$('#stop').click();assert.equal($('#brick-rawl .rawln-sounding'),null);
  const passage=$('.passages a');w.location.hash=passage.getAttribute('href');await wait(()=>$('#song-view').hidden===false&&$('#play').disabled===false);
  assert.ok($('#score .selected-brick'));assert.equal($('#stop').disabled,false);
- w.location.hash='#bricks';await wait(()=>$('#brick-view h1')?.textContent==='Bricks');assert.equal(w.document.querySelectorAll('.brick-catalog-row').length,354);
+ w.location.hash='#bricks';await wait(()=>$('#brick-view h1')?.textContent==='Bricks');assert.equal(w.document.querySelectorAll('.brick-catalog-row').length,315);
+ w.location.hash='#brick/minor-dr';await wait(()=>$('#brick-view h1')?.textContent==='Minor Dropback'&&$('#brick-rawl [data-note]'));assert.equal(w.location.hash,'#brick/minor-dropback');assert.equal(w.document.querySelectorAll('.brick-match').length,9);
+ $('#search').value='Minor Dr';$('#search').dispatchEvent(new w.Event('input'));assert.equal(w.document.querySelectorAll('#songs .song-link').length,2);
+ const rawMatch=[...w.document.querySelectorAll('.passages a')].find(a=>a.getAttribute('href').includes('brick=minor-dropback'));w.location.hash=rawMatch.getAttribute('href');await wait(()=>$('#song-view').hidden===false&&!$('#play').disabled);assert.ok($('#score .selected-brick'));assert.ok([...w.document.querySelectorAll('#score .selected-brick')].every(el=>el.textContent==='Minor Dropback'));
+ w.location.hash='#bricks';await wait(()=>$('#brick-view h1')?.textContent==='Bricks');
  $('#search').value='Straight Cadence';$('#search').dispatchEvent(new w.Event('input'));assert.ok(w.document.querySelectorAll('#songs .song-link').length>0);
  w.location.hash='#012';await wait(()=>$('#title').textContent==='Autumn Leaves'&&!$('#play').disabled);assert.equal($('#tonic').textContent.trim(),'C minor');
  $('#notation-view').click();await wait(()=>$('#rawl-view [data-note]'));assert.equal($('#midi-download').getAttribute('href'),'./midi/012.mid');

@@ -54,12 +54,15 @@ key changes, render callbacks, and playback position. It uses Caplin's 3 px pitc
 axis and 5 px notes, Rawl's colors/corner shapes, and row-local held-note ranges.
 The host owns audio, routing, realization, and download controls.
 
-`#bricks` lists all 354 distinct labels in the supplied analyses. Each
+`#bricks` lists 315 canonical brick identities from the 354 source labels. Each
 `#brick/<slug>` page lists every matching standard and its exact source passages.
 Brick links in both score views are reciprocal. Passage links open the standard
 at that beat and highlight its brick label. These are matches in the PDF's
-242 analyses, not fresh analyses of the larger Impro-Visor corpus. Source-clipped
-brick labels remain distinct instead of being guessed into modern definitions.
+242 analyses, not fresh analyses of the larger Impro-Visor corpus. A reviewed
+alias table combines 39 typographic variants. Ambiguous stems and hidden semantic
+extensions remain distinct. Raw labels remain unchanged in `roadmaps.json` and
+each indexed passage; old abbreviated page addresses resolve to their canonical
+page. Search accepts both the canonical and abbreviated names.
 
 ## Colors
 
@@ -120,10 +123,12 @@ Geologica is reused from the user's CompGeom site with its OFL license.
 Lucide arrow paths are from lucide-react 1.17.0, ISC-licensed; the original path
 modules and license are included under `dist/icons/`.
 
-Brick detail pages start with a playable, MIDI-downloadable example taken from the longest fully legible matching roadmap passage, transposed to the local brick tonic C. Its source link returns to the exact passage. All 354 source brick labels have examples. These are source passages, not expansions from the brick dictionary.
+Brick detail pages start with a playable, MIDI-downloadable example taken from the longest fully legible matching roadmap passage, transposed to the local brick tonic C. Its source link returns to the exact passage. All 315 canonical brick identities have examples. These are source passages, not expansions from the brick dictionary.
 
 Active and hovered Rawl notes double their height upward with the bottom edge fixed, following Rawl’s `getNoteRectangles.tsx`; playback adds no outline or brightness change. Only the note copy in the current row responds to playback. Muted voices collapse to 0.5 px.
 
 For the one selected example with no overlapping key label (Diatonic I ii iii biii in Polkadots and Moonbeams), the original standard tonic provides the transposition reference. Source key labels are otherwise retained.
 
 The join-key lookup uses the region covering the join onset, including joins within an unchanged key region. This corrects 90 previously forward-looking tonic pairs. Key changes without a join remain on the same shared timeline. Rawl flag geometry follows `AnalysisGrid.tsx` `NewTonicSymbol`: an 80 × 12 px gradient mask anchored at onset, with white interval/tonic text offset beside the measure number.
+
+Typography aliases are explicit in `src/music/brick-aliases.mjs`; `evidence/brick-aliases.json` records the merged groups and counts. Impro-Visor `RoadMapSettings.trimString` and `GraphicBrick` shorten labels to fit pixels. Visible `+` modifiers are retained; an unknown `+...` extension is not equated with a base brick or a guessed Overrun/Dropback. Minor Dropback combines four shortened spellings into one page with nine unique standards and eleven source passages.

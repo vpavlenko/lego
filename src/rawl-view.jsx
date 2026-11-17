@@ -13,7 +13,7 @@ function HostView({song,performance,brickMap,onSeek,onNote,controller,mutedVoice
  const changes=performance.changes;
  const header=row=>song.rows.flatMap(r=>r.bricks.map(b=>({...b,start:(r.startBar+b.start)*performance.barBeats,end:(r.startBar+b.end)*performance.barBeats}))).filter(b=>b.start<row.end&&b.end>row.start).map((b,i)=>{
   const span=row.end-row.start,start=Math.max(row.start,b.start),end=Math.min(row.end,b.end);
-  return <a key={`${b.name}-${i}`} className={'rawln-annotation'+(selected===b.name?' selected-brick':'')} style={{left:(start-row.start)/span*100+'%',width:(end-start)/span*100+'%'}} href={'#brick/'+brickMap.get(b.name)?.slug} title={b.name}>{b.name}</a>;
+  return <a key={`${b.name}-${i}`} className={'rawln-annotation'+(selected===brickMap.get(b.name)?.name?' selected-brick':'')} style={{left:(start-row.start)/span*100+'%',width:(end-start)/span*100+'%'}} href={'#brick/'+brickMap.get(b.name)?.slug} title={b.name}>{brickMap.get(b.name)?.name??b.name}</a>;
  });
  const footer=row=>{
   const span=row.end-row.start,chords=performance.chords.filter(c=>c.start<row.end&&c.end>row.start);

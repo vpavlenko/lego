@@ -5,7 +5,7 @@ import {mountRawlView} from './rawl-view.js';
 import {createPlayer,encodeMidi} from './audio-player.js';
 const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const [data,brickData]=await Promise.all(['./data/roadmaps.json','./data/bricks.json'].map(url=>fetch(url).then(r=>{if(!r.ok)throw Error(r.status);return r.json();})));
-const songs=data.songs,modulationMap=songs.map(songModulations),bricks=brickData.bricks,brickMap=new Map(bricks.map(b=>[b.name,b])),brickBySlug=new Map(bricks.map(b=>[b.slug,b]));
+const songs=data.songs,modulationMap=songs.map(songModulations),bricks=brickData.bricks,brickMap=new Map(bricks.flatMap(b=>[b.name,...b.aliases].map(name=>[name,b]))),brickBySlug=new Map(bricks.flatMap(b=>[b.slug,...b.aliasSlugs].map(slug=>[slug,b])));
 let current=0,currentBrick=null,routeKind='song',view=['analysis','source','rawl'].includes(localStorage.getItem('insights-view'))?localStorage.getItem('insights-view'):'rawl';
 let rawl=null,performance=null,currentBeat=null,selected=null,routeGeneration=0,detailTimer,lastPlaybackRow=-1;
 const transport=$('#transport'),songRawl=$('#rawl-view');
@@ -25,7 +25,7 @@ const player=createPlayer({onState:state=>{
 },onError:error=>{console.error(error);$('#playback-error').hidden=false;}});
 function catalog(){
  const q=$('#search').value.toLocaleLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,''),isBricks=routeKind!=='song';
- const list=(isBricks?bricks:songs).filter(item=>(isBricks?item.name:item.title+' '+item.bricks.join(' ')).toLocaleLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').includes(q));
+ const list=(isBricks?bricks:songs).filter(item=>(isBricks?[item.name,...item.aliases].join(' '):item.title+' '+item.bricks.flatMap(name=>[name,brickMap.get(name)?.name??name]).join(' ')).toLocaleLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').includes(q));
  $('#catalog-label').textContent=isBricks?'BRICKS':'SONGS';$('#songs').setAttribute('aria-label',isBricks?'Bricks':'Songs');$('#count').textContent=list.length;
  $('#songs').innerHTML=list.map(item=>isBricks?`<a class="song-link${currentBrick?.slug===item.slug?' active':''}" href="#brick/${item.slug}"><span class="number">${item.standards.length}</span><span>${esc(item.name)}</span></a>`:`<a class="song-link${item.index===current?' active':''}" href="#${pad(item.index)}" ${item.index===current?'aria-current="page"':''}><span class="number">${pad(item.index+1)}</span><span>${esc(item.title)}</span></a>`).join('')||'<div class="empty">No matches</div>';
  $('#songs-nav').href='#'+pad(current);$('#songs-nav').setAttribute('aria-current',isBricks?'false':'page');$('#bricks-nav').setAttribute('aria-current',isBricks?'page':'false');
@@ -36,7 +36,7 @@ function rowHTML(row,song,rowIndex){
  for(let n=0;n<=row.bars;n++)html+=`<div class="bar-tick${n===row.bars?' end':''}" style="left:${n/scale*100}%">${n<row.bars?`<span>${row.startBar+n+1}</span>`:''}</div>`;
  html+='</div>';
 
- for(const b of row.bricks)if(b.name)html+=`<a class="brick${selected===b.name?' selected-brick':''}" style="${at(b,scale)}" title="${esc(b.name)}" href="#brick/${brickMap.get(b.name).slug}">${esc(b.name)}</a>`;
+ for(const b of row.bricks)if(b.name)html+=`<a class="brick${selected===brickMap.get(b.name).name?' selected-brick':''}" style="${at(b,scale)}" title="${esc(b.name)}" href="#brick/${brickMap.get(b.name).slug}">${esc(brickMap.get(b.name).name)}</a>`;
  for(const c of row.chords){
   const symbol=transposeChord(c.symbol,tonic),parts=chordParts(symbol),base=modulationAt(modulationMap[song.index],(row.startBar+c.start)*barBeats).root,degree=mod(pitch(symbol)-pitch(base)),rn=roman(symbol,base);
   html+=`<div class="chord degree-color harmony-band${c.clipped?' uncertain':''}" data-degree="${colorIndex(degree)}" data-chord-start="${(row.startBar+c.start)*barBeats}" data-chord-end="${(row.startBar+c.end)*barBeats}" style="${at(c,scale)}" title="${esc(symbol)}"><span class="root">${esc(parts.root)}</span><sup>${esc(parts.quality)}</sup></div><div class="rn degree-color harmony-band" data-degree="${colorIndex(degree)}" style="${at(c,scale)}" title="${esc(rn)}">${esc(rn)}</div>`;
@@ -85,6 +85,7 @@ async function openSong(index,params,initial=false){
 function brickLink(b){return '#brick/'+b.slug;}
 async function openBricks(slug=null){
  restoreTransport();const gen=++routeGeneration;player.stop();rawl?.destroy();rawl=null;performance=null;routeKind=slug?'brick':'bricks';currentBrick=brickBySlug.get(slug)||null;
+ if(currentBrick&&slug!==currentBrick.slug)history.replaceState(null,'','#brick/'+currentBrick.slug);
  $('#song-view').hidden=true;$('#brick-view').hidden=false;$('#pdf-link').hidden=true;closeMenu();$('#search').value='';
  if(!currentBrick){
   document.title='Bricks · Insights Roadmaps';$('#brick-view').innerHTML=`<div class="song-eyebrow">${bricks.length} / ${songs.length}</div><h1>Bricks</h1><div class="brick-catalog">${bricks.map(b=>`<a class="brick-catalog-row" href="${brickLink(b)}"><span>${esc(b.name)}</span><span>${b.standards.length}</span></a>`).join('')}</div>`;

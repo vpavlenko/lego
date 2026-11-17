@@ -2,17 +2,19 @@ export function slugify(name){return name.normalize('NFKD').replace(/[\u0300-\u0
 function suffix(name){let h=2166136261;for(const c of name)h=Math.imul(h^c.charCodeAt(0),16777619);return (h>>>0).toString(36);}
 export function buildBrickIndex(songs){
  const byName=new Map(),slugs=new Set();
- const labels=[...new Set(songs.flatMap(s=>s.rows.flatMap(r=>r.bricks.map(b=>b.name))))].sort((a,b)=>a.localeCompare(b));
- for(const name of labels){let slug=slugify(name);if(slugs.has(slug))slug+='-'+suffix(name);slugs.add(slug);byName.set(name,{slug,name,standards:[],passages:0,clipped:/…|\.{2,}/.test(name)});}
+ const sourceLabels=[...new Set(songs.flatMap(s=>s.rows.flatMap(r=>r.bricks.map(b=>b.name))))],labels=[...new Set(sourceLabels.map(brickIdentity))].sort((a,b)=>a.localeCompare(b));
+ const oldSlugs=new Map(),oldUsed=new Set();
+ for(const name of [...sourceLabels].sort((a,b)=>a.localeCompare(b))){let slug=slugify(name);if(oldUsed.has(slug))slug+='-'+suffix(name);oldUsed.add(slug);oldSlugs.set(name,slug);}
+ for(const name of labels){let slug=slugify(name);if(slugs.has(slug))slug+='-'+suffix(name);slugs.add(slug);const aliases=sourceLabels.filter(n=>n!==name&&brickIdentity(n)===name).sort((a,b)=>a.localeCompare(b)),aliasSlugs=[...new Set([oldSlugs.get(name),...aliases.map(n=>oldSlugs.get(n))].filter(s=>s&&s!==slug))];byName.set(name,{slug,name,aliases,aliasSlugs,standards:[],passages:0,clipped:/…|\.{2,}/.test(name)});}
  for(const song of songs){
   const matches=new Map(),barBeats=song.meter[0]*4/song.meter[1];
   song.rows.forEach((row,ri)=>row.bricks.forEach(b=>{
-   if(!matches.has(b.name))matches.set(b.name,[]);
-   matches.get(b.name).push({row:ri,startBar:row.startBar+b.start,endBar:row.startBar+b.end,start:(row.startBar+b.start)*barBeats,end:(row.startBar+b.end)*barBeats});
+   const name=brickIdentity(b.name);if(!matches.has(name))matches.set(name,[]);
+   matches.get(name).push({row:ri,label:b.name,startBar:row.startBar+b.start,endBar:row.startBar+b.end,start:(row.startBar+b.start)*barBeats,end:(row.startBar+b.end)*barBeats});
   }));
   for(const [name,passages]of matches){const entry=byName.get(name);entry.standards.push({song:song.index,title:song.title,passages});entry.passages+=passages.length;}
  }
- return {version:1,totalStandards:songs.length,bricks:[...byName.values()]};
+ return {version:2,sourceLabels:sourceLabels.length,totalStandards:songs.length,bricks:[...byName.values()]};
 }
 
 // Use a real roadmap passage, preserving its chords and local key. Prefer the
@@ -29,3 +31,5 @@ export function brickExample(brick,songs){
  const previewSong={index:song.index,title:brick.name,tonic:[key.root,key.mode],meter:song.meter,bars:end-start,columns:end-start,rows:[{startBar:0,bars:end-start,keys,chords:slice(row.chords),bricks:[{start:0,end:end-start,name:brick.name}],joins:row.joins.filter(j=>j.at>start&&j.at<end).map(j=>({...j,at:j.at-start}))}]};
  return {previewSong,source:{song:song.index,title:song.title,...passage}};
 }
+import {brickIdentity} from './brick-aliases.mjs';
+export {brickIdentity} from './brick-aliases.mjs';

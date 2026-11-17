@@ -14,7 +14,14 @@ for(const song of songs){
  const data=realizeSong(song,qualities),id=String(song.index).padStart(3,'0');total+=data.notes.length;clipped+=data.chords.filter(c=>c.clipped).length;
  fs.writeFileSync(path.join(root,`dist/data/performances/${id}.json`),JSON.stringify(data));fs.writeFileSync(path.join(root,`dist/midi/${id}.mid`),encodeMidi(data));
 }
-const bricks=buildBrickIndex(songs);fs.writeFileSync(path.join(root,'dist/data/bricks.json'),JSON.stringify(bricks));
+const previousBricks=read('dist/data/bricks.json').bricks,bricks=buildBrickIndex(songs);
+const currentSlugs=new Set(bricks.bricks.map(b=>b.slug));
+for(const old of previousBricks)if(!currentSlugs.has(old.slug)){
+ fs.rmSync(path.join(root,`dist/data/brick-performances/${old.slug}.json`),{force:true});
+ fs.rmSync(path.join(root,`dist/midi/bricks/${old.slug}.mid`),{force:true});
+}
+fs.writeFileSync(path.join(root,'evidence/brick-aliases.json'),JSON.stringify({sourceLabels:bricks.sourceLabels,canonicalBricks:bricks.bricks.length,groups:bricks.bricks.filter(b=>b.aliases.length).map(({name,aliases,standards,passages})=>({name,aliases,standards:standards.length,passages}))},null,2));
+fs.writeFileSync(path.join(root,'dist/data/bricks.json'),JSON.stringify(bricks));
 fs.mkdirSync(path.join(root,'dist/data/brick-performances'),{recursive:true});
 fs.mkdirSync(path.join(root,'dist/midi/bricks'),{recursive:true});
 for(const brick of bricks.bricks){

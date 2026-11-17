@@ -1,0 +1,46 @@
+// Reviewed typography aliases, not fuzzy musical equivalences.
+// Impro-Visor RoadMapSettings.trimString shortens names with "...";
+// GraphicBrick draws the shortened label. The raw PDF labels stay intact.
+// https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/src/imp/roadmap/RoadMapSettings.java#L344
+export const BRICK_ALIASES=Object.freeze({
+ 'Body & Soul Cade...':'Body & Soul Cadence',
+ 'Chromatically Descending Dom...':'Chromatically Descending Dominants',
+ 'Laun..':'Launcher',
+ 'Launche':'Launcher',
+ 'Light & Day Laun...':'Light & Day Launcher',
+ 'Minor Chrom...':'Minor Chromatic Walkdown',
+ 'Minor Chroma...':'Minor Chromatic Walkdown',
+ 'Minor Dr.':'Minor Dropback',
+ 'Minor Dro.':'Minor Dropback',
+ 'Minor Dropb':'Minor Dropback',
+ 'Minor Dropbac':'Minor Dropback',
+ 'Minor Dropback +':'Minor Dropback +...',
+ 'Minor Pe.':'Minor Perfect Cadence',
+ 'Minor Per.':'Minor Perfect Cadence',
+ 'Minor Perfect C...':'Minor Perfect Cadence',
+ 'Minor Perfect Ca...':'Minor Perfect Cadence',
+ 'Minor Perfect Cad':'Minor Perfect Cadence',
+ 'Minor Perfect Cad...':'Minor Perfect Cadence',
+ 'Minor Perfect Cade':'Minor Perfect Cadence',
+ 'Minor Perfect.':'Minor Perfect Cadence',
+ 'Nowhere Lau...':'Nowhere Launcher',
+ 'Perfect Caden.':'Perfect Cadence',
+ 'Perfect Cadenc...':'Perfect Cadence',
+ 'Sad Lau..':'Sad Launcher',
+ 'Sad Laun...':'Sad Launcher',
+ 'Straight App...':'Straight Approach',
+ 'Straight Appro.':'Straight Approach',
+ 'Straight Approa...':'Straight Approach',
+ 'Straight L...':'Straight Launcher',
+ 'Straight Lau...':'Straight Launcher',
+ 'Straight Laun...':'Straight Launcher',
+ 'Straight Launc..':'Straight Launcher',
+ 'Straight Launc...':'Straight Launcher',
+ 'Straight Launchei':'Straight Launcher',
+ 'To IV nBird SPOT +...':'To IV n Bird SPOT +...',
+ 'Tritone Launc...':'Tritone Launcher',
+ 'Yardbird L...':'Yardbird Launcher',
+ 'Yardbird Lau...':'Yardbird Launcher',
+ 'Yardbird Launche:':'Yardbird Launcher'
+});
+export const brickIdentity=name=>BRICK_ALIASES[name]??name;

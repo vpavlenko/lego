@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import {createRequire} from 'node:module';
 import {realizeSong,parseChord,playbackPlan} from '../src/music/realization.mjs';
 import {encodeMidi} from '../src/music/midi.mjs';
-import {buildBrickIndex,brickExample} from '../src/music/bricks.mjs';
+import {buildBrickIndex,brickExample,brickIdentity} from '../src/music/bricks.mjs';
 import {songModulations,modulationAt,modulationDelta} from '../src/music/modulations.mjs';
 import {pitch,transposeRoot} from '../dist/harmony.mjs';
 import {pitchRange,staveGeometry,tonicAt,keyMarkers} from '../packages/rawl-notation/src/geometry.mjs';
@@ -39,12 +39,12 @@ test('every legible chord in all 242 standards has exact vocabulary tones and a 
  assert.equal(clipped,8);assert.equal(notes,expectedCount);
 });
 
-test('all 354 brick pages index every source passage and have stable unique addresses',()=>{
- const index=buildBrickIndex(songs);assert.equal(index.bricks.length,354);assert.equal(new Set(index.bricks.map(b=>b.slug)).size,354);
+test('all 315 canonical brick pages index every source passage and have stable unique addresses',()=>{
+ const index=buildBrickIndex(songs);assert.equal(index.sourceLabels,354);assert.equal(index.bricks.length,315);assert.equal(new Set(index.bricks.map(b=>b.slug)).size,315);
  const names=new Map(index.bricks.map(b=>[b.name,b]));let count=0;
  for(const song of songs)for(const row of song.rows)for(const brick of row.bricks){
-  count++;const target=names.get(brick.name),match=target.standards.find(s=>s.song===song.index);assert.ok(match);
-  assert.ok(match.passages.some(p=>p.startBar===row.startBar+brick.start&&p.endBar===row.startBar+brick.end));
+  count++;const target=names.get(brickIdentity(brick.name)),match=target.standards.find(s=>s.song===song.index);assert.ok(match);
+  assert.ok(match.passages.some(p=>p.startBar===row.startBar+brick.start&&p.endBar===row.startBar+brick.end&&p.label===brick.name));
  }
  assert.equal(index.bricks.reduce((n,b)=>n+b.passages,0),count);
  for(const b of index.bricks){assert.ok(b.standards.length);assert.equal(new Set(b.standards.map(s=>s.song)).size,b.standards.length);}
@@ -95,4 +95,15 @@ test('close-position chords stay rooted and identical regardless of adjacent cho
  assert.deepEqual(p.chords.map(c=>c.pitches),[[55,59,62,65],[59,60,63,66,69],[48,50,52,55,57,58],[48,50,52,55],[48,52,55,59],[55,59,62,65]]);
  assert.deepEqual(playbackPlan(p).channels,[{channel:0,group:0}]);
  assert.equal(parseMidi(encodeMidi(p)).tracks.length,2);
+});
+
+
+test('typographic brick aliases merge counts, while modifiers and ambiguous stems stay distinct',()=>{
+ const bricks=buildBrickIndex(songs).bricks,drop=bricks.find(b=>b.name==='Minor Dropback'),extra=bricks.find(b=>b.name==='Minor Dropback +...');
+ assert.deepEqual(drop.aliases,['Minor Dr.','Minor Dro.','Minor Dropb','Minor Dropbac']);assert.equal(drop.standards.length,9);assert.equal(drop.passages,11);
+ assert.ok(bricks.find(b=>b.name==='Straight Launcher').aliasSlugs.includes('straight-launc-clipped-10lq4m0'));
+ assert.equal(extra.standards.length,3);assert.ok(extra.aliases.includes('Minor Dropback +'));assert.notEqual(extra.slug,drop.slug);
+ for(const name of ['Straight...','Minor...','Nowhere...','Yardbir...','Chromatic Minor...']){assert.equal(brickIdentity(name),name);assert.ok(bricks.some(b=>b.name===name));}
+ assert.notEqual(brickIdentity('Straight Cadence + Overrun'),brickIdentity('Straight Cadence + Dropback'));
+ for(const b of bricks){assert.equal(new Set(b.standards.map(s=>s.song)).size,b.standards.length);for(const alias of b.aliases)assert.equal(brickIdentity(alias),b.name);}
 });

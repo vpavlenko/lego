@@ -1,0 +1,157 @@
+{
+  "sourceLabels": 354,
+  "canonicalBricks": 315,
+  "groups": [
+    {
+      "name": "Body & Soul Cadence",
+      "aliases": [
+        "Body & Soul Cade..."
+      ],
+      "standards": 9,
+      "passages": 11
+    },
+    {
+      "name": "Chromatically Descending Dominants",
+      "aliases": [
+        "Chromatically Descending Dom..."
+      ],
+      "standards": 2,
+      "passages": 3
+    },
+    {
+      "name": "Launcher",
+      "aliases": [
+        "Laun..",
+        "Launche"
+      ],
+      "standards": 43,
+      "passages": 70
+    },
+    {
+      "name": "Light & Day Launcher",
+      "aliases": [
+        "Light & Day Laun..."
+      ],
+      "standards": 3,
+      "passages": 7
+    },
+    {
+      "name": "Minor Chromatic Walkdown",
+      "aliases": [
+        "Minor Chrom...",
+        "Minor Chroma..."
+      ],
+      "standards": 4,
+      "passages": 8
+    },
+    {
+      "name": "Minor Dropback",
+      "aliases": [
+        "Minor Dr.",
+        "Minor Dro.",
+        "Minor Dropb",
+        "Minor Dropbac"
+      ],
+      "standards": 9,
+      "passages": 11
+    },
+    {
+      "name": "Minor Dropback +...",
+      "aliases": [
+        "Minor Dropback +"
+      ],
+      "standards": 3,
+      "passages": 5
+    },
+    {
+      "name": "Minor Perfect Cadence",
+      "aliases": [
+        "Minor Pe.",
+        "Minor Per.",
+        "Minor Perfect C...",
+        "Minor Perfect Ca...",
+        "Minor Perfect Cad",
+        "Minor Perfect Cad...",
+        "Minor Perfect Cade",
+        "Minor Perfect."
+      ],
+      "standards": 18,
+      "passages": 34
+    },
+    {
+      "name": "Nowhere Launcher",
+      "aliases": [
+        "Nowhere Lau..."
+      ],
+      "standards": 19,
+      "passages": 22
+    },
+    {
+      "name": "Perfect Cadence",
+      "aliases": [
+        "Perfect Caden.",
+        "Perfect Cadenc..."
+      ],
+      "standards": 31,
+      "passages": 52
+    },
+    {
+      "name": "Sad Launcher",
+      "aliases": [
+        "Sad Lau..",
+        "Sad Laun..."
+      ],
+      "standards": 76,
+      "passages": 123
+    },
+    {
+      "name": "Straight Approach",
+      "aliases": [
+        "Straight App...",
+        "Straight Appro.",
+        "Straight Approa..."
+      ],
+      "standards": 40,
+      "passages": 61
+    },
+    {
+      "name": "Straight Launcher",
+      "aliases": [
+        "Straight L...",
+        "Straight Lau...",
+        "Straight Laun...",
+        "Straight Launc..",
+        "Straight Launc...",
+        "Straight Launchei"
+      ],
+      "standards": 100,
+      "passages": 181
+    },
+    {
+      "name": "To IV n Bird SPOT +...",
+      "aliases": [
+        "To IV nBird SPOT +..."
+      ],
+      "standards": 4,
+      "passages": 6
+    },
+    {
+      "name": "Tritone Launcher",
+      "aliases": [
+        "Tritone Launc..."
+      ],
+      "standards": 9,
+      "passages": 11
+    },
+    {
+      "name": "Yardbird Launcher",
+      "aliases": [
+        "Yardbird L...",
+        "Yardbird Lau...",
+        "Yardbird Launche:"
+      ],
+      "standards": 25,
+      "passages": 33
+    }
+  ]
+}
