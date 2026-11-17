@@ -52,12 +52,12 @@ const forms=songs.map(song=>{
 });
 fs.writeFileSync(path.join(root,'dist/data/forms.json'),JSON.stringify({version:3,forms}));
 fs.mkdirSync(path.join(root,'dist/data/performances'),{recursive:true});fs.mkdirSync(path.join(root,'dist/midi'),{recursive:true});
-let total=0,clipped=0;const melodyStandards=new Set();
+let total=0,clipped=0;const melodyStandards=new Set(),melodyCharts=new Set();
 for(const song of songs){
- const alignment=melodyMatches.get(song.index),entry=melodies.get(song.melodyId??alignment?.melodyId),data=attachMelody(realizedView(song,true),song,entry,song.melodyId?null:alignment),id=String(song.index).padStart(3,'0');if(data.notes.some(note=>note.voice===1))melodyStandards.add(song.arrangementOf??song.index);total+=data.notes.length;clipped+=data.chords.filter(c=>c.clipped).length;
+ const alignment=melodyMatches.get(song.index),entry=melodies.get(song.melodyId??alignment?.melodyId),data=attachMelody(realizedView(song,true),song,entry,song.melodyId?null:alignment),id=String(song.index).padStart(3,'0');if(data.notes.some(note=>note.voice===1)){melodyStandards.add(song.arrangementOf??song.index);melodyCharts.add(song.index);}total+=data.notes.length;clipped+=data.chords.filter(c=>c.clipped).length;
  fs.writeFileSync(path.join(root,`dist/data/performances/${id}.json`),JSON.stringify(data));fs.writeFileSync(path.join(root,`dist/midi/${id}.mid`),encodeMidi(data));
 }
-fs.writeFileSync(path.join(root,'dist/data/standards.json'),JSON.stringify({...original,songs,melodyStandards:[...melodyStandards].sort((a,b)=>a-b)}));
+fs.writeFileSync(path.join(root,'dist/data/standards.json'),JSON.stringify({...original,songs,melodyStandards:[...melodyStandards].sort((a,b)=>a-b),melodyCharts:[...melodyCharts].sort((a,b)=>a-b)}));
 fs.writeFileSync(path.join(root,'dist/data/modulations.json'),JSON.stringify({version:1,changes:modulationRecords.map(record=>record.changes)}));
 fs.writeFileSync(path.join(root,'evidence/modulation-projection.json'),JSON.stringify({version:1,records:modulationRecords},null,2));
 const previousBricks=read('dist/data/bricks.json').bricks;
