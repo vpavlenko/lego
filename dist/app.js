@@ -20,7 +20,6 @@ function rowHTML(row,song,rowIndex){
  html+=`<div class="score-row" data-row="${rowIndex}" aria-label="${row.startBar+1}–${row.startBar+row.bars}"><div class="bar-ticks">`;
  for(let n=0;n<=row.bars;n++)html+=`<div class="bar-tick${n===row.bars?' end':''}" style="left:${n/scale*100}%">${n<row.bars?`<span>${row.startBar+n+1}</span>`:''}</div>`;
  html+='</div>';
- const end=row.bars/scale*100;html+=`<div class="row-baseline" style="width:${end}%"></div>`;
  for(const key of row.keys){const root=transposeRoot(key.root,tonic);const text=prettyRoot(root)+' '+key.mode.toLowerCase();html+=`<div class="key-label ${key.mode.toLowerCase()}" style="${at(key,scale)}" title="${esc(text)}">${degreeToken(prettyRoot(root),pitch(root))} <span>${esc(key.mode.toLowerCase())}</span></div>`;}
  for(const b of row.bricks)if(b.name)html+=`<div class="brick" style="${at(b,scale)}" title="${esc(b.name)}">${esc(b.name)}</div>`;
  for(const c of row.chords){
