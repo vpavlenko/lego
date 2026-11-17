@@ -54,12 +54,12 @@ a1:m7 | c1 |
 \repeat volta 2 { r4 \tuplet 3/2 {c8 d e} f2 | g1~ | } \alternative { {g1 |} {g1 |} }
 a1 | c1 |
 }{% endif %}`;
-function compileFixture(text,sourceIntervals=false){
+function compileFixture(text,sourceIntervals=false,pickups=false){
  const directory=fs.mkdtempSync(path.join(os.tmpdir(),'openbook-fixture-'));
  try{
   const source=path.join(directory,'fixture.ly.tera');fs.writeFileSync(source,text);
-  const script=`import importlib.util,pathlib,json,sys\np=pathlib.Path(sys.argv[1]);spec=importlib.util.spec_from_file_location('openbook',p);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);q=json.loads(pathlib.Path(sys.argv[5]).read_text())['qualities'];print(json.dumps(m.decode(pathlib.Path(sys.argv[2]),'Real',sys.argv[3],q,pathlib.Path(sys.argv[4]),pathlib.Path(sys.argv[4]),sys.argv[6]=='true')))`;
-  return spawnSync(python,['-c',script,new URL('scripts/import-openbook-melodies.py',root).pathname,source,lilypond,directory,new URL('src/music/chord-vocabulary.json',root).pathname,String(sourceIntervals)],{encoding:'utf8'});
+  const script=`import importlib.util,pathlib,json,sys\np=pathlib.Path(sys.argv[1]);spec=importlib.util.spec_from_file_location('openbook',p);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);q=json.loads(pathlib.Path(sys.argv[5]).read_text())['qualities'];print(json.dumps(m.decode(pathlib.Path(sys.argv[2]),'Real',sys.argv[3],q,pathlib.Path(sys.argv[4]),pathlib.Path(sys.argv[4]),sys.argv[6]=='true',sys.argv[7]=='true')))`;
+  return spawnSync(python,['-c',script,new URL('scripts/import-openbook-melodies.py',root).pathname,source,lilypond,directory,new URL('src/music/chord-vocabulary.json',root).pathname,String(sourceIntervals),String(pickups)],{encoding:'utf8'});
  }finally{fs.rmSync(directory,{recursive:true,force:true});}
 }
 test('compiler fixture unfolds both alternate endings and merges actual tied notes without losing tuplets or rests',{skip:!python||!lilypond?'Requires Python 3.11+ and LilyPond':false},()=>{
@@ -82,4 +82,46 @@ test('source-only compound interval overrides preserve compiled m6 and explicit 
  const result=compileFixture(text,true);assert.equal(result.status,0,result.stderr);const e=JSON.parse(result.stdout);
  assert.deepEqual(e.chords.at(-2).sourceIntervals,[0,3,7,9]);assert.deepEqual(e.chords.at(-1).sourceIntervals,[0,3,7,9]);assert.equal(e.chords.at(-1).symbol,'Cm6/D');
  for(const c of e.chords.slice(-2)){assert.equal(c.realizationBasis,'source-compiled-chord');assert.ok(c.sourceCorePitches.length);assert.deepEqual(parseChord(c.symbol,qualities,c).intervals,c.sourceIntervals);}
+});
+
+const pickupFixture=String.raw`{#
+default_version = "Real"
+[attributes]
+title = "Pickup fixture"
+composer = "Source composer"
+structure = "AA"
+[versions.Real]
+doChords = true
+doVoice = true
+#}
+{% if part == "ChordsReal" %}\chordmode {
+\partial 4 g4:7 | c1 | f1 |
+}{% endif %}
+{% if part == "VoiceReal" %}{
+\time 4/4 \key c \major
+\partial 4 g4 | c1 | f1 |
+}{% endif %}`;
+
+test('opt-in pickup decoding preserves actual notes and source measure0 without adding silent padding',{skip:!python||!lilypond?'Requires Python 3.11+ and LilyPond':false},()=>{
+ const strict=compileFixture(pickupFixture);assert.notEqual(strict.status,0);assert.match(strict.stderr,/pickup requires explicit source review/);
+ const result=compileFixture(pickupFixture,false,true);assert.equal(result.status,0,result.stderr);const e=JSON.parse(result.stdout);
+ assert.equal(e.pickupBeats,1);assert.equal(e.totalBeats,9);assert.equal(e.bars,3);
+ assert.deepEqual(e.measures,[{sourceNumber:'0',start:0,duration:1},{sourceNumber:'1',start:1,duration:4},{sourceNumber:'2',start:5,duration:4}]);
+ assert.deepEqual(e.notes.map(n=>[n.pitch,n.start,n.duration]),[[55,0,1],[60,1,4],[65,5,4]]);
+ assert.deepEqual(e.chords.map(c=>[c.symbol,c.start,c.end]),[['G7',0,1],['C',1,5],['F',5,9]]);
+ assert.deepEqual(e.provenance.irregularMeasures.map(m=>[m.sourceNumber,m.kind,m.duration]),[['0','pickup',1]]);assert.match(e.provenance.pickupPolicy,/No padding/);
+ assert.ok(melodyEligibility(e,qualities).length,'Irregular candidate is not silently admitted by the regular-grid runtime');
+});
+
+test('pickup length comes from LilyPond duration semantics including dots and multipliers',{skip:!python||!lilypond?'Requires Python 3.11+ and LilyPond':false},()=>{
+ for(const [notation,beats] of [['4.',1.5],['8*3',1.5],['16',.25]]){
+  const source=pickupFixture.replaceAll('\\partial 4 g4',`\\partial ${notation} g${notation}`),result=compileFixture(source,false,true);assert.equal(result.status,0,result.stderr);const e=JSON.parse(result.stdout);
+  assert.equal(e.pickupBeats,beats);assert.equal(e.totalBeats,beats+8);assert.equal(e.measures[1].start,beats);assert.equal(e.notes[1].start,beats);assert.equal(e.notes[0].duration,beats);
+ }
+});
+
+test('pickup opt-in still rejects textual navigation, mismatched streams and repeat-local pickup declarations',{skip:!python||!lilypond?'Requires Python 3.11+ and LilyPond':false},()=>{
+ const navigation=compileFixture(pickupFixture.replace('c1 | f1 |','c1^"D.C. al Coda" | f1 |'),false,true);assert.notEqual(navigation.status,0);assert.match(navigation.stderr,/Textual navigation/);
+ const noChordDeclaration=compileFixture(pickupFixture.replace('\\partial 4 g4:7','g4:7'),false,true);assert.notEqual(noChordDeclaration.status,0);assert.match(noChordDeclaration.stderr,/Pickup must be one matching initial/);
+ const repeated=compileFixture(pickupFixture.replaceAll('\\partial 4 g4','\\repeat unfold 2 { \\partial 4 g4').replaceAll('f1 |\n}','f1 | }\n}'),false,true);assert.notEqual(repeated.status,0);assert.match(repeated.stderr,/Pickup must be one matching initial|structural warning/);
 });

@@ -1,0 +1,2416 @@
+{
+  "version": 1,
+  "sourceCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+  "archiveSha256": "1e2764df825094a499273bba1349f26ae28991bd79cb05a665604cd533bbe095",
+  "status": "candidate-only",
+  "policy": "Compiler-validated source pickup metadata only. No production imports or source data replacements. Runtime irregular measure support and integration verification remain required. Original mode mismatch remains excluded from automatic intake.",
+  "counts": {
+    "candidateCompositions": 65,
+    "candidateAttempts": 83,
+    "compilerValidatedCompositions": 60,
+    "modeConsistentCompositions": 55,
+    "compilerValidatedAttempts": 75,
+    "modeConsistentAttempts": 68,
+    "excludedReasons": {
+      "Textual navigation or pickup requires explicit source review": 5,
+      "Pickup must be one matching initial compiler declaration in both streams": 2,
+      "Skip does not follow harmony continuously": 1
+    }
+  },
+  "compositions": [
+    {
+      "song": 1,
+      "title": "Afternoon In Paris",
+      "attempts": [
+        {
+          "version": "Real",
+          "path": "src/openbook/afternoon_in_paris.ly.tera",
+          "status": "validated",
+          "id": "openbook-afternoon-in-paris-real",
+          "sourceSha256": "e36d59157f5eed52a65c2a349a0bab511310827c31c6eb4b8a0b11cb0319fa90",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/afternoon_in_paris.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 130,
+          "chords": 45,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        },
+        {
+          "version": "Fake",
+          "path": "src/openbook/afternoon_in_paris.ly.tera",
+          "status": "validated",
+          "id": "openbook-afternoon-in-paris-fake",
+          "sourceSha256": "e36d59157f5eed52a65c2a349a0bab511310827c31c6eb4b8a0b11cb0319fa90",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/afternoon_in_paris.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 145,
+          "chords": 45,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 6,
+      "title": "All of You",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/all_of_you.ly.tera",
+          "status": "validated",
+          "id": "openbook-all-of-you-fake",
+          "sourceSha256": "9f57f5bc1890ac12c19cc2b08ed7f909963ea32b43e9a73f7d323de3ff7db05a",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/all_of_you.ly.tera",
+          "tonic": [
+            "Eb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 3.0,
+          "totalBeats": 259.0,
+          "bars": 65,
+          "notes": 146,
+          "chords": 78,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 3.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 8,
+      "title": "Alone Together",
+      "attempts": [
+        {
+          "version": "Real",
+          "path": "src/openbook/alone_together.ly.tera",
+          "status": "validated",
+          "id": "openbook-alone-together-real",
+          "sourceSha256": "6e90895aba9ec122b3a608c18f0254da06ec97bd8d7589a2a3e041f45be43885",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/alone_together.ly.tera",
+          "tonic": [
+            "D",
+            "Minor"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 0.5,
+          "totalBeats": 176.5,
+          "bars": 45,
+          "notes": 97,
+          "chords": 64,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 0.5,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 12,
+      "title": "Autumn Leaves",
+      "attempts": [
+        {
+          "version": "Real",
+          "path": "src/openbook/autumn_leaves.ly.tera",
+          "status": "validated",
+          "id": "openbook-autumn-leaves-real",
+          "sourceSha256": "18d2e0f57236dd4d131b28ae3a1c9f59a190fd50023ed2dbff3bac985e28fe96",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/autumn_leaves.ly.tera",
+          "tonic": [
+            "E",
+            "Minor"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 3.0,
+          "totalBeats": 131.0,
+          "bars": 33,
+          "notes": 71,
+          "chords": 30,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 3.0,
+              "kind": "pickup"
+            }
+          ]
+        },
+        {
+          "version": "Fake",
+          "path": "src/openbook/autumn_leaves.ly.tera",
+          "status": "validated",
+          "id": "openbook-autumn-leaves-fake",
+          "sourceSha256": "18d2e0f57236dd4d131b28ae3a1c9f59a190fd50023ed2dbff3bac985e28fe96",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/autumn_leaves.ly.tera",
+          "tonic": [
+            "E",
+            "Minor"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 3.0,
+          "totalBeats": 131.0,
+          "bars": 33,
+          "notes": 68,
+          "chords": 35,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 3.0,
+              "kind": "pickup"
+            }
+          ]
+        },
+        {
+          "version": "Laurent",
+          "path": "src/openbook/autumn_leaves.ly.tera",
+          "status": "mode-review",
+          "id": "openbook-autumn-leaves-laurent",
+          "sourceSha256": "18d2e0f57236dd4d131b28ae3a1c9f59a190fd50023ed2dbff3bac985e28fe96",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/autumn_leaves.ly.tera",
+          "tonic": [
+            "Bb",
+            "Major"
+          ],
+          "modeMatchesOriginal": false,
+          "pickupBeats": 3.0,
+          "totalBeats": 131.0,
+          "bars": 33,
+          "notes": 68,
+          "chords": 33,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 3.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 16,
+      "title": "Bemsha Swing",
+      "attempts": [
+        {
+          "version": "Wikifonia",
+          "path": "src/openbook/bemsha_swing.ly.tera",
+          "status": "validated",
+          "id": "openbook-bemsha-swing-wikifonia",
+          "sourceSha256": "53fd9e93a3f6a200bb20b066c00d322421315513f5118f4e2730312d7ff80439",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/bemsha_swing.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 112,
+          "chords": 65,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 21,
+      "title": "Blue Bossa",
+      "attempts": [
+        {
+          "version": "Real",
+          "path": "src/openbook/blue_bossa.ly.tera",
+          "status": "validated",
+          "id": "openbook-blue-bossa-real",
+          "sourceSha256": "a984d7fd3a2e21ea2ae65c308d263912b826bc35c718ec863c30abf3d03d1b3c",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/blue_bossa.ly.tera",
+          "tonic": [
+            "C",
+            "Minor"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 193.0,
+          "bars": 49,
+          "notes": 114,
+          "chords": 39,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 30,
+      "title": "But Beautiful",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/but_beautiful.ly.tera",
+          "status": "validated",
+          "id": "openbook-but-beautiful-fake",
+          "sourceSha256": "a1a128f0c0c94a3d077105ae720f1f07e5b1a331fa1826c67e4dc49b6f3baaf9",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/but_beautiful.ly.tera",
+          "tonic": [
+            "G",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 257.0,
+          "bars": 65,
+          "notes": 194,
+          "chords": 99,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 35,
+      "title": "Chelsea Bridge",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/chelsea_bridge.ly.tera",
+          "status": "mode-review",
+          "id": "openbook-chelsea-bridge-fake",
+          "sourceSha256": "8d43e2d2719dae13650ab9f10aaf562fe6572fde2d611ab22c6c563fda600175",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/chelsea_bridge.ly.tera",
+          "tonic": [
+            "Db",
+            "Major"
+          ],
+          "modeMatchesOriginal": false,
+          "pickupBeats": 3.0,
+          "totalBeats": 127.0,
+          "bars": 32,
+          "notes": 112,
+          "chords": 48,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 3.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 45,
+      "title": "The Days of Wine and Roses",
+      "attempts": [
+        {
+          "version": "Real",
+          "path": "src/openbook/days_of_wine_and_roses.ly.tera",
+          "status": "validated",
+          "id": "openbook-days-of-wine-and-roses-real",
+          "sourceSha256": "df8244f17b4b37020dbb3c0a78dfa139306e48e079a9f2507975fdc88787d035",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/days_of_wine_and_roses.ly.tera",
+          "tonic": [
+            "F",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 257.0,
+          "bars": 65,
+          "notes": 154,
+          "chords": 75,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 54,
+      "title": "Doxy",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/doxy.ly.tera",
+          "status": "validated",
+          "id": "openbook-doxy-fake",
+          "sourceSha256": "614e4661b526b5ec917c57c793b4f21332067c307a83c62857ffdeca7b461792",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/doxy.ly.tera",
+          "tonic": [
+            "Bb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 0.5,
+          "totalBeats": 64.5,
+          "bars": 17,
+          "notes": 77,
+          "chords": 24,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 0.5,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 62,
+      "title": "Everything Happens To Me",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/everything_happens_to_me.ly.tera",
+          "status": "validated",
+          "id": "openbook-everything-happens-to-me-fake",
+          "sourceSha256": "601a32f807d6e90864188b46c87445b06101685cdca6e3c9b2bac7153a222d65",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/everything_happens_to_me.ly.tera",
+          "tonic": [
+            "Bb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 0.5,
+          "totalBeats": 128.5,
+          "bars": 33,
+          "notes": 191,
+          "chords": 69,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 0.5,
+              "kind": "pickup"
+            }
+          ]
+        },
+        {
+          "version": "Laurent",
+          "path": "src/openbook/everything_happens_to_me.ly.tera",
+          "status": "validated",
+          "id": "openbook-everything-happens-to-me-laurent",
+          "sourceSha256": "601a32f807d6e90864188b46c87445b06101685cdca6e3c9b2bac7153a222d65",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/everything_happens_to_me.ly.tera",
+          "tonic": [
+            "Bb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 0.5,
+          "totalBeats": 128.5,
+          "bars": 33,
+          "notes": 191,
+          "chords": 64,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 0.5,
+              "kind": "pickup"
+            }
+          ]
+        },
+        {
+          "version": "Laurent2",
+          "path": "src/openbook/everything_happens_to_me.ly.tera",
+          "status": "validated",
+          "id": "openbook-everything-happens-to-me-laurent2",
+          "sourceSha256": "601a32f807d6e90864188b46c87445b06101685cdca6e3c9b2bac7153a222d65",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/everything_happens_to_me.ly.tera",
+          "tonic": [
+            "Bb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 0.5,
+          "totalBeats": 128.5,
+          "bars": 33,
+          "notes": 191,
+          "chords": 61,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 0.5,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 65,
+      "title": "A Fine Romance",
+      "attempts": [
+        {
+          "version": "Real",
+          "path": "src/openbook/a_fine_romance.ly.tera",
+          "status": "validated",
+          "id": "openbook-a-fine-romance-real",
+          "sourceSha256": "df6bfd22aa7b0a2b18b9ddcccd106d8622372c5a1873838edc19230375f23a57",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/a_fine_romance.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 79,
+          "chords": 44,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        },
+        {
+          "version": "Fake",
+          "path": "src/openbook/a_fine_romance.ly.tera",
+          "status": "validated",
+          "id": "openbook-a-fine-romance-fake",
+          "sourceSha256": "df6bfd22aa7b0a2b18b9ddcccd106d8622372c5a1873838edc19230375f23a57",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/a_fine_romance.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 257.0,
+          "bars": 65,
+          "notes": 158,
+          "chords": 94,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 66,
+      "title": "Flamingo",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/flamingo.ly.tera",
+          "status": "validated",
+          "id": "openbook-flamingo-fake",
+          "sourceSha256": "ea7e5702a8c76d9c65d9fe9e15111cb88e1f4e533517deb990d7dd38adc7ec28",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/flamingo.ly.tera",
+          "tonic": [
+            "F",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 87,
+          "chords": 58,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 69,
+      "title": "Four",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/four.ly.tera",
+          "status": "validated",
+          "id": "openbook-four-fake",
+          "sourceSha256": "6f3830e381705e27ac539652344b9ccb64cdd79067486c0fc0bebc49a61489c4",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/four.ly.tera",
+          "tonic": [
+            "Eb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.5,
+          "totalBeats": 129.5,
+          "bars": 33,
+          "notes": 125,
+          "chords": 34,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.5,
+              "kind": "pickup"
+            }
+          ]
+        },
+        {
+          "version": "Laurent",
+          "path": "src/openbook/four.ly.tera",
+          "status": "excluded",
+          "reason": "Textual navigation or pickup requires explicit source review"
+        }
+      ]
+    },
+    {
+      "song": 76,
+      "title": "Groovin' High",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/groovin_high.ly.tera",
+          "status": "validated",
+          "id": "openbook-groovin-high-fake",
+          "sourceSha256": "f7b25b12fd8349eae42162b40e9d675b57058d61fc42c471a4d65127e6c4eedc",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/groovin_high.ly.tera",
+          "tonic": [
+            "Eb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 257.0,
+          "bars": 65,
+          "notes": 282,
+          "chords": 85,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 82,
+      "title": "I Can't Believe that You're in Love with Me",
+      "attempts": [
+        {
+          "version": "Wikifonia",
+          "path": "src/openbook/i_cant_believe_that_youre_in_love_with_me.ly.tera",
+          "status": "validated",
+          "id": "openbook-i-can-t-believe-that-you-re-in-love-with-me-wikifonia",
+          "sourceSha256": "8857ee998ba1044db5a7b3d6ea7d25aa5795b2072451a2ff6ca4e948b3099a84",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/i_cant_believe_that_youre_in_love_with_me.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 98,
+          "chords": 31,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 83,
+      "title": "I Can't Get Started",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/i_cant_get_started.ly.tera",
+          "status": "validated",
+          "id": "openbook-i-can-t-get-started-fake",
+          "sourceSha256": "4bfaf53c30174035a81f5ba46ef7f4bb78a555abbe802706f2caa19a292664ac",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/i_cant_get_started.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.5,
+          "totalBeats": 257.5,
+          "bars": 65,
+          "notes": 254,
+          "chords": 150,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.5,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 88,
+      "title": "I Love You",
+      "attempts": [
+        {
+          "version": "Real",
+          "path": "src/openbook/i_love_you.ly.tera",
+          "status": "validated",
+          "id": "openbook-i-love-you-real",
+          "sourceSha256": "1b13fbbcff2d3a73e4a6a039858e6c04d0b3d71cc13b44f7c9e5913ee29a40f0",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/i_love_you.ly.tera",
+          "tonic": [
+            "F",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 70,
+          "chords": 32,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        },
+        {
+          "version": "Laurent",
+          "path": "src/openbook/i_love_you.ly.tera",
+          "status": "validated",
+          "id": "openbook-i-love-you-laurent",
+          "sourceSha256": "1b13fbbcff2d3a73e4a6a039858e6c04d0b3d71cc13b44f7c9e5913ee29a40f0",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/i_love_you.ly.tera",
+          "tonic": [
+            "F",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 69,
+          "chords": 34,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 89,
+      "title": "I Loves You Porgy",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/i_loves_you_porgy.ly.tera",
+          "status": "excluded",
+          "reason": "Textual navigation or pickup requires explicit source review"
+        }
+      ]
+    },
+    {
+      "song": 94,
+      "title": "I Wish You Love",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/i_wish_you_love.ly.tera",
+          "status": "validated",
+          "id": "openbook-i-wish-you-love-fake",
+          "sourceSha256": "e4144fd525fd432bff9794865ff4a2bda09f98532afef088fb32fa84f623c0f8",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/i_wish_you_love.ly.tera",
+          "tonic": [
+            "Eb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 2.0,
+          "totalBeats": 258.0,
+          "bars": 65,
+          "notes": 224,
+          "chords": 90,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 2.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 101,
+      "title": "I've Grown Accustomed to Her Face",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/ive_grown_accustomed_to_her_face.ly.tera",
+          "status": "validated",
+          "id": "openbook-i-ve-grown-accustomed-to-her-face-fake",
+          "sourceSha256": "53d07e7267f6e85d2adf83a6c0750495ab9afb5882e001d766d9b4ec2cdaf435",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/ive_grown_accustomed_to_her_face.ly.tera",
+          "tonic": [
+            "Eb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.5,
+          "totalBeats": 161.5,
+          "bars": 41,
+          "notes": 206,
+          "chords": 93,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.5,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 102,
+      "title": "I've Never Been in Love Before",
+      "attempts": [
+        {
+          "version": "Wikifonia",
+          "path": "src/openbook/ive_never_been_in_love_before.ly.tera",
+          "status": "validated",
+          "id": "openbook-i-ve-never-been-in-love-before-wikifonia",
+          "sourceSha256": "20581687c3ac83275d927657df9a1e0d634946df576dff0ae209632fbb2f9aa9",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/ive_never_been_in_love_before.ly.tera",
+          "tonic": [
+            "Bb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 82,
+          "chords": 58,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 104,
+      "title": "Imagination",
+      "attempts": [
+        {
+          "version": "Laurent",
+          "path": "src/openbook/imagination.ly.tera",
+          "status": "validated",
+          "id": "openbook-imagination-laurent",
+          "sourceSha256": "29ed96c7da55dfcc2967d21ee4ccf6d62b0b47a949484b0e91c64b2fb82d06e8",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/imagination.ly.tera",
+          "tonic": [
+            "Eb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.5,
+          "totalBeats": 145.5,
+          "bars": 37,
+          "notes": 128,
+          "chords": 59,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.5,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 105,
+      "title": "In A Mellow Tone",
+      "attempts": [
+        {
+          "version": "Wikifonia",
+          "path": "src/openbook/in_a_mellow_tone.ly.tera",
+          "status": "validated",
+          "id": "openbook-in-a-mellow-tone-wikifonia",
+          "sourceSha256": "d5c10d14a6fc270ab5057dd592e8204d09a3830d48549d6833c28bbef61222f8",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/in_a_mellow_tone.ly.tera",
+          "tonic": [
+            "Bb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 3.0,
+          "totalBeats": 127.0,
+          "bars": 32,
+          "notes": 75,
+          "chords": 33,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 3.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 108,
+      "title": "It Don't Mean a Thing",
+      "attempts": [
+        {
+          "version": "Real",
+          "path": "src/openbook/it_dont_mean_a_thing.ly.tera",
+          "status": "mode-review",
+          "id": "openbook-it-don-t-mean-a-thing-real",
+          "sourceSha256": "e717acfcfe249a969efbef3c2bdf90f2021666c98b800b043a2cabe40d4ba30e",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/it_dont_mean_a_thing.ly.tera",
+          "tonic": [
+            "Bb",
+            "Major"
+          ],
+          "modeMatchesOriginal": false,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 102,
+          "chords": 39,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        },
+        {
+          "version": "Laurent",
+          "path": "src/openbook/it_dont_mean_a_thing.ly.tera",
+          "status": "mode-review",
+          "id": "openbook-it-don-t-mean-a-thing-laurent",
+          "sourceSha256": "e717acfcfe249a969efbef3c2bdf90f2021666c98b800b043a2cabe40d4ba30e",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/it_dont_mean_a_thing.ly.tera",
+          "tonic": [
+            "Bb",
+            "Major"
+          ],
+          "modeMatchesOriginal": false,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 102,
+          "chords": 41,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 110,
+      "title": "It Might As Well Be Spring",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/it_might_as_well_be_spring.ly.tera",
+          "status": "validated",
+          "id": "openbook-it-might-as-well-be-spring-fake",
+          "sourceSha256": "b056199f2dc42579ff1896518f399a377aece6128b8fc9c34a21537fb3263af9",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/it_might_as_well_be_spring.ly.tera",
+          "tonic": [
+            "G",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 161.0,
+          "bars": 41,
+          "notes": 176,
+          "chords": 89,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 113,
+      "title": "Just Friends",
+      "attempts": [
+        {
+          "version": "Real",
+          "path": "src/openbook/just_friends.ly.tera",
+          "status": "validated",
+          "id": "openbook-just-friends-real",
+          "sourceSha256": "8b86a4378508bf0be9a1cf3163fa1f2003667fb28033d1009269cf871575a8f3",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/just_friends.ly.tera",
+          "tonic": [
+            "G",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 70,
+          "chords": 31,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        },
+        {
+          "version": "Laurent",
+          "path": "src/openbook/just_friends.ly.tera",
+          "status": "validated",
+          "id": "openbook-just-friends-laurent",
+          "sourceSha256": "8b86a4378508bf0be9a1cf3163fa1f2003667fb28033d1009269cf871575a8f3",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/just_friends.ly.tera",
+          "tonic": [
+            "G",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 2.0,
+          "totalBeats": 130.0,
+          "bars": 33,
+          "notes": 69,
+          "chords": 32,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 2.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 125,
+      "title": "Love is Here to Stay",
+      "attempts": [
+        {
+          "version": "Laurent",
+          "path": "src/openbook/love_is_here_to_stay.ly.tera",
+          "status": "validated",
+          "id": "openbook-love-is-here-to-stay-laurent",
+          "sourceSha256": "63529b8c66be5381346b4f95f063b6c89b6146f2a10bec86819710c8c2c67f54",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/love_is_here_to_stay.ly.tera",
+          "tonic": [
+            "F",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 3.0,
+          "totalBeats": 131.0,
+          "bars": 33,
+          "notes": 95,
+          "chords": 49,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 3.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 131,
+      "title": "Makin' Whoopee",
+      "attempts": [
+        {
+          "version": "Wikifonia",
+          "path": "src/openbook/makin_whoopee.ly.tera",
+          "status": "excluded",
+          "reason": "Pickup must be one matching initial compiler declaration in both streams"
+        }
+      ]
+    },
+    {
+      "song": 134,
+      "title": "Mean to Me",
+      "attempts": [
+        {
+          "version": "Laurent",
+          "path": "src/openbook/mean_to_me.ly.tera",
+          "status": "validated",
+          "id": "openbook-mean-to-me-laurent",
+          "sourceSha256": "8252f190afa0d18e731c3dd47d27a7e3c75ad894c57cb13ac3f2d35cef1ee823",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/mean_to_me.ly.tera",
+          "tonic": [
+            "F",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 100,
+          "chords": 58,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 138,
+      "title": "Misty",
+      "attempts": [
+        {
+          "version": "Real",
+          "path": "src/openbook/misty.ly.tera",
+          "status": "validated",
+          "id": "openbook-misty-real",
+          "sourceSha256": "bb2b4bc7add6df3aa4276750d40156e289854177df9dbbf752117cbee4571378",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/misty.ly.tera",
+          "tonic": [
+            "Eb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 152,
+          "chords": 49,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        },
+        {
+          "version": "Fake",
+          "path": "src/openbook/misty.ly.tera",
+          "status": "excluded",
+          "reason": "Textual navigation or pickup requires explicit source review"
+        }
+      ]
+    },
+    {
+      "song": 143,
+      "title": "The More I See You",
+      "attempts": [
+        {
+          "version": "Real",
+          "path": "src/openbook/the_more_i_see_you.ly.tera",
+          "status": "validated",
+          "id": "openbook-the-more-i-see-you-real",
+          "sourceSha256": "ac7cea860494190c7f07c04475dcb17f197b8d32b17d724ea3653c178cc14fef",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/the_more_i_see_you.ly.tera",
+          "tonic": [
+            "Eb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 3.0,
+          "totalBeats": 259.0,
+          "bars": 65,
+          "notes": 165,
+          "chords": 95,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 3.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 144,
+      "title": "My Foolish Heart",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/my_foolish_heart.ly.tera",
+          "status": "validated",
+          "id": "openbook-my-foolish-heart-fake",
+          "sourceSha256": "2311793db6f8e9e624a2950035f3a11953f249971e8ccb616651aa8e42519303",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/my_foolish_heart.ly.tera",
+          "tonic": [
+            "Bb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 257.0,
+          "bars": 65,
+          "notes": 258,
+          "chords": 92,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        },
+        {
+          "version": "Laurent",
+          "path": "src/openbook/my_foolish_heart.ly.tera",
+          "status": "validated",
+          "id": "openbook-my-foolish-heart-laurent",
+          "sourceSha256": "2311793db6f8e9e624a2950035f3a11953f249971e8ccb616651aa8e42519303",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/my_foolish_heart.ly.tera",
+          "tonic": [
+            "Bb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 123,
+          "chords": 63,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 147,
+      "title": "My Romance",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/my_romance.ly.tera",
+          "status": "validated",
+          "id": "openbook-my-romance-fake",
+          "sourceSha256": "693bc5e81bac62f27bdaeb45c6b7fd3b5012476ae2b1c57e536409e658a0c5b5",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/my_romance.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 92,
+          "chords": 62,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 150,
+      "title": "The Nearness of You",
+      "attempts": [
+        {
+          "version": "Unknown",
+          "path": "src/openbook/the_nearness_of_you.ly.tera",
+          "status": "validated",
+          "id": "openbook-the-nearness-of-you-unknown",
+          "sourceSha256": "9c543e8df9482d94dfbbe39295f8f7e0ddcf4eb5437ce11c6ac9e956ddd9f2c9",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/the_nearness_of_you.ly.tera",
+          "tonic": [
+            "Eb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.5,
+          "totalBeats": 145.5,
+          "bars": 37,
+          "notes": 103,
+          "chords": 54,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.5,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 152,
+      "title": "Night and Day",
+      "attempts": [
+        {
+          "version": "Real",
+          "path": "src/openbook/night_and_day.ly.tera",
+          "status": "validated",
+          "id": "openbook-night-and-day-real",
+          "sourceSha256": "c5e5a696e6eb7d2ca2b0465a56c3e20c4eb20f16e25ff6ca73a9597b99f8d70e",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/night_and_day.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 2.0,
+          "totalBeats": 194.0,
+          "bars": 49,
+          "notes": 136,
+          "chords": 43,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 2.0,
+              "kind": "pickup"
+            }
+          ]
+        },
+        {
+          "version": "Laurent",
+          "path": "src/openbook/night_and_day.ly.tera",
+          "status": "validated",
+          "id": "openbook-night-and-day-laurent",
+          "sourceSha256": "c5e5a696e6eb7d2ca2b0465a56c3e20c4eb20f16e25ff6ca73a9597b99f8d70e",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/night_and_day.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 2.0,
+          "totalBeats": 194.0,
+          "bars": 49,
+          "notes": 141,
+          "chords": 43,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 2.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 153,
+      "title": "A Night in Tunisia",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/a_night_in_tunisia.ly.tera",
+          "status": "mode-review",
+          "id": "openbook-a-night-in-tunisia-fake",
+          "sourceSha256": "070d45e2fecf4e2fc84545237efca4e5c7bfa15e4770b8346545c02ae80157e8",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/a_night_in_tunisia.ly.tera",
+          "tonic": [
+            "F",
+            "Major"
+          ],
+          "modeMatchesOriginal": false,
+          "pickupBeats": 0.5,
+          "totalBeats": 128.5,
+          "bars": 33,
+          "notes": 153,
+          "chords": 40,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 0.5,
+              "kind": "pickup"
+            }
+          ]
+        },
+        {
+          "version": "Laurent",
+          "path": "src/openbook/a_night_in_tunisia.ly.tera",
+          "status": "excluded",
+          "reason": "Pickup must be one matching initial compiler declaration in both streams"
+        }
+      ]
+    },
+    {
+      "song": 154,
+      "title": "Nobody Else But Me",
+      "attempts": [
+        {
+          "version": "Wikifonia",
+          "path": "src/openbook/nobody_else_but_me.ly.tera",
+          "status": "validated",
+          "id": "openbook-nobody-else-but-me-wikifonia",
+          "sourceSha256": "3394572087313cd1f3fe7e034a71a5126a7d80ddad92d52ea0c7b30643377721",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/nobody_else_but_me.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 145.0,
+          "bars": 37,
+          "notes": 104,
+          "chords": 49,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 158,
+      "title": "On the Street Where You Live",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/on_the_street_where_you_live.ly.tera",
+          "status": "excluded",
+          "reason": "Textual navigation or pickup requires explicit source review"
+        }
+      ]
+    },
+    {
+      "song": 159,
+      "title": "On the Sunny Side of the Street",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/on_the_sunny_side_of_the_street.ly.tera",
+          "status": "validated",
+          "id": "openbook-on-the-sunny-side-of-the-street-fake",
+          "sourceSha256": "dbce7202c932e795a5b20c6d60533232e7d2169ed2f7e4ce2cbc0c1b7d994963",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/on_the_sunny_side_of_the_street.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 257.0,
+          "bars": 65,
+          "notes": 216,
+          "chords": 104,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 161,
+      "title": "Our Delight",
+      "attempts": [
+        {
+          "version": "Wikifonia",
+          "path": "src/openbook/our_delight.ly.tera",
+          "status": "validated",
+          "id": "openbook-our-delight-wikifonia",
+          "sourceSha256": "a5773a069d62992e3d95597d2dbf3d216fa5ca4aa6ede0fa1323b0a7ab7ef6a9",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/our_delight.ly.tera",
+          "tonic": [
+            "Ab",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 2.0,
+          "totalBeats": 130.0,
+          "bars": 33,
+          "notes": 89,
+          "chords": 49,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 2.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 165,
+      "title": "Peace",
+      "attempts": [
+        {
+          "version": "Real",
+          "path": "src/openbook/peace.ly.tera",
+          "status": "validated",
+          "id": "openbook-peace-real",
+          "sourceSha256": "14f9a2e13dd5de2a1a9bbcbafc30ced03e6089536d8ee7802d12faa66947254e",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/peace.ly.tera",
+          "tonic": [
+            "Bb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 161.0,
+          "bars": 41,
+          "notes": 184,
+          "chords": 73,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 167,
+      "title": "Perdido",
+      "attempts": [
+        {
+          "version": "Laurent",
+          "path": "src/openbook/perdido.ly.tera",
+          "status": "validated",
+          "id": "openbook-perdido-laurent",
+          "sourceSha256": "40f964831a8b125d138fac51c45e9c62ae50d8a027f513513ec371363a47bee0",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/perdido.ly.tera",
+          "tonic": [
+            "Bb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 0.5,
+          "totalBeats": 96.5,
+          "bars": 25,
+          "notes": 77,
+          "chords": 35,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 0.5,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 169,
+      "title": "Poor Butterfly",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/poor_butterfly.ly.tera",
+          "status": "validated",
+          "id": "openbook-poor-butterfly-fake",
+          "sourceSha256": "b72c297e72554e7c03ebc23af293ba1d63321c4b6c5fb01bb8587ea3f7fadcb7",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/poor_butterfly.ly.tera",
+          "tonic": [
+            "Ab",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 3.0,
+          "totalBeats": 131.0,
+          "bars": 33,
+          "notes": 86,
+          "chords": 28,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 3.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 174,
+      "title": "Rosetta",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/rosetta.ly.tera",
+          "status": "validated",
+          "id": "openbook-rosetta-fake",
+          "sourceSha256": "47405ed9366581e1a5888f5029ed8bb88849ecd1c720bc02a84c3ca828501d17",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/rosetta.ly.tera",
+          "tonic": [
+            "F",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 62,
+          "chords": 36,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 181,
+      "title": "September in the Rain",
+      "attempts": [
+        {
+          "version": "Wikifonia",
+          "path": "src/openbook/september_in_the_rain.ly.tera",
+          "status": "validated",
+          "id": "openbook-september-in-the-rain-wikifonia",
+          "sourceSha256": "bdd0fb6f5703697ff208b328e590878d209f680adfeb0e984a2ea8f7b40a15e0",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/september_in_the_rain.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 75,
+          "chords": 43,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 182,
+      "title": "September Song",
+      "attempts": [
+        {
+          "version": "Laurent",
+          "path": "src/openbook/september_song.ly.tera",
+          "status": "validated",
+          "id": "openbook-september-song-laurent",
+          "sourceSha256": "b472d8ed60fdb83c0ca11f4abe3c62549f8213a10eda895e6aa05b69ecabeaa9",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/september_song.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 3.0,
+          "totalBeats": 131.0,
+          "bars": 33,
+          "notes": 79,
+          "chords": 34,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 3.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 183,
+      "title": "Shiny Stockings",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/shiny_stockings.ly.tera",
+          "status": "validated",
+          "id": "openbook-shiny-stockings-fake",
+          "sourceSha256": "0346520b853778e29d2de7a6f8591114cc7e08b14693b10565585992ddeb8ca5",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/shiny_stockings.ly.tera",
+          "tonic": [
+            "Ab",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.5,
+          "totalBeats": 129.5,
+          "bars": 33,
+          "notes": 98,
+          "chords": 36,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.5,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 189,
+      "title": "Solitude",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/solitude.ly.tera",
+          "status": "excluded",
+          "reason": "Textual navigation or pickup requires explicit source review"
+        }
+      ]
+    },
+    {
+      "song": 194,
+      "title": "Soul Eyes",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/soul_eyes.ly.tera",
+          "status": "mode-review",
+          "id": "openbook-soul-eyes-fake",
+          "sourceSha256": "448ae1617c5cd52d2c1ff8180fcdf348fefa0a79ad1891152afc8e57c4425b49",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/soul_eyes.ly.tera",
+          "tonic": [
+            "Eb",
+            "Major"
+          ],
+          "modeMatchesOriginal": false,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 77,
+          "chords": 38,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 198,
+      "title": "Stella By Starlight",
+      "attempts": [
+        {
+          "version": "Real",
+          "path": "src/openbook/stella_by_starlight.ly.tera",
+          "status": "validated",
+          "id": "openbook-stella-by-starlight-real",
+          "sourceSha256": "a081c4a3469286fafe0e5a39194b261edd2495be952cf8bc07f93d829f974e85",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/stella_by_starlight.ly.tera",
+          "tonic": [
+            "Bb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 63,
+          "chords": 31,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 200,
+      "title": "Summertime",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/summertime.ly.tera",
+          "status": "validated",
+          "id": "openbook-summertime-fake",
+          "sourceSha256": "4a31b81b684adcb4c0fcb103f8580b801f18b2066061eebf4ee24afe23519f16",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/summertime.ly.tera",
+          "tonic": [
+            "A",
+            "Minor"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 2.0,
+          "totalBeats": 150.0,
+          "bars": 38,
+          "notes": 88,
+          "chords": 76,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 2.0,
+              "kind": "pickup"
+            }
+          ]
+        },
+        {
+          "version": "Aebersold",
+          "path": "src/openbook/summertime.ly.tera",
+          "status": "validated",
+          "id": "openbook-summertime-aebersold",
+          "sourceSha256": "4a31b81b684adcb4c0fcb103f8580b801f18b2066061eebf4ee24afe23519f16",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/summertime.ly.tera",
+          "tonic": [
+            "D",
+            "Minor"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 84,
+          "chords": 29,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        },
+        {
+          "version": "Laurent",
+          "path": "src/openbook/summertime.ly.tera",
+          "status": "validated",
+          "id": "openbook-summertime-laurent",
+          "sourceSha256": "4a31b81b684adcb4c0fcb103f8580b801f18b2066061eebf4ee24afe23519f16",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/summertime.ly.tera",
+          "tonic": [
+            "D",
+            "Minor"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 82,
+          "chords": 25,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 206,
+      "title": "Tenderly",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/tenderly.ly.tera",
+          "status": "validated",
+          "id": "openbook-tenderly-fake",
+          "sourceSha256": "f2301346bd7c5e2f65308ae964c0056a4d3576881568990bb63bfa905f525bd1",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/tenderly.ly.tera",
+          "tonic": [
+            "Eb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.5,
+          "totalBeats": 97.5,
+          "bars": 33,
+          "notes": 82,
+          "chords": 41,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.5,
+              "kind": "pickup"
+            }
+          ]
+        },
+        {
+          "version": "Laurent",
+          "path": "src/openbook/tenderly.ly.tera",
+          "status": "validated",
+          "id": "openbook-tenderly-laurent",
+          "sourceSha256": "f2301346bd7c5e2f65308ae964c0056a4d3576881568990bb63bfa905f525bd1",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/tenderly.ly.tera",
+          "tonic": [
+            "Eb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.5,
+          "totalBeats": 129.5,
+          "bars": 33,
+          "notes": 82,
+          "chords": 41,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.5,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 207,
+      "title": "That's All",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/thats_all.ly.tera",
+          "status": "validated",
+          "id": "openbook-that-s-all-fake",
+          "sourceSha256": "e0cea9a4cce1fae5778645d914608d5847ece15c3703bce017cc812e76d4b7d7",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/thats_all.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 158,
+          "chords": 70,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 208,
+      "title": "There Is No Greater Love",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/there_is_no_greater_love.ly.tera",
+          "status": "validated",
+          "id": "openbook-there-is-no-greater-love-fake",
+          "sourceSha256": "6376c6c144bc8f620dbc0f0e925c3a417912bda69dcbb81553834f71fbdc13ac",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/there_is_no_greater_love.ly.tera",
+          "tonic": [
+            "Bb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 3.0,
+          "totalBeats": 131.0,
+          "bars": 33,
+          "notes": 83,
+          "chords": 42,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 3.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 210,
+      "title": "There Will Never Be Another You",
+      "attempts": [
+        {
+          "version": "Real",
+          "path": "src/openbook/there_will_never_be_another_you.ly.tera",
+          "status": "validated",
+          "id": "openbook-there-will-never-be-another-you-real",
+          "sourceSha256": "872c7132e6110c2d262952be7931ff520b60e15134fb90ecfb27c50d66296d8b",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/there_will_never_be_another_you.ly.tera",
+          "tonic": [
+            "Eb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 92,
+          "chords": 37,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        },
+        {
+          "version": "Fake",
+          "path": "src/openbook/there_will_never_be_another_you.ly.tera",
+          "status": "validated",
+          "id": "openbook-there-will-never-be-another-you-fake",
+          "sourceSha256": "872c7132e6110c2d262952be7931ff520b60e15134fb90ecfb27c50d66296d8b",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/there_will_never_be_another_you.ly.tera",
+          "tonic": [
+            "Eb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 129.0,
+          "bars": 33,
+          "notes": 92,
+          "chords": 34,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 212,
+      "title": "They Can't Take That Away from Me",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/they_cant_take_that_away_from_me.ly.tera",
+          "status": "validated",
+          "id": "openbook-they-can-t-take-that-away-from-me-fake",
+          "sourceSha256": "b996b82151d029ae81aa0841916229fb92faaac2d6198c5d9ff4ae25e1a453fd",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/they_cant_take_that_away_from_me.ly.tera",
+          "tonic": [
+            "Eb",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 3.5,
+          "totalBeats": 147.5,
+          "bars": 37,
+          "notes": 120,
+          "chords": 66,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 3.5,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 217,
+      "title": "The Touch of Your Lips",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/the_touch_of_your_lips.ly.tera",
+          "status": "validated",
+          "id": "openbook-the-touch-of-your-lips-fake",
+          "sourceSha256": "c232232477d102f8c0471f498dc9af510328a5fe5eca90193737f22f648f3dc7",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/the_touch_of_your_lips.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 256.0,
+          "bars": 65,
+          "notes": 128,
+          "chords": 109,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            },
+            {
+              "sourceNumber": "64",
+              "start": 253.0,
+              "duration": 3.0,
+              "kind": "source-tail"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 222,
+      "title": "Wave",
+      "attempts": [
+        {
+          "version": "Real",
+          "path": "src/openbook/wave.ly.tera",
+          "status": "validated",
+          "id": "openbook-wave-real",
+          "sourceSha256": "d781c958ec637c61d7f63082db5950e4517c6f5ba605cf60393dd7c802aebdad",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/wave.ly.tera",
+          "tonic": [
+            "D",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 2.0,
+          "totalBeats": 354.0,
+          "bars": 89,
+          "notes": 305,
+          "chords": 124,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 2.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 225,
+      "title": "What's New",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/whats_new.ly.tera",
+          "status": "validated",
+          "id": "openbook-what-s-new-fake",
+          "sourceSha256": "9efaf61648ff80789dca9007c4001acd4c3912dd8a364f257b3acf6faee55789",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/whats_new.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 2.0,
+          "totalBeats": 130.0,
+          "bars": 33,
+          "notes": 101,
+          "chords": 64,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 2.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 231,
+      "title": "Whisper Not",
+      "attempts": [
+        {
+          "version": "Laurent",
+          "path": "src/openbook/whisper_not.ly.tera",
+          "status": "excluded",
+          "reason": "Skip does not follow harmony continuously"
+        }
+      ]
+    },
+    {
+      "song": 234,
+      "title": "Winter Wonderland",
+      "attempts": [
+        {
+          "version": "Wikifonia",
+          "path": "src/openbook/winter_wonderland.ly.tera",
+          "status": "validated",
+          "id": "openbook-winter-wonderland-wikifonia",
+          "sourceSha256": "832b29394104ae416b0dbc94532e8a6d4c4ce7aa363a84da8a29cb92bda154a6",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/winter_wonderland.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 133.0,
+          "bars": 34,
+          "notes": 138,
+          "chords": 25,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 237,
+      "title": "You Go to My Head",
+      "attempts": [
+        {
+          "version": "Laurent",
+          "path": "src/openbook/you_go_to_my_head.ly.tera",
+          "status": "validated",
+          "id": "openbook-you-go-to-my-head-laurent",
+          "sourceSha256": "2788e8fc14617fa8f33862e104f06553e517b8d3b9f84e1d939cc4c8554a1be1",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/you_go_to_my_head.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 1.0,
+          "totalBeats": 161.0,
+          "bars": 41,
+          "notes": 173,
+          "chords": 75,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 1.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 239,
+      "title": "You Turned the Tables on Me",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/you_turned_the_tables_on_me.ly.tera",
+          "status": "validated",
+          "id": "openbook-you-turned-the-tables-on-me-fake",
+          "sourceSha256": "94325669b3e3e8f9d99f92ac65b7a1563488b5a411de9845a41cbe37ac0c036e",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/you_turned_the_tables_on_me.ly.tera",
+          "tonic": [
+            "F",
+            "Major"
+          ],
+          "modeMatchesOriginal": true,
+          "pickupBeats": 3.5,
+          "totalBeats": 131.5,
+          "bars": 33,
+          "notes": 130,
+          "chords": 46,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 3.5,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "song": 240,
+      "title": "You'd Be So Nice to Come Home To",
+      "attempts": [
+        {
+          "version": "Fake",
+          "path": "src/openbook/youd_be_so_nice_to_come_home_to.ly.tera",
+          "status": "mode-review",
+          "id": "openbook-you-d-be-so-nice-to-come-home-to-fake",
+          "sourceSha256": "d8fde32166338e9cf0680694845a403f688321009643685c8b3f8158d00b5dc3",
+          "sourceUrl": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/youd_be_so_nice_to_come_home_to.ly.tera",
+          "tonic": [
+            "C",
+            "Major"
+          ],
+          "modeMatchesOriginal": false,
+          "pickupBeats": 2.0,
+          "totalBeats": 130.0,
+          "bars": 33,
+          "notes": 66,
+          "chords": 44,
+          "irregularMeasures": [
+            {
+              "sourceNumber": "0",
+              "start": 0.0,
+              "duration": 2.0,
+              "kind": "pickup"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -4,6 +4,8 @@
 Python >=3.11 and LilyPond >=2.24. No pip dependencies.
 Raw source/compiler scratch stay outside the site. Only validated complete,
 regular, monophonic arrangements with explicit initial key/meter are emitted.
+An opt-in decoder path preserves source pickup durations and actual measure
+boundaries; it does not pad, stretch or admit them to a regular-grid runtime.
 """
 import argparse
 from concurrent.futures import ThreadPoolExecutor
@@ -32,6 +34,7 @@ SCHEME=r'''\version "2.26.0"
  (cond ((eq? name 'EventChord) (emit "CHORD" start m))
  ((eq? name 'SequentialMusic) (fold (lambda (x at) (walk x at) (+ at (dur x))) start es))
  ((eq? name 'BarCheckEvent) (emit "BAR" start m))
+ ((eq? name 'PartialSet) (let* ((d (ly:music-property m 'duration)) (origin (ly:music-property m 'origin)) (loc (if (ly:input-location? origin) (ly:input-file-line-char-column origin) '("" 0 0 0)))) (format #t "DATA\tPARTIAL\t~a\t~a\t~a\t~a\t\n" start (* 4 (ly:moment-main (ly:duration->moment d))) (cadr loc) (caddr loc))))
  ((eq? name 'RestEvent) (emit "REST" start m))
  ((eq? name 'SkipEvent) (emit "SKIP" start m))
  ((ly:music? e) (walk e start))
@@ -140,11 +143,40 @@ def decode_midi(path):
   if any(active.values()):raise ValueError('Unclosed MIDI notes')
  return sorted(notes,key=lambda n:(n['start'],n['pitch'],n['duration'])),ppq
 
-def decode(path,version,lilypond,qualities,source_root,work_dir,allow_source_intervals=False):
+def compiled_measure_grid(events,total,bar_beats,allow_pickups=False):
+ """Use compiler duration events, never the spelling of a duration token.
+
+ Only one matching initial PartialSet in melody and chord streams is accepted.
+ Repeat-local or later pickups are deliberately not interpreted as a new meter.
+ """
+ declarations={stream:[e for e in events if e['stream']==stream and e['kind']=='PARTIAL'] for stream in ('chords','voice')}
+ pickup=Fraction(0)
+ if any(declarations.values()):
+  if not allow_pickups:raise ValueError('Source pickup requires explicit source review')
+  if any(len(items)!=1 or items[0]['start']!=0 for items in declarations.values()):raise ValueError('Pickup must be one matching initial compiler declaration in both streams')
+  durations={items[0]['duration'] for items in declarations.values()}
+  if len(durations)!=1:raise ValueError('Chord/melody pickup duration mismatch')
+  pickup=durations.pop()
+  if not 0<pickup<bar_beats or total<=pickup:raise ValueError('Invalid source pickup duration')
+ if not pickup and total%bar_beats:raise ValueError('Incomplete regular bar grid')
+ for event in events:
+  if event['kind']=='BAR' and event['start'] and (event['start']-pickup)%bar_beats:raise ValueError('Source barcheck off '+('pickup-aligned' if pickup else 'regular')+' meter grid')
+ boundaries=[Fraction(0)]
+ if pickup:boundaries.append(pickup)
+ cursor=pickup+bar_beats
+ while cursor<total:
+  boundaries.append(cursor);cursor+=bar_beats
+ boundaries.append(total)
+ measures=[{'sourceNumber':str(i if pickup else i+1),'start':rounded(start),'duration':rounded(end-start)} for i,(start,end) in enumerate(zip(boundaries,boundaries[1:]))]
+ if pickup and not any(end-start==bar_beats for start,end in zip(boundaries,boundaries[1:])):raise ValueError('Pickup source contains no complete measure')
+ return pickup,measures
+
+def decode(path,version,lilypond,qualities,source_root,work_dir,allow_source_intervals=False,allow_pickups=False):
  text=path.read_text();meta=tomllib.loads(re.search(r'{#(.*?)#}',text,re.S)[1]);attrs=meta['attributes'];raw_chords,chord_line=section(text,'Chords'+version);raw_voice,voice_line=section(text,'Voice'+version)
  combined=raw_chords+'\n'+raw_voice
  if r'\transpose' in combined:raise ValueError('Source transposition wrapper requires explicit key review')
- if re.search(r'(?i)D\s*\.\s*[CS]\s*\.|al\s+coda|dal\s+segno|da\s+capo|\\(?:segno|coda|partial|repeat\s+segno)\b',combined):raise ValueError('Textual navigation or pickup requires explicit source review')
+ navigation=r'(?i)D\s*\.\s*[CS]\s*\.|al\s+coda|dal\s+segno|da\s+capo|\\(?:segno|coda|repeat\s+segno)\b'
+ if re.search(navigation,combined) or not allow_pickups and re.search(r'\\partial\b',combined):raise ValueError('Textual navigation or pickup requires explicit source review')
  keys=re.findall(r'\\key\s+([a-g](?:(?:is|es)*|s))\s+\\(major|minor)',raw_voice)
  meters=re.findall(r'\\time\s+(\d+)\s*/\s*(\d+)',raw_voice)
  if not keys:raise ValueError('No explicit source tonic/mode')
@@ -169,9 +201,7 @@ def decode(path,version,lilypond,qualities,source_root,work_dir,allow_source_int
    _,kind,start,duration,lineno,char,pitches=line.split('\t');raw_events.append({'stream':current,'kind':kind,'start':Fraction(start),'duration':Fraction(duration),'line':int(lineno),'char':int(char),'pitches':[int(x) for x in pitches.split(',') if x]})
  if totals.get('chords')!=totals.get('voice') or not totals.get('voice'):raise ValueError('Chord/melody source length mismatch '+str(totals))
  total=totals['voice']
- if total%bar_beats:raise ValueError('Incomplete regular bar grid')
- for event in raw_events:
-  if event['kind']=='BAR' and event['start']%bar_beats:raise ValueError('Source barcheck off regular meter grid')
+ pickup,measures=compiled_measure_grid(raw_events,total,bar_beats,allow_pickups)
  lines=generated.splitlines();chord_events=[]
  # Prefix adds one line before the extracted chord section. All clean operations
  # preserve newlines, so source line provenance is exact even after unfolding.
@@ -213,7 +243,11 @@ def decode(path,version,lilypond,qualities,source_root,work_dir,allow_source_int
  local=path.relative_to(source_root).as_posix();identifier='openbook-'+slug(attrs['title'])+'-'+slug(version)
  provenance={'format':'LilyPond','repository':REPO,'repositoryCommit':COMMIT,'path':local,'url':REPO+'/blob/'+COMMIT+'/'+local,'rawUrl':'https://raw.githubusercontent.com/veltzer/book-openbook/'+COMMIT+'/'+local,'sha256':sha(path),'sourceRights':attrs.get('copyright'),'sourceRightsExtra':attrs.get('copyrightextra'),'sourceVersion':version,'sourceStructure':attrs.get('structure'),'sourceKeySignature':{'root':tonic[0],'mode':tonic[1]},'tonicBasis':'Explicit initial LilyPond key and mode; no pitch-distribution estimate','sourceMeters':['/'.join(map(str,meter))],'unfoldStatus':'expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats','tiesMerged':True,'decoder':'LilyPond 2.26.0','sourcePPQ':ppq,'sections':{'chords':{'name':'Chords'+version,'startLine':chord_line},'melody':{'name':'Voice'+version,'startLine':voice_line}},'irregularMeasures':[],'leadOverfullMeasures':[],'leadUnderfullMeasures':[],'conflictingHarmonies':[],'omittedHarmonyAnnotations':[],'titleMetadata':{'selectedFrom':'source attributes.title','printedTitle':attrs['title'],'workTitle':attrs['title'],'movementTitle':None,'filenameTitle':path.name},'skipPolicy':'SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.','sourceIntervalPolicy':'Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.' if allow_source_intervals else None,'validation':'Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation'}
  if not allow_source_intervals:provenance.pop('sourceIntervalPolicy',None)
- return {'id':identifier,'melodyId':identifier,'normalizedTitle':normalize(attrs['title']),'title':attrs['title'],'composer':attrs.get('composer',''),'tonic':tonic,'tonicConfidence':'high','meter':meter,'barBeats':rounded(bar_beats),'bars':int(total/bar_beats),'totalBeats':rounded(total),'pickupBeats':0,'notes':notes,'chords':chord_events,'measures':[{'sourceNumber':str(i+1),'start':rounded(i*bar_beats),'duration':rounded(bar_beats)} for i in range(int(total/bar_beats))],'provenance':provenance,'midi':'melodies/'+identifier+'.mid'}
+ if pickup:
+  provenance['irregularMeasures']=[{**measure,'kind':'pickup' if i==0 else 'source-tail'} for i,measure in enumerate(measures) if abs(measure['duration']-float(bar_beats))>1e-8]
+  provenance['pickupPolicy']='One matching initial LilyPond PartialSet in both compiled streams. MIDI onsets and durations remain unchanged; source measure0 is the pickup. No padding, cropping or stretching.'
+  provenance['validation']='Exact source compiler durations, pickup-aligned bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation'
+ return {'id':identifier,'melodyId':identifier,'normalizedTitle':normalize(attrs['title']),'title':attrs['title'],'composer':attrs.get('composer',''),'tonic':tonic,'tonicConfidence':'high','meter':meter,'barBeats':rounded(bar_beats),'bars':len(measures),'totalBeats':rounded(total),'pickupBeats':rounded(pickup),'notes':notes,'chords':chord_events,'measures':measures,'provenance':provenance,'midi':'melodies/'+identifier+'.mid'}
 
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--source-dir',type=Path,required=True);parser.add_argument('--lilypond',required=True);parser.add_argument('--work-dir',type=Path,default=Path(tempfile.gettempdir())/'insights-openbook-build');parser.add_argument('--archive',type=Path);parser.add_argument('--only',default=None);parser.add_argument('--jobs',type=int,default=4);parser.add_argument('--append-missing',action='store_true');parser.add_argument('--source-intervals',action='store_true');args=parser.parse_args();args.work_dir.mkdir(parents=True,exist_ok=True)
