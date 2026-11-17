@@ -6,7 +6,8 @@ export interface RawlNotationHandle { setPosition(beat:number|null):void; elemen
 export interface RawlNotationProps {
  notes:MidiNote[]; beats:number; rows?:ScoreRow[]; tonic?:number; changes?:TonicChange[];
  barBeats?:number; hideInitialTonic?:boolean; position?:number|null; mutedVoices?:number[]; className?:string; style?:React.CSSProperties;
- onSeek?:(beat:number)=>void; onNote?:(note:MidiNote)=>void;
+ onSeek?:(beat:number)=>void; onNote?:(note:MidiNote)=>void; onNoteHover?:(note:MidiNote|null)=>void;
+ onMeasureSelect?:(beat:number)=>void; selectedMeasure?:number|null;
  renderHeader?:(row:ScoreRow)=>React.ReactNode; renderFooter?:(row:ScoreRow)=>React.ReactNode;
 }
 export const RawlNotation:React.ForwardRefExoticComponent<RawlNotationProps & React.RefAttributes<RawlNotationHandle>>;

@@ -4,7 +4,9 @@ export function buildBrickIndex(songs){
  const byName=new Map(),slugs=new Set();
  const sourceLabels=[...new Set(songs.flatMap(s=>s.rows.flatMap(r=>r.bricks.map(b=>b.name))))],labels=[...new Set(sourceLabels.map(brickIdentity))].sort((a,b)=>a.localeCompare(b));
  const oldSlugs=new Map(),oldUsed=new Set();
- for(const name of [...sourceLabels].sort((a,b)=>a.localeCompare(b))){let slug=slugify(name);if(oldUsed.has(slug))slug+='-'+suffix(name);oldUsed.add(slug);oldSlugs.set(name,slug);}
+ const historical=new Set(songs.filter(song=>song.image&&song.page).flatMap(song=>song.rows.flatMap(row=>row.bricks.map(brick=>brick.name))));
+ const routeOrder=historical.size?[...sourceLabels.filter(name=>historical.has(name)).sort((a,b)=>a.localeCompare(b)),...sourceLabels.filter(name=>!historical.has(name)).sort((a,b)=>a.localeCompare(b))]:[...sourceLabels].sort((a,b)=>a.localeCompare(b));
+ for(const name of routeOrder){let slug=slugify(name);if(oldUsed.has(slug))slug+='-'+suffix(name);oldUsed.add(slug);oldSlugs.set(name,slug);}
  const reserved=new Map([...oldSlugs].map(([name,slug])=>[slug,brickIdentity(name)]));
  for(const name of labels){let slug=oldSlugs.get(name)||slugify(name);if(slugs.has(slug)||(reserved.has(slug)&&reserved.get(slug)!==name))slug+='-'+suffix(name);while(slugs.has(slug)||(reserved.has(slug)&&reserved.get(slug)!==name))slug+='x';slugs.add(slug);const aliases=sourceLabels.filter(n=>n!==name&&brickIdentity(n)===name).sort((a,b)=>a.localeCompare(b)),aliasSlugs=[...new Set([oldSlugs.get(name),...aliases.map(n=>oldSlugs.get(n))].filter(s=>s&&s!==slug))];byName.set(name,{slug,name,aliases,aliasSlugs,standards:[],passages:0,clipped:/…|\.{2,}/.test(name)});}
  for(const song of songs){

@@ -3,9 +3,8 @@
 Public reader: https://insights-roadmaps.cxielamiko.chatgpt.site
 
 The reader preserves all 242 analyses from Bob Keller's
-`InsightsRoadmapsConsolidated.pdf` (revision 1, 6 October 2011), and adds 30
-MusicXML arrangements: 22 additional standards and eight alternatives to existing
-roadmaps. There are 264 entries in the standards drawer and 272 charts.
+`InsightsRoadmapsConsolidated.pdf` (revision 1, 6 October 2011), and adds 118 sourced
+arrangements. There are 269 standards in the drawer and 360 charts.
 
 ## Run and verify
 
@@ -61,7 +60,7 @@ pickups or malformed bar grids are not silently repaired to fit a roadmap.
 The downloaded archive contains 135 distinct titles, rather than the larger
 count advertised by the upstream project.
 
-There are 31 playable melody charts. The Girl from Ipanema matches its existing
+The initial PSjazzEval import enabled 31 playable melody charts. The Girl from Ipanema matches its existing
 roadmap by exact quarter-beat chord-root boundaries under one constant
 transposition. Thirty further charts use their own same-source MusicXML changes
 and melody. Eight are separate RealBook arrangements, selectable beside the
@@ -90,17 +89,17 @@ underlying compositions public domain. No downloaded score PDFs are shipped.
 ## Reusable bricks
 
 `bricks.html` is the single grouped catalogue, with the same top navigation as
-standards and no left drawer. Its 99 learner families are grouped into 11
+standards and no left drawer. Its 117 learner families are grouped into 11
 Impro-Visor brick types. Each group is a column. Complete previews keep 100px
 measures on one continuous line; groups/cards use natural widths and wrap only
 between complete examples. Oversize examples scroll horizontally.
 
 Each brick page groups standards under their exact structural variants, with
-919 complete definitions and eight unresolved occurrences. Simple core forms
+1,218 complete definitions and eight unresolved occurrences. Simple core forms
 come first, the same added-chord families stay adjacent, and substitutions,
 qualities, explicit bass and rhythm determine neighboring variants. There are
 Lucide play buttons beside examples; no variant-number rows, source captions or
-MIDI buttons. Usage lists are comma-separated titles followed by measure links.
+MIDI buttons. Usage lists contain comma-separated title links without measure references.
 Rawl rendition links appear only in standard headers, never inline in brick
 usage lists. Initial C labels are omitted in brick previews.
 
@@ -108,15 +107,15 @@ The data pipeline has separate source and learner layers:
 
 1. `roadmaps.json` retains every original label, chord, key, join and position.
    Explicit typography corrections group 354 labels into 299 source identities.
-   The additional charts bring the source index to 317 identities.
+   The additional charts bring the source index to 334 identities.
 2. `brick-families.mjs` combines named Approach/Cadence/Launcher roles and
    terminal adjuncts, then repetition wrappers such as Two Goes and guarded
    length/tempo qualifiers. Mode, degree and destination remain meaningful.
-3. `brick-coverage.mjs` removes 952 row spans: 694 one-harmony spans and 258
+3. `brick-coverage.mjs` removes 1,607 row spans: 1,200 one-harmony spans and 407
    On/Off or Off/On spans. Harmony and modulation stay in the charts unbricked.
-4. `brick-reuse.mjs` reviews the 40 families used by one distinct standard.
-   Ten merge into a supported harmonic variant; thirty are removed, taking 51
-   further labels out of the chart. All 99 remaining families are reused.
+4. `brick-reuse.mjs` reviews the 37 families used by one distinct standard.
+   Nine merge into a supported harmonic variant; twenty-eight are removed, taking 50
+   further labels out of the chart. All 117 remaining families are reused.
 
 Singleton matches require complete source material, ordered tonic-relative
 root/core-quality anchors, support in at least two target standards, limited
@@ -124,7 +123,7 @@ structural distance and an unambiguous best family. Repeated occurrences in one
 standard do not count as independent reuse. Full qualities, compound extensions,
 explicit bass, key context and rational durations remain in variant definitions.
 Ambiguous and idiosyncratic labels are removed without deleting their chords.
-The final index accounts for 3,178 retained row spans. Surviving/merged legacy
+The final index accounts for 4,588 retained row spans. Surviving/merged legacy
 page routes and search aliases are preserved.
 
 `evidence/brick-reuse-audit.json` records every singleton decision with source
@@ -139,7 +138,7 @@ nested named rules, relative transposition, chord equivalence families and
 relative duration constraints. It uses minimum-cost segmentation and rejects
 Impro-Visor's expensive non-scaling fallback. Unexplained changes stay unbricked.
 
-The thirty new charts introduce eighteen existing dictionary names absent from
+The initial thirty PSjazzEval charts introduce eighteen existing dictionary names absent from
 the original roadmap labels. Three recur in at least three compositions:
 7sus4 to 3, Dominant Cycle 2 Steps and Dogleg Approach. No previously unnamed
 uncovered pattern met the minimum three-composition reuse rule; no new brick
@@ -167,14 +166,14 @@ source-version and chord-quality differences are preserved.
 
 The standard title sits above its content pane. Analysis/Rawl/Source and
 playback controls are in the footer, which stays at or below the bottom of the
-first viewport. The enlarged black ii⁷ favicon has a transparent background.
+first viewport. The transparent ii⁷ favicon has an upward Rawl degree2–4–6 gradient.
 
 ## Source fidelity and licenses
 
 The original PDF screenshots remain authoritative for the 2011 roadmaps.
 `evidence/extraction.json`, `corpus-check.json`, `typography-audit.json` and
 `measure-timing-audit.json` retain extraction and comparison evidence. Eight
-source-clipped chord cells remain timed silent gaps. Nine explicit NC cells in
+source-clipped chord cells remain timed silent gaps. Explicit NC cells and harmony gaps in
 new arrangements also remain silent, without interrupting melody.
 
 The inspected [Impro-Visor source](https://github.com/Impro-Visor/Impro-Visor)
@@ -191,3 +190,60 @@ Geologica retains its OFL license. Lucide icons retain their ISC license under
 the corresponding code and assets. There are 69 verified public Rawl renditions
 across 34 original standards, recorded in `src/music/rawl-links.json`; no missing
 rendition URLs are guessed.
+
+
+## Expanded melody sources and current interactions
+
+The combined registry `dist/data/melody-sources.json` contains 219 encoded heads:
+131 PSjazzEval melodies, 79 validated OpenBook arrangements and nine explicit
+Impro-Visor Head parts. There are 119 melody-enabled charts. The original 30
+PSjazzEval chart addresses242–271 are retained; new arrangements append after
+them. `scripts/merge-melody-sources.mjs` combines validated sources without
+changing existing addresses. `evidence/melody-source-intake.json` records intake.
+
+OpenBook is pinned to `adbe5c68ff59e20068dd754e7d227979fa628d33` at
+https://github.com/veltzer/book-openbook. Actual LilyPond2.26 compilation unfolds
+repeats, ties and tuplets and checks the MIDI against source chord pitches.
+Omitted repeated chord labels continue their explicit preceding harmony; source
+rests remain unharmonized. Pickups, unresolved textual D.C./Coda and uncertain
+key/mode cases are excluded. The repository README and current license disagree;
+both notices and per-song copyright are retained in the source manifest.
+
+Body and Soul is available as **OpenBook Real**, chart286:32bars,129 melody
+notes, explicit Db-major source transposed to C. Its changes differ from the
+roadmap, so it is a separate complete arrangement. The Impro-Visor source files
+for this tune contain rests, a placeholder or a Hawkins solo; none is presented
+as the head. Only explicitly labeled Head parts are imported from that corpus.
+`openbook-melody-audit.json` and `improvisor-melody-audit.json` retain the evidence.
+
+A standard's header has a synchronized play/pause icon instead of the counter
+and previous/next arrows. Melody notes draw above chord notes. Superscript
+extensions and alterations use the represented sounding pitch relative to the
+active tonic, following Caplin's semantic color rule. 11/13 remain whole jazz
+extension tokens. Slash characters are gray and explicit bass symbols have
+their own degree color in both chord and RN views.
+
+Click a Rawl measure number, hover a note to preview its pitch class as tonic,
+and click a note to commit. Leaving restores saved colors; Escape cancels the
+selection. Notes, tonic/fifth guides, flags and chord/RN colors share the preview.
+This is guest-state analysis in the current chart, matching Rawl's local behavior;
+source data, MIDI pitches and playback position are unchanged.
+
+The tonal display merges395 one-harmony modulation regions into their preceding
+or following context. All34 weak/tied passages were reviewed individually;
+17 decisions override the automatic score. The49 initial C home contexts remain.
+`modulation-regions-audit.json` and generated `modulation-projection.json` retain
+both alternatives, guarded musical rationales and source/cleaned timelines.
+
+The catalogue and brick drawer share the same type groups and descending usage
+order within each group. Counts deduplicate alternate arrangements of the same
+standard. A group index at the catalogue top jumps to each section. Catalogue
+previews select the variant found in most distinct standards, then most passages,
+then existing semantic order. Brick-to-standard title links scroll to and pulse
+the matching passage while playback remains at the beginning.
+
+Longer primitive repeated phrases are aligned generally rather than accepting
+printed row breaks as musical structure.29 charts receive longer phrase grouping;
+Love for Sale displays0–16 A /16–32 A +32–48 B. Existing fine brick-sized layouts
+remain. Formal metadata and every source event time stay intact. Section letters
+are enclosed in square boxes. `general-section-layout.json` records every case.

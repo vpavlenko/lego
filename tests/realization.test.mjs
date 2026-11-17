@@ -75,7 +75,7 @@ test('all 1271 joins start Rawl tonics at their exact onset, including zero shif
  let joins=0,zeros=0;
  for(const song of songs){
   const changes=songModulations(song),p=read('../dist/data/performances/'+String(song.index).padStart(3,'0')+'.json'),markers=keyMarkers(0,changes),bb=song.meter[0]*4/song.meter[1];
-  assert.deepEqual(p.changes,changes);
+  assert.deepEqual(p.sourceChanges??p.changes,changes);
   for(const row of song.rows)for(const join of row.joins){
    joins++;const beat=(row.startBar+join.at)*bb,event=changes.find(c=>c.beat===beat),marker=markers.find(c=>c.beat===beat);
    assert.ok(event?.join,song.title+' '+join.name);assert.equal(event.name,join.name);assert.equal(event.tonic,pitch(transposeRoot(join.to,song.tonic[0])));

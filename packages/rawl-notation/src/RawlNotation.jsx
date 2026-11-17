@@ -6,8 +6,8 @@ const names=['C','D♭','D','E♭','E','F','F♯','G','A♭','A','B♭','B'];
 const noteName=p=>names[mod(p)]+(Math.floor(p/12)-1);
 
 /** A host-independent Rawl score. Times are quarter-note beats, pitches MIDI. */
-export const RawlNotation=forwardRef(function RawlNotation({notes,beats,rows,tonic=0,changes=[],barBeats=4,hideInitialTonic=false,position=null,mutedVoices=[],onSeek,onNote,renderHeader,renderFooter,className='',style},ref){
- const root=useRef(null),noteElements=useRef(new Map());
+export const RawlNotation=forwardRef(function RawlNotation({notes,beats,rows,tonic=0,changes=[],barBeats=4,hideInitialTonic=false,position=null,mutedVoices=[],onSeek,onNote,onNoteHover,onMeasureSelect,selectedMeasure=null,renderHeader,renderFooter,className='',style},ref){
+ const root=useRef(null),noteElements=useRef(new Map()),hoveredId=useRef(null);
  const spans=rows?.length?rows:[{start:0,end:beats,label:1}];
  const markers=useMemo(()=>keyMarkers(tonic,changes),[tonic,changes]);
  const prepared=useMemo(()=>spans.map(row=>{
@@ -43,12 +43,12 @@ export const RawlNotation=forwardRef(function RawlNotation({notes,beats,rows,ton
        </span>
       </div>)}
      </div>
-     <div className="rawln-measure-labels" aria-hidden="true">
-      {bars.map(beat=>{const hasFlag=markers.some(m=>m.beat===beat&&m.delta!==null&&m.delta!==0);return <span className="rawln-measure-number" key={beat} data-modulation={hasFlag?'true':undefined} style={{left:x(beat)+'%',color:hasFlag?'black':undefined}}>{Math.round(beat/barBeats)+1}</span>;})}
+     <div className="rawln-measure-labels" aria-hidden={onMeasureSelect?undefined:true}>
+      {bars.map(beat=>{const hasFlag=markers.some(m=>m.beat===beat&&m.delta!==null&&m.delta!==0);return <span className="rawln-measure-number" role={onMeasureSelect?'button':undefined} tabIndex={onMeasureSelect?0:undefined} aria-pressed={onMeasureSelect?selectedMeasure===beat:undefined} onClick={onMeasureSelect?e=>{e.stopPropagation();onMeasureSelect(beat);}:undefined} onKeyDown={onMeasureSelect?e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();e.stopPropagation();onMeasureSelect(beat);}}:undefined} key={beat} data-beat={beat} data-modulation={hasFlag?'true':undefined} style={{left:x(beat)+'%',color:selectedMeasure===beat?'red':hasFlag?'black':undefined,pointerEvents:onMeasureSelect?'auto':undefined,cursor:onMeasureSelect?'pointer':undefined}}>{Math.round(beat/barBeats)+1}</span>;})}
      </div>
      {visible.map(note=>{
       const start=Math.max(row.start,note.start),end=Math.min(row.end,note.start+note.duration),degree=mod(note.pitch-tonicAt(tonic,changes,note.start+note.duration/2)),color=RAWL_COLORS[degree];
-      return <button key={`${note.id}-${ri}`} ref={el=>{const key=`${note.id}-${ri}`;if(el)noteElements.current.set(key,{el,note,row,baseTop:axis.pitchToY(note.pitch),active:false,hover:false});else noteElements.current.delete(key);}} type="button" tabIndex={-1} aria-label={noteName(note.pitch)} title={noteName(note.pitch)} data-note={note.id} data-pitch={note.pitch} data-degree={degree} data-voice={note.voice} className={`rawln-note rawln-voice-${note.voice}${mutedVoices.includes(note.voice)?' rawln-muted':''}`} style={{left:x(start)+'%',top:axis.pitchToY(note.pitch),width:(end-start)/span*100+'%',height:NOTE_HEIGHT,background:color.background,zIndex:100+(84-note.pitch)}} onMouseEnter={()=>{const item=noteElements.current.get(`${note.id}-${ri}`);if(item){item.hover=true;updateNote(item);}}} onMouseLeave={()=>{const item=noteElements.current.get(`${note.id}-${ri}`);if(item){item.hover=false;updateNote(item);}}} onClick={e=>{e.stopPropagation();onNote?.(note);}}>
+      return <button key={`${note.id}-${ri}`} ref={el=>{const key=`${note.id}-${ri}`;if(el)noteElements.current.set(key,{el,note,row,baseTop:axis.pitchToY(note.pitch),active:false,hover:hoveredId.current===key});else noteElements.current.delete(key);}} type="button" tabIndex={-1} aria-label={noteName(note.pitch)} title={noteName(note.pitch)} data-note={note.id} data-pitch={note.pitch} data-degree={degree} data-voice={note.voice} className={`rawln-note rawln-voice-${note.voice}${mutedVoices.includes(note.voice)?' rawln-muted':''}`} style={{left:x(start)+'%',top:axis.pitchToY(note.pitch),width:(end-start)/span*100+'%',height:NOTE_HEIGHT,background:color.background,zIndex:100+(84-note.pitch)+(note.voice===1?128:0)}} onMouseEnter={()=>{const item=noteElements.current.get(`${note.id}-${ri}`);hoveredId.current=`${note.id}-${ri}`;if(item){item.hover=true;updateNote(item);}onNoteHover?.(note);}} onMouseLeave={()=>{const item=noteElements.current.get(`${note.id}-${ri}`);hoveredId.current=null;if(item){item.hover=false;updateNote(item);}onNoteHover?.(null);}} onClick={e=>{e.stopPropagation();onNote?.(note);}}>
        {color.dot&&<i aria-hidden="true" style={{width:color.dot.size,height:color.dot.size,background:color.dot.color}}/>}
       </button>;
      })}

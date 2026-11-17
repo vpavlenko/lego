@@ -4,3 +4,7 @@ node_modules/
 
 # User-excluded reference book: never publish or sync it.
 **/Insights in Jazz.pdf
+
+# Generated Python caches
+__pycache__/
+*.pyc

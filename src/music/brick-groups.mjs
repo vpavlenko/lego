@@ -28,5 +28,5 @@ export function brickType(name,catalog){
 export function groupBricks(bricks,catalog){
  const groups=new Map();
  for(const brick of bricks){const classification=brickType(brick.representativeName??brick.name,catalog);if(!groups.has(classification.type))groups.set(classification.type,[]);groups.get(classification.type).push({...brick,classification});}
- return [...groups].sort((a,b)=>(order.indexOf(a[0])<0?99:order.indexOf(a[0]))-(order.indexOf(b[0])<0?99:order.indexOf(b[0]))).map(([type,bricks])=>({type,bricks:bricks.sort((a,b)=>a.name.localeCompare(b.name))}));
+ return [...groups].sort((a,b)=>(order.indexOf(a[0])<0?99:order.indexOf(a[0]))-(order.indexOf(b[0])<0?99:order.indexOf(b[0]))).map(([type,bricks])=>({type,bricks:bricks.sort((a,b)=>(typeof b.standards==='number'?b.standards:b.standardCount??b.standards?.length??0)-(typeof a.standards==='number'?a.standards:a.standardCount??a.standards?.length??0)||a.name.localeCompare(b.name))}));
 }

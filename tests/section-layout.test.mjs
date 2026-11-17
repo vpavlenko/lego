@@ -5,6 +5,7 @@ import {analyzeForm,chordTimeline} from '../src/music/forms.mjs';
 import {alignRepeatedSubphrases} from '../src/music/section-layout.mjs';
 import {buildBrickIndex} from '../src/music/bricks.mjs';
 import {buildLearnerBrickIndex} from '../src/music/brick-families.mjs';
+import {transposeChord,transposeRoot} from '../dist/harmony.mjs';
 const {songs}=JSON.parse(fs.readFileSync(new URL('../dist/data/roadmaps.json',import.meta.url),'utf8'));
 const learners=buildLearnerBrickIndex(buildBrickIndex(songs)),brickMap=new Map(learners.bricks.flatMap(b=>[b.name,...b.aliases].map(name=>[name,b])));
 const wind=songs.find(song=>song.index===74),formal=analyzeForm(wind);
@@ -72,4 +73,55 @@ test('canonical learner aliases are optional and never substitute for harmonic e
  const alias=structuredClone(wind);alias.rows[0].bricks[1].name='7 Chord Dropback +...';
  assert.deepEqual(alignRepeatedSubphrases(alias,formal).layoutSections,formal.sections);assert.deepEqual(shape(alignRepeatedSubphrases(alias,formal,brickMap)),expected);
  alias.rows[0].chords[11].symbol='F#7';untouched(alias);
+});
+
+test('Love for Sale promotes complete repeated sixteen-bar source-row groups while preserving formal metadata',()=>{
+ const song=songs[124],form=analyzeForm(song),before=JSON.stringify({song,form}),result=alignRepeatedSubphrases(song,form,brickMap);
+ assert.equal(form.aligned,false);assert.equal(form.pattern,'ABCD');assert.equal(form.family,'Other');assert.deepEqual(form.sections.map(s=>[s.start,s.end]),[[0,12],[12,24],[24,36],[36,48]]);
+ assert.equal(result.layoutAligned,true);assert.equal(result.layoutBasis,'repeated-source-row-groups');assert.equal(result.layoutPhraseBars,16);assert.equal(result.layoutColumns,32);
+ assert.deepEqual(shape(result),[[0,16,'A',0,0],[16,32,'A',1,0],[32,48,'B',1,16]]);assert.equal(result.layoutEvidence.minimumScore,1);
+ assert.deepEqual(result.sections,form.sections);assert.equal(result.pattern,form.pattern);assert.equal(result.family,form.family);assert.equal(JSON.stringify({song,form}),before);
+});
+
+test('longer phrase grouping applies across source charts and leaves the earlier fine A ideas intact',()=>{
+ const promoted=songs.filter(song=>alignRepeatedSubphrases(song,analyzeForm(song),brickMap).layoutBasis==='repeated-source-row-groups');
+ assert.deepEqual(promoted.map(s=>s.index),[67,95,113,121,124,135,137,158,171]);
+ for(const index of [74,119,218,227,228])assert.equal(alignRepeatedSubphrases(songs[index],analyzeForm(songs[index]),brickMap).layoutBasis,'repeated-brick-halves');
+ const april=alignRepeatedSubphrases(songs[95],analyzeForm(songs[95]),brickMap);assert.deepEqual(shape(april),[[0,16,'A',0,0],[16,32,'B',0,16],[32,48,'A',1,0]]);
+});
+
+test('a matching opening, one-chord repetition, clipped harmony or source gaps cannot establish a longer phrase',()=>{
+ const original=songs[124],form=analyzeForm(original);
+ const prefix=structuredClone(original);prefix.rows[3].chords.forEach(c=>{c.symbol='F#7';});assert.deepEqual(alignRepeatedSubphrases(prefix,form).layoutSections,form.sections);
+ const repeated=structuredClone(original);repeated.rows.forEach(row=>row.chords.forEach(c=>{c.symbol='CM7';}));assert.deepEqual(alignRepeatedSubphrases(repeated,form).layoutSections,form.sections);
+ const gap=structuredClone(original);gap.rows[1].chords[1].start+=.25;assert.deepEqual(alignRepeatedSubphrases(gap,form).layoutSections,form.sections);
+ const clipped=structuredClone(original);clipped.rows[1].chords[1].clipped=true;assert.deepEqual(alignRepeatedSubphrases(clipped,form).layoutSections,form.sections);
+});
+
+test('whole-phrase comparison permits a small cadential variation and one constant transposition',()=>{
+ const original=songs[124],form=analyzeForm(original),cadence=structuredClone(original),last=cadence.rows[3].chords.pop();
+ cadence.rows[3].chords.push({...last,end:7},{...last,start:7,symbol:'B7'});
+ const varied=alignRepeatedSubphrases(cadence,form);assert.equal(varied.layoutPhraseBars,16);assert.ok(varied.layoutSections[1].phraseComparison.rootScore>=.9);assert.equal(varied.layoutSections[1].phraseComparison.rootScore,.9375);
+ const transposed=structuredClone(original);
+ for(const row of transposed.rows.filter(r=>r.startBar>=16&&r.startBar<32)){
+  row.chords.forEach(c=>{c.symbol=transposeChord(c.symbol,'Bb');});row.keys.forEach(k=>{k.root=transposeRoot(k.root,'Bb');});row.joins.forEach(j=>{j.from=transposeRoot(j.from,'Bb');j.to=transposeRoot(j.to,'Bb');});
+ }
+ const result=alignRepeatedSubphrases(transposed,form);assert.equal(result.layoutPhraseBars,16);assert.equal(result.layoutSections[1].phraseComparison.score,1);assert.equal(result.layoutSections[1].transpose,10);
+});
+
+test('pagination alone does not change the promoted phrase and simple smaller repeats are not bundled into larger ones',()=>{
+ const original=songs[124],form=analyzeForm(original);assert.deepEqual(shape(alignRepeatedSubphrases(narrowRows(original),form)),[[0,16,'A',0,0],[16,32,'A',1,0],[32,48,'B',1,16]]);
+ const theme=structuredClone(original.rows[1]),repeated={...structuredClone(original),bars:64,rows:Array.from({length:8},(_,i)=>({...structuredClone(theme),startBar:i*8}))},unclassified={song:0,aligned:false,pattern:null,family:'Other',columns:64,sections:[]};
+ const result=alignRepeatedSubphrases(repeated,unclassified);assert.equal(result.layoutAligned,undefined);assert.equal(result.layoutSections.length,0);
+});
+
+test('general display groups preserve every original and additional arrangement chord span exactly',()=>{
+ const url=new URL('../dist/data/additional-standards.json',import.meta.url),additional=fs.existsSync(url)?JSON.parse(fs.readFileSync(url,'utf8')).songs:[];
+ for(const song of [...songs,...additional]){
+  const form=analyzeForm(song),before=JSON.stringify(song),result=alignRepeatedSubphrases(song,form,brickMap);assert.equal(JSON.stringify(song),before);assert.deepEqual(result.sections,form.sections);
+  if(!result.layoutAligned)continue;
+  assert.equal(result.layoutSections[0].start,0);assert.equal(result.layoutSections.at(-1).end,song.bars);
+  for(let i=1;i<result.layoutSections.length;i++)assert.equal(result.layoutSections[i].start,result.layoutSections[i-1].end);
+  for(const chord of chordTimeline(song)){const pieces=result.layoutSections.map(s=>[Math.max(s.start,chord.start),Math.min(s.end,chord.end)]).filter(([a,b])=>b>a);assert.equal(pieces[0][0],chord.start);assert.equal(pieces.at(-1)[1],chord.end);assert.ok(Math.abs(pieces.reduce((n,[a,b])=>n+b-a,0)-(chord.end-chord.start))<1e-7);}
+ }
 });

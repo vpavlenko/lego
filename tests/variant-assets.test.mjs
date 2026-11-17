@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {createRequire} from 'node:module';
+import {cleanModulationRegions} from '../src/music/modulation-regions.mjs';
 import {realizeSong} from '../src/music/realization.mjs';
 const require=createRequire(import.meta.url),{parseMidi}=require('midi-file');
 const dist=new URL('../dist/',import.meta.url),json=p=>JSON.parse(fs.readFileSync(new URL(p,dist),'utf8'));
@@ -20,7 +21,7 @@ test('all generated variant performances and MIDI files match complete source de
   }
   for(const variant of brick.variants){
    definitions++;assert.ok(variant.completeOccurrences>0);assert.ok(variant.previewSong.rows.every(row=>row.chords.every(c=>!c.clipped)));
-   const fresh=realizeSong(variant.previewSong,qualities),expectedPerformance={...fresh,previewSong:variant.previewSong,source:variant.source};
+   const fresh=realizeSong(variant.previewSong,qualities),expectedPerformance={...fresh,sourceChanges:fresh.changes,changes:cleanModulationRegions(variant.previewSong,fresh.changes,qualities).changes,previewSong:variant.previewSong,source:variant.source};
    assert.deepEqual(variant.performance,expectedPerformance,brick.name+' '+variant.id);
    assert.equal(variant.midi,`./midi/brick-variants/${brick.slug}--${variant.id}.mid`);assert.ok(!assets.has(variant.midi));assets.add(variant.midi);
    const target=new URL(variant.midi,dist);assert.ok(target.pathname.startsWith(new URL('midi/brick-variants/',dist).pathname));

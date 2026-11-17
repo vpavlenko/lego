@@ -56,7 +56,7 @@ function compareHalves(events,a,b){
 
 /** Display-only alignment for repeated brick-sized halves inside formal A.
  * Formal sections, family and pattern remain the source/form analysis layer. */
-export function alignRepeatedSubphrases(song,form,brickMap){
+function alignBrickHalves(song,form,brickMap){
  const sections=(form.sections??[]).map(section=>({...section}));
  const unchanged=()=>({...form,sections,layoutSections:sections.map(section=>({...section})),layoutColumns:form.columns});
  const as=sections.filter(section=>section.label==='A');
@@ -83,4 +83,81 @@ export function alignRepeatedSubphrases(song,form,brickMap){
   }
  }
  return {...form,sections,layoutSections,layoutColumns:layoutSections.reduce((columns,section)=>Math.max(columns,section.layoutColumn+section.bars),0)};
+}
+
+function progression(events,span){
+ if(!completeChords(events,span))return null;
+ const chords=events.filter(c=>c.start<span.end-EPS&&c.end>span.start+EPS).map(c=>({...c,start:Math.max(c.start,span.start)-span.start,end:Math.min(c.end,span.end)-span.start}));
+ if(new Set(chords.map(c=>c.root)).size<2||new Set(chords.map(c=>`${c.root}:${c.kind}`)).size<3)return null;
+ return chords;
+}
+// Uniform full-duration comparison, independent of the form classifier's
+// opening-weighted score. One constant transposition covers the entire phrase.
+function timedComparison(events,a,b){
+ const length=a.end-a.start;if(!same(length,b.end-b.start))return null;
+ const left=progression(events,a),right=progression(events,b);if(!left||!right)return null;
+ const edges=[...new Set([0,length,...left.flatMap(c=>[c.start,c.end]),...right.flatMap(c=>[c.start,c.end])])].sort((x,y)=>x-y),slices=[];
+ for(let i=1;i<edges.length;i++){
+  const start=edges[i-1],end=edges[i];if(end-start<EPS)continue;
+  const at=(start+end)/2,ca=left.find(c=>c.start<=at&&c.end>at),cb=right.find(c=>c.start<=at&&c.end>at);if(!ca||!cb)return null;
+  slices.push({weight:(end-start)/length,a:ca,b:cb});
+ }
+ const comparisons=[];
+ for(let shift=0;shift<12;shift++){
+  let roots=0,qualities=0;
+  for(const slice of slices){roots+=slice.weight*Number(mod(slice.a.root-slice.b.root)===shift);qualities+=slice.weight*Number(slice.a.kind===slice.b.kind);}
+  comparisons.push({score:.75*roots+.25*qualities,rootScore:roots,qualityScore:qualities,shift});
+ }
+ const best=comparisons.sort((a,b)=>b.score-a.score||b.rootScore-a.rootScore||a.shift-b.shift)[0];
+ return best.score>=.9-EPS&&best.rootScore>=.9-EPS?best:null;
+}
+function groupedSourceRows(song,form){
+ const rows=[...song.rows].sort((a,b)=>a.startBar-b.startBar);let cursor=0;
+ for(const row of rows){if(!same(row.startBar,cursor)||row.bars<=0)return null;cursor+=row.bars;}
+ if(!same(cursor,song.bars))return null;
+ const events=chordTimeline(song).sort((a,b)=>a.start-b.start||a.end-b.end);
+ if(!completeChords(events,{start:0,end:song.bars}))return null;
+ const boundaries=[0,...rows.map(row=>row.startBar+row.bars)],boundary=value=>boundaries.some(b=>same(b,value)),cache=new Map();
+ const compare=(a,b)=>{const key=[a.start,a.end,b.start,b.end].join('/');if(!cache.has(key))cache.set(key,timedComparison(events,a,b));return cache.get(key);};
+ const previousAs=form.aligned?form.sections.filter(s=>s.label==='A'):[],previousPhrase=Math.max(0,...previousAs.map(s=>s.end-s.start)),previousRepeatedBars=previousAs.length>=2?previousAs.reduce((n,s)=>n+s.end-s.start,0):0,candidates=[];
+ for(const length of boundaries.filter(length=>length>previousPhrase+EPS&&length<=song.bars/2+EPS)){
+  // A promotion combines at least two printed rows. A larger phrase made
+  // entirely of equivalent smaller units adds no new repeated material.
+  if(rows.filter(row=>row.startBar<length-EPS).length<2)continue;
+  const spans=[];let valid=true;
+  for(let start=0;start<song.bars-EPS;start+=length){const end=Math.min(start+length,song.bars);if(!boundary(start)||!boundary(end)){valid=false;break;}spans.push({start,end});}
+  if(!valid)continue;
+  let primitive=true;
+  for(const unit of boundaries.filter(unit=>unit>0&&unit<length-EPS&&same(length/unit,Math.round(length/unit)))){
+   let repeated=true;for(let start=unit;start<length-EPS;start+=unit)if(!boundary(start)||!compare({start:0,end:unit},{start,end:start+unit})){repeated=false;break;}
+   if(repeated){primitive=false;break;}
+  }
+  if(!primitive)continue;
+  const representatives=[],sections=[];
+  for(const span of spans){
+   if(!completeChords(events,span)){valid=false;break;}
+   let best=null;
+   for(let i=0;i<representatives.length;i++){
+    const comparison=compare(representatives[i],span);if(comparison&&(!best||comparison.score>best.score))best={...comparison,index:i};
+   }
+   const index=best?.index??representatives.length;if(!best)representatives.push(span);
+   sections.push({...span,label:String.fromCharCode(65+index),bars:span.end-span.start,similarity:best?.score??1,transpose:best?.shift??0,...(best?{phraseComparison:{score:best.score,rootScore:best.rootScore,qualityScore:best.qualityScore,shift:best.shift}}:{})});
+  }
+  if(!valid)continue;
+  const repeats=sections.filter(section=>section.label==='A');if(repeats.length<2)continue;
+  const repeatedBars=repeats.reduce((n,s)=>n+s.bars,0);if(repeatedBars<previousRepeatedBars-EPS)continue;
+  let row=-1,column=0;for(const section of sections){if(row<0||section.label==='A'){row++;column=0;}section.layoutRow=row;section.layoutColumn=column;column+=section.bars;}
+  candidates.push({sections,columns:Math.max(...sections.map(s=>s.layoutColumn+s.bars)),length,repeatedBars,previousRepeatedBars,minimumScore:Math.min(...repeats.map(s=>s.similarity))});
+ }
+ return candidates.sort((a,b)=>b.repeatedBars-a.repeatedBars||b.length-a.length||b.minimumScore-a.minimumScore||a.columns-b.columns)[0]??null;
+}
+
+/** Keep formal analysis separate from a display grouping supported by complete
+ * repeated music. Fine repeated bricks take priority; otherwise longer
+ * primitive printed-row groups may supply the vertical phrase alignment. */
+export function alignRepeatedSubphrases(song,form,brickMap){
+ const fine=alignBrickHalves(song,form,brickMap);
+ if(fine.layoutSections.length>fine.sections.length)return {...fine,layoutAligned:true,layoutBasis:'repeated-brick-halves'};
+ const grouped=groupedSourceRows(song,form);if(!grouped)return fine;
+ return {...fine,layoutSections:grouped.sections,layoutColumns:grouped.columns,layoutAligned:true,layoutBasis:'repeated-source-row-groups',layoutPhraseBars:grouped.length,layoutEvidence:{repeatedBars:grouped.repeatedBars,previousRepeatedBars:grouped.previousRepeatedBars,minimumScore:grouped.minimumScore}};
 }

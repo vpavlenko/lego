@@ -6,3 +6,7 @@
 .atlas-groups{columns:auto;display:flex;flex-wrap:wrap;align-items:flex-start;gap:0 20px}.atlas-group{flex:0 0 auto;max-width:100%}.atlas-preview{overflow-x:auto;max-width:100%}.atlas-card{max-width:100%}
 
 .atlas-page main{padding-top:47px}
+
+.atlas-index{display:flex;flex-wrap:wrap;gap:6px 18px;margin:0 0 16px;font-size:11px;color:#888}.atlas-index a:hover{color:#fff}.atlas-group>h2{scroll-margin-top:44px}
+
+.atlas-card h3{flex:0 1 auto}.atlas-card-count{margin-left:1px;white-space:nowrap}

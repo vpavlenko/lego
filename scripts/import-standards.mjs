@@ -11,10 +11,10 @@ const project=fileURLToPath(new URL('../',import.meta.url)),EPS=1e-7;
 const roots=['C','Db','D','Eb','E','F','Gb','G','Ab','A','Bb','B'];
 const normalized=text=>String(text??'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/&/g,'and').replace(/^the\s+/,'').replace(/[^a-z0-9]/g,'');
 function compositionKey(title){return normalized(String(title).replace(/(?:\s*[-–]\s*|\s*\()([A-G][#b]?)(?:\s+(?:major|minor))?\)?\s*$/,''));}
-function originalKeys(songs){const keys=new Map();const add=(key,index)=>{if(!key)return;const indices=keys.get(key)??new Set();indices.add(index);keys.set(key,indices);};for(const song of songs){add(compositionKey(song.title),song.index);add(compositionKey(song.title.split('(')[0]),song.index);if(song.leadsheet){const file=decodeURIComponent(song.leadsheet.split('/').at(-1)).replace(/\.ls$/,'');add(normalized(file),song.index);}}return keys;}
+function originalKeys(songs){const keys=new Map();const add=(key,index)=>{if(!key)return;const indices=keys.get(key)??new Set();indices.add(index);keys.set(key,indices);};for(const song of songs){const index=song.arrangementOf??song.index;add(compositionKey(song.title),index);add(compositionKey(song.title.split('(')[0]),index);if(song.leadsheet){const file=decodeURIComponent(song.leadsheet.split('/').at(-1)).replace(/\.ls$/,'');add(normalized(file),index);}}return keys;}
 function sourceInfo(entry){
  const p=entry.provenance??{},url=p.url??p.sourceUrl??p.repositoryUrl??p.repository??null,rawUrl=p.rawUrl??p.downloadUrl??null;
- return {title:entry.title,format:'MusicXML',url,...(rawUrl?{rawUrl}:{}),...(p.path?{path:p.path}:{}),...(p.sha256?{sha256:p.sha256}:{})};
+ return {title:entry.title,format:p.format??'MusicXML',collection:p.format==='LilyPond'?'OpenBook':p.format==='Impro-Visor leadsheet'?'Impro-Visor':'RealBook',version:p.sourceVersion??p.partTitle,url,...(rawUrl?{rawUrl}:{}),...(p.path?{path:p.path}:{}),...(p.sha256?{sha256:p.sha256}:{})};
 }
 function cleanChords(entry,qualities){
  const beats=entry.totalBeats??entry.bars*entry.barBeats,raw=[...entry.chords].sort((a,b)=>a.start-b.start||a.end-b.end),chords=[],unsupported=[],noHarmony=[];let cursor=0;
@@ -51,12 +51,12 @@ function rowsFor(song,segments){
  * meter await explicit runtime measure-map support; they are never stretched
  * into regular bars. Original roadmap songs remain untouched.
  */
-export function prepareAdditionalStandards(entries,{originalSongs,dictionary,qualities,minimumSupport=3,includeArrangements=true,existingMatches=[]}={}){
- const originals=originalKeys(originalSongs),seen=new Map(),sourceIds=new Set(),matchedIds=new Set(existingMatches.map(m=>m.melodyId)),rejected=[],prepared=[],parser=createBrickParser(dictionary,{qualities}),startIndex=Math.max(241,...originalSongs.map(s=>s.index))+1;
+export function prepareAdditionalStandards(entries,{originalSongs,priorSongs=[],dictionary,qualities,minimumSupport=3,includeArrangements=true,existingMatches=[]}={}){
+ const originals=originalKeys([...originalSongs,...priorSongs]),seen=new Map(),sourceIds=new Set(priorSongs.map(song=>song.melodyId)),matchedIds=new Set(existingMatches.map(m=>m.melodyId)),rejected=[],prepared=[],parser=createBrickParser(dictionary,{qualities}),startIndex=Math.max(241,...originalSongs.map(s=>s.index),...priorSongs.map(s=>s.index))+1;
  const candidates=[...entries].sort((a,b)=>compositionKey(a.title).localeCompare(compositionKey(b.title))||String(a.id).localeCompare(String(b.id)));
  for(const entry of candidates){
   const key=compositionKey(entry.title),reject=reason=>rejected.push({id:entry.id,title:entry.title,reason});
-  const titleMetadata=entry.provenance?.titleMetadata,identityKeys=[key,entry.normalizedTitle];
+  const titleMetadata=entry.provenance?.titleMetadata,identityKeys=[key,entry.normalizedTitle,...(entry.compositionTitle?[compositionKey(entry.compositionTitle)]:[])];
   // A printed typo may coexist with agreeing work/file metadata. Both must
   // agree before they can provide an original-composition lookup alias;
   // stale copied work titles alone never determine composition identity.
@@ -69,8 +69,9 @@ export function prepareAdditionalStandards(entries,{originalSongs,dictionary,qua
   if(!includeArrangements&&originalIndex!==null){reject('existing-composition');continue;}
   if(!includeArrangements&&seen.has(identity)){reject('alternate-arrangement');continue;}
   const sourcePath=entry.provenance?.path;
-  const printedIdentity=titleMetadata?.selectedFrom==='printed title credit'&&compositionKey(titleMetadata.printedTitle)===key;
-  if(sourcePath&&compositionKey(path.basename(sourcePath).replace(/\.(?:musicxml|xml|mxl)$/i,''))!==key&&!printedIdentity){reject('source-title-conflict');continue;}
+  const printedIdentity=['printed title credit','source attributes.title'].includes(titleMetadata?.selectedFrom)&&compositionKey(titleMetadata.printedTitle)===key;
+  const verifiedHead=entry.provenance?.format==='Impro-Visor leadsheet'&&/^Explicit source melody-part title beginning Head/.test(entry.provenance?.headEvidence??'');
+  if(sourcePath&&compositionKey(path.basename(sourcePath).replace(/\.(?:musicxml|xml|mxl|ly\.tera|ly|ls)$/i,''))!==key&&!printedIdentity&&!verifiedHead){reject('source-title-conflict');continue;}
   if(entry.pickupBeats>EPS){reject('pickup-measure');continue;}
   if(!entry.meter||entry.meter.length!==2||!Number.isFinite(entry.barBeats)||entry.barBeats<=0||!Number.isInteger(entry.bars)||entry.bars<=0||!Array.isArray(entry.chords)||!entry.chords.length){reject('unsupported-measure-map');continue;}
   const total=entry.totalBeats??entry.bars*entry.barBeats;
@@ -80,7 +81,7 @@ export function prepareAdditionalStandards(entries,{originalSongs,dictionary,qua
   try{
    const {chords,unsupported,noHarmony}=cleanChords(entry,qualities),index=startIndex+prepared.length,result=parser.parse(chords);
    const arrangementOf=originalIndex??seen.get(identity)??null;
-   prepared.push({index,title:entry.title,normalizedTitle:key,compositionKey:identity,composer:entry.composer??'',tonic:[...entry.tonic],meter:[...entry.meter],bars:entry.bars,columns:Math.min(8,entry.bars),page:null,image:null,melodyId:entry.id,...(arrangementOf===null?{}:{arrangementOf}),source:sourceInfo(entry),provenance:{...entry.provenance,analysisBasis:'conservative-dictionary-parser',melodyArrangement:'same-MusicXML'},encodedChanges:entry.chords.map(c=>({...c})),_chords:chords,_parse:result,_unsupported:unsupported,_noHarmony:noHarmony});if(!seen.has(identity))seen.set(identity,index);sourceIds.add(entry.id);
+   prepared.push({index,title:entry.title,normalizedTitle:key,compositionKey:identity,composer:entry.composer??'',tonic:[...entry.tonic],meter:[...entry.meter],bars:entry.bars,columns:Math.min(8,entry.bars),page:null,image:null,melodyId:entry.id,...(arrangementOf===null?{}:{arrangementOf}),source:sourceInfo(entry),provenance:{...entry.provenance,analysisBasis:'conservative-dictionary-parser',melodyArrangement:'same-source'},encodedChanges:entry.chords.map(c=>({...c})),_chords:chords,_parse:result,_unsupported:unsupported,_noHarmony:noHarmony});if(!seen.has(identity))seen.set(identity,index);sourceIds.add(entry.id);
   }catch(error){reject(error.message);}
  }
  const discoveryInput=prepared.map(s=>({index:s.index,title:s.title,normalizedTitle:s.compositionKey,chords:s._chords,parse:s._parse})),patterns=discoverRepeatedPatterns(discoveryInput,{qualities,minimumStandards:minimumSupport});

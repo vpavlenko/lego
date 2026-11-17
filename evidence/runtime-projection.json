@@ -1,47 +1,47 @@
 {
   "version": 1,
-  "charts": 272,
-  "primaryStandards": 264,
+  "charts": 360,
+  "primaryStandards": 269,
   "originalCharts": 242,
-  "additionalCharts": 30,
-  "rawSourceIdentities": 317,
+  "additionalCharts": 118,
+  "rawSourceIdentities": 334,
   "coverage": {
-    "rawPassages": 4181,
-    "removedPassages": 952,
-    "keptPassages": 3229,
-    "rawOccurrences": 4081,
-    "removedOccurrences": 943,
-    "keptOccurrences": 3138,
+    "rawPassages": 6245,
+    "removedPassages": 1607,
+    "keptPassages": 4638,
+    "rawOccurrences": 5982,
+    "removedOccurrences": 1587,
+    "keptOccurrences": 4395,
     "reasons": {
       "single-harmony": {
-        "passages": 694,
-        "occurrences": 692
+        "passages": 1200,
+        "occurrences": 1195
       },
       "on-off-family": {
-        "passages": 258,
-        "occurrences": 251
+        "passages": 407,
+        "occurrences": 392
       }
     }
   },
   "reuse": {
-    "inputFamilies": 139,
-    "singleStandardFamilies": 40,
-    "reusableTargets": 99,
-    "mergedFamilies": 10,
-    "removedFamilies": 30,
-    "outputFamilies": 99,
-    "rawPassages": 3229,
-    "mergedPassages": 20,
-    "removedPassages": 51,
-    "keptPassages": 3178,
+    "inputFamilies": 154,
+    "singleStandardFamilies": 37,
+    "reusableTargets": 117,
+    "mergedFamilies": 9,
+    "removedFamilies": 28,
+    "outputFamilies": 117,
+    "rawPassages": 4638,
+    "mergedPassages": 16,
+    "removedPassages": 50,
+    "keptPassages": 4588,
     "supportBasis": "distinct standards",
     "minimumTargetStandards": 2,
     "maxVariantDistance": 0.28,
     "ambiguityMargin": 0.025
   },
-  "definitions": 919,
+  "definitions": 1218,
   "unresolvedOccurrences": 8,
-  "unchangedMusicalDataSha256": "bedda6f749c0575034331d01f378afa0ccfe795c9d16d7d310d910a40dfa156c",
+  "unchangedMusicalDataSha256": "a8cdb140027e7cfe4d62bcff9c07215875bb89dfa411d0abe1cd6ce1b72e984a",
   "decisions": [
     {
       "action": "remove",
@@ -75,35 +75,13 @@
     },
     {
       "action": "remove",
-      "source": "Diatonic I ii iii",
-      "reason": "ambiguous-supported-families"
-    },
-    {
-      "action": "remove",
       "source": "Diatonic I ii iii biii",
       "reason": "no-clear-supported-harmonic-variant"
     },
     {
       "action": "remove",
-      "source": "Diatonic I IV iii ii",
-      "reason": "no-clear-supported-harmonic-variant"
-    },
-    {
-      "action": "merge",
-      "source": "Diatonic ii iii IV",
-      "target": "Diatonic I ii iii IV",
-      "reason": "clear-supported-harmonic-variant"
-    },
-    {
-      "action": "remove",
       "source": "Dominant Cy...",
       "reason": "ambiguous-supported-families"
-    },
-    {
-      "action": "merge",
-      "source": "Dominant Cycle 4 Steps",
-      "target": "Dominant Cycle",
-      "reason": "clear-supported-harmonic-variant"
     },
     {
       "action": "remove",
@@ -116,9 +94,10 @@
       "reason": "no-clear-supported-harmonic-variant"
     },
     {
-      "action": "remove",
-      "source": "Foggy",
-      "reason": "ambiguous-supported-families"
+      "action": "merge",
+      "source": "Four Star",
+      "target": "Starlight",
+      "reason": "clear-supported-harmonic-variant"
     },
     {
       "action": "remove",
@@ -130,6 +109,11 @@
       "source": "Generalized Dominant Cycle",
       "target": "Dogleg Cycle",
       "reason": "clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Giant Step",
+      "reason": "no-clear-supported-harmonic-variant"
     },
     {
       "action": "remove",
@@ -163,11 +147,6 @@
       "reason": "no-clear-supported-harmonic-variant"
     },
     {
-      "action": "remove",
-      "source": "Night & Day",
-      "reason": "no-clear-supported-harmonic-variant"
-    },
-    {
       "action": "merge",
       "source": "Nowhere Turnaround to Minor On",
       "target": "Nowhere Turnaround Minor",
@@ -196,8 +175,8 @@
     },
     {
       "action": "merge",
-      "source": "Reverse Dominant Cycle 2 Steps",
-      "target": "Reverse Dominant Cycle",
+      "source": "Rhythm Bridge",
+      "target": "Dogleg Cycle",
       "reason": "clear-supported-harmonic-variant"
     },
     {
@@ -212,10 +191,9 @@
       "reason": "no-clear-supported-harmonic-variant"
     },
     {
-      "action": "merge",
-      "source": "Supertension Ending",
-      "target": "Tension",
-      "reason": "clear-supported-harmonic-variant"
+      "action": "remove",
+      "source": "Suprise Major Tension",
+      "reason": "no-clear-supported-harmonic-variant"
     },
     {
       "action": "remove",
@@ -235,12 +213,18 @@
     },
     {
       "action": "remove",
-      "source": "Tritone Straight",
+      "source": "To IV n Mack Turnaround",
       "reason": "no-clear-supported-harmonic-variant"
     },
     {
+      "action": "merge",
+      "source": "To IV n Yak Turnaround",
+      "target": "To IV n Yak",
+      "reason": "clear-supported-harmonic-variant"
+    },
+    {
       "action": "remove",
-      "source": "Turnaround to VI",
+      "source": "Tritone Straight",
       "reason": "no-clear-supported-harmonic-variant"
     },
     {

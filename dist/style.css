@@ -113,3 +113,13 @@ body.song-route .reader-chrome{height:32px}body.song-route main{padding-top:46px
 /* A whole brick keeps its natural width and wraps only between cards. */
 #brick-variants{columns:auto;display:flex;flex-wrap:wrap;align-items:flex-start;gap:18px 24px}.brick-variant{display:block;flex:0 0 auto;max-width:100%;margin:0}.unresolved-variants{flex:0 0 100%;width:100%}
 @media(max-width:760px){body.song-route main{padding-top:44px}.standard-heading{gap:6px}.standard-heading .top-actions{font-size:9px;gap:6px}.source-footer{gap:10px;flex-wrap:wrap}.catalog-head{padding:8px 16px}.song-link{padding-top:2px;padding-bottom:2px}}
+
+.standard-heading #header-play{flex:none;width:24px;height:26px;padding:0}.standard-heading #header-play svg{width:16px;height:16px}
+
+.rawln-row{position:relative}.brick-splash{position:absolute;top:0;bottom:0;pointer-events:none;z-index:0;background:radial-gradient(ellipse at center,#ffffff38,transparent 80%);animation:brick-splash 1.6s ease-out forwards}@keyframes brick-splash{0%,45%{opacity:0}20%,65%{opacity:1}100%{opacity:0}}@media(prefers-reduced-motion:reduce){.brick-splash{animation:none;opacity:.35}}
+.rawln-form>.rawln-row:before,.form-score>.score-row:before{left:-22px;width:16px;height:16px;box-sizing:border-box;border:1px solid #555;display:flex;align-items:center;justify-content:center;font:11px/1 var(--mono);color:#999}
+
+.harmony-symbol sup{color:inherit}.chord-slash{color:#888}.chord-bass{font-size:inherit}
+#rawl-view{padding-left:24px;margin-left:-24px}#score-scroll{padding-left:24px;margin-left:-24px}
+
+#arrangement{max-width:160px}
