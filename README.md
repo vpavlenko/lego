@@ -41,7 +41,7 @@ The existing Sites identity is retained in `.openai/hosting.json`.
   latency. Seek, tempo changes, voice muting and route changes cancel stale work.
 
 The controlled React notation component and SoundFont engine now come from
-`librawl`, pinned as `vendor/librawl-0.1.0.tgz` with lockfile integrity. React and
+`librawl`, pinned as `vendor/librawl-0.2.0.tgz` with lockfile integrity. React and
 ReactDOM are both 19.3.1. `packages/rawl-notation/` contains compatibility
 re-exports and generated CSS; no separate renderer or geometry implementation
 remains there. `src/audio-player.mjs` injects Lego's existing playback plan and
@@ -49,10 +49,17 @@ callbacks into the library transport. The build copies the library's exact CSS,
 palette, Sax browser profile, GPL license, source notice and provenance manifest.
 
 Lego retains harmony realization, source arrangements, musical analysis, routing,
-controls and MIDI export. The library supplies the complete current Lego
-controlled view and shared SoundFont engine. Rawl/Caplin integrations are
-isolated partial migrations; this does not claim replacement of their complete
-React/DOM renderers or Rawl's native MIDI backend.
+controls and MIDI export. Its controlled beat-based view now adapts notes into
+`librawl/native`'s actual Rawl note layer and section playback clock. Measure/grid
+layout remains the controlled view's responsibility. The native renderer retains
+Rawl's pitch bends, quarter tones, drums, strums, voice stacking and sustained-note
+playback behavior; Lego's existing classes, callbacks, geometry and melody layer
+order are preserved by adapter attributes. The generated compatibility stylesheet
+includes the native color and voice-shape rules.
+
+The 0.2 package is frozen and verified locally. Rawl and Caplin consumer
+validation and publication are tracked separately; this consumer does not adopt
+Rawl's native MIDI backend.
 
 ## Melodies and arrangements
 

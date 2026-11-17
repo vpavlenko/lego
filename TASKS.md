@@ -34,7 +34,7 @@ choices and alternate arrangements.
 | Variant detail |1,366 complete definitions, eight unresolved;100px measures and one continuous line; icon controls | variant MIDI round trips; notation/DOM |
 | Previous notation/audio | Output-aware clock; upward note doubling; no cursor; transparent global RN hover; root-position/compound/slash realization | transport, geometry and realization tests |
 | Previous form review | Six former ABCA cases; House10+10+8+10; Ipanema8+8+16+8; persisted AABA subgroups | form/timing audits and tests |
-| Shared library | Pinned librawl 0.1.0; React/ReactDOM 19.3.1; complete current Lego controlled view, geometry, palette, SoundFont engine and transport; generated compatibility paths | 180 tests; byte-identity and package-integrity checks |
+| Shared library | Pinned librawl 0.2.0; React/ReactDOM 19.3.1; actual native Rawl note layer and section clock through the controlled Lego adapter; shared geometry, palette, SoundFont engine and transport; generated compatibility paths | 183 tests; byte-identity and package-integrity checks |
 | Melody intake | 43 appended heads, 6,544 notes; coverage 113→154; 115 compositions unresolved | melody-coverage-audit.json; source/MIDI checks; 360 unchanged performance hashes |
 | Sources/access | Public Site retained; reference-book PDF excluded; actual source provenance/licenses preserved | package inspection and public release checks |
 
@@ -46,8 +46,8 @@ roadmap remains selectable when another edition supplies the melody.
 
 Notation and audio now consume the separate librawl package; the old local
 notation paths are thin compatibility re-exports and generated CSS. Lego's
-current controlled React view and SoundFont transport are migrated. Rawl and
-Caplin use isolated partial integrations, with no claim that their full renderers
-have been replaced. Hardware listening and physical mobile-device verification
-have not been performed. Current local verification: 403-chart build and 180/180
+controlled React view uses the actual shared native Rawl note layer and section
+clock; its SoundFont transport is shared. Rawl and Caplin validation and package
+publication are tracked separately. Hardware listening and physical mobile-device
+verification have not been performed. Current local verification: 403-chart build and 183/183
 tests; publication is tracked separately.

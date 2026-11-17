@@ -1,35 +1,39 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-11-17",
   "library": {
-    "dependency": "file:vendor/librawl-0.1.0.tgz",
-    "version": "0.1.0",
-    "archiveSha256": "42fa26966eedb15fd0750ec6d292565bf3a34e8a2931bfb0486067f5fcacf1b6",
-    "archiveIntegrity": "sha512-2CYgyoN37z7tk0kjKCnl+LahZmnvbjkDrVqLwwUauujW2NPQpC4klPqE703JT7qAhJarMFDEDukCZPiCSyiOhw==",
+    "dependency": "file:vendor/librawl-0.2.0.tgz",
+    "version": "0.2.0",
+    "archiveSha256": "34f212d2569da37e7b514ac2aff899fb68d85b4b84c218defe9ab2e9171924e8",
+    "archiveIntegrity": "sha512-kSyHAIsYTPCDtszxjptum/UZ/DITKMCqIBf0UvuMKUvrQg9BJvBnKgOc7U8Wz8SdHblHYTOzAH1m/Px/7ayFgA==",
     "react": "19.3.1",
     "reactDOM": "19.3.1",
-    "audioSourceSha256": "1950f8ca50b0b94fa1b6151f1a309a2413e8c0643f095f3ce0582bb45234c149"
+    "audioSourceSha256": "1950f8ca50b0b94fa1b6151f1a309a2413e8c0643f095f3ce0582bb45234c149",
+    "archiveBytes": 226987,
+    "archiveFiles": 48,
+    "distArtifacts": 27,
+    "status": "frozen package; consumer integration verified locally; publication tracked separately"
   },
   "copies": [
     {
       "destination": "packages/rawl-notation/src/style.css",
       "packageArtifact": "legacy-style.css",
-      "sha256": "55bedac690bbd624cbceaecdb5181b0a983b129096a7b3c5c42d4b13c64a1904"
+      "sha256": "af37df18d740d5f321e61b0bcaca2824ddb2bfce17511e7802b6632adbe43322"
     },
     {
       "destination": "dist/rawl-notation.css",
       "packageArtifact": "legacy-style.css",
-      "sha256": "55bedac690bbd624cbceaecdb5181b0a983b129096a7b3c5c42d4b13c64a1904"
+      "sha256": "af37df18d740d5f321e61b0bcaca2824ddb2bfce17511e7802b6632adbe43322"
     },
     {
       "destination": "dist/soundfont-playback.js",
       "packageArtifact": "browser/soundfont-playback-sax.js",
-      "sha256": "c43496b15d97620cc607cd4c7c23d651a422162a8997f26bc813cb4b4fe88b95"
+      "sha256": "8111fd929148a794525ed0f637a5cf773a29a3500784440b002a37d916f6da1f"
     },
     {
       "destination": "dist/rawl-colors.mjs",
       "packageArtifact": "palette.js",
-      "sha256": "acc6dd7a571bc31e69f5fbe272c4ae452e5f6f0c8938e1680ff435f818484e6f"
+      "sha256": "f296e53cb615153d8cfcb09ee4628ef0d74dac16de0fbdcf2e67fcf56eadb786"
     },
     {
       "destination": "dist/RAWL-LICENSE.txt",
@@ -44,14 +48,16 @@
     {
       "destination": "dist/librawl-provenance.json",
       "packageArtifact": "provenance.json",
-      "sha256": "cb81f78fe64005717f80b38fe3cb37da608e0d5c420daa5f61903bb3dc952330"
+      "sha256": "4292e2486652e5d369b99789e5acd9656dbeb972f398fb6802eb6c360e36dd3e"
     }
   ],
   "scope": {
     "migrated": [
       "Lego controlled RawlNotation and RawlMeasureHeader",
+      "Actual Rawl native NoteLayer and section playback clock through public librawl/native",
       "TonicSymbol adapter through library notation",
       "shared geometry and palette",
+      "native color and voice-shape CSS through generated compatibility stylesheet",
       "SoundFont engine Sax browser profile",
       "createTransport with injected Lego playbackPlan"
     ],
@@ -62,7 +68,27 @@
       "routing and controls",
       "MIDI export"
     ],
-    "otherHosts": "Rawl and Caplin integrations are isolated partial migrations, not full renderer replacement."
+    "otherHosts": "Rawl and Caplin consumer validation and publication are tracked separately; Rawl native MIDI backend adoption by this consumer is not claimed.",
+    "renderer": {
+      "entry": "librawl/native",
+      "hostModel": "quarter-note beats adapted at the controlled view boundary",
+      "implementation": "actual Rawl getNoteRectangles and native imperative section playback clock",
+      "source": "c5c9bb0407534d9b7eb9a8267078c006fa340ee6",
+      "preservedHostContract": [
+        "source note callbacks",
+        "IDs and CSS selectors",
+        "five/ten-pixel note geometry",
+        "melody stacking",
+        "muted handling",
+        "measure/grid layout"
+      ],
+      "libraryValidation": {
+        "nativeCases": 102,
+        "nativeTests": 8,
+        "legoAdapterTests": 4,
+        "fullLibraryTests": 47
+      }
+    }
   },
   "runtime": {
     "charts": 403,
@@ -74,7 +100,7 @@
   },
   "preservation": {
     "charts": 360,
-    "comparison": "Exact JSON SHA256 of ordered pitch,start,duration,voice,velocity note tuples, including sax",
+    "comparison": "Exact JSON SHA256 of ordered pitch,start,duration,voice,velocity note objects, including sax",
     "unchanged": true,
     "baselines": [
       {
@@ -1877,21 +1903,24 @@
         "notes": 180,
         "hash": "a537b9ee0fdaa65e8965f88a33c0ef7d5cdfbe969e0bfa248b149bca5b4c0b44"
       }
-    ]
+    ],
+    "lastVerified": "2026-11-17"
   },
   "checks": {
     "build": "passed",
     "full": {
-      "passed": 180,
+      "passed": 183,
       "failed": 0,
-      "skipped": 0
+      "skipped": 0,
+      "total": 183
     },
     "finalFocused": {
-      "passed": 30,
+      "passed": 3,
       "failed": 0,
       "skipped": 0
     },
     "sourceMusicalData": "First360 source charts match prior release after excluding learner brick annotations",
     "publication": "Root-owned; not performed by this integration task"
-  }
+  },
+  "artifactCount": 7
 }

@@ -9,7 +9,7 @@
     "build": "node scripts/build-site.mjs"
   },
   "dependencies": {
-    "librawl": "file:vendor/librawl-0.1.0.tgz",
+    "librawl": "file:vendor/librawl-0.2.0.tgz",
     "react": "19.3.1",
     "react-dom": "19.3.1"
   },

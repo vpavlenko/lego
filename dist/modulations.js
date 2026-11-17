@@ -2,5 +2,5 @@ var p={C:0,D:2,E:4,F:5,G:7,A:9,B:11},h=["C","D","E","F","G","A","B"],d=["C","Db"
 /*! Bundled license information:
 
 librawl/dist/geometry.js:
-  (*! librawl version: 0.1.0; audio source sha256: 1950f8ca50b0b94fa1b6151f1a309a2413e8c0643f095f3ce0582bb45234c149; GPL-3.0-only *)
+  (*! librawl version: 0.2.0; audio source sha256: 1950f8ca50b0b94fa1b6151f1a309a2413e8c0643f095f3ce0582bb45234c149; GPL-3.0-only *)
 */

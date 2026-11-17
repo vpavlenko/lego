@@ -1,0 +1,3 @@
+# Byte-identical generated copies of the upstream Rawl stylesheet.
+dist/rawl-notation.css -whitespace
+packages/rawl-notation/src/style.css -whitespace
