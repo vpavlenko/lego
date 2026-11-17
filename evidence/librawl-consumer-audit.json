@@ -2,14 +2,14 @@
   "version": 2,
   "date": "2026-11-17",
   "library": {
-    "dependency": "file:vendor/librawl-0.3.3.tgz",
-    "version": "0.3.3",
-    "archiveSha256": "894c89df46cfc7132f2007356bf01607ab6e9195e0340b3f92e3b7ed6ccbe742",
-    "archiveIntegrity": "sha512-mPMbx5JpAeVQH0V0JP+tKkc5wD6T0eAKuplT8JwSSEJDd0w6o5TxWBG2FV5P64rVvyoye+Fw2fNNs/tB27i2EQ==",
+    "dependency": "file:vendor/librawl-0.3.4.tgz",
+    "version": "0.3.4",
+    "archiveSha256": "43b61397c67d338612896021c1c89305dbda476d17d7aba031a906f414f423c1",
+    "archiveIntegrity": "sha512-7VnSp4tvJpxtyY9SLY4anBEK+dLGETBWMvPKS7Ts/lERyP0JGET2cy2QwmcGyhMaRhrmvzgIWmBpzIPXcRNo/A==",
     "react": "19.3.1",
     "reactDOM": "19.3.1",
-    "audioSourceSha256": "1950f8ca50b0b94fa1b6151f1a309a2413e8c0643f095f3ce0582bb45234c149",
-    "archiveBytes": 239126,
+    "audioSourceSha256": "71b00333d99d3a7d882060d12d513caeb32390b6548f595fa062dabfc235d734",
+    "archiveBytes": 253900,
     "archiveFiles": 49,
     "distArtifacts": 29,
     "status": "frozen package; consumer integration verified locally; publication tracked separately"
@@ -28,12 +28,12 @@
     {
       "destination": "dist/soundfont-playback.js",
       "packageArtifact": "browser/soundfont-playback-sax.js",
-      "sha256": "d41054982f14d73c8b03a39e8f34aae7b96f724ed26dd454a1599868e04b3ce4"
+      "sha256": "03f84e8f1eb4b0bb92ac3877f6ee979c22f2fd3e80555797f596f7621584951a"
     },
     {
       "destination": "dist/rawl-colors.mjs",
       "packageArtifact": "palette.js",
-      "sha256": "8069ec55a45892dbe60973423d215bd538272d24c8cb0771a3bfbc621f04ee6f"
+      "sha256": "71275f1eee98592a4221bba5f9bb4fc2a30d2f571c9ad3a6f551222fe2d46ada"
     },
     {
       "destination": "dist/RAWL-LICENSE.txt",
@@ -48,7 +48,7 @@
     {
       "destination": "dist/librawl-provenance.json",
       "packageArtifact": "provenance.json",
-      "sha256": "b23bcb74ba2c14401614506d63b0634148475bcd47c88e0d8bcca96bf1726ba6"
+      "sha256": "3d43a0af93cdf71e5d238f70fad724593b8fd80edd3c47aae8bac36db2c9f01a"
     }
   ],
   "scope": {

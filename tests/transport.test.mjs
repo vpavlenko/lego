@@ -50,14 +50,13 @@ test('chord highlights follow the Caplin output clock, not queued attacks or the
  s.setTime(secondTime+.101,secondTime+.001);s.tick();assert.ok(s.positions.at(-1)>=1);
  s.p.pause();assert.equal(s.positions.at(-1),null);assert.ok(s.p.position>=1);s.p.stop();
 });
-test('seek and tempo restarts wait for their new audible onset, including scheduler queue fences',async()=>{
+test('seek waits for its audible onset while tempo keys preserve held attacks and the live output clock',async()=>{
  const s=realClockSetup();await s.p.play();const start=s.messages.find(e=>e.kind==='on').time;s.setTime(start+.2,start+.1);s.tick();
  s.p.seek(4);assert.equal(s.p.position,4);assert.equal(s.positions.at(-1),null);await Promise.resolve();await Promise.resolve();
  const seek=s.messages.filter(e=>e.kind==='on'&&e.pitch===72).at(-1);assert.ok(seek);assert.equal(s.positions.at(-1),null);
  s.setTime(seek.time+.11,seek.time+.01);s.tick();assert.ok(Math.abs(s.positions.at(-1)-4.02)<1e-6);
- s.p.setTempo(80);assert.equal(s.positions.at(-1),null);await Promise.resolve();await Promise.resolve();
- const restart=s.messages.filter(e=>e.kind==='on'&&e.pitch===72).at(-1);assert.ok(restart.time>seek.time);assert.equal(s.positions.at(-1),null);
- const offset=s.p.position;s.setTime(restart.time+.4,restart.time+.3);s.tick();assert.ok(Math.abs(s.positions.at(-1)-(offset+.4))<1e-6);s.p.stop();
+ const offset=s.p.position,before=s.messages.length,ons=s.messages.filter(e=>e.kind==='on'&&e.pitch===72).length;s.p.setTempo(80);assert.equal(s.positions.at(-1),offset);assert.equal(s.p.state,'playing');assert.equal(s.messages.length,before);
+ s.setTime(seek.time+.4,seek.time+.3);s.tick();assert.ok(Math.abs(s.positions.at(-1)-(4+.11*2+(.3-.11)*80/60))<1e-6);assert.equal(s.messages.filter(e=>e.kind==='on'&&e.pitch===72).length,ons);assert.ok(!s.messages.slice(before).some(e=>e.kind==='cc'));s.p.stop();
 });
 test('output-latency fallback also gates highlights until the scheduled attack is audible',async()=>{
  const s=realClockSetup({timestamps:false});await s.p.play();const first=s.messages.find(e=>e.kind==='on');

@@ -12,9 +12,9 @@ import * as compatibilityPalette from '../packages/rawl-notation/src/palette.mjs
 const require=createRequire(import.meta.url),root=new URL('../',import.meta.url),read=p=>fs.readFileSync(new URL(p,root)),json=p=>JSON.parse(read(p)),libraryDist=path.dirname(require.resolve('librawl/style.css'));
 test('Lego pins the exact packed public library and one matching React runtime',()=>{
  const pkg=json('package.json'),lock=json('package-lock.json'),installed=require('react/package.json'),dom=require('react-dom/package.json');
- assert.equal(pkg.dependencies.librawl,'file:vendor/librawl-0.3.3.tgz');assert.equal(installed.version,'19.3.1');assert.equal(dom.version,installed.version);assert.equal(pkg.dependencies.react,installed.version);assert.equal(pkg.dependencies['react-dom'],installed.version);
- const integrity='sha512-'+createHash('sha512').update(read('vendor/librawl-0.3.3.tgz')).digest('base64');assert.equal(lock.packages['node_modules/librawl'].integrity,integrity);assert.equal(lock.packages['node_modules/librawl'].version,'0.3.3');
- const audit=json('evidence/librawl-consumer-audit.json');assert.equal(audit.library.archiveIntegrity,integrity);assert.equal(audit.library.archiveSha256,createHash('sha256').update(read('vendor/librawl-0.3.3.tgz')).digest('hex'));assert.equal(audit.preservation.baselines.length,360);
+ assert.equal(pkg.dependencies.librawl,'file:vendor/librawl-0.3.4.tgz');assert.equal(installed.version,'19.3.1');assert.equal(dom.version,installed.version);assert.equal(pkg.dependencies.react,installed.version);assert.equal(pkg.dependencies['react-dom'],installed.version);
+ const integrity='sha512-'+createHash('sha512').update(read('vendor/librawl-0.3.4.tgz')).digest('base64');assert.equal(lock.packages['node_modules/librawl'].integrity,integrity);assert.equal(lock.packages['node_modules/librawl'].version,'0.3.4');
+ const audit=json('evidence/librawl-consumer-audit.json');assert.equal(audit.library.archiveIntegrity,integrity);assert.equal(audit.library.archiveSha256,createHash('sha256').update(read('vendor/librawl-0.3.4.tgz')).digest('hex'));assert.equal(audit.preservation.baselines.length,360);
 });
 test('compatibility paths expose the public implementations without geometry or palette forks',()=>{
  assert.deepEqual(Object.keys(compatibilityGeometry),Object.keys(geometry));for(const key of Object.keys(geometry))assert.equal(compatibilityGeometry[key],geometry[key]);assert.equal(compatibilityPalette.RAWL_COLORS,palette.RAWL_COLORS);assert.equal(compatibilityPalette.colorIndex,palette.colorIndex);

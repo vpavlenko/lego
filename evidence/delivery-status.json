@@ -2,10 +2,10 @@
   "date": "2026-11-17",
   "library": {
     "repository": "https://github.com/vpavlenko/librawl",
-    "lego": "0.3.3",
+    "lego": "0.3.4",
     "rawl": "0.3.2",
     "caplin": "0.3.0",
-    "tests": 62
+    "tests": 71
   },
   "implementations": {
     "grouping": "shared Dominant Cycle / IV and / II and / Diatonic families",
@@ -15,12 +15,14 @@
     "cadences": "Only populated classes; source-style bracket/arc diagrams and one right-aligned vertical list",
     "comparisons": "four complete source variants, 100px/bar, visual alignment only",
     "recoloring": "shared per-score measure selection, preview, commit, Escape",
-    "tempo": "shared Rawl coarse/fine keys connected to all three hosts",
+    "tempo": "Shared continuous SoundFont rate change keeps running notes/clock/mixers/room; Rawl native WASM rate setter stays unchanged",
     "noteTooltips": "Suppressed in shared native notes, including plain, bent, quartertone and drums; accessible labels retained",
     "shiftHover": "Shared library gesture and original-note audition callback; Lego source/UI integration validated",
     "favicon": "Three solid degree2/4/6 bands only on ii; superscript7 black",
     "standardNavigation": "One composition entry links directly to a melody arrangement where available; exact source/brick-passage addresses retained",
-    "nowhereName": "Primary learner names replace Nowhere with♭VI; Cork aliases/routes retained"
+    "nowhereName": "Primary learner names replace Nowhere with♭VI; Cork aliases/routes retained",
+    "innerSections": "Inner AABA display partition takes priority over long repeated outer choruses; 10 arrangements",
+    "melodyRegister": "One minimal visual octave offset per arrangement, 262 shifted; original objects/pitches preserved for click/Shift audition and all playback/exports"
   },
   "melodies": {
     "arrangements": 507,
@@ -33,8 +35,8 @@
   },
   "validation": {
     "reader": {
-      "tests": 236,
-      "pass": 236,
+      "tests": 242,
+      "pass": 242,
       "fail": 0,
       "skip": 0
     },
@@ -70,15 +72,12 @@
     "caplinVersion": 207,
     "lego": {
       "url": "https://insights-roadmaps.cxielamiko.chatgpt.site",
-      "version": 16,
-      "sourceCommit": "8ebff9a711e4bfc5464ed56f22a84cd5985d50ac",
+      "version": 17,
+      "sourceCommit": "ae8536bcb2e22262c5113458e73e10f2f621c080",
       "status": "succeeded",
-      "anonymousReadback": {
-        "charts": 507,
-        "melodyCompositions": 258,
-        "melodyCharts": 266,
-        "library": "0.3.2"
-      }
+      "library": "0.3.3",
+      "melodyCompositions": 258,
+      "charts": 507
     }
   },
   "remaining": {
@@ -95,8 +94,7 @@
       "Love Came on Stealthy Fingers / Thunderbirds: identified encoded head not found"
     ],
     "currentRelease": [
-      "Publish shared Shift-hover and♭VI learner names",
-      "Remove tempo-change note retriggers across shared SoundFont hosts"
+      "Publish continuous tempo package0.3.4 in all three consumers"
     ]
   }
 }
