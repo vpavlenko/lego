@@ -1,0 +1,6 @@
+node_modules/
+.openai/*.tar.gz
+.DS_Store
+
+# User-excluded reference book: never publish or sync it.
+**/Insights in Jazz.pdf

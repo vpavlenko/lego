@@ -1,0 +1,7644 @@
+[
+  {
+    "index": 0,
+    "title": "Take The \"A\" Train",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.1,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/ATrain.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        27.0
+      ],
+      [
+        "('F', 'Major')",
+        5.0
+      ]
+    ]
+  },
+  {
+    "index": 1,
+    "title": "Afternoon In Paris",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/AfternoonInParis.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        20.0
+      ],
+      [
+        "('Bb', 'Major')",
+        6.0
+      ],
+      [
+        "('Ab', 'Major')",
+        6.0
+      ]
+    ]
+  },
+  {
+    "index": 2,
+    "title": "Ain't Misbehavin'",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.897,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/AintMisbehavin.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        26.0
+      ],
+      [
+        "('C', 'Minor')",
+        2.0
+      ],
+      [
+        "('F', 'Dominant')",
+        2.0
+      ],
+      [
+        "('Bb', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 3,
+    "title": "Airegin",
+    "tonic": [
+      "F",
+      "Minor"
+    ],
+    "bars": 36,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.028,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/Airegin.ls",
+    "weights": [
+      [
+        "('F', 'Minor')",
+        12.0
+      ],
+      [
+        "('Bb', 'Minor')",
+        9.0
+      ],
+      [
+        "('Ab', 'Major')",
+        9.0
+      ],
+      [
+        "('Bb', 'Major')",
+        5.0
+      ],
+      [
+        "('C', 'Major')",
+        2.0
+      ],
+      [
+        "('B', 'Major')",
+        2.0
+      ],
+      [
+        "('Db', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 4,
+    "title": "Alice In Wonderland",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 64,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.919,
+    "shift": 0,
+    "corpusFile": "leadsheets/style-samples/waltz-chopin.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        54.375
+      ],
+      [
+        "('D', 'Major')",
+        4.0
+      ],
+      [
+        "('Eb', 'Dominant')",
+        3.0
+      ],
+      [
+        "('D', 'Minor')",
+        2.625
+      ]
+    ]
+  },
+  {
+    "index": 5,
+    "title": "All Of Me",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.992,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/AllOfMe.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        16.0
+      ],
+      [
+        "('D', 'Minor')",
+        12.0
+      ],
+      [
+        "('A', 'Minor')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 6,
+    "title": "All of You",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.014,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/AllOfYou.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        25.0
+      ],
+      [
+        "('Eb', 'Minor')",
+        4.0
+      ],
+      [
+        "('F', 'Major')",
+        2.0
+      ],
+      [
+        "('Ab', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 7,
+    "title": "All the Things You Are",
+    "tonic": [
+      "Ab",
+      "Major"
+    ],
+    "bars": 36,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.012,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/AllTheThingsYouAre.ls",
+    "weights": [
+      [
+        "('Ab', 'Major')",
+        16.0
+      ],
+      [
+        "('G', 'Major')",
+        7.0
+      ],
+      [
+        "('F', 'Minor')",
+        6.0
+      ],
+      [
+        "('Eb', 'Major')",
+        5.0
+      ],
+      [
+        "('C', 'Major')",
+        3.0
+      ],
+      [
+        "('E', 'Major')",
+        3.0
+      ]
+    ]
+  },
+  {
+    "index": 8,
+    "title": "Alone Together",
+    "tonic": [
+      "D",
+      "Minor"
+    ],
+    "bars": 44,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.022,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/AloneTogether.ls",
+    "weights": [
+      [
+        "('D', 'Minor')",
+        19.0
+      ],
+      [
+        "('G', 'Minor')",
+        10.0
+      ],
+      [
+        "('D', 'Major')",
+        10.0
+      ],
+      [
+        "('F', 'Major')",
+        9.0
+      ]
+    ]
+  },
+  {
+    "index": 9,
+    "title": "Angel Eyes",
+    "tonic": [
+      "D",
+      "Minor"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.989,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/AngelEyes.ls",
+    "weights": [
+      [
+        "('D', 'Minor')",
+        20.0
+      ],
+      [
+        "('C', 'Major')",
+        4.0
+      ],
+      [
+        "('Bb', 'Major')",
+        4.0
+      ],
+      [
+        "('A', 'Major')",
+        2.0
+      ],
+      [
+        "('D', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 10,
+    "title": "Anything Goes",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/AnythingGoes.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        24.0
+      ],
+      [
+        "('F', 'Major')",
+        3.0
+      ],
+      [
+        "('E', 'Major')",
+        3.0
+      ],
+      [
+        "('E', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 11,
+    "title": "Autumn in New York",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.973,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/AutumnInNewYork.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        14.0
+      ],
+      [
+        "('Ab', 'Major')",
+        4.0
+      ],
+      [
+        "('C', 'Major')",
+        3.0
+      ],
+      [
+        "('Db', 'Major')",
+        3.0
+      ],
+      [
+        "('Bb', 'Minor')",
+        2.5
+      ],
+      [
+        "('G', 'Minor')",
+        2.0
+      ],
+      [
+        "('Eb', 'Minor')",
+        1.5
+      ],
+      [
+        "('C', 'Minor')",
+        1.0
+      ],
+      [
+        "('F', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 12,
+    "title": "Autumn Leaves",
+    "tonic": [
+      "G",
+      "Minor"
+    ],
+    "bars": 32,
+    "titleMatch": 1.1,
+    "corpusMatch": 1.009,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/AutumnLeaves.ls",
+    "weights": [
+      [
+        "('G', 'Minor')",
+        14.0
+      ],
+      [
+        "('Bb', 'Major')",
+        12.0
+      ],
+      [
+        "('Eb', 'Major')",
+        4.0
+      ],
+      [
+        "('C', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 13,
+    "title": "Avalon",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.96,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/Avalon.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        26.0
+      ],
+      [
+        "('G', 'Minor')",
+        6.0
+      ]
+    ]
+  },
+  {
+    "index": 14,
+    "title": "Baubles, Bangles, and Beads",
+    "tonic": [
+      "Ab",
+      "Major"
+    ],
+    "bars": 36,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/BaublesBanglesAndBeads.ls",
+    "weights": [
+      [
+        "('Ab', 'Major')",
+        28.0
+      ],
+      [
+        "('C', 'Major')",
+        8.0
+      ],
+      [
+        "('E', 'Major')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 15,
+    "title": "Beautiful Love",
+    "tonic": [
+      "D",
+      "Minor"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.983,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/BeautifulLove.ls",
+    "weights": [
+      [
+        "('D', 'Minor')",
+        24.0
+      ],
+      [
+        "('F', 'Major')",
+        6.0
+      ],
+      [
+        "('G', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 16,
+    "title": "Bemsha Swing",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 16,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/BemshaSwing.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        12.0
+      ],
+      [
+        "('F', 'Major')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 17,
+    "title": "Bernie's Tune",
+    "tonic": [
+      "D",
+      "Minor"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.997,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/BerniesTune.ls",
+    "weights": [
+      [
+        "('D', 'Minor')",
+        24.5
+      ],
+      [
+        "('Bb', 'Major')",
+        7.5
+      ]
+    ]
+  },
+  {
+    "index": 18,
+    "title": "Between the Devil and the Deep Blue Sea",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.969,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/BetweenTheDevilAndTheDeepBlueSea.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        22.0
+      ],
+      [
+        "('Bb', 'Major')",
+        5.0
+      ],
+      [
+        "('A', 'Major')",
+        3.75
+      ],
+      [
+        "('C', 'Major')",
+        0.75
+      ],
+      [
+        "('A', 'Minor')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 19,
+    "title": "Bewitched, Bothered, and Bewildered",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.935,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/BewitchedBotheredAndBewildered.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        27.0
+      ],
+      [
+        "('A', 'Minor')",
+        4.0
+      ],
+      [
+        "('D', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 20,
+    "title": "Blue and Sentimental",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 18,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.991,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/BlueAndSentimental.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        19.0
+      ],
+      [
+        "('Ab', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 21,
+    "title": "Blue Bossa",
+    "tonic": [
+      "C",
+      "Minor"
+    ],
+    "bars": 16,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/BlueBossa.ls",
+    "weights": [
+      [
+        "('C', 'Minor')",
+        10.0
+      ],
+      [
+        "('Db', 'Major')",
+        4.0
+      ],
+      [
+        "('F', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 22,
+    "title": "Blue Lou",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.983,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/BlueLou.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        24.0
+      ],
+      [
+        "('F', 'Major')",
+        6.0
+      ],
+      [
+        "('F', 'Dominant')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 23,
+    "title": "Blue Moon",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.969,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/BlueMoon.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        30.0
+      ],
+      [
+        "('Gb', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 24,
+    "title": "Blues #1",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 12,
+    "titleMatch": 1.1,
+    "corpusMatch": 0.957,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/BluesNumber1.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        11.0
+      ],
+      [
+        "('F', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 25,
+    "title": "Blues #2",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 12,
+    "titleMatch": 1.1,
+    "corpusMatch": 0.973,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/BluesNumber2.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        7.0
+      ],
+      [
+        "('F', 'Major')",
+        2.0
+      ],
+      [
+        "('Eb', 'Major')",
+        2.0
+      ],
+      [
+        "('Db', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 26,
+    "title": "Blues #3",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 12,
+    "titleMatch": 1.1,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/BluesNumber3.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        7.0
+      ],
+      [
+        "('F', 'Major')",
+        3.0
+      ],
+      [
+        "('D', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 27,
+    "title": "Blues #4",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 12,
+    "titleMatch": 1.1,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/BluesNumber4.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        6.0
+      ],
+      [
+        "('D', 'Major')",
+        3.0
+      ],
+      [
+        "('F', 'Dominant')",
+        2.0
+      ],
+      [
+        "('Gb', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 28,
+    "title": "Body and Soul",
+    "tonic": [
+      "Db",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/BodyAndSoul.ls",
+    "weights": [
+      [
+        "('Db', 'Major')",
+        16.0
+      ],
+      [
+        "('Bb', 'Minor')",
+        6.0
+      ],
+      [
+        "('D', 'Major')",
+        4.5
+      ],
+      [
+        "('C', 'Major')",
+        3.0
+      ],
+      [
+        "('Eb', 'Minor')",
+        1.5
+      ],
+      [
+        "('Eb', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 29,
+    "title": "Broadway",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/Broadway.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        25.0
+      ],
+      [
+        "('F', 'Major')",
+        3.0
+      ],
+      [
+        "('Eb', 'Major')",
+        3.0
+      ],
+      [
+        "('E', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 30,
+    "title": "But Beautiful",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.997,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/ButBeautiful.ls",
+    "weights": [
+      [
+        "('G', 'Major')",
+        23.5
+      ],
+      [
+        "('D', 'Major')",
+        6.0
+      ],
+      [
+        "('E', 'Minor')",
+        2.0
+      ],
+      [
+        "('F', 'Dominant')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 31,
+    "title": "But Not For Me",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.993,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/ButNotForMe.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        27.0
+      ],
+      [
+        "('Ab', 'Major')",
+        2.0
+      ],
+      [
+        "('C', 'Minor')",
+        2.0
+      ],
+      [
+        "('F', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 32,
+    "title": "Bye Bye Blackbird",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.014,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/ByeByeBlackbird.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        22.0
+      ],
+      [
+        "('G', 'Minor')",
+        6.0
+      ],
+      [
+        "('G', 'Major')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 33,
+    "title": "Ceora",
+    "tonic": [
+      "Ab",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/Ceora.ls",
+    "weights": [
+      [
+        "('Ab', 'Major')",
+        22.0
+      ],
+      [
+        "('Bb', 'Major')",
+        6.0
+      ],
+      [
+        "('Db', 'Major')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 34,
+    "title": "Cheek to Cheek",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 72,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.89,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/CheekToCheek.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        62.0
+      ],
+      [
+        "('Bb', 'Major')",
+        4.0
+      ],
+      [
+        "('G', 'Major')",
+        3.0
+      ],
+      [
+        "('A', 'Minor')",
+        3.0
+      ]
+    ]
+  },
+  {
+    "index": 35,
+    "title": "Chelsea Bridge",
+    "tonic": [
+      "Bb",
+      "Minor"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.029,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/ChelseaBridge.ls",
+    "weights": [
+      [
+        "('Db', 'Major')",
+        9.75
+      ],
+      [
+        "('Ab', 'Minor')",
+        9.0
+      ],
+      [
+        "('Bb', 'Minor')",
+        5.0
+      ],
+      [
+        "('A', 'Major')",
+        2.75
+      ],
+      [
+        "('E', 'Major')",
+        2.0
+      ],
+      [
+        "('G', 'Major')",
+        1.5
+      ],
+      [
+        "('G', 'Minor')",
+        1.0
+      ],
+      [
+        "('Eb', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 36,
+    "title": "Cherokee",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 64,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.925,
+    "shift": 0,
+    "corpusFile": "leadsheets/changes/Cherokee.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        48.0
+      ],
+      [
+        "('F', 'Major')",
+        4.0
+      ],
+      [
+        "('B', 'Major')",
+        4.0
+      ],
+      [
+        "('A', 'Major')",
+        4.0
+      ],
+      [
+        "('G', 'Major')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 37,
+    "title": "The Christmas Song",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 38,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.03,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/ChristmasSong.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        23.0
+      ],
+      [
+        "('F', 'Major')",
+        7.0
+      ],
+      [
+        "('A', 'Minor')",
+        6.0
+      ],
+      [
+        "('Eb', 'Major')",
+        3.0
+      ],
+      [
+        "('E', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 38,
+    "title": "Come Rain Or Come Shine",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.989,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/ComeRainOrComeShine.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        10.0
+      ],
+      [
+        "('F', 'Major')",
+        6.0
+      ],
+      [
+        "('Bb', 'Major')",
+        4.0
+      ],
+      [
+        "('D', 'Major')",
+        4.0
+      ],
+      [
+        "('Bb', 'Minor')",
+        3.0
+      ],
+      [
+        "('D', 'Minor')",
+        3.0
+      ],
+      [
+        "('C', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 39,
+    "title": "Confirmation",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.979,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/Confirmation.ls",
+    "weights": [
+      [
+        "('Bb', 'Dominant')",
+        12.0
+      ],
+      [
+        "('F', 'Major')",
+        9.0
+      ],
+      [
+        "('Bb', 'Major')",
+        4.0
+      ],
+      [
+        "('Db', 'Major')",
+        3.0
+      ],
+      [
+        "('C', 'Major')",
+        2.0
+      ],
+      [
+        "('F', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 40,
+    "title": "Corcovado (Quiet Nights)",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 34,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.937,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/Corcovado.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        16.0
+      ],
+      [
+        "('C', 'Major')",
+        15.0
+      ],
+      [
+        "('D', 'Major')",
+        4.0
+      ],
+      [
+        "('D', 'Dominant')",
+        2.0
+      ],
+      [
+        "('G', 'Major')",
+        2.0
+      ],
+      [
+        "('A', 'Minor')",
+        0.5
+      ],
+      [
+        "('D', 'Minor')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 41,
+    "title": "Corner Pocket (Until I Met You)",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/CornerPocket.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        26.0
+      ],
+      [
+        "('C', 'Major')",
+        6.0
+      ]
+    ]
+  },
+  {
+    "index": 42,
+    "title": "Cry Me A River",
+    "tonic": [
+      "C",
+      "Minor"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/CryMeARiver.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        9.0
+      ],
+      [
+        "('C', 'Minor')",
+        8.5
+      ],
+      [
+        "('G', 'Minor')",
+        6.5
+      ],
+      [
+        "('Bb', 'Major')",
+        4.5
+      ],
+      [
+        "('C', 'Major')",
+        2.0
+      ],
+      [
+        "('C', 'Dominant')",
+        1.5
+      ]
+    ]
+  },
+  {
+    "index": 43,
+    "title": "Cute",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.995,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/Cute.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        18.0
+      ],
+      [
+        "('Bb', 'Major')",
+        8.0
+      ],
+      [
+        "('A', 'Major')",
+        3.0
+      ],
+      [
+        "('G', 'Major')",
+        2.0
+      ],
+      [
+        "('G', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 44,
+    "title": "Danny Boy (Londonderry Air)",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.021,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/DannyBoy.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        26.75
+      ],
+      [
+        "('Eb', 'Major')",
+        4.5
+      ],
+      [
+        "('G', 'Minor')",
+        0.75
+      ]
+    ]
+  },
+  {
+    "index": 45,
+    "title": "The Days of Wine and Roses",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.981,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/DaysOfWineAndRoses.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        23.5
+      ],
+      [
+        "('G', 'Minor')",
+        4.0
+      ],
+      [
+        "('C', 'Major')",
+        2.0
+      ],
+      [
+        "('A', 'Minor')",
+        2.0
+      ],
+      [
+        "('D', 'Minor')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 46,
+    "title": "Dear Old Stockholm",
+    "tonic": [
+      "D",
+      "Minor"
+    ],
+    "bars": 30,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.024,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/DearOldStockholm.ls",
+    "weights": [
+      [
+        "('D', 'Minor')",
+        14.5
+      ],
+      [
+        "('G', 'Minor')",
+        14.5
+      ],
+      [
+        "('F', 'Major')",
+        9.0
+      ],
+      [
+        "('D', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 47,
+    "title": "Dearly Beloved",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.013,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/DearlyBeloved.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        25.0
+      ],
+      [
+        "('Db', 'Major')",
+        4.0
+      ],
+      [
+        "('D', 'Major')",
+        3.0
+      ]
+    ]
+  },
+  {
+    "index": 48,
+    "title": "Desafinado",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 68,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.992,
+    "shift": 0,
+    "corpusFile": "leadsheets/changes/Desafinado.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        40.0
+      ],
+      [
+        "('A', 'Major')",
+        13.0
+      ],
+      [
+        "('G', 'Minor')",
+        9.0
+      ],
+      [
+        "('Gb', 'Major')",
+        4.0
+      ],
+      [
+        "('C', 'Major')",
+        4.0
+      ],
+      [
+        "('G', 'Dominant')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 49,
+    "title": "Devil May Care",
+    "tonic": [
+      "A",
+      "Minor"
+    ],
+    "bars": 44,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.965,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/DevilMayCare.ls",
+    "weights": [
+      [
+        "('A', 'Minor')",
+        29.0
+      ],
+      [
+        "('C', 'Major')",
+        8.0
+      ],
+      [
+        "('Bb', 'Major')",
+        4.0
+      ],
+      [
+        "('A', 'Major')",
+        4.0
+      ],
+      [
+        "('E', 'Minor')",
+        3.0
+      ]
+    ]
+  },
+  {
+    "index": 50,
+    "title": "Don't Go To Strangers",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.997,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/DontGoToStrangers.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        18.0
+      ],
+      [
+        "('F', 'Major')",
+        10.0
+      ],
+      [
+        "('Eb', 'Major')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 51,
+    "title": "Don't Take Your Love From Me",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.96,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/DontTakeYourLoveFromMe.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        29.0
+      ],
+      [
+        "('D', 'Minor')",
+        2.0
+      ],
+      [
+        "('F', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 52,
+    "title": "Don't Worry About Me",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.971,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/DontWorryAboutMe.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        24.0
+      ],
+      [
+        "('Eb', 'Major')",
+        4.0
+      ],
+      [
+        "('C', 'Minor')",
+        3.0
+      ],
+      [
+        "('Ab', 'Dominant')",
+        0.5
+      ],
+      [
+        "('G', 'Minor')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 53,
+    "title": "Donna Lee",
+    "tonic": [
+      "Ab",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.901,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/DonnaLee.ls",
+    "weights": [
+      [
+        "('Ab', 'Major')",
+        18.0
+      ],
+      [
+        "('F', 'Minor')",
+        7.0
+      ],
+      [
+        "('Bb', 'Dominant')",
+        4.0
+      ],
+      [
+        "('Bb', 'Major')",
+        2.0
+      ],
+      [
+        "('Db', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 54,
+    "title": "Doxy",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 16,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.918,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/Doxy.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        16.0
+      ]
+    ]
+  },
+  {
+    "index": 55,
+    "title": "Dream Dancing",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 36,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/DreamDancing.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        28.5
+      ],
+      [
+        "('F', 'Major')",
+        6.5
+      ],
+      [
+        "('A', 'Major')",
+        3.0
+      ],
+      [
+        "('Eb', 'Dominant')",
+        1.0
+      ],
+      [
+        "('D', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 56,
+    "title": "A Dream Is A Wish Your Heart Makes",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.025,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/DreamIsAWishYourHeartMakes.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        18.0
+      ],
+      [
+        "('Ab', 'Major')",
+        7.0
+      ],
+      [
+        "('F', 'Minor')",
+        4.0
+      ],
+      [
+        "('F', 'Major')",
+        1.0
+      ],
+      [
+        "('B', 'Major')",
+        1.0
+      ],
+      [
+        "('Bb', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 57,
+    "title": "East Of The Sun",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 36,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.959,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/EastOfTheSun.ls",
+    "weights": [
+      [
+        "('G', 'Major')",
+        32.0
+      ],
+      [
+        "('E', 'Minor')",
+        4.0
+      ],
+      [
+        "('D', 'Major')",
+        3.0
+      ],
+      [
+        "('A', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 58,
+    "title": "Easy Living",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.872,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/EasyLiving.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        25.0
+      ],
+      [
+        "('Db', 'Major')",
+        6.5
+      ],
+      [
+        "('Bb', 'Major')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 59,
+    "title": "Embraceable You",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.965,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/EmbraceableYou.ls",
+    "weights": [
+      [
+        "('G', 'Major')",
+        19.5
+      ],
+      [
+        "('E', 'Minor')",
+        4.5
+      ],
+      [
+        "('B', 'Minor')",
+        2.0
+      ],
+      [
+        "('D', 'Major')",
+        2.0
+      ],
+      [
+        "('C', 'Major')",
+        2.0
+      ],
+      [
+        "('A', 'Minor')",
+        1.0
+      ],
+      [
+        "('Gb', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 60,
+    "title": "Emily",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 40,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.99,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/Emily.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        27.0
+      ],
+      [
+        "('F', 'Major')",
+        7.0
+      ],
+      [
+        "('A', 'Major')",
+        4.0
+      ],
+      [
+        "('A', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 61,
+    "title": "Every Time We Say Goodbye",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.021,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/EveryTimeWeSayGoodbye.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        22.5
+      ],
+      [
+        "('Ab', 'Major')",
+        7.5
+      ],
+      [
+        "('Gb', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 62,
+    "title": "Everything Happens To Me",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/EverythingHappensToMe.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        26.0
+      ],
+      [
+        "('Eb', 'Major')",
+        4.0
+      ],
+      [
+        "('D', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 63,
+    "title": "Everything I Love",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.945,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/EverythingILove.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        17.0
+      ],
+      [
+        "('G', 'Major')",
+        4.5
+      ],
+      [
+        "('Ab', 'Major')",
+        3.0
+      ],
+      [
+        "('D', 'Major')",
+        3.0
+      ],
+      [
+        "('Bb', 'Major')",
+        2.5
+      ],
+      [
+        "('G', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 64,
+    "title": "Falling In Love With Love",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/FallingInLoveWithLove.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        28.0
+      ],
+      [
+        "('G', 'Major')",
+        2.0
+      ],
+      [
+        "('C', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 65,
+    "title": "A Fine Romance",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.013,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/FineRomance.ls",
+    "weights": [
+      [
+        "('G', 'Major')",
+        32.0
+      ]
+    ]
+  },
+  {
+    "index": 66,
+    "title": "Flamingo",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.006,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/Flamingo.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        18.0
+      ],
+      [
+        "('Eb', 'Major')",
+        6.0
+      ],
+      [
+        "('Ab', 'Major')",
+        4.0
+      ],
+      [
+        "('F', 'Minor')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 67,
+    "title": "Fly Me To The Moon",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/FlyMeToTheMoon.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        24.0
+      ],
+      [
+        "('A', 'Minor')",
+        7.0
+      ],
+      [
+        "('D', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 68,
+    "title": "A Foggy Day",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 34,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.014,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/FoggyDay.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        36.0
+      ],
+      [
+        "('Bb', 'Major')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 69,
+    "title": "Four",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.01,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/Four.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        25.0
+      ],
+      [
+        "('Db', 'Major')",
+        4.0
+      ],
+      [
+        "('C', 'Minor')",
+        3.0
+      ]
+    ]
+  },
+  {
+    "index": 70,
+    "title": "Gee, Baby, Ain't I Good to You",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 16,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.893,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/GeeBabyAintIGoodToYou.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        8.0
+      ],
+      [
+        "('C', 'Dominant')",
+        6.0
+      ],
+      [
+        "('C', 'Minor')",
+        1.0
+      ],
+      [
+        "('Ab', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 71,
+    "title": "Georgia",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.1,
+    "corpusMatch": 1.024,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/GeorgiaOnMyMind.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        16.5
+      ],
+      [
+        "('D', 'Minor')",
+        9.5
+      ],
+      [
+        "('A', 'Minor')",
+        3.5
+      ],
+      [
+        "('C', 'Major')",
+        2.0
+      ],
+      [
+        "('Bb', 'Dominant')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 72,
+    "title": "A Ghost of a Chance",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/GhostOfAChance.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        23.5
+      ],
+      [
+        "('Eb', 'Major')",
+        6.0
+      ],
+      [
+        "('E', 'Minor')",
+        2.0
+      ],
+      [
+        "('D', 'Minor')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 73,
+    "title": "The Girl from Ipanema",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 40,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/GirlFromIpanema.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        26.0
+      ],
+      [
+        "('Gb', 'Major')",
+        4.0
+      ],
+      [
+        "('Gb', 'Minor')",
+        4.0
+      ],
+      [
+        "('G', 'Minor')",
+        4.0
+      ],
+      [
+        "('Gb', 'Dominant')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 74,
+    "title": "Gone With the Wind",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.02,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/GoneWithTheWind.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        18.0
+      ],
+      [
+        "('G', 'Major')",
+        8.0
+      ],
+      [
+        "('F', 'Major')",
+        3.0
+      ],
+      [
+        "('C', 'Minor')",
+        2.0
+      ],
+      [
+        "('Ab', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 75,
+    "title": "On Green Dolphin Street",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.979,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/OnGreenDolphinStreet.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        21.0
+      ],
+      [
+        "('Eb', 'Minor')",
+        4.0
+      ],
+      [
+        "('Gb', 'Major')",
+        3.0
+      ],
+      [
+        "('C', 'Minor')",
+        3.0
+      ],
+      [
+        "('G', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 76,
+    "title": "Groovin' High",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/GroovinHigh.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        32.0
+      ]
+    ]
+  },
+  {
+    "index": 77,
+    "title": "Have You Met Miss Jones",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.959,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/HaveYouMetMissJones.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        21.0
+      ],
+      [
+        "('Gb', 'Major')",
+        4.0
+      ],
+      [
+        "('Bb', 'Major')",
+        3.0
+      ],
+      [
+        "('A', 'Minor')",
+        2.0
+      ],
+      [
+        "('D', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 78,
+    "title": "Here's That Rainy Day",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/HeresThatRainyDay.ls",
+    "weights": [
+      [
+        "('G', 'Major')",
+        25.0
+      ],
+      [
+        "('Bb', 'Major')",
+        4.0
+      ],
+      [
+        "('C', 'Major')",
+        3.0
+      ]
+    ]
+  },
+  {
+    "index": 79,
+    "title": "Honeysuckle Rose",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.984,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/HoneysuckleRose.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        32.0
+      ]
+    ]
+  },
+  {
+    "index": 80,
+    "title": "A House is Not a Home",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 38,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.962,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/HouseIsNotAHome.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        27.5
+      ],
+      [
+        "('Eb', 'Major')",
+        22.5
+      ],
+      [
+        "('C', 'Major')",
+        4.0
+      ],
+      [
+        "('G', 'Minor')",
+        1.5
+      ],
+      [
+        "('Db', 'Major')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 81,
+    "title": "How About You?",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.927,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/HowAboutYou.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        18.0
+      ],
+      [
+        "('E', 'Major')",
+        4.0
+      ],
+      [
+        "('F', 'Major')",
+        4.0
+      ],
+      [
+        "('D', 'Minor')",
+        2.0
+      ],
+      [
+        "('Db', 'Major')",
+        2.0
+      ],
+      [
+        "('A', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 82,
+    "title": "I Can't Believe that You're in Love with Me",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.011,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/ICantBelieveThatYoureInLoveWithMe.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        22.0
+      ],
+      [
+        "('F', 'Major')",
+        10.0
+      ]
+    ]
+  },
+  {
+    "index": 83,
+    "title": "I Can't Get Started",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.979,
+    "shift": 0,
+    "corpusFile": "leadsheets/changes/ICantGetStarted.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        22.0
+      ],
+      [
+        "('Gb', 'Major')",
+        6.0
+      ],
+      [
+        "('D', 'Major')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 84,
+    "title": "I Fall in Love Too Easily",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 16,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.971,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/IFallInLoveTooEasily.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        8.0
+      ],
+      [
+        "('C', 'Major')",
+        4.0
+      ],
+      [
+        "('C', 'Minor')",
+        2.0
+      ],
+      [
+        "('F', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 85,
+    "title": "I Get Along Without You Very Well",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 50,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.949,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/IGetAlongWithoutYouVeryWell.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        64.0
+      ],
+      [
+        "('G', 'Minor')",
+        6.0
+      ],
+      [
+        "('C', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 86,
+    "title": "I Got It Bad",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.978,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/IGotItBad.ls",
+    "weights": [
+      [
+        "('G', 'Major')",
+        20.5
+      ],
+      [
+        "('D', 'Major')",
+        7.5
+      ],
+      [
+        "('A', 'Minor')",
+        3.0
+      ],
+      [
+        "('C', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 87,
+    "title": "I Guess I'll Hang My Tears Out to Dry",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 35,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.016,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/IGuessIllHangMyTearsOutToDry.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        18.75
+      ],
+      [
+        "('Bb', 'Major')",
+        8.5
+      ],
+      [
+        "('A', 'Minor')",
+        7.5
+      ],
+      [
+        "('G', 'Major')",
+        4.0
+      ],
+      [
+        "('D', 'Minor')",
+        0.75
+      ],
+      [
+        "('C', 'Minor')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 88,
+    "title": "I Love You",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/ILoveYou.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        25.0
+      ],
+      [
+        "('A', 'Major')",
+        4.0
+      ],
+      [
+        "('F', 'Minor')",
+        2.0
+      ],
+      [
+        "('A', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 89,
+    "title": "I Loves You Porgy",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 33,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.961,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/ILovesYouPorgy.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        15.75
+      ],
+      [
+        "('C', 'Major')",
+        11.5
+      ],
+      [
+        "('G', 'Minor')",
+        4.0
+      ],
+      [
+        "('A', 'Minor')",
+        3.5
+      ],
+      [
+        "('D', 'Minor')",
+        2.25
+      ],
+      [
+        "('C', 'Minor')",
+        2.0
+      ],
+      [
+        "('Bb', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 90,
+    "title": "I Remember Clifford",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.01,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/IRememberClifford.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        14.0
+      ],
+      [
+        "('Ab', 'Major')",
+        6.0
+      ],
+      [
+        "('C', 'Minor')",
+        5.0
+      ],
+      [
+        "('Bb', 'Major')",
+        3.0
+      ],
+      [
+        "('G', 'Minor')",
+        3.0
+      ],
+      [
+        "('D', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 91,
+    "title": "I Remember You",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 36,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.021,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/IRememberYou.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        25.0
+      ],
+      [
+        "('Bb', 'Major')",
+        4.0
+      ],
+      [
+        "('D', 'Major')",
+        4.0
+      ],
+      [
+        "('Ab', 'Major')",
+        2.0
+      ],
+      [
+        "('C', 'Major')",
+        2.0
+      ],
+      [
+        "('A', 'Minor')",
+        1.0
+      ],
+      [
+        "('G', 'Minor')",
+        1.0
+      ],
+      [
+        "('G', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 92,
+    "title": "I Should Care",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.017,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/IShouldCare.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        17.0
+      ],
+      [
+        "('D', 'Minor')",
+        6.0
+      ],
+      [
+        "('G', 'Major')",
+        6.0
+      ],
+      [
+        "('F', 'Major')",
+        3.0
+      ]
+    ]
+  },
+  {
+    "index": 93,
+    "title": "I Thought About You",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.996,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/IThoughtAboutYou.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        20.0
+      ],
+      [
+        "('Bb', 'Major')",
+        6.0
+      ],
+      [
+        "('G', 'Dominant')",
+        4.0
+      ],
+      [
+        "('G', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 94,
+    "title": "I Wish You Love",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.0,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/IWishYouLove.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        24.0
+      ],
+      [
+        "('F', 'Minor')",
+        3.0
+      ],
+      [
+        "('Ab', 'Major')",
+        2.0
+      ],
+      [
+        "('Bb', 'Dominant')",
+        1.5
+      ],
+      [
+        "('Bb', 'Major')",
+        1.5
+      ]
+    ]
+  },
+  {
+    "index": 95,
+    "title": "I'll Remember April",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 48,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.993,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/IllRememberApril.ls",
+    "weights": [
+      [
+        "('G', 'Major')",
+        29.0
+      ],
+      [
+        "('G', 'Minor')",
+        8.0
+      ],
+      [
+        "('Bb', 'Major')",
+        8.0
+      ],
+      [
+        "('E', 'Major')",
+        3.0
+      ]
+    ]
+  },
+  {
+    "index": 96,
+    "title": "I'm Confessin' that I Love You",
+    "tonic": [
+      "Ab",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.1,
+    "corpusMatch": 0.971,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/ImConfessin.ls",
+    "weights": [
+      [
+        "('Ab', 'Major')",
+        25.25
+      ],
+      [
+        "('Db', 'Major')",
+        5.0
+      ],
+      [
+        "('Bb', 'Dominant')",
+        1.0
+      ],
+      [
+        "('Bb', 'Minor')",
+        0.75
+      ]
+    ]
+  },
+  {
+    "index": 97,
+    "title": "I'm Old Fashioned",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 36,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.022,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/ImOldFashioned.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        23.5
+      ],
+      [
+        "('C', 'Major')",
+        4.0
+      ],
+      [
+        "('A', 'Major')",
+        2.5
+      ],
+      [
+        "('D', 'Major')",
+        2.5
+      ],
+      [
+        "('D', 'Minor')",
+        2.0
+      ],
+      [
+        "('G', 'Minor')",
+        2.0
+      ],
+      [
+        "('Bb', 'Major')",
+        2.0
+      ],
+      [
+        "('G', 'Dominant')",
+        1.5
+      ]
+    ]
+  },
+  {
+    "index": 98,
+    "title": "I've Got a Crush on You",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 18,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.926,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/IveGotACrushOnYou.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        17.0
+      ],
+      [
+        "('G', 'Minor')",
+        2.0
+      ],
+      [
+        "('F', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 99,
+    "title": "I've Got the World on a String",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/IveGotTheWorldOnAString.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        32.0
+      ]
+    ]
+  },
+  {
+    "index": 100,
+    "title": "I've Got Rhythm",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.021,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/IveGotRhythm.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        32.0
+      ]
+    ]
+  },
+  {
+    "index": 101,
+    "title": "I've Grown Accustomed to Her Face",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 20,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.992,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/IveGrownAccustomedToHerFace.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        14.0
+      ],
+      [
+        "('D', 'Major')",
+        3.0
+      ],
+      [
+        "('C', 'Dominant')",
+        2.0
+      ],
+      [
+        "('F', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 102,
+    "title": "I've Never Been in Love Before",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.04,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/IveNeverBeenInLoveBefore.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        19.0
+      ],
+      [
+        "('F', 'Major')",
+        6.0
+      ],
+      [
+        "('B', 'Major')",
+        2.0
+      ],
+      [
+        "('C', 'Minor')",
+        2.0
+      ],
+      [
+        "('G', 'Major')",
+        2.0
+      ],
+      [
+        "('Ab', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 103,
+    "title": "If I Had You",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.14,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/IfIHadYou.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        14.5
+      ],
+      [
+        "('Eb', 'Major')",
+        9.0
+      ],
+      [
+        "('D', 'Minor')",
+        7.0
+      ],
+      [
+        "('F', 'Major')",
+        1.5
+      ]
+    ]
+  },
+  {
+    "index": 104,
+    "title": "Imagination",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 36,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.19,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/Imagination.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        29.5
+      ],
+      [
+        "('Bb', 'Major')",
+        2.5
+      ],
+      [
+        "('F', 'Minor')",
+        2.5
+      ],
+      [
+        "('Ab', 'Major')",
+        2.0
+      ],
+      [
+        "('G', 'Minor')",
+        2.0
+      ],
+      [
+        "('D', 'Minor')",
+        1.5
+      ]
+    ]
+  },
+  {
+    "index": 105,
+    "title": "In A Mellow Tone",
+    "tonic": [
+      "Ab",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.556,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/InAMellowTone.ls",
+    "weights": [
+      [
+        "('Ab', 'Major')",
+        24.0
+      ],
+      [
+        "('Db', 'Major')",
+        8.0
+      ]
+    ]
+  },
+  {
+    "index": 106,
+    "title": "Invitation",
+    "tonic": [
+      "C",
+      "Minor"
+    ],
+    "bars": 48,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.621,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/Invitation.ls",
+    "weights": [
+      [
+        "('Eb', 'Minor')",
+        11.0
+      ],
+      [
+        "('C', 'Minor')",
+        9.0
+      ],
+      [
+        "('Bb', 'Dominant')",
+        8.0
+      ],
+      [
+        "('Db', 'Dominant')",
+        4.0
+      ],
+      [
+        "('B', 'Minor')",
+        4.0
+      ],
+      [
+        "('A', 'Minor')",
+        4.0
+      ],
+      [
+        "('G', 'Minor')",
+        4.0
+      ],
+      [
+        "('G', 'Major')",
+        3.0
+      ],
+      [
+        "('C', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 107,
+    "title": "It Could Happen to You",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.42,
+    "shift": 8,
+    "corpusFile": "leadsheets/changes/ItCouldHappenToYou.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        31.0
+      ],
+      [
+        "('C', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 108,
+    "title": "It Don't Mean a Thing",
+    "tonic": [
+      "G",
+      "Minor"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.505,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/ItDontMeanAThing.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        14.0
+      ],
+      [
+        "('Bb', 'Major')",
+        11.0
+      ],
+      [
+        "('G', 'Minor')",
+        7.0
+      ]
+    ]
+  },
+  {
+    "index": 109,
+    "title": "It Had to Be You",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.211,
+    "shift": 5,
+    "corpusFile": "leadsheets/imaginary-book/ItHadToBeYou.ls",
+    "weights": [
+      [
+        "('G', 'Major')",
+        19.5
+      ],
+      [
+        "('E', 'Minor')",
+        4.0
+      ],
+      [
+        "('D', 'Major')",
+        3.5
+      ],
+      [
+        "('C', 'Major')",
+        3.5
+      ],
+      [
+        "('A', 'Dominant')",
+        1.5
+      ]
+    ]
+  },
+  {
+    "index": 110,
+    "title": "It Might As Well Be Spring",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 40,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.388,
+    "shift": 5,
+    "corpusFile": "leadsheets/imaginary-book/ItMightAsWellBeSpring.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        26.0
+      ],
+      [
+        "('F', 'Major')",
+        7.5
+      ],
+      [
+        "('C', 'Dominant')",
+        2.0
+      ],
+      [
+        "('A', 'Minor')",
+        1.5
+      ],
+      [
+        "('Eb', 'Major')",
+        1.5
+      ],
+      [
+        "('D', 'Dominant')",
+        1.0
+      ],
+      [
+        "('D', 'Minor')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 111,
+    "title": "It's You or No One",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.494,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/ItsYouOrNoOne.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        24.0
+      ],
+      [
+        "('Ab', 'Major')",
+        4.0
+      ],
+      [
+        "('C', 'Major')",
+        2.0
+      ],
+      [
+        "('G', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 112,
+    "title": "The Joint is Jumpin'",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.381,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/JointIsJumpin.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        19.5
+      ],
+      [
+        "('F', 'Major')",
+        4.5
+      ],
+      [
+        "('D', 'Major')",
+        4.0
+      ],
+      [
+        "('Eb', 'Major')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 113,
+    "title": "Just Friends",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.923,
+    "shift": 2,
+    "corpusFile": "leadsheets/changes/JustFriends.ls",
+    "weights": [
+      [
+        "('G', 'Major')",
+        15.0
+      ],
+      [
+        "('E', 'Minor')",
+        12.0
+      ],
+      [
+        "('C', 'Major')",
+        5.0
+      ]
+    ]
+  },
+  {
+    "index": 114,
+    "title": "Just In Time",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.754,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/JustInTime.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        17.0
+      ],
+      [
+        "('G', 'Minor')",
+        6.0
+      ],
+      [
+        "('C', 'Dominant')",
+        4.0
+      ],
+      [
+        "('Eb', 'Major')",
+        3.0
+      ],
+      [
+        "('G', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 115,
+    "title": "Just the Way You Are",
+    "tonic": [
+      "D",
+      "Major"
+    ],
+    "bars": 54,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.453,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/JustTheWayYouAre.ls",
+    "weights": [
+      [
+        "('D', 'Major')",
+        40.0
+      ],
+      [
+        "('B', 'Minor')",
+        8.0
+      ],
+      [
+        "('E', 'Major')",
+        4.0
+      ],
+      [
+        "('F', 'Major')",
+        4.0
+      ],
+      [
+        "('D', 'Minor')",
+        4.0
+      ],
+      [
+        "('E', 'Minor')",
+        2.0
+      ],
+      [
+        "('G', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 116,
+    "title": "Lady Be Good",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.1,
+    "corpusMatch": 0.444,
+    "shift": 2,
+    "corpusFile": "leadsheets/imaginary-book/LadyBeGood.ls",
+    "weights": [
+      [
+        "('G', 'Major')",
+        30.0
+      ],
+      [
+        "('C', 'Major')",
+        1.0
+      ],
+      [
+        "('E', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 117,
+    "title": "Ladybird",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 16,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.0,
+    "shift": 0,
+    "corpusFile": "leadsheets/changes/Ladybird.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        10.0
+      ],
+      [
+        "('Ab', 'Major')",
+        4.0
+      ],
+      [
+        "('G', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 118,
+    "title": "Lady Is A Tramp",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.602,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/LadyIsATramp.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        26.0
+      ],
+      [
+        "('F', 'Major')",
+        4.0
+      ],
+      [
+        "('A', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 119,
+    "title": "Laura",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.175,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/Laura.ls",
+    "weights": [
+      [
+        "('G', 'Major')",
+        11.0
+      ],
+      [
+        "('F', 'Major')",
+        8.0
+      ],
+      [
+        "('C', 'Major')",
+        7.0
+      ],
+      [
+        "('Eb', 'Major')",
+        4.0
+      ],
+      [
+        "('A', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 120,
+    "title": "Let It Snow!",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.1,
+    "corpusMatch": 0.255,
+    "shift": 7,
+    "corpusFile": "leadsheets/imaginary-book/LetItSnowLetItSnowLetItSnow.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        19.5
+      ],
+      [
+        "('G', 'Major')",
+        6.5
+      ],
+      [
+        "('D', 'Minor')",
+        3.0
+      ],
+      [
+        "('D', 'Major')",
+        3.0
+      ]
+    ]
+  },
+  {
+    "index": 121,
+    "title": "Li'l Darlin'",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.274,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/LilDarlin.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        18.0
+      ],
+      [
+        "('F', 'Major')",
+        11.0
+      ],
+      [
+        "('G', 'Minor')",
+        2.0
+      ],
+      [
+        "('G', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 122,
+    "title": "Like Someone in Love",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.624,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/LikeSomeoneInLove.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        18.0
+      ],
+      [
+        "('A', 'Major')",
+        5.0
+      ],
+      [
+        "('A', 'Minor')",
+        4.0
+      ],
+      [
+        "('F', 'Major')",
+        4.0
+      ],
+      [
+        "('D', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 123,
+    "title": "Love Came on Stealthy Fingers",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 0,
+    "corpusMatch": null,
+    "shift": null,
+    "corpusFile": null,
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        16.5
+      ],
+      [
+        "('C', 'Major')",
+        5.0
+      ],
+      [
+        "('Db', 'Major')",
+        3.5
+      ],
+      [
+        "('B', 'Major')",
+        2.0
+      ],
+      [
+        "('A', 'Major')",
+        2.0
+      ],
+      [
+        "('C', 'Minor')",
+        2.0
+      ],
+      [
+        "('D', 'Minor')",
+        0.5
+      ],
+      [
+        "('G', 'Minor')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 124,
+    "title": "Love for Sale",
+    "tonic": [
+      "Bb",
+      "Minor"
+    ],
+    "bars": 48,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.523,
+    "shift": 0,
+    "corpusFile": "leadsheets/solos/LoveForSaleGenerated.ls",
+    "weights": [
+      [
+        "('Db', 'Major')",
+        24.0
+      ],
+      [
+        "('Bb', 'Minor')",
+        8.0
+      ],
+      [
+        "('Eb', 'Dominant')",
+        8.0
+      ],
+      [
+        "('Eb', 'Minor')",
+        8.0
+      ]
+    ]
+  },
+  {
+    "index": 125,
+    "title": "Love is Here to Stay",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.1,
+    "corpusMatch": 0.788,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/OurLoveIsHereToStay.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        25.0
+      ],
+      [
+        "('G', 'Major')",
+        4.0
+      ],
+      [
+        "('Bb', 'Major')",
+        2.0
+      ],
+      [
+        "('D', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 126,
+    "title": "Love Walked In",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.622,
+    "shift": 2,
+    "corpusFile": "leadsheets/imaginary-book/LoveWalkedIn.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        21.0
+      ],
+      [
+        "('Bb', 'Major')",
+        6.0
+      ],
+      [
+        "('C', 'Dominant')",
+        4.0
+      ],
+      [
+        "('G', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 127,
+    "title": "Lover",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 48,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.785,
+    "shift": 3,
+    "corpusFile": "leadsheets/imaginary-book/Lover.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        35.0
+      ],
+      [
+        "('G', 'Major')",
+        9.0
+      ],
+      [
+        "('Bb', 'Major')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 128,
+    "title": "Lover Man",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.478,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/LoverMan.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        14.0
+      ],
+      [
+        "('C', 'Major')",
+        6.0
+      ],
+      [
+        "('Eb', 'Major')",
+        6.0
+      ],
+      [
+        "('G', 'Major')",
+        4.0
+      ],
+      [
+        "('D', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 129,
+    "title": "Lullaby of Birdland",
+    "tonic": [
+      "A",
+      "Minor"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.556,
+    "shift": 4,
+    "corpusFile": "leadsheets/imaginary-book/LullabyOfBirdland.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        16.5
+      ],
+      [
+        "('A', 'Minor')",
+        8.0
+      ],
+      [
+        "('D', 'Minor')",
+        5.5
+      ],
+      [
+        "('A', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 130,
+    "title": "Lullaby of the Leaves",
+    "tonic": [
+      "C",
+      "Minor"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.549,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/LullabyOfTheLeaves.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        16.5
+      ],
+      [
+        "('C', 'Minor')",
+        6.0
+      ],
+      [
+        "('F', 'Minor')",
+        6.0
+      ],
+      [
+        "('Ab', 'Major')",
+        2.0
+      ],
+      [
+        "('F', 'Major')",
+        1.5
+      ]
+    ]
+  },
+  {
+    "index": 131,
+    "title": "Makin' Whoopee",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.628,
+    "shift": 2,
+    "corpusFile": "leadsheets/imaginary-book/MakinWhoopee.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        22.0
+      ],
+      [
+        "('Bb', 'Major')",
+        6.0
+      ],
+      [
+        "('G', 'Minor')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 132,
+    "title": "Manhattan",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.349,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/Manhattan.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        26.0
+      ],
+      [
+        "('F', 'Dominant')",
+        4.0
+      ],
+      [
+        "('G', 'Dominant')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 133,
+    "title": "The Masquerade is Over",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 40,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.649,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/MasqueradeIsOver.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        32.0
+      ],
+      [
+        "('Ab', 'Major')",
+        8.0
+      ]
+    ]
+  },
+  {
+    "index": 134,
+    "title": "Mean to Me",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.0,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/MeanToMe.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        26.0
+      ],
+      [
+        "('Bb', 'Major')",
+        6.0
+      ]
+    ]
+  },
+  {
+    "index": 135,
+    "title": "Meditation",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 40,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.562,
+    "shift": 2,
+    "corpusFile": "leadsheets/imaginary-book/Meditation.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        38.0
+      ],
+      [
+        "('C', 'Dominant')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 136,
+    "title": "Memories of You",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.303,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/MemoriesOfYou.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        22.0
+      ],
+      [
+        "('Ab', 'Major')",
+        6.0
+      ],
+      [
+        "('C', 'Minor')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 137,
+    "title": "Minority",
+    "tonic": [
+      "F",
+      "Minor"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.333,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/Minority.ls",
+    "weights": [
+      [
+        "('F', 'Minor')",
+        12.0
+      ],
+      [
+        "('Gb', 'Major')",
+        8.0
+      ],
+      [
+        "('F', 'Major')",
+        8.0
+      ],
+      [
+        "('Bb', 'Minor')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 138,
+    "title": "Misty",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.545,
+    "shift": 0,
+    "corpusFile": "leadsheets/solos/MistySolo.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        28.0
+      ],
+      [
+        "('Ab', 'Major')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 139,
+    "title": "Moment's Notice",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 37,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.85,
+    "shift": 10,
+    "corpusFile": "leadsheets/transcriptions/JohnColtrane/MomentsNoticeColtrane.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        19.0
+      ],
+      [
+        "('Db', 'Major')",
+        6.0
+      ],
+      [
+        "('Ab', 'Major')",
+        6.0
+      ],
+      [
+        "('Gb', 'Major')",
+        5.0
+      ],
+      [
+        "('C', 'Minor')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 140,
+    "title": "Moonglow",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.427,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/Moonglow.ls",
+    "weights": [
+      [
+        "('G', 'Major')",
+        19.75
+      ],
+      [
+        "('A', 'Minor')",
+        5.25
+      ],
+      [
+        "('A', 'Major')",
+        4.0
+      ],
+      [
+        "('F', 'Major')",
+        1.5
+      ],
+      [
+        "('G', 'Minor')",
+        0.75
+      ],
+      [
+        "('C', 'Major')",
+        0.75
+      ]
+    ]
+  },
+  {
+    "index": 141,
+    "title": "Moonlight in Vermont",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 26,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.639,
+    "shift": 0,
+    "corpusFile": "leadsheets/changes/MoonlightInVermont.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        24.0
+      ],
+      [
+        "('G', 'Major')",
+        4.0
+      ],
+      [
+        "('Ab', 'Major')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 142,
+    "title": "Moon River",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 40,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.782,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/MoonRiver.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        26.0
+      ],
+      [
+        "('A', 'Minor')",
+        7.0
+      ],
+      [
+        "('E', 'Minor')",
+        4.0
+      ],
+      [
+        "('F', 'Major')",
+        3.0
+      ]
+    ]
+  },
+  {
+    "index": 143,
+    "title": "The More I See You",
+    "tonic": [
+      "Ab",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.593,
+    "shift": 5,
+    "corpusFile": "leadsheets/imaginary-book/MoreISeeYou.ls",
+    "weights": [
+      [
+        "('Ab', 'Major')",
+        24.0
+      ],
+      [
+        "('Bb', 'Major')",
+        3.0
+      ],
+      [
+        "('E', 'Major')",
+        2.0
+      ],
+      [
+        "('B', 'Dominant')",
+        1.0
+      ],
+      [
+        "('Eb', 'Dominant')",
+        1.0
+      ],
+      [
+        "('A', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 144,
+    "title": "My Foolish Heart",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.741,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/MyFoolishHeart.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        23.0
+      ],
+      [
+        "('G', 'Minor')",
+        6.0
+      ],
+      [
+        "('F', 'Major')",
+        2.0
+      ],
+      [
+        "('C', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 145,
+    "title": "My Funny Valentine",
+    "tonic": [
+      "C",
+      "Minor"
+    ],
+    "bars": 36,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.35,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/MyFunnyValentine.ls",
+    "weights": [
+      [
+        "('C', 'Minor')",
+        24.0
+      ],
+      [
+        "('Eb', 'Major')",
+        7.5
+      ],
+      [
+        "('F', 'Minor')",
+        3.5
+      ],
+      [
+        "('B', 'Major')",
+        2.0
+      ],
+      [
+        "('Ab', 'Major')",
+        1.5
+      ],
+      [
+        "('A', 'Minor')",
+        1.5
+      ]
+    ]
+  },
+  {
+    "index": 146,
+    "title": "My Old Flame",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.377,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/MyOldFlame.ls",
+    "weights": [
+      [
+        "('G', 'Major')",
+        14.5
+      ],
+      [
+        "('Bb', 'Major')",
+        8.0
+      ],
+      [
+        "('A', 'Minor')",
+        6.5
+      ],
+      [
+        "('G', 'Minor')",
+        2.0
+      ],
+      [
+        "('D', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 147,
+    "title": "My Romance",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.527,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/MyRomance.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        21.0
+      ],
+      [
+        "('A', 'Minor')",
+        5.5
+      ],
+      [
+        "('E', 'Minor')",
+        1.5
+      ],
+      [
+        "('D', 'Minor')",
+        1.5
+      ],
+      [
+        "('F', 'Major')",
+        1.0
+      ],
+      [
+        "('G', 'Major')",
+        1.0
+      ],
+      [
+        "('Bb', 'Dominant')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 148,
+    "title": "My Shining Hour",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.75,
+    "shift": 9,
+    "corpusFile": "leadsheets/imaginary-book/MyShiningHour.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        22.0
+      ],
+      [
+        "('A', 'Minor')",
+        6.0
+      ],
+      [
+        "('F', 'Major')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 149,
+    "title": "Nancy with the Laughing Face",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.797,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/Nancy.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        16.5
+      ],
+      [
+        "('C', 'Minor')",
+        8.0
+      ],
+      [
+        "('F', 'Minor')",
+        3.5
+      ],
+      [
+        "('Bb', 'Major')",
+        2.0
+      ],
+      [
+        "('Gb', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 150,
+    "title": "The Nearness of You",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 36,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.812,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/NearnessOfYou.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        34.0
+      ],
+      [
+        "('G', 'Major')",
+        4.0
+      ],
+      [
+        "('Bb', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 151,
+    "title": "Never Let Me Go",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 28,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.925,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/NeverLetMeGo.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        10.0
+      ],
+      [
+        "('G', 'Minor')",
+        6.5
+      ],
+      [
+        "('Ab', 'Major')",
+        5.0
+      ],
+      [
+        "('F', 'Major')",
+        2.5
+      ],
+      [
+        "('Bb', 'Major')",
+        2.5
+      ],
+      [
+        "('Db', 'Major')",
+        2.0
+      ],
+      [
+        "('C', 'Major')",
+        2.0
+      ],
+      [
+        "('A', 'Minor')",
+        0.5
+      ],
+      [
+        "('G', 'Major')",
+        0.5
+      ],
+      [
+        "('C', 'Minor')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 152,
+    "title": "Night and Day",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.677,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/NightAndDay.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        24.0
+      ],
+      [
+        "('Gb', 'Major')",
+        8.0
+      ]
+    ]
+  },
+  {
+    "index": 153,
+    "title": "A Night in Tunisia",
+    "tonic": [
+      "D",
+      "Minor"
+    ],
+    "bars": 40,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.468,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/NightInTunisia.ls",
+    "weights": [
+      [
+        "('D', 'Minor')",
+        17.0
+      ],
+      [
+        "('F', 'Major')",
+        11.0
+      ],
+      [
+        "('C', 'Major')",
+        8.0
+      ],
+      [
+        "('G', 'Minor')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 154,
+    "title": "Nobody Else But Me",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 36,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.682,
+    "shift": 7,
+    "corpusFile": "leadsheets/imaginary-book/NobodyElseButMe.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        31.0
+      ],
+      [
+        "('A', 'Major')",
+        6.0
+      ],
+      [
+        "('Eb', 'Major')",
+        2.0
+      ],
+      [
+        "('D', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 155,
+    "title": "Old Devil Moon",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 48,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.431,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/OldDevilMoon.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        23.0
+      ],
+      [
+        "('Bb', 'Major')",
+        9.0
+      ],
+      [
+        "('Ab', 'Major')",
+        4.0
+      ],
+      [
+        "('Gb', 'Major')",
+        3.0
+      ],
+      [
+        "('Eb', 'Dominant')",
+        3.0
+      ],
+      [
+        "('D', 'Major')",
+        3.0
+      ],
+      [
+        "('F', 'Dominant')",
+        3.0
+      ]
+    ]
+  },
+  {
+    "index": 156,
+    "title": "On a Clear Day",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 34,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.507,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/OnAClearDay.ls",
+    "weights": [
+      [
+        "('G', 'Major')",
+        38.0
+      ],
+      [
+        "('A', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 157,
+    "title": "On a Misty Night",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.578,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/OnAMistyNight.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        22.5
+      ],
+      [
+        "('Ab', 'Major')",
+        4.0
+      ],
+      [
+        "('E', 'Major')",
+        2.5
+      ],
+      [
+        "('Bb', 'Major')",
+        2.0
+      ],
+      [
+        "('F', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 158,
+    "title": "On the Street Where You Live",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 48,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.198,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/OnTheStreetWhereYouLive.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        31.0
+      ],
+      [
+        "('C', 'Minor')",
+        6.0
+      ],
+      [
+        "('Eb', 'Major')",
+        4.0
+      ],
+      [
+        "('D', 'Minor')",
+        4.0
+      ],
+      [
+        "('C', 'Major')",
+        2.0
+      ],
+      [
+        "('D', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 159,
+    "title": "On the Sunny Side of the Street",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.366,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/OnTheSunnySideOfTheStreet.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        20.0
+      ],
+      [
+        "('F', 'Major')",
+        9.0
+      ],
+      [
+        "('G', 'Major')",
+        3.0
+      ]
+    ]
+  },
+  {
+    "index": 160,
+    "title": "Ornithology (How High the Moon)",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.886,
+    "shift": 0,
+    "corpusFile": "leadsheets/changes/Ornithology.ls",
+    "weights": [
+      [
+        "('G', 'Major')",
+        13.5
+      ],
+      [
+        "('F', 'Major')",
+        8.0
+      ],
+      [
+        "('Eb', 'Major')",
+        6.0
+      ],
+      [
+        "('G', 'Minor')",
+        4.5
+      ]
+    ]
+  },
+  {
+    "index": 161,
+    "title": "Our Delight",
+    "tonic": [
+      "Ab",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.545,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/OurDelight.ls",
+    "weights": [
+      [
+        "('Ab', 'Major')",
+        11.75
+      ],
+      [
+        "('D', 'Major')",
+        6.0
+      ],
+      [
+        "('Db', 'Major')",
+        4.0
+      ],
+      [
+        "('Bb', 'Dominant')",
+        3.0
+      ],
+      [
+        "('Bb', 'Major')",
+        3.0
+      ],
+      [
+        "('A', 'Major')",
+        3.0
+      ],
+      [
+        "('Bb', 'Minor')",
+        1.0
+      ],
+      [
+        "('Eb', 'Major')",
+        0.25
+      ]
+    ]
+  },
+  {
+    "index": 162,
+    "title": "Out of Nowhere",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.966,
+    "shift": 0,
+    "corpusFile": "leadsheets/changes/OutOfNowhere.ls",
+    "weights": [
+      [
+        "('G', 'Major')",
+        20.0
+      ],
+      [
+        "('A', 'Minor')",
+        7.0
+      ],
+      [
+        "('Ab', 'Major')",
+        4.0
+      ],
+      [
+        "('F', 'Dominant')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 163,
+    "title": "Over the Rainbow",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.211,
+    "shift": 2,
+    "corpusFile": "leadsheets/imaginary-book/OverTheRainbow.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        21.5
+      ],
+      [
+        "('F', 'Major')",
+        4.5
+      ],
+      [
+        "('G', 'Minor')",
+        3.0
+      ],
+      [
+        "('Ab', 'Major')",
+        3.0
+      ]
+    ]
+  },
+  {
+    "index": 164,
+    "title": "(It's Only a) Paper Moon",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.1,
+    "corpusMatch": 0.442,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/ItsOnlyAPaperMoon.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        24.0
+      ],
+      [
+        "('Bb', 'Major')",
+        8.0
+      ]
+    ]
+  },
+  {
+    "index": 165,
+    "title": "Peace",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 10,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.783,
+    "shift": 0,
+    "corpusFile": "leadsheets/insights/Peace.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        5.5
+      ],
+      [
+        "('B', 'Major')",
+        2.5
+      ],
+      [
+        "('A', 'Major')",
+        2.0
+      ],
+      [
+        "('Db', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 166,
+    "title": "Pennies from Heaven",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.615,
+    "shift": 0,
+    "corpusFile": "leadsheets/changes/PenniesFromHeaven.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        24.0
+      ],
+      [
+        "('F', 'Major')",
+        8.0
+      ]
+    ]
+  },
+  {
+    "index": 167,
+    "title": "Perdido",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.727,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/Perdido.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        32.0
+      ]
+    ]
+  },
+  {
+    "index": 168,
+    "title": "Polkadots and Moonbeams",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.6,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/PolkadotsAndMoonbeams.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        10.5
+      ],
+      [
+        "('A', 'Major')",
+        6.0
+      ],
+      [
+        "('D', 'Minor')",
+        3.75
+      ],
+      [
+        "('Bb', 'Major')",
+        2.25
+      ]
+    ]
+  },
+  {
+    "index": 169,
+    "title": "Poor Butterfly",
+    "tonic": [
+      "Ab",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.344,
+    "shift": 2,
+    "corpusFile": "leadsheets/imaginary-book/PoorButterfly.ls",
+    "weights": [
+      [
+        "('Ab', 'Major')",
+        22.5
+      ],
+      [
+        "('Bb', 'Major')",
+        8.0
+      ],
+      [
+        "('Bb', 'Minor')",
+        1.5
+      ]
+    ]
+  },
+  {
+    "index": 170,
+    "title": "Prelude to a Kiss",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.569,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/PreludeToAKiss.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        12.0
+      ],
+      [
+        "('D', 'Minor')",
+        6.5
+      ],
+      [
+        "('E', 'Major')",
+        6.5
+      ],
+      [
+        "('F', 'Major')",
+        6.0
+      ],
+      [
+        "('E', 'Minor')",
+        0.5
+      ],
+      [
+        "('D', 'Major')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 171,
+    "title": "Recorda Me",
+    "tonic": [
+      "A",
+      "Minor"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.591,
+    "shift": 0,
+    "corpusFile": "leadsheets/solos/RecordaMe+.ls",
+    "weights": [
+      [
+        "('A', 'Minor')",
+        10.5
+      ],
+      [
+        "('C', 'Minor')",
+        6.0
+      ],
+      [
+        "('Bb', 'Major')",
+        4.0
+      ],
+      [
+        "('Ab', 'Major')",
+        4.0
+      ],
+      [
+        "('Gb', 'Major')",
+        4.0
+      ],
+      [
+        "('F', 'Major')",
+        3.5
+      ]
+    ]
+  },
+  {
+    "index": 172,
+    "title": "Red Sails in the Sunset",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.741,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/RedSailsInTheSunset.ls",
+    "weights": [
+      [
+        "('G', 'Major')",
+        31.0
+      ],
+      [
+        "('C', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 173,
+    "title": "Remember",
+    "tonic": [
+      "Db",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.831,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/Remember.ls",
+    "weights": [
+      [
+        "('Db', 'Major')",
+        15.0
+      ],
+      [
+        "('Ab', 'Major')",
+        15.0
+      ],
+      [
+        "('F', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 174,
+    "title": "Rosetta",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.59,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/Rosetta.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        25.0
+      ],
+      [
+        "('A', 'Minor')",
+        4.0
+      ],
+      [
+        "('C', 'Major')",
+        3.0
+      ]
+    ]
+  },
+  {
+    "index": 175,
+    "title": "S'Wonderful",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.457,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/SWonderful.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        22.5
+      ],
+      [
+        "('G', 'Major')",
+        5.5
+      ],
+      [
+        "('F', 'Minor')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 176,
+    "title": "St. Thomas",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 16,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.636,
+    "shift": 0,
+    "corpusFile": "leadsheets/changes/StThomas.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        16.0
+      ]
+    ]
+  },
+  {
+    "index": 177,
+    "title": "Santa Claus is Coming to Town",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 0,
+    "corpusMatch": null,
+    "shift": null,
+    "corpusFile": null,
+    "weights": [
+      [
+        "('G', 'Major')",
+        24.0
+      ],
+      [
+        "('C', 'Major')",
+        5.0
+      ],
+      [
+        "('D', 'Dominant')",
+        3.0
+      ]
+    ]
+  },
+  {
+    "index": 178,
+    "title": "Satin Doll",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.66,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/SatinDoll.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        17.0
+      ],
+      [
+        "('D', 'Major')",
+        6.0
+      ],
+      [
+        "('F', 'Major')",
+        5.0
+      ],
+      [
+        "('Gb', 'Major')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 179,
+    "title": "Scrapple from the Apple",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.701,
+    "shift": 0,
+    "corpusFile": "leadsheets/changes/ScrappleFromTheApple.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        31.0
+      ],
+      [
+        "('G', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 180,
+    "title": "Secret Love",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 48,
+    "titleMatch": 0.909,
+    "corpusMatch": 0.532,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/MySecretLove.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        38.0
+      ],
+      [
+        "('Bb', 'Major')",
+        4.0
+      ],
+      [
+        "('Ab', 'Major')",
+        3.0
+      ],
+      [
+        "('F', 'Minor')",
+        2.0
+      ],
+      [
+        "('C', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 181,
+    "title": "September in the Rain",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.541,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/SeptemberInTheRain.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        24.0
+      ],
+      [
+        "('Ab', 'Major')",
+        5.0
+      ],
+      [
+        "('Db', 'Dominant')",
+        3.0
+      ]
+    ]
+  },
+  {
+    "index": 182,
+    "title": "September Song",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.429,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/SeptemberSong.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        24.0
+      ],
+      [
+        "('F', 'Major')",
+        5.0
+      ],
+      [
+        "('D', 'Dominant')",
+        3.0
+      ]
+    ]
+  },
+  {
+    "index": 183,
+    "title": "Shiny Stockings",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.824,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/ShinyStockings.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        23.0
+      ],
+      [
+        "('G', 'Major')",
+        4.0
+      ],
+      [
+        "('A', 'Major')",
+        3.0
+      ],
+      [
+        "('Eb', 'Major')",
+        1.0
+      ],
+      [
+        "('G', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 184,
+    "title": "Skylark",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.465,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/Skylark.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        24.0
+      ],
+      [
+        "('Ab', 'Major')",
+        4.0
+      ],
+      [
+        "('F', 'Minor')",
+        2.0
+      ],
+      [
+        "('G', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 185,
+    "title": "Slow Boat to China",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.526,
+    "shift": 2,
+    "corpusFile": "leadsheets/imaginary-book/SlowBoatToChina.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        25.0
+      ],
+      [
+        "('F', 'Major')",
+        7.0
+      ]
+    ]
+  },
+  {
+    "index": 186,
+    "title": "Smile",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 34,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.271,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/Smile.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        36.0
+      ],
+      [
+        "('G', 'Minor')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 187,
+    "title": "Softly, as in a Morning Sunrise",
+    "tonic": [
+      "C",
+      "Minor"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.238,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/SoftlyAsInAMorningSunrise.ls",
+    "weights": [
+      [
+        "('C', 'Minor')",
+        23.0
+      ],
+      [
+        "('Eb', 'Major')",
+        4.0
+      ],
+      [
+        "('E', 'Minor')",
+        2.0
+      ],
+      [
+        "('F', 'Major')",
+        2.0
+      ],
+      [
+        "('C', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 188,
+    "title": "Solar",
+    "tonic": [
+      "C",
+      "Minor"
+    ],
+    "bars": 12,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.833,
+    "shift": 10,
+    "corpusFile": "leadsheets/transcriptions/TomHarrell/SolarHarrell.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        4.0
+      ],
+      [
+        "('C', 'Minor')",
+        3.0
+      ],
+      [
+        "('Eb', 'Major')",
+        3.0
+      ],
+      [
+        "('Db', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 189,
+    "title": "Solitude",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.695,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/Solitude.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        22.0
+      ],
+      [
+        "('F', 'Dominant')",
+        6.0
+      ],
+      [
+        "('Ab', 'Major')",
+        3.0
+      ],
+      [
+        "('Bb', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 190,
+    "title": "Some Other Time",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 0,
+    "corpusMatch": null,
+    "shift": null,
+    "corpusFile": null,
+    "weights": [
+      [
+        "('C', 'Major')",
+        22.5
+      ],
+      [
+        "('Ab', 'Major')",
+        5.25
+      ],
+      [
+        "('E', 'Minor')",
+        1.5
+      ],
+      [
+        "('Db', 'Major')",
+        1.25
+      ],
+      [
+        "('D', 'Minor')",
+        1.0
+      ],
+      [
+        "('A', 'Minor')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 191,
+    "title": "Somebody Loves Me",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.348,
+    "shift": 10,
+    "corpusFile": "leadsheets/imaginary-book/SomebodyLovesMe.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        21.0
+      ],
+      [
+        "('G', 'Minor')",
+        4.0
+      ],
+      [
+        "('A', 'Minor')",
+        3.0
+      ],
+      [
+        "('D', 'Minor')",
+        2.0
+      ],
+      [
+        "('G', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 192,
+    "title": "Someday My Prince Will Come",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.197,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/SomedayMyPrinceWillCome.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        32.0
+      ]
+    ]
+  },
+  {
+    "index": 193,
+    "title": "Soon",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.244,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/Soon.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        22.0
+      ],
+      [
+        "('F', 'Major')",
+        5.0
+      ],
+      [
+        "('F', 'Minor')",
+        4.0
+      ],
+      [
+        "('Db', 'Dominant')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 194,
+    "title": "Soul Eyes",
+    "tonic": [
+      "C",
+      "Minor"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.757,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/SoulEyes.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        16.0
+      ],
+      [
+        "('Bb', 'Major')",
+        8.0
+      ],
+      [
+        "('Ab', 'Major')",
+        2.0
+      ],
+      [
+        "('G', 'Major')",
+        2.0
+      ],
+      [
+        "('Gb', 'Major')",
+        2.0
+      ],
+      [
+        "('C', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 195,
+    "title": "Stardust",
+    "tonic": [
+      "Db",
+      "Major"
+    ],
+    "bars": 48,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.4,
+    "shift": 1,
+    "corpusFile": "leadsheets/imaginary-book/Stardust.ls",
+    "weights": [
+      [
+        "('Db', 'Major')",
+        30.5
+      ],
+      [
+        "('Gb', 'Major')",
+        5.5
+      ],
+      [
+        "('Eb', 'Minor')",
+        5.0
+      ],
+      [
+        "('C', 'Major')",
+        4.0
+      ],
+      [
+        "('Gb', 'Minor')",
+        2.0
+      ],
+      [
+        "('Ab', 'Dominant')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 196,
+    "title": "Star Eyes",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 36,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.615,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/StarEyes.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        13.0
+      ],
+      [
+        "('Eb', 'Major')",
+        11.0
+      ],
+      [
+        "('Db', 'Major')",
+        6.0
+      ],
+      [
+        "('Gb', 'Major')",
+        4.0
+      ],
+      [
+        "('Ab', 'Major')",
+        3.0
+      ],
+      [
+        "('Eb', 'Minor')",
+        2.0
+      ],
+      [
+        "('F', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 197,
+    "title": "Stars Fell on Alabama",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.381,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/StarsFellOnAlabama.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        28.0
+      ],
+      [
+        "('E', 'Minor')",
+        2.0
+      ],
+      [
+        "('A', 'Minor')",
+        1.5
+      ],
+      [
+        "('D', 'Minor')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 198,
+    "title": "Stella By Starlight",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.951,
+    "shift": 0,
+    "corpusFile": "leadsheets/changes/StellaByStarlight.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        17.0
+      ],
+      [
+        "('Eb', 'Major')",
+        4.0
+      ],
+      [
+        "('C', 'Minor')",
+        4.0
+      ],
+      [
+        "('F', 'Major')",
+        3.0
+      ],
+      [
+        "('D', 'Minor')",
+        2.0
+      ],
+      [
+        "('G', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 199,
+    "title": "Strike Up the Band",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.731,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/StrikeUpTheBand.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        21.0
+      ],
+      [
+        "('Eb', 'Major')",
+        9.0
+      ],
+      [
+        "('G', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 200,
+    "title": "Summertime",
+    "tonic": [
+      "D",
+      "Minor"
+    ],
+    "bars": 16,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.304,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/Summertime.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        6.0
+      ],
+      [
+        "('D', 'Major')",
+        3.0
+      ],
+      [
+        "('G', 'Minor')",
+        2.5
+      ],
+      [
+        "('F', 'Major')",
+        2.5
+      ],
+      [
+        "('D', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 201,
+    "title": "Sweet and Lovely",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.779,
+    "shift": 0,
+    "corpusFile": "leadsheets/changes/SweetAndLovely.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        12.0
+      ],
+      [
+        "('C', 'Major')",
+        12.0
+      ],
+      [
+        "('Bb', 'Major')",
+        6.0
+      ],
+      [
+        "('Eb', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 202,
+    "title": "Sweet Georgia Brown",
+    "tonic": [
+      "Ab",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.652,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/SweetGeorgiaBrown.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        18.5
+      ],
+      [
+        "('C', 'Major')",
+        7.5
+      ],
+      [
+        "('D', 'Minor')",
+        4.5
+      ],
+      [
+        "('D', 'Major')",
+        1.0
+      ],
+      [
+        "('Ab', 'Major')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 203,
+    "title": "Taking a Chance on Love",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.627,
+    "shift": 5,
+    "corpusFile": "leadsheets/imaginary-book/TakingAChanceOnLove.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        20.0
+      ],
+      [
+        "('D', 'Minor')",
+        6.0
+      ],
+      [
+        "('Bb', 'Major')",
+        4.0
+      ],
+      [
+        "('Ab', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 204,
+    "title": "Tangerine",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.598,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/Tangerine.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        20.0
+      ],
+      [
+        "('G', 'Major')",
+        4.0
+      ],
+      [
+        "('C', 'Major')",
+        3.0
+      ],
+      [
+        "('G', 'Minor')",
+        2.0
+      ],
+      [
+        "('A', 'Major')",
+        2.0
+      ],
+      [
+        "('A', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 205,
+    "title": "Teach Me Tonight",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.789,
+    "shift": 8,
+    "corpusFile": "leadsheets/imaginary-book/TeachMeTonight.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        31.5
+      ],
+      [
+        "('F', 'Major')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 206,
+    "title": "Tenderly",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.39,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/Tenderly.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        16.0
+      ],
+      [
+        "('Eb', 'Minor')",
+        8.0
+      ],
+      [
+        "('Bb', 'Major')",
+        6.0
+      ],
+      [
+        "('F', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 207,
+    "title": "That's All",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.716,
+    "shift": 5,
+    "corpusFile": "leadsheets/imaginary-book/ThatsAll.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        29.75
+      ],
+      [
+        "('C', 'Major')",
+        2.25
+      ]
+    ]
+  },
+  {
+    "index": 208,
+    "title": "There Is No Greater Love",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.0,
+    "shift": 0,
+    "corpusFile": "leadsheets/changes/ThereIsNoGreaterLove.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        24.0
+      ],
+      [
+        "('G', 'Minor')",
+        5.0
+      ],
+      [
+        "('F', 'Dominant')",
+        3.0
+      ]
+    ]
+  },
+  {
+    "index": 209,
+    "title": "There's No You",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 0,
+    "corpusMatch": null,
+    "shift": null,
+    "corpusFile": null,
+    "weights": [
+      [
+        "('F', 'Major')",
+        21.0
+      ],
+      [
+        "('Bb', 'Major')",
+        4.0
+      ],
+      [
+        "('C', 'Dominant')",
+        3.0
+      ],
+      [
+        "('Db', 'Dominant')",
+        2.0
+      ],
+      [
+        "('C', 'Major')",
+        1.5
+      ],
+      [
+        "('G', 'Minor')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 210,
+    "title": "There Will Never Be Another You",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.725,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/ThereWillNeverBeAnotherYou.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        18.0
+      ],
+      [
+        "('Ab', 'Major')",
+        12.0
+      ],
+      [
+        "('C', 'Minor')",
+        1.0
+      ],
+      [
+        "('G', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 211,
+    "title": "These Foolish Things",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.328,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/TheseFoolishThings.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        19.5
+      ],
+      [
+        "('Ab', 'Major')",
+        6.0
+      ],
+      [
+        "('F', 'Dominant')",
+        3.0
+      ],
+      [
+        "('Bb', 'Major')",
+        2.0
+      ],
+      [
+        "('G', 'Minor')",
+        1.5
+      ]
+    ]
+  },
+  {
+    "index": 212,
+    "title": "They Can't Take That Away from Me",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 36,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.378,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/TheyCantTakeThatAwayFromMe.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        17.5
+      ],
+      [
+        "('Ab', 'Major')",
+        7.5
+      ],
+      [
+        "('F', 'Minor')",
+        5.5
+      ],
+      [
+        "('G', 'Minor')",
+        4.5
+      ],
+      [
+        "('Bb', 'Dominant')",
+        3.0
+      ],
+      [
+        "('F', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 213,
+    "title": "Thunderbirds (theme)",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 34,
+    "titleMatch": 0,
+    "corpusMatch": null,
+    "shift": null,
+    "corpusFile": null,
+    "weights": [
+      [
+        "('C', 'Major')",
+        30.0
+      ],
+      [
+        "('E', 'Major')",
+        5.0
+      ],
+      [
+        "('F', 'Major')",
+        2.0
+      ],
+      [
+        "('Eb', 'Major')",
+        2.0
+      ],
+      [
+        "('Ab', 'Dominant')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 214,
+    "title": "A Time for Love",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 38,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.15,
+    "shift": 7,
+    "corpusFile": "leadsheets/imaginary-book/TimeForLove.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        20.5
+      ],
+      [
+        "('G', 'Minor')",
+        10.5
+      ],
+      [
+        "('F', 'Major')",
+        5.0
+      ],
+      [
+        "('D', 'Major')",
+        3.0
+      ],
+      [
+        "('D', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 215,
+    "title": "Too Close for Comfort",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 40,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.611,
+    "shift": 3,
+    "corpusFile": "leadsheets/imaginary-book/TooCloseForComfort.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        25.0
+      ],
+      [
+        "('Ab', 'Major')",
+        9.0
+      ],
+      [
+        "('F', 'Minor')",
+        6.0
+      ]
+    ]
+  },
+  {
+    "index": 216,
+    "title": "Too Marvelous for Words",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.718,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/TooMarvelousForWords.ls",
+    "weights": [
+      [
+        "('G', 'Major')",
+        21.0
+      ],
+      [
+        "('C', 'Major')",
+        7.0
+      ],
+      [
+        "('B', 'Major')",
+        2.0
+      ],
+      [
+        "('A', 'Minor')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 217,
+    "title": "The Touch of Your Lips",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.344,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/TouchOfYourLips.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        18.5
+      ],
+      [
+        "('D', 'Minor')",
+        5.0
+      ],
+      [
+        "('E', 'Major')",
+        4.0
+      ],
+      [
+        "('Eb', 'Major')",
+        3.0
+      ],
+      [
+        "('G', 'Major')",
+        1.5
+      ]
+    ]
+  },
+  {
+    "index": 218,
+    "title": "Tune Up",
+    "tonic": [
+      "D",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 1.0,
+    "shift": 0,
+    "corpusFile": "leadsheets/changes/TuneUp.ls",
+    "weights": [
+      [
+        "('D', 'Major')",
+        12.0
+      ],
+      [
+        "('Bb', 'Major')",
+        11.0
+      ],
+      [
+        "('C', 'Major')",
+        8.0
+      ],
+      [
+        "('E', 'Minor')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 219,
+    "title": "Undecided",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.219,
+    "shift": 7,
+    "corpusFile": "leadsheets/imaginary-book/Undecided.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        27.0
+      ],
+      [
+        "('F', 'Major')",
+        5.0
+      ]
+    ]
+  },
+  {
+    "index": 220,
+    "title": "Under a Blanket of Blue",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 0,
+    "corpusMatch": null,
+    "shift": null,
+    "corpusFile": null,
+    "weights": [
+      [
+        "('C', 'Major')",
+        26.0
+      ],
+      [
+        "('F', 'Major')",
+        6.0
+      ]
+    ]
+  },
+  {
+    "index": 221,
+    "title": "Violets for Your Furs",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.154,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/VioletsForYourFurs.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        24.0
+      ],
+      [
+        "('G', 'Minor')",
+        5.0
+      ],
+      [
+        "('F', 'Minor')",
+        1.5
+      ],
+      [
+        "('G', 'Dominant')",
+        1.0
+      ],
+      [
+        "('D', 'Minor')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 222,
+    "title": "Wave",
+    "tonic": [
+      "D",
+      "Major"
+    ],
+    "bars": 44,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.821,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/Wave.ls",
+    "weights": [
+      [
+        "('D', 'Major')",
+        20.5
+      ],
+      [
+        "('C', 'Major')",
+        18.0
+      ],
+      [
+        "('G', 'Major')",
+        9.0
+      ],
+      [
+        "('F', 'Major')",
+        4.0
+      ],
+      [
+        "('Eb', 'Major')",
+        3.0
+      ],
+      [
+        "('D', 'Minor')",
+        1.5
+      ]
+    ]
+  },
+  {
+    "index": 223,
+    "title": "We'll Be Together Again",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.557,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/WellBeTogetherAgain.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        17.75
+      ],
+      [
+        "('Ab', 'Major')",
+        5.5
+      ],
+      [
+        "('G', 'Major')",
+        3.75
+      ],
+      [
+        "('Bb', 'Major')",
+        2.0
+      ],
+      [
+        "('F', 'Minor')",
+        1.0
+      ],
+      [
+        "('Gb', 'Major')",
+        1.0
+      ],
+      [
+        "('Ab', 'Dominant')",
+        0.5
+      ],
+      [
+        "('G', 'Dominant')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 224,
+    "title": "(You're a) Weaver of Dreams",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.1,
+    "corpusMatch": 0.732,
+    "shift": 5,
+    "corpusFile": "leadsheets/imaginary-book/WeaverOfDreams.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        20.0
+      ],
+      [
+        "('A', 'Minor')",
+        8.0
+      ],
+      [
+        "('F', 'Major')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 225,
+    "title": "What's New",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.766,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/WhatsNew.ls",
+    "weights": [
+      [
+        "('C', 'Minor')",
+        10.0
+      ],
+      [
+        "('C', 'Major')",
+        8.0
+      ],
+      [
+        "('Ab', 'Major')",
+        6.0
+      ],
+      [
+        "('F', 'Major')",
+        3.0
+      ],
+      [
+        "('F', 'Minor')",
+        3.0
+      ],
+      [
+        "('Db', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 226,
+    "title": "What a Little Moonlight Can Do",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 64,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.3,
+    "shift": 7,
+    "corpusFile": "leadsheets/imaginary-book/WhatALittleMoonlightCanDo.ls",
+    "weights": [
+      [
+        "('G', 'Major')",
+        44.0
+      ],
+      [
+        "('C', 'Major')",
+        6.0
+      ],
+      [
+        "('E', 'Minor')",
+        6.0
+      ],
+      [
+        "('A', 'Dominant')",
+        4.0
+      ],
+      [
+        "('F', 'Major')",
+        2.0
+      ],
+      [
+        "('A', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 227,
+    "title": "What Am I Here For?",
+    "tonic": [
+      "Bb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.676,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/WhatAmIHereFor.ls",
+    "weights": [
+      [
+        "('Bb', 'Major')",
+        24.0
+      ],
+      [
+        "('Eb', 'Major')",
+        6.0
+      ],
+      [
+        "('G', 'Major')",
+        1.0
+      ],
+      [
+        "('Ab', 'Dominant')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 228,
+    "title": "What is This Thing Called Love?",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.87,
+    "shift": 0,
+    "corpusFile": "leadsheets/changes/WhatIsThisThingCalledLove.ls",
+    "weights": [
+      [
+        "('F', 'Minor')",
+        12.0
+      ],
+      [
+        "('C', 'Minor')",
+        12.0
+      ],
+      [
+        "('Bb', 'Major')",
+        4.0
+      ],
+      [
+        "('C', 'Major')",
+        4.0
+      ]
+    ]
+  },
+  {
+    "index": 229,
+    "title": "When I Fall in Love",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.683,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/WhenIFallInLove.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        27.5
+      ],
+      [
+        "('F', 'Minor')",
+        2.5
+      ],
+      [
+        "('F', 'Major')",
+        1.5
+      ],
+      [
+        "('Db', 'Dominant')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 230,
+    "title": "When You Wish Upon a Star",
+    "tonic": [
+      "F",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.435,
+    "shift": 5,
+    "corpusFile": "leadsheets/imaginary-book/WhenYouWishUponAStar.ls",
+    "weights": [
+      [
+        "('F', 'Major')",
+        27.0
+      ],
+      [
+        "('Bb', 'Minor')",
+        3.0
+      ],
+      [
+        "('G', 'Dominant')",
+        1.0
+      ],
+      [
+        "('G', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 231,
+    "title": "Whisper Not",
+    "tonic": [
+      "D",
+      "Minor"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.618,
+    "shift": 0,
+    "corpusFile": "leadsheets/solos/WhisperNotSolo.ls",
+    "weights": [
+      [
+        "('D', 'Minor')",
+        10.0
+      ],
+      [
+        "('G', 'Minor')",
+        7.5
+      ],
+      [
+        "('C', 'Minor')",
+        6.0
+      ],
+      [
+        "('F', 'Major')",
+        4.0
+      ],
+      [
+        "('F', 'Minor')",
+        2.5
+      ],
+      [
+        "('Eb', 'Major')",
+        1.0
+      ],
+      [
+        "('C', 'Major')",
+        1.0
+      ]
+    ]
+  },
+  {
+    "index": 232,
+    "title": "White Christmas",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.227,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/WhiteChristmas.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        26.0
+      ],
+      [
+        "('D', 'Minor')",
+        4.0
+      ],
+      [
+        "('B', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 233,
+    "title": "Willow Weep for Me",
+    "tonic": [
+      "G",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.438,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/WillowWeepForMe.ls",
+    "weights": [
+      [
+        "('C', 'Dominant')",
+        9.0
+      ],
+      [
+        "('G', 'Major')",
+        6.25
+      ],
+      [
+        "('C', 'Major')",
+        6.25
+      ],
+      [
+        "('Bb', 'Major')",
+        3.0
+      ],
+      [
+        "('G', 'Minor')",
+        3.0
+      ],
+      [
+        "('G', 'Dominant')",
+        2.5
+      ],
+      [
+        "('Db', 'Major')",
+        1.25
+      ],
+      [
+        "('C', 'Minor')",
+        0.75
+      ]
+    ]
+  },
+  {
+    "index": 234,
+    "title": "Winter Wonderland",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.235,
+    "shift": 10,
+    "corpusFile": "leadsheets/imaginary-book/WinterWonderland.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        25.5
+      ],
+      [
+        "('G', 'Major')",
+        4.0
+      ],
+      [
+        "('Bb', 'Major')",
+        2.5
+      ]
+    ]
+  },
+  {
+    "index": 235,
+    "title": "Woody 'n You",
+    "tonic": [
+      "Db",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.958,
+    "shift": 0,
+    "corpusFile": "leadsheets/changes/WoodyNYou.ls",
+    "weights": [
+      [
+        "('Db', 'Major')",
+        26.0
+      ],
+      [
+        "('Gb', 'Major')",
+        4.0
+      ],
+      [
+        "('Ab', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 236,
+    "title": "Wrap Your Troubles in Dreams",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.444,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/WrapYourTroublesInDreams.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        23.5
+      ],
+      [
+        "('A', 'Minor')",
+        6.0
+      ],
+      [
+        "('F', 'Major')",
+        2.5
+      ]
+    ]
+  },
+  {
+    "index": 237,
+    "title": "You Go to My Head",
+    "tonic": [
+      "Eb",
+      "Major"
+    ],
+    "bars": 40,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.691,
+    "shift": 0,
+    "corpusFile": "leadsheets/solos/YouGoToMyHeadSolo.ls",
+    "weights": [
+      [
+        "('Eb', 'Major')",
+        19.0
+      ],
+      [
+        "('Gb', 'Major')",
+        9.0
+      ],
+      [
+        "('Eb', 'Minor')",
+        4.0
+      ],
+      [
+        "('Ab', 'Major')",
+        4.0
+      ],
+      [
+        "('G', 'Major')",
+        3.5
+      ],
+      [
+        "('G', 'Minor')",
+        0.5
+      ]
+    ]
+  },
+  {
+    "index": 238,
+    "title": "You Stepped out of a Dream",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.964,
+    "shift": 0,
+    "corpusFile": "leadsheets/changes/YouSteppedOutOfADream.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        18.0
+      ],
+      [
+        "('Ab', 'Major')",
+        8.0
+      ],
+      [
+        "('F', 'Major')",
+        4.0
+      ],
+      [
+        "('G', 'Major')",
+        2.0
+      ]
+    ]
+  },
+  {
+    "index": 239,
+    "title": "You Turned the Tables on Me",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 0,
+    "corpusMatch": null,
+    "shift": null,
+    "corpusFile": null,
+    "weights": [
+      [
+        "('C', 'Major')",
+        18.0
+      ],
+      [
+        "('F', 'Major')",
+        8.0
+      ],
+      [
+        "('D', 'Major')",
+        6.0
+      ]
+    ]
+  },
+  {
+    "index": 240,
+    "title": "You'd Be So Nice to Come Home To",
+    "tonic": [
+      "G",
+      "Minor"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.758,
+    "shift": 10,
+    "corpusFile": "leadsheets/imaginary-book/YoudBeSoNiceToComeHomeTo.ls",
+    "weights": [
+      [
+        "('G', 'Minor')",
+        19.0
+      ],
+      [
+        "('Eb', 'Major')",
+        8.0
+      ],
+      [
+        "('Bb', 'Major')",
+        5.0
+      ]
+    ]
+  },
+  {
+    "index": 241,
+    "title": "Yours Is My Heart Alone",
+    "tonic": [
+      "C",
+      "Major"
+    ],
+    "bars": 32,
+    "titleMatch": 1.0,
+    "corpusMatch": 0.625,
+    "shift": 0,
+    "corpusFile": "leadsheets/imaginary-book/YoursIsMyHeartAlone.ls",
+    "weights": [
+      [
+        "('C', 'Major')",
+        24.0
+      ],
+      [
+        "('D', 'Major')",
+        4.0
+      ],
+      [
+        "('D', 'Minor')",
+        4.0
+      ]
+    ]
+  }
+]
