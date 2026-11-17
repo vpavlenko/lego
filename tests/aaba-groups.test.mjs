@@ -33,7 +33,7 @@ test('B entry uses the covering key area, preserves mode, and never reads a futu
 test('A-brick groups use canonical merged families and cover every AABA without duplicate songs',()=>{
  const groups=groupAABA(songs,forms,brickMap,'a-brick'),members=groups.flatMap(g=>g.songs);
  assert.equal(members.length,101);assert.equal(new Set(members.map(s=>s.index)).size,101);assert.equal(groups.length,23);
- assert.deepEqual(groups.slice(0,5).map(g=>[g.label,g.songs.length]),[['Straight',41],['POT',10],['Major On',6],['TTFA Dropback',6],['Cadence',5]]);
+ assert.deepEqual(groups.slice(0,5).map(g=>[g.label,g.songs.length]),[['Straight',41],['I–(vi/VI7)–ii–V',10],['I→iii–VI7',6],['Major On',6],['Cadence',5]]);
  for(const group of groups)for(const song of group.songs){const candidates=aabaACoreBricks(song,forms[song.index],brickMap);assert.ok(group.label==='Other'?!candidates.length:candidates.some(c=>c.name===group.label),song.title);}
  assert.deepEqual(groups.find(g=>g.label==='Donna Lee Opening').songs.map(s=>s.index),[73]);
  const straight=groups.find(g=>g.label==='Straight');assert.ok(straight.songs.some(s=>s.index===80));assert.ok(!groups.some(g=>g.label==='Straight Approach'||g.label==='Straight Launcher'));

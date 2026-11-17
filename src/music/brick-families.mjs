@@ -1,3 +1,4 @@
+import {BRICK_NAME_PROPOSALS,COMPOUND_DISPLAY_NAMES} from './brick-display-names.mjs';
 import {slugify} from './bricks.mjs';
 
 const displayNames={'Whoopee':'vii°7/ii–ii–V–I','Whoopee Turnaround':'I–vii°/ii–ii–V'};
@@ -90,13 +91,14 @@ export function buildLearnerBrickIndex(sourceIndex){
  const bricks=[];
  for(const [name,members]of [...buckets].sort((a,b)=>a[0].localeCompare(b[0]))){
   const slug=routes.get(name),previousFamilies=[...new Set(members.map(b=>oldFamilies.get(b.name)))];
+  const displayName=BRICK_NAME_PROPOSALS.find(proposal=>proposal.cork===name)?.name??COMPOUND_DISPLAY_NAMES[name]??displayNames[name]??name;
   const aliases=[...new Set([...previousFamilies,...members.flatMap(b=>[b.name,...b.aliases])])].filter(alias=>alias!==name).sort((a,b)=>a.localeCompare(b));
   const sourceNames=members.map(b=>b.name),sourceSlugs=members.map(b=>b.slug),aliasSlugs=[...new Set([...previousFamilies.map(old=>oldRoutes.get(old)),...members.flatMap(b=>[b.slug,...b.aliasSlugs])])].filter(old=>old!==slug).sort();
   const matches=new Map();
   for(const b of members)for(const match of b.standards){if(!matches.has(match.song))matches.set(match.song,{song:match.song,title:match.title,passages:[]});for(const passage of match.passages)matches.get(match.song).passages.push({...passage});}
   const standards=[...matches.values()].sort((a,b)=>a.song-b.song);for(const match of standards)match.passages.sort((a,b)=>a.start-b.start||a.end-b.end||a.row-b.row||a.label.localeCompare(b.label));
   const passages=standards.reduce((n,match)=>n+match.passages.length,0),chosen=representative(members,name);
-  bricks.push({name:displayNames[name]??name,slug,aliases:displayNames[name]?[...new Set([...aliases,name])]:aliases,aliasSlugs,standards,passages,clipped:members.every(b=>b.clipped),sourceNames,sourceSlugs,representativeName:chosen.name});
+  bricks.push({name:displayName,familyName:name,slug,aliases:displayName!==name?[...new Set([...aliases,name])]:aliases,corkNames:displayName!==name?[name,...members.map(b=>b.name)].filter((name,i,all)=>!/[.…]/.test(name)&&all.indexOf(name)===i):[],aliasSlugs,standards,passages,clipped:members.every(b=>b.clipped),sourceNames,sourceSlugs,representativeName:chosen.name});
  }
  return {version:4,sourceLabels:sourceIndex.sourceLabels,totalStandards:sourceIndex.totalStandards,sourceBricks:source.length,bricks};
 }

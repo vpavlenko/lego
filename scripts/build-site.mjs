@@ -1,3 +1,6 @@
+import {buildBrickComparisons} from '../src/music/brick-comparisons.mjs';
+import {pitch} from '../dist/harmony.mjs';
+import {buildCadenceSystem} from '../src/music/cadence-system.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -68,7 +71,7 @@ fs.writeFileSync(path.join(root,'evidence/brick-aliases.json'),JSON.stringify({s
 fs.writeFileSync(path.join(root,'dist/data/bricks.json'),JSON.stringify(bricks));
 fs.mkdirSync(path.join(root,'dist/data/brick-performances'),{recursive:true});
 fs.mkdirSync(path.join(root,'dist/midi/bricks'),{recursive:true});
-const atlasBricks=[];let definitionCount=0,unresolvedOccurrences=0;
+const atlasBricks=[],allDefinitions=[];let definitionCount=0,unresolvedOccurrences=0;
 fs.mkdirSync(path.join(root,'dist/data/brick-variants'),{recursive:true});
 fs.mkdirSync(path.join(root,'dist/midi/brick-variants'),{recursive:true});
 for(const name of fs.readdirSync(path.join(root,'dist/data/brick-variants')))if(name.endsWith('.json')&&!currentSlugs.has(name.slice(0,-5)))fs.rmSync(path.join(root,'dist/data/brick-variants',name));
@@ -81,11 +84,14 @@ for(const brick of bricks.bricks){
  definitionCount+=definitions.variants.length;unresolvedOccurrences+=definitions.stats.unknownOccurrences+definitions.stats.partialOccurrences;
  definitions.variants.forEach((variant,i)=>{variant.number=i+1;variant.performance={...realizedView(variant.previewSong),previewSong:variant.previewSong,source:variant.source};variant.midi=`./midi/brick-variants/${brick.slug}--${variant.id}.mid`;fs.writeFileSync(path.join(root,variant.midi.replace('./','dist/')),encodeMidi(variant.performance));});
  fs.writeFileSync(path.join(root,`dist/data/brick-variants/${brick.slug}.json`),JSON.stringify(definitions));
+ allDefinitions.push(definitions);
  const popular=[...definitions.variants].sort((a,b)=>new Set(b.standards.map(m=>songs[m.song].arrangementOf??m.song)).size-new Set(a.standards.map(m=>songs[m.song].arrangementOf??m.song)).size||b.completeOccurrences-a.completeOccurrences||a.number-b.number)[0];
- atlasBricks.push({slug:brick.slug,name:brick.name,representativeName:brick.representativeName,sourceNames:brick.sourceNames,standards:brick.standardCount,variantId:popular?.id,performance:popular?.performance??data});
+ brick.nameColorRoots=(popular?.performance??data).chords.map(chord=>pitch(chord.symbol));
+ atlasBricks.push({slug:brick.slug,nameColorRoots:brick.nameColorRoots,familyName:brick.familyName,name:brick.name,representativeName:brick.representativeName,sourceNames:brick.sourceNames,standards:brick.standardCount,variantId:popular?.id,performance:popular?.performance??data});
 }
+fs.writeFileSync(path.join(root,'dist/data/cadences.json'),JSON.stringify(buildCadenceSystem(allDefinitions,{songs})));
 const catalogueGroups=groupBricks(atlasBricks,read('src/music/brick-types.json'));
-fs.writeFileSync(path.join(root,'dist/data/atlas.json'),JSON.stringify({version:1,groups:catalogueGroups}));
+fs.writeFileSync(path.join(root,'dist/data/atlas.json'),JSON.stringify({version:1,groups:catalogueGroups,comparisons:buildBrickComparisons(allDefinitions,{atlasBricks,songs})}));
 fs.writeFileSync(path.join(root,'dist/data/bricks.json'),JSON.stringify({...bricks,groups:catalogueGroups.map(group=>({type:group.type,slugs:group.bricks.map(brick=>brick.slug)}))}));
 fs.writeFileSync(path.join(root,'evidence/runtime-projection.json'),JSON.stringify({version:1,charts:songs.length,primaryStandards:songs.filter(s=>!Number.isInteger(s.arrangementOf)).length,originalCharts:original.songs.length,additionalCharts:additional.songs.length,rawSourceIdentities:sourceIndex.bricks.length,coverage:coverage.stats,reuse:reuse.stats,definitions:definitionCount,unresolvedOccurrences,unchangedMusicalDataSha256:fingerprint(musicalData(songs)),decisions:reuse.decisions.map(d=>({action:d.action,source:d.source.name,target:d.target?.name,reason:d.reason}))},null,2));
 // Generated compatibility mirror: never edit the local CSS implementation.

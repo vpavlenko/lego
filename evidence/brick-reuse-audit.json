@@ -223,7 +223,7 @@
       ],
       "passages": 4,
       "action": "merge",
-      "target": "Starlight",
+      "target": "♯ivø–VII7→iii–VI7→ii–V",
       "distance": 0.15,
       "reason": "clear-supported-harmonic-variant"
     },
@@ -463,7 +463,7 @@
       ],
       "passages": 2,
       "action": "merge",
-      "target": "To IV n Yak",
+      "target": "v–I7→IV–♭VII7",
       "distance": 0.2555555555555556,
       "reason": "clear-supported-harmonic-variant"
     },
@@ -890,7 +890,7 @@
           "reason": "root-core-anchor-or-distance-guard"
         },
         {
-          "name": "To IV n Back",
+          "name": "I–I7→IV–♯iv°",
           "slug": "to-iv-n-back",
           "sourceVariantId": "v-ju565-866ffb",
           "targetVariantId": "v-1dki5ny-18tyvw0",
@@ -1216,7 +1216,7 @@
       "candidates": [],
       "nearestRejected": [
         {
-          "name": "Foggy Turnaround",
+          "name": "I–♭III7–{ii,II7}–V",
           "slug": "foggy-turnaround",
           "sourceVariantId": "v-1s7op4a-ndd40k",
           "targetVariantId": "v-acop5g-y6ae8q",
@@ -2797,7 +2797,7 @@
           "reason": "root-core-anchor-or-distance-guard"
         },
         {
-          "name": "Raindrop",
+          "name": "{I,iii,VI7}→♭iii°",
           "slug": "raindrop",
           "sourceVariantId": "v-159y8xz-17zmemt",
           "targetVariantId": "v-xrc2oc-1cgth3y",
@@ -4025,7 +4025,7 @@
       "candidates": [],
       "nearestRejected": [
         {
-          "name": "Yardbird",
+          "name": "iv–♭VII7→I",
           "slug": "yardbird",
           "sourceVariantId": "v-d7h5ew-1udn0y6",
           "targetVariantId": "v-1t0wfln-1xckuo1",
@@ -4167,7 +4167,7 @@
           "reason": "root-core-anchor-or-distance-guard"
         },
         {
-          "name": "Rainbow",
+          "name": "VΔ–VII7→I",
           "slug": "rainbow",
           "sourceVariantId": "v-d7h5ew-1udn0y6",
           "targetVariantId": "v-ra9jtl-1efums3",
@@ -4301,7 +4301,7 @@
           "reason": "root-core-anchor-or-distance-guard"
         },
         {
-          "name": "Happenstance",
+          "name": "♯iv(ø)–VII7",
           "slug": "happenstance",
           "sourceVariantId": "v-d7h5ew-1udn0y6",
           "targetVariantId": "v-1u16l7e-1q6lci8",
@@ -7669,7 +7669,7 @@
           "reason": "root-core-anchor-or-distance-guard"
         },
         {
-          "name": "POT",
+          "name": "I–(vi/VI7)–ii–V",
           "slug": "pot",
           "sourceVariantId": "v-1jjqn8l-ghikln",
           "targetVariantId": "v-ijgm8q-1la90nw",
@@ -8813,7 +8813,7 @@
       "candidates": [],
       "nearestRejected": [
         {
-          "name": "Starlight",
+          "name": "♯ivø–VII7→iii–VI7→ii–V",
           "slug": "starlight",
           "sourceVariantId": "v-h5i9ro-47jy26",
           "targetVariantId": "v-v3uu07-shgpf1",
@@ -10487,7 +10487,7 @@
         "unresolvedStandards": []
       },
       "target": {
-        "name": "Starlight",
+        "name": "♯ivø–VII7→iii–VI7→ii–V",
         "slug": "starlight",
         "distinctStandards": 33,
         "standards": [
@@ -10790,7 +10790,7 @@
       ],
       "candidates": [
         {
-          "name": "Starlight",
+          "name": "♯ivø–VII7→iii–VI7→ii–V",
           "slug": "starlight",
           "standards": [
             3,
@@ -11261,7 +11261,7 @@
       "candidates": [],
       "nearestRejected": [
         {
-          "name": "Dizzy",
+          "name": "ii–♭II7→I",
           "slug": "dizzy",
           "sourceVariantId": "v-qsot76-1hvg8xw",
           "targetVariantId": "v-1u9el4v-x62ttd",
@@ -12546,7 +12546,7 @@
       "candidates": [],
       "nearestRejected": [
         {
-          "name": "IV n Hack",
+          "name": "IV–♯iv–VII7",
           "slug": "iv-n-hack",
           "sourceVariantId": "v-qcvghw-1qhynbu",
           "targetVariantId": "v-90l65r-1gxbtf9",
@@ -13216,7 +13216,7 @@
       "candidates": [],
       "nearestRejected": [
         {
-          "name": "POT",
+          "name": "I–(vi/VI7)–ii–V",
           "slug": "pot",
           "sourceVariantId": "v-j44hxu-1pcvck4",
           "targetVariantId": "v-1sc82db-emmoy1",
@@ -13397,7 +13397,7 @@
           "reason": "insufficient-complete-core-support"
         },
         {
-          "name": "Pennies Turnaround",
+          "name": "I–IV7→iii–VI7–ii–V",
           "slug": "pennies-turnaround",
           "sourceVariantId": "v-j44hxu-1pcvck4",
           "targetVariantId": "v-drh1lq-ynkpn4",
@@ -14147,7 +14147,7 @@
           "reason": "root-core-anchor-or-distance-guard"
         },
         {
-          "name": "Dogleg",
+          "name": "vi–II7→ii–V",
           "slug": "dogleg",
           "sourceVariantId": "v-136lgnp-hz37mj",
           "targetVariantId": "v-4a7su1-18q7n5b",
@@ -17359,7 +17359,7 @@
           "reason": "root-core-anchor-or-distance-guard"
         },
         {
-          "name": "POT",
+          "name": "I–(vi/VI7)–ii–V",
           "slug": "pot",
           "sourceVariantId": "v-14v4ycg-rkxp86",
           "targetVariantId": "v-gs4vmq-yrccvo",
@@ -19108,7 +19108,7 @@
           "reason": "insufficient-complete-core-support"
         },
         {
-          "name": "SPOT",
+          "name": "iii–VI7→ii–V",
           "slug": "spot",
           "sourceVariantId": "v-j5aono-33kdpi",
           "targetVariantId": "v-k4zi4c-1400v6y",
@@ -19775,7 +19775,7 @@
       "candidates": [],
       "nearestRejected": [
         {
-          "name": "Rainbow",
+          "name": "VΔ–VII7→I",
           "slug": "rainbow",
           "sourceVariantId": "v-2ncuqe-1mhwwhg",
           "targetVariantId": "v-psinp3-guh035",
@@ -20108,7 +20108,7 @@
           "reason": "insufficient-complete-core-support"
         },
         {
-          "name": "To IV n Yak",
+          "name": "v–I7→IV–♭VII7",
           "slug": "to-iv-n-yak",
           "sourceVariantId": "v-2ncuqe-1mhwwhg",
           "targetVariantId": "v-1f0a5h1-o5rg7r",
@@ -21884,7 +21884,7 @@
       "candidates": [],
       "nearestRejected": [
         {
-          "name": "Starlight",
+          "name": "♯ivø–VII7→iii–VI7→ii–V",
           "slug": "starlight",
           "sourceVariantId": "v-ra5faq-xdgiw",
           "targetVariantId": "v-10j6g19-7nhn4r",
@@ -22474,7 +22474,7 @@
           "reason": "insufficient-complete-core-support"
         },
         {
-          "name": "IV n Bird SPOT",
+          "name": "IV–♭VII7→iii–VI7–ii–(V)",
           "slug": "iv-n-bird-spot",
           "sourceVariantId": "v-ra5faq-xdgiw",
           "targetVariantId": "v-wyvnem-z6x6wo",
@@ -22913,7 +22913,7 @@
       "reason": "ambiguous-supported-families",
       "candidates": [
         {
-          "name": "POT",
+          "name": "I–(vi/VI7)–ii–V",
           "slug": "pot",
           "standards": [
             0,
@@ -23629,7 +23629,7 @@
           ]
         },
         {
-          "name": "Dogleg",
+          "name": "vi–II7→ii–V",
           "slug": "dogleg",
           "standards": [
             98,
@@ -23989,7 +23989,7 @@
       "candidates": [],
       "nearestRejected": [
         {
-          "name": "II n Back",
+          "name": "ii–♯ii°→{I,iii}",
           "slug": "ii-n-back",
           "sourceVariantId": "v-b307ow-5ray4a",
           "targetVariantId": "v-m9l1z1-1mep3g7",
@@ -24143,7 +24143,7 @@
           "reason": "root-core-anchor-or-distance-guard"
         },
         {
-          "name": "POT",
+          "name": "I–(vi/VI7)–ii–V",
           "slug": "pot",
           "sourceVariantId": "v-b307ow-5ray4a",
           "targetVariantId": "v-14rmck5-1hk2bpn",
@@ -24331,7 +24331,7 @@
           "reason": "root-core-anchor-or-distance-guard"
         },
         {
-          "name": "Raindrop",
+          "name": "{I,iii,VI7}→♭iii°",
           "slug": "raindrop",
           "sourceVariantId": "v-b307ow-5ray4a",
           "targetVariantId": "v-1906eea-16ye9fo",
@@ -24723,7 +24723,7 @@
       "candidates": [],
       "nearestRejected": [
         {
-          "name": "To IV n Bird SPOT",
+          "name": "I–I7→IV–♭VII7→iii–VI7–ii–(V)",
           "slug": "to-iv-n-bird-spot",
           "sourceVariantId": "v-10b4byu-167ks08",
           "targetVariantId": "v-1j1hr47-ltm775",
@@ -25074,7 +25074,7 @@
           "reason": "insufficient-complete-core-support"
         },
         {
-          "name": "To IV n Yak",
+          "name": "v–I7→IV–♭VII7",
           "slug": "to-iv-n-yak",
           "sourceVariantId": "v-10b4byu-167ks08",
           "targetVariantId": "v-122fnyj-86b4at",
@@ -25376,7 +25376,7 @@
           "reason": "insufficient-complete-core-support"
         },
         {
-          "name": "Pennies",
+          "name": "IV–♭VII7→I",
           "slug": "pennies",
           "sourceVariantId": "v-10b4byu-167ks08",
           "targetVariantId": "v-ouadpc-hag2de",
@@ -26583,7 +26583,7 @@
         "unresolvedStandards": []
       },
       "target": {
-        "name": "To IV n Yak",
+        "name": "v–I7→IV–♭VII7",
         "slug": "to-iv-n-yak",
         "distinctStandards": 20,
         "standards": [
@@ -26839,7 +26839,7 @@
       ],
       "candidates": [
         {
-          "name": "To IV n Yak",
+          "name": "v–I7→IV–♭VII7",
           "slug": "to-iv-n-yak",
           "standards": [
             36,
@@ -27261,7 +27261,7 @@
       "candidates": [],
       "nearestRejected": [
         {
-          "name": "Foolish",
+          "name": "{ii,V7}–vii°/ii–ii–V",
           "slug": "foolish",
           "sourceVariantId": "v-1gnh0hd-ud6073",
           "targetVariantId": "v-10ghweq-zcr1dc",
@@ -27593,7 +27593,7 @@
           "reason": "root-core-anchor-or-distance-guard"
         },
         {
-          "name": "Dogleg",
+          "name": "vi–II7→ii–V",
           "slug": "dogleg",
           "sourceVariantId": "v-1gnh0hd-ud6073",
           "targetVariantId": "v-iivqhe-nqdfz0",

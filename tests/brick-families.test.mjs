@@ -1,3 +1,4 @@
+import {BRICK_NAME_PROPOSALS,COMPOUND_DISPLAY_NAMES} from '../src/music/brick-display-names.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -6,7 +7,8 @@ import {buildLearnerBrickIndex} from '../src/music/brick-families.mjs';
 
 const {songs}=JSON.parse(fs.readFileSync(new URL('../dist/data/roadmaps.json',import.meta.url),'utf8'));
 const source=buildBrickIndex(songs),learner=buildLearnerBrickIndex(source);
-const named=name=>learner.bricks.find(b=>b.name===name);
+const named=name=>learner.bricks.find(b=>b.name===name||b.aliases.includes(name));
+const displayName=family=>BRICK_NAME_PROPOSALS.find(p=>p.cork===family)?.name??COMPOUND_DISPLAY_NAMES[family]??({'Whoopee':'vii°7/ii–ii–V–I','Whoopee Turnaround':'I–vii°/ii–ii–V'})[family]??family;
 const containing=name=>learner.bricks.find(b=>b.sourceNames.includes(name));
 const spans=index=>index.bricks.flatMap(b=>b.standards.flatMap(s=>s.passages.map(p=>JSON.stringify([s.song,p.row,p.startBar,p.endBar,p.start,p.end,p.label])))).sort();
 
@@ -60,7 +62,7 @@ test('repetition wrappers fold into their main type while modes and destinations
 test('length and tempo words fold only into known named stems or a generic role',()=>{
  const index=fixture(['Cadence','Slow Cadence','Long Cadence','Extended Approach','Short Launcher','Slow Cadence Twice','Two Goes Approach','Dogleg Cadence','Dogleg Slow Launcher','Extended Dogleg Approach','Slow Dogleg Extended','Minor Dogleg Slow Launcher','Unlisted Short Approach','Pullback','Two Goes Pullback Extended','Dominant Cycle','Chromatic Approach','Tritone Approach','Minor Approach','Major Approach']);
  for(const name of ['Slow Cadence','Long Cadence','Extended Approach','Short Launcher','Slow Cadence Twice','Two Goes Approach'])assert.equal(familyFor(index,name).name,'Cadence',name);
- for(const name of ['Dogleg Slow Launcher','Extended Dogleg Approach','Slow Dogleg Extended'])assert.equal(familyFor(index,name).name,'Dogleg',name);
+ for(const name of ['Dogleg Slow Launcher','Extended Dogleg Approach','Slow Dogleg Extended'])assert.equal(familyFor(index,name).name,displayName('Dogleg'),name);
  assert.equal(familyFor(index,'Two Goes Pullback Extended').name,'Pullback');
  assert.equal(familyFor(index,'Minor Dogleg Slow Launcher').name,'Minor Dogleg Slow');
  assert.equal(familyFor(index,'Unlisted Short Approach').name,'Unlisted Short');
@@ -73,7 +75,7 @@ test('previous wrapper-family routes and aliases resolve to the main family',()=
  for(const [route,target]of [['two-goes-pullback','Pullback'],['two-goes-pullback-extended','Pullback'],['two-goes-straight','Straight'],['four-goes-straight','Straight'],['extended','Cadence'],['long','Cadence'],['slow','Cadence'],['pullback-extended','Pullback']])assert.equal(routes.get(route),target,route);
  for(const alias of ['Two Goes Straight','Four Goes Straight'])assert.ok(named('Straight').aliases.includes(alias));
  const audit=JSON.parse(fs.readFileSync(new URL('../evidence/brick-families-audit.json',import.meta.url),'utf8'));
- assert.equal(audit.previousRoutes.length,423);for(const {route,family}of audit.previousRoutes)assert.equal(routes.get(route),({'Whoopee':'vii°7/ii–ii–V–I','Whoopee Turnaround':'I–vii°/ii–ii–V'})[family]??family,route);
+ assert.equal(audit.previousRoutes.length,423);for(const {route,family}of audit.previousRoutes)assert.equal(routes.get(route),displayName(family),route);
 });
 
 test('combined original and additional source usages and every source route remain intact',()=>{
@@ -83,7 +85,7 @@ test('combined original and additional source usages and every source route rema
  const routes=new Map();for(const b of index.bricks)for(const slug of [b.slug,...b.aliasSlugs]){assert.ok(!routes.has(slug),slug);routes.set(slug,b);}
  for(const b of combined.bricks)for(const slug of [b.slug,...b.aliasSlugs])assert.equal(routes.get(slug),familyFor(index,b.name),slug);
  const audit=JSON.parse(fs.readFileSync(new URL('../evidence/brick-families-audit.json',import.meta.url),'utf8'));
- assert.equal(audit.combined.previousRoutes.length,444);for(const {route,family}of audit.combined.previousRoutes)assert.equal(routes.get(route)?.name,({'Whoopee':'vii°7/ii–ii–V–I','Whoopee Turnaround':'I–vii°/ii–ii–V'})[family]??family,route);
+ assert.equal(audit.combined.previousRoutes.length,444);for(const {route,family}of audit.combined.previousRoutes)assert.equal(routes.get(route)?.name,displayName(family),route);
 });
 
 test('tails and uniquely resolved clipped roles fold without merging unrelated patterns',()=>{
