@@ -23,7 +23,7 @@ function HostView({song,performance,brickMap,rnMode,onSeek,onNote,controller,mut
     const sourceRow=song.rows[c.row],sourceCell=sourceRow.chords.find(x=>Math.abs((sourceRow.startBar+x.start)*performance.barBeats-c.start)<.001),key=sourceRow.keys.find(k=>sourceCell?.start>=k.start-.001&&sourceCell.start<k.end-.001)||sourceRow.keys[0];
     const base=rnMode==='brick'?transposeRoot(key.root,song.tonic[0]):'C',parts=chordParts(c.symbol),degree=mod(pitch(c.symbol)-pitch(base));
     const style={left:(Math.max(c.start,row.start)-row.start)/span*100+'%',width:(Math.min(c.end,row.end)-Math.max(c.start,row.start))/span*100+'%'};
-    return <div key={c.id} className={'rawln-chord'+(c.clipped?' uncertain':'')} style={style} title={c.symbol}><div><Token degree={degree}>{parts.root}</Token><sup>{parts.quality}</sup></div><div className="rawln-rn"><Token degree={degree}>{roman(c.symbol,base)}</Token></div></div>;
+    return <div key={c.id} className={'rawln-chord'+(c.clipped?' uncertain':'')} style={style} title={c.symbol}><div className="rawln-symbol degree-color harmony-band" data-degree={colorIndex(degree)}>{parts.root}<sup>{parts.quality}</sup></div><div className="rawln-rn degree-color harmony-band" data-degree={colorIndex(degree)}>{roman(c.symbol,base)}</div></div>;
    })}
    {joins.map((j,i)=><a key={i} className="rawln-join degree-color" data-degree={colorIndex(j.delta)} href={'#'+String(song.index).padStart(3,'0')+'?beat='+(j.beat+(performance.source?.start||0))} style={{left:`clamp(14px, ${(j.beat-row.start)/span*100}%, calc(100% - 14px))`}} title={j.name}><Arrow delta={j.delta}/><span>{Math.abs(j.delta)}</span></a>)}
   </>;
