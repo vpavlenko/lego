@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-17",
+  "library": {
+    "repository": "https://github.com/vpavlenko/librawl",
+    "lego": "0.3.1",
+    "rawl": "0.3.0",
+    "caplin": "0.3.0",
+    "tests": 54
+  },
+  "implementations": {
+    "grouping": "shared Dominant Cycle / IV and / II and / Diatonic families",
+    "names": "50 RN prototypes with original Cork aliases",
+    "coloring": "representative root chunks; exact user Autumn Leaves mapping",
+    "definitions": "representative RN sequence beside every brick title",
+    "cadences": "all twelve supplied patterns plus separately classified generalizations",
+    "comparisons": "four complete source variants, 100px/bar, visual alignment only",
+    "recoloring": "shared per-score measure selection, preview, commit, Escape",
+    "tempo": "shared Rawl coarse/fine keys connected to all three hosts"
+  },
+  "melodies": {
+    "arrangements": 486,
+    "compositions": 269,
+    "covered": 237,
+    "missing": 32,
+    "separateSourceArrangements": true
+  },
+  "validation": {
+    "reader": {
+      "tests": 215,
+      "pass": 215,
+      "fail": 0,
+      "skip": 0
+    },
+    "raw": {
+      "typescriptErrors": 0,
+      "focused": 49,
+      "playbackGates": 4
+    },
+    "caplin": {
+      "checks": 110,
+      "datasets": 500
+    },
+    "originalBaseline": {
+      "commit": "743a1791c8092e809ad2f92725de4b6d73ece0b7",
+      "arrangements": 403,
+      "performanceAndMidiFiles": 806,
+      "byteIdentical": true,
+      "aggregateSha256": "099315aa502bb7bda6b646531873ec5f992b8498b03ffd7bb136cf95dd7441da"
+    },
+    "browser": "Current UI verified through actual React/JSDOM; native Chrome displayed stale assets and could not provide a final current visual comparison"
+  },
+  "publication": {
+    "raw": "https://rawl.rocks/",
+    "rawCommit": "1f79832aaaaa9ac65b8b6f2c78367f834ce4d830",
+    "caplin": "https://caplin.cxielamiko.chatgpt.site",
+    "caplinVersion": 207,
+    "lego": "pending final Site release"
+  },
+  "remaining": {
+    "melodies": 32,
+    "sourceNavigationCases": [
+      "Let It Snow",
+      "I Loves You Porgy"
+    ],
+    "ambiguousSourceTonicCases": [
+      "Airegin",
+      "Love for Sale"
+    ],
+    "unidentifiedHeads": "Four generic blues entries",
+    "canonicalCaplinPush": "pre-existing oversized archives in unpushed history; history preserved"
+  }
+}
