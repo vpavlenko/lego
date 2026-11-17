@@ -6,23 +6,23 @@
       "dist/data/roadmaps.json",
       "dist/data/additional-standards.json"
     ],
-    "standards": 458
+    "standards": 474
   },
   "stats": {
-    "rawPassages": 8910,
-    "removedPassages": 2534,
-    "keptPassages": 6376,
-    "rawOccurrences": 8417,
-    "removedOccurrences": 2500,
-    "keptOccurrences": 5917,
+    "rawPassages": 9406,
+    "removedPassages": 2717,
+    "keptPassages": 6689,
+    "rawOccurrences": 8881,
+    "removedOccurrences": 2680,
+    "keptOccurrences": 6201,
     "reasons": {
       "single-harmony": {
-        "passages": 1949,
-        "occurrences": 1937
+        "passages": 2098,
+        "occurrences": 2084
       },
       "on-off-family": {
-        "passages": 585,
-        "occurrences": 563
+        "passages": 619,
+        "occurrences": 596
       }
     }
   },
@@ -35927,6 +35927,3128 @@
           "bass": null,
           "symbols": [
             "F6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 460,
+      "title": "Danny Boy",
+      "row": 0,
+      "startBar": 1,
+      "endBar": 2,
+      "start": 4,
+      "end": 8,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Major On",
+          "startBar": 1,
+          "endBar": 2,
+          "start": 1,
+          "end": 2,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "FM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 460,
+      "title": "Danny Boy",
+      "row": 0,
+      "startBar": 2,
+      "endBar": 3,
+      "start": 8,
+      "end": 12,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Major On",
+          "startBar": 2,
+          "endBar": 3,
+          "start": 2,
+          "end": 3,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "F"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 460,
+      "title": "Danny Boy",
+      "row": 0,
+      "startBar": 3,
+      "endBar": 5,
+      "start": 12,
+      "end": 20,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Major On",
+          "startBar": 3,
+          "endBar": 5,
+          "start": 3,
+          "end": 5,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 460,
+      "title": "Danny Boy",
+      "row": 2,
+      "startBar": 16,
+      "endBar": 16.25,
+      "start": 64,
+      "end": 65,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 16,
+          "endBar": 16.25,
+          "start": 0,
+          "end": 0.25,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 460,
+      "title": "Danny Boy",
+      "row": 2,
+      "startBar": 16.25,
+      "endBar": 18,
+      "start": 65,
+      "end": 72,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 16.25,
+          "endBar": 18,
+          "start": 0.25,
+          "end": 2,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "F"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "row": 0,
+      "startBar": 0.75,
+      "endBar": 1,
+      "start": 3,
+      "end": 4,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Major On",
+          "startBar": 0.75,
+          "endBar": 1,
+          "start": 0.75,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "row": 0,
+      "startBar": 3.5,
+      "endBar": 4,
+      "start": 14,
+      "end": 16,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Major On",
+          "startBar": 3.5,
+          "endBar": 4,
+          "start": 3.5,
+          "end": 4,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "row": 0,
+      "startBar": 4,
+      "endBar": 4.75,
+      "start": 16,
+      "end": 19,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Major On",
+          "startBar": 4,
+          "endBar": 4.75,
+          "start": 4,
+          "end": 4.75,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "AbM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "row": 0,
+      "startBar": 4.75,
+      "endBar": 5,
+      "start": 19,
+      "end": 20,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Major On",
+          "startBar": 4.75,
+          "endBar": 5,
+          "start": 4.75,
+          "end": 5,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "row": 2,
+      "startBar": 19.5,
+      "endBar": 20,
+      "start": 78,
+      "end": 80,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 19.5,
+          "endBar": 20,
+          "start": 3.5,
+          "end": 4,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "row": 2,
+      "startBar": 20,
+      "endBar": 20.75,
+      "start": 80,
+      "end": 83,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 20,
+          "endBar": 20.75,
+          "start": 4,
+          "end": 4.75,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "row": 2,
+      "startBar": 23,
+      "endBar": 26,
+      "start": 92,
+      "end": 104,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 23,
+          "endBar": 24,
+          "start": 7,
+          "end": 8,
+          "brick": 4
+        },
+        {
+          "row": 3,
+          "label": "Major On",
+          "startBar": 24,
+          "endBar": 26,
+          "start": 0,
+          "end": 2,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": true,
+      "harmonies": [
+        {
+          "root": 1,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Db"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "row": 3,
+      "startBar": 27,
+      "endBar": 27.5,
+      "start": 108,
+      "end": 110,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Major On",
+          "startBar": 27,
+          "endBar": 27.5,
+          "start": 3,
+          "end": 3.5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "row": 4,
+      "startBar": 35.5,
+      "endBar": 36,
+      "start": 142,
+      "end": 144,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Major On",
+          "startBar": 35.5,
+          "endBar": 36,
+          "start": 3.5,
+          "end": 4,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "row": 4,
+      "startBar": 36,
+      "endBar": 36.75,
+      "start": 144,
+      "end": 147,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Major On",
+          "startBar": 36,
+          "endBar": 36.75,
+          "start": 4,
+          "end": 4.75,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "AbM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "row": 4,
+      "startBar": 36.75,
+      "endBar": 37,
+      "start": 147,
+      "end": 148,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Major On",
+          "startBar": 36.75,
+          "endBar": 37,
+          "start": 4.75,
+          "end": 5,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "row": 6,
+      "startBar": 51.5,
+      "endBar": 52,
+      "start": 206,
+      "end": 208,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Major On",
+          "startBar": 51.5,
+          "endBar": 52,
+          "start": 3.5,
+          "end": 4,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "row": 6,
+      "startBar": 52,
+      "endBar": 52.75,
+      "start": 208,
+      "end": 211,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Major On",
+          "startBar": 52,
+          "endBar": 52.75,
+          "start": 4,
+          "end": 4.75,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "row": 6,
+      "startBar": 55,
+      "endBar": 58,
+      "start": 220,
+      "end": 232,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Major On",
+          "startBar": 55,
+          "endBar": 56,
+          "start": 7,
+          "end": 8,
+          "brick": 4
+        },
+        {
+          "row": 7,
+          "label": "Major On",
+          "startBar": 56,
+          "endBar": 58,
+          "start": 0,
+          "end": 2,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": true,
+      "harmonies": [
+        {
+          "root": 1,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Db"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "row": 7,
+      "startBar": 59,
+      "endBar": 59.5,
+      "start": 236,
+      "end": 238,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Major On",
+          "startBar": 59,
+          "endBar": 59.5,
+          "start": 3,
+          "end": 3.5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ab"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 1,
+      "startBar": 11,
+      "endBar": 11.25,
+      "start": 44,
+      "end": 45,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Major On",
+          "startBar": 11,
+          "endBar": 11.25,
+          "start": 3,
+          "end": 3.25,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 11,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 1,
+      "startBar": 11.25,
+      "endBar": 12,
+      "start": 45,
+      "end": 48,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Major On",
+          "startBar": 11.25,
+          "endBar": 12,
+          "start": 3.25,
+          "end": 4,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 6,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Gb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 2,
+      "startBar": 18,
+      "endBar": 19,
+      "start": 72,
+      "end": 76,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 18,
+          "endBar": 19,
+          "start": 2,
+          "end": 3,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "AbM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 2,
+      "startBar": 22,
+      "endBar": 24,
+      "start": 88,
+      "end": 96,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 22,
+          "endBar": 24,
+          "start": 6,
+          "end": 8,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Eb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 3,
+      "startBar": 24,
+      "endBar": 25,
+      "start": 96,
+      "end": 100,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Major On",
+          "startBar": 24,
+          "endBar": 25,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "Eb6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 4,
+      "startBar": 34,
+      "endBar": 35,
+      "start": 136,
+      "end": 140,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Major On",
+          "startBar": 34,
+          "endBar": 35,
+          "start": 2,
+          "end": 3,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "AbM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 7,
+      "startBar": 59,
+      "endBar": 59.25,
+      "start": 236,
+      "end": 237,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Major On",
+          "startBar": 59,
+          "endBar": 59.25,
+          "start": 3,
+          "end": 3.25,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 11,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 7,
+      "startBar": 59.25,
+      "endBar": 60,
+      "start": 237,
+      "end": 240,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Major On",
+          "startBar": 59.25,
+          "endBar": 60,
+          "start": 3.25,
+          "end": 4,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 6,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Gb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 8,
+      "startBar": 66,
+      "endBar": 67,
+      "start": 264,
+      "end": 268,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Major On",
+          "startBar": 66,
+          "endBar": 67,
+          "start": 2,
+          "end": 3,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "AbM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 8,
+      "startBar": 70,
+      "endBar": 72,
+      "start": 280,
+      "end": 288,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Major On",
+          "startBar": 70,
+          "endBar": 72,
+          "start": 6,
+          "end": 8,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Eb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 9,
+      "startBar": 72,
+      "endBar": 73,
+      "start": 288,
+      "end": 292,
+      "segments": [
+        {
+          "row": 9,
+          "label": "Major On",
+          "startBar": 72,
+          "endBar": 73,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "Eb6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 10,
+      "startBar": 82,
+      "endBar": 83,
+      "start": 328,
+      "end": 332,
+      "segments": [
+        {
+          "row": 10,
+          "label": "Major On",
+          "startBar": 82,
+          "endBar": 83,
+          "start": 2,
+          "end": 3,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "AbM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 11,
+      "startBar": 95,
+      "endBar": 96,
+      "start": 380,
+      "end": 384,
+      "segments": [
+        {
+          "row": 11,
+          "label": "Major On",
+          "startBar": 95,
+          "endBar": 96,
+          "start": 7,
+          "end": 8,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "Eb6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 464,
+      "title": "Georgia On My Mind",
+      "row": 7,
+      "startBar": 63,
+      "endBar": 64,
+      "start": 252,
+      "end": 256,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Major On",
+          "startBar": 63,
+          "endBar": 64,
+          "start": 7,
+          "end": 8,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "F6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 0,
+      "startBar": 6,
+      "endBar": 6.5,
+      "start": 24,
+      "end": 26,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Major On",
+          "startBar": 6,
+          "endBar": 6.5,
+          "start": 6,
+          "end": 6.5,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "CM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 0,
+      "startBar": 7,
+      "endBar": 7.75,
+      "start": 28,
+      "end": 31,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Major On",
+          "startBar": 7,
+          "endBar": 7.75,
+          "start": 7,
+          "end": 7.75,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 1,
+      "startBar": 15,
+      "endBar": 16,
+      "start": 60,
+      "end": 64,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Major On",
+          "startBar": 15,
+          "endBar": 16,
+          "start": 7,
+          "end": 8,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 2,
+      "startBar": 19,
+      "endBar": 20,
+      "start": 76,
+      "end": 80,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 19,
+          "endBar": 20,
+          "start": 3,
+          "end": 4,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "F6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 3,
+      "startBar": 30,
+      "endBar": 30.25,
+      "start": 120,
+      "end": 121,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Major On",
+          "startBar": 30,
+          "endBar": 30.25,
+          "start": 6,
+          "end": 6.25,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "CM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 5,
+      "startBar": 42,
+      "endBar": 42.5,
+      "start": 168,
+      "end": 170,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Major On",
+          "startBar": 42,
+          "endBar": 42.5,
+          "start": 2,
+          "end": 2.5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "CM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 5,
+      "startBar": 43,
+      "endBar": 43.75,
+      "start": 172,
+      "end": 175,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Major On",
+          "startBar": 43,
+          "endBar": 43.75,
+          "start": 3,
+          "end": 3.75,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 6,
+      "startBar": 51,
+      "endBar": 52,
+      "start": 204,
+      "end": 208,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Major On",
+          "startBar": 51,
+          "endBar": 52,
+          "start": 3,
+          "end": 4,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 6,
+      "startBar": 55,
+      "endBar": 56,
+      "start": 220,
+      "end": 224,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Major On",
+          "startBar": 55,
+          "endBar": 56,
+          "start": 7,
+          "end": 8,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "F6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 8,
+      "startBar": 66,
+      "endBar": 66.25,
+      "start": 264,
+      "end": 265,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Major On",
+          "startBar": 66,
+          "endBar": 66.25,
+          "start": 2,
+          "end": 2.25,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "CM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 466,
+      "title": "I Got It Bad And That Ain't Good",
+      "row": 5,
+      "startBar": 47,
+      "endBar": 48,
+      "start": 188,
+      "end": 192,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Major On",
+          "startBar": 47,
+          "endBar": 48,
+          "start": 7,
+          "end": 8,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 6,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Gb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 467,
+      "title": "I Got Rhythm",
+      "row": 4,
+      "startBar": 37,
+      "endBar": 37.1875,
+      "start": 148,
+      "end": 148.75,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Major On",
+          "startBar": 37,
+          "endBar": 37.1875,
+          "start": 5,
+          "end": 5.1875,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 0,
+      "startBar": 0,
+      "endBar": 0.5,
+      "start": 0,
+      "end": 2,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Major On",
+          "startBar": 0,
+          "endBar": 0.5,
+          "start": 0,
+          "end": 0.5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "G"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 0,
+      "startBar": 2,
+      "endBar": 3.5,
+      "start": 8,
+      "end": 14,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Major On",
+          "startBar": 2,
+          "endBar": 3.5,
+          "start": 2,
+          "end": 3.5,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "G"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 1,
+      "startBar": 10,
+      "endBar": 11.5,
+      "start": 40,
+      "end": 46,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Major On",
+          "startBar": 10,
+          "endBar": 11.5,
+          "start": 2,
+          "end": 3.5,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "G"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 2,
+      "startBar": 18,
+      "endBar": 18.5,
+      "start": 72,
+      "end": 74,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 18,
+          "endBar": 18.5,
+          "start": 2,
+          "end": 2.5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "C6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 2,
+      "startBar": 18.5,
+      "endBar": 19.5,
+      "start": 74,
+      "end": 78,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 18.5,
+          "endBar": 19.5,
+          "start": 2.5,
+          "end": 3.5,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "G"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 3,
+      "startBar": 24,
+      "endBar": 24.5,
+      "start": 96,
+      "end": 98,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Major On",
+          "startBar": 24,
+          "endBar": 24.5,
+          "start": 0,
+          "end": 0.5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "G"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 3,
+      "startBar": 26,
+      "endBar": 27.5,
+      "start": 104,
+      "end": 110,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Major On",
+          "startBar": 26,
+          "endBar": 27.5,
+          "start": 2,
+          "end": 3.5,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "G"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 4,
+      "startBar": 34,
+      "endBar": 35.5,
+      "start": 136,
+      "end": 142,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Major On",
+          "startBar": 34,
+          "endBar": 35.5,
+          "start": 2,
+          "end": 3.5,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "G"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 5,
+      "startBar": 42,
+      "endBar": 43.5,
+      "start": 168,
+      "end": 174,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Major On",
+          "startBar": 42,
+          "endBar": 43.5,
+          "start": 2,
+          "end": 3.5,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "G"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 6,
+      "startBar": 50,
+      "endBar": 50.5,
+      "start": 200,
+      "end": 202,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Major On",
+          "startBar": 50,
+          "endBar": 50.5,
+          "start": 2,
+          "end": 2.5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "C6"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 6,
+      "startBar": 50.5,
+      "endBar": 51.5,
+      "start": 202,
+      "end": 206,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Major On",
+          "startBar": 50.5,
+          "endBar": 51.5,
+          "start": 2.5,
+          "end": 3.5,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "G"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 7,
+      "startBar": 56,
+      "endBar": 56.5,
+      "start": 224,
+      "end": 226,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Major On",
+          "startBar": 56,
+          "endBar": 56.5,
+          "start": 0,
+          "end": 0.5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "G"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 7,
+      "startBar": 58,
+      "endBar": 59.5,
+      "start": 232,
+      "end": 238,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Major On",
+          "startBar": 58,
+          "endBar": 59.5,
+          "start": 2,
+          "end": 3.5,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "G"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 8,
+      "startBar": 64,
+      "endBar": 65,
+      "start": 256,
+      "end": 260,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Major On",
+          "startBar": 64,
+          "endBar": 65,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "G"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 469,
+      "title": "On A Clear Day (You Can See Forever)",
+      "row": 4,
+      "startBar": 25,
+      "endBar": 26.5,
+      "start": 100,
+      "end": 106,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Major On",
+          "startBar": 25,
+          "endBar": 26.5,
+          "start": 0.5,
+          "end": 2,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "GM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 470,
+      "title": "On A Slow Boat To China",
+      "row": 1,
+      "startBar": 10,
+      "endBar": 10.5,
+      "start": 40,
+      "end": 42,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Major On",
+          "startBar": 10,
+          "endBar": 10.5,
+          "start": 2,
+          "end": 2.5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 470,
+      "title": "On A Slow Boat To China",
+      "row": 3,
+      "startBar": 31.5,
+      "endBar": 32,
+      "start": 126,
+      "end": 128,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Major On",
+          "startBar": 31.5,
+          "endBar": 32,
+          "start": 7.5,
+          "end": 8,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bb"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 471,
+      "title": "Ornithology",
+      "row": 1,
+      "startBar": 0.125,
+      "endBar": 2.125,
+      "start": 0.5,
+      "end": 8.5,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Major On",
+          "startBar": 0.125,
+          "endBar": 2.125,
+          "start": 0,
+          "end": 2,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "GM7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 1,
+      "startBar": 0.25,
+      "endBar": 0.75,
+      "start": 1,
+      "end": 3,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Major On",
+          "startBar": 0.25,
+          "endBar": 0.75,
+          "start": 0,
+          "end": 0.5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 2,
+      "startBar": 8.25,
+      "endBar": 8.75,
+      "start": 33,
+      "end": 35,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 8.25,
+          "endBar": 8.75,
+          "start": 0,
+          "end": 0.5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 2,
+      "startBar": 15.25,
+      "endBar": 15.75,
+      "start": 61,
+      "end": 63,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Major On",
+          "startBar": 15.25,
+          "endBar": 15.75,
+          "start": 7,
+          "end": 7.5,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 4,
+      "startBar": 24.25,
+      "endBar": 24.75,
+      "start": 97,
+      "end": 99,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Major On",
+          "startBar": 24.25,
+          "endBar": 24.75,
+          "start": 0,
+          "end": 0.5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 4,
+      "startBar": 31.25,
+      "endBar": 31.75,
+      "start": 125,
+      "end": 127,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Major On",
+          "startBar": 31.25,
+          "endBar": 31.75,
+          "start": 7,
+          "end": 7.5,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 5,
+      "startBar": 32.25,
+      "endBar": 32.75,
+      "start": 129,
+      "end": 131,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Major On",
+          "startBar": 32.25,
+          "endBar": 32.75,
+          "start": 0,
+          "end": 0.5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 6,
+      "startBar": 40.25,
+      "endBar": 40.75,
+      "start": 161,
+      "end": 163,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Major On",
+          "startBar": 40.25,
+          "endBar": 40.75,
+          "start": 0,
+          "end": 0.5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 6,
+      "startBar": 47.25,
+      "endBar": 47.75,
+      "start": 189,
+      "end": 191,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Major On",
+          "startBar": 47.25,
+          "endBar": 47.75,
+          "start": 7,
+          "end": 7.5,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 8,
+      "startBar": 56.25,
+      "endBar": 56.75,
+      "start": 225,
+      "end": 227,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Major On",
+          "startBar": 56.25,
+          "endBar": 56.75,
+          "start": 0,
+          "end": 0.5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 8,
+      "startBar": 63.25,
+      "endBar": 63.5,
+      "start": 253,
+      "end": 254,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Major On",
+          "startBar": 63.25,
+          "endBar": 63.5,
+          "start": 7,
+          "end": 7.25,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "C"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Major On",
+      "slug": "major-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 8,
+      "startBar": 63.75,
+      "endBar": 64.25,
+      "start": 255,
+      "end": 257,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Major On",
+          "startBar": 63.75,
+          "endBar": 64.25,
+          "start": 7.5,
+          "end": 8,
+          "brick": 7
+        }
+      ],
+      "labels": [
+        "Major On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7,
+            9,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "C69"
           ]
         }
       ],
@@ -79352,6 +82474,3005 @@
       "reason": "single-harmony"
     },
     {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 458,
+      "title": "A Weaver of Dreams",
+      "row": 0,
+      "startBar": 4,
+      "endBar": 6,
+      "start": 16,
+      "end": 24,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 4,
+          "endBar": 6,
+          "start": 4,
+          "end": 6,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 458,
+      "title": "A Weaver of Dreams",
+      "row": 2,
+      "startBar": 20,
+      "endBar": 22,
+      "start": 80,
+      "end": 88,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 20,
+          "endBar": 22,
+          "start": 4,
+          "end": 6,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 458,
+      "title": "A Weaver of Dreams",
+      "row": 3,
+      "startBar": 27,
+      "endBar": 27.75,
+      "start": 108,
+      "end": 111,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 27,
+          "endBar": 27.75,
+          "start": 3,
+          "end": 3.75,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Ebm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 459,
+      "title": "Corner Pocket",
+      "row": 0,
+      "startBar": 1,
+      "endBar": 1.375,
+      "start": 4,
+      "end": 5.5,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 1,
+          "endBar": 1.375,
+          "start": 1,
+          "end": 1.375,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "row": 1,
+      "startBar": 9,
+      "endBar": 11,
+      "start": 36,
+      "end": 44,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 9,
+          "endBar": 11,
+          "start": 1,
+          "end": 3,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "row": 5,
+      "startBar": 41,
+      "endBar": 43,
+      "start": 164,
+      "end": 172,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Minor On",
+          "startBar": 41,
+          "endBar": 43,
+          "start": 1,
+          "end": 3,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "row": 7,
+      "startBar": 63.5,
+      "endBar": 64,
+      "start": 254,
+      "end": 256,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Minor On",
+          "startBar": 63.5,
+          "endBar": 64,
+          "start": 7.5,
+          "end": 8,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Fm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 0,
+      "startBar": 0,
+      "endBar": 1,
+      "start": 0,
+      "end": 4,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 0,
+          "endBar": 1,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ebm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 0,
+      "startBar": 3.25,
+      "endBar": 4,
+      "start": 13,
+      "end": 16,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 3.25,
+          "endBar": 4,
+          "start": 3.25,
+          "end": 4,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ebm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 0,
+      "startBar": 5.25,
+      "endBar": 6,
+      "start": 21,
+      "end": 24,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 5.25,
+          "endBar": 6,
+          "start": 5.25,
+          "end": 6,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Abm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 1,
+      "startBar": 8,
+      "endBar": 9,
+      "start": 32,
+      "end": 36,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 8,
+          "endBar": 9,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ebm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 5,
+      "startBar": 40,
+      "endBar": 41,
+      "start": 160,
+      "end": 164,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Minor On",
+          "startBar": 40,
+          "endBar": 41,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 5,
+      "startBar": 45,
+      "endBar": 45.5,
+      "start": 180,
+      "end": 182,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Minor On",
+          "startBar": 45,
+          "endBar": 45.5,
+          "start": 5,
+          "end": 5.5,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Fm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 5,
+      "startBar": 46.5,
+      "endBar": 47,
+      "start": 186,
+      "end": 188,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Minor On",
+          "startBar": 46.5,
+          "endBar": 47,
+          "start": 6.5,
+          "end": 7,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 6,
+      "startBar": 48,
+      "endBar": 49,
+      "start": 192,
+      "end": 196,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 48,
+          "endBar": 49,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ebm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 6,
+      "startBar": 51.25,
+      "endBar": 52,
+      "start": 205,
+      "end": 208,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 51.25,
+          "endBar": 52,
+          "start": 3.25,
+          "end": 4,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ebm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 6,
+      "startBar": 53.25,
+      "endBar": 54,
+      "start": 213,
+      "end": 216,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 53.25,
+          "endBar": 54,
+          "start": 5.25,
+          "end": 6,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Abm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 7,
+      "startBar": 56,
+      "endBar": 57,
+      "start": 224,
+      "end": 228,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Minor On",
+          "startBar": 56,
+          "endBar": 57,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Ebm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 11,
+      "startBar": 88,
+      "endBar": 89,
+      "start": 352,
+      "end": 356,
+      "segments": [
+        {
+          "row": 11,
+          "label": "Minor On",
+          "startBar": 88,
+          "endBar": 89,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 463,
+      "title": "Ev'ry Time We Say Goodbye",
+      "row": 3,
+      "startBar": 27,
+      "endBar": 27.5,
+      "start": 108,
+      "end": 110,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 27,
+          "endBar": 27.5,
+          "start": 3,
+          "end": 3.5,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Abm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 463,
+      "title": "Ev'ry Time We Say Goodbye",
+      "row": 7,
+      "startBar": 59,
+      "endBar": 59.5,
+      "start": 236,
+      "end": 238,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Minor On",
+          "startBar": 59,
+          "endBar": 59.5,
+          "start": 3,
+          "end": 3.5,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Abm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 463,
+      "title": "Ev'ry Time We Say Goodbye",
+      "row": 7,
+      "startBar": 62,
+      "endBar": 62.5,
+      "start": 248,
+      "end": 250,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Minor On",
+          "startBar": 62,
+          "endBar": 62.5,
+          "start": 6,
+          "end": 6.5,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 464,
+      "title": "Georgia On My Mind",
+      "row": 0,
+      "startBar": 2,
+      "endBar": 2.5,
+      "start": 8,
+      "end": 10,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 2,
+          "endBar": 2.5,
+          "start": 2,
+          "end": 2.5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 464,
+      "title": "Georgia On My Mind",
+      "row": 1,
+      "startBar": 10,
+      "endBar": 10.5,
+      "start": 40,
+      "end": 42,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 10,
+          "endBar": 10.5,
+          "start": 2,
+          "end": 2.5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 464,
+      "title": "Georgia On My Mind",
+      "row": 2,
+      "startBar": 18,
+      "endBar": 18.5,
+      "start": 72,
+      "end": 74,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 18,
+          "endBar": 18.5,
+          "start": 2,
+          "end": 2.5,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 464,
+      "title": "Georgia On My Mind",
+      "row": 3,
+      "startBar": 26,
+      "endBar": 26.5,
+      "start": 104,
+      "end": 106,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 26,
+          "endBar": 26.5,
+          "start": 2,
+          "end": 2.5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 464,
+      "title": "Georgia On My Mind",
+      "row": 4,
+      "startBar": 34,
+      "endBar": 34.5,
+      "start": 136,
+      "end": 138,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Minor On",
+          "startBar": 34,
+          "endBar": 34.5,
+          "start": 2,
+          "end": 2.5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 464,
+      "title": "Georgia On My Mind",
+      "row": 5,
+      "startBar": 42,
+      "endBar": 42.5,
+      "start": 168,
+      "end": 170,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Minor On",
+          "startBar": 42,
+          "endBar": 42.5,
+          "start": 2,
+          "end": 2.5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 464,
+      "title": "Georgia On My Mind",
+      "row": 6,
+      "startBar": 50,
+      "endBar": 50.5,
+      "start": 200,
+      "end": 202,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 50,
+          "endBar": 50.5,
+          "start": 2,
+          "end": 2.5,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 464,
+      "title": "Georgia On My Mind",
+      "row": 7,
+      "startBar": 58,
+      "endBar": 58.5,
+      "start": 232,
+      "end": 234,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Minor On",
+          "startBar": 58,
+          "endBar": 58.5,
+          "start": 2,
+          "end": 2.5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 0,
+      "startBar": 6.5,
+      "endBar": 6.75,
+      "start": 26,
+      "end": 27,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 6.5,
+          "endBar": 6.75,
+          "start": 6.5,
+          "end": 6.75,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 2,
+      "startBar": 22,
+      "endBar": 22.5,
+      "start": 88,
+      "end": 90,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 22,
+          "endBar": 22.5,
+          "start": 6,
+          "end": 6.5,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 3,
+      "startBar": 30.25,
+      "endBar": 31,
+      "start": 121,
+      "end": 124,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 30.25,
+          "endBar": 31,
+          "start": 6.25,
+          "end": 7,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 4,
+      "startBar": 32,
+      "endBar": 32.75,
+      "start": 128,
+      "end": 131,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Minor On",
+          "startBar": 32,
+          "endBar": 32.75,
+          "start": 0,
+          "end": 0.75,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 4,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Em7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 4,
+      "startBar": 32.75,
+      "endBar": 33,
+      "start": 131,
+      "end": 132,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Minor On",
+          "startBar": 32.75,
+          "endBar": 33,
+          "start": 0.75,
+          "end": 1,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Ebm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 5,
+      "startBar": 42.5,
+      "endBar": 42.75,
+      "start": 170,
+      "end": 171,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Minor On",
+          "startBar": 42.5,
+          "endBar": 42.75,
+          "start": 2.5,
+          "end": 2.75,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 7,
+      "startBar": 58,
+      "endBar": 58.5,
+      "start": 232,
+      "end": 234,
+      "segments": [
+        {
+          "row": 7,
+          "label": "Minor On",
+          "startBar": 58,
+          "endBar": 58.5,
+          "start": 2,
+          "end": 2.5,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 8,
+      "startBar": 66.25,
+      "endBar": 67,
+      "start": 265,
+      "end": 268,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Minor On",
+          "startBar": 66.25,
+          "endBar": 67,
+          "start": 2.25,
+          "end": 3,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 8,
+      "startBar": 68,
+      "endBar": 68.75,
+      "start": 272,
+      "end": 275,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Minor On",
+          "startBar": 68,
+          "endBar": 68.75,
+          "start": 4,
+          "end": 4.75,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 4,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Em7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 8,
+      "startBar": 68.75,
+      "endBar": 69,
+      "start": 275,
+      "end": 276,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Minor On",
+          "startBar": 68.75,
+          "endBar": 69,
+          "start": 4.75,
+          "end": 5,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 3,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Ebm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 466,
+      "title": "I Got It Bad And That Ain't Good",
+      "row": 0,
+      "startBar": 2,
+      "endBar": 2.75,
+      "start": 8,
+      "end": 11,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 2,
+          "endBar": 2.75,
+          "start": 2,
+          "end": 2.75,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 11,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Bm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 466,
+      "title": "I Got It Bad And That Ain't Good",
+      "row": 0,
+      "startBar": 3,
+      "endBar": 3.5,
+      "start": 12,
+      "end": 14,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 3,
+          "endBar": 3.5,
+          "start": 3,
+          "end": 3.5,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 466,
+      "title": "I Got It Bad And That Ain't Good",
+      "row": 0,
+      "startBar": 4.8125,
+      "endBar": 4.9375,
+      "start": 19.25,
+      "end": 19.75,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 4.8125,
+          "endBar": 4.9375,
+          "start": 4.8125,
+          "end": 4.9375,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 466,
+      "title": "I Got It Bad And That Ain't Good",
+      "row": 0,
+      "startBar": 6,
+      "endBar": 6.75,
+      "start": 24,
+      "end": 27,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 6,
+          "endBar": 6.75,
+          "start": 6,
+          "end": 6.75,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 11,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Bm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 466,
+      "title": "I Got It Bad And That Ain't Good",
+      "row": 2,
+      "startBar": 19.5,
+      "endBar": 20,
+      "start": 78,
+      "end": 80,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 19.5,
+          "endBar": 20,
+          "start": 3.5,
+          "end": 4,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 4,
+          "intervals": [
+            0,
+            3,
+            7,
+            10,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "Em9"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 466,
+      "title": "I Got It Bad And That Ain't Good",
+      "row": 2,
+      "startBar": 21,
+      "endBar": 22,
+      "start": 84,
+      "end": 88,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 21,
+          "endBar": 22,
+          "start": 5,
+          "end": 6,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 466,
+      "title": "I Got It Bad And That Ain't Good",
+      "row": 3,
+      "startBar": 27.5,
+      "endBar": 28,
+      "start": 110,
+      "end": 112,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 27.5,
+          "endBar": 28,
+          "start": 3.5,
+          "end": 4,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 4,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Em7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 466,
+      "title": "I Got It Bad And That Ain't Good",
+      "row": 3,
+      "startBar": 29,
+      "endBar": 30,
+      "start": 116,
+      "end": 120,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 29,
+          "endBar": 30,
+          "start": 5,
+          "end": 6,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 466,
+      "title": "I Got It Bad And That Ain't Good",
+      "row": 4,
+      "startBar": 38,
+      "endBar": 38.75,
+      "start": 152,
+      "end": 155,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Minor On",
+          "startBar": 38,
+          "endBar": 38.75,
+          "start": 6,
+          "end": 6.75,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 11,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Bm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 466,
+      "title": "I Got It Bad And That Ain't Good",
+      "row": 4,
+      "startBar": 39,
+      "endBar": 40,
+      "start": 156,
+      "end": 160,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Minor On",
+          "startBar": 39,
+          "endBar": 40,
+          "start": 7,
+          "end": 8,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 466,
+      "title": "I Got It Bad And That Ain't Good",
+      "row": 5,
+      "startBar": 43.5,
+      "endBar": 44,
+      "start": 174,
+      "end": 176,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Minor On",
+          "startBar": 43.5,
+          "endBar": 44,
+          "start": 3.5,
+          "end": 4,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 4,
+          "intervals": [
+            0,
+            3,
+            7,
+            10,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "Em9"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 466,
+      "title": "I Got It Bad And That Ain't Good",
+      "row": 5,
+      "startBar": 45,
+      "endBar": 46,
+      "start": 180,
+      "end": 184,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Minor On",
+          "startBar": 45,
+          "endBar": 46,
+          "start": 5,
+          "end": 6,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "Am9"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 2,
+      "startBar": 23,
+      "endBar": 23.5,
+      "start": 92,
+      "end": 94,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 23,
+          "endBar": 23.5,
+          "start": 7,
+          "end": 7.5,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 4,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Em"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 2,
+      "startBar": 23.5,
+      "endBar": 23.75,
+      "start": 94,
+      "end": 95,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 23.5,
+          "endBar": 23.75,
+          "start": 7.5,
+          "end": 7.75,
+          "brick": 7
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 6,
+      "startBar": 55,
+      "endBar": 55.5,
+      "start": 220,
+      "end": 222,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 55,
+          "endBar": 55.5,
+          "start": 7,
+          "end": 7.5,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 4,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Em"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 6,
+      "startBar": 55.5,
+      "endBar": 55.75,
+      "start": 222,
+      "end": 223,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 55.5,
+          "endBar": 55.75,
+          "start": 7.5,
+          "end": 7.75,
+          "brick": 7
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 469,
+      "title": "On A Clear Day (You Can See Forever)",
+      "row": 4,
+      "startBar": 30.5,
+      "endBar": 31.25,
+      "start": 122,
+      "end": 125,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Minor On",
+          "startBar": 30.5,
+          "endBar": 31.25,
+          "start": 6,
+          "end": 6.75,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 470,
+      "title": "On A Slow Boat To China",
+      "row": 1,
+      "startBar": 14,
+      "endBar": 14.75,
+      "start": 56,
+      "end": 59,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 14,
+          "endBar": 14.75,
+          "start": 6,
+          "end": 6.75,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 470,
+      "title": "On A Slow Boat To China",
+      "row": 3,
+      "startBar": 31,
+      "endBar": 31.25,
+      "start": 124,
+      "end": 125,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 31,
+          "endBar": 31.25,
+          "start": 7,
+          "end": 7.25,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 472,
+      "title": "Somewhere, Over The Rainbow",
+      "row": 0,
+      "startBar": 1,
+      "endBar": 1.75,
+      "start": 4,
+      "end": 7,
+      "segments": [
+        {
+          "row": 0,
+          "label": "Minor On",
+          "startBar": 1,
+          "endBar": 1.75,
+          "start": 1,
+          "end": 1.75,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Gm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 472,
+      "title": "Somewhere, Over The Rainbow",
+      "row": 1,
+      "startBar": 9,
+      "endBar": 9.75,
+      "start": 36,
+      "end": 39,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 9,
+          "endBar": 9.75,
+          "start": 1,
+          "end": 1.75,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Gm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 472,
+      "title": "Somewhere, Over The Rainbow",
+      "row": 3,
+      "startBar": 25,
+      "endBar": 25.75,
+      "start": 100,
+      "end": 103,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Minor On",
+          "startBar": 25,
+          "endBar": 25.75,
+          "start": 1,
+          "end": 1.75,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Gm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 1,
+      "startBar": 3.25,
+      "endBar": 4.25,
+      "start": 13,
+      "end": 17,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Minor On",
+          "startBar": 3.25,
+          "endBar": 4.25,
+          "start": 3,
+          "end": 4,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Am"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 2,
+      "startBar": 11.25,
+      "endBar": 12.25,
+      "start": 45,
+      "end": 49,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 11.25,
+          "endBar": 12.25,
+          "start": 3,
+          "end": 4,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Am"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 2,
+      "startBar": 14.25,
+      "endBar": 14.75,
+      "start": 57,
+      "end": 59,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Minor On",
+          "startBar": 14.25,
+          "endBar": 14.75,
+          "start": 6,
+          "end": 6.5,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 4,
+      "startBar": 27.25,
+      "endBar": 28.25,
+      "start": 109,
+      "end": 113,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Minor On",
+          "startBar": 27.25,
+          "endBar": 28.25,
+          "start": 3,
+          "end": 4,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Am"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 4,
+      "startBar": 30.25,
+      "endBar": 30.75,
+      "start": 121,
+      "end": 123,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Minor On",
+          "startBar": 30.25,
+          "endBar": 30.75,
+          "start": 6,
+          "end": 6.5,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm9"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 5,
+      "startBar": 35.25,
+      "endBar": 36.25,
+      "start": 141,
+      "end": 145,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Minor On",
+          "startBar": 35.25,
+          "endBar": 36.25,
+          "start": 3,
+          "end": 4,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Am"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 6,
+      "startBar": 43.25,
+      "endBar": 44.25,
+      "start": 173,
+      "end": 177,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 43.25,
+          "endBar": 44.25,
+          "start": 3,
+          "end": 4,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Am"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 6,
+      "startBar": 46.25,
+      "endBar": 46.75,
+      "start": 185,
+      "end": 187,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Minor On",
+          "startBar": 46.25,
+          "endBar": 46.75,
+          "start": 6,
+          "end": 6.5,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 8,
+      "startBar": 59.25,
+      "endBar": 60.25,
+      "start": 237,
+      "end": 241,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Minor On",
+          "startBar": 59.25,
+          "endBar": 60.25,
+          "start": 3,
+          "end": 4,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Am"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
+      "brick": "Minor On",
+      "slug": "minor-on",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 8,
+      "startBar": 62.25,
+      "endBar": 62.75,
+      "start": 249,
+      "end": 251,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Minor On",
+          "startBar": 62.25,
+          "endBar": 62.75,
+          "start": 6,
+          "end": 6.5,
+          "brick": 5
+        }
+      ],
+      "labels": [
+        "Minor On"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm9"
+          ]
+        }
+      ],
+      "reason": "single-harmony"
+    },
+    {
       "brick": "Minor Perfect",
       "slug": "minor-perfect",
       "song": 71,
@@ -82014,6 +88135,114 @@
       "reason": "on-off-family"
     },
     {
+      "brick": "Off On Minor bVII",
+      "slug": "off-on-minor-bvii",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 2,
+      "startBar": 19.5,
+      "endBar": 20.5,
+      "start": 78,
+      "end": 82,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Off On Minor bVII",
+          "startBar": 19.5,
+          "endBar": 20.5,
+          "start": 3.5,
+          "end": 4.5,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Off On Minor bVII"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "D7"
+          ]
+        },
+        {
+          "root": 4,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Em"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "Off On Minor bVII",
+      "slug": "off-on-minor-bvii",
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "row": 6,
+      "startBar": 51.5,
+      "endBar": 52.5,
+      "start": 206,
+      "end": 210,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Off On Minor bVII",
+          "startBar": 51.5,
+          "endBar": 52.5,
+          "start": 3.5,
+          "end": 4.5,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Off On Minor bVII"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "D7"
+          ]
+        },
+        {
+          "root": 4,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Em"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
       "brick": "Off On Minor IV",
       "slug": "off-on-minor-iv",
       "song": 19,
@@ -83267,6 +89496,397 @@
       "reason": "on-off-family"
     },
     {
+      "brick": "Off On Minor IV",
+      "slug": "off-on-minor-iv",
+      "song": 470,
+      "title": "On A Slow Boat To China",
+      "row": 1,
+      "startBar": 12,
+      "endBar": 13,
+      "start": 48,
+      "end": 52,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Off On Minor IV",
+          "startBar": 12,
+          "endBar": 13,
+          "start": 4,
+          "end": 5,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "Off On Minor IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "C7"
+          ]
+        },
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Gm7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "Off On Minor IV",
+      "slug": "off-on-minor-iv",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 1,
+      "startBar": 4.25,
+      "endBar": 5.25,
+      "start": 17,
+      "end": 21,
+      "segments": [
+        {
+          "row": 1,
+          "label": "Off On Minor IV",
+          "startBar": 4.25,
+          "endBar": 5.25,
+          "start": 4,
+          "end": 5,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Off On Minor IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            4,
+            7,
+            10,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "D9"
+          ]
+        },
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "Off On Minor IV",
+      "slug": "off-on-minor-iv",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 2,
+      "startBar": 12.25,
+      "endBar": 13.25,
+      "start": 49,
+      "end": 53,
+      "segments": [
+        {
+          "row": 2,
+          "label": "Off On Minor IV",
+          "startBar": 12.25,
+          "endBar": 13.25,
+          "start": 4,
+          "end": 5,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Off On Minor IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            4,
+            7,
+            10,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "D9"
+          ]
+        },
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "Off On Minor IV",
+      "slug": "off-on-minor-iv",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 4,
+      "startBar": 28.25,
+      "endBar": 29.25,
+      "start": 113,
+      "end": 117,
+      "segments": [
+        {
+          "row": 4,
+          "label": "Off On Minor IV",
+          "startBar": 28.25,
+          "endBar": 29.25,
+          "start": 4,
+          "end": 5,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Off On Minor IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            4,
+            7,
+            10,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "D9"
+          ]
+        },
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "Off On Minor IV",
+      "slug": "off-on-minor-iv",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 5,
+      "startBar": 36.25,
+      "endBar": 37.25,
+      "start": 145,
+      "end": 149,
+      "segments": [
+        {
+          "row": 5,
+          "label": "Off On Minor IV",
+          "startBar": 36.25,
+          "endBar": 37.25,
+          "start": 4,
+          "end": 5,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Off On Minor IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            4,
+            7,
+            10,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "D9"
+          ]
+        },
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "Off On Minor IV",
+      "slug": "off-on-minor-iv",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 6,
+      "startBar": 44.25,
+      "endBar": 45.25,
+      "start": 177,
+      "end": 181,
+      "segments": [
+        {
+          "row": 6,
+          "label": "Off On Minor IV",
+          "startBar": 44.25,
+          "endBar": 45.25,
+          "start": 4,
+          "end": 5,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Off On Minor IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            4,
+            7,
+            10,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "D9"
+          ]
+        },
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "Off On Minor IV",
+      "slug": "off-on-minor-iv",
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "row": 8,
+      "startBar": 60.25,
+      "endBar": 61.25,
+      "start": 241,
+      "end": 245,
+      "segments": [
+        {
+          "row": 8,
+          "label": "Off On Minor IV",
+          "startBar": 60.25,
+          "endBar": 61.25,
+          "start": 4,
+          "end": 5,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "Off On Minor IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            4,
+            7,
+            10,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "D9"
+          ]
+        },
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
       "brick": "Off On Minor VII",
       "slug": "off-on-minor-vii",
       "song": 261,
@@ -83488,6 +90108,70 @@
           "bass": null,
           "symbols": [
             "Em7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "Off On Minor VII",
+      "slug": "off-on-minor-vii",
+      "song": 466,
+      "title": "I Got It Bad And That Ain't Good",
+      "row": 3,
+      "startBar": 31.5,
+      "endBar": 32.5,
+      "start": 126,
+      "end": 130,
+      "segments": [
+        {
+          "row": 3,
+          "label": "Off On Minor VII",
+          "startBar": 31.5,
+          "endBar": 32,
+          "start": 7.5,
+          "end": 8,
+          "brick": 5
+        },
+        {
+          "row": 4,
+          "label": "Off On Minor VII",
+          "startBar": 32,
+          "endBar": 32.5,
+          "start": 0,
+          "end": 0.5,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "Off On Minor VII"
+      ],
+      "continued": true,
+      "harmonies": [
+        {
+          "root": 1,
+          "intervals": [
+            0,
+            3,
+            6,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "C#o7"
+          ]
+        },
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
           ]
         }
       ],
@@ -86297,6 +92981,114 @@
           "bass": null,
           "symbols": [
             "Em7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Major III",
+      "slug": "on-off-major-iii",
+      "song": 470,
+      "title": "On A Slow Boat To China",
+      "row": 0,
+      "startBar": 0,
+      "endBar": 1,
+      "start": 0,
+      "end": 4,
+      "segments": [
+        {
+          "row": 0,
+          "label": "On Off Major III",
+          "startBar": 0,
+          "endBar": 1,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "On Off Major III"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bb"
+          ]
+        },
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Major III",
+      "slug": "on-off-major-iii",
+      "song": 470,
+      "title": "On A Slow Boat To China",
+      "row": 2,
+      "startBar": 16,
+      "endBar": 17,
+      "start": 64,
+      "end": 68,
+      "segments": [
+        {
+          "row": 2,
+          "label": "On Off Major III",
+          "startBar": 16,
+          "endBar": 17,
+          "start": 0,
+          "end": 1,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "On Off Major III"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bb"
+          ]
+        },
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
           ]
         }
       ],
@@ -89175,6 +95967,120 @@
       "reason": "on-off-family"
     },
     {
+      "brick": "On Off Major IV",
+      "slug": "on-off-major-iv",
+      "song": 466,
+      "title": "I Got It Bad And That Ain't Good",
+      "row": 0,
+      "startBar": 1,
+      "endBar": 2,
+      "start": 4,
+      "end": 8,
+      "segments": [
+        {
+          "row": 0,
+          "label": "On Off Major IV",
+          "startBar": 1,
+          "endBar": 2,
+          "start": 1,
+          "end": 2,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "On Off Major IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7,
+            9,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "G69"
+          ]
+        },
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7,
+            10,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "C9"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Major IV",
+      "slug": "on-off-major-iv",
+      "song": 466,
+      "title": "I Got It Bad And That Ain't Good",
+      "row": 0,
+      "startBar": 5,
+      "endBar": 6,
+      "start": 20,
+      "end": 24,
+      "segments": [
+        {
+          "row": 0,
+          "label": "On Off Major IV",
+          "startBar": 5,
+          "endBar": 6,
+          "start": 5,
+          "end": 6,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "On Off Major IV"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7,
+            9,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "G69"
+          ]
+        },
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7,
+            10,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "C9"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
       "brick": "On Off Major Nowhere",
       "slug": "on-off-major-nowhere",
       "song": 130,
@@ -89770,6 +96676,114 @@
           "bass": null,
           "symbols": [
             "Bbo7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Major Nowhere",
+      "slug": "on-off-major-nowhere",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 1,
+      "startBar": 12,
+      "endBar": 14,
+      "start": 48,
+      "end": 56,
+      "segments": [
+        {
+          "row": 1,
+          "label": "On Off Major Nowhere",
+          "startBar": 12,
+          "endBar": 14,
+          "start": 4,
+          "end": 6,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "On Off Major Nowhere"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bb"
+          ]
+        },
+        {
+          "root": 6,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Gb7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Major Nowhere",
+      "slug": "on-off-major-nowhere",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 7,
+      "startBar": 60,
+      "endBar": 62,
+      "start": 240,
+      "end": 248,
+      "segments": [
+        {
+          "row": 7,
+          "label": "On Off Major Nowhere",
+          "startBar": 60,
+          "endBar": 62,
+          "start": 4,
+          "end": 6,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "On Off Major Nowhere"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bb"
+          ]
+        },
+        {
+          "root": 6,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Gb7"
           ]
         }
       ],
@@ -90810,6 +97824,171 @@
           "bass": null,
           "symbols": [
             "Am"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Major Somewhere",
+      "slug": "on-off-major-somewhere",
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "row": 3,
+      "startBar": 31,
+      "endBar": 32,
+      "start": 124,
+      "end": 128,
+      "segments": [
+        {
+          "row": 3,
+          "label": "On Off Major Somewhere",
+          "startBar": 31,
+          "endBar": 32,
+          "start": 7,
+          "end": 8,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "On Off Major Somewhere"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "A6"
+          ]
+        },
+        {
+          "root": 11,
+          "intervals": [
+            0,
+            3,
+            6,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "Bo7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Major Somewhere",
+      "slug": "on-off-major-somewhere",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 1,
+      "startBar": 14,
+      "endBar": 15,
+      "start": 56,
+      "end": 60,
+      "segments": [
+        {
+          "row": 1,
+          "label": "On Off Major Somewhere",
+          "startBar": 14,
+          "endBar": 15,
+          "start": 6,
+          "end": 7,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "On Off Major Somewhere"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "CM7"
+          ]
+        },
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Major Somewhere",
+      "slug": "on-off-major-somewhere",
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "row": 6,
+      "startBar": 50,
+      "endBar": 51,
+      "start": 200,
+      "end": 204,
+      "segments": [
+        {
+          "row": 6,
+          "label": "On Off Major Somewhere",
+          "startBar": 50,
+          "endBar": 51,
+          "start": 2,
+          "end": 3,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "On Off Major Somewhere"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "CM7"
+          ]
+        },
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm7"
           ]
         }
       ],
@@ -100716,6 +107895,114 @@
       "reason": "on-off-family"
     },
     {
+      "brick": "On Off Minor Nowhere",
+      "slug": "on-off-minor-nowhere",
+      "song": 464,
+      "title": "Georgia On My Mind",
+      "row": 2,
+      "startBar": 17,
+      "endBar": 18,
+      "start": 68,
+      "end": 72,
+      "segments": [
+        {
+          "row": 2,
+          "label": "On Off Minor Nowhere",
+          "startBar": 17,
+          "endBar": 18,
+          "start": 1,
+          "end": 2,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "On Off Minor Nowhere"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm"
+          ]
+        },
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Bb7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Minor Nowhere",
+      "slug": "on-off-minor-nowhere",
+      "song": 464,
+      "title": "Georgia On My Mind",
+      "row": 6,
+      "startBar": 49,
+      "endBar": 50,
+      "start": 196,
+      "end": 200,
+      "segments": [
+        {
+          "row": 6,
+          "label": "On Off Minor Nowhere",
+          "startBar": 49,
+          "endBar": 50,
+          "start": 1,
+          "end": 2,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "On Off Minor Nowhere"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Dm"
+          ]
+        },
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Bb7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
       "brick": "On Off Minor Somewhere",
       "slug": "on-off-minor-somewhere",
       "song": 11,
@@ -102267,6 +109554,114 @@
       "reason": "on-off-family"
     },
     {
+      "brick": "On Off Minor Somewhere",
+      "slug": "on-off-minor-somewhere",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 0,
+      "startBar": 1,
+      "endBar": 3,
+      "start": 4,
+      "end": 12,
+      "segments": [
+        {
+          "row": 0,
+          "label": "On Off Minor Somewhere",
+          "startBar": 1,
+          "endBar": 3,
+          "start": 1,
+          "end": 3,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "On Off Minor Somewhere"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Abm"
+          ]
+        },
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Bb7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Minor Somewhere",
+      "slug": "on-off-minor-somewhere",
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "row": 6,
+      "startBar": 49,
+      "endBar": 51,
+      "start": 196,
+      "end": 204,
+      "segments": [
+        {
+          "row": 6,
+          "label": "On Off Minor Somewhere",
+          "startBar": 49,
+          "endBar": 51,
+          "start": 1,
+          "end": 3,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "On Off Minor Somewhere"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Abm"
+          ]
+        },
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Bb7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
       "brick": "On Off Minor V",
       "slug": "on-off-minor-v",
       "song": 9,
@@ -102974,6 +110369,225 @@
           "bass": null,
           "symbols": [
             "E7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Minor VI",
+      "slug": "on-off-minor-vi",
+      "song": 464,
+      "title": "Georgia On My Mind",
+      "row": 2,
+      "startBar": 22,
+      "endBar": 23,
+      "start": 88,
+      "end": 92,
+      "segments": [
+        {
+          "row": 2,
+          "label": "On Off Minor VI",
+          "startBar": 22,
+          "endBar": 23,
+          "start": 6,
+          "end": 7,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "On Off Minor VI"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        },
+        {
+          "root": 6,
+          "intervals": [
+            0,
+            3,
+            6,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "F#o7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Minor VI",
+      "slug": "on-off-minor-vi",
+      "song": 464,
+      "title": "Georgia On My Mind",
+      "row": 6,
+      "startBar": 54,
+      "endBar": 55,
+      "start": 216,
+      "end": 220,
+      "segments": [
+        {
+          "row": 6,
+          "label": "On Off Minor VI",
+          "startBar": 54,
+          "endBar": 55,
+          "start": 6,
+          "end": 7,
+          "brick": 6
+        }
+      ],
+      "labels": [
+        "On Off Minor VI"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        },
+        {
+          "root": 6,
+          "intervals": [
+            0,
+            3,
+            6,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "F#o7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Minor VI",
+      "slug": "on-off-minor-vi",
+      "song": 470,
+      "title": "On A Slow Boat To China",
+      "row": 0,
+      "startBar": 2,
+      "endBar": 4,
+      "start": 8,
+      "end": 16,
+      "segments": [
+        {
+          "row": 0,
+          "label": "On Off Minor VI",
+          "startBar": 2,
+          "endBar": 4,
+          "start": 2,
+          "end": 4,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "On Off Minor VI"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm"
+          ]
+        },
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "A7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Minor VI",
+      "slug": "on-off-minor-vi",
+      "song": 470,
+      "title": "On A Slow Boat To China",
+      "row": 1,
+      "startBar": 8,
+      "endBar": 10,
+      "start": 32,
+      "end": 40,
+      "segments": [
+        {
+          "row": 1,
+          "label": "On Off Minor VI",
+          "startBar": 8,
+          "endBar": 10,
+          "start": 0,
+          "end": 2,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "On Off Minor VI"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Cm7"
+          ]
+        },
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "A7"
           ]
         }
       ],
@@ -104451,6 +112065,115 @@
           "bass": null,
           "symbols": [
             "Abo7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Minor VII",
+      "slug": "on-off-minor-vii",
+      "song": 469,
+      "title": "On A Clear Day (You Can See Forever)",
+      "row": 2,
+      "startBar": 12.5,
+      "endBar": 14.5,
+      "start": 50,
+      "end": 58,
+      "segments": [
+        {
+          "row": 2,
+          "label": "On Off Minor VII",
+          "startBar": 12.5,
+          "endBar": 14.5,
+          "start": 4,
+          "end": 6,
+          "brick": 1
+        }
+      ],
+      "labels": [
+        "On Off Minor VII"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 11,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Bm7"
+          ]
+        },
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            3,
+            6,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "Bbo7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Minor VII",
+      "slug": "on-off-minor-vii",
+      "song": 469,
+      "title": "On A Clear Day (You Can See Forever)",
+      "row": 2,
+      "startBar": 14.5,
+      "endBar": 15.5,
+      "start": 58,
+      "end": 62,
+      "segments": [
+        {
+          "row": 2,
+          "label": "On Off Minor VII",
+          "startBar": 14.5,
+          "endBar": 15.5,
+          "start": 6,
+          "end": 7,
+          "brick": 2
+        }
+      ],
+      "labels": [
+        "On Off Minor VII"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 9,
+          "intervals": [
+            0,
+            3,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "Am7"
+          ]
+        },
+        {
+          "root": 8,
+          "intervals": [
+            0,
+            3,
+            6
+          ],
+          "bass": null,
+          "symbols": [
+            "G#o"
           ]
         }
       ],
@@ -107675,6 +115398,132 @@
       "reason": "on-off-family"
     },
     {
+      "brick": "On Off On To IV Major",
+      "slug": "on-off-on-to-iv-major",
+      "song": 466,
+      "title": "I Got It Bad And That Ain't Good",
+      "row": 1,
+      "startBar": 13,
+      "endBar": 14.5,
+      "start": 52,
+      "end": 58,
+      "segments": [
+        {
+          "row": 1,
+          "label": "On Off On To IV Major",
+          "startBar": 13,
+          "endBar": 14.5,
+          "start": 5,
+          "end": 6.5,
+          "brick": 4
+        }
+      ],
+      "labels": [
+        "On Off On To IV Major"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "GM7"
+          ]
+        },
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7,
+            10,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "C9"
+          ]
+        },
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7,
+            9,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "G69"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off On To IV Major",
+      "slug": "on-off-on-to-iv-major",
+      "song": 469,
+      "title": "On A Clear Day (You Can See Forever)",
+      "row": 1,
+      "startBar": 0.5,
+      "endBar": 6.5,
+      "start": 2,
+      "end": 26,
+      "segments": [
+        {
+          "row": 1,
+          "label": "On Off On To IV Major",
+          "startBar": 0.5,
+          "endBar": 6.5,
+          "start": 0,
+          "end": 6,
+          "brick": 0
+        }
+      ],
+      "labels": [
+        "On Off On To IV Major"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 7,
+          "intervals": [
+            0,
+            4,
+            7,
+            11
+          ],
+          "bass": null,
+          "symbols": [
+            "GM7"
+          ]
+        },
+        {
+          "root": 0,
+          "intervals": [
+            0,
+            4,
+            7,
+            10,
+            14
+          ],
+          "bass": null,
+          "symbols": [
+            "C9"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
       "brick": "On Off On To V",
       "slug": "on-off-on-to-v",
       "song": 3,
@@ -109610,6 +117459,73 @@
       "reason": "on-off-family"
     },
     {
+      "brick": "On Off On To V",
+      "slug": "on-off-on-to-v",
+      "song": 467,
+      "title": "I Got Rhythm",
+      "row": 1,
+      "startBar": 14,
+      "endBar": 15.5,
+      "start": 56,
+      "end": 62,
+      "segments": [
+        {
+          "row": 1,
+          "label": "On Off On To V",
+          "startBar": 14,
+          "endBar": 15.5,
+          "start": 6,
+          "end": 7.5,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "On Off On To V"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bb"
+          ]
+        },
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "F7"
+          ]
+        },
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "Bb6"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
       "brick": "On Off On Twice Minor V",
       "slug": "on-off-on-twice-minor-v",
       "song": 4,
@@ -111433,6 +119349,73 @@
           "bass": null,
           "symbols": [
             "F7"
+          ]
+        }
+      ],
+      "reason": "on-off-family"
+    },
+    {
+      "brick": "On Off Twice To V",
+      "slug": "on-off-twice-to-v",
+      "song": 467,
+      "title": "I Got Rhythm",
+      "row": 0,
+      "startBar": 6,
+      "endBar": 8,
+      "start": 24,
+      "end": 32,
+      "segments": [
+        {
+          "row": 0,
+          "label": "On Off Twice To V",
+          "startBar": 6,
+          "endBar": 8,
+          "start": 6,
+          "end": 8,
+          "brick": 3
+        }
+      ],
+      "labels": [
+        "On Off Twice To V"
+      ],
+      "continued": false,
+      "harmonies": [
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ],
+          "bass": null,
+          "symbols": [
+            "Bb"
+          ]
+        },
+        {
+          "root": 5,
+          "intervals": [
+            0,
+            4,
+            7,
+            10
+          ],
+          "bass": null,
+          "symbols": [
+            "F7"
+          ]
+        },
+        {
+          "root": 10,
+          "intervals": [
+            0,
+            4,
+            7,
+            9
+          ],
+          "bass": null,
+          "symbols": [
+            "Bb6"
           ]
         }
       ],

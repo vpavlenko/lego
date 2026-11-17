@@ -11,16 +11,16 @@
   "pipeline": "removeUnhelpfulBricks -> buildLearnerBrickIndex -> restore aliases/routes from same-name unfiltered families -> refineSingleUseFamilies",
   "definition": "One unique standard, regardless of how often the brick repeats inside it",
   "stats": {
-    "inputFamilies": 159,
-    "singleStandardFamilies": 37,
-    "reusableTargets": 122,
-    "mergedFamilies": 10,
-    "removedFamilies": 27,
-    "outputFamilies": 122,
-    "rawPassages": 6376,
-    "mergedPassages": 18,
-    "removedPassages": 45,
-    "keptPassages": 6331,
+    "inputFamilies": 162,
+    "singleStandardFamilies": 39,
+    "reusableTargets": 123,
+    "mergedFamilies": 11,
+    "removedFamilies": 28,
+    "outputFamilies": 123,
+    "rawPassages": 6689,
+    "mergedPassages": 22,
+    "removedPassages": 48,
+    "keptPassages": 6641,
     "supportBasis": "distinct standards",
     "minimumTargetStandards": 2,
     "maxVariantDistance": 0.28,
@@ -37,13 +37,13 @@
     "sourceLabels": "Merged raw row labels remain unchanged and resolve through unioned aliases; unmatched one-standard labels are removed only at audited source positions"
   },
   "integrity": {
-    "standards": 458,
-    "musicBeforeSha256": "8721609ab8c3698fa8f7a6238fe996b1ed263a62d2850ffbf62447e89bc7f7a9",
-    "musicAfterSha256": "8721609ab8c3698fa8f7a6238fe996b1ed263a62d2850ffbf62447e89bc7f7a9",
-    "runtimeSpanSha256": "854951a149b742a9648f89d6b39db5dbda696be2d5f151c92c571c228db350f2",
-    "indexSpanSha256": "854951a149b742a9648f89d6b39db5dbda696be2d5f151c92c571c228db350f2",
-    "runtimePassages": 6331,
-    "indexPassages": 6331,
+    "standards": 474,
+    "musicBeforeSha256": "04ea2617f0afc2b9933afbff8d451a6f14c9ad336f380d05fed15f8d672bf871",
+    "musicAfterSha256": "04ea2617f0afc2b9933afbff8d451a6f14c9ad336f380d05fed15f8d672bf871",
+    "runtimeSpanSha256": "61d9dee92e60c26cef93e4cc77c1b5ca194e9ee7e5b2d8af39696ee5597aef59",
+    "indexSpanSha256": "61d9dee92e60c26cef93e4cc77c1b5ca194e9ee7e5b2d8af39696ee5597aef59",
+    "runtimePassages": 6641,
+    "indexPassages": 6641,
     "remainingOneStandardFamilies": 0
   },
   "summary": [
@@ -176,7 +176,7 @@
       "passages": 3,
       "action": "remove",
       "target": null,
-      "distance": 0.3375,
+      "distance": 0.3325,
       "reason": "no-clear-supported-harmonic-variant"
     },
     {
@@ -274,6 +274,18 @@
       "target": null,
       "distance": 0.497,
       "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "name": "IV to II",
+      "slug": "iv-to-ii",
+      "standards": [
+        472
+      ],
+      "passages": 3,
+      "action": "merge",
+      "target": "♯ivø–VII7→iii–VI7",
+      "distance": 0.231,
+      "reason": "clear-supported-harmonic-variant"
     },
     {
       "name": "Minor Dogleg Slow",
@@ -420,6 +432,30 @@
       "reason": "ambiguous-supported-families"
     },
     {
+      "name": "Starlight Dropback",
+      "slug": "starlight-dropback",
+      "standards": [
+        463
+      ],
+      "passages": 4,
+      "action": "merge",
+      "target": "♯ivø–VII7→iii–VI7",
+      "distance": 0.20299999999999999,
+      "reason": "clear-supported-harmonic-variant"
+    },
+    {
+      "name": "Suspended",
+      "slug": "suspended",
+      "standards": [
+        472
+      ],
+      "passages": 3,
+      "action": "remove",
+      "target": null,
+      "distance": 0.49250000000000005,
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
       "name": "To II n Back",
       "slug": "to-ii-n-back",
       "standards": [
@@ -442,18 +478,6 @@
       "target": null,
       "distance": 0.27775,
       "reason": "no-clear-supported-harmonic-variant"
-    },
-    {
-      "name": "To IV n Mack",
-      "slug": "to-iv-n-mack",
-      "standards": [
-        172
-      ],
-      "passages": 3,
-      "action": "merge",
-      "target": "To IV",
-      "distance": 0.20400000000000004,
-      "reason": "clear-supported-harmonic-variant"
     },
     {
       "name": "To IV n Yak Turnaround",
@@ -4065,7 +4089,8 @@
             421,
             426,
             443,
-            456
+            456,
+            463
           ],
           "sourceStructure": {
             "chords": [
@@ -5063,7 +5088,8 @@
             385,
             393,
             405,
-            410
+            410,
+            470
           ],
           "sourceStructure": {
             "chords": [
@@ -7510,10 +7536,232 @@
         ],
         "unresolvedStandards": []
       },
-      "distance": 0.3375,
+      "distance": 0.3325,
       "reason": "no-clear-supported-harmonic-variant",
       "candidates": [],
       "nearestRejected": [
+        {
+          "name": "I–(vi/VI7)–ii–V",
+          "slug": "pot",
+          "sourceVariantId": "v-1jjqn8l-ghikln",
+          "targetVariantId": "v-1593nf5-1e7aah7",
+          "distance": 0.3325,
+          "anchors": 3,
+          "anchorPairs": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "sourceChords": 4,
+          "targetChords": 4,
+          "supportStandards": [
+            17,
+            18,
+            19,
+            23,
+            45,
+            48,
+            58,
+            60,
+            97,
+            102,
+            110,
+            111,
+            127,
+            134,
+            138,
+            141,
+            142,
+            145,
+            147,
+            148,
+            158,
+            168,
+            174,
+            175,
+            184,
+            189,
+            198,
+            203,
+            204,
+            211,
+            213,
+            217,
+            232,
+            237,
+            243,
+            252,
+            254,
+            257,
+            264,
+            265,
+            282,
+            288,
+            301,
+            330,
+            366,
+            397,
+            418,
+            428,
+            429,
+            452,
+            465,
+            467
+          ],
+          "sourceStructure": {
+            "chords": [
+              {
+                "symbol": "C6",
+                "harmony": [
+                  0,
+                  [
+                    0,
+                    4,
+                    7,
+                    9
+                  ],
+                  null
+                ],
+                "at": "0/1",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "Am7",
+                "harmony": [
+                  9,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/4",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "Dm7",
+                "harmony": [
+                  2,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/2",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "C#7#9",
+                "harmony": [
+                  1,
+                  [
+                    0,
+                    4,
+                    7,
+                    10,
+                    15
+                  ],
+                  null
+                ],
+                "at": "3/4",
+                "duration": "1/4"
+              }
+            ],
+            "keys": [
+              [
+                "0/1",
+                0,
+                "major"
+              ]
+            ]
+          },
+          "targetStructure": {
+            "chords": [
+              {
+                "symbol": "C6",
+                "harmony": [
+                  0,
+                  [
+                    0,
+                    4,
+                    7,
+                    9
+                  ],
+                  null
+                ],
+                "at": "0/1",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "Am7",
+                "harmony": [
+                  9,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/4",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "Dm7",
+                "harmony": [
+                  2,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/2",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "G7",
+                "harmony": [
+                  7,
+                  [
+                    0,
+                    4,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "3/4",
+                "duration": "1/4"
+              }
+            ],
+            "keys": [
+              [
+                "0/1",
+                0,
+                "major"
+              ]
+            ]
+          },
+          "reason": "root-core-anchor-or-distance-guard"
+        },
         {
           "name": "Donna Lee Start",
           "slug": "donna-lee-start",
@@ -7669,227 +7917,6 @@
           "reason": "root-core-anchor-or-distance-guard"
         },
         {
-          "name": "I–(vi/VI7)–ii–V",
-          "slug": "pot",
-          "sourceVariantId": "v-1jjqn8l-ghikln",
-          "targetVariantId": "v-ijgm8q-1la90nw",
-          "distance": 0.35250000000000004,
-          "anchors": 3,
-          "anchorPairs": [
-            [
-              0,
-              0
-            ],
-            [
-              1,
-              1
-            ],
-            [
-              2,
-              2
-            ]
-          ],
-          "sourceChords": 4,
-          "targetChords": 4,
-          "supportStandards": [
-            17,
-            18,
-            19,
-            23,
-            45,
-            48,
-            58,
-            60,
-            97,
-            102,
-            110,
-            111,
-            127,
-            134,
-            138,
-            141,
-            142,
-            145,
-            147,
-            148,
-            158,
-            168,
-            174,
-            175,
-            184,
-            189,
-            198,
-            203,
-            204,
-            211,
-            213,
-            217,
-            232,
-            237,
-            243,
-            252,
-            254,
-            257,
-            264,
-            265,
-            282,
-            288,
-            301,
-            330,
-            366,
-            397,
-            418,
-            428,
-            429,
-            452
-          ],
-          "sourceStructure": {
-            "chords": [
-              {
-                "symbol": "C6",
-                "harmony": [
-                  0,
-                  [
-                    0,
-                    4,
-                    7,
-                    9
-                  ],
-                  null
-                ],
-                "at": "0/1",
-                "duration": "1/4"
-              },
-              {
-                "symbol": "Am7",
-                "harmony": [
-                  9,
-                  [
-                    0,
-                    3,
-                    7,
-                    10
-                  ],
-                  null
-                ],
-                "at": "1/4",
-                "duration": "1/4"
-              },
-              {
-                "symbol": "Dm7",
-                "harmony": [
-                  2,
-                  [
-                    0,
-                    3,
-                    7,
-                    10
-                  ],
-                  null
-                ],
-                "at": "1/2",
-                "duration": "1/4"
-              },
-              {
-                "symbol": "C#7#9",
-                "harmony": [
-                  1,
-                  [
-                    0,
-                    4,
-                    7,
-                    10,
-                    15
-                  ],
-                  null
-                ],
-                "at": "3/4",
-                "duration": "1/4"
-              }
-            ],
-            "keys": [
-              [
-                "0/1",
-                0,
-                "major"
-              ]
-            ]
-          },
-          "targetStructure": {
-            "chords": [
-              {
-                "symbol": "C6",
-                "harmony": [
-                  0,
-                  [
-                    0,
-                    4,
-                    7,
-                    9
-                  ],
-                  null
-                ],
-                "at": "0/1",
-                "duration": "1/4"
-              },
-              {
-                "symbol": "Am7",
-                "harmony": [
-                  9,
-                  [
-                    0,
-                    3,
-                    7,
-                    10
-                  ],
-                  null
-                ],
-                "at": "1/4",
-                "duration": "1/4"
-              },
-              {
-                "symbol": "Dm9",
-                "harmony": [
-                  2,
-                  [
-                    0,
-                    3,
-                    7,
-                    10,
-                    14
-                  ],
-                  null
-                ],
-                "at": "1/2",
-                "duration": "1/4"
-              },
-              {
-                "symbol": "G7",
-                "harmony": [
-                  7,
-                  [
-                    0,
-                    4,
-                    7,
-                    10
-                  ],
-                  null
-                ],
-                "at": "3/4",
-                "duration": "1/4"
-              }
-            ],
-            "keys": [
-              [
-                "0/1",
-                0,
-                "major"
-              ]
-            ]
-          },
-          "reason": "root-core-anchor-or-distance-guard"
-        },
-        {
           "name": "On",
           "slug": "on",
           "sourceVariantId": "v-1jjqn8l-ghikln",
@@ -7933,7 +7960,8 @@
             428,
             452,
             454,
-            456
+            456,
+            464
           ],
           "sourceStructure": {
             "chords": [
@@ -8264,7 +8292,12 @@
             412,
             418,
             421,
-            455
+            455,
+            463,
+            464,
+            466,
+            467,
+            473
           ],
           "distance": 0,
           "pairs": [
@@ -8431,7 +8464,9 @@
             441,
             443,
             449,
-            451
+            451,
+            463,
+            464
           ],
           "distance": 0,
           "pairs": [
@@ -8496,7 +8531,9 @@
                 441,
                 443,
                 449,
-                451
+                451,
+                463,
+                464
               ],
               "sourceStructure": {
                 "chords": [
@@ -9291,7 +9328,8 @@
           "sourceChords": 6,
           "targetChords": 6,
           "supportStandards": [
-            236
+            236,
+            473
           ],
           "sourceStructure": {
             "chords": [
@@ -9495,7 +9533,7 @@
               ]
             ]
           },
-          "reason": "insufficient-complete-core-support"
+          "reason": "root-core-anchor-or-distance-guard"
         }
       ]
     },
@@ -10077,7 +10115,8 @@
             354,
             361,
             386,
-            405
+            405,
+            471
           ],
           "sourceStructure": {
             "chords": [
@@ -10489,7 +10528,7 @@
       "target": {
         "name": "♯ivø–VII7→iii–VI7→ii–V",
         "slug": "starlight",
-        "distinctStandards": 33,
+        "distinctStandards": 34,
         "standards": [
           3,
           6,
@@ -10523,7 +10562,8 @@
           292,
           309,
           326,
-          445
+          445,
+          472
         ]
       },
       "distance": 0.15,
@@ -10825,7 +10865,8 @@
             292,
             309,
             326,
-            445
+            445,
+            472
           ],
           "distance": 0.15,
           "pairs": [
@@ -12884,7 +12925,9 @@
             407,
             428,
             445,
-            450
+            450,
+            458,
+            470
           ],
           "sourceStructure": {
             "chords": [
@@ -13780,6 +13823,693 @@
       ]
     },
     {
+      "action": "merge",
+      "source": {
+        "name": "IV to II",
+        "slug": "iv-to-ii",
+        "distinctStandards": 1,
+        "standards": [
+          472
+        ],
+        "passages": 3,
+        "aliases": [],
+        "aliasSlugs": [],
+        "sourceNames": [
+          "IV to II"
+        ],
+        "sourceSlugs": [
+          "iv-to-ii"
+        ],
+        "positions": [
+          {
+            "song": 472,
+            "title": "Somewhere, Over The Rainbow",
+            "row": 0,
+            "label": "IV to II",
+            "startBar": 2,
+            "endBar": 4,
+            "start": 8,
+            "end": 16
+          },
+          {
+            "song": 472,
+            "title": "Somewhere, Over The Rainbow",
+            "row": 1,
+            "label": "IV to II",
+            "startBar": 10,
+            "endBar": 12,
+            "start": 40,
+            "end": 48
+          },
+          {
+            "song": 472,
+            "title": "Somewhere, Over The Rainbow",
+            "row": 3,
+            "label": "IV to II",
+            "startBar": 26,
+            "endBar": 28,
+            "start": 104,
+            "end": 112
+          }
+        ],
+        "variantStats": {
+          "variants": 1,
+          "occurrences": 3,
+          "sourcePassages": 3,
+          "continuedOccurrences": 0,
+          "coalescedRowChords": 0,
+          "completeOccurrences": 3,
+          "partialOccurrences": 0,
+          "unknownOccurrences": 0,
+          "matchedFragments": 0,
+          "unresolvedOccurrences": 0
+        },
+        "variants": [
+          {
+            "id": "v-fk12vy-5ay4qc",
+            "structure": {
+              "chords": [
+                {
+                  "symbol": "FM7",
+                  "harmony": [
+                    5,
+                    [
+                      0,
+                      4,
+                      7,
+                      11
+                    ],
+                    null
+                  ],
+                  "at": "0/1",
+                  "duration": "1/4"
+                },
+                {
+                  "symbol": "F#m7b5",
+                  "harmony": [
+                    6,
+                    [
+                      0,
+                      3,
+                      6,
+                      10
+                    ],
+                    null
+                  ],
+                  "at": "1/4",
+                  "duration": "1/8"
+                },
+                {
+                  "symbol": "B7b9",
+                  "harmony": [
+                    11,
+                    [
+                      0,
+                      4,
+                      7,
+                      10,
+                      13
+                    ],
+                    null
+                  ],
+                  "at": "3/8",
+                  "duration": "1/8"
+                },
+                {
+                  "symbol": "Em7",
+                  "harmony": [
+                    4,
+                    [
+                      0,
+                      3,
+                      7,
+                      10
+                    ],
+                    null
+                  ],
+                  "at": "1/2",
+                  "duration": "1/4"
+                },
+                {
+                  "symbol": "A7b9",
+                  "harmony": [
+                    9,
+                    [
+                      0,
+                      4,
+                      7,
+                      10,
+                      13
+                    ],
+                    null
+                  ],
+                  "at": "3/4",
+                  "duration": "1/4"
+                }
+              ],
+              "keys": [
+                [
+                  "0/1",
+                  0,
+                  "major"
+                ]
+              ]
+            },
+            "completeOccurrences": 3,
+            "standards": [
+              {
+                "song": 472,
+                "title": "Somewhere, Over The Rainbow",
+                "passages": [
+                  {
+                    "song": 472,
+                    "title": "Somewhere, Over The Rainbow",
+                    "row": 0,
+                    "startBar": 2,
+                    "endBar": 4,
+                    "start": 8,
+                    "end": 16,
+                    "segments": [
+                      {
+                        "row": 0,
+                        "label": "IV to II",
+                        "startBar": 2,
+                        "endBar": 4,
+                        "start": 8,
+                        "end": 16
+                      }
+                    ],
+                    "labels": [
+                      "IV to II"
+                    ],
+                    "continued": false,
+                    "status": "complete",
+                    "reason": null,
+                    "variantId": "v-fk12vy-5ay4qc"
+                  },
+                  {
+                    "song": 472,
+                    "title": "Somewhere, Over The Rainbow",
+                    "row": 1,
+                    "startBar": 10,
+                    "endBar": 12,
+                    "start": 40,
+                    "end": 48,
+                    "segments": [
+                      {
+                        "row": 1,
+                        "label": "IV to II",
+                        "startBar": 10,
+                        "endBar": 12,
+                        "start": 40,
+                        "end": 48
+                      }
+                    ],
+                    "labels": [
+                      "IV to II"
+                    ],
+                    "continued": false,
+                    "status": "complete",
+                    "reason": null,
+                    "variantId": "v-fk12vy-5ay4qc"
+                  },
+                  {
+                    "song": 472,
+                    "title": "Somewhere, Over The Rainbow",
+                    "row": 3,
+                    "startBar": 26,
+                    "endBar": 28,
+                    "start": 104,
+                    "end": 112,
+                    "segments": [
+                      {
+                        "row": 3,
+                        "label": "IV to II",
+                        "startBar": 26,
+                        "endBar": 28,
+                        "start": 104,
+                        "end": 112
+                      }
+                    ],
+                    "labels": [
+                      "IV to II"
+                    ],
+                    "continued": false,
+                    "status": "complete",
+                    "reason": null,
+                    "variantId": "v-fk12vy-5ay4qc"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "unresolvedStandards": []
+      },
+      "target": {
+        "name": "♯ivø–VII7→iii–VI7",
+        "slug": "starlight-ttfa",
+        "distinctStandards": 10,
+        "standards": [
+          252,
+          270,
+          274,
+          290,
+          303,
+          307,
+          411,
+          414,
+          429,
+          463
+        ]
+      },
+      "distance": 0.231,
+      "pairs": [
+        {
+          "distance": 0.231,
+          "anchors": 4,
+          "anchorPairs": [
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              3
+            ]
+          ],
+          "sourceChords": 5,
+          "targetChords": 4,
+          "shortCoverage": 1,
+          "longCoverage": 0.8,
+          "sourceVariantId": "v-fk12vy-5ay4qc",
+          "targetVariantId": "v-1ljv3i3-1x20erx",
+          "supportStandards": [
+            252,
+            270,
+            274,
+            303,
+            307,
+            411,
+            414,
+            429,
+            463
+          ],
+          "sourceStructure": {
+            "chords": [
+              {
+                "symbol": "FM7",
+                "harmony": [
+                  5,
+                  [
+                    0,
+                    4,
+                    7,
+                    11
+                  ],
+                  null
+                ],
+                "at": "0/1",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "F#m7b5",
+                "harmony": [
+                  6,
+                  [
+                    0,
+                    3,
+                    6,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/4",
+                "duration": "1/8"
+              },
+              {
+                "symbol": "B7b9",
+                "harmony": [
+                  11,
+                  [
+                    0,
+                    4,
+                    7,
+                    10,
+                    13
+                  ],
+                  null
+                ],
+                "at": "3/8",
+                "duration": "1/8"
+              },
+              {
+                "symbol": "Em7",
+                "harmony": [
+                  4,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/2",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "A7b9",
+                "harmony": [
+                  9,
+                  [
+                    0,
+                    4,
+                    7,
+                    10,
+                    13
+                  ],
+                  null
+                ],
+                "at": "3/4",
+                "duration": "1/4"
+              }
+            ],
+            "keys": [
+              [
+                "0/1",
+                0,
+                "major"
+              ]
+            ]
+          },
+          "targetStructure": {
+            "chords": [
+              {
+                "symbol": "F#m7b5",
+                "harmony": [
+                  6,
+                  [
+                    0,
+                    3,
+                    6,
+                    10
+                  ],
+                  null
+                ],
+                "at": "0/1",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "B7b9",
+                "harmony": [
+                  11,
+                  [
+                    0,
+                    4,
+                    7,
+                    10,
+                    13
+                  ],
+                  null
+                ],
+                "at": "1/4",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "Em7",
+                "harmony": [
+                  4,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/2",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "A7",
+                "harmony": [
+                  9,
+                  [
+                    0,
+                    4,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "3/4",
+                "duration": "1/4"
+              }
+            ],
+            "keys": [
+              [
+                "0/1",
+                0,
+                "major"
+              ]
+            ]
+          },
+          "weight": 3
+        }
+      ],
+      "candidates": [
+        {
+          "name": "♯ivø–VII7→iii–VI7",
+          "slug": "starlight-ttfa",
+          "standards": [
+            252,
+            270,
+            274,
+            290,
+            303,
+            307,
+            411,
+            414,
+            429,
+            463
+          ],
+          "distance": 0.231,
+          "pairs": [
+            {
+              "distance": 0.231,
+              "anchors": 4,
+              "anchorPairs": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "sourceChords": 5,
+              "targetChords": 4,
+              "shortCoverage": 1,
+              "longCoverage": 0.8,
+              "sourceVariantId": "v-fk12vy-5ay4qc",
+              "targetVariantId": "v-1ljv3i3-1x20erx",
+              "supportStandards": [
+                252,
+                270,
+                274,
+                303,
+                307,
+                411,
+                414,
+                429,
+                463
+              ],
+              "sourceStructure": {
+                "chords": [
+                  {
+                    "symbol": "FM7",
+                    "harmony": [
+                      5,
+                      [
+                        0,
+                        4,
+                        7,
+                        11
+                      ],
+                      null
+                    ],
+                    "at": "0/1",
+                    "duration": "1/4"
+                  },
+                  {
+                    "symbol": "F#m7b5",
+                    "harmony": [
+                      6,
+                      [
+                        0,
+                        3,
+                        6,
+                        10
+                      ],
+                      null
+                    ],
+                    "at": "1/4",
+                    "duration": "1/8"
+                  },
+                  {
+                    "symbol": "B7b9",
+                    "harmony": [
+                      11,
+                      [
+                        0,
+                        4,
+                        7,
+                        10,
+                        13
+                      ],
+                      null
+                    ],
+                    "at": "3/8",
+                    "duration": "1/8"
+                  },
+                  {
+                    "symbol": "Em7",
+                    "harmony": [
+                      4,
+                      [
+                        0,
+                        3,
+                        7,
+                        10
+                      ],
+                      null
+                    ],
+                    "at": "1/2",
+                    "duration": "1/4"
+                  },
+                  {
+                    "symbol": "A7b9",
+                    "harmony": [
+                      9,
+                      [
+                        0,
+                        4,
+                        7,
+                        10,
+                        13
+                      ],
+                      null
+                    ],
+                    "at": "3/4",
+                    "duration": "1/4"
+                  }
+                ],
+                "keys": [
+                  [
+                    "0/1",
+                    0,
+                    "major"
+                  ]
+                ]
+              },
+              "targetStructure": {
+                "chords": [
+                  {
+                    "symbol": "F#m7b5",
+                    "harmony": [
+                      6,
+                      [
+                        0,
+                        3,
+                        6,
+                        10
+                      ],
+                      null
+                    ],
+                    "at": "0/1",
+                    "duration": "1/4"
+                  },
+                  {
+                    "symbol": "B7b9",
+                    "harmony": [
+                      11,
+                      [
+                        0,
+                        4,
+                        7,
+                        10,
+                        13
+                      ],
+                      null
+                    ],
+                    "at": "1/4",
+                    "duration": "1/4"
+                  },
+                  {
+                    "symbol": "Em7",
+                    "harmony": [
+                      4,
+                      [
+                        0,
+                        3,
+                        7,
+                        10
+                      ],
+                      null
+                    ],
+                    "at": "1/2",
+                    "duration": "1/4"
+                  },
+                  {
+                    "symbol": "A7",
+                    "harmony": [
+                      9,
+                      [
+                        0,
+                        4,
+                        7,
+                        10
+                      ],
+                      null
+                    ],
+                    "at": "3/4",
+                    "duration": "1/4"
+                  }
+                ],
+                "keys": [
+                  [
+                    "0/1",
+                    0,
+                    "major"
+                  ]
+                ]
+              },
+              "weight": 3
+            }
+          ]
+        }
+      ],
+      "reason": "clear-supported-harmonic-variant"
+    },
+    {
       "action": "remove",
       "source": {
         "name": "Minor Dogleg Slow",
@@ -14623,7 +15353,7 @@
       "target": {
         "name": "Amen",
         "slug": "amen",
-        "distinctStandards": 19,
+        "distinctStandards": 20,
         "standards": [
           50,
           66,
@@ -14643,7 +15373,8 @@
           394,
           398,
           414,
-          446
+          446,
+          460
         ]
       },
       "distance": 0.10499999999999998,
@@ -14672,7 +15403,8 @@
             151,
             220,
             340,
-            377
+            377,
+            460
           ],
           "sourceStructure": {
             "chords": [
@@ -14784,7 +15516,8 @@
             394,
             398,
             414,
-            446
+            446,
+            460
           ],
           "distance": 0.10499999999999998,
           "pairs": [
@@ -14812,7 +15545,8 @@
                 151,
                 220,
                 340,
-                377
+                377,
+                460
               ],
               "sourceStructure": {
                 "chords": [
@@ -16491,7 +17225,7 @@
       "target": {
         "name": "Nowhere",
         "slug": "nowhere",
-        "distinctStandards": 89,
+        "distinctStandards": 93,
         "standards": [
           4,
           15,
@@ -16581,7 +17315,11 @@
           441,
           449,
           451,
-          453
+          453,
+          465,
+          466,
+          467,
+          470
         ]
       },
       "distance": 0,
@@ -16676,7 +17414,11 @@
             441,
             449,
             451,
-            453
+            453,
+            465,
+            466,
+            467,
+            470
           ],
           "sourceStructure": {
             "chords": [
@@ -16856,7 +17598,11 @@
             441,
             449,
             451,
-            453
+            453,
+            465,
+            466,
+            467,
+            470
           ],
           "distance": 0,
           "pairs": [
@@ -16950,7 +17696,11 @@
                 441,
                 449,
                 451,
-                453
+                453,
+                465,
+                466,
+                467,
+                470
               ],
               "sourceStructure": {
                 "chords": [
@@ -17431,7 +18181,9 @@
             418,
             428,
             429,
-            452
+            452,
+            465,
+            467
           ],
           "sourceStructure": {
             "chords": [
@@ -17621,7 +18373,8 @@
             428,
             452,
             454,
-            456
+            456,
+            464
           ],
           "sourceStructure": {
             "chords": [
@@ -23071,7 +23824,13 @@
             440,
             448,
             451,
-            452
+            452,
+            458,
+            460,
+            463,
+            465,
+            467,
+            472
           ],
           "distance": 0.2575,
           "pairs": [
@@ -23132,7 +23891,10 @@
                 404,
                 411,
                 428,
-                429
+                429,
+                458,
+                463,
+                472
               ],
               "sourceStructure": {
                 "chords": [
@@ -23456,7 +24218,12 @@
             442,
             448,
             453,
-            456
+            456,
+            459,
+            465,
+            466,
+            469,
+            471
           ],
           "distance": 0.265,
           "pairs": [
@@ -23662,7 +24429,8 @@
             433,
             435,
             440,
-            443
+            443,
+            473
           ],
           "distance": 0.265,
           "pairs": [
@@ -23830,6 +24598,1478 @@
         }
       ],
       "nearestRejected": []
+    },
+    {
+      "action": "merge",
+      "source": {
+        "name": "Starlight Dropback",
+        "slug": "starlight-dropback",
+        "distinctStandards": 1,
+        "standards": [
+          463
+        ],
+        "passages": 4,
+        "aliases": [],
+        "aliasSlugs": [],
+        "sourceNames": [
+          "Starlight Dropback"
+        ],
+        "sourceSlugs": [
+          "starlight-dropback"
+        ],
+        "positions": [
+          {
+            "song": 463,
+            "title": "Ev'ry Time We Say Goodbye",
+            "row": 0,
+            "label": "Starlight Dropback",
+            "startBar": 2,
+            "endBar": 4,
+            "start": 8,
+            "end": 16
+          },
+          {
+            "song": 463,
+            "title": "Ev'ry Time We Say Goodbye",
+            "row": 2,
+            "label": "Starlight Dropback",
+            "startBar": 18,
+            "endBar": 20,
+            "start": 72,
+            "end": 80
+          },
+          {
+            "song": 463,
+            "title": "Ev'ry Time We Say Goodbye",
+            "row": 4,
+            "label": "Starlight Dropback",
+            "startBar": 34,
+            "endBar": 36,
+            "start": 136,
+            "end": 144
+          },
+          {
+            "song": 463,
+            "title": "Ev'ry Time We Say Goodbye",
+            "row": 6,
+            "label": "Starlight Dropback",
+            "startBar": 50,
+            "endBar": 52,
+            "start": 200,
+            "end": 208
+          }
+        ],
+        "variantStats": {
+          "variants": 1,
+          "occurrences": 4,
+          "sourcePassages": 4,
+          "continuedOccurrences": 0,
+          "coalescedRowChords": 0,
+          "completeOccurrences": 4,
+          "partialOccurrences": 0,
+          "unknownOccurrences": 0,
+          "matchedFragments": 0,
+          "unresolvedOccurrences": 0
+        },
+        "variants": [
+          {
+            "id": "v-17sfegb-15yllj1",
+            "structure": {
+              "chords": [
+                {
+                  "symbol": "F#m7b5",
+                  "harmony": [
+                    6,
+                    [
+                      0,
+                      3,
+                      6,
+                      10
+                    ],
+                    null
+                  ],
+                  "at": "0/1",
+                  "duration": "1/4"
+                },
+                {
+                  "symbol": "B7",
+                  "harmony": [
+                    11,
+                    [
+                      0,
+                      4,
+                      7,
+                      10
+                    ],
+                    null
+                  ],
+                  "at": "1/4",
+                  "duration": "1/4"
+                },
+                {
+                  "symbol": "Em7",
+                  "harmony": [
+                    4,
+                    [
+                      0,
+                      3,
+                      7,
+                      10
+                    ],
+                    null
+                  ],
+                  "at": "1/2",
+                  "duration": "1/4"
+                },
+                {
+                  "symbol": "A7",
+                  "harmony": [
+                    9,
+                    [
+                      0,
+                      4,
+                      7,
+                      10
+                    ],
+                    null
+                  ],
+                  "at": "3/4",
+                  "duration": "1/8"
+                },
+                {
+                  "symbol": "A7/G",
+                  "harmony": [
+                    9,
+                    [
+                      0,
+                      4,
+                      7,
+                      10
+                    ],
+                    7
+                  ],
+                  "at": "7/8",
+                  "duration": "1/8"
+                }
+              ],
+              "keys": [
+                [
+                  "0/1",
+                  0,
+                  "major"
+                ]
+              ]
+            },
+            "completeOccurrences": 4,
+            "standards": [
+              {
+                "song": 463,
+                "title": "Ev'ry Time We Say Goodbye",
+                "passages": [
+                  {
+                    "song": 463,
+                    "title": "Ev'ry Time We Say Goodbye",
+                    "row": 0,
+                    "startBar": 2,
+                    "endBar": 4,
+                    "start": 8,
+                    "end": 16,
+                    "segments": [
+                      {
+                        "row": 0,
+                        "label": "Starlight Dropback",
+                        "startBar": 2,
+                        "endBar": 4,
+                        "start": 8,
+                        "end": 16
+                      }
+                    ],
+                    "labels": [
+                      "Starlight Dropback"
+                    ],
+                    "continued": false,
+                    "status": "complete",
+                    "reason": null,
+                    "variantId": "v-17sfegb-15yllj1"
+                  },
+                  {
+                    "song": 463,
+                    "title": "Ev'ry Time We Say Goodbye",
+                    "row": 2,
+                    "startBar": 18,
+                    "endBar": 20,
+                    "start": 72,
+                    "end": 80,
+                    "segments": [
+                      {
+                        "row": 2,
+                        "label": "Starlight Dropback",
+                        "startBar": 18,
+                        "endBar": 20,
+                        "start": 72,
+                        "end": 80
+                      }
+                    ],
+                    "labels": [
+                      "Starlight Dropback"
+                    ],
+                    "continued": false,
+                    "status": "complete",
+                    "reason": null,
+                    "variantId": "v-17sfegb-15yllj1"
+                  },
+                  {
+                    "song": 463,
+                    "title": "Ev'ry Time We Say Goodbye",
+                    "row": 4,
+                    "startBar": 34,
+                    "endBar": 36,
+                    "start": 136,
+                    "end": 144,
+                    "segments": [
+                      {
+                        "row": 4,
+                        "label": "Starlight Dropback",
+                        "startBar": 34,
+                        "endBar": 36,
+                        "start": 136,
+                        "end": 144
+                      }
+                    ],
+                    "labels": [
+                      "Starlight Dropback"
+                    ],
+                    "continued": false,
+                    "status": "complete",
+                    "reason": null,
+                    "variantId": "v-17sfegb-15yllj1"
+                  },
+                  {
+                    "song": 463,
+                    "title": "Ev'ry Time We Say Goodbye",
+                    "row": 6,
+                    "startBar": 50,
+                    "endBar": 52,
+                    "start": 200,
+                    "end": 208,
+                    "segments": [
+                      {
+                        "row": 6,
+                        "label": "Starlight Dropback",
+                        "startBar": 50,
+                        "endBar": 52,
+                        "start": 200,
+                        "end": 208
+                      }
+                    ],
+                    "labels": [
+                      "Starlight Dropback"
+                    ],
+                    "continued": false,
+                    "status": "complete",
+                    "reason": null,
+                    "variantId": "v-17sfegb-15yllj1"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "unresolvedStandards": []
+      },
+      "target": {
+        "name": "♯ivø–VII7→iii–VI7",
+        "slug": "starlight-ttfa",
+        "distinctStandards": 10,
+        "standards": [
+          252,
+          270,
+          274,
+          290,
+          303,
+          307,
+          411,
+          414,
+          429,
+          463
+        ]
+      },
+      "distance": 0.20299999999999999,
+      "pairs": [
+        {
+          "distance": 0.20299999999999999,
+          "anchors": 4,
+          "anchorPairs": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              4,
+              3
+            ]
+          ],
+          "sourceChords": 5,
+          "targetChords": 4,
+          "shortCoverage": 1,
+          "longCoverage": 0.8,
+          "sourceVariantId": "v-17sfegb-15yllj1",
+          "targetVariantId": "v-6gccr3-1i1qknh",
+          "supportStandards": [
+            252,
+            270,
+            274,
+            303,
+            307,
+            411,
+            414,
+            429,
+            463
+          ],
+          "sourceStructure": {
+            "chords": [
+              {
+                "symbol": "F#m7b5",
+                "harmony": [
+                  6,
+                  [
+                    0,
+                    3,
+                    6,
+                    10
+                  ],
+                  null
+                ],
+                "at": "0/1",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "B7",
+                "harmony": [
+                  11,
+                  [
+                    0,
+                    4,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/4",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "Em7",
+                "harmony": [
+                  4,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/2",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "A7",
+                "harmony": [
+                  9,
+                  [
+                    0,
+                    4,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "3/4",
+                "duration": "1/8"
+              },
+              {
+                "symbol": "A7/G",
+                "harmony": [
+                  9,
+                  [
+                    0,
+                    4,
+                    7,
+                    10
+                  ],
+                  7
+                ],
+                "at": "7/8",
+                "duration": "1/8"
+              }
+            ],
+            "keys": [
+              [
+                "0/1",
+                0,
+                "major"
+              ]
+            ]
+          },
+          "targetStructure": {
+            "chords": [
+              {
+                "symbol": "F#m7b5",
+                "harmony": [
+                  6,
+                  [
+                    0,
+                    3,
+                    6,
+                    10
+                  ],
+                  null
+                ],
+                "at": "0/1",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "B7",
+                "harmony": [
+                  11,
+                  [
+                    0,
+                    4,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/4",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "Em7",
+                "harmony": [
+                  4,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/2",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "A7",
+                "harmony": [
+                  9,
+                  [
+                    0,
+                    4,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "3/4",
+                "duration": "1/4"
+              }
+            ],
+            "keys": [
+              [
+                "0/1",
+                0,
+                "major"
+              ]
+            ]
+          },
+          "weight": 4
+        }
+      ],
+      "candidates": [
+        {
+          "name": "♯ivø–VII7→iii–VI7",
+          "slug": "starlight-ttfa",
+          "standards": [
+            252,
+            270,
+            274,
+            290,
+            303,
+            307,
+            411,
+            414,
+            429,
+            463
+          ],
+          "distance": 0.20299999999999999,
+          "pairs": [
+            {
+              "distance": 0.20299999999999999,
+              "anchors": 4,
+              "anchorPairs": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ]
+              ],
+              "sourceChords": 5,
+              "targetChords": 4,
+              "shortCoverage": 1,
+              "longCoverage": 0.8,
+              "sourceVariantId": "v-17sfegb-15yllj1",
+              "targetVariantId": "v-6gccr3-1i1qknh",
+              "supportStandards": [
+                252,
+                270,
+                274,
+                303,
+                307,
+                411,
+                414,
+                429,
+                463
+              ],
+              "sourceStructure": {
+                "chords": [
+                  {
+                    "symbol": "F#m7b5",
+                    "harmony": [
+                      6,
+                      [
+                        0,
+                        3,
+                        6,
+                        10
+                      ],
+                      null
+                    ],
+                    "at": "0/1",
+                    "duration": "1/4"
+                  },
+                  {
+                    "symbol": "B7",
+                    "harmony": [
+                      11,
+                      [
+                        0,
+                        4,
+                        7,
+                        10
+                      ],
+                      null
+                    ],
+                    "at": "1/4",
+                    "duration": "1/4"
+                  },
+                  {
+                    "symbol": "Em7",
+                    "harmony": [
+                      4,
+                      [
+                        0,
+                        3,
+                        7,
+                        10
+                      ],
+                      null
+                    ],
+                    "at": "1/2",
+                    "duration": "1/4"
+                  },
+                  {
+                    "symbol": "A7",
+                    "harmony": [
+                      9,
+                      [
+                        0,
+                        4,
+                        7,
+                        10
+                      ],
+                      null
+                    ],
+                    "at": "3/4",
+                    "duration": "1/8"
+                  },
+                  {
+                    "symbol": "A7/G",
+                    "harmony": [
+                      9,
+                      [
+                        0,
+                        4,
+                        7,
+                        10
+                      ],
+                      7
+                    ],
+                    "at": "7/8",
+                    "duration": "1/8"
+                  }
+                ],
+                "keys": [
+                  [
+                    "0/1",
+                    0,
+                    "major"
+                  ]
+                ]
+              },
+              "targetStructure": {
+                "chords": [
+                  {
+                    "symbol": "F#m7b5",
+                    "harmony": [
+                      6,
+                      [
+                        0,
+                        3,
+                        6,
+                        10
+                      ],
+                      null
+                    ],
+                    "at": "0/1",
+                    "duration": "1/4"
+                  },
+                  {
+                    "symbol": "B7",
+                    "harmony": [
+                      11,
+                      [
+                        0,
+                        4,
+                        7,
+                        10
+                      ],
+                      null
+                    ],
+                    "at": "1/4",
+                    "duration": "1/4"
+                  },
+                  {
+                    "symbol": "Em7",
+                    "harmony": [
+                      4,
+                      [
+                        0,
+                        3,
+                        7,
+                        10
+                      ],
+                      null
+                    ],
+                    "at": "1/2",
+                    "duration": "1/4"
+                  },
+                  {
+                    "symbol": "A7",
+                    "harmony": [
+                      9,
+                      [
+                        0,
+                        4,
+                        7,
+                        10
+                      ],
+                      null
+                    ],
+                    "at": "3/4",
+                    "duration": "1/4"
+                  }
+                ],
+                "keys": [
+                  [
+                    "0/1",
+                    0,
+                    "major"
+                  ]
+                ]
+              },
+              "weight": 4
+            }
+          ]
+        }
+      ],
+      "reason": "clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": {
+        "name": "Suspended",
+        "slug": "suspended",
+        "distinctStandards": 1,
+        "standards": [
+          472
+        ],
+        "passages": 3,
+        "aliases": [
+          "Suspended Approach"
+        ],
+        "aliasSlugs": [
+          "suspended-approach"
+        ],
+        "sourceNames": [
+          "Suspended Approach"
+        ],
+        "sourceSlugs": [
+          "suspended-approach"
+        ],
+        "positions": [
+          {
+            "song": 472,
+            "title": "Somewhere, Over The Rainbow",
+            "row": 0,
+            "label": "Suspended Approach",
+            "startBar": 4,
+            "endBar": 6,
+            "start": 16,
+            "end": 24
+          },
+          {
+            "song": 472,
+            "title": "Somewhere, Over The Rainbow",
+            "row": 1,
+            "label": "Suspended Approach",
+            "startBar": 12,
+            "endBar": 14,
+            "start": 48,
+            "end": 56
+          },
+          {
+            "song": 472,
+            "title": "Somewhere, Over The Rainbow",
+            "row": 3,
+            "label": "Suspended Approach",
+            "startBar": 28,
+            "endBar": 30,
+            "start": 112,
+            "end": 120
+          }
+        ],
+        "variantStats": {
+          "variants": 1,
+          "occurrences": 3,
+          "sourcePassages": 3,
+          "continuedOccurrences": 0,
+          "coalescedRowChords": 0,
+          "completeOccurrences": 3,
+          "partialOccurrences": 0,
+          "unknownOccurrences": 0,
+          "matchedFragments": 0,
+          "unresolvedOccurrences": 0
+        },
+        "variants": [
+          {
+            "id": "v-y2ufkq-1d7rajs",
+            "structure": {
+              "chords": [
+                {
+                  "symbol": "Dm7",
+                  "harmony": [
+                    2,
+                    [
+                      0,
+                      3,
+                      7,
+                      10
+                    ],
+                    null
+                  ],
+                  "at": "0/1",
+                  "duration": "1/4"
+                },
+                {
+                  "symbol": "Fm7",
+                  "harmony": [
+                    5,
+                    [
+                      0,
+                      3,
+                      7,
+                      10
+                    ],
+                    null
+                  ],
+                  "at": "1/4",
+                  "duration": "1/4"
+                },
+                {
+                  "symbol": "Em7",
+                  "harmony": [
+                    4,
+                    [
+                      0,
+                      3,
+                      7,
+                      10
+                    ],
+                    null
+                  ],
+                  "at": "1/2",
+                  "duration": "1/4"
+                },
+                {
+                  "symbol": "A7b9",
+                  "harmony": [
+                    9,
+                    [
+                      0,
+                      4,
+                      7,
+                      10,
+                      13
+                    ],
+                    null
+                  ],
+                  "at": "3/4",
+                  "duration": "1/4"
+                }
+              ],
+              "keys": [
+                [
+                  "0/1",
+                  0,
+                  "minor"
+                ]
+              ]
+            },
+            "completeOccurrences": 3,
+            "standards": [
+              {
+                "song": 472,
+                "title": "Somewhere, Over The Rainbow",
+                "passages": [
+                  {
+                    "song": 472,
+                    "title": "Somewhere, Over The Rainbow",
+                    "row": 0,
+                    "startBar": 4,
+                    "endBar": 6,
+                    "start": 16,
+                    "end": 24,
+                    "segments": [
+                      {
+                        "row": 0,
+                        "label": "Suspended Approach",
+                        "startBar": 4,
+                        "endBar": 6,
+                        "start": 16,
+                        "end": 24
+                      }
+                    ],
+                    "labels": [
+                      "Suspended Approach"
+                    ],
+                    "continued": false,
+                    "status": "complete",
+                    "reason": null,
+                    "variantId": "v-y2ufkq-1d7rajs"
+                  },
+                  {
+                    "song": 472,
+                    "title": "Somewhere, Over The Rainbow",
+                    "row": 1,
+                    "startBar": 12,
+                    "endBar": 14,
+                    "start": 48,
+                    "end": 56,
+                    "segments": [
+                      {
+                        "row": 1,
+                        "label": "Suspended Approach",
+                        "startBar": 12,
+                        "endBar": 14,
+                        "start": 48,
+                        "end": 56
+                      }
+                    ],
+                    "labels": [
+                      "Suspended Approach"
+                    ],
+                    "continued": false,
+                    "status": "complete",
+                    "reason": null,
+                    "variantId": "v-y2ufkq-1d7rajs"
+                  },
+                  {
+                    "song": 472,
+                    "title": "Somewhere, Over The Rainbow",
+                    "row": 3,
+                    "startBar": 28,
+                    "endBar": 30,
+                    "start": 112,
+                    "end": 120,
+                    "segments": [
+                      {
+                        "row": 3,
+                        "label": "Suspended Approach",
+                        "startBar": 28,
+                        "endBar": 30,
+                        "start": 112,
+                        "end": 120
+                      }
+                    ],
+                    "labels": [
+                      "Suspended Approach"
+                    ],
+                    "continued": false,
+                    "status": "complete",
+                    "reason": null,
+                    "variantId": "v-y2ufkq-1d7rajs"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "unresolvedStandards": []
+      },
+      "distance": 0.49250000000000005,
+      "reason": "no-clear-supported-harmonic-variant",
+      "candidates": [],
+      "nearestRejected": [
+        {
+          "name": "Pullback",
+          "slug": "pullback",
+          "sourceVariantId": "v-y2ufkq-1d7rajs",
+          "targetVariantId": "v-k56efv-4ra0xx",
+          "distance": 0.49250000000000005,
+          "anchors": 3,
+          "anchorPairs": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "sourceChords": 4,
+          "targetChords": 4,
+          "supportStandards": [
+            14,
+            32,
+            33,
+            43,
+            59,
+            111,
+            115,
+            222,
+            290,
+            296,
+            305,
+            459
+          ],
+          "sourceStructure": {
+            "chords": [
+              {
+                "symbol": "Dm7",
+                "harmony": [
+                  2,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "0/1",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "Fm7",
+                "harmony": [
+                  5,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/4",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "Em7",
+                "harmony": [
+                  4,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/2",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "A7b9",
+                "harmony": [
+                  9,
+                  [
+                    0,
+                    4,
+                    7,
+                    10,
+                    13
+                  ],
+                  null
+                ],
+                "at": "3/4",
+                "duration": "1/4"
+              }
+            ],
+            "keys": [
+              [
+                "0/1",
+                0,
+                "minor"
+              ]
+            ]
+          },
+          "targetStructure": {
+            "chords": [
+              {
+                "symbol": "Dm7",
+                "harmony": [
+                  2,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "0/1",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "G7",
+                "harmony": [
+                  7,
+                  [
+                    0,
+                    4,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/4",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "Em7",
+                "harmony": [
+                  4,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/2",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "A7",
+                "harmony": [
+                  9,
+                  [
+                    0,
+                    4,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "3/4",
+                "duration": "1/4"
+              }
+            ],
+            "keys": [
+              [
+                "0/1",
+                0,
+                "major"
+              ]
+            ]
+          },
+          "reason": "root-core-anchor-or-distance-guard"
+        },
+        {
+          "name": "ii–♯ii°→{I,iii}",
+          "slug": "ii-n-back",
+          "sourceVariantId": "v-y2ufkq-1d7rajs",
+          "targetVariantId": "v-11lbkr4-183mv6y",
+          "distance": 0.5125,
+          "anchors": 3,
+          "anchorPairs": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "sourceChords": 4,
+          "targetChords": 4,
+          "supportStandards": [
+            154
+          ],
+          "sourceStructure": {
+            "chords": [
+              {
+                "symbol": "Dm7",
+                "harmony": [
+                  2,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "0/1",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "Fm7",
+                "harmony": [
+                  5,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/4",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "Em7",
+                "harmony": [
+                  4,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/2",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "A7b9",
+                "harmony": [
+                  9,
+                  [
+                    0,
+                    4,
+                    7,
+                    10,
+                    13
+                  ],
+                  null
+                ],
+                "at": "3/4",
+                "duration": "1/4"
+              }
+            ],
+            "keys": [
+              [
+                "0/1",
+                0,
+                "minor"
+              ]
+            ]
+          },
+          "targetStructure": {
+            "chords": [
+              {
+                "symbol": "Dm7",
+                "harmony": [
+                  2,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "0/1",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "D#o",
+                "harmony": [
+                  3,
+                  [
+                    0,
+                    3,
+                    6
+                  ],
+                  null
+                ],
+                "at": "1/4",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "Em7",
+                "harmony": [
+                  4,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/2",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "A7",
+                "harmony": [
+                  9,
+                  [
+                    0,
+                    4,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "3/4",
+                "duration": "1/4"
+              }
+            ],
+            "keys": [
+              [
+                "0/1",
+                0,
+                "major"
+              ]
+            ]
+          },
+          "reason": "insufficient-complete-core-support"
+        },
+        {
+          "name": "Tension Pullback",
+          "slug": "tension-pullback",
+          "sourceVariantId": "v-y2ufkq-1d7rajs",
+          "targetVariantId": "v-ol521b-1436gw5",
+          "distance": 0.5325000000000001,
+          "anchors": 2,
+          "anchorPairs": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "sourceChords": 4,
+          "targetChords": 4,
+          "supportStandards": [
+            101
+          ],
+          "sourceStructure": {
+            "chords": [
+              {
+                "symbol": "Dm7",
+                "harmony": [
+                  2,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "0/1",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "Fm7",
+                "harmony": [
+                  5,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/4",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "Em7",
+                "harmony": [
+                  4,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/2",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "A7b9",
+                "harmony": [
+                  9,
+                  [
+                    0,
+                    4,
+                    7,
+                    10,
+                    13
+                  ],
+                  null
+                ],
+                "at": "3/4",
+                "duration": "1/4"
+              }
+            ],
+            "keys": [
+              [
+                "0/1",
+                0,
+                "minor"
+              ]
+            ]
+          },
+          "targetStructure": {
+            "chords": [
+              {
+                "symbol": "Dm7",
+                "harmony": [
+                  2,
+                  [
+                    0,
+                    3,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "0/1",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "G7",
+                "harmony": [
+                  7,
+                  [
+                    0,
+                    4,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/4",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "E7",
+                "harmony": [
+                  4,
+                  [
+                    0,
+                    4,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "1/2",
+                "duration": "1/4"
+              },
+              {
+                "symbol": "A7",
+                "harmony": [
+                  9,
+                  [
+                    0,
+                    4,
+                    7,
+                    10
+                  ],
+                  null
+                ],
+                "at": "3/4",
+                "duration": "1/4"
+              }
+            ],
+            "keys": [
+              [
+                "0/1",
+                0,
+                "dominant"
+              ]
+            ]
+          },
+          "reason": "insufficient-complete-core-support"
+        }
+      ]
     },
     {
       "action": "remove",
@@ -25679,708 +27919,6 @@
     {
       "action": "merge",
       "source": {
-        "name": "To IV n Mack",
-        "slug": "to-iv-n-mack",
-        "distinctStandards": 1,
-        "standards": [
-          172
-        ],
-        "passages": 3,
-        "aliases": [
-          "To IV n Mack +...",
-          "TolVn Mack +..."
-        ],
-        "aliasSlugs": [
-          "to-iv-n-mack-plus-clipped",
-          "tolvn-mack-plus-clipped"
-        ],
-        "sourceNames": [
-          "To IV n Mack +..."
-        ],
-        "sourceSlugs": [
-          "to-iv-n-mack-plus-clipped"
-        ],
-        "positions": [
-          {
-            "song": 172,
-            "title": "Red Sails in the Sunset",
-            "row": 0,
-            "label": "TolVn Mack +...",
-            "startBar": 0,
-            "endBar": 3,
-            "start": 0,
-            "end": 12
-          },
-          {
-            "song": 172,
-            "title": "Red Sails in the Sunset",
-            "row": 1,
-            "label": "TolVn Mack +...",
-            "startBar": 8,
-            "endBar": 11,
-            "start": 32,
-            "end": 44
-          },
-          {
-            "song": 172,
-            "title": "Red Sails in the Sunset",
-            "row": 3,
-            "label": "TolVn Mack +...",
-            "startBar": 24,
-            "endBar": 27,
-            "start": 96,
-            "end": 108
-          }
-        ],
-        "variantStats": {
-          "variants": 1,
-          "occurrences": 3,
-          "sourcePassages": 3,
-          "continuedOccurrences": 0,
-          "coalescedRowChords": 0,
-          "completeOccurrences": 3,
-          "partialOccurrences": 0,
-          "unknownOccurrences": 0,
-          "matchedFragments": 0,
-          "unresolvedOccurrences": 0
-        },
-        "variants": [
-          {
-            "id": "v-n7pyl4-16wn3xu",
-            "structure": {
-              "chords": [
-                {
-                  "symbol": "CM7",
-                  "harmony": [
-                    0,
-                    [
-                      0,
-                      4,
-                      7,
-                      11
-                    ],
-                    null
-                  ],
-                  "at": "0/1",
-                  "duration": "1/3"
-                },
-                {
-                  "symbol": "Gm7",
-                  "harmony": [
-                    7,
-                    [
-                      0,
-                      3,
-                      7,
-                      10
-                    ],
-                    null
-                  ],
-                  "at": "1/3",
-                  "duration": "1/6"
-                },
-                {
-                  "symbol": "C7",
-                  "harmony": [
-                    0,
-                    [
-                      0,
-                      4,
-                      7,
-                      10
-                    ],
-                    null
-                  ],
-                  "at": "1/2",
-                  "duration": "1/6"
-                },
-                {
-                  "symbol": "FM7",
-                  "harmony": [
-                    5,
-                    [
-                      0,
-                      4,
-                      7,
-                      11
-                    ],
-                    null
-                  ],
-                  "at": "2/3",
-                  "duration": "1/6"
-                },
-                {
-                  "symbol": "Fm6",
-                  "harmony": [
-                    5,
-                    [
-                      0,
-                      3,
-                      5,
-                      7,
-                      9
-                    ],
-                    null
-                  ],
-                  "at": "5/6",
-                  "duration": "1/6"
-                }
-              ],
-              "keys": [
-                [
-                  "0/1",
-                  0,
-                  "major"
-                ]
-              ]
-            },
-            "completeOccurrences": 3,
-            "standards": [
-              {
-                "song": 172,
-                "title": "Red Sails in the Sunset",
-                "passages": [
-                  {
-                    "song": 172,
-                    "title": "Red Sails in the Sunset",
-                    "row": 0,
-                    "startBar": 0,
-                    "endBar": 3,
-                    "start": 0,
-                    "end": 12,
-                    "segments": [
-                      {
-                        "row": 0,
-                        "label": "TolVn Mack +...",
-                        "startBar": 0,
-                        "endBar": 3,
-                        "start": 0,
-                        "end": 12
-                      }
-                    ],
-                    "labels": [
-                      "TolVn Mack +..."
-                    ],
-                    "continued": false,
-                    "status": "complete",
-                    "reason": null,
-                    "variantId": "v-n7pyl4-16wn3xu"
-                  },
-                  {
-                    "song": 172,
-                    "title": "Red Sails in the Sunset",
-                    "row": 1,
-                    "startBar": 8,
-                    "endBar": 11,
-                    "start": 32,
-                    "end": 44,
-                    "segments": [
-                      {
-                        "row": 1,
-                        "label": "TolVn Mack +...",
-                        "startBar": 8,
-                        "endBar": 11,
-                        "start": 32,
-                        "end": 44
-                      }
-                    ],
-                    "labels": [
-                      "TolVn Mack +..."
-                    ],
-                    "continued": false,
-                    "status": "complete",
-                    "reason": null,
-                    "variantId": "v-n7pyl4-16wn3xu"
-                  },
-                  {
-                    "song": 172,
-                    "title": "Red Sails in the Sunset",
-                    "row": 3,
-                    "startBar": 24,
-                    "endBar": 27,
-                    "start": 96,
-                    "end": 108,
-                    "segments": [
-                      {
-                        "row": 3,
-                        "label": "TolVn Mack +...",
-                        "startBar": 24,
-                        "endBar": 27,
-                        "start": 96,
-                        "end": 108
-                      }
-                    ],
-                    "labels": [
-                      "TolVn Mack +..."
-                    ],
-                    "continued": false,
-                    "status": "complete",
-                    "reason": null,
-                    "variantId": "v-n7pyl4-16wn3xu"
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "unresolvedStandards": []
-      },
-      "target": {
-        "name": "To IV",
-        "slug": "to-iv",
-        "distinctStandards": 18,
-        "standards": [
-          29,
-          89,
-          115,
-          138,
-          144,
-          150,
-          181,
-          184,
-          192,
-          193,
-          229,
-          265,
-          290,
-          393,
-          415,
-          429,
-          433,
-          456
-        ]
-      },
-      "distance": 0.20400000000000004,
-      "pairs": [
-        {
-          "distance": 0.20400000000000001,
-          "anchors": 4,
-          "anchorPairs": [
-            [
-              0,
-              0
-            ],
-            [
-              1,
-              1
-            ],
-            [
-              2,
-              2
-            ],
-            [
-              3,
-              3
-            ]
-          ],
-          "sourceChords": 5,
-          "targetChords": 4,
-          "shortCoverage": 1,
-          "longCoverage": 0.8,
-          "sourceVariantId": "v-n7pyl4-16wn3xu",
-          "targetVariantId": "v-ws6e7d-16nguxz",
-          "supportStandards": [
-            138,
-            144,
-            150,
-            290,
-            415,
-            429,
-            433,
-            456
-          ],
-          "sourceStructure": {
-            "chords": [
-              {
-                "symbol": "CM7",
-                "harmony": [
-                  0,
-                  [
-                    0,
-                    4,
-                    7,
-                    11
-                  ],
-                  null
-                ],
-                "at": "0/1",
-                "duration": "1/3"
-              },
-              {
-                "symbol": "Gm7",
-                "harmony": [
-                  7,
-                  [
-                    0,
-                    3,
-                    7,
-                    10
-                  ],
-                  null
-                ],
-                "at": "1/3",
-                "duration": "1/6"
-              },
-              {
-                "symbol": "C7",
-                "harmony": [
-                  0,
-                  [
-                    0,
-                    4,
-                    7,
-                    10
-                  ],
-                  null
-                ],
-                "at": "1/2",
-                "duration": "1/6"
-              },
-              {
-                "symbol": "FM7",
-                "harmony": [
-                  5,
-                  [
-                    0,
-                    4,
-                    7,
-                    11
-                  ],
-                  null
-                ],
-                "at": "2/3",
-                "duration": "1/6"
-              },
-              {
-                "symbol": "Fm6",
-                "harmony": [
-                  5,
-                  [
-                    0,
-                    3,
-                    5,
-                    7,
-                    9
-                  ],
-                  null
-                ],
-                "at": "5/6",
-                "duration": "1/6"
-              }
-            ],
-            "keys": [
-              [
-                "0/1",
-                0,
-                "major"
-              ]
-            ]
-          },
-          "targetStructure": {
-            "chords": [
-              {
-                "symbol": "CM7",
-                "harmony": [
-                  0,
-                  [
-                    0,
-                    4,
-                    7,
-                    11
-                  ],
-                  null
-                ],
-                "at": "0/1",
-                "duration": "1/3"
-              },
-              {
-                "symbol": "Gm7",
-                "harmony": [
-                  7,
-                  [
-                    0,
-                    3,
-                    7,
-                    10
-                  ],
-                  null
-                ],
-                "at": "1/3",
-                "duration": "1/6"
-              },
-              {
-                "symbol": "C7",
-                "harmony": [
-                  0,
-                  [
-                    0,
-                    4,
-                    7,
-                    10
-                  ],
-                  null
-                ],
-                "at": "1/2",
-                "duration": "1/6"
-              },
-              {
-                "symbol": "FM7",
-                "harmony": [
-                  5,
-                  [
-                    0,
-                    4,
-                    7,
-                    11
-                  ],
-                  null
-                ],
-                "at": "2/3",
-                "duration": "1/3"
-              }
-            ],
-            "keys": [
-              [
-                "0/1",
-                0,
-                "major"
-              ]
-            ]
-          },
-          "weight": 3
-        }
-      ],
-      "candidates": [
-        {
-          "name": "To IV",
-          "slug": "to-iv",
-          "standards": [
-            29,
-            89,
-            115,
-            138,
-            144,
-            150,
-            181,
-            184,
-            192,
-            193,
-            229,
-            265,
-            290,
-            393,
-            415,
-            429,
-            433,
-            456
-          ],
-          "distance": 0.20400000000000004,
-          "pairs": [
-            {
-              "distance": 0.20400000000000001,
-              "anchors": 4,
-              "anchorPairs": [
-                [
-                  0,
-                  0
-                ],
-                [
-                  1,
-                  1
-                ],
-                [
-                  2,
-                  2
-                ],
-                [
-                  3,
-                  3
-                ]
-              ],
-              "sourceChords": 5,
-              "targetChords": 4,
-              "shortCoverage": 1,
-              "longCoverage": 0.8,
-              "sourceVariantId": "v-n7pyl4-16wn3xu",
-              "targetVariantId": "v-ws6e7d-16nguxz",
-              "supportStandards": [
-                138,
-                144,
-                150,
-                290,
-                415,
-                429,
-                433,
-                456
-              ],
-              "sourceStructure": {
-                "chords": [
-                  {
-                    "symbol": "CM7",
-                    "harmony": [
-                      0,
-                      [
-                        0,
-                        4,
-                        7,
-                        11
-                      ],
-                      null
-                    ],
-                    "at": "0/1",
-                    "duration": "1/3"
-                  },
-                  {
-                    "symbol": "Gm7",
-                    "harmony": [
-                      7,
-                      [
-                        0,
-                        3,
-                        7,
-                        10
-                      ],
-                      null
-                    ],
-                    "at": "1/3",
-                    "duration": "1/6"
-                  },
-                  {
-                    "symbol": "C7",
-                    "harmony": [
-                      0,
-                      [
-                        0,
-                        4,
-                        7,
-                        10
-                      ],
-                      null
-                    ],
-                    "at": "1/2",
-                    "duration": "1/6"
-                  },
-                  {
-                    "symbol": "FM7",
-                    "harmony": [
-                      5,
-                      [
-                        0,
-                        4,
-                        7,
-                        11
-                      ],
-                      null
-                    ],
-                    "at": "2/3",
-                    "duration": "1/6"
-                  },
-                  {
-                    "symbol": "Fm6",
-                    "harmony": [
-                      5,
-                      [
-                        0,
-                        3,
-                        5,
-                        7,
-                        9
-                      ],
-                      null
-                    ],
-                    "at": "5/6",
-                    "duration": "1/6"
-                  }
-                ],
-                "keys": [
-                  [
-                    "0/1",
-                    0,
-                    "major"
-                  ]
-                ]
-              },
-              "targetStructure": {
-                "chords": [
-                  {
-                    "symbol": "CM7",
-                    "harmony": [
-                      0,
-                      [
-                        0,
-                        4,
-                        7,
-                        11
-                      ],
-                      null
-                    ],
-                    "at": "0/1",
-                    "duration": "1/3"
-                  },
-                  {
-                    "symbol": "Gm7",
-                    "harmony": [
-                      7,
-                      [
-                        0,
-                        3,
-                        7,
-                        10
-                      ],
-                      null
-                    ],
-                    "at": "1/3",
-                    "duration": "1/6"
-                  },
-                  {
-                    "symbol": "C7",
-                    "harmony": [
-                      0,
-                      [
-                        0,
-                        4,
-                        7,
-                        10
-                      ],
-                      null
-                    ],
-                    "at": "1/2",
-                    "duration": "1/6"
-                  },
-                  {
-                    "symbol": "FM7",
-                    "harmony": [
-                      5,
-                      [
-                        0,
-                        4,
-                        7,
-                        11
-                      ],
-                      null
-                    ],
-                    "at": "2/3",
-                    "duration": "1/3"
-                  }
-                ],
-                "keys": [
-                  [
-                    "0/1",
-                    0,
-                    "major"
-                  ]
-                ]
-              },
-              "weight": 3
-            }
-          ]
-        }
-      ],
-      "reason": "clear-supported-harmonic-variant"
-    },
-    {
-      "action": "merge",
-      "source": {
         "name": "To IV n Yak Turnaround",
         "slug": "to-iv-n-yak-turnaround",
         "distinctStandards": 1,
@@ -26585,7 +28123,7 @@
       "target": {
         "name": "v–I7→IV–♭VII7",
         "slug": "to-iv-n-yak",
-        "distinctStandards": 20,
+        "distinctStandards": 22,
         "standards": [
           36,
           91,
@@ -26606,7 +28144,9 @@
           445,
           447,
           449,
-          457
+          457,
+          458,
+          463
         ]
       },
       "distance": 0.2555555555555556,
@@ -26861,7 +28401,9 @@
             445,
             447,
             449,
-            457
+            457,
+            458,
+            463
           ],
           "distance": 0.2555555555555556,
           "pairs": [

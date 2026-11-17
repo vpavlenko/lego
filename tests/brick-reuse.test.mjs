@@ -55,7 +55,7 @@ test('tonic-relative comparison retains source pitch context while refusing a mi
 
 test('the current corpus preserves all musical data, retained spans and merged legacy routes without one-standard families',()=>{
  const original=JSON.parse(fs.readFileSync(new URL('../dist/data/roadmaps.json',import.meta.url),'utf8')).songs,additional=JSON.parse(fs.readFileSync(new URL('../dist/data/additional-standards.json',import.meta.url),'utf8')).songs,songs=removeUnhelpfulBricks([...original,...additional],vocabulary).songs,input=buildLearnerBrickIndex(buildBrickIndex(songs)),before=JSON.stringify({songs,input}),result=refineSingleUseFamilies(input,songs,vocabulary);
- assert.equal(JSON.stringify({songs,input}),before);assert.equal(result.stats.singleStandardFamilies,37);assert.equal(result.stats.mergedFamilies,10);assert.equal(result.stats.removedFamilies,27);assert.equal(result.index.bricks.length,122);
+ assert.equal(JSON.stringify({songs,input}),before);assert.equal(result.stats.singleStandardFamilies,39);assert.equal(result.stats.mergedFamilies,11);assert.equal(result.stats.removedFamilies,28);assert.equal(result.index.bricks.length,123);
  assert.equal(result.stats.keptPassages,result.index.bricks.reduce((n,b)=>n+b.passages,0));assert.equal(result.stats.removedPassages,result.decisions.filter(d=>d.action==='remove').reduce((n,d)=>n+d.source.passages,0));
  for(let i=0;i<songs.length;i++){
   const kept=result.songs[i],source=songs[i];assert.equal(kept.bars,source.bars);assert.deepEqual(kept.tonic,source.tonic);assert.deepEqual(kept.meter,source.meter);assert.deepEqual(kept.notes,source.notes);assert.equal(kept.rows.length,source.rows.length);

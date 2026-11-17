@@ -1,47 +1,47 @@
 {
   "version": 1,
-  "charts": 458,
+  "charts": 474,
   "primaryStandards": 269,
   "originalCharts": 242,
-  "additionalCharts": 216,
-  "rawSourceIdentities": 344,
+  "additionalCharts": 232,
+  "rawSourceIdentities": 349,
   "coverage": {
-    "rawPassages": 8910,
-    "removedPassages": 2534,
-    "keptPassages": 6376,
-    "rawOccurrences": 8417,
-    "removedOccurrences": 2500,
-    "keptOccurrences": 5917,
+    "rawPassages": 9406,
+    "removedPassages": 2717,
+    "keptPassages": 6689,
+    "rawOccurrences": 8881,
+    "removedOccurrences": 2680,
+    "keptOccurrences": 6201,
     "reasons": {
       "single-harmony": {
-        "passages": 1949,
-        "occurrences": 1937
+        "passages": 2098,
+        "occurrences": 2084
       },
       "on-off-family": {
-        "passages": 585,
-        "occurrences": 563
+        "passages": 619,
+        "occurrences": 596
       }
     }
   },
   "reuse": {
-    "inputFamilies": 159,
-    "singleStandardFamilies": 37,
-    "reusableTargets": 122,
-    "mergedFamilies": 10,
-    "removedFamilies": 27,
-    "outputFamilies": 122,
-    "rawPassages": 6376,
-    "mergedPassages": 18,
-    "removedPassages": 45,
-    "keptPassages": 6331,
+    "inputFamilies": 162,
+    "singleStandardFamilies": 39,
+    "reusableTargets": 123,
+    "mergedFamilies": 11,
+    "removedFamilies": 28,
+    "outputFamilies": 123,
+    "rawPassages": 6689,
+    "mergedPassages": 22,
+    "removedPassages": 48,
+    "keptPassages": 6641,
     "supportBasis": "distinct standards",
     "minimumTargetStandards": 2,
     "maxVariantDistance": 0.28,
     "ambiguityMargin": 0.025
   },
-  "definitions": 1514,
+  "definitions": 1568,
   "unresolvedOccurrences": 8,
-  "unchangedMusicalDataSha256": "8721609ab8c3698fa8f7a6238fe996b1ed263a62d2850ffbf62447e89bc7f7a9",
+  "unchangedMusicalDataSha256": "04ea2617f0afc2b9933afbff8d451a6f14c9ad336f380d05fed15f8d672bf871",
   "decisions": [
     {
       "action": "remove",
@@ -142,6 +142,12 @@
       "reason": "no-clear-supported-harmonic-variant"
     },
     {
+      "action": "merge",
+      "source": "IV to II",
+      "target": "♯ivø–VII7→iii–VI7",
+      "reason": "clear-supported-harmonic-variant"
+    },
+    {
       "action": "remove",
       "source": "Minor Dogleg Slow",
       "reason": "no-clear-supported-harmonic-variant"
@@ -207,6 +213,17 @@
       "reason": "ambiguous-supported-families"
     },
     {
+      "action": "merge",
+      "source": "Starlight Dropback",
+      "target": "♯ivø–VII7→iii–VI7",
+      "reason": "clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Suspended",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
       "action": "remove",
       "source": "To II n Back",
       "reason": "no-clear-supported-harmonic-variant"
@@ -215,12 +232,6 @@
       "action": "remove",
       "source": "To IV n Bird POT",
       "reason": "no-clear-supported-harmonic-variant"
-    },
-    {
-      "action": "merge",
-      "source": "To IV n Mack",
-      "target": "To IV",
-      "reason": "clear-supported-harmonic-variant"
     },
     {
       "action": "merge",

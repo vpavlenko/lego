@@ -1,0 +1,168 @@
+{
+  "version": 1,
+  "sourceCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+  "entries": [
+    {
+      "sourcePath": "src/openbook/corner_pocket.ly.tera",
+      "sourceTitle": "Corner Pocket",
+      "sourceSha256": "c17f57b89f0173cc2858ef1ad4ad98019ff55128584b7ec78f557ccf269545de",
+      "canonicalSong": 41,
+      "canonicalTitle": "Corner Pocket (Until I Met You)",
+      "sourceComposer": "Freddy Greene",
+      "canonicalComposer": "Freddie Green and Don Wolf"
+    },
+    {
+      "sourcePath": "src/openbook/danny_boy.ly.tera",
+      "sourceTitle": "Danny Boy",
+      "sourceSha256": "a6e5aa5dfb816b9b81b1057ce7af4f92ddcdaa80da030d44e2f64fae7e213152",
+      "canonicalSong": 44,
+      "canonicalTitle": "Danny Boy (Londonderry Air)",
+      "sourceComposer": "Londonderry Air, Traditional Irish tune",
+      "canonicalComposer": ""
+    },
+    {
+      "sourcePath": "src/openbook/dont_worry_bout_me.ly.tera",
+      "sourceTitle": "Don't Worry 'Bout Me",
+      "sourceSha256": "5fd3134b7195b50e2a54a2bee027699f76639ab286a2473bfc2755bfd07b9054",
+      "canonicalSong": 52,
+      "canonicalTitle": "Don't Worry About Me",
+      "sourceComposer": "Rube Bloom",
+      "canonicalComposer": ""
+    },
+    {
+      "sourcePath": "src/openbook/evry_time_we_say_goodbye.ly.tera",
+      "sourceTitle": "Ev'ry Time We Say Goodbye",
+      "sourceSha256": "96624ad0ce3e02930e6219b5d182fedf2d60bedd5314ff11fe6af23f5aa2e87f",
+      "canonicalSong": 61,
+      "canonicalTitle": "Every Time We Say Goodbye",
+      "sourceComposer": "Cole Porter",
+      "canonicalComposer": "Cole Porter"
+    },
+    {
+      "sourcePath": "src/openbook/evrything_i_love.ly.tera",
+      "sourceTitle": "Ev'rything I Love",
+      "sourceSha256": "40805b3690130a1e174866cfcb7fbc875c66f8ece02783d30749ed14b8e9c1e6",
+      "canonicalSong": 63,
+      "canonicalTitle": "Everything I Love",
+      "sourceComposer": "Cole Porter",
+      "canonicalComposer": "Cole Porter"
+    },
+    {
+      "sourcePath": "src/openbook/georgia_on_my_mind.ly.tera",
+      "sourceTitle": "Georgia On My Mind",
+      "sourceSha256": "5b4382d17c4462f229fdf815207fc5658258c3af7382b648d65a152b6b19b03c",
+      "canonicalSong": 71,
+      "canonicalTitle": "Georgia",
+      "sourceComposer": "Hoagy Carmichael",
+      "canonicalComposer": "Hoagy Carmichael"
+    },
+    {
+      "sourcePath": "src/openbook/a_ghost_of_a_chance.ly.tera",
+      "sourceTitle": "(I Don't Stand) A Ghost Of A Chance",
+      "sourceSha256": "f5873dfcd56a340fffeb03f1a2ec6a71b928c599fb377c59a1d730082c1e7136",
+      "canonicalSong": 72,
+      "canonicalTitle": "A Ghost of a Chance",
+      "sourceComposer": "Victor Young",
+      "canonicalComposer": "Victor Young, Bing Crosby, Ned Washington"
+    },
+    {
+      "sourcePath": "src/openbook/i_got_it_bad_and_that_aint_good.ly.tera",
+      "sourceTitle": "I Got It Bad And That Ain't Good",
+      "sourceSha256": "c67dbe9c1a06a1efede6fafe59797c1055d5a87ab1f3e8b8d6e5fe2d3c36ab81",
+      "canonicalSong": 86,
+      "canonicalTitle": "I Got It Bad",
+      "sourceComposer": "Duke Ellington",
+      "canonicalComposer": "Duke Ellington and Paul Francis Webster"
+    },
+    {
+      "sourcePath": "src/openbook/guess_ill_hang_my_tears_out_to_dry.ly.tera",
+      "sourceTitle": "Guess I'll Hang My Tears Out To Dry",
+      "sourceSha256": "f362d2ab8e6ec6da1097b69f2d317a8cf198f64c48e5dde14611e342be82ac0e",
+      "canonicalSong": 87,
+      "canonicalTitle": "I Guess I'll Hang My Tears Out to Dry",
+      "sourceComposer": "Jules Styne",
+      "canonicalComposer": "Jule Styne"
+    },
+    {
+      "sourcePath": "src/openbook/i_got_rhythm.ly.tera",
+      "sourceTitle": "I Got Rhythm",
+      "sourceSha256": "40413fa91bb83f4f20c5244a4915248ddc433f4e91ef9cadc156c8c32d8160c6",
+      "canonicalSong": 100,
+      "canonicalTitle": "I've Got Rhythm",
+      "sourceComposer": "George Gershwin",
+      "canonicalComposer": "George Gershwin"
+    },
+    {
+      "sourcePath": "src/openbook/oh_lady_be_good.ly.tera",
+      "sourceTitle": "Oh, Lady Be Good!",
+      "sourceSha256": "c80652305566cecca7552d57ec5aa58a4b0db201393e509bdfb99aaab6b13e9d",
+      "canonicalSong": 116,
+      "canonicalTitle": "Lady Be Good",
+      "sourceComposer": "George Gershwin",
+      "canonicalComposer": ""
+    },
+    {
+      "sourcePath": "src/openbook/the_masquerade_is_over.ly.tera",
+      "sourceTitle": "(I'm Afraid) The Masquerade Is Over",
+      "sourceSha256": "31f911a4646892fd4ff7a8293c7e6724604a6e70d6c191cf58d39349188cb0d1",
+      "canonicalSong": 133,
+      "canonicalTitle": "The Masquerade is Over",
+      "sourceComposer": "Allie Wrubel",
+      "canonicalComposer": "Allie Wrubel and Herb Magidson"
+    },
+    {
+      "sourcePath": "src/openbook/on_a_clear_day_you_can_see_forever.ly.tera",
+      "sourceTitle": "On A Clear Day (You Can See Forever)",
+      "sourceSha256": "a9fa1e32de8bd217e0cf501af6980fa6fdbca828c8bbf0f62d0ae8a2ec9d19e1",
+      "canonicalSong": 156,
+      "canonicalTitle": "On a Clear Day",
+      "sourceComposer": "Burton Lane",
+      "canonicalComposer": "Burton Lane"
+    },
+    {
+      "sourcePath": "src/openbook/ornithology.ly.tera",
+      "sourceTitle": "Ornithology",
+      "sourceSha256": "0400ad68f40dd51a6f4c855071876e9d30f3e0b1c3afb692fac4e839d454420c",
+      "canonicalSong": 160,
+      "canonicalTitle": "Ornithology (How High the Moon)",
+      "sourceComposer": "Charlie Parker, Benny Harris",
+      "canonicalComposer": "Charlie Parker"
+    },
+    {
+      "sourcePath": "src/openbook/somewhere_over_the_rainbow.ly.tera",
+      "sourceTitle": "Somewhere, Over The Rainbow",
+      "sourceSha256": "436704d199a95da36367216d9576a9b08786e6baad08ef7efbc5d36a9c71edb1",
+      "canonicalSong": 163,
+      "canonicalTitle": "Over the Rainbow",
+      "sourceComposer": "Harold Arlen",
+      "canonicalComposer": "Harold Arlen"
+    },
+    {
+      "sourcePath": "src/openbook/on_a_slow_boat_to_china.ly.tera",
+      "sourceTitle": "On A Slow Boat To China",
+      "sourceSha256": "23e0d02a6a339b0d5e5426234c9621a8ff0ece2a23b82f3ee43a34ffc0758e76",
+      "canonicalSong": 185,
+      "canonicalTitle": "Slow Boat to China",
+      "sourceComposer": "Frank Loesser",
+      "canonicalComposer": "Frank Loesser"
+    },
+    {
+      "sourcePath": "src/openbook/a_weaver_of_dreams.ly.tera",
+      "sourceTitle": "A Weaver of Dreams",
+      "sourceSha256": "e6cdc39890c5e85f9ef1a68c3fe91ba49198e5e2d73b454849bfb66b6f3b5b11",
+      "canonicalSong": 224,
+      "canonicalTitle": "(You're a) Weaver of Dreams",
+      "sourceComposer": "Victor Young, Jack Elliott",
+      "canonicalComposer": "Victor Young and Jack Elliott"
+    },
+    {
+      "sourcePath": "src/openbook/wrap_your_troubles_in_dreams.ly.tera",
+      "sourceTitle": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "sourceSha256": "d33783bc27686afe41c28c80d8f99e21fbff209806c6eeeeb645929a5ff40a40",
+      "canonicalSong": 236,
+      "canonicalTitle": "Wrap Your Troubles in Dreams",
+      "sourceComposer": "Harry Barris",
+      "canonicalComposer": "Harry Barris, Ted Koehler, Billy Moll"
+    }
+  ]
+}

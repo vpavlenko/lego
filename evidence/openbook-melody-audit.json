@@ -29,14 +29,15 @@
   ],
   "counts": {
     "originalTitleSources": 206,
-    "validatedArrangements": 177,
-    "notes": 24200,
+    "validatedArrangements": 193,
+    "notes": 26821,
     "attemptsExcluded": 106,
-    "sourceIntervalOverrides": 192,
-    "sourcePickupArrangements": 55
+    "sourceIntervalOverrides": 222,
+    "sourcePickupArrangements": 58,
+    "reviewedTitleAliasArrangements": 16
   },
   "policy": {
-    "selection": "Only original-catalogue title matches. Prefer complete Real version, then declared default, then remaining encoded versions; first fully validated arrangement per composition.",
+    "selection": "Only original-catalogue titles or pinned explicit title aliases. Prefer complete Real version, then declared default, then remaining encoded versions; first fully validated arrangement per composition.",
     "tonic": "Explicit source key/mode only. Source declaration mode differing from original composition harmonic mode is excluded for review; relative-major signatures are not silently treated as actual tonic.",
     "skips": "Blank chord-label skips hold preceding harmony with explicit continuation provenance; rests are NC and initial blanks remain NC.",
     "navigation": "Textual DC/DS/Coda excluded. One matching initial source-compiled pickup and final partial measure map are admitted; no inferred return or invented note. Written volta and alternatives unfolded by LilyPond.",
@@ -10854,6 +10855,1102 @@
         "validation": "Exact source compiler durations, pickup-aligned bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
         "pickupPolicy": "One matching initial LilyPond PartialSet in both compiled streams. MIDI onsets and durations remain unchanged; source measure0 is the pickup. No padding, cropping or stretching."
       }
+    },
+    {
+      "id": "openbook-corner-pocket-wikifonia",
+      "title": "Corner Pocket",
+      "originalSong": 41,
+      "originalBars": 32,
+      "sourceBars": 33,
+      "notes": 173,
+      "chords": 56,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/corner_pocket.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/corner_pocket.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/corner_pocket.ly.tera",
+        "sha256": "c17f57b89f0173cc2858ef1ad4ad98019ff55128584b7ec78f557ccf269545de",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": "Archived MusicXML notice retained; underlying music is not relicensed.",
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "Bb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 45
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 91
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Corner Pocket",
+          "workTitle": "Corner Pocket",
+          "movementTitle": null,
+          "filenameTitle": "corner_pocket.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 41,
+          "canonicalTitle": "Corner Pocket (Until I Met You)",
+          "sourceTitle": "Corner Pocket",
+          "canonicalComposer": "Freddie Green and Don Wolf",
+          "sourceComposer": "Freddy Greene",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
+    },
+    {
+      "id": "openbook-danny-boy-wikifonia",
+      "title": "Danny Boy",
+      "originalSong": 44,
+      "originalBars": 32,
+      "sourceBars": 33,
+      "notes": 93,
+      "chords": 30,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/danny_boy.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/danny_boy.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/danny_boy.ly.tera",
+        "sha256": "a6e5aa5dfb816b9b81b1057ce7af4f92ddcdaa80da030d44e2f64fae7e213152",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": "Archived MusicXML notice retained; underlying music is not relicensed.",
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "F",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 45
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 91
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Danny Boy",
+          "workTitle": "Danny Boy",
+          "movementTitle": null,
+          "filenameTitle": "danny_boy.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 44,
+          "canonicalTitle": "Danny Boy (Londonderry Air)",
+          "sourceTitle": "Danny Boy",
+          "canonicalComposer": "",
+          "sourceComposer": "Londonderry Air, Traditional Irish tune",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
+    },
+    {
+      "id": "openbook-don-t-worry-bout-me-wikifonia",
+      "title": "Don't Worry 'Bout Me",
+      "originalSong": 52,
+      "originalBars": 32,
+      "sourceBars": 65,
+      "notes": 200,
+      "chords": 77,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/dont_worry_bout_me.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/dont_worry_bout_me.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/dont_worry_bout_me.ly.tera",
+        "sha256": "5fd3134b7195b50e2a54a2bee027699f76639ab286a2473bfc2755bfd07b9054",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": "Archived MusicXML notice retained; underlying music is not relicensed.",
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "Ab",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 46
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 101
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Don't Worry 'Bout Me",
+          "workTitle": "Don't Worry 'Bout Me",
+          "movementTitle": null,
+          "filenameTitle": "dont_worry_bout_me.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 52,
+          "canonicalTitle": "Don't Worry About Me",
+          "sourceTitle": "Don't Worry 'Bout Me",
+          "canonicalComposer": "",
+          "sourceComposer": "Rube Bloom",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
+    },
+    {
+      "id": "openbook-ev-ry-time-we-say-goodbye-fake",
+      "title": "Ev'ry Time We Say Goodbye",
+      "originalSong": 61,
+      "originalBars": 32,
+      "sourceBars": 68,
+      "notes": 211,
+      "chords": 129,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/evry_time_we_say_goodbye.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/evry_time_we_say_goodbye.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/evry_time_we_say_goodbye.ly.tera",
+        "sha256": "96624ad0ce3e02930e6219b5d182fedf2d60bedd5314ff11fe6af23f5aa2e87f",
+        "sourceRights": "1944 by Chappell & Co. Inc.",
+        "sourceRightsExtra": "Copyright Renewed.",
+        "sourceVersion": "Fake",
+        "sourceStructure": "ABAC",
+        "sourceKeySignature": {
+          "root": "Eb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 54
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 96
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Ev'ry Time We Say Goodbye",
+          "workTitle": "Ev'ry Time We Say Goodbye",
+          "movementTitle": null,
+          "filenameTitle": "evry_time_we_say_goodbye.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 61,
+          "canonicalTitle": "Every Time We Say Goodbye",
+          "sourceTitle": "Ev'ry Time We Say Goodbye",
+          "canonicalComposer": "Cole Porter",
+          "sourceComposer": "Cole Porter",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
+    },
+    {
+      "id": "openbook-ev-rything-i-love-wikifonia",
+      "title": "Ev'rything I Love",
+      "originalSong": 63,
+      "originalBars": 32,
+      "sourceBars": 96,
+      "notes": 235,
+      "chords": 121,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/evrything_i_love.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/evrything_i_love.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/evrything_i_love.ly.tera",
+        "sha256": "40805b3690130a1e174866cfcb7fbc875c66f8ece02783d30749ed14b8e9c1e6",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": "Archived MusicXML notice retained; underlying music is not relicensed.",
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "Eb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 46
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 117
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Ev'rything I Love",
+          "workTitle": "Ev'rything I Love",
+          "movementTitle": null,
+          "filenameTitle": "evrything_i_love.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 63,
+          "canonicalTitle": "Everything I Love",
+          "sourceTitle": "Ev'rything I Love",
+          "canonicalComposer": "Cole Porter",
+          "sourceComposer": "Cole Porter",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
+    },
+    {
+      "id": "openbook-georgia-on-my-mind-real",
+      "title": "Georgia On My Mind",
+      "originalSong": 71,
+      "originalBars": 32,
+      "sourceBars": 64,
+      "notes": 180,
+      "chords": 122,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/georgia_on_my_mind.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/georgia_on_my_mind.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/georgia_on_my_mind.ly.tera",
+        "sha256": "5b4382d17c4462f229fdf815207fc5658258c3af7382b648d65a152b6b19b03c",
+        "sourceRights": "1930 by Peermusic Ltd.",
+        "sourceRightsExtra": "Copyright Renewed.",
+        "sourceVersion": "Real",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "F",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsReal",
+            "startLine": 52
+          },
+          "melody": {
+            "name": "VoiceReal",
+            "startLine": 95
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Georgia On My Mind",
+          "workTitle": "Georgia On My Mind",
+          "movementTitle": null,
+          "filenameTitle": "georgia_on_my_mind.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 71,
+          "canonicalTitle": "Georgia",
+          "sourceTitle": "Georgia On My Mind",
+          "canonicalComposer": "Hoagy Carmichael",
+          "sourceComposer": "Hoagy Carmichael",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
+    },
+    {
+      "id": "openbook-i-got-it-bad-and-that-ain-t-good-wikifonia",
+      "title": "I Got It Bad And That Ain't Good",
+      "originalSong": 86,
+      "originalBars": 32,
+      "sourceBars": 49,
+      "notes": 185,
+      "chords": 88,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/i_got_it_bad_and_that_aint_good.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/i_got_it_bad_and_that_aint_good.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/i_got_it_bad_and_that_aint_good.ly.tera",
+        "sha256": "c67dbe9c1a06a1efede6fafe59797c1055d5a87ab1f3e8b8d6e5fe2d3c36ab81",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": "Archived MusicXML notice retained; underlying music is not relicensed.",
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "G",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 46
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 108
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "I Got It Bad And That Ain't Good",
+          "workTitle": "I Got It Bad And That Ain't Good",
+          "movementTitle": null,
+          "filenameTitle": "i_got_it_bad_and_that_aint_good.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 86,
+          "canonicalTitle": "I Got It Bad",
+          "sourceTitle": "I Got It Bad And That Ain't Good",
+          "canonicalComposer": "Duke Ellington and Paul Francis Webster",
+          "sourceComposer": "Duke Ellington",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
+    },
+    {
+      "id": "openbook-guess-i-ll-hang-my-tears-out-to-dry-wikifonia",
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "originalSong": 87,
+      "originalBars": 35,
+      "sourceBars": 72,
+      "notes": 308,
+      "chords": 134,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/guess_ill_hang_my_tears_out_to_dry.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/guess_ill_hang_my_tears_out_to_dry.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/guess_ill_hang_my_tears_out_to_dry.ly.tera",
+        "sha256": "f362d2ab8e6ec6da1097b69f2d317a8cf198f64c48e5dde14611e342be82ac0e",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": "Archived MusicXML notice retained; underlying music is not relicensed.",
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "C",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 46
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 97
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Guess I'll Hang My Tears Out To Dry",
+          "workTitle": "Guess I'll Hang My Tears Out To Dry",
+          "movementTitle": null,
+          "filenameTitle": "guess_ill_hang_my_tears_out_to_dry.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 87,
+          "canonicalTitle": "I Guess I'll Hang My Tears Out to Dry",
+          "sourceTitle": "Guess I'll Hang My Tears Out To Dry",
+          "canonicalComposer": "Jule Styne",
+          "sourceComposer": "Jules Styne",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
+    },
+    {
+      "id": "openbook-i-got-rhythm-laurent",
+      "title": "I Got Rhythm",
+      "originalSong": 100,
+      "originalBars": 32,
+      "sourceBars": 38,
+      "notes": 92,
+      "chords": 71,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/i_got_rhythm.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/i_got_rhythm.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/i_got_rhythm.ly.tera",
+        "sha256": "40413fa91bb83f4f20c5244a4915248ddc433f4e91ef9cadc156c8c32d8160c6",
+        "sourceRights": null,
+        "sourceRightsExtra": null,
+        "sourceVersion": "Laurent",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "Bb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsLaurent",
+            "startLine": 37
+          },
+          "melody": {
+            "name": "VoiceLaurent",
+            "startLine": 78
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "I Got Rhythm",
+          "workTitle": "I Got Rhythm",
+          "movementTitle": null,
+          "filenameTitle": "i_got_rhythm.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 100,
+          "canonicalTitle": "I've Got Rhythm",
+          "sourceTitle": "I Got Rhythm",
+          "canonicalComposer": "George Gershwin",
+          "sourceComposer": "George Gershwin",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
+    },
+    {
+      "id": "openbook-oh-lady-be-good-wikifonia",
+      "title": "Oh, Lady Be Good!",
+      "originalSong": 116,
+      "originalBars": 32,
+      "sourceBars": 65,
+      "notes": 132,
+      "chords": 83,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/oh_lady_be_good.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/oh_lady_be_good.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/oh_lady_be_good.ly.tera",
+        "sha256": "c80652305566cecca7552d57ec5aa58a4b0db201393e509bdfb99aaab6b13e9d",
+        "sourceRights": "Original composition (1924); public domain in the US",
+        "sourceRightsExtra": "Instrumental lead sheet; later lyrics and arrangements are excluded.",
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "G",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 45
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 99
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Oh, Lady Be Good!",
+          "workTitle": "Oh, Lady Be Good!",
+          "movementTitle": null,
+          "filenameTitle": "oh_lady_be_good.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 116,
+          "canonicalTitle": "Lady Be Good",
+          "sourceTitle": "Oh, Lady Be Good!",
+          "canonicalComposer": "",
+          "sourceComposer": "George Gershwin",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
+    },
+    {
+      "id": "openbook-on-a-clear-day-you-can-see-forever-fake",
+      "title": "On A Clear Day (You Can See Forever)",
+      "originalSong": 156,
+      "originalBars": 34,
+      "sourceBars": 37,
+      "notes": 89,
+      "chords": 37,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/on_a_clear_day_you_can_see_forever.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/on_a_clear_day_you_can_see_forever.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/on_a_clear_day_you_can_see_forever.ly.tera",
+        "sha256": "a9fa1e32de8bd217e0cf501af6980fa6fdbca828c8bbf0f62d0ae8a2ec9d19e1",
+        "sourceRights": "1965 by Alan Jay Lerner and Burton Lane",
+        "sourceRightsExtra": "Chappell & Co., Inc., Owner of publication and allied rights",
+        "sourceVersion": "Fake",
+        "sourceStructure": "ABCA'",
+        "sourceKeySignature": {
+          "root": "G",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 53
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 88
+          }
+        },
+        "irregularMeasures": [
+          {
+            "sourceNumber": "0",
+            "start": 0.0,
+            "duration": 2.0,
+            "kind": "pickup"
+          }
+        ],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "On A Clear Day (You Can See Forever)",
+          "workTitle": "On A Clear Day (You Can See Forever)",
+          "movementTitle": null,
+          "filenameTitle": "on_a_clear_day_you_can_see_forever.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, pickup-aligned bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "pickupPolicy": "One matching initial LilyPond PartialSet in both compiled streams. MIDI onsets and durations remain unchanged; source measure0 is the pickup. No padding, cropping or stretching.",
+        "compositionIdentity": {
+          "canonicalSong": 156,
+          "canonicalTitle": "On a Clear Day",
+          "sourceTitle": "On A Clear Day (You Can See Forever)",
+          "canonicalComposer": "Burton Lane",
+          "sourceComposer": "Burton Lane",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
+    },
+    {
+      "id": "openbook-ornithology-fake",
+      "title": "Ornithology",
+      "originalSong": 160,
+      "originalBars": 32,
+      "sourceBars": 33,
+      "notes": 193,
+      "chords": 36,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/ornithology.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/ornithology.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/ornithology.ly.tera",
+        "sha256": "0400ad68f40dd51a6f4c855071876e9d30f3e0b1c3afb692fac4e839d454420c",
+        "sourceRights": "1946 ATLANTIC MUSIC CORP.",
+        "sourceRightsExtra": "Renewed and assigned 1974 ATLANTIC MUSIC CORP.",
+        "sourceVersion": "Fake",
+        "sourceStructure": "ABAC",
+        "sourceKeySignature": {
+          "root": "G",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 53
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 85
+          }
+        },
+        "irregularMeasures": [
+          {
+            "sourceNumber": "0",
+            "start": 0.0,
+            "duration": 0.5,
+            "kind": "pickup"
+          }
+        ],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Ornithology",
+          "workTitle": "Ornithology",
+          "movementTitle": null,
+          "filenameTitle": "ornithology.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, pickup-aligned bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "pickupPolicy": "One matching initial LilyPond PartialSet in both compiled streams. MIDI onsets and durations remain unchanged; source measure0 is the pickup. No padding, cropping or stretching.",
+        "compositionIdentity": {
+          "canonicalSong": 160,
+          "canonicalTitle": "Ornithology (How High the Moon)",
+          "sourceTitle": "Ornithology",
+          "canonicalComposer": "Charlie Parker",
+          "sourceComposer": "Charlie Parker, Benny Harris",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
+    },
+    {
+      "id": "openbook-somewhere-over-the-rainbow-ccb",
+      "title": "Somewhere, Over The Rainbow",
+      "originalSong": 163,
+      "originalBars": 32,
+      "sourceBars": 32,
+      "notes": 109,
+      "chords": 68,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/somewhere_over_the_rainbow.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/somewhere_over_the_rainbow.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/somewhere_over_the_rainbow.ly.tera",
+        "sha256": "436704d199a95da36367216d9576a9b08786e6baad08ef7efbc5d36a9c71edb1",
+        "sourceRights": "Musicopy",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Ccb",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "Eb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsCcb",
+            "startLine": 85
+          },
+          "melody": {
+            "name": "VoiceCcb",
+            "startLine": 120
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Somewhere, Over The Rainbow",
+          "workTitle": "Somewhere, Over The Rainbow",
+          "movementTitle": null,
+          "filenameTitle": "somewhere_over_the_rainbow.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 163,
+          "canonicalTitle": "Over the Rainbow",
+          "sourceTitle": "Somewhere, Over The Rainbow",
+          "canonicalComposer": "Harold Arlen",
+          "sourceComposer": "Harold Arlen",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
+    },
+    {
+      "id": "openbook-on-a-slow-boat-to-china-fake",
+      "title": "On A Slow Boat To China",
+      "originalSong": 185,
+      "originalBars": 32,
+      "sourceBars": 32,
+      "notes": 78,
+      "chords": 43,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/on_a_slow_boat_to_china.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/on_a_slow_boat_to_china.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/on_a_slow_boat_to_china.ly.tera",
+        "sha256": "23e0d02a6a339b0d5e5426234c9621a8ff0ece2a23b82f3ee43a34ffc0758e76",
+        "sourceRights": "1948, 1987 FRANK MUSIC CORP.",
+        "sourceRightsExtra": "Renewed 1976 FRANK MUSIC CORP. International Copyright Secured. All Rights Reserved.",
+        "sourceVersion": "Fake",
+        "sourceStructure": "ABAC",
+        "sourceKeySignature": {
+          "root": "Bb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 53
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 85
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "On A Slow Boat To China",
+          "workTitle": "On A Slow Boat To China",
+          "movementTitle": null,
+          "filenameTitle": "on_a_slow_boat_to_china.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 185,
+          "canonicalTitle": "Slow Boat to China",
+          "sourceTitle": "On A Slow Boat To China",
+          "canonicalComposer": "Frank Loesser",
+          "sourceComposer": "Frank Loesser",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
+    },
+    {
+      "id": "openbook-a-weaver-of-dreams-wikifonia",
+      "title": "A Weaver of Dreams",
+      "originalSong": 224,
+      "originalBars": 32,
+      "sourceBars": 32,
+      "notes": 105,
+      "chords": 29,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/a_weaver_of_dreams.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/a_weaver_of_dreams.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/a_weaver_of_dreams.ly.tera",
+        "sha256": "e6cdc39890c5e85f9ef1a68c3fe91ba49198e5e2d73b454849bfb66b6f3b5b11",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": "Archived MusicXML notice retained; underlying music is not relicensed.",
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "C",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 43
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 88
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "A Weaver of Dreams",
+          "workTitle": "A Weaver of Dreams",
+          "movementTitle": null,
+          "filenameTitle": "a_weaver_of_dreams.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "compositionIdentity": {
+          "canonicalSong": 224,
+          "canonicalTitle": "(You're a) Weaver of Dreams",
+          "sourceTitle": "A Weaver of Dreams",
+          "canonicalComposer": "Victor Young and Jack Elliott",
+          "sourceComposer": "Victor Young, Jack Elliott",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
+    },
+    {
+      "id": "openbook-wrap-your-troubles-in-dreams-and-dream-your-troubles-away-fake",
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "originalSong": 236,
+      "originalBars": 32,
+      "sourceBars": 65,
+      "notes": 238,
+      "chords": 124,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/wrap_your_troubles_in_dreams.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/wrap_your_troubles_in_dreams.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/wrap_your_troubles_in_dreams.ly.tera",
+        "sha256": "d33783bc27686afe41c28c80d8f99e21fbff209806c6eeeeb645929a5ff40a40",
+        "sourceRights": "1931 Shapiro, Bernstein & Co., Inc. New York.",
+        "sourceRightsExtra": "Copyright Renewed.",
+        "sourceVersion": "Fake",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "C",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 52
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 96
+          }
+        },
+        "irregularMeasures": [
+          {
+            "sourceNumber": "0",
+            "start": 0.0,
+            "duration": 1.0,
+            "kind": "pickup"
+          }
+        ],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+          "workTitle": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+          "movementTitle": null,
+          "filenameTitle": "wrap_your_troubles_in_dreams.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, pickup-aligned bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation",
+        "pickupPolicy": "One matching initial LilyPond PartialSet in both compiled streams. MIDI onsets and durations remain unchanged; source measure0 is the pickup. No padding, cropping or stretching.",
+        "compositionIdentity": {
+          "canonicalSong": 236,
+          "canonicalTitle": "Wrap Your Troubles in Dreams",
+          "sourceTitle": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+          "canonicalComposer": "Harry Barris, Ted Koehler, Billy Moll",
+          "sourceComposer": "Harry Barris",
+          "basis": "Explicit reviewed title alias; source title and credits retained without rewriting"
+        }
+      }
     }
   ],
   "excludedAttempts": [
@@ -11389,5 +12486,6 @@
     }
   ],
   "metadataErrors": [],
-  "pickupRecovery": "evidence/pickup-source-recovery.json"
+  "pickupRecovery": "evidence/pickup-source-recovery.json",
+  "titleAliases": "src/music/melody-title-aliases.json"
 }

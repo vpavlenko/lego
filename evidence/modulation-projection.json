@@ -106972,6 +106972,6299 @@
         "outputRegions": 14,
         "remainingOneHarmonyModulations": 0
       }
+    },
+    {
+      "song": 458,
+      "title": "A Weaver of Dreams",
+      "changes": [
+        {
+          "beat": 0,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major"
+        },
+        {
+          "beat": 40,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Dominant",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 56,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 88,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": -4
+        },
+        {
+          "beat": 96,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 108,
+          "tonic": 3,
+          "root": "Eb",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 3
+        },
+        {
+          "beat": 112,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "Eb",
+          "sourceDelta": -3
+        }
+      ],
+      "decisions": [
+        {
+          "song": 458,
+          "title": "A Weaver of Dreams",
+          "start": 16,
+          "end": 24,
+          "sourceTonic": 9,
+          "tonic": 0,
+          "root": "C",
+          "direction": "previous",
+          "reason": "same-neighboring-tonic",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 9,
+              "intervals": [
+                0,
+                3,
+                7,
+                10
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Am7"
+          ],
+          "sourceSymbols": [
+            "Am7"
+          ],
+          "run": {
+            "start": 16,
+            "end": 24,
+            "cut": 1,
+            "automaticCut": 1,
+            "score": 6.55,
+            "margin": 0.04999999999999982,
+            "musicalMargin": 0
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 458,
+          "title": "A Weaver of Dreams",
+          "start": 80,
+          "end": 88,
+          "sourceTonic": 9,
+          "tonic": 0,
+          "root": "C",
+          "direction": "previous",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 9,
+              "intervals": [
+                0,
+                3,
+                7,
+                10
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Am7"
+          ],
+          "sourceSymbols": [
+            "Am7"
+          ],
+          "run": {
+            "start": 80,
+            "end": 88,
+            "cut": 1,
+            "automaticCut": 1,
+            "score": 6.55,
+            "margin": 1.0499999999999998,
+            "musicalMargin": 1
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 5,
+              "root": "F",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 5.5,
+              "score": 5.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 5.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "stats": {
+        "sourceRegions": 12,
+        "colorRegions": 10,
+        "sameTonicBoundaries": 2,
+        "oneHarmonyRegions": 2,
+        "homeSingletonRegions": 0,
+        "mergedOneHarmonyRegions": 2,
+        "outputRegions": 7,
+        "remainingOneHarmonyModulations": 0
+      }
+    },
+    {
+      "song": 459,
+      "title": "Corner Pocket",
+      "changes": [
+        {
+          "beat": 0,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major"
+        },
+        {
+          "beat": 4,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 8,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 108,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 116,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 128,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        }
+      ],
+      "decisions": [
+        {
+          "song": 459,
+          "title": "Corner Pocket",
+          "start": 0,
+          "end": 4,
+          "sourceTonic": 0,
+          "tonic": 0,
+          "direction": "home",
+          "reason": "initial-home-context",
+          "harmonies": [
+            {
+              "unknown": "NC"
+            }
+          ],
+          "symbols": [
+            "NC"
+          ],
+          "candidates": []
+        }
+      ],
+      "stats": {
+        "sourceRegions": 14,
+        "colorRegions": 6,
+        "sameTonicBoundaries": 8,
+        "oneHarmonyRegions": 1,
+        "homeSingletonRegions": 1,
+        "mergedOneHarmonyRegions": 0,
+        "outputRegions": 6,
+        "remainingOneHarmonyModulations": 0
+      }
+    },
+    {
+      "song": 460,
+      "title": "Danny Boy",
+      "changes": [
+        {
+          "beat": 0,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major"
+        },
+        {
+          "beat": 40,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 56,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 88,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 104,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -5
+        }
+      ],
+      "decisions": [
+        {
+          "song": 460,
+          "title": "Danny Boy",
+          "start": 12,
+          "end": 20,
+          "sourceTonic": 5,
+          "tonic": 0,
+          "root": "C",
+          "direction": "previous",
+          "reason": "same-neighboring-tonic",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 5,
+              "intervals": [
+                0,
+                4,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "F"
+          ],
+          "sourceSymbols": [
+            "Bb"
+          ],
+          "run": {
+            "start": 12,
+            "end": 20,
+            "cut": 1,
+            "automaticCut": 1,
+            "score": 6.55,
+            "margin": 0.04999999999999982,
+            "musicalMargin": 0
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 460,
+          "title": "Danny Boy",
+          "start": 64,
+          "end": 65,
+          "sourceTonic": 5,
+          "tonic": 0,
+          "root": "C",
+          "direction": "next",
+          "reason": "same-neighboring-tonic",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 5,
+              "intervals": [
+                0,
+                4,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "F"
+          ],
+          "sourceSymbols": [
+            "Bb"
+          ],
+          "run": {
+            "start": 64,
+            "end": 65,
+            "cut": 0,
+            "automaticCut": 0,
+            "score": 8.5,
+            "margin": 1.9500000000000002,
+            "musicalMargin": 2
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 8.5,
+              "score": 8.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 2
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "stats": {
+        "sourceRegions": 15,
+        "colorRegions": 9,
+        "sameTonicBoundaries": 6,
+        "oneHarmonyRegions": 2,
+        "homeSingletonRegions": 0,
+        "mergedOneHarmonyRegions": 2,
+        "outputRegions": 5,
+        "remainingOneHarmonyModulations": 0
+      }
+    },
+    {
+      "song": 461,
+      "title": "Don't Worry 'Bout Me",
+      "changes": [
+        {
+          "beat": 0,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major"
+        },
+        {
+          "beat": 36,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 52,
+          "tonic": 7,
+          "root": "G",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 60,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "G",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 92,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 108,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 124,
+          "tonic": 1,
+          "root": "C#",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 1
+        },
+        {
+          "beat": 128,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C#",
+          "sourceDelta": -1
+        },
+        {
+          "beat": 164,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 180,
+          "tonic": 7,
+          "root": "G",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 188,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "G",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 220,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 236,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -5
+        }
+      ],
+      "decisions": [
+        {
+          "song": 461,
+          "title": "Don't Worry 'Bout Me",
+          "start": 254,
+          "end": 256,
+          "sourceTonic": 9,
+          "tonic": 0,
+          "root": "C",
+          "direction": "previous",
+          "reason": "same-neighboring-tonic",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 9,
+              "intervals": [
+                0,
+                3,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Am"
+          ],
+          "sourceSymbols": [
+            "Fm"
+          ],
+          "run": {
+            "start": 254,
+            "end": 256,
+            "cut": 1,
+            "automaticCut": 1,
+            "score": 6.55,
+            "margin": 0.04999999999999982,
+            "musicalMargin": 0
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "stats": {
+        "sourceRegions": 38,
+        "colorRegions": 15,
+        "sameTonicBoundaries": 23,
+        "oneHarmonyRegions": 1,
+        "homeSingletonRegions": 0,
+        "mergedOneHarmonyRegions": 1,
+        "outputRegions": 13,
+        "remainingOneHarmonyModulations": 0
+      }
+    },
+    {
+      "song": 462,
+      "title": "Ev'rything I Love",
+      "changes": [
+        {
+          "beat": 0,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Minor"
+        },
+        {
+          "beat": 4,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 13,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 21,
+          "tonic": 3,
+          "root": "Eb",
+          "mode": "Major",
+          "sourceBeat": 24
+        },
+        {
+          "beat": 32,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "Eb",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 48,
+          "tonic": 7,
+          "root": "G",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "Eb",
+          "sourceDelta": 4
+        },
+        {
+          "beat": 60,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "G",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 104,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 114,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 118,
+          "tonic": 3,
+          "root": "Eb",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 3
+        },
+        {
+          "beat": 124,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "Eb",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 148,
+          "tonic": 4,
+          "root": "E",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 4
+        },
+        {
+          "beat": 160,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "sourceBeat": 164
+        },
+        {
+          "beat": 176,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 180,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 183,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 188,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": -4
+        },
+        {
+          "beat": 205,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 213,
+          "tonic": 3,
+          "root": "Eb",
+          "mode": "Major",
+          "sourceBeat": 216
+        },
+        {
+          "beat": 224,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "Eb",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 240,
+          "tonic": 7,
+          "root": "G",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "Eb",
+          "sourceDelta": 4
+        },
+        {
+          "beat": 252,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "G",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 296,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 306,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 310,
+          "tonic": 3,
+          "root": "Eb",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 3
+        },
+        {
+          "beat": 316,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "Eb",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 340,
+          "tonic": 4,
+          "root": "E",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 4
+        },
+        {
+          "beat": 352,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "sourceBeat": 356
+        },
+        {
+          "beat": 368,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -5
+        }
+      ],
+      "decisions": [
+        {
+          "song": 462,
+          "title": "Ev'rything I Love",
+          "start": 0,
+          "end": 4,
+          "sourceTonic": 0,
+          "tonic": 0,
+          "direction": "home",
+          "reason": "initial-home-context",
+          "harmonies": [
+            {
+              "root": 0,
+              "intervals": [
+                0,
+                3,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Cm"
+          ],
+          "candidates": []
+        },
+        {
+          "song": 462,
+          "title": "Ev'rything I Love",
+          "start": 21,
+          "end": 24,
+          "sourceTonic": 5,
+          "tonic": 3,
+          "root": "Eb",
+          "direction": "next",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 5,
+              "intervals": [
+                0,
+                3,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Fm"
+          ],
+          "sourceSymbols": [
+            "Abm"
+          ],
+          "run": {
+            "start": 21,
+            "end": 24,
+            "cut": 0,
+            "automaticCut": 0,
+            "score": 10.5,
+            "margin": 2.95,
+            "musicalMargin": 3
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 0,
+              "root": "C",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 7.5,
+              "score": 7.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 7.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 3,
+              "root": "Eb",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 10.5,
+              "score": 10.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 7.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 3
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 462,
+          "title": "Ev'rything I Love",
+          "start": 44,
+          "end": 45,
+          "sourceTonic": 8,
+          "tonic": 0,
+          "root": "C",
+          "direction": "previous",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 8,
+              "intervals": [
+                0,
+                4,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Ab"
+          ],
+          "sourceSymbols": [
+            "Cb"
+          ],
+          "run": {
+            "start": 44,
+            "end": 48,
+            "cut": 2,
+            "automaticCut": 2,
+            "score": 14.1,
+            "margin": 5.549999999999999,
+            "musicalMargin": 5.5
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 0,
+              "root": "C",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 7,
+              "root": "G",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": -1,
+              "score": -1,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": -1
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 462,
+          "title": "Ev'rything I Love",
+          "start": 45,
+          "end": 48,
+          "sourceTonic": 3,
+          "tonic": 0,
+          "root": "C",
+          "direction": "previous",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 3,
+              "intervals": [
+                0,
+                4,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Eb"
+          ],
+          "sourceSymbols": [
+            "Gb"
+          ],
+          "run": {
+            "start": 44,
+            "end": 48,
+            "cut": 2,
+            "automaticCut": 2,
+            "score": 14.1,
+            "margin": 5.549999999999999,
+            "musicalMargin": 5.5
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 0,
+              "root": "C",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 7.5,
+              "score": 7.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 7.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 7,
+              "root": "G",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 2,
+              "score": 2,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 2
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 462,
+          "title": "Ev'rything I Love",
+          "start": 72,
+          "end": 76,
+          "sourceTonic": 5,
+          "tonic": 0,
+          "root": "C",
+          "direction": "previous",
+          "reason": "same-neighboring-tonic",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 5,
+              "intervals": [
+                0,
+                4,
+                7,
+                11
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "FM7"
+          ],
+          "sourceSymbols": [
+            "AbM7"
+          ],
+          "run": {
+            "start": 72,
+            "end": 76,
+            "cut": 1,
+            "automaticCut": 1,
+            "score": 6.55,
+            "margin": 0.04999999999999982,
+            "musicalMargin": 0
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 462,
+          "title": "Ev'rything I Love",
+          "start": 136,
+          "end": 140,
+          "sourceTonic": 5,
+          "tonic": 0,
+          "root": "C",
+          "direction": "previous",
+          "reason": "same-neighboring-tonic",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 5,
+              "intervals": [
+                0,
+                4,
+                7,
+                11
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "FM7"
+          ],
+          "sourceSymbols": [
+            "AbM7"
+          ],
+          "run": {
+            "start": 136,
+            "end": 140,
+            "cut": 1,
+            "automaticCut": 1,
+            "score": 6.55,
+            "margin": 0.04999999999999982,
+            "musicalMargin": 0
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 462,
+          "title": "Ev'rything I Love",
+          "start": 160,
+          "end": 164,
+          "sourceTonic": 9,
+          "tonic": 5,
+          "root": "F",
+          "direction": "next",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 9,
+              "intervals": [
+                0,
+                3,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Am"
+          ],
+          "sourceSymbols": [
+            "Cm"
+          ],
+          "run": {
+            "start": 160,
+            "end": 164,
+            "cut": 0,
+            "automaticCut": 0,
+            "score": 5.5,
+            "margin": 2.45,
+            "musicalMargin": 2.5
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 4,
+              "root": "E",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 3,
+              "score": 3.05,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 3
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 5,
+              "root": "F",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 5.5,
+              "score": 5.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 5.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 462,
+          "title": "Ev'rything I Love",
+          "start": 186,
+          "end": 188,
+          "sourceTonic": 9,
+          "tonic": 0,
+          "root": "C",
+          "direction": "previous",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 9,
+              "intervals": [
+                0,
+                3,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Am"
+          ],
+          "sourceSymbols": [
+            "Cm"
+          ],
+          "run": {
+            "start": 186,
+            "end": 188,
+            "cut": 1,
+            "automaticCut": 1,
+            "score": 6.55,
+            "margin": 1.0499999999999998,
+            "musicalMargin": 1
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 5,
+              "root": "F",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 5.5,
+              "score": 5.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 5.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 462,
+          "title": "Ev'rything I Love",
+          "start": 192,
+          "end": 196,
+          "sourceTonic": 0,
+          "tonic": 5,
+          "root": "F",
+          "direction": "next",
+          "reason": "same-neighboring-tonic",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 0,
+              "intervals": [
+                0,
+                3,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Cm"
+          ],
+          "sourceSymbols": [
+            "Ebm"
+          ],
+          "run": {
+            "start": 192,
+            "end": 196,
+            "cut": 0,
+            "automaticCut": 0,
+            "score": 4.5,
+            "margin": 2.45,
+            "musicalMargin": 2.5
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 5,
+              "root": "F",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 2,
+              "score": 2.05,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 2
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 5,
+              "root": "F",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 4.5,
+              "score": 4.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 4.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 462,
+          "title": "Ev'rything I Love",
+          "start": 213,
+          "end": 216,
+          "sourceTonic": 5,
+          "tonic": 3,
+          "root": "Eb",
+          "direction": "next",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 5,
+              "intervals": [
+                0,
+                3,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Fm"
+          ],
+          "sourceSymbols": [
+            "Abm"
+          ],
+          "run": {
+            "start": 213,
+            "end": 216,
+            "cut": 0,
+            "automaticCut": 0,
+            "score": 10.5,
+            "margin": 2.95,
+            "musicalMargin": 3
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 0,
+              "root": "C",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 7.5,
+              "score": 7.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 7.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 3,
+              "root": "Eb",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 10.5,
+              "score": 10.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 7.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 3
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 462,
+          "title": "Ev'rything I Love",
+          "start": 236,
+          "end": 237,
+          "sourceTonic": 8,
+          "tonic": 0,
+          "root": "C",
+          "direction": "previous",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 8,
+              "intervals": [
+                0,
+                4,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Ab"
+          ],
+          "sourceSymbols": [
+            "Cb"
+          ],
+          "run": {
+            "start": 236,
+            "end": 240,
+            "cut": 2,
+            "automaticCut": 2,
+            "score": 14.1,
+            "margin": 5.549999999999999,
+            "musicalMargin": 5.5
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 0,
+              "root": "C",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 7,
+              "root": "G",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": -1,
+              "score": -1,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": -1
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 462,
+          "title": "Ev'rything I Love",
+          "start": 237,
+          "end": 240,
+          "sourceTonic": 3,
+          "tonic": 0,
+          "root": "C",
+          "direction": "previous",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 3,
+              "intervals": [
+                0,
+                4,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Eb"
+          ],
+          "sourceSymbols": [
+            "Gb"
+          ],
+          "run": {
+            "start": 236,
+            "end": 240,
+            "cut": 2,
+            "automaticCut": 2,
+            "score": 14.1,
+            "margin": 5.549999999999999,
+            "musicalMargin": 5.5
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 0,
+              "root": "C",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 7.5,
+              "score": 7.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 7.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 7,
+              "root": "G",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 2,
+              "score": 2,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 2
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 462,
+          "title": "Ev'rything I Love",
+          "start": 264,
+          "end": 268,
+          "sourceTonic": 5,
+          "tonic": 0,
+          "root": "C",
+          "direction": "previous",
+          "reason": "same-neighboring-tonic",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 5,
+              "intervals": [
+                0,
+                4,
+                7,
+                11
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "FM7"
+          ],
+          "sourceSymbols": [
+            "AbM7"
+          ],
+          "run": {
+            "start": 264,
+            "end": 268,
+            "cut": 1,
+            "automaticCut": 1,
+            "score": 6.55,
+            "margin": 0.04999999999999982,
+            "musicalMargin": 0
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 462,
+          "title": "Ev'rything I Love",
+          "start": 328,
+          "end": 332,
+          "sourceTonic": 5,
+          "tonic": 0,
+          "root": "C",
+          "direction": "previous",
+          "reason": "same-neighboring-tonic",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 5,
+              "intervals": [
+                0,
+                4,
+                7,
+                11
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "FM7"
+          ],
+          "sourceSymbols": [
+            "AbM7"
+          ],
+          "run": {
+            "start": 328,
+            "end": 332,
+            "cut": 1,
+            "automaticCut": 1,
+            "score": 6.55,
+            "margin": 0.04999999999999982,
+            "musicalMargin": 0
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 462,
+          "title": "Ev'rything I Love",
+          "start": 352,
+          "end": 356,
+          "sourceTonic": 9,
+          "tonic": 5,
+          "root": "F",
+          "direction": "next",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 9,
+              "intervals": [
+                0,
+                3,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Am"
+          ],
+          "sourceSymbols": [
+            "Cm"
+          ],
+          "run": {
+            "start": 352,
+            "end": 356,
+            "cut": 0,
+            "automaticCut": 0,
+            "score": 5.5,
+            "margin": 2.45,
+            "musicalMargin": 2.5
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 4,
+              "root": "E",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 3,
+              "score": 3.05,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 3
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 5,
+              "root": "F",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 5.5,
+              "score": 5.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 5.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "stats": {
+        "sourceRegions": 54,
+        "colorRegions": 48,
+        "sameTonicBoundaries": 6,
+        "oneHarmonyRegions": 15,
+        "homeSingletonRegions": 1,
+        "mergedOneHarmonyRegions": 14,
+        "outputRegions": 29,
+        "remainingOneHarmonyModulations": 0
+      }
+    },
+    {
+      "song": 463,
+      "title": "Ev'ry Time We Say Goodbye",
+      "changes": [
+        {
+          "beat": 0,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major"
+        },
+        {
+          "beat": 8,
+          "tonic": 10,
+          "root": "Bb",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 24,
+          "tonic": 3,
+          "root": "Eb",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "Bb",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 36,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "Eb",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 40,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 44,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 72,
+          "tonic": 10,
+          "root": "Bb",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 88,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "Bb",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 104,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 110,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 114,
+          "tonic": 7,
+          "root": "G",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 120,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "G",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 136,
+          "tonic": 10,
+          "root": "Bb",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 152,
+          "tonic": 3,
+          "root": "Eb",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "Bb",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 164,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "Eb",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 168,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 172,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 200,
+          "tonic": 10,
+          "root": "Bb",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 216,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "Bb",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 232,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 238,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 242,
+          "tonic": 7,
+          "root": "G",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 248,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "G",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 252,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 260,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        }
+      ],
+      "decisions": [],
+      "stats": {
+        "sourceRegions": 38,
+        "colorRegions": 25,
+        "sameTonicBoundaries": 13,
+        "oneHarmonyRegions": 0,
+        "homeSingletonRegions": 0,
+        "mergedOneHarmonyRegions": 0,
+        "outputRegions": 25,
+        "remainingOneHarmonyModulations": 0
+      }
+    },
+    {
+      "song": 464,
+      "title": "Georgia On My Mind",
+      "changes": [
+        {
+          "beat": 0,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major"
+        },
+        {
+          "beat": 8,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 16,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 3
+        },
+        {
+          "beat": 24,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 32,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 40,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 48,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 54,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 60,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 76,
+          "tonic": 7,
+          "root": "G",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 80,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "G",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 86,
+          "tonic": 4,
+          "root": "E",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -1
+        },
+        {
+          "beat": 92,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "E",
+          "sourceDelta": -4
+        },
+        {
+          "beat": 104,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 112,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 118,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 136,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 144,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 3
+        },
+        {
+          "beat": 152,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 160,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 168,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 176,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 182,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 188,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 204,
+          "tonic": 7,
+          "root": "G",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 208,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "G",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 214,
+          "tonic": 4,
+          "root": "E",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -1
+        },
+        {
+          "beat": 220,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "E",
+          "sourceDelta": -4
+        },
+        {
+          "beat": 232,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 240,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 246,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        }
+      ],
+      "decisions": [],
+      "stats": {
+        "sourceRegions": 43,
+        "colorRegions": 31,
+        "sameTonicBoundaries": 12,
+        "oneHarmonyRegions": 0,
+        "homeSingletonRegions": 0,
+        "mergedOneHarmonyRegions": 0,
+        "outputRegions": 31,
+        "remainingOneHarmonyModulations": 0
+      }
+    },
+    {
+      "song": 465,
+      "title": "Guess I'll Hang My Tears Out To Dry",
+      "changes": [
+        {
+          "beat": 0,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor"
+        },
+        {
+          "beat": 8,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 16,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 26,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 28,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 32,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 40,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 48,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 56,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 64,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 80,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 90,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 96,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 104,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 112,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 120,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "sourceBeat": 121
+        },
+        {
+          "beat": 128,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "sourceBeat": 132
+        },
+        {
+          "beat": 144,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 152,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 160,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 170,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 172,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 176,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 184,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 192,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 200,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 208,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 224,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 234,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 240,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 248,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 256,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 264,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "sourceBeat": 265
+        },
+        {
+          "beat": 272,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "sourceBeat": 276
+        }
+      ],
+      "decisions": [
+        {
+          "song": 465,
+          "title": "Guess I'll Hang My Tears Out To Dry",
+          "start": 24,
+          "end": 26,
+          "sourceTonic": 0,
+          "tonic": 5,
+          "root": "F",
+          "direction": "previous",
+          "reason": "continuity-tie",
+          "ambiguous": true,
+          "harmonies": [
+            {
+              "root": 0,
+              "intervals": [
+                0,
+                4,
+                7,
+                11
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "CM7"
+          ],
+          "sourceSymbols": [
+            "CM7"
+          ],
+          "run": {
+            "start": 24,
+            "end": 26,
+            "cut": 1,
+            "automaticCut": 1,
+            "score": 3.55,
+            "margin": 0.04999999999999982,
+            "musicalMargin": 0
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 5,
+              "root": "F",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 3.5,
+              "score": 3.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 3.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 2,
+              "root": "D",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 3.5,
+              "score": 3.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 3.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 465,
+          "title": "Guess I'll Hang My Tears Out To Dry",
+          "start": 120,
+          "end": 121,
+          "sourceTonic": 0,
+          "tonic": 9,
+          "root": "A",
+          "direction": "next",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 0,
+              "intervals": [
+                0,
+                4,
+                7,
+                11
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "CM7"
+          ],
+          "sourceSymbols": [
+            "CM7"
+          ],
+          "run": {
+            "start": 120,
+            "end": 121,
+            "cut": 0,
+            "automaticCut": 0,
+            "score": 7.5,
+            "margin": 3.95,
+            "musicalMargin": 4
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 5,
+              "root": "F",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 3.5,
+              "score": 3.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 3.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 9,
+              "root": "A",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 7.5,
+              "score": 7.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 7.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 465,
+          "title": "Guess I'll Hang My Tears Out To Dry",
+          "start": 128,
+          "end": 131,
+          "sourceTonic": 4,
+          "tonic": 0,
+          "root": "C",
+          "direction": "next",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 4,
+              "intervals": [
+                0,
+                3,
+                7,
+                10
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Em7"
+          ],
+          "sourceSymbols": [
+            "Em7"
+          ],
+          "run": {
+            "start": 128,
+            "end": 132,
+            "cut": 0,
+            "automaticCut": 0,
+            "score": 4,
+            "margin": 0.9000000000000004,
+            "musicalMargin": 1
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 9,
+              "root": "A",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 4.5,
+              "score": 4.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 4.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 5.5,
+              "score": 5.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 5.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 465,
+          "title": "Guess I'll Hang My Tears Out To Dry",
+          "start": 131,
+          "end": 132,
+          "sourceTonic": 3,
+          "tonic": 0,
+          "root": "C",
+          "direction": "next",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 3,
+              "intervals": [
+                0,
+                3,
+                7,
+                10
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Ebm7"
+          ],
+          "sourceSymbols": [
+            "Ebm7"
+          ],
+          "run": {
+            "start": 128,
+            "end": 132,
+            "cut": 0,
+            "automaticCut": 0,
+            "score": 4,
+            "margin": 0.9000000000000004,
+            "musicalMargin": 1
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 9,
+              "root": "A",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": -1.5,
+              "score": -1.45,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": -1.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": -1.5,
+              "score": -1.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": -1.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 465,
+          "title": "Guess I'll Hang My Tears Out To Dry",
+          "start": 168,
+          "end": 170,
+          "sourceTonic": 0,
+          "tonic": 5,
+          "root": "F",
+          "direction": "previous",
+          "reason": "continuity-tie",
+          "ambiguous": true,
+          "harmonies": [
+            {
+              "root": 0,
+              "intervals": [
+                0,
+                4,
+                7,
+                11
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "CM7"
+          ],
+          "sourceSymbols": [
+            "CM7"
+          ],
+          "run": {
+            "start": 168,
+            "end": 170,
+            "cut": 1,
+            "automaticCut": 1,
+            "score": 3.55,
+            "margin": 0.04999999999999982,
+            "musicalMargin": 0
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 5,
+              "root": "F",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 3.5,
+              "score": 3.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 3.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 2,
+              "root": "D",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 3.5,
+              "score": 3.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 3.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 465,
+          "title": "Guess I'll Hang My Tears Out To Dry",
+          "start": 264,
+          "end": 265,
+          "sourceTonic": 0,
+          "tonic": 9,
+          "root": "A",
+          "direction": "next",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 0,
+              "intervals": [
+                0,
+                4,
+                7,
+                11
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "CM7"
+          ],
+          "sourceSymbols": [
+            "CM7"
+          ],
+          "run": {
+            "start": 264,
+            "end": 265,
+            "cut": 0,
+            "automaticCut": 0,
+            "score": 7.5,
+            "margin": 3.95,
+            "musicalMargin": 4
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 5,
+              "root": "F",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 3.5,
+              "score": 3.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 3.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 9,
+              "root": "A",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 7.5,
+              "score": 7.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 7.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 465,
+          "title": "Guess I'll Hang My Tears Out To Dry",
+          "start": 272,
+          "end": 275,
+          "sourceTonic": 4,
+          "tonic": 0,
+          "root": "C",
+          "direction": "next",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 4,
+              "intervals": [
+                0,
+                3,
+                7,
+                10
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Em7"
+          ],
+          "sourceSymbols": [
+            "Em7"
+          ],
+          "run": {
+            "start": 272,
+            "end": 276,
+            "cut": 0,
+            "automaticCut": 0,
+            "score": 4,
+            "margin": 0.9000000000000004,
+            "musicalMargin": 1
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 9,
+              "root": "A",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 4.5,
+              "score": 4.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 4.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 5.5,
+              "score": 5.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 5.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 465,
+          "title": "Guess I'll Hang My Tears Out To Dry",
+          "start": 275,
+          "end": 276,
+          "sourceTonic": 3,
+          "tonic": 0,
+          "root": "C",
+          "direction": "next",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 3,
+              "intervals": [
+                0,
+                3,
+                7,
+                10
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Ebm7"
+          ],
+          "sourceSymbols": [
+            "Ebm7"
+          ],
+          "run": {
+            "start": 272,
+            "end": 276,
+            "cut": 0,
+            "automaticCut": 0,
+            "score": 4,
+            "margin": 0.9000000000000004,
+            "musicalMargin": 1
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 9,
+              "root": "A",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": -1.5,
+              "score": -1.45,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": -1.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": -1.5,
+              "score": -1.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": -1.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "stats": {
+        "sourceRegions": 48,
+        "colorRegions": 42,
+        "sameTonicBoundaries": 6,
+        "oneHarmonyRegions": 8,
+        "homeSingletonRegions": 0,
+        "mergedOneHarmonyRegions": 8,
+        "outputRegions": 34,
+        "remainingOneHarmonyModulations": 0
+      }
+    },
+    {
+      "song": 466,
+      "title": "I Got It Bad And That Ain't Good",
+      "changes": [
+        {
+          "beat": 0,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major"
+        },
+        {
+          "beat": 8,
+          "tonic": 4,
+          "root": "E",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 4
+        },
+        {
+          "beat": 12,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "E",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 20,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 24,
+          "tonic": 4,
+          "root": "E",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 4
+        },
+        {
+          "beat": 28,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "E",
+          "sourceDelta": -4
+        },
+        {
+          "beat": 36,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 44,
+          "tonic": 7,
+          "root": "G",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 50,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "G",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 62,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 64,
+          "tonic": 7,
+          "root": "G",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 66,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "G",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 72,
+          "tonic": 7,
+          "root": "G",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 78,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "G",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 84,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 90,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 104,
+          "tonic": 7,
+          "root": "G",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 110,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "G",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 116,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 121,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 126,
+          "tonic": 7,
+          "root": "G",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 132,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "G",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 152,
+          "tonic": 4,
+          "root": "E",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 4
+        },
+        {
+          "beat": 156,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "E",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 161,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 168,
+          "tonic": 7,
+          "root": "G",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 174,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "G",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 180,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 185,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 188,
+          "tonic": 11,
+          "root": "Cb",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -1
+        }
+      ],
+      "decisions": [],
+      "stats": {
+        "sourceRegions": 34,
+        "colorRegions": 30,
+        "sameTonicBoundaries": 4,
+        "oneHarmonyRegions": 0,
+        "homeSingletonRegions": 0,
+        "mergedOneHarmonyRegions": 0,
+        "outputRegions": 30,
+        "remainingOneHarmonyModulations": 0
+      }
+    },
+    {
+      "song": 467,
+      "title": "I Got Rhythm",
+      "changes": [
+        {
+          "beat": 0,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major"
+        },
+        {
+          "beat": 68,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Dominant",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 76,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Dominant",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 84,
+          "tonic": 7,
+          "root": "G",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 88,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "G",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 122,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 128,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        }
+      ],
+      "decisions": [],
+      "stats": {
+        "sourceRegions": 21,
+        "colorRegions": 7,
+        "sameTonicBoundaries": 14,
+        "oneHarmonyRegions": 0,
+        "homeSingletonRegions": 0,
+        "mergedOneHarmonyRegions": 0,
+        "outputRegions": 7,
+        "remainingOneHarmonyModulations": 0
+      }
+    },
+    {
+      "song": 468,
+      "title": "Oh, Lady Be Good!",
+      "changes": [
+        {
+          "beat": 0,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major"
+        },
+        {
+          "beat": 62,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 74,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "sourceBeat": 78
+        },
+        {
+          "beat": 84,
+          "tonic": 7,
+          "root": "G",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 88,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "G",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 94,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 96,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 190,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 202,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "sourceBeat": 206
+        },
+        {
+          "beat": 212,
+          "tonic": 7,
+          "root": "G",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 216,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "G",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 222,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 224,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        }
+      ],
+      "decisions": [
+        {
+          "song": 468,
+          "title": "Oh, Lady Be Good!",
+          "start": 74,
+          "end": 78,
+          "sourceTonic": 0,
+          "tonic": 9,
+          "root": "A",
+          "direction": "next",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 0,
+              "intervals": [
+                0,
+                4,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "C"
+          ],
+          "sourceSymbols": [
+            "G"
+          ],
+          "run": {
+            "start": 74,
+            "end": 78,
+            "cut": 0,
+            "automaticCut": 0,
+            "score": 7.5,
+            "margin": 3.95,
+            "musicalMargin": 4
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 5,
+              "root": "F",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 3.5,
+              "score": 3.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 3.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 9,
+              "root": "A",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 7.5,
+              "score": 7.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 7.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 468,
+          "title": "Oh, Lady Be Good!",
+          "start": 92,
+          "end": 94,
+          "sourceTonic": 9,
+          "tonic": 0,
+          "root": "C",
+          "direction": "previous",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 9,
+              "intervals": [
+                0,
+                3,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Am"
+          ],
+          "sourceSymbols": [
+            "Em"
+          ],
+          "run": {
+            "start": 92,
+            "end": 94,
+            "cut": 1,
+            "automaticCut": 1,
+            "score": 6.55,
+            "margin": 2.05,
+            "musicalMargin": 2
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 2,
+              "root": "D",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 4.5,
+              "score": 4.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 4.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 468,
+          "title": "Oh, Lady Be Good!",
+          "start": 202,
+          "end": 206,
+          "sourceTonic": 0,
+          "tonic": 9,
+          "root": "A",
+          "direction": "next",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 0,
+              "intervals": [
+                0,
+                4,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "C"
+          ],
+          "sourceSymbols": [
+            "G"
+          ],
+          "run": {
+            "start": 202,
+            "end": 206,
+            "cut": 0,
+            "automaticCut": 0,
+            "score": 7.5,
+            "margin": 3.95,
+            "musicalMargin": 4
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 5,
+              "root": "F",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 3.5,
+              "score": 3.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 3.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 9,
+              "root": "A",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 7.5,
+              "score": 7.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 7.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 468,
+          "title": "Oh, Lady Be Good!",
+          "start": 220,
+          "end": 222,
+          "sourceTonic": 9,
+          "tonic": 0,
+          "root": "C",
+          "direction": "previous",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 9,
+              "intervals": [
+                0,
+                3,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Am"
+          ],
+          "sourceSymbols": [
+            "Em"
+          ],
+          "run": {
+            "start": 220,
+            "end": 222,
+            "cut": 1,
+            "automaticCut": 1,
+            "score": 6.55,
+            "margin": 2.05,
+            "musicalMargin": 2
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 6.5,
+              "score": 6.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 6.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 2,
+              "root": "D",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 4.5,
+              "score": 4.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 4.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "stats": {
+        "sourceRegions": 40,
+        "colorRegions": 17,
+        "sameTonicBoundaries": 23,
+        "oneHarmonyRegions": 4,
+        "homeSingletonRegions": 0,
+        "mergedOneHarmonyRegions": 4,
+        "outputRegions": 13,
+        "remainingOneHarmonyModulations": 0
+      }
+    },
+    {
+      "song": 469,
+      "title": "On A Clear Day (You Can See Forever)",
+      "changes": [
+        {
+          "beat": 0,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major"
+        },
+        {
+          "beat": 26,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 50,
+          "tonic": 4,
+          "root": "E",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 58,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "E",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 62,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 66,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 106,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 130,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        }
+      ],
+      "decisions": [
+        {
+          "song": 469,
+          "title": "On A Clear Day (You Can See Forever)",
+          "start": 100,
+          "end": 106,
+          "sourceTonic": 0,
+          "tonic": 5,
+          "root": "F",
+          "direction": "previous",
+          "reason": "continuity-tie",
+          "ambiguous": true,
+          "harmonies": [
+            {
+              "root": 0,
+              "intervals": [
+                0,
+                4,
+                7,
+                11
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "CM7"
+          ],
+          "sourceSymbols": [
+            "GM7"
+          ],
+          "run": {
+            "start": 100,
+            "end": 106,
+            "cut": 1,
+            "automaticCut": 1,
+            "score": 3.55,
+            "margin": 0.04999999999999982,
+            "musicalMargin": 0
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 5,
+              "root": "F",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 3.5,
+              "score": 3.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 3.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 2,
+              "root": "D",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 3.5,
+              "score": 3.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 3.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "stats": {
+        "sourceRegions": 12,
+        "colorRegions": 9,
+        "sameTonicBoundaries": 3,
+        "oneHarmonyRegions": 1,
+        "homeSingletonRegions": 0,
+        "mergedOneHarmonyRegions": 1,
+        "outputRegions": 8,
+        "remainingOneHarmonyModulations": 0
+      }
+    },
+    {
+      "song": 470,
+      "title": "On A Slow Boat To China",
+      "changes": [
+        {
+          "beat": 0,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major"
+        },
+        {
+          "beat": 8,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 16,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 24,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 32,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 48,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 59,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 68,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 80,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 88,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 96,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "F",
+          "sourceDelta": -5
+        },
+        {
+          "beat": 106,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        },
+        {
+          "beat": 116,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 124,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 2
+        }
+      ],
+      "decisions": [
+        {
+          "song": 470,
+          "title": "On A Slow Boat To China",
+          "start": 40,
+          "end": 42,
+          "sourceTonic": 0,
+          "tonic": 2,
+          "root": "D",
+          "direction": "previous",
+          "reason": "same-neighboring-tonic",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 0,
+              "intervals": [
+                0,
+                4,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "C"
+          ],
+          "sourceSymbols": [
+            "Bb"
+          ],
+          "run": {
+            "start": 40,
+            "end": 42,
+            "cut": 1,
+            "automaticCut": 1,
+            "score": 3.55,
+            "margin": 1.5499999999999998,
+            "musicalMargin": 1.5
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 2,
+              "root": "D",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 3.5,
+              "score": 3.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 3.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 2,
+              "root": "D",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 2,
+              "score": 2,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 2
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 470,
+          "title": "On A Slow Boat To China",
+          "start": 56,
+          "end": 59,
+          "sourceTonic": 2,
+          "tonic": 9,
+          "root": "A",
+          "direction": "previous",
+          "reason": "continuity-tie",
+          "ambiguous": true,
+          "harmonies": [
+            {
+              "root": 2,
+              "intervals": [
+                0,
+                3,
+                7,
+                10
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "Dm7"
+          ],
+          "sourceSymbols": [
+            "Cm7"
+          ],
+          "run": {
+            "start": 56,
+            "end": 59,
+            "cut": 1,
+            "automaticCut": 1,
+            "score": 7.55,
+            "margin": 0.04999999999999982,
+            "musicalMargin": 0
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 9,
+              "root": "A",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 7.5,
+              "score": 7.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 7.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 0,
+              "root": "C",
+              "mode": "major",
+              "modeBasis": "source",
+              "musicalScore": 7.5,
+              "score": 7.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 7.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 470,
+          "title": "On A Slow Boat To China",
+          "start": 126,
+          "end": 128,
+          "sourceTonic": 0,
+          "tonic": 2,
+          "root": "D",
+          "direction": "previous",
+          "reason": "terminal-context",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 0,
+              "intervals": [
+                0,
+                4,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "C"
+          ],
+          "sourceSymbols": [
+            "Bb"
+          ],
+          "run": {
+            "start": 126,
+            "end": 128,
+            "cut": 1,
+            "automaticCut": 1,
+            "score": 3.55,
+            "margin": null,
+            "musicalMargin": null
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 2,
+              "root": "D",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 3.5,
+              "score": 3.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 3.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "stats": {
+        "sourceRegions": 19,
+        "colorRegions": 18,
+        "sameTonicBoundaries": 1,
+        "oneHarmonyRegions": 3,
+        "homeSingletonRegions": 0,
+        "mergedOneHarmonyRegions": 3,
+        "outputRegions": 14,
+        "remainingOneHarmonyModulations": 0
+      }
+    },
+    {
+      "song": 471,
+      "title": "Ornithology",
+      "changes": [
+        {
+          "beat": 0,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major"
+        },
+        {
+          "beat": 8.5,
+          "tonic": 10,
+          "root": "Bb",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 24.5,
+          "tonic": 8,
+          "root": "Ab",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "Bb",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 32.5,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "Ab",
+          "sourceDelta": 4
+        },
+        {
+          "beat": 72.5,
+          "tonic": 10,
+          "root": "Bb",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 88.5,
+          "tonic": 8,
+          "root": "Ab",
+          "mode": "Dominant",
+          "join": true,
+          "name": "Modulation",
+          "from": "Bb",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 100.5,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "Ab",
+          "sourceDelta": 4
+        }
+      ],
+      "decisions": [],
+      "stats": {
+        "sourceRegions": 11,
+        "colorRegions": 7,
+        "sameTonicBoundaries": 4,
+        "oneHarmonyRegions": 0,
+        "homeSingletonRegions": 0,
+        "mergedOneHarmonyRegions": 0,
+        "outputRegions": 7,
+        "remainingOneHarmonyModulations": 0
+      }
+    },
+    {
+      "song": 472,
+      "title": "Somewhere, Over The Rainbow",
+      "changes": [
+        {
+          "beat": 0,
+          "tonic": 4,
+          "root": "E",
+          "mode": "Minor"
+        },
+        {
+          "beat": 8,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "E",
+          "sourceDelta": -4
+        },
+        {
+          "beat": 32,
+          "tonic": 4,
+          "root": "E",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 4
+        },
+        {
+          "beat": 40,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "E",
+          "sourceDelta": -4
+        },
+        {
+          "beat": 96,
+          "tonic": 4,
+          "root": "E",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": 4
+        },
+        {
+          "beat": 104,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "E",
+          "sourceDelta": -4
+        }
+      ],
+      "decisions": [],
+      "stats": {
+        "sourceRegions": 20,
+        "colorRegions": 6,
+        "sameTonicBoundaries": 14,
+        "oneHarmonyRegions": 0,
+        "homeSingletonRegions": 0,
+        "mergedOneHarmonyRegions": 0,
+        "outputRegions": 6,
+        "remainingOneHarmonyModulations": 0
+      }
+    },
+    {
+      "song": 473,
+      "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+      "changes": [
+        {
+          "beat": 0,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major"
+        },
+        {
+          "beat": 13,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 21,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 3
+        },
+        {
+          "beat": 45,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 57,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 61,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "sourceBeat": 63
+        },
+        {
+          "beat": 67,
+          "tonic": 7,
+          "root": "G",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 75,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "G",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 77,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 83,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 3
+        },
+        {
+          "beat": 109,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 121,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 125,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 141,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 149,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 3
+        },
+        {
+          "beat": 173,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 185,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 189,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "sourceBeat": 191
+        },
+        {
+          "beat": 195,
+          "tonic": 7,
+          "root": "G",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": -2
+        },
+        {
+          "beat": 203,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "G",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 205,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 211,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 3
+        },
+        {
+          "beat": 237,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "C",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 249,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Modulation",
+          "from": "A",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 253,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Modulation",
+          "from": "D",
+          "sourceDelta": -2
+        }
+      ],
+      "decisions": [
+        {
+          "song": 473,
+          "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+          "start": 61,
+          "end": 63,
+          "sourceTonic": 0,
+          "tonic": 9,
+          "root": "A",
+          "direction": "next",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 0,
+              "intervals": [
+                0,
+                4,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "C"
+          ],
+          "sourceSymbols": [
+            "C"
+          ],
+          "run": {
+            "start": 61,
+            "end": 63,
+            "cut": 0,
+            "automaticCut": 0,
+            "score": 7.5,
+            "margin": 3.95,
+            "musicalMargin": 4
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 2,
+              "root": "D",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 3.5,
+              "score": 3.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 3.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 9,
+              "root": "A",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 7.5,
+              "score": 7.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 7.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "song": 473,
+          "title": "Wrap Your Troubles In Dreams (And Dream Your Troubles Away)",
+          "start": 189,
+          "end": 191,
+          "sourceTonic": 0,
+          "tonic": 9,
+          "root": "A",
+          "direction": "next",
+          "reason": "harmonic-context-fit",
+          "ambiguous": false,
+          "harmonies": [
+            {
+              "root": 0,
+              "intervals": [
+                0,
+                4,
+                7
+              ],
+              "bass": null
+            }
+          ],
+          "symbols": [
+            "C"
+          ],
+          "sourceSymbols": [
+            "C"
+          ],
+          "run": {
+            "start": 189,
+            "end": 191,
+            "cut": 0,
+            "automaticCut": 0,
+            "score": 7.5,
+            "margin": 3.95,
+            "musicalMargin": 4
+          },
+          "candidates": [
+            {
+              "direction": "previous",
+              "tonic": 2,
+              "root": "D",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 3.5,
+              "score": 3.55,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 3.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0.05
+                }
+              ]
+            },
+            {
+              "direction": "next",
+              "tonic": 9,
+              "root": "A",
+              "mode": "minor",
+              "modeBasis": "source",
+              "musicalScore": 7.5,
+              "score": 7.5,
+              "components": [
+                {
+                  "rule": "root-quality-function",
+                  "score": 7.5
+                },
+                {
+                  "rule": "cadential-context",
+                  "score": 0
+                },
+                {
+                  "rule": "shared-harmony-context",
+                  "score": 0
+                },
+                {
+                  "rule": "continuity-tie-prior",
+                  "score": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "stats": {
+        "sourceRegions": 52,
+        "colorRegions": 27,
+        "sameTonicBoundaries": 25,
+        "oneHarmonyRegions": 2,
+        "homeSingletonRegions": 0,
+        "mergedOneHarmonyRegions": 2,
+        "outputRegions": 25,
+        "remainingOneHarmonyModulations": 0
+      }
     }
   ]
 }
