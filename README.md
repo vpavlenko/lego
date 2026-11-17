@@ -150,3 +150,12 @@ Zero-shift joins remain in the tonic timeline but have no marker. Rawl's measure
 
 
 `src/music/rawl-links.json` supplies 69 verified public Rawl renditions across 34 standards. Standard headers and brick usage lists expose the links, with original rendition titles when several exist. `scripts/rawl-links.mjs --verify` refreshes the read-only public-record checks; the audit records composition matching, MIDI headers/note onsets, and duplicate payload exclusions. Empty entries mean no verified match in the audited public index. No login is required for this reader; Sites access is public.
+
+
+All six former ABCA comparisons were reviewed against their source roadmaps (`evidence/abca-source-audit.json`). Bemsha Swing, I Wish You Love, and Yours Is My Heart Alone have an A variation in the second section and now align as A / A B / A. I'm Old Fashioned, The Joint is Jumpin', and Somebody Loves Me retain separate second sections. These are source-specific corrections, with variation metadata; the generic match threshold is unchanged. Harmonic-layout labels are inferred from the roadmaps rather than a claim about the melody's definitive formal analysis.
+
+
+Brick-detail previews use a fixed 150 CSS pixels per measure and horizontal overflow. Compact catalogue previews retain their existing column widths. `evidence/aaba-subgroups.json` compares subgroup candidates for the corrected 99-song AABA membership (8 source-audited, 91 inferred); the suggested browsing facets are an analysis proposal, not shipped interface controls.
+
+
+Variant usage lists are linear comma-separated standards. Measure links immediately follow each title in parentheses; standard catalogue indices are omitted. Existing verified Rawl links remain inline.

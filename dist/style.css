@@ -91,3 +91,6 @@ body:not(.atlas-page) #shade{top:32px}body.song-route #shade{top:64px}
 @media(max-width:760px){.variant-heading{flex-wrap:wrap;gap:10px}.variant-source{margin-left:0}.rawl-renditions>div{max-width:85vw}.standard-heading{gap:8px}}
 
 #brick-view>.back-link{margin:0 0 6px}#brick-view>h1{font-size:26px;margin:0 0 6px}#brick-view>.brick-counts{margin:0 0 12px}#brick-preview>.transport{margin:0 0 8px}#brick-view .variant-heading h2{margin:0}.brick-variant .brick-match{border:0}.standard-heading{flex:1}
+
+/* Standard usages flow as a comma-separated sentence. */
+.brick-matches{font-size:12px;line-height:1.9;color:#888}.brick-matches .brick-match{display:inline;padding:0;margin:0;border:0}.brick-matches .standard-title{display:inline;font-size:12px}.brick-matches .passages{display:inline;padding:0;margin:0;max-width:none;font:10px var(--mono)}.brick-matches .passages a{padding:0}.brick-matches .rawl-renditions{display:inline-block}.brick-matches .rawl-rendition{font-size:10px}.brick-matches .rawl-renditions summary{font-size:10px}

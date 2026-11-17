@@ -1,0 +1,7089 @@
+{
+  "version": 1,
+  "scope": {
+    "reviewedOriginalABCA": 6,
+    "currentABCA": 3,
+    "sourceIndices": [
+      16,
+      94,
+      97,
+      112,
+      191,
+      241
+    ],
+    "allOriginalImagesInspected": true
+  },
+  "sourceHashes": {
+    "dist/data/roadmaps.json": "ce5eca77201bc0e3cbeb6ec6fa954b0cba68a77b0179248ae85530b5877abc4a",
+    "dist/data/forms.json": "1ec932d7d2b5dd8647f91f2bc5e1c1b692f2b8318fd7000285b88cdbada55f54",
+    "src/music/forms.mjs": "32989ba084216a421b269b4b3e67e8305160157741b972c1aa32c21d77b6fe97",
+    "dist/data/bricks.json": "c2b0ec8520048075f718a2dd5be6fcfe2c1b08c5926c6dd38b2a18a307a189a7",
+    "src/music/chord-vocabulary.json": "000417ceb5a28a6516a0f5fd1e9872cc56d7831366110f096a36382134c5dea0"
+  },
+  "method": {
+    "baseline": "Current compareSections weights first 3/4 bars strongly in four-bar sections or first 6/8 bars in eight-bar sections, with final tail weight 0.25. It accepts score >=0.82 AND rootScore >=0.78. Canonical brick names are supporting evidence, not the sole equality test.",
+    "prefix": "Compare exact chord-root pitch classes, declared compound interval sets, explicit slash bass and timed spans over a common head, at original absolute pitch (shift0). Chord spelling aliases with equal vocabulary intervals are equivalent. Break at first mismatch. No clipped chord is a match.",
+    "decision": "Source-audited narrow overrides for16,94,241: identical same-pitch/rhythm chord head spanning at least half of the complete A length, plus source passage/brick context supporting a varied ending. Keep97,112,191 separate because second sections lack a half-length common head and show different whole-section trajectories.",
+    "thresholdWarning": "Do not lower global full-section thresholds to0.71 or accept any shared start. Only11/96 original AABAs had stable ending bricks, and section identity can survive a modified tail, but permissive matching must not erase distinct middle sections. The six-row audit supports explicit decisions, not a universal inferred-form rule.",
+    "layout": "For accepted A variations, preserve base identity A for vertical alignment, optionally carry a separate displayLabel A-prime. Relabel the old third-section C to B. Keep musical event timing, source brick identities and modulation data unchanged."
+  },
+  "recommendation": {
+    "promoteToAABA": [
+      16,
+      94,
+      241
+    ],
+    "retainABCA": [
+      97,
+      112,
+      191
+    ],
+    "resultingCountsIfAccepted": {
+      "AABA": 99,
+      "ABCA": 3
+    },
+    "aabaSubgroupCounts": "Refresh the subgroup audit for corrected99 membership after these decisions. Prior96-standard statistics were conditional on the previous membership. Current aaba-subgroups.json is refreshed to99; source hashes identify the corrected metadata."
+  },
+  "entries": [
+    {
+      "song": 16,
+      "title": "Bemsha Swing",
+      "tonic": [
+        "C",
+        "Major"
+      ],
+      "bars": 16,
+      "sourceImage": "dist/source/roadmap-016.png",
+      "imageSha256": "e07d5edbad1e5b39a790301d2d9e9020828197c95a05c17213d34aa7d6733a38",
+      "imageInspected": true,
+      "baselineForm": {
+        "family": "ABCA",
+        "pattern": "ABCA",
+        "sections": [
+          {
+            "start": 0,
+            "end": 4,
+            "label": "A",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 0,
+            "bars": 4
+          },
+          {
+            "start": 4,
+            "end": 8,
+            "label": "B",
+            "similarity": 0.8173076923076923,
+            "transpose": 0,
+            "variation": true,
+            "layoutRow": 1,
+            "layoutColumn": 0,
+            "bars": 4
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "label": "C",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 1,
+            "layoutColumn": 4,
+            "bars": 4
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "label": "A",
+            "similarity": 0.9615384615384616,
+            "transpose": 0,
+            "layoutRow": 2,
+            "layoutColumn": 0,
+            "bars": 4
+          }
+        ]
+      },
+      "currentForm": {
+        "song": 16,
+        "basis": "source-audit",
+        "family": "AABA",
+        "pattern": "AABA",
+        "aligned": true,
+        "columns": 8,
+        "sections": [
+          {
+            "start": 0,
+            "end": 4,
+            "label": "A",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 0,
+            "bars": 4
+          },
+          {
+            "start": 4,
+            "end": 8,
+            "label": "A",
+            "similarity": 0.8173076923076923,
+            "transpose": 0,
+            "variation": true,
+            "layoutRow": 1,
+            "layoutColumn": 0,
+            "bars": 4
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "label": "B",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 1,
+            "layoutColumn": 4,
+            "bars": 4
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "label": "A",
+            "similarity": 0.9615384615384616,
+            "transpose": 0,
+            "layoutRow": 2,
+            "layoutColumn": 0,
+            "bars": 4
+          }
+        ]
+      },
+      "sourceSections": [
+        {
+          "start": 0,
+          "end": 4,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 0,
+          "bars": 4,
+          "chords": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "symbol": "CM7",
+              "row": 0,
+              "sourceStart": 0,
+              "sourceEnd": 0.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "symbol": "Eb7",
+              "row": 0,
+              "sourceStart": 0.5,
+              "sourceEnd": 1,
+              "relativeToSongTonic": "Eb7"
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "symbol": "AbM7",
+              "row": 0,
+              "sourceStart": 1,
+              "sourceEnd": 1.5,
+              "relativeToSongTonic": "AbM7"
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "symbol": "Db7",
+              "row": 0,
+              "sourceStart": 1.5,
+              "sourceEnd": 2,
+              "relativeToSongTonic": "Db7"
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "symbol": "CM7",
+              "row": 0,
+              "sourceStart": 2,
+              "sourceEnd": 2.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "symbol": "Eb7",
+              "row": 0,
+              "sourceStart": 2.5,
+              "sourceEnd": 3,
+              "relativeToSongTonic": "Eb7"
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "symbol": "D7",
+              "row": 0,
+              "sourceStart": 3,
+              "sourceEnd": 3.5,
+              "relativeToSongTonic": "D7"
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "symbol": "Db7",
+              "row": 0,
+              "sourceStart": 3.5,
+              "sourceEnd": 4,
+              "relativeToSongTonic": "Db7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 2,
+              "name": "Ladybird Turnaround",
+              "row": 0,
+              "sourceStart": 0,
+              "sourceEnd": 2,
+              "raw": "Ladybird Turnaround"
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "name": "Bemsha Turnaround 1",
+              "row": 0,
+              "sourceStart": 2,
+              "sourceEnd": 4,
+              "raw": "Bemsha Turnaround 1"
+            }
+          ]
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "label": "A",
+          "similarity": 0.8173076923076923,
+          "transpose": 0,
+          "variation": true,
+          "layoutRow": 1,
+          "layoutColumn": 0,
+          "bars": 4,
+          "chords": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "symbol": "CM7",
+              "row": 1,
+              "sourceStart": 4,
+              "sourceEnd": 4.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "symbol": "Eb7",
+              "row": 1,
+              "sourceStart": 4.5,
+              "sourceEnd": 5,
+              "relativeToSongTonic": "Eb7"
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "symbol": "AbM7",
+              "row": 1,
+              "sourceStart": 5,
+              "sourceEnd": 5.5,
+              "relativeToSongTonic": "AbM7"
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "symbol": "Db7",
+              "row": 1,
+              "sourceStart": 5.5,
+              "sourceEnd": 6,
+              "relativeToSongTonic": "Db7"
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "symbol": "CM7",
+              "row": 1,
+              "sourceStart": 6,
+              "sourceEnd": 6.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "symbol": "Ab7",
+              "row": 1,
+              "sourceStart": 6.5,
+              "sourceEnd": 7,
+              "relativeToSongTonic": "Ab7"
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "symbol": "DbM7",
+              "row": 1,
+              "sourceStart": 7,
+              "sourceEnd": 7.5,
+              "relativeToSongTonic": "DbM7"
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "symbol": "Gb7",
+              "row": 1,
+              "sourceStart": 7.5,
+              "sourceEnd": 8,
+              "relativeToSongTonic": "Gb7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 2,
+              "name": "Ladybird Turnaround",
+              "row": 1,
+              "sourceStart": 4,
+              "sourceEnd": 6,
+              "raw": "Ladybird Turnaround"
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "name": "Bemsha Turnaround 2",
+              "row": 1,
+              "sourceStart": 6,
+              "sourceEnd": 8,
+              "raw": "Bemsha Turnaround 2"
+            }
+          ]
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "label": "B",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 4,
+          "bars": 4,
+          "chords": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "symbol": "FM7",
+              "row": 2,
+              "sourceStart": 8,
+              "sourceEnd": 8.5,
+              "relativeToSongTonic": "FM7"
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "symbol": "Ab7",
+              "row": 2,
+              "sourceStart": 8.5,
+              "sourceEnd": 9,
+              "relativeToSongTonic": "Ab7"
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "symbol": "DbM7",
+              "row": 2,
+              "sourceStart": 9,
+              "sourceEnd": 9.5,
+              "relativeToSongTonic": "DbM7"
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "symbol": "Gb7",
+              "row": 2,
+              "sourceStart": 9.5,
+              "sourceEnd": 10,
+              "relativeToSongTonic": "Gb7"
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "symbol": "FM7",
+              "row": 2,
+              "sourceStart": 10,
+              "sourceEnd": 10.5,
+              "relativeToSongTonic": "FM7"
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "symbol": "Eb7",
+              "row": 2,
+              "sourceStart": 10.5,
+              "sourceEnd": 11,
+              "relativeToSongTonic": "Eb7"
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "symbol": "AbM7",
+              "row": 2,
+              "sourceStart": 11,
+              "sourceEnd": 11.5,
+              "relativeToSongTonic": "AbM7"
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "symbol": "Db7",
+              "row": 2,
+              "sourceStart": 11.5,
+              "sourceEnd": 12,
+              "relativeToSongTonic": "Db7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 2,
+              "name": "Ladybird Turnaround",
+              "row": 2,
+              "sourceStart": 8,
+              "sourceEnd": 10,
+              "raw": "Ladybird Turnaround"
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "name": "Bemsha Turnaround 3",
+              "row": 2,
+              "sourceStart": 10,
+              "sourceEnd": 12,
+              "raw": "Bemsha Turnaround 3"
+            }
+          ]
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "label": "A",
+          "similarity": 0.9615384615384616,
+          "transpose": 0,
+          "layoutRow": 2,
+          "layoutColumn": 0,
+          "bars": 4,
+          "chords": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "symbol": "CM7",
+              "row": 3,
+              "sourceStart": 12,
+              "sourceEnd": 12.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "symbol": "Eb7",
+              "row": 3,
+              "sourceStart": 12.5,
+              "sourceEnd": 13,
+              "relativeToSongTonic": "Eb7"
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "symbol": "AbM7",
+              "row": 3,
+              "sourceStart": 13,
+              "sourceEnd": 13.5,
+              "relativeToSongTonic": "AbM7"
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "symbol": "Db7",
+              "row": 3,
+              "sourceStart": 13.5,
+              "sourceEnd": 14,
+              "relativeToSongTonic": "Db7"
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "symbol": "CM7",
+              "row": 3,
+              "sourceStart": 14,
+              "sourceEnd": 14.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "symbol": "Eb7",
+              "row": 3,
+              "sourceStart": 14.5,
+              "sourceEnd": 15,
+              "relativeToSongTonic": "Eb7"
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "symbol": "AbM7",
+              "row": 3,
+              "sourceStart": 15,
+              "sourceEnd": 15.5,
+              "relativeToSongTonic": "AbM7"
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "symbol": "Db7",
+              "row": 3,
+              "sourceStart": 15.5,
+              "sourceEnd": 16,
+              "relativeToSongTonic": "Db7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 2,
+              "name": "Ladybird Turnaround",
+              "row": 3,
+              "sourceStart": 12,
+              "sourceEnd": 14,
+              "raw": "Ladybird Turnaround"
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "name": "Ladybird Turnaround",
+              "row": 3,
+              "sourceStart": 14,
+              "sourceEnd": 16,
+              "raw": "Ladybird Turnaround"
+            }
+          ]
+        }
+      ],
+      "baselineComparisonsToFirst": [
+        {
+          "section": 1,
+          "score": 1,
+          "rootScore": 1,
+          "shift": 0
+        },
+        {
+          "section": 2,
+          "score": 0.8173076923076923,
+          "rootScore": 0.7692307692307693,
+          "shift": 0
+        },
+        {
+          "section": 3,
+          "score": 0.8023076923076923,
+          "rootScore": 0.7692307692307693,
+          "shift": 7
+        },
+        {
+          "section": 4,
+          "score": 0.9615384615384616,
+          "rootScore": 0.9615384615384616,
+          "shift": 0
+        }
+      ],
+      "exactPrefixesToFirst": [
+        {
+          "section": 1,
+          "matchedBars": 4,
+          "comparedBars": 4,
+          "fraction": 1,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "a": "CM7",
+              "b": "CM7",
+              "equal": true
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "a": "Eb7",
+              "b": "Eb7",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "a": "AbM7",
+              "b": "AbM7",
+              "equal": true
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "a": "Db7",
+              "b": "Db7",
+              "equal": true
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "a": "CM7",
+              "b": "CM7",
+              "equal": true
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "a": "Eb7",
+              "b": "Eb7",
+              "equal": true
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "a": "D7",
+              "b": "D7",
+              "equal": true
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "a": "Db7",
+              "b": "Db7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": null
+        },
+        {
+          "section": 2,
+          "matchedBars": 2.5,
+          "comparedBars": 4,
+          "fraction": 0.625,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "a": "CM7",
+              "b": "CM7",
+              "equal": true
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "a": "Eb7",
+              "b": "Eb7",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "a": "AbM7",
+              "b": "AbM7",
+              "equal": true
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "a": "Db7",
+              "b": "Db7",
+              "equal": true
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "a": "CM7",
+              "b": "CM7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": {
+            "start": 2.5,
+            "end": 3,
+            "a": "Eb7",
+            "b": "Ab7",
+            "equal": false
+          }
+        },
+        {
+          "section": 3,
+          "matchedBars": 0,
+          "comparedBars": 4,
+          "fraction": 0,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "CM7",
+            "b": "FM7",
+            "equal": false
+          }
+        },
+        {
+          "section": 4,
+          "matchedBars": 3,
+          "comparedBars": 4,
+          "fraction": 0.75,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "a": "CM7",
+              "b": "CM7",
+              "equal": true
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "a": "Eb7",
+              "b": "Eb7",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "a": "AbM7",
+              "b": "AbM7",
+              "equal": true
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "a": "Db7",
+              "b": "Db7",
+              "equal": true
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "a": "CM7",
+              "b": "CM7",
+              "equal": true
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "a": "Eb7",
+              "b": "Eb7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": {
+            "start": 3,
+            "end": 3.5,
+            "a": "D7",
+            "b": "AbM7",
+            "equal": false
+          }
+        }
+      ],
+      "secondTranspositionComparisons": [
+        {
+          "shift": 0,
+          "matchedBars": 2.5,
+          "comparedBars": 4,
+          "fraction": 0.625,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "a": "CM7",
+              "b": "CM7",
+              "equal": true
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "a": "Eb7",
+              "b": "Eb7",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "a": "AbM7",
+              "b": "AbM7",
+              "equal": true
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "a": "Db7",
+              "b": "Db7",
+              "equal": true
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "a": "CM7",
+              "b": "CM7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": {
+            "start": 2.5,
+            "end": 3,
+            "a": "Eb7",
+            "b": "Ab7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 1,
+          "matchedBars": 0,
+          "comparedBars": 4,
+          "fraction": 0,
+          "shiftToAddToSecond": 1,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "CM7",
+            "b": "CM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 2,
+          "matchedBars": 0,
+          "comparedBars": 4,
+          "fraction": 0,
+          "shiftToAddToSecond": 2,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "CM7",
+            "b": "CM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 3,
+          "matchedBars": 0,
+          "comparedBars": 4,
+          "fraction": 0,
+          "shiftToAddToSecond": 3,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "CM7",
+            "b": "CM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 4,
+          "matchedBars": 0,
+          "comparedBars": 4,
+          "fraction": 0,
+          "shiftToAddToSecond": 4,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "CM7",
+            "b": "CM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 5,
+          "matchedBars": 0,
+          "comparedBars": 4,
+          "fraction": 0,
+          "shiftToAddToSecond": 5,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "CM7",
+            "b": "CM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 6,
+          "matchedBars": 0,
+          "comparedBars": 4,
+          "fraction": 0,
+          "shiftToAddToSecond": 6,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "CM7",
+            "b": "CM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 7,
+          "matchedBars": 0,
+          "comparedBars": 4,
+          "fraction": 0,
+          "shiftToAddToSecond": 7,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "CM7",
+            "b": "CM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 8,
+          "matchedBars": 0,
+          "comparedBars": 4,
+          "fraction": 0,
+          "shiftToAddToSecond": 8,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "CM7",
+            "b": "CM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 9,
+          "matchedBars": 0,
+          "comparedBars": 4,
+          "fraction": 0,
+          "shiftToAddToSecond": 9,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "CM7",
+            "b": "CM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 10,
+          "matchedBars": 0,
+          "comparedBars": 4,
+          "fraction": 0,
+          "shiftToAddToSecond": 10,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "CM7",
+            "b": "CM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 11,
+          "matchedBars": 0,
+          "comparedBars": 4,
+          "fraction": 0,
+          "shiftToAddToSecond": 11,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "CM7",
+            "b": "CM7",
+            "equal": false
+          }
+        }
+      ],
+      "decision": {
+        "recommendation": "AABA",
+        "secondSectionIdentity": "A",
+        "reason": "The second four-bar section repeats the first 2.5 bars exactly at the same absolute pitches and rhythm, including the complete two-bar Ladybird Turnaround; only the turnaround tail changes. The third four-bar section starts in F, rather than C, and is the contrasting B for this layout.",
+        "visualEvidence": "Original PNG shows Ladybird Turnaround in the first half of each row. Rows 1,2,4 have C Major; row 3 has F Major. Rows 1 and 2 differ in the numbered Bemsha Turnaround tail.",
+        "caution": "A global transposition-invariant half-prefix rule would also merge the third section. Retain contrast from its shifted opening/key area; do not relabel every transposed shared motif as A."
+      }
+    },
+    {
+      "song": 94,
+      "title": "I Wish You Love",
+      "tonic": [
+        "Eb",
+        "Major"
+      ],
+      "bars": 32,
+      "sourceImage": "dist/source/roadmap-094.png",
+      "imageSha256": "61f5c2612383a01eda8cc278da7aa65e8e58a1555ea6f6b619ebd1a19a411ab0",
+      "imageInspected": true,
+      "baselineForm": {
+        "family": "ABCA",
+        "pattern": "ABCA",
+        "sections": [
+          {
+            "start": 0,
+            "end": 8,
+            "label": "A",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 0,
+            "bars": 8
+          },
+          {
+            "start": 8,
+            "end": 16,
+            "label": "B",
+            "similarity": 0.7932692307692307,
+            "transpose": 0,
+            "variation": true,
+            "layoutRow": 1,
+            "layoutColumn": 0,
+            "bars": 8
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "label": "C",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 1,
+            "layoutColumn": 8,
+            "bars": 8
+          },
+          {
+            "start": 24,
+            "end": 32,
+            "label": "A",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 2,
+            "layoutColumn": 0,
+            "bars": 8
+          }
+        ]
+      },
+      "currentForm": {
+        "song": 94,
+        "basis": "source-audit",
+        "family": "AABA",
+        "pattern": "AABA",
+        "aligned": true,
+        "columns": 16,
+        "sections": [
+          {
+            "start": 0,
+            "end": 8,
+            "label": "A",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 0,
+            "bars": 8
+          },
+          {
+            "start": 8,
+            "end": 16,
+            "label": "A",
+            "similarity": 0.7932692307692307,
+            "transpose": 0,
+            "variation": true,
+            "layoutRow": 1,
+            "layoutColumn": 0,
+            "bars": 8
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "label": "B",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 1,
+            "layoutColumn": 8,
+            "bars": 8
+          },
+          {
+            "start": 24,
+            "end": 32,
+            "label": "A",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 2,
+            "layoutColumn": 0,
+            "bars": 8
+          }
+        ]
+      },
+      "sourceSections": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 0,
+          "bars": 8,
+          "chords": [
+            {
+              "start": 0,
+              "end": 1,
+              "symbol": "Fm7",
+              "row": 0,
+              "sourceStart": 0,
+              "sourceEnd": 1,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "symbol": "Bb7",
+              "row": 0,
+              "sourceStart": 1,
+              "sourceEnd": 2,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "symbol": "EbM7",
+              "row": 0,
+              "sourceStart": 2,
+              "sourceEnd": 2.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "symbol": "Ab7",
+              "row": 0,
+              "sourceStart": 2.5,
+              "sourceEnd": 3,
+              "relativeToSongTonic": "F7"
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "symbol": "Gm7",
+              "row": 0,
+              "sourceStart": 3,
+              "sourceEnd": 3.5,
+              "relativeToSongTonic": "Em7"
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "symbol": "C7",
+              "row": 0,
+              "sourceStart": 3.5,
+              "sourceEnd": 4,
+              "relativeToSongTonic": "A7"
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "symbol": "Fm7",
+              "row": 0,
+              "sourceStart": 4,
+              "sourceEnd": 4.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 4.5,
+              "end": 5,
+              "symbol": "B7",
+              "row": 0,
+              "sourceStart": 4.5,
+              "sourceEnd": 5,
+              "relativeToSongTonic": "G#7"
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "symbol": "Bb7",
+              "row": 0,
+              "sourceStart": 5,
+              "sourceEnd": 6,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 6,
+              "end": 6.5,
+              "symbol": "EbM7",
+              "row": 0,
+              "sourceStart": 6,
+              "sourceEnd": 6.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 6.5,
+              "end": 7,
+              "symbol": "Ab7",
+              "row": 0,
+              "sourceStart": 6.5,
+              "sourceEnd": 7,
+              "relativeToSongTonic": "F7"
+            },
+            {
+              "start": 7,
+              "end": 7.5,
+              "symbol": "Gm7",
+              "row": 0,
+              "sourceStart": 7,
+              "sourceEnd": 7.5,
+              "relativeToSongTonic": "Em7"
+            },
+            {
+              "start": 7.5,
+              "end": 8,
+              "symbol": "C7",
+              "row": 0,
+              "sourceStart": 7.5,
+              "sourceEnd": 8,
+              "relativeToSongTonic": "A7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 2,
+              "name": "Straight Approach",
+              "row": 0,
+              "sourceStart": 0,
+              "sourceEnd": 2,
+              "raw": "Straight Approach"
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "name": "TTFA Dropback",
+              "row": 0,
+              "sourceStart": 2,
+              "sourceEnd": 4,
+              "raw": "TTFA Dropback"
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "name": "Minor On",
+              "row": 0,
+              "sourceStart": 4,
+              "sourceEnd": 4.5,
+              "raw": "Minor On"
+            },
+            {
+              "start": 4.5,
+              "end": 6,
+              "name": "Nowhere Approach",
+              "row": 0,
+              "sourceStart": 4.5,
+              "sourceEnd": 6,
+              "raw": "Nowhere Approach"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "name": "TTFA Dropback",
+              "row": 0,
+              "sourceStart": 6,
+              "sourceEnd": 8,
+              "raw": "TTFA Dropback"
+            }
+          ]
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "A",
+          "similarity": 0.7932692307692307,
+          "transpose": 0,
+          "variation": true,
+          "layoutRow": 1,
+          "layoutColumn": 0,
+          "bars": 8,
+          "chords": [
+            {
+              "start": 0,
+              "end": 1,
+              "symbol": "Fm7",
+              "row": 1,
+              "sourceStart": 8,
+              "sourceEnd": 9,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "symbol": "Bb7",
+              "row": 1,
+              "sourceStart": 9,
+              "sourceEnd": 10,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "symbol": "EbM7",
+              "row": 1,
+              "sourceStart": 10,
+              "sourceEnd": 10.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "symbol": "Ab7",
+              "row": 1,
+              "sourceStart": 10.5,
+              "sourceEnd": 11,
+              "relativeToSongTonic": "F7"
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "symbol": "Gm7",
+              "row": 1,
+              "sourceStart": 11,
+              "sourceEnd": 11.5,
+              "relativeToSongTonic": "Em7"
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "symbol": "C7",
+              "row": 1,
+              "sourceStart": 11.5,
+              "sourceEnd": 12,
+              "relativeToSongTonic": "A7"
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "symbol": "Fm7",
+              "row": 1,
+              "sourceStart": 12,
+              "sourceEnd": 12.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 4.5,
+              "end": 5,
+              "symbol": "C7",
+              "row": 1,
+              "sourceStart": 12.5,
+              "sourceEnd": 13,
+              "relativeToSongTonic": "A7"
+            },
+            {
+              "start": 5,
+              "end": 5.5,
+              "symbol": "Fm7",
+              "row": 1,
+              "sourceStart": 13,
+              "sourceEnd": 13.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 5.5,
+              "end": 6,
+              "symbol": "Bb7",
+              "row": 1,
+              "sourceStart": 13.5,
+              "sourceEnd": 14,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 6,
+              "end": 7,
+              "symbol": "Bbm7",
+              "row": 1,
+              "sourceStart": 14,
+              "sourceEnd": 15,
+              "relativeToSongTonic": "Gm7"
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "symbol": "Eb7",
+              "row": 1,
+              "sourceStart": 15,
+              "sourceEnd": 16,
+              "relativeToSongTonic": "C7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 2,
+              "name": "Straight Approach",
+              "row": 1,
+              "sourceStart": 8,
+              "sourceEnd": 10,
+              "raw": "Straight Approach"
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "name": "TTFA Dropback",
+              "row": 1,
+              "sourceStart": 10,
+              "sourceEnd": 12,
+              "raw": "TTFA Dropback"
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "name": "Body & Soul Approach",
+              "row": 1,
+              "sourceStart": 12,
+              "sourceEnd": 14,
+              "raw": "Body & Soul Approach"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "name": "Straight Launcher",
+              "row": 1,
+              "sourceStart": 14,
+              "sourceEnd": 16,
+              "raw": "Straight Launcher"
+            }
+          ]
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "B",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 8,
+          "bars": 8,
+          "chords": [
+            {
+              "start": 0,
+              "end": 1,
+              "symbol": "AbM7",
+              "row": 2,
+              "sourceStart": 16,
+              "sourceEnd": 17,
+              "relativeToSongTonic": "FM7"
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "symbol": "Abm7",
+              "row": 2,
+              "sourceStart": 17,
+              "sourceEnd": 17.5,
+              "relativeToSongTonic": "Fm7"
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "symbol": "Db7",
+              "row": 2,
+              "sourceStart": 17.5,
+              "sourceEnd": 18,
+              "relativeToSongTonic": "Bb7"
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "symbol": "EbM7",
+              "row": 2,
+              "sourceStart": 18,
+              "sourceEnd": 18.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "symbol": "Db7",
+              "row": 2,
+              "sourceStart": 18.5,
+              "sourceEnd": 19,
+              "relativeToSongTonic": "Bb7"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "symbol": "C7",
+              "row": 2,
+              "sourceStart": 19,
+              "sourceEnd": 20,
+              "relativeToSongTonic": "A7"
+            },
+            {
+              "start": 4,
+              "end": 5,
+              "symbol": "Fm7",
+              "row": 2,
+              "sourceStart": 20,
+              "sourceEnd": 21,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 5,
+              "end": 5.5,
+              "symbol": "Cm7",
+              "row": 2,
+              "sourceStart": 21,
+              "sourceEnd": 21.5,
+              "relativeToSongTonic": "Am7"
+            },
+            {
+              "start": 5.5,
+              "end": 6,
+              "symbol": "F7#11",
+              "row": 2,
+              "sourceStart": 21.5,
+              "sourceEnd": 22,
+              "relativeToSongTonic": "D7#11"
+            },
+            {
+              "start": 6,
+              "end": 6.5,
+              "symbol": "Bb7",
+              "row": 2,
+              "sourceStart": 22,
+              "sourceEnd": 22.5,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 6.5,
+              "end": 7,
+              "symbol": "Bb/Ab",
+              "row": 2,
+              "sourceStart": 22.5,
+              "sourceEnd": 23,
+              "relativeToSongTonic": "G/F"
+            },
+            {
+              "start": 7,
+              "end": 7.5,
+              "symbol": "Gm7",
+              "row": 2,
+              "sourceStart": 23,
+              "sourceEnd": 23.5,
+              "relativeToSongTonic": "Em7"
+            },
+            {
+              "start": 7.5,
+              "end": 8,
+              "symbol": "C7",
+              "row": 2,
+              "sourceStart": 23.5,
+              "sourceEnd": 24,
+              "relativeToSongTonic": "A7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 2,
+              "name": "IV n Yak +...",
+              "row": 2,
+              "sourceStart": 16,
+              "sourceEnd": 18,
+              "raw": "Wn Yak +..."
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "name": "Dropback",
+              "row": 2,
+              "sourceStart": 18,
+              "sourceEnd": 20,
+              "raw": "Dropback"
+            },
+            {
+              "start": 4,
+              "end": 5,
+              "name": "Minor On",
+              "row": 2,
+              "sourceStart": 20,
+              "sourceEnd": 21,
+              "raw": "Minor On"
+            },
+            {
+              "start": 5,
+              "end": 6.5,
+              "name": "Tension Cadence",
+              "row": 2,
+              "sourceStart": 21,
+              "sourceEnd": 22.5,
+              "raw": "Tension Cadence"
+            },
+            {
+              "start": 6.5,
+              "end": 8,
+              "name": "Donna Lee Start",
+              "row": 2,
+              "sourceStart": 22.5,
+              "sourceEnd": 24,
+              "raw": "Donna Lee Start"
+            }
+          ]
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 2,
+          "layoutColumn": 0,
+          "bars": 8,
+          "chords": [
+            {
+              "start": 0,
+              "end": 1,
+              "symbol": "Fm7",
+              "row": 3,
+              "sourceStart": 24,
+              "sourceEnd": 25,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "symbol": "Bb7",
+              "row": 3,
+              "sourceStart": 25,
+              "sourceEnd": 26,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "symbol": "EbM7",
+              "row": 3,
+              "sourceStart": 26,
+              "sourceEnd": 26.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "symbol": "Ab7",
+              "row": 3,
+              "sourceStart": 26.5,
+              "sourceEnd": 27,
+              "relativeToSongTonic": "F7"
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "symbol": "Gm7",
+              "row": 3,
+              "sourceStart": 27,
+              "sourceEnd": 27.5,
+              "relativeToSongTonic": "Em7"
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "symbol": "C7",
+              "row": 3,
+              "sourceStart": 27.5,
+              "sourceEnd": 28,
+              "relativeToSongTonic": "A7"
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "symbol": "Fm7",
+              "row": 3,
+              "sourceStart": 28,
+              "sourceEnd": 28.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 4.5,
+              "end": 5,
+              "symbol": "B7",
+              "row": 3,
+              "sourceStart": 28.5,
+              "sourceEnd": 29,
+              "relativeToSongTonic": "G#7"
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "symbol": "Bb7",
+              "row": 3,
+              "sourceStart": 29,
+              "sourceEnd": 30,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 6,
+              "end": 6.5,
+              "symbol": "EbM7",
+              "row": 3,
+              "sourceStart": 30,
+              "sourceEnd": 30.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 6.5,
+              "end": 7,
+              "symbol": "Ab7",
+              "row": 3,
+              "sourceStart": 30.5,
+              "sourceEnd": 31,
+              "relativeToSongTonic": "F7"
+            },
+            {
+              "start": 7,
+              "end": 7.5,
+              "symbol": "Gm7",
+              "row": 3,
+              "sourceStart": 31,
+              "sourceEnd": 31.5,
+              "relativeToSongTonic": "Em7"
+            },
+            {
+              "start": 7.5,
+              "end": 8,
+              "symbol": "C7",
+              "row": 3,
+              "sourceStart": 31.5,
+              "sourceEnd": 32,
+              "relativeToSongTonic": "A7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 3,
+              "name": "Straight Cadence + Dominant Overrun",
+              "row": 3,
+              "sourceStart": 24,
+              "sourceEnd": 27,
+              "raw": "Straight Cadence + Dominant Overrun"
+            },
+            {
+              "start": 3,
+              "end": 4.5,
+              "name": "Surprise Minor Cadence",
+              "row": 3,
+              "sourceStart": 27,
+              "sourceEnd": 28.5,
+              "raw": "Surprise Minor Cadence"
+            },
+            {
+              "start": 4.5,
+              "end": 6,
+              "name": "Nowhere Approach",
+              "row": 3,
+              "sourceStart": 28.5,
+              "sourceEnd": 30,
+              "raw": "Nowhere Approach"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "name": "TTFA Dropback",
+              "row": 3,
+              "sourceStart": 30,
+              "sourceEnd": 32,
+              "raw": "TTFA Dropback"
+            }
+          ]
+        }
+      ],
+      "baselineComparisonsToFirst": [
+        {
+          "section": 1,
+          "score": 1,
+          "rootScore": 1,
+          "shift": 0
+        },
+        {
+          "section": 2,
+          "score": 0.7932692307692307,
+          "rootScore": 0.7692307692307693,
+          "shift": 0
+        },
+        {
+          "section": 3,
+          "score": 0.3269230769230769,
+          "rootScore": 0.2692307692307692,
+          "shift": 0
+        },
+        {
+          "section": 4,
+          "score": 1,
+          "rootScore": 1,
+          "shift": 0
+        }
+      ],
+      "exactPrefixesToFirst": [
+        {
+          "section": 1,
+          "matchedBars": 8,
+          "comparedBars": 8,
+          "fraction": 1,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 1,
+              "a": "Fm7",
+              "b": "Fm7",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "a": "Bb7",
+              "b": "Bb7",
+              "equal": true
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "a": "EbM7",
+              "b": "EbM7",
+              "equal": true
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "a": "Ab7",
+              "b": "Ab7",
+              "equal": true
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "a": "Gm7",
+              "b": "Gm7",
+              "equal": true
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "a": "C7",
+              "b": "C7",
+              "equal": true
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "a": "Fm7",
+              "b": "Fm7",
+              "equal": true
+            },
+            {
+              "start": 4.5,
+              "end": 5,
+              "a": "B7",
+              "b": "B7",
+              "equal": true
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "a": "Bb7",
+              "b": "Bb7",
+              "equal": true
+            },
+            {
+              "start": 6,
+              "end": 6.5,
+              "a": "EbM7",
+              "b": "EbM7",
+              "equal": true
+            },
+            {
+              "start": 6.5,
+              "end": 7,
+              "a": "Ab7",
+              "b": "Ab7",
+              "equal": true
+            },
+            {
+              "start": 7,
+              "end": 7.5,
+              "a": "Gm7",
+              "b": "Gm7",
+              "equal": true
+            },
+            {
+              "start": 7.5,
+              "end": 8,
+              "a": "C7",
+              "b": "C7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": null
+        },
+        {
+          "section": 2,
+          "matchedBars": 4.5,
+          "comparedBars": 8,
+          "fraction": 0.5625,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 1,
+              "a": "Fm7",
+              "b": "Fm7",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "a": "Bb7",
+              "b": "Bb7",
+              "equal": true
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "a": "EbM7",
+              "b": "EbM7",
+              "equal": true
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "a": "Ab7",
+              "b": "Ab7",
+              "equal": true
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "a": "Gm7",
+              "b": "Gm7",
+              "equal": true
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "a": "C7",
+              "b": "C7",
+              "equal": true
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "a": "Fm7",
+              "b": "Fm7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": {
+            "start": 4.5,
+            "end": 5,
+            "a": "B7",
+            "b": "C7",
+            "equal": false
+          }
+        },
+        {
+          "section": 3,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "Fm7",
+            "b": "AbM7",
+            "equal": false
+          }
+        },
+        {
+          "section": 4,
+          "matchedBars": 8,
+          "comparedBars": 8,
+          "fraction": 1,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 1,
+              "a": "Fm7",
+              "b": "Fm7",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "a": "Bb7",
+              "b": "Bb7",
+              "equal": true
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "a": "EbM7",
+              "b": "EbM7",
+              "equal": true
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "a": "Ab7",
+              "b": "Ab7",
+              "equal": true
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "a": "Gm7",
+              "b": "Gm7",
+              "equal": true
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "a": "C7",
+              "b": "C7",
+              "equal": true
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "a": "Fm7",
+              "b": "Fm7",
+              "equal": true
+            },
+            {
+              "start": 4.5,
+              "end": 5,
+              "a": "B7",
+              "b": "B7",
+              "equal": true
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "a": "Bb7",
+              "b": "Bb7",
+              "equal": true
+            },
+            {
+              "start": 6,
+              "end": 6.5,
+              "a": "EbM7",
+              "b": "EbM7",
+              "equal": true
+            },
+            {
+              "start": 6.5,
+              "end": 7,
+              "a": "Ab7",
+              "b": "Ab7",
+              "equal": true
+            },
+            {
+              "start": 7,
+              "end": 7.5,
+              "a": "Gm7",
+              "b": "Gm7",
+              "equal": true
+            },
+            {
+              "start": 7.5,
+              "end": 8,
+              "a": "C7",
+              "b": "C7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": null
+        }
+      ],
+      "secondTranspositionComparisons": [
+        {
+          "shift": 0,
+          "matchedBars": 4.5,
+          "comparedBars": 8,
+          "fraction": 0.5625,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 1,
+              "a": "Fm7",
+              "b": "Fm7",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "a": "Bb7",
+              "b": "Bb7",
+              "equal": true
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "a": "EbM7",
+              "b": "EbM7",
+              "equal": true
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "a": "Ab7",
+              "b": "Ab7",
+              "equal": true
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "a": "Gm7",
+              "b": "Gm7",
+              "equal": true
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "a": "C7",
+              "b": "C7",
+              "equal": true
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "a": "Fm7",
+              "b": "Fm7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": {
+            "start": 4.5,
+            "end": 5,
+            "a": "B7",
+            "b": "C7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 1,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 1,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "Fm7",
+            "b": "Fm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 2,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 2,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "Fm7",
+            "b": "Fm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 3,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 3,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "Fm7",
+            "b": "Fm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 4,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 4,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "Fm7",
+            "b": "Fm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 5,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 5,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "Fm7",
+            "b": "Fm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 6,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 6,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "Fm7",
+            "b": "Fm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 7,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 7,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "Fm7",
+            "b": "Fm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 8,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 8,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "Fm7",
+            "b": "Fm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 9,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 9,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "Fm7",
+            "b": "Fm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 10,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 10,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "Fm7",
+            "b": "Fm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 11,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 11,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "Fm7",
+            "b": "Fm7",
+            "equal": false
+          }
+        }
+      ],
+      "decision": {
+        "recommendation": "AABA",
+        "secondSectionIdentity": "A",
+        "reason": "The second eight-bar section repeats the first 4.5 bars exactly in the same register-independent chord identities, roots and rhythm. Straight Approach and TTFA Dropback occupy the same first four bars. Its later Body & Soul Approach and Straight Launcher are a changed ending that prepares the contrasting third section.",
+        "visualEvidence": "Original PNG rows 1 and 2 begin Fm7 Bb7 EbM7 Ab7 Gm7 C7, followed by Fm7. Row 2 then changes the turnaround and ends Bbm7 Eb7. Row 3 starts AbM7 and has a different brick trajectory.",
+        "caution": "This conclusion treats the full common head plus altered ending as A variation; it does not assert exact equality of whole sections."
+      }
+    },
+    {
+      "song": 97,
+      "title": "I'm Old Fashioned",
+      "tonic": [
+        "F",
+        "Major"
+      ],
+      "bars": 36,
+      "sourceImage": "dist/source/roadmap-097.png",
+      "imageSha256": "51ace01a5d4c39a26f22dc7f29312a599763f9342fbebd5f350d93bf32f48dc5",
+      "imageInspected": true,
+      "baselineForm": {
+        "family": "ABCA",
+        "pattern": "ABCA",
+        "sections": [
+          {
+            "start": 0,
+            "end": 8,
+            "label": "A",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 0,
+            "bars": 8
+          },
+          {
+            "start": 8,
+            "end": 16,
+            "label": "B",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 8,
+            "bars": 8
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "label": "C",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 16,
+            "bars": 8
+          },
+          {
+            "start": 24,
+            "end": 36,
+            "label": "A",
+            "similarity": 0.834375,
+            "transpose": 0,
+            "layoutRow": 1,
+            "layoutColumn": 0,
+            "bars": 12
+          }
+        ]
+      },
+      "currentForm": {
+        "song": 97,
+        "basis": "source-audit",
+        "family": "ABCA",
+        "pattern": "ABCA",
+        "aligned": true,
+        "columns": 24,
+        "sections": [
+          {
+            "start": 0,
+            "end": 8,
+            "label": "A",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 0,
+            "bars": 8
+          },
+          {
+            "start": 8,
+            "end": 16,
+            "label": "B",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 8,
+            "bars": 8
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "label": "C",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 16,
+            "bars": 8
+          },
+          {
+            "start": 24,
+            "end": 36,
+            "label": "A",
+            "similarity": 0.834375,
+            "transpose": 0,
+            "layoutRow": 1,
+            "layoutColumn": 0,
+            "bars": 12
+          }
+        ]
+      },
+      "sourceSections": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 0,
+          "bars": 8,
+          "chords": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "symbol": "FM7",
+              "row": 0,
+              "sourceStart": 0,
+              "sourceEnd": 0.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "symbol": "Dm7",
+              "row": 0,
+              "sourceStart": 0.5,
+              "sourceEnd": 1,
+              "relativeToSongTonic": "Am7"
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "symbol": "Gm7",
+              "row": 0,
+              "sourceStart": 1,
+              "sourceEnd": 1.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "symbol": "C7",
+              "row": 0,
+              "sourceStart": 1.5,
+              "sourceEnd": 2,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "symbol": "FM7",
+              "row": 0,
+              "sourceStart": 2,
+              "sourceEnd": 2.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "symbol": "Dm7",
+              "row": 0,
+              "sourceStart": 2.5,
+              "sourceEnd": 3,
+              "relativeToSongTonic": "Am7"
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "symbol": "Gm7",
+              "row": 0,
+              "sourceStart": 3,
+              "sourceEnd": 3.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "symbol": "C7",
+              "row": 0,
+              "sourceStart": 3.5,
+              "sourceEnd": 4,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "symbol": "FM7",
+              "row": 0,
+              "sourceStart": 4,
+              "sourceEnd": 6,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 6,
+              "end": 7,
+              "symbol": "Em7b5",
+              "row": 0,
+              "sourceStart": 6,
+              "sourceEnd": 7,
+              "relativeToSongTonic": "Bm7b5"
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "symbol": "A7",
+              "row": 0,
+              "sourceStart": 7,
+              "sourceEnd": 8,
+              "relativeToSongTonic": "E7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 2,
+              "name": "POT",
+              "row": 0,
+              "sourceStart": 0,
+              "sourceEnd": 2,
+              "raw": "POT"
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "name": "POT",
+              "row": 0,
+              "sourceStart": 2,
+              "sourceEnd": 4,
+              "raw": "POT"
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "name": "Major On",
+              "row": 0,
+              "sourceStart": 4,
+              "sourceEnd": 6,
+              "raw": "Major On"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "name": "Sad Launcher",
+              "row": 0,
+              "sourceStart": 6,
+              "sourceEnd": 8,
+              "raw": "Sad Launcher"
+            }
+          ]
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "B",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 8,
+          "bars": 8,
+          "chords": [
+            {
+              "start": 0,
+              "end": 1,
+              "symbol": "Dm7",
+              "row": 1,
+              "sourceStart": 8,
+              "sourceEnd": 9,
+              "relativeToSongTonic": "Am7"
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "symbol": "G7",
+              "row": 1,
+              "sourceStart": 9,
+              "sourceEnd": 10,
+              "relativeToSongTonic": "D7"
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "symbol": "Dm7",
+              "row": 1,
+              "sourceStart": 10,
+              "sourceEnd": 11,
+              "relativeToSongTonic": "Am7"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "symbol": "G7",
+              "row": 1,
+              "sourceStart": 11,
+              "sourceEnd": 12,
+              "relativeToSongTonic": "D7"
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "symbol": "Gm7",
+              "row": 1,
+              "sourceStart": 12,
+              "sourceEnd": 12.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 4.5,
+              "end": 5,
+              "symbol": "D7",
+              "row": 1,
+              "sourceStart": 12.5,
+              "sourceEnd": 13,
+              "relativeToSongTonic": "A7"
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "symbol": "Gm7",
+              "row": 1,
+              "sourceStart": 13,
+              "sourceEnd": 14,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 6,
+              "end": 7,
+              "symbol": "Gm7/C",
+              "row": 1,
+              "sourceStart": 14,
+              "sourceEnd": 15,
+              "relativeToSongTonic": "Dm7/G"
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "symbol": "C7",
+              "row": 1,
+              "sourceStart": 15,
+              "sourceEnd": 16,
+              "relativeToSongTonic": "G7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 4,
+              "name": "Two Goes Straight Launcher",
+              "row": 1,
+              "sourceStart": 8,
+              "sourceEnd": 12,
+              "raw": "Two Goes Straight Launcher"
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "name": "On Off On Minor V",
+              "row": 1,
+              "sourceStart": 12,
+              "sourceEnd": 14,
+              "raw": "On Off On Minor V"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "name": "Straight Launcher",
+              "row": 1,
+              "sourceStart": 14,
+              "sourceEnd": 16,
+              "raw": "Straight Launcher"
+            }
+          ]
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "C",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 16,
+          "bars": 8,
+          "chords": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "symbol": "FM7",
+              "row": 2,
+              "sourceStart": 16,
+              "sourceEnd": 16.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "symbol": "Dm7",
+              "row": 2,
+              "sourceStart": 16.5,
+              "sourceEnd": 17,
+              "relativeToSongTonic": "Am7"
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "symbol": "Gm7",
+              "row": 2,
+              "sourceStart": 17,
+              "sourceEnd": 17.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "symbol": "C7",
+              "row": 2,
+              "sourceStart": 17.5,
+              "sourceEnd": 18,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "symbol": "FM7",
+              "row": 2,
+              "sourceStart": 18,
+              "sourceEnd": 19,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "symbol": "Bm7",
+              "row": 2,
+              "sourceStart": 19,
+              "sourceEnd": 19.5,
+              "relativeToSongTonic": "F#m7"
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "symbol": "E7",
+              "row": 2,
+              "sourceStart": 19.5,
+              "sourceEnd": 20,
+              "relativeToSongTonic": "B7"
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "symbol": "AM7",
+              "row": 2,
+              "sourceStart": 20,
+              "sourceEnd": 20.5,
+              "relativeToSongTonic": "EM7"
+            },
+            {
+              "start": 4.5,
+              "end": 5,
+              "symbol": "Bm7",
+              "row": 2,
+              "sourceStart": 20.5,
+              "sourceEnd": 21,
+              "relativeToSongTonic": "F#m7"
+            },
+            {
+              "start": 5,
+              "end": 5.5,
+              "symbol": "C#m7",
+              "row": 2,
+              "sourceStart": 21,
+              "sourceEnd": 21.5,
+              "relativeToSongTonic": "G#m7"
+            },
+            {
+              "start": 5.5,
+              "end": 6,
+              "symbol": "DM7",
+              "row": 2,
+              "sourceStart": 21.5,
+              "sourceEnd": 22,
+              "relativeToSongTonic": "AM7"
+            },
+            {
+              "start": 6,
+              "end": 6.5,
+              "symbol": "E7",
+              "row": 2,
+              "sourceStart": 22,
+              "sourceEnd": 22.5,
+              "relativeToSongTonic": "B7"
+            },
+            {
+              "start": 6.5,
+              "end": 7,
+              "symbol": "F#m7",
+              "row": 2,
+              "sourceStart": 22.5,
+              "sourceEnd": 23,
+              "relativeToSongTonic": "C#m7"
+            },
+            {
+              "start": 7,
+              "end": 7.5,
+              "symbol": "Gm7",
+              "row": 2,
+              "sourceStart": 23,
+              "sourceEnd": 23.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 7.5,
+              "end": 8,
+              "symbol": "C7",
+              "row": 2,
+              "sourceStart": 23.5,
+              "sourceEnd": 24,
+              "relativeToSongTonic": "G7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 3,
+              "name": "POT+On",
+              "row": 2,
+              "sourceStart": 16,
+              "sourceEnd": 19,
+              "raw": "POT+On"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "name": "Straight Launcher",
+              "row": 2,
+              "sourceStart": 19,
+              "sourceEnd": 20,
+              "raw": "Straight Launcher"
+            },
+            {
+              "start": 4,
+              "end": 5.5,
+              "name": "Diatonic I ii iii IV",
+              "row": 2,
+              "sourceStart": 20,
+              "sourceEnd": 21.5,
+              "raw": "Diatonic I II iii IV"
+            },
+            {
+              "start": 5.5,
+              "end": 8,
+              "name": "Diatonic I II iii IV + Overrun",
+              "row": 2,
+              "sourceStart": 21.5,
+              "sourceEnd": 24,
+              "raw": "Diatonic I II iii IV + Overrun"
+            }
+          ]
+        },
+        {
+          "start": 24,
+          "end": 36,
+          "label": "A",
+          "similarity": 0.834375,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 0,
+          "bars": 12,
+          "chords": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "symbol": "FM7",
+              "row": 3,
+              "sourceStart": 24,
+              "sourceEnd": 24.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "symbol": "Dm7",
+              "row": 3,
+              "sourceStart": 24.5,
+              "sourceEnd": 25,
+              "relativeToSongTonic": "Am7"
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "symbol": "Gm7",
+              "row": 3,
+              "sourceStart": 25,
+              "sourceEnd": 25.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "symbol": "C7",
+              "row": 3,
+              "sourceStart": 25.5,
+              "sourceEnd": 26,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "symbol": "FM7",
+              "row": 3,
+              "sourceStart": 26,
+              "sourceEnd": 26.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "symbol": "Dm7",
+              "row": 3,
+              "sourceStart": 26.5,
+              "sourceEnd": 27,
+              "relativeToSongTonic": "Am7"
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "symbol": "Gm7",
+              "row": 3,
+              "sourceStart": 27,
+              "sourceEnd": 27.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "symbol": "C7",
+              "row": 3,
+              "sourceStart": 27.5,
+              "sourceEnd": 28,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "symbol": "Cm7",
+              "row": 3,
+              "sourceStart": 28,
+              "sourceEnd": 28.5,
+              "relativeToSongTonic": "Gm7"
+            },
+            {
+              "start": 4.5,
+              "end": 5,
+              "symbol": "F7",
+              "row": 3,
+              "sourceStart": 28.5,
+              "sourceEnd": 29,
+              "relativeToSongTonic": "C7"
+            },
+            {
+              "start": 5,
+              "end": 5.5,
+              "symbol": "Bb",
+              "row": 3,
+              "sourceStart": 29,
+              "sourceEnd": 29.5,
+              "relativeToSongTonic": "F"
+            },
+            {
+              "start": 5.5,
+              "end": 6,
+              "symbol": "Eb7",
+              "row": 3,
+              "sourceStart": 29.5,
+              "sourceEnd": 30,
+              "relativeToSongTonic": "Bb7"
+            },
+            {
+              "start": 6,
+              "end": 6.5,
+              "symbol": "Am7",
+              "row": 3,
+              "sourceStart": 30,
+              "sourceEnd": 30.5,
+              "relativeToSongTonic": "Em7"
+            },
+            {
+              "start": 6.5,
+              "end": 7,
+              "symbol": "D7#9",
+              "row": 3,
+              "sourceStart": 30.5,
+              "sourceEnd": 31,
+              "relativeToSongTonic": "A7#9"
+            },
+            {
+              "start": 7,
+              "end": 7.5,
+              "symbol": "G7",
+              "row": 3,
+              "sourceStart": 31,
+              "sourceEnd": 31.5,
+              "relativeToSongTonic": "D7"
+            },
+            {
+              "start": 7.5,
+              "end": 7.75,
+              "symbol": "Bbm7",
+              "row": 3,
+              "sourceStart": 31.5,
+              "sourceEnd": 31.75,
+              "relativeToSongTonic": "Fm7"
+            },
+            {
+              "start": 7.75,
+              "end": 8,
+              "symbol": "Eb7",
+              "row": 3,
+              "sourceStart": 31.75,
+              "sourceEnd": 32,
+              "relativeToSongTonic": "Bb7"
+            },
+            {
+              "start": 8,
+              "end": 8.5,
+              "symbol": "Am7",
+              "row": 4,
+              "sourceStart": 32,
+              "sourceEnd": 32.5,
+              "relativeToSongTonic": "Em7"
+            },
+            {
+              "start": 8.5,
+              "end": 9,
+              "symbol": "D7",
+              "row": 4,
+              "sourceStart": 32.5,
+              "sourceEnd": 33,
+              "relativeToSongTonic": "A7"
+            },
+            {
+              "start": 9,
+              "end": 9.5,
+              "symbol": "Gm7",
+              "row": 4,
+              "sourceStart": 33,
+              "sourceEnd": 33.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 9.5,
+              "end": 10,
+              "symbol": "C7",
+              "row": 4,
+              "sourceStart": 33.5,
+              "sourceEnd": 34,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 10,
+              "end": 12,
+              "symbol": "FM7",
+              "row": 4,
+              "sourceStart": 34,
+              "sourceEnd": 36,
+              "relativeToSongTonic": "CM7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 2,
+              "name": "POT",
+              "row": 3,
+              "sourceStart": 24,
+              "sourceEnd": 26,
+              "raw": "POT"
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "name": "POT",
+              "row": 3,
+              "sourceStart": 26,
+              "sourceEnd": 28,
+              "raw": "POT"
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "name": "Straight Cadence + Dominant Overrun",
+              "row": 3,
+              "sourceStart": 28,
+              "sourceEnd": 30,
+              "raw": "Straight Cadence + Dominant Overrun"
+            },
+            {
+              "start": 6,
+              "end": 7.5,
+              "name": "Tension Cadence",
+              "row": 3,
+              "sourceStart": 30,
+              "sourceEnd": 31.5,
+              "raw": "Tension Cadence"
+            },
+            {
+              "start": 7.5,
+              "end": 8,
+              "name": "Yardbird Launcher",
+              "row": 3,
+              "sourceStart": 31.5,
+              "sourceEnd": 32,
+              "raw": "Yardbird Launcher"
+            },
+            {
+              "start": 8,
+              "end": 12,
+              "name": "Long Cadence",
+              "row": 4,
+              "sourceStart": 32,
+              "sourceEnd": 36,
+              "raw": "Long Cadence"
+            }
+          ]
+        }
+      ],
+      "baselineComparisonsToFirst": [
+        {
+          "section": 1,
+          "score": 1,
+          "rootScore": 1,
+          "shift": 0
+        },
+        {
+          "section": 2,
+          "score": 0.3173076923076923,
+          "rootScore": 0.3076923076923077,
+          "shift": 0
+        },
+        {
+          "section": 3,
+          "score": 0.4807692307692308,
+          "rootScore": 0.40384615384615385,
+          "shift": 0
+        },
+        {
+          "section": 4,
+          "score": 0.834375,
+          "rootScore": 0.825,
+          "shift": 0
+        }
+      ],
+      "exactPrefixesToFirst": [
+        {
+          "section": 1,
+          "matchedBars": 8,
+          "comparedBars": 8,
+          "fraction": 1,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "a": "FM7",
+              "b": "FM7",
+              "equal": true
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "a": "Dm7",
+              "b": "Dm7",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "a": "Gm7",
+              "b": "Gm7",
+              "equal": true
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "a": "C7",
+              "b": "C7",
+              "equal": true
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "a": "FM7",
+              "b": "FM7",
+              "equal": true
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "a": "Dm7",
+              "b": "Dm7",
+              "equal": true
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "a": "Gm7",
+              "b": "Gm7",
+              "equal": true
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "a": "C7",
+              "b": "C7",
+              "equal": true
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "a": "FM7",
+              "b": "FM7",
+              "equal": true
+            },
+            {
+              "start": 6,
+              "end": 7,
+              "a": "Em7b5",
+              "b": "Em7b5",
+              "equal": true
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "a": "A7",
+              "b": "A7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": null
+        },
+        {
+          "section": 2,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "FM7",
+            "b": "Dm7",
+            "equal": false
+          }
+        },
+        {
+          "section": 3,
+          "matchedBars": 2.5,
+          "comparedBars": 8,
+          "fraction": 0.3125,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "a": "FM7",
+              "b": "FM7",
+              "equal": true
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "a": "Dm7",
+              "b": "Dm7",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "a": "Gm7",
+              "b": "Gm7",
+              "equal": true
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "a": "C7",
+              "b": "C7",
+              "equal": true
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "a": "FM7",
+              "b": "FM7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": {
+            "start": 2.5,
+            "end": 3,
+            "a": "Dm7",
+            "b": "FM7",
+            "equal": false
+          }
+        },
+        {
+          "section": 4,
+          "matchedBars": 4,
+          "comparedBars": 8,
+          "fraction": 0.5,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "a": "FM7",
+              "b": "FM7",
+              "equal": true
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "a": "Dm7",
+              "b": "Dm7",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "a": "Gm7",
+              "b": "Gm7",
+              "equal": true
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "a": "C7",
+              "b": "C7",
+              "equal": true
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "a": "FM7",
+              "b": "FM7",
+              "equal": true
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "a": "Dm7",
+              "b": "Dm7",
+              "equal": true
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "a": "Gm7",
+              "b": "Gm7",
+              "equal": true
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "a": "C7",
+              "b": "C7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": {
+            "start": 4,
+            "end": 4.5,
+            "a": "FM7",
+            "b": "Cm7",
+            "equal": false
+          }
+        }
+      ],
+      "secondTranspositionComparisons": [
+        {
+          "shift": 0,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "FM7",
+            "b": "Dm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 1,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 1,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "FM7",
+            "b": "Dm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 2,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 2,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "FM7",
+            "b": "Dm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 3,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 3,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "FM7",
+            "b": "Dm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 4,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 4,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "FM7",
+            "b": "Dm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 5,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 5,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "FM7",
+            "b": "Dm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 6,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 6,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "FM7",
+            "b": "Dm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 7,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 7,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "FM7",
+            "b": "Dm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 8,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 8,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "FM7",
+            "b": "Dm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 9,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 9,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "FM7",
+            "b": "Dm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 10,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 10,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "FM7",
+            "b": "Dm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 11,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 11,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "FM7",
+            "b": "Dm7",
+            "equal": false
+          }
+        }
+      ],
+      "decision": {
+        "recommendation": "ABCA",
+        "secondSectionIdentity": "B",
+        "reason": "The second eight-bar section begins Dm7 G7 Dm7 G7, versus the first section’s repeated FM7 Dm7 Gm7 C7 cycles. The first half uses a different harmonic rhythm and Two Goes Straight Launcher. The shared later launching behavior does not establish a repeated A head.",
+        "visualEvidence": "Original PNG row 2 is Two Goes Straight Launcher, On Off On Minor V, Straight Launcher; row 1 is POT, POT, Major On, Sad Launcher.",
+        "caution": "The third section starts with some first-section POT material, but diverges after 2.5 bars into an A/D-major diatonic route; do not force all sections with a short shared opening into A."
+      }
+    },
+    {
+      "song": 112,
+      "title": "The Joint is Jumpin'",
+      "tonic": [
+        "Bb",
+        "Major"
+      ],
+      "bars": 32,
+      "sourceImage": "dist/source/roadmap-112.png",
+      "imageSha256": "bf687c2e62e05dd004234f6aceca47df1ab9de0b907ec1709527f416ceb61271",
+      "imageInspected": true,
+      "baselineForm": {
+        "family": "ABCA",
+        "pattern": "ABCA",
+        "sections": [
+          {
+            "start": 0,
+            "end": 8,
+            "label": "A",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 0,
+            "bars": 8
+          },
+          {
+            "start": 8,
+            "end": 16,
+            "label": "B",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 8,
+            "bars": 8
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "label": "C",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 16,
+            "bars": 8
+          },
+          {
+            "start": 24,
+            "end": 32,
+            "label": "A",
+            "similarity": 0.9855769230769231,
+            "transpose": 0,
+            "layoutRow": 1,
+            "layoutColumn": 0,
+            "bars": 8
+          }
+        ]
+      },
+      "currentForm": {
+        "song": 112,
+        "basis": "source-audit",
+        "family": "ABCA",
+        "pattern": "ABCA",
+        "aligned": true,
+        "columns": 24,
+        "sections": [
+          {
+            "start": 0,
+            "end": 8,
+            "label": "A",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 0,
+            "bars": 8
+          },
+          {
+            "start": 8,
+            "end": 16,
+            "label": "B",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 8,
+            "bars": 8
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "label": "C",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 16,
+            "bars": 8
+          },
+          {
+            "start": 24,
+            "end": 32,
+            "label": "A",
+            "similarity": 0.9855769230769231,
+            "transpose": 0,
+            "layoutRow": 1,
+            "layoutColumn": 0,
+            "bars": 8
+          }
+        ]
+      },
+      "sourceSections": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 0,
+          "bars": 8,
+          "chords": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "symbol": "BbM7",
+              "row": 0,
+              "sourceStart": 0,
+              "sourceEnd": 0.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "symbol": "Bo",
+              "row": 0,
+              "sourceStart": 0.5,
+              "sourceEnd": 1,
+              "relativeToSongTonic": "C#o"
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "symbol": "Cm7",
+              "row": 0,
+              "sourceStart": 1,
+              "sourceEnd": 1.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "symbol": "F7",
+              "row": 0,
+              "sourceStart": 1.5,
+              "sourceEnd": 2,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "symbol": "BbM7",
+              "row": 0,
+              "sourceStart": 2,
+              "sourceEnd": 2.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "symbol": "Bo",
+              "row": 0,
+              "sourceStart": 2.5,
+              "sourceEnd": 3,
+              "relativeToSongTonic": "C#o"
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "symbol": "Cm7",
+              "row": 0,
+              "sourceStart": 3,
+              "sourceEnd": 3.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "symbol": "F7",
+              "row": 0,
+              "sourceStart": 3.5,
+              "sourceEnd": 4,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "symbol": "BbM7",
+              "row": 0,
+              "sourceStart": 4,
+              "sourceEnd": 4.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 4.5,
+              "end": 5,
+              "symbol": "Bb7",
+              "row": 0,
+              "sourceStart": 4.5,
+              "sourceEnd": 5,
+              "relativeToSongTonic": "C7"
+            },
+            {
+              "start": 5,
+              "end": 5.5,
+              "symbol": "EbM7",
+              "row": 0,
+              "sourceStart": 5,
+              "sourceEnd": 5.5,
+              "relativeToSongTonic": "FM7"
+            },
+            {
+              "start": 5.5,
+              "end": 6,
+              "symbol": "Eo",
+              "row": 0,
+              "sourceStart": 5.5,
+              "sourceEnd": 6,
+              "relativeToSongTonic": "F#o"
+            },
+            {
+              "start": 6,
+              "end": 6.5,
+              "symbol": "BbM7",
+              "row": 0,
+              "sourceStart": 6,
+              "sourceEnd": 6.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 6.5,
+              "end": 7,
+              "symbol": "F7",
+              "row": 0,
+              "sourceStart": 6.5,
+              "sourceEnd": 7,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 7,
+              "end": 7.5,
+              "symbol": "BbM7",
+              "row": 0,
+              "sourceStart": 7,
+              "sourceEnd": 7.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 7.5,
+              "end": 8,
+              "symbol": "A7",
+              "row": 0,
+              "sourceStart": 7.5,
+              "sourceEnd": 8,
+              "relativeToSongTonic": "B7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 2,
+              "name": "Whoopee Turnaround",
+              "row": 0,
+              "sourceStart": 0,
+              "sourceEnd": 2,
+              "raw": "Whoopee Turnaround"
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "name": "Whoopee Turnaround",
+              "row": 0,
+              "sourceStart": 2,
+              "sourceEnd": 4,
+              "raw": "Whoopee Turnaround"
+            },
+            {
+              "start": 4,
+              "end": 6.5,
+              "name": "To IV n Back",
+              "row": 0,
+              "sourceStart": 4,
+              "sourceEnd": 6.5,
+              "raw": "To IV n Back"
+            },
+            {
+              "start": 6.5,
+              "end": 7.5,
+              "name": "Perfect Cadence",
+              "row": 0,
+              "sourceStart": 6.5,
+              "sourceEnd": 7.5,
+              "raw": "Perfect Cadence"
+            },
+            {
+              "start": 7.5,
+              "end": 8,
+              "name": "Launcher",
+              "row": 0,
+              "sourceStart": 7.5,
+              "sourceEnd": 8,
+              "raw": "Launcher"
+            }
+          ]
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "B",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 8,
+          "bars": 8,
+          "chords": [
+            {
+              "start": 0,
+              "end": 1,
+              "symbol": "DM7",
+              "row": 1,
+              "sourceStart": 8,
+              "sourceEnd": 9,
+              "relativeToSongTonic": "EM7"
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "symbol": "Em7",
+              "row": 1,
+              "sourceStart": 9,
+              "sourceEnd": 9.5,
+              "relativeToSongTonic": "F#m7"
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "symbol": "A7",
+              "row": 1,
+              "sourceStart": 9.5,
+              "sourceEnd": 10,
+              "relativeToSongTonic": "B7"
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "symbol": "DM7",
+              "row": 1,
+              "sourceStart": 10,
+              "sourceEnd": 10.5,
+              "relativeToSongTonic": "EM7"
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "symbol": "A7",
+              "row": 1,
+              "sourceStart": 10.5,
+              "sourceEnd": 11,
+              "relativeToSongTonic": "B7"
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "symbol": "DM7",
+              "row": 1,
+              "sourceStart": 11,
+              "sourceEnd": 11.5,
+              "relativeToSongTonic": "EM7"
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "symbol": "C7b9",
+              "row": 1,
+              "sourceStart": 11.5,
+              "sourceEnd": 12,
+              "relativeToSongTonic": "D7b9"
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "symbol": "FM7",
+              "row": 1,
+              "sourceStart": 12,
+              "sourceEnd": 12.5,
+              "relativeToSongTonic": "GM7"
+            },
+            {
+              "start": 4.5,
+              "end": 5,
+              "symbol": "C7",
+              "row": 1,
+              "sourceStart": 12.5,
+              "sourceEnd": 13,
+              "relativeToSongTonic": "D7"
+            },
+            {
+              "start": 5,
+              "end": 5.5,
+              "symbol": "FM7",
+              "row": 1,
+              "sourceStart": 13,
+              "sourceEnd": 13.5,
+              "relativeToSongTonic": "GM7"
+            },
+            {
+              "start": 5.5,
+              "end": 6,
+              "symbol": "F#o",
+              "row": 1,
+              "sourceStart": 13.5,
+              "sourceEnd": 14,
+              "relativeToSongTonic": "G#o"
+            },
+            {
+              "start": 6,
+              "end": 6.5,
+              "symbol": "Gm7",
+              "row": 1,
+              "sourceStart": 14,
+              "sourceEnd": 14.5,
+              "relativeToSongTonic": "Am7"
+            },
+            {
+              "start": 6.5,
+              "end": 7,
+              "symbol": "C7",
+              "row": 1,
+              "sourceStart": 14.5,
+              "sourceEnd": 15,
+              "relativeToSongTonic": "D7"
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "symbol": "FM7",
+              "row": 1,
+              "sourceStart": 15,
+              "sourceEnd": 16,
+              "relativeToSongTonic": "GM7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 2.5,
+              "name": "POT+On",
+              "row": 1,
+              "sourceStart": 8,
+              "sourceEnd": 10.5,
+              "raw": "POT+On"
+            },
+            {
+              "start": 2.5,
+              "end": 3.5,
+              "name": "Perfect Cadence",
+              "row": 1,
+              "sourceStart": 10.5,
+              "sourceEnd": 11.5,
+              "raw": "Perfect Cadence"
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "name": "Launcher",
+              "row": 1,
+              "sourceStart": 11.5,
+              "sourceEnd": 12,
+              "raw": "Launcher"
+            },
+            {
+              "start": 4,
+              "end": 5,
+              "name": "On Off On To V+...",
+              "row": 1,
+              "sourceStart": 12,
+              "sourceEnd": 13,
+              "raw": "On Off On To V+..."
+            },
+            {
+              "start": 5,
+              "end": 8,
+              "name": "Wonderful Opening",
+              "row": 1,
+              "sourceStart": 13,
+              "sourceEnd": 16,
+              "raw": "Wonderful Gpening"
+            }
+          ]
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "C",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 16,
+          "bars": 8,
+          "chords": [
+            {
+              "start": 0,
+              "end": 2,
+              "symbol": "Bb7",
+              "row": 2,
+              "sourceStart": 16,
+              "sourceEnd": 18,
+              "relativeToSongTonic": "C7"
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "symbol": "EbM7",
+              "row": 2,
+              "sourceStart": 18,
+              "sourceEnd": 20,
+              "relativeToSongTonic": "FM7"
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "symbol": "C7",
+              "row": 2,
+              "sourceStart": 20,
+              "sourceEnd": 22,
+              "relativeToSongTonic": "D7"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "symbol": "F7",
+              "row": 2,
+              "sourceStart": 22,
+              "sourceEnd": 24,
+              "relativeToSongTonic": "G7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 4,
+              "name": "Perfect Cadence",
+              "row": 2,
+              "sourceStart": 16,
+              "sourceEnd": 20,
+              "raw": "Perfect Cadence"
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "name": "Dominant Cycle",
+              "row": 2,
+              "sourceStart": 20,
+              "sourceEnd": 24,
+              "raw": "Dominant Cycle"
+            }
+          ]
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "A",
+          "similarity": 0.9855769230769231,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 0,
+          "bars": 8,
+          "chords": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "symbol": "BbM7",
+              "row": 3,
+              "sourceStart": 24,
+              "sourceEnd": 24.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "symbol": "Bo",
+              "row": 3,
+              "sourceStart": 24.5,
+              "sourceEnd": 25,
+              "relativeToSongTonic": "C#o"
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "symbol": "Cm7",
+              "row": 3,
+              "sourceStart": 25,
+              "sourceEnd": 25.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "symbol": "F7",
+              "row": 3,
+              "sourceStart": 25.5,
+              "sourceEnd": 26,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "symbol": "BbM7",
+              "row": 3,
+              "sourceStart": 26,
+              "sourceEnd": 26.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "symbol": "Bo",
+              "row": 3,
+              "sourceStart": 26.5,
+              "sourceEnd": 27,
+              "relativeToSongTonic": "C#o"
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "symbol": "Cm7",
+              "row": 3,
+              "sourceStart": 27,
+              "sourceEnd": 27.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "symbol": "F7",
+              "row": 3,
+              "sourceStart": 27.5,
+              "sourceEnd": 28,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "symbol": "BbM7",
+              "row": 3,
+              "sourceStart": 28,
+              "sourceEnd": 28.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 4.5,
+              "end": 5,
+              "symbol": "Bb7",
+              "row": 3,
+              "sourceStart": 28.5,
+              "sourceEnd": 29,
+              "relativeToSongTonic": "C7"
+            },
+            {
+              "start": 5,
+              "end": 5.5,
+              "symbol": "EbM7",
+              "row": 3,
+              "sourceStart": 29,
+              "sourceEnd": 29.5,
+              "relativeToSongTonic": "FM7"
+            },
+            {
+              "start": 5.5,
+              "end": 6,
+              "symbol": "Eo",
+              "row": 3,
+              "sourceStart": 29.5,
+              "sourceEnd": 30,
+              "relativeToSongTonic": "F#o"
+            },
+            {
+              "start": 6,
+              "end": 6.5,
+              "symbol": "BbM7",
+              "row": 3,
+              "sourceStart": 30,
+              "sourceEnd": 30.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 6.5,
+              "end": 7,
+              "symbol": "F7",
+              "row": 3,
+              "sourceStart": 30.5,
+              "sourceEnd": 31,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 7,
+              "end": 7.5,
+              "symbol": "BbM7",
+              "row": 3,
+              "sourceStart": 31,
+              "sourceEnd": 31.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 7.5,
+              "end": 8,
+              "symbol": "F7",
+              "row": 3,
+              "sourceStart": 31.5,
+              "sourceEnd": 32,
+              "relativeToSongTonic": "G7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 2,
+              "name": "Whoopee Turnaround",
+              "row": 3,
+              "sourceStart": 24,
+              "sourceEnd": 26,
+              "raw": "Whoopee Turnaround"
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "name": "Whoopee Turnaround",
+              "row": 3,
+              "sourceStart": 26,
+              "sourceEnd": 28,
+              "raw": "Whoopee Turnaround"
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "name": "To IV n Back +...",
+              "row": 3,
+              "sourceStart": 28,
+              "sourceEnd": 30,
+              "raw": "TolVn Back +..."
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "name": "On Off Twice To V",
+              "row": 3,
+              "sourceStart": 30,
+              "sourceEnd": 32,
+              "raw": "On Off Twice To V"
+            }
+          ]
+        }
+      ],
+      "baselineComparisonsToFirst": [
+        {
+          "section": 1,
+          "score": 1,
+          "rootScore": 1,
+          "shift": 0
+        },
+        {
+          "section": 2,
+          "score": 0.3984615384615384,
+          "rootScore": 0.3076923076923077,
+          "shift": 8
+        },
+        {
+          "section": 3,
+          "score": 0.1676923076923077,
+          "rootScore": 0.15384615384615385,
+          "shift": 2
+        },
+        {
+          "section": 4,
+          "score": 0.9855769230769231,
+          "rootScore": 0.9807692307692307,
+          "shift": 0
+        }
+      ],
+      "exactPrefixesToFirst": [
+        {
+          "section": 1,
+          "matchedBars": 8,
+          "comparedBars": 8,
+          "fraction": 1,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "a": "BbM7",
+              "b": "BbM7",
+              "equal": true
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "a": "Bo",
+              "b": "Bo",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "a": "Cm7",
+              "b": "Cm7",
+              "equal": true
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "a": "F7",
+              "b": "F7",
+              "equal": true
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "a": "BbM7",
+              "b": "BbM7",
+              "equal": true
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "a": "Bo",
+              "b": "Bo",
+              "equal": true
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "a": "Cm7",
+              "b": "Cm7",
+              "equal": true
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "a": "F7",
+              "b": "F7",
+              "equal": true
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "a": "BbM7",
+              "b": "BbM7",
+              "equal": true
+            },
+            {
+              "start": 4.5,
+              "end": 5,
+              "a": "Bb7",
+              "b": "Bb7",
+              "equal": true
+            },
+            {
+              "start": 5,
+              "end": 5.5,
+              "a": "EbM7",
+              "b": "EbM7",
+              "equal": true
+            },
+            {
+              "start": 5.5,
+              "end": 6,
+              "a": "Eo",
+              "b": "Eo",
+              "equal": true
+            },
+            {
+              "start": 6,
+              "end": 6.5,
+              "a": "BbM7",
+              "b": "BbM7",
+              "equal": true
+            },
+            {
+              "start": 6.5,
+              "end": 7,
+              "a": "F7",
+              "b": "F7",
+              "equal": true
+            },
+            {
+              "start": 7,
+              "end": 7.5,
+              "a": "BbM7",
+              "b": "BbM7",
+              "equal": true
+            },
+            {
+              "start": 7.5,
+              "end": 8,
+              "a": "A7",
+              "b": "A7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": null
+        },
+        {
+          "section": 2,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "BbM7",
+            "b": "DM7",
+            "equal": false
+          }
+        },
+        {
+          "section": 3,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "BbM7",
+            "b": "Bb7",
+            "equal": false
+          }
+        },
+        {
+          "section": 4,
+          "matchedBars": 7.5,
+          "comparedBars": 8,
+          "fraction": 0.9375,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "a": "BbM7",
+              "b": "BbM7",
+              "equal": true
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "a": "Bo",
+              "b": "Bo",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "a": "Cm7",
+              "b": "Cm7",
+              "equal": true
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "a": "F7",
+              "b": "F7",
+              "equal": true
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "a": "BbM7",
+              "b": "BbM7",
+              "equal": true
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "a": "Bo",
+              "b": "Bo",
+              "equal": true
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "a": "Cm7",
+              "b": "Cm7",
+              "equal": true
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "a": "F7",
+              "b": "F7",
+              "equal": true
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "a": "BbM7",
+              "b": "BbM7",
+              "equal": true
+            },
+            {
+              "start": 4.5,
+              "end": 5,
+              "a": "Bb7",
+              "b": "Bb7",
+              "equal": true
+            },
+            {
+              "start": 5,
+              "end": 5.5,
+              "a": "EbM7",
+              "b": "EbM7",
+              "equal": true
+            },
+            {
+              "start": 5.5,
+              "end": 6,
+              "a": "Eo",
+              "b": "Eo",
+              "equal": true
+            },
+            {
+              "start": 6,
+              "end": 6.5,
+              "a": "BbM7",
+              "b": "BbM7",
+              "equal": true
+            },
+            {
+              "start": 6.5,
+              "end": 7,
+              "a": "F7",
+              "b": "F7",
+              "equal": true
+            },
+            {
+              "start": 7,
+              "end": 7.5,
+              "a": "BbM7",
+              "b": "BbM7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": {
+            "start": 7.5,
+            "end": 8,
+            "a": "A7",
+            "b": "F7",
+            "equal": false
+          }
+        }
+      ],
+      "secondTranspositionComparisons": [
+        {
+          "shift": 8,
+          "matchedBars": 0.5,
+          "comparedBars": 8,
+          "fraction": 0.0625,
+          "shiftToAddToSecond": 8,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "a": "BbM7",
+              "b": "DM7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": {
+            "start": 0.5,
+            "end": 1,
+            "a": "Bo",
+            "b": "DM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 0,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "BbM7",
+            "b": "DM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 1,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 1,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "BbM7",
+            "b": "DM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 2,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 2,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "BbM7",
+            "b": "DM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 3,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 3,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "BbM7",
+            "b": "DM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 4,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 4,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "BbM7",
+            "b": "DM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 5,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 5,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "BbM7",
+            "b": "DM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 6,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 6,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "BbM7",
+            "b": "DM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 7,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 7,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "BbM7",
+            "b": "DM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 9,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 9,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "BbM7",
+            "b": "DM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 10,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 10,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "BbM7",
+            "b": "DM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 11,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 11,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "BbM7",
+            "b": "DM7",
+            "equal": false
+          }
+        }
+      ],
+      "decision": {
+        "recommendation": "ABCA",
+        "secondSectionIdentity": "B",
+        "reason": "The second eight-bar section opens with D-major POT+On / Perfect Cadence material and then moves to F major. The first section opens in Bb with two Whoopee Turnarounds and a different harmonic rhythm. No exact same-pitch common head exists.",
+        "visualEvidence": "Original PNG row 1 begins BbM7 Bo Cm7 F7 twice. Row 2 begins DM7 Em7 A7 DM7 and is labeled D Major followed by F Major. Row 3 is the contrasting four-chord Perfect Cadence / Dominant Cycle.",
+        "caution": "Some source labels and general cadence functions are shared; those do not justify merging this section with A."
+      }
+    },
+    {
+      "song": 191,
+      "title": "Somebody Loves Me",
+      "tonic": [
+        "F",
+        "Major"
+      ],
+      "bars": 32,
+      "sourceImage": "dist/source/roadmap-191.png",
+      "imageSha256": "4af1ddaa7801445a32587cc375c7a0807db374b5c110b7223a5771729271acb0",
+      "imageInspected": true,
+      "baselineForm": {
+        "family": "ABCA",
+        "pattern": "ABCA",
+        "sections": [
+          {
+            "start": 0,
+            "end": 8,
+            "label": "A",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 0,
+            "bars": 8
+          },
+          {
+            "start": 8,
+            "end": 16,
+            "label": "B",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 8,
+            "bars": 8
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "label": "C",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 16,
+            "bars": 8
+          },
+          {
+            "start": 24,
+            "end": 32,
+            "label": "A",
+            "similarity": 0.9423076923076923,
+            "transpose": 0,
+            "layoutRow": 1,
+            "layoutColumn": 0,
+            "bars": 8
+          }
+        ]
+      },
+      "currentForm": {
+        "song": 191,
+        "basis": "source-audit",
+        "family": "ABCA",
+        "pattern": "ABCA",
+        "aligned": true,
+        "columns": 24,
+        "sections": [
+          {
+            "start": 0,
+            "end": 8,
+            "label": "A",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 0,
+            "bars": 8
+          },
+          {
+            "start": 8,
+            "end": 16,
+            "label": "B",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 8,
+            "bars": 8
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "label": "C",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 16,
+            "bars": 8
+          },
+          {
+            "start": 24,
+            "end": 32,
+            "label": "A",
+            "similarity": 0.9423076923076923,
+            "transpose": 0,
+            "layoutRow": 1,
+            "layoutColumn": 0,
+            "bars": 8
+          }
+        ]
+      },
+      "sourceSections": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 0,
+          "bars": 8,
+          "chords": [
+            {
+              "start": 0,
+              "end": 1,
+              "symbol": "FM7",
+              "row": 0,
+              "sourceStart": 0,
+              "sourceEnd": 1,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "symbol": "Bb7",
+              "row": 0,
+              "sourceStart": 1,
+              "sourceEnd": 1.5,
+              "relativeToSongTonic": "F7"
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "symbol": "Eb7",
+              "row": 0,
+              "sourceStart": 1.5,
+              "sourceEnd": 2,
+              "relativeToSongTonic": "Bb7"
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "symbol": "FM7",
+              "row": 0,
+              "sourceStart": 2,
+              "sourceEnd": 3,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "symbol": "Bbm7",
+              "row": 0,
+              "sourceStart": 3,
+              "sourceEnd": 3.5,
+              "relativeToSongTonic": "Fm7"
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "symbol": "Eb7",
+              "row": 0,
+              "sourceStart": 3.5,
+              "sourceEnd": 4,
+              "relativeToSongTonic": "Bb7"
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "symbol": "FM7",
+              "row": 0,
+              "sourceStart": 4,
+              "sourceEnd": 4.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 4.5,
+              "end": 5,
+              "symbol": "D7",
+              "row": 0,
+              "sourceStart": 4.5,
+              "sourceEnd": 5,
+              "relativeToSongTonic": "A7"
+            },
+            {
+              "start": 5,
+              "end": 5.5,
+              "symbol": "G7",
+              "row": 0,
+              "sourceStart": 5,
+              "sourceEnd": 5.5,
+              "relativeToSongTonic": "D7"
+            },
+            {
+              "start": 5.5,
+              "end": 6,
+              "symbol": "C7",
+              "row": 0,
+              "sourceStart": 5.5,
+              "sourceEnd": 6,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 6,
+              "end": 6.5,
+              "symbol": "FM7",
+              "row": 0,
+              "sourceStart": 6,
+              "sourceEnd": 6.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 6.5,
+              "end": 7,
+              "symbol": "D7",
+              "row": 0,
+              "sourceStart": 6.5,
+              "sourceEnd": 7,
+              "relativeToSongTonic": "A7"
+            },
+            {
+              "start": 7,
+              "end": 7.5,
+              "symbol": "Gm7",
+              "row": 0,
+              "sourceStart": 7,
+              "sourceEnd": 7.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 7.5,
+              "end": 8,
+              "symbol": "C7",
+              "row": 0,
+              "sourceStart": 7.5,
+              "sourceEnd": 8,
+              "relativeToSongTonic": "G7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 1,
+              "name": "Major On",
+              "row": 0,
+              "sourceStart": 0,
+              "sourceEnd": 1,
+              "raw": "Major On"
+            },
+            {
+              "start": 1,
+              "end": 3,
+              "name": "IV n Yak",
+              "row": 0,
+              "sourceStart": 1,
+              "sourceEnd": 3,
+              "raw": "IV n Yak"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "name": "Yardbird Launcher",
+              "row": 0,
+              "sourceStart": 3,
+              "sourceEnd": 4,
+              "raw": "Yardbird Launcher"
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "name": "POT",
+              "row": 0,
+              "sourceStart": 4,
+              "sourceEnd": 6,
+              "raw": "POT"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "name": "POT",
+              "row": 0,
+              "sourceStart": 6,
+              "sourceEnd": 8,
+              "raw": "POT"
+            }
+          ]
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "B",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 8,
+          "bars": 8,
+          "chords": [
+            {
+              "start": 0,
+              "end": 1,
+              "symbol": "FM7",
+              "row": 1,
+              "sourceStart": 8,
+              "sourceEnd": 9,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "symbol": "Bb7",
+              "row": 1,
+              "sourceStart": 9,
+              "sourceEnd": 9.5,
+              "relativeToSongTonic": "F7"
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "symbol": "Eb7",
+              "row": 1,
+              "sourceStart": 9.5,
+              "sourceEnd": 10,
+              "relativeToSongTonic": "Bb7"
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "symbol": "Dm7",
+              "row": 1,
+              "sourceStart": 10,
+              "sourceEnd": 10.5,
+              "relativeToSongTonic": "Am7"
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "symbol": "Dm7/C",
+              "row": 1,
+              "sourceStart": 10.5,
+              "sourceEnd": 11,
+              "relativeToSongTonic": "Am7/G"
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "symbol": "Bm7b5",
+              "row": 1,
+              "sourceStart": 11,
+              "sourceEnd": 11.5,
+              "relativeToSongTonic": "F#m7b5"
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "symbol": "E7",
+              "row": 1,
+              "sourceStart": 11.5,
+              "sourceEnd": 12,
+              "relativeToSongTonic": "B7"
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "symbol": "Am",
+              "row": 1,
+              "sourceStart": 12,
+              "sourceEnd": 12.5,
+              "relativeToSongTonic": "Em"
+            },
+            {
+              "start": 4.5,
+              "end": 5,
+              "symbol": "F#m7b5",
+              "row": 1,
+              "sourceStart": 12.5,
+              "sourceEnd": 13,
+              "relativeToSongTonic": "C#m7b5"
+            },
+            {
+              "start": 5,
+              "end": 5.5,
+              "symbol": "F7",
+              "row": 1,
+              "sourceStart": 13,
+              "sourceEnd": 13.5,
+              "relativeToSongTonic": "C7"
+            },
+            {
+              "start": 5.5,
+              "end": 6,
+              "symbol": "E7",
+              "row": 1,
+              "sourceStart": 13.5,
+              "sourceEnd": 14,
+              "relativeToSongTonic": "B7"
+            },
+            {
+              "start": 6,
+              "end": 6.5,
+              "symbol": "Am7",
+              "row": 1,
+              "sourceStart": 14,
+              "sourceEnd": 14.5,
+              "relativeToSongTonic": "Em7"
+            },
+            {
+              "start": 6.5,
+              "end": 7,
+              "symbol": "E7",
+              "row": 1,
+              "sourceStart": 14.5,
+              "sourceEnd": 15,
+              "relativeToSongTonic": "B7"
+            },
+            {
+              "start": 7,
+              "end": 7.5,
+              "symbol": "Am7",
+              "row": 1,
+              "sourceStart": 15,
+              "sourceEnd": 15.5,
+              "relativeToSongTonic": "Em7"
+            },
+            {
+              "start": 7.5,
+              "end": 8,
+              "symbol": "D7",
+              "row": 1,
+              "sourceStart": 15.5,
+              "sourceEnd": 16,
+              "relativeToSongTonic": "A7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 1,
+              "name": "Major On",
+              "row": 1,
+              "sourceStart": 8,
+              "sourceEnd": 9,
+              "raw": "Major On"
+            },
+            {
+              "start": 1,
+              "end": 3,
+              "name": "Nowhere Minor Cadence",
+              "row": 1,
+              "sourceStart": 9,
+              "sourceEnd": 11,
+              "raw": "Nowhere Minor Cadence"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "name": "Sad Launcher",
+              "row": 1,
+              "sourceStart": 11,
+              "sourceEnd": 12,
+              "raw": "Sad Launcher"
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "name": "Nowhere Turnaround Minor",
+              "row": 1,
+              "sourceStart": 12,
+              "sourceEnd": 14,
+              "raw": "Nowhere Turnaround Minor"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "name": "Body & Soul Launcher",
+              "row": 1,
+              "sourceStart": 14,
+              "sourceEnd": 16,
+              "raw": "Body & Soul Launcher"
+            }
+          ]
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "C",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 16,
+          "bars": 8,
+          "chords": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "symbol": "Gm7",
+              "row": 2,
+              "sourceStart": 16,
+              "sourceEnd": 16.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "symbol": "D7",
+              "row": 2,
+              "sourceStart": 16.5,
+              "sourceEnd": 17,
+              "relativeToSongTonic": "A7"
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "symbol": "Gm7",
+              "row": 2,
+              "sourceStart": 17,
+              "sourceEnd": 17.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "symbol": "D7",
+              "row": 2,
+              "sourceStart": 17.5,
+              "sourceEnd": 18,
+              "relativeToSongTonic": "A7"
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "symbol": "Gm7",
+              "row": 2,
+              "sourceStart": 18,
+              "sourceEnd": 20,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 4,
+              "end": 5,
+              "symbol": "Dm7",
+              "row": 2,
+              "sourceStart": 20,
+              "sourceEnd": 21,
+              "relativeToSongTonic": "Am7"
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "symbol": "G7",
+              "row": 2,
+              "sourceStart": 21,
+              "sourceEnd": 22,
+              "relativeToSongTonic": "D7"
+            },
+            {
+              "start": 6,
+              "end": 7,
+              "symbol": "Gm7",
+              "row": 2,
+              "sourceStart": 22,
+              "sourceEnd": 23,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "symbol": "C7",
+              "row": 2,
+              "sourceStart": 23,
+              "sourceEnd": 24,
+              "relativeToSongTonic": "G7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 4,
+              "name": "On Off On Twice Minor V",
+              "row": 2,
+              "sourceStart": 16,
+              "sourceEnd": 20,
+              "raw": "On Off On Twice Minor V"
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "name": "Slow Launcher",
+              "row": 2,
+              "sourceStart": 20,
+              "sourceEnd": 24,
+              "raw": "Slow Launcher"
+            }
+          ]
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "A",
+          "similarity": 0.9423076923076923,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 0,
+          "bars": 8,
+          "chords": [
+            {
+              "start": 0,
+              "end": 1,
+              "symbol": "FM7",
+              "row": 3,
+              "sourceStart": 24,
+              "sourceEnd": 25,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "symbol": "Bb7",
+              "row": 3,
+              "sourceStart": 25,
+              "sourceEnd": 25.5,
+              "relativeToSongTonic": "F7"
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "symbol": "Eb7",
+              "row": 3,
+              "sourceStart": 25.5,
+              "sourceEnd": 26,
+              "relativeToSongTonic": "Bb7"
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "symbol": "FM7",
+              "row": 3,
+              "sourceStart": 26,
+              "sourceEnd": 27,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "symbol": "Bbm7",
+              "row": 3,
+              "sourceStart": 27,
+              "sourceEnd": 27.5,
+              "relativeToSongTonic": "Fm7"
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "symbol": "Eb7",
+              "row": 3,
+              "sourceStart": 27.5,
+              "sourceEnd": 28,
+              "relativeToSongTonic": "Bb7"
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "symbol": "FM7",
+              "row": 3,
+              "sourceStart": 28,
+              "sourceEnd": 28.5,
+              "relativeToSongTonic": "CM7"
+            },
+            {
+              "start": 4.5,
+              "end": 5,
+              "symbol": "D7",
+              "row": 3,
+              "sourceStart": 28.5,
+              "sourceEnd": 29,
+              "relativeToSongTonic": "A7"
+            },
+            {
+              "start": 5,
+              "end": 5.5,
+              "symbol": "G7",
+              "row": 3,
+              "sourceStart": 29,
+              "sourceEnd": 29.5,
+              "relativeToSongTonic": "D7"
+            },
+            {
+              "start": 5.5,
+              "end": 6,
+              "symbol": "C7",
+              "row": 3,
+              "sourceStart": 29.5,
+              "sourceEnd": 30,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "symbol": "FM7",
+              "row": 3,
+              "sourceStart": 30,
+              "sourceEnd": 32,
+              "relativeToSongTonic": "CM7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 1,
+              "name": "Major On",
+              "row": 3,
+              "sourceStart": 24,
+              "sourceEnd": 25,
+              "raw": "Major On"
+            },
+            {
+              "start": 1,
+              "end": 3,
+              "name": "IV n Yak",
+              "row": 3,
+              "sourceStart": 25,
+              "sourceEnd": 27,
+              "raw": "IV n Yak"
+            },
+            {
+              "start": 3,
+              "end": 4.5,
+              "name": "IV n Yak",
+              "row": 3,
+              "sourceStart": 27,
+              "sourceEnd": 28.5,
+              "raw": "IV n Yak"
+            },
+            {
+              "start": 4.5,
+              "end": 8,
+              "name": "Dominant Cycle Cadence",
+              "row": 3,
+              "sourceStart": 28.5,
+              "sourceEnd": 32,
+              "raw": "Dominant Cycle Cadence"
+            }
+          ]
+        }
+      ],
+      "baselineComparisonsToFirst": [
+        {
+          "section": 1,
+          "score": 1,
+          "rootScore": 1,
+          "shift": 0
+        },
+        {
+          "section": 2,
+          "score": 0.3798076923076923,
+          "rootScore": 0.3076923076923077,
+          "shift": 0
+        },
+        {
+          "section": 3,
+          "score": 0.2975,
+          "rootScore": 0.3076923076923077,
+          "shift": 3
+        },
+        {
+          "section": 4,
+          "score": 0.9423076923076923,
+          "rootScore": 0.9423076923076923,
+          "shift": 0
+        }
+      ],
+      "exactPrefixesToFirst": [
+        {
+          "section": 1,
+          "matchedBars": 8,
+          "comparedBars": 8,
+          "fraction": 1,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 1,
+              "a": "FM7",
+              "b": "FM7",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "a": "Bb7",
+              "b": "Bb7",
+              "equal": true
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "a": "Eb7",
+              "b": "Eb7",
+              "equal": true
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "a": "FM7",
+              "b": "FM7",
+              "equal": true
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "a": "Bbm7",
+              "b": "Bbm7",
+              "equal": true
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "a": "Eb7",
+              "b": "Eb7",
+              "equal": true
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "a": "FM7",
+              "b": "FM7",
+              "equal": true
+            },
+            {
+              "start": 4.5,
+              "end": 5,
+              "a": "D7",
+              "b": "D7",
+              "equal": true
+            },
+            {
+              "start": 5,
+              "end": 5.5,
+              "a": "G7",
+              "b": "G7",
+              "equal": true
+            },
+            {
+              "start": 5.5,
+              "end": 6,
+              "a": "C7",
+              "b": "C7",
+              "equal": true
+            },
+            {
+              "start": 6,
+              "end": 6.5,
+              "a": "FM7",
+              "b": "FM7",
+              "equal": true
+            },
+            {
+              "start": 6.5,
+              "end": 7,
+              "a": "D7",
+              "b": "D7",
+              "equal": true
+            },
+            {
+              "start": 7,
+              "end": 7.5,
+              "a": "Gm7",
+              "b": "Gm7",
+              "equal": true
+            },
+            {
+              "start": 7.5,
+              "end": 8,
+              "a": "C7",
+              "b": "C7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": null
+        },
+        {
+          "section": 2,
+          "matchedBars": 2,
+          "comparedBars": 8,
+          "fraction": 0.25,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 1,
+              "a": "FM7",
+              "b": "FM7",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "a": "Bb7",
+              "b": "Bb7",
+              "equal": true
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "a": "Eb7",
+              "b": "Eb7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": {
+            "start": 2,
+            "end": 2.5,
+            "a": "FM7",
+            "b": "Dm7",
+            "equal": false
+          }
+        },
+        {
+          "section": 3,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 0.5,
+            "a": "FM7",
+            "b": "Gm7",
+            "equal": false
+          }
+        },
+        {
+          "section": 4,
+          "matchedBars": 6.5,
+          "comparedBars": 8,
+          "fraction": 0.8125,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 1,
+              "a": "FM7",
+              "b": "FM7",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "a": "Bb7",
+              "b": "Bb7",
+              "equal": true
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "a": "Eb7",
+              "b": "Eb7",
+              "equal": true
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "a": "FM7",
+              "b": "FM7",
+              "equal": true
+            },
+            {
+              "start": 3,
+              "end": 3.5,
+              "a": "Bbm7",
+              "b": "Bbm7",
+              "equal": true
+            },
+            {
+              "start": 3.5,
+              "end": 4,
+              "a": "Eb7",
+              "b": "Eb7",
+              "equal": true
+            },
+            {
+              "start": 4,
+              "end": 4.5,
+              "a": "FM7",
+              "b": "FM7",
+              "equal": true
+            },
+            {
+              "start": 4.5,
+              "end": 5,
+              "a": "D7",
+              "b": "D7",
+              "equal": true
+            },
+            {
+              "start": 5,
+              "end": 5.5,
+              "a": "G7",
+              "b": "G7",
+              "equal": true
+            },
+            {
+              "start": 5.5,
+              "end": 6,
+              "a": "C7",
+              "b": "C7",
+              "equal": true
+            },
+            {
+              "start": 6,
+              "end": 6.5,
+              "a": "FM7",
+              "b": "FM7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": {
+            "start": 6.5,
+            "end": 7,
+            "a": "D7",
+            "b": "FM7",
+            "equal": false
+          }
+        }
+      ],
+      "secondTranspositionComparisons": [
+        {
+          "shift": 0,
+          "matchedBars": 2,
+          "comparedBars": 8,
+          "fraction": 0.25,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 1,
+              "a": "FM7",
+              "b": "FM7",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "a": "Bb7",
+              "b": "Bb7",
+              "equal": true
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "a": "Eb7",
+              "b": "Eb7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": {
+            "start": 2,
+            "end": 2.5,
+            "a": "FM7",
+            "b": "Dm7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 1,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 1,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "FM7",
+            "b": "FM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 2,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 2,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "FM7",
+            "b": "FM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 3,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 3,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "FM7",
+            "b": "FM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 4,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 4,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "FM7",
+            "b": "FM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 5,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 5,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "FM7",
+            "b": "FM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 6,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 6,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "FM7",
+            "b": "FM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 7,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 7,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "FM7",
+            "b": "FM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 8,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 8,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "FM7",
+            "b": "FM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 9,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 9,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "FM7",
+            "b": "FM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 10,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 10,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "FM7",
+            "b": "FM7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 11,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 11,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "FM7",
+            "b": "FM7",
+            "equal": false
+          }
+        }
+      ],
+      "decision": {
+        "recommendation": "ABCA",
+        "secondSectionIdentity": "B",
+        "reason": "Only the first two of eight bars match exactly: FM7 Bb7 Eb7. From bar 3 the second section moves through Dm7/C, Bm7b5 E7 and A-minor turnaround material, while A returns to F and repeats POT. Six of eight bars follow a different trajectory.",
+        "visualEvidence": "Original PNG rows 1 and 2 both start Major On followed by Bb7 Eb7, but row 2 labels Nowhere Minor Cadence, Sad Launcher, Nowhere Turnaround Minor and Body & Soul Launcher, departing into D/A/G key areas.",
+        "caution": "A shared tonic opening and one shared two-chord move is insufficient for section-wide A identity. This is the key negative case against an overly permissive prefix rule."
+      }
+    },
+    {
+      "song": 241,
+      "title": "Yours Is My Heart Alone",
+      "tonic": [
+        "C",
+        "Major"
+      ],
+      "bars": 32,
+      "sourceImage": "dist/source/roadmap-241.png",
+      "imageSha256": "8f60cc98ba6831c9740a6f8a07770e145130a56d4d1e71e376bdfc17ccf8dfd5",
+      "imageInspected": true,
+      "baselineForm": {
+        "family": "ABCA",
+        "pattern": "ABCA",
+        "sections": [
+          {
+            "start": 0,
+            "end": 8,
+            "label": "A",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 0,
+            "bars": 8
+          },
+          {
+            "start": 8,
+            "end": 16,
+            "label": "B",
+            "similarity": 0.7163461538461539,
+            "transpose": 0,
+            "variation": true,
+            "layoutRow": 1,
+            "layoutColumn": 0,
+            "bars": 8
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "label": "C",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 1,
+            "layoutColumn": 8,
+            "bars": 8
+          },
+          {
+            "start": 24,
+            "end": 32,
+            "label": "A",
+            "similarity": 0.9230769230769231,
+            "transpose": 0,
+            "layoutRow": 2,
+            "layoutColumn": 0,
+            "bars": 8
+          }
+        ]
+      },
+      "currentForm": {
+        "song": 241,
+        "basis": "source-audit",
+        "family": "AABA",
+        "pattern": "AABA",
+        "aligned": true,
+        "columns": 16,
+        "sections": [
+          {
+            "start": 0,
+            "end": 8,
+            "label": "A",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 0,
+            "layoutColumn": 0,
+            "bars": 8
+          },
+          {
+            "start": 8,
+            "end": 16,
+            "label": "A",
+            "similarity": 0.7163461538461539,
+            "transpose": 0,
+            "variation": true,
+            "layoutRow": 1,
+            "layoutColumn": 0,
+            "bars": 8
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "label": "B",
+            "similarity": 1,
+            "transpose": 0,
+            "layoutRow": 1,
+            "layoutColumn": 8,
+            "bars": 8
+          },
+          {
+            "start": 24,
+            "end": 32,
+            "label": "A",
+            "similarity": 0.9230769230769231,
+            "transpose": 0,
+            "layoutRow": 2,
+            "layoutColumn": 0,
+            "bars": 8
+          }
+        ]
+      },
+      "sourceSections": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 0,
+          "bars": 8,
+          "chords": [
+            {
+              "start": 0,
+              "end": 1,
+              "symbol": "F#m7b5",
+              "row": 0,
+              "sourceStart": 0,
+              "sourceEnd": 1,
+              "relativeToSongTonic": "F#m7b5"
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "symbol": "B7",
+              "row": 0,
+              "sourceStart": 1,
+              "sourceEnd": 2,
+              "relativeToSongTonic": "B7"
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "symbol": "Em7",
+              "row": 0,
+              "sourceStart": 2,
+              "sourceEnd": 3,
+              "relativeToSongTonic": "Em7"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "symbol": "A7",
+              "row": 0,
+              "sourceStart": 3,
+              "sourceEnd": 4,
+              "relativeToSongTonic": "A7"
+            },
+            {
+              "start": 4,
+              "end": 5,
+              "symbol": "Dm7",
+              "row": 0,
+              "sourceStart": 4,
+              "sourceEnd": 5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "symbol": "G7",
+              "row": 0,
+              "sourceStart": 5,
+              "sourceEnd": 6,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 6,
+              "end": 6.5,
+              "symbol": "Em7",
+              "row": 0,
+              "sourceStart": 6,
+              "sourceEnd": 6.5,
+              "relativeToSongTonic": "Em7"
+            },
+            {
+              "start": 6.5,
+              "end": 7,
+              "symbol": "A7",
+              "row": 0,
+              "sourceStart": 6.5,
+              "sourceEnd": 7,
+              "relativeToSongTonic": "A7"
+            },
+            {
+              "start": 7,
+              "end": 7.5,
+              "symbol": "Dm7",
+              "row": 0,
+              "sourceStart": 7,
+              "sourceEnd": 7.5,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 7.5,
+              "end": 8,
+              "symbol": "G7",
+              "row": 0,
+              "sourceStart": 7.5,
+              "sourceEnd": 8,
+              "relativeToSongTonic": "G7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 6,
+              "name": "Starlight Launcher",
+              "row": 0,
+              "sourceStart": 0,
+              "sourceEnd": 6,
+              "raw": "Starlight Launcher"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "name": "SPOT",
+              "row": 0,
+              "sourceStart": 6,
+              "sourceEnd": 8,
+              "raw": "SPOT"
+            }
+          ]
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "A",
+          "similarity": 0.7163461538461539,
+          "transpose": 0,
+          "variation": true,
+          "layoutRow": 1,
+          "layoutColumn": 0,
+          "bars": 8,
+          "chords": [
+            {
+              "start": 0,
+              "end": 1,
+              "symbol": "F#m7b5",
+              "row": 1,
+              "sourceStart": 8,
+              "sourceEnd": 9,
+              "relativeToSongTonic": "F#m7b5"
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "symbol": "B7",
+              "row": 1,
+              "sourceStart": 9,
+              "sourceEnd": 10,
+              "relativeToSongTonic": "B7"
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "symbol": "Em7",
+              "row": 1,
+              "sourceStart": 10,
+              "sourceEnd": 11,
+              "relativeToSongTonic": "Em7"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "symbol": "A7",
+              "row": 1,
+              "sourceStart": 11,
+              "sourceEnd": 12,
+              "relativeToSongTonic": "A7"
+            },
+            {
+              "start": 4,
+              "end": 5,
+              "symbol": "Am7",
+              "row": 1,
+              "sourceStart": 12,
+              "sourceEnd": 13,
+              "relativeToSongTonic": "Am7"
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "symbol": "D7",
+              "row": 1,
+              "sourceStart": 13,
+              "sourceEnd": 14,
+              "relativeToSongTonic": "D7"
+            },
+            {
+              "start": 6,
+              "end": 7,
+              "symbol": "Dm7",
+              "row": 1,
+              "sourceStart": 14,
+              "sourceEnd": 15,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "symbol": "G7",
+              "row": 1,
+              "sourceStart": 15,
+              "sourceEnd": 16,
+              "relativeToSongTonic": "G7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 4,
+              "name": "SPOT",
+              "row": 1,
+              "sourceStart": 8,
+              "sourceEnd": 12,
+              "raw": "SPOT"
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "name": "Slow Launcher",
+              "row": 1,
+              "sourceStart": 12,
+              "sourceEnd": 16,
+              "raw": "Slow Launcher"
+            }
+          ]
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "B",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 8,
+          "bars": 8,
+          "chords": [
+            {
+              "start": 0,
+              "end": 1,
+              "symbol": "Em7b5",
+              "row": 2,
+              "sourceStart": 16,
+              "sourceEnd": 17,
+              "relativeToSongTonic": "Em7b5"
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "symbol": "A7",
+              "row": 2,
+              "sourceStart": 17,
+              "sourceEnd": 18,
+              "relativeToSongTonic": "A7"
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "symbol": "Dm7",
+              "row": 2,
+              "sourceStart": 18,
+              "sourceEnd": 20,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 4,
+              "end": 5,
+              "symbol": "Fm7",
+              "row": 2,
+              "sourceStart": 20,
+              "sourceEnd": 21,
+              "relativeToSongTonic": "Fm7"
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "symbol": "Bb7",
+              "row": 2,
+              "sourceStart": 21,
+              "sourceEnd": 22,
+              "relativeToSongTonic": "Bb7"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "symbol": "CM7",
+              "row": 2,
+              "sourceStart": 22,
+              "sourceEnd": 24,
+              "relativeToSongTonic": "CM7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 4,
+              "name": "Sad Cadence",
+              "row": 2,
+              "sourceStart": 16,
+              "sourceEnd": 20,
+              "raw": "Sad Cadence"
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "name": "Yardbird Cadence",
+              "row": 2,
+              "sourceStart": 20,
+              "sourceEnd": 24,
+              "raw": "Yardbird Cadence"
+            }
+          ]
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "A",
+          "similarity": 0.9230769230769231,
+          "transpose": 0,
+          "layoutRow": 2,
+          "layoutColumn": 0,
+          "bars": 8,
+          "chords": [
+            {
+              "start": 0,
+              "end": 1,
+              "symbol": "F#m7b5",
+              "row": 3,
+              "sourceStart": 24,
+              "sourceEnd": 25,
+              "relativeToSongTonic": "F#m7b5"
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "symbol": "B7",
+              "row": 3,
+              "sourceStart": 25,
+              "sourceEnd": 26,
+              "relativeToSongTonic": "B7"
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "symbol": "Em7",
+              "row": 3,
+              "sourceStart": 26,
+              "sourceEnd": 27,
+              "relativeToSongTonic": "Em7"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "symbol": "A7",
+              "row": 3,
+              "sourceStart": 27,
+              "sourceEnd": 28,
+              "relativeToSongTonic": "A7"
+            },
+            {
+              "start": 4,
+              "end": 5,
+              "symbol": "Dm7",
+              "row": 3,
+              "sourceStart": 28,
+              "sourceEnd": 29,
+              "relativeToSongTonic": "Dm7"
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "symbol": "G7",
+              "row": 3,
+              "sourceStart": 29,
+              "sourceEnd": 30,
+              "relativeToSongTonic": "G7"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "symbol": "CM7",
+              "row": 3,
+              "sourceStart": 30,
+              "sourceEnd": 32,
+              "relativeToSongTonic": "CM7"
+            }
+          ],
+          "bricks": [
+            {
+              "start": 0,
+              "end": 8,
+              "name": "Starlight Cadence",
+              "row": 3,
+              "sourceStart": 24,
+              "sourceEnd": 32,
+              "raw": "Starlight Cadence"
+            }
+          ]
+        }
+      ],
+      "baselineComparisonsToFirst": [
+        {
+          "section": 1,
+          "score": 1,
+          "rootScore": 1,
+          "shift": 0
+        },
+        {
+          "section": 2,
+          "score": 0.7163461538461539,
+          "rootScore": 0.6346153846153846,
+          "shift": 0
+        },
+        {
+          "section": 3,
+          "score": 0.5378846153846154,
+          "rootScore": 0.4807692307692308,
+          "shift": 2
+        },
+        {
+          "section": 4,
+          "score": 0.9230769230769231,
+          "rootScore": 0.9230769230769231,
+          "shift": 0
+        }
+      ],
+      "exactPrefixesToFirst": [
+        {
+          "section": 1,
+          "matchedBars": 8,
+          "comparedBars": 8,
+          "fraction": 1,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 1,
+              "a": "F#m7b5",
+              "b": "F#m7b5",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "a": "B7",
+              "b": "B7",
+              "equal": true
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "a": "Em7",
+              "b": "Em7",
+              "equal": true
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "a": "A7",
+              "b": "A7",
+              "equal": true
+            },
+            {
+              "start": 4,
+              "end": 5,
+              "a": "Dm7",
+              "b": "Dm7",
+              "equal": true
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "a": "G7",
+              "b": "G7",
+              "equal": true
+            },
+            {
+              "start": 6,
+              "end": 6.5,
+              "a": "Em7",
+              "b": "Em7",
+              "equal": true
+            },
+            {
+              "start": 6.5,
+              "end": 7,
+              "a": "A7",
+              "b": "A7",
+              "equal": true
+            },
+            {
+              "start": 7,
+              "end": 7.5,
+              "a": "Dm7",
+              "b": "Dm7",
+              "equal": true
+            },
+            {
+              "start": 7.5,
+              "end": 8,
+              "a": "G7",
+              "b": "G7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": null
+        },
+        {
+          "section": 2,
+          "matchedBars": 4,
+          "comparedBars": 8,
+          "fraction": 0.5,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 1,
+              "a": "F#m7b5",
+              "b": "F#m7b5",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "a": "B7",
+              "b": "B7",
+              "equal": true
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "a": "Em7",
+              "b": "Em7",
+              "equal": true
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "a": "A7",
+              "b": "A7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": {
+            "start": 4,
+            "end": 5,
+            "a": "Dm7",
+            "b": "Am7",
+            "equal": false
+          }
+        },
+        {
+          "section": 3,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "F#m7b5",
+            "b": "Em7b5",
+            "equal": false
+          }
+        },
+        {
+          "section": 4,
+          "matchedBars": 6,
+          "comparedBars": 8,
+          "fraction": 0.75,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 1,
+              "a": "F#m7b5",
+              "b": "F#m7b5",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "a": "B7",
+              "b": "B7",
+              "equal": true
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "a": "Em7",
+              "b": "Em7",
+              "equal": true
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "a": "A7",
+              "b": "A7",
+              "equal": true
+            },
+            {
+              "start": 4,
+              "end": 5,
+              "a": "Dm7",
+              "b": "Dm7",
+              "equal": true
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "a": "G7",
+              "b": "G7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": {
+            "start": 6,
+            "end": 6.5,
+            "a": "Em7",
+            "b": "CM7",
+            "equal": false
+          }
+        }
+      ],
+      "secondTranspositionComparisons": [
+        {
+          "shift": 0,
+          "matchedBars": 4,
+          "comparedBars": 8,
+          "fraction": 0.5,
+          "shiftToAddToSecond": 0,
+          "matchedCells": [
+            {
+              "start": 0,
+              "end": 1,
+              "a": "F#m7b5",
+              "b": "F#m7b5",
+              "equal": true
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "a": "B7",
+              "b": "B7",
+              "equal": true
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "a": "Em7",
+              "b": "Em7",
+              "equal": true
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "a": "A7",
+              "b": "A7",
+              "equal": true
+            }
+          ],
+          "firstMismatch": {
+            "start": 4,
+            "end": 5,
+            "a": "Dm7",
+            "b": "Am7",
+            "equal": false
+          }
+        },
+        {
+          "shift": 1,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 1,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "F#m7b5",
+            "b": "F#m7b5",
+            "equal": false
+          }
+        },
+        {
+          "shift": 2,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 2,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "F#m7b5",
+            "b": "F#m7b5",
+            "equal": false
+          }
+        },
+        {
+          "shift": 3,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 3,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "F#m7b5",
+            "b": "F#m7b5",
+            "equal": false
+          }
+        },
+        {
+          "shift": 4,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 4,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "F#m7b5",
+            "b": "F#m7b5",
+            "equal": false
+          }
+        },
+        {
+          "shift": 5,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 5,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "F#m7b5",
+            "b": "F#m7b5",
+            "equal": false
+          }
+        },
+        {
+          "shift": 6,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 6,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "F#m7b5",
+            "b": "F#m7b5",
+            "equal": false
+          }
+        },
+        {
+          "shift": 7,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 7,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "F#m7b5",
+            "b": "F#m7b5",
+            "equal": false
+          }
+        },
+        {
+          "shift": 8,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 8,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "F#m7b5",
+            "b": "F#m7b5",
+            "equal": false
+          }
+        },
+        {
+          "shift": 9,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 9,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "F#m7b5",
+            "b": "F#m7b5",
+            "equal": false
+          }
+        },
+        {
+          "shift": 10,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 10,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "F#m7b5",
+            "b": "F#m7b5",
+            "equal": false
+          }
+        },
+        {
+          "shift": 11,
+          "matchedBars": 0,
+          "comparedBars": 8,
+          "fraction": 0,
+          "shiftToAddToSecond": 11,
+          "matchedCells": [],
+          "firstMismatch": {
+            "start": 0,
+            "end": 1,
+            "a": "F#m7b5",
+            "b": "F#m7b5",
+            "equal": false
+          }
+        }
+      ],
+      "decision": {
+        "recommendation": "AABA",
+        "secondSectionIdentity": "A",
+        "reason": "The first four bars of sections 1 and 2 are exactly F#m7b5 B7 Em7 A7, at identical one-bar durations. Section 2 changes the following four bars to Am7 D7 Dm7 G7, forming a different route to the later section. The full shared first half supports A variation even though dictionary brick labels differ.",
+        "visualEvidence": "Original PNG first row Starlight Launcher and second-row SPOT share the same opening four chords. The second row continues Slow Launcher; third row is Sad Cadence / Yardbird Cadence; fourth row Starlight Cadence again shares the opening.",
+        "caution": "The source assigns C Major to the first opening but D Major to the second SPOT, despite identical chord pitches. Use actual chord head identity, not equality of the displayed key labels, to recognize this A variation."
+      }
+    }
+  ]
+}

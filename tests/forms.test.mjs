@@ -14,3 +14,9 @@ test('form layout preserves chronological coverage and exact chord spans for eve
  for(const c of original){const spans=sliced.filter(x=>x.symbol===c.symbol&&x.start>=c.start&&x.end<=c.end);assert.ok(spans.some(x=>x.start===c.start));assert.ok(spans.some(x=>x.end===c.end));assert.equal(spans.reduce((n,s)=>n+s.end-s.start,0),c.end-c.start);}
  }
 });
+
+test('all six former ABCA forms are source-reviewed without conflating unrelated second sections',()=>{
+ for(const index of [16,94,241]){const form=analyzeForm(songs[index]);assert.equal(form.basis,'source-audit');assert.equal(form.pattern,'AABA');assert.equal(form.sections[1].variation,true);assert.deepEqual(form.sections.map(s=>[s.layoutRow,s.layoutColumn]),[[0,0],[1,0],[1,form.sections[1].bars],[2,0]]);}
+ for(const index of [97,112,191]){const form=analyzeForm(songs[index]);assert.equal(form.basis,'source-audit');assert.equal(form.pattern,'ABCA');assert.notEqual(form.sections[1].layoutColumn,0);assert.equal(form.sections[1].variation,undefined);}
+ const bemsha=analyzeForm(songs[16]);assert.equal(bemsha.columns,8);assert.deepEqual(bemsha.sections.map(s=>s.start),[0,4,8,12]);assert.equal(analyzeForm(songs[97]).sections[3].bars,12);
+});

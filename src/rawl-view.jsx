@@ -5,10 +5,11 @@ import {pitch,mod,chordParts,roman} from '../dist/harmony.mjs';
 import {modulationAt} from './music/modulations.mjs';
 import {RAWL_COLORS} from '../packages/rawl-notation/src/palette.mjs';
 
-function HostView({song,performance,brickMap,onSeek,onNote,controller,mutedVoices,selected,compact=false,form=null}){
+function HostView({song,performance,brickMap,onSeek,onNote,controller,mutedVoices,selected,compact=false,form=null,measureWidth=null}){
  const [mobile,setMobile]=useState(()=>matchMedia('(max-width:760px)').matches),notation=useRef(null);
  useEffect(()=>{const q=matchMedia('(max-width:760px)'),fn=()=>setMobile(q.matches);q.addEventListener('change',fn);return()=>q.removeEventListener('change',fn);},[]);
- const rows=React.useMemo(()=>form?.aligned&&!compact?form.sections.map(s=>({start:s.start*performance.barBeats,end:s.end*performance.barBeats,section:s.label,style:{gridRow:s.layoutRow+1,gridColumn:`${s.layoutColumn+1} / span ${s.bars}`}})):performance.rows.flatMap(r=>{const out=[],step=(compact||mobile?4:8)*performance.barBeats;for(let start=r.start;start<r.end;start+=step)out.push({start,end:Math.min(r.end,start+step)});return out;}),[performance,mobile,compact,form]);
+ const layoutRows=React.useMemo(()=>form?.aligned&&!compact?form.sections.map(s=>({start:s.start*performance.barBeats,end:s.end*performance.barBeats,section:s.label,style:{gridRow:s.layoutRow+1,gridColumn:`${s.layoutColumn+1} / span ${s.bars}`}})):performance.rows.flatMap(r=>{const out=[],step=(compact||mobile?4:8)*performance.barBeats;for(let start=r.start;start<r.end;start+=step)out.push({start,end:Math.min(r.end,start+step)});return out;}),[performance,mobile,compact,form]);
+ const rows=React.useMemo(()=>measureWidth?layoutRows.map(row=>({...row,style:{...row.style,width:(row.end-row.start)/performance.barBeats*measureWidth}})):layoutRows,[layoutRows,performance.barBeats,measureWidth]);
  useEffect(()=>{controller.current=notation.current;notation.current?.setPosition(controller.position);return()=>{controller.current=null;};});
  const changes=performance.changes;
  const header=row=>song.rows.flatMap(r=>r.bricks.map(b=>({...b,start:(r.startBar+b.start)*performance.barBeats,end:(r.startBar+b.end)*performance.barBeats}))).filter(b=>b.start<row.end&&b.end>row.start).map((b,i)=>{

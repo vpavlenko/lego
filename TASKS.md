@@ -27,4 +27,12 @@ Implementation status for the current combined delivery. All requests are implem
 | Request | Status | Evidence / next step |
 |---|---|---|
 | Single grouped Bricks catalogue | Verified locally | Bricks navigation and detail back links point to bricks.html; legacy #bricks and atlas.html redirect; alphabetical catalogue removed |
-| AABA subgroups | Auditing | Compare A-ending bricks and B sequences from actual timed source passages |
+| AABA subgroups | Audited, UI proposal only | Corrected 99-song membership; recommend B-entry key groups plus overlapping A-brick facets; evidence/aaba-subgroups.json |
+
+| Review all ABCA classifications | Verified locally | Six source maps reviewed; Bemsha Swing, I Wish You Love, Yours Is My Heart Alone use AABA with second-A variation; three contrasting second sections retained |
+
+| Fixed-width brick examples | Verified locally | Every brick-detail measure is 150 CSS pixels; overflow scrolls horizontally |
+
+| Linear standard usage lists | Verified locally | Comma-separated titles with measure links immediately after each title; standard numbers and table-like rows removed |
+
+Release checks: 43 passed; Safari verified the catalogue entry and legacy redirect, Bemsha A alignment, 150px measures, and inline standard usages. Publication pending.
