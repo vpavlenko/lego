@@ -6,3 +6,4 @@ export function createPlayer(callbacks={}){
 }
 
 export {encodeMidi} from './music/midi.mjs';
+export {bindTempoKeys} from 'librawl/audio';

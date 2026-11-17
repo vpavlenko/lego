@@ -19,6 +19,7 @@ test('IV-and patterns share a group across cadence, turnaround, deceptive and dr
  const groups=groupBricks(bricks,types),family=groups.find(g=>g.type==='IV and');assert.deepEqual(family.bricks.map(b=>b.name),['IV n Bird','IV and Yak',"IV 'n' Back",'To IV n Bird SPOT','IV & Hack']);
  assert.equal(family.bricks.find(b=>b.name==='IV n Bird').classification.type,'Deceptive-Cadence');assert.equal(family.bricks.find(b=>b.name==='To IV n Bird SPOT').classification.type,'Turnaround');assert.equal(groups.find(g=>g.bricks.some(b=>b.name==='To IV')).type,'Cadence');
  assert.ok(!family.bricks.some(b=>/^II n|^Diatonic/.test(b.name)));
+ assert.ok(groups.find(g=>g.type==='II and'));assert.ok(groups.find(g=>g.type==='Diatonic'));
 });
 
 test('all live catalogue and drawer identities get the same group with descending composition popularity and unchanged classification',()=>{

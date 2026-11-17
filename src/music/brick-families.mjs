@@ -1,5 +1,6 @@
 import {slugify} from './bricks.mjs';
 
+const displayNames={'Whoopee':'vii°7/ii–ii–V–I','Whoopee Turnaround':'I–vii°/ii–ii–V'};
 const roles=['Approach','Cadence','Launcher'];
 const clipped=name=>/\.{2,}|…/.test(name);
 const tidy=name=>name.replace(/\s+/g,' ').trim();
@@ -95,7 +96,7 @@ export function buildLearnerBrickIndex(sourceIndex){
   for(const b of members)for(const match of b.standards){if(!matches.has(match.song))matches.set(match.song,{song:match.song,title:match.title,passages:[]});for(const passage of match.passages)matches.get(match.song).passages.push({...passage});}
   const standards=[...matches.values()].sort((a,b)=>a.song-b.song);for(const match of standards)match.passages.sort((a,b)=>a.start-b.start||a.end-b.end||a.row-b.row||a.label.localeCompare(b.label));
   const passages=standards.reduce((n,match)=>n+match.passages.length,0),chosen=representative(members,name);
-  bricks.push({name,slug,aliases,aliasSlugs,standards,passages,clipped:members.every(b=>b.clipped),sourceNames,sourceSlugs,representativeName:chosen.name});
+  bricks.push({name:displayNames[name]??name,slug,aliases:displayNames[name]?[...new Set([...aliases,name])]:aliases,aliasSlugs,standards,passages,clipped:members.every(b=>b.clipped),sourceNames,sourceSlugs,representativeName:chosen.name});
  }
  return {version:4,sourceLabels:sourceIndex.sourceLabels,totalStandards:sourceIndex.totalStandards,sourceBricks:source.length,bricks};
 }

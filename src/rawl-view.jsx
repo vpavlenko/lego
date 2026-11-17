@@ -4,6 +4,7 @@ import {RawlNotation,RawlMeasureHeader} from 'librawl';
 import {pitch,mod,chordParts,chordDisplay,roman} from '../dist/harmony.mjs';
 import {modulationAt} from './music/modulations.mjs';
 import {notationRows} from './music/notation-rows.mjs';
+import {brickNameParts} from './music/brick-labels.mjs';
 import {RAWL_COLORS} from 'librawl/palette';
 
 function HostView({song,performance,brickMap,onSeek,onNote,onNoteHover,onMeasureSelect,selectedMeasure=null,controller,mutedVoices,selected,compact=false,form=null,measureWidth=null,barsPerRow=null,continuous=false}){
@@ -14,9 +15,9 @@ function HostView({song,performance,brickMap,onSeek,onNote,onNoteHover,onMeasure
  const changes=performance.changes;
  const header=row=>song.rows.flatMap(r=>r.bricks.map(b=>({...b,start:(r.startBar+b.start)*performance.barBeats,end:(r.startBar+b.end)*performance.barBeats}))).filter(b=>b.start<row.end&&b.end>row.start).map((b,i)=>{
   const span=row.end-row.start,start=Math.max(row.start,b.start),end=Math.min(row.end,b.end);
-  return <a key={`${b.name}-${i}`} data-brick-start={b.start} data-brick-end={b.end} data-brick={brickMap.get(b.name)?.slug} className={'rawln-annotation'+(selected===brickMap.get(b.name)?.name?' selected-brick':'')} style={{left:(start-row.start)/span*100+'%',width:(end-start)/span*100+'%'}} href={'#brick/'+brickMap.get(b.name)?.slug+'?song='+song.index+'&beat='+b.start} title={b.name}>{brickMap.get(b.name)?.name??b.name}</a>;
+  return <a key={`${b.name}-${i}`} data-brick-start={b.start} data-brick-end={b.end} data-brick={brickMap.get(b.name)?.slug} className={'rawln-annotation'+(selected===brickMap.get(b.name)?.name?' selected-brick':'')} style={{left:(start-row.start)/span*100+'%',width:(end-start)/span*100+'%'}} href={'#brick/'+brickMap.get(b.name)?.slug+'?song='+song.index+'&beat='+b.start} title={b.name}>{brickNameParts(brickMap.get(b.name)?.name??b.name).map((part,i)=><span key={i} data-degree={part.degree??undefined} style={part.degree===null?undefined:{color:RAWL_COLORS[part.degree].background}}>{part.text}</span>)}</a>;
  });
- const footer=row=>{
+ const footer=(row,{changes=performance.changes}={})=>{
   const span=row.end-row.start,chords=performance.chords.filter(c=>c.start<row.end&&c.end>row.start);
   const cells=chords.map(c=>{
    const base=modulationAt(changes,c.start).root,parts=chordParts(c.symbol),degree=mod(pitch(c.symbol)-pitch(base));

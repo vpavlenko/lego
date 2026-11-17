@@ -73,7 +73,7 @@ test('previous wrapper-family routes and aliases resolve to the main family',()=
  for(const [route,target]of [['two-goes-pullback','Pullback'],['two-goes-pullback-extended','Pullback'],['two-goes-straight','Straight'],['four-goes-straight','Straight'],['extended','Cadence'],['long','Cadence'],['slow','Cadence'],['pullback-extended','Pullback']])assert.equal(routes.get(route),target,route);
  for(const alias of ['Two Goes Straight','Four Goes Straight'])assert.ok(named('Straight').aliases.includes(alias));
  const audit=JSON.parse(fs.readFileSync(new URL('../evidence/brick-families-audit.json',import.meta.url),'utf8'));
- assert.equal(audit.previousRoutes.length,423);for(const {route,family}of audit.previousRoutes)assert.equal(routes.get(route),family,route);
+ assert.equal(audit.previousRoutes.length,423);for(const {route,family}of audit.previousRoutes)assert.equal(routes.get(route),({'Whoopee':'vii°7/ii–ii–V–I','Whoopee Turnaround':'I–vii°/ii–ii–V'})[family]??family,route);
 });
 
 test('combined original and additional source usages and every source route remain intact',()=>{
@@ -83,7 +83,7 @@ test('combined original and additional source usages and every source route rema
  const routes=new Map();for(const b of index.bricks)for(const slug of [b.slug,...b.aliasSlugs]){assert.ok(!routes.has(slug),slug);routes.set(slug,b);}
  for(const b of combined.bricks)for(const slug of [b.slug,...b.aliasSlugs])assert.equal(routes.get(slug),familyFor(index,b.name),slug);
  const audit=JSON.parse(fs.readFileSync(new URL('../evidence/brick-families-audit.json',import.meta.url),'utf8'));
- assert.equal(audit.combined.previousRoutes.length,444);for(const {route,family}of audit.combined.previousRoutes)assert.equal(routes.get(route)?.name,family,route);
+ assert.equal(audit.combined.previousRoutes.length,444);for(const {route,family}of audit.combined.previousRoutes)assert.equal(routes.get(route)?.name,({'Whoopee':'vii°7/ii–ii–V–I','Whoopee Turnaround':'I–vii°/ii–ii–V'})[family]??family,route);
 });
 
 test('tails and uniquely resolved clipped roles fold without merging unrelated patterns',()=>{

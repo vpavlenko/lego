@@ -101,3 +101,5 @@ await build({entryPoints:[path.join(root,'src/audio-player.mjs')],outfile:path.j
 await build({entryPoints:[path.join(root,'src/music/modulations.mjs')],outfile:path.join(root,'dist/modulations.js'),bundle:true,format:'esm',platform:'browser',target:['es2020'],minify:true});
 await build({entryPoints:[path.join(root,'src/music/aaba-groups.mjs')],outfile:path.join(root,'dist/aaba-groups.js'),bundle:true,format:'esm',platform:'browser',target:['es2020'],minify:true});
 console.log(JSON.stringify({songs:songs.length,bricks:bricks.bricks.length,notes:total,clipped,coverage:coverage.stats,reuse:reuse.stats,status:'built'}));
+
+await build({entryPoints:[path.join(root,'src/music/brick-labels.mjs')],outfile:path.join(root,'dist/brick-labels.js'),bundle:true,format:'esm',platform:'browser',target:['es2020'],minify:true});

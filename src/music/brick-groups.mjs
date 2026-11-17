@@ -1,4 +1,4 @@
-const order=['Cadence','Approach','Turnaround','Dropback','Overrun','Ending','Opening','Pullback','Dominant Cycle','IV and','CESH','On','On-Off','Off-On','On-Off+','Unit','Deceptive-Cadence','Misc','Blues','Unclassified'];
+const order=['Cadence','Approach','Turnaround','Dropback','Overrun','Ending','Opening','Pullback','Dominant Cycle','IV and','II and','Diatonic','CESH','On','On-Off','Off-On','On-Off+','Unit','Deceptive-Cadence','Misc','Blues','Unclassified'];
 const normalized=name=>name.replace(/-/g,' ').replace(/\s+/g,' ').trim();
 export function brickType(name,catalog){
  const lookup=label=>catalog.names[normalized(label)];
@@ -30,7 +30,8 @@ export function brickType(name,catalog){
 function familyGroup(name){
  const label=normalized(name).replace(/[‘’']/g,'');
  if(/^(?:Reverse )?Dominant Cycle\b/i.test(label))return 'Dominant Cycle';
- if(/^(?:To )?IV (?:n|and|&)\s+\S/i.test(label))return 'IV and';
+ const degreeFamily=/^(?:To )?(IV|II) (?:n|and|&)\s+\S/i.exec(label);if(degreeFamily)return degreeFamily[1].toUpperCase()+' and';
+ if(/^Diatonic\b/i.test(label))return 'Diatonic';
  return null;
 }
 export function groupBricks(bricks,catalog){
