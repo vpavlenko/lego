@@ -13,10 +13,10 @@ const read=p=>JSON.parse(fs.readFileSync(new URL(p,import.meta.url),'utf8'));
 const {songs}=read('../dist/data/roadmaps.json'),{qualities}=read('../src/music/chord-vocabulary.json');
 
 test('every legible chord in all 242 standards has exact vocabulary tones and a round-trip MIDI',()=>{
- let notes=0,clipped=0;
+ let notes=0,expectedCount=0,clipped=0;
  for(const song of songs){
   const p=realizeSong(song,qualities),parsed=parseMidi(encodeMidi(p));notes+=p.notes.length;
-  assert.equal(p.beats,song.bars*song.meter[0]*4/song.meter[1]);assert.equal(parsed.header.ticksPerBeat,480);assert.equal(parsed.tracks.length,3);
+  assert.equal(p.beats,song.bars*song.meter[0]*4/song.meter[1]);assert.equal(parsed.header.ticksPerBeat,480);assert.equal(parsed.tracks.length,2);
   const result=[];
   for(const track of parsed.tracks){let tick=0;const active=new Map();for(const e of track){tick+=e.deltaTime;
    if(e.type==='noteOn'&&e.velocity){const key=e.channel+':'+e.noteNumber;assert.ok(!active.has(key),'overlapping same-pitch MIDI');active.set(key,{tick,velocity:e.velocity});}
@@ -29,12 +29,14 @@ test('every legible chord in all 242 standards has exact vocabulary tones and a 
    if(c.clipped){clipped++;assert.equal(ns.length,0);continue;}
    const parsed=parseChord(c.symbol,qualities),pcs=new Set(ns.map(n=>n.pitch%12));
    for(const interval of parsed.intervals)assert.ok(pcs.has((parsed.root+interval)%12),c.symbol);
-   assert.equal(ns.find(n=>n.voice===1).pitch%12,parsed.bass);
+   const expectedIntervals=[...new Set([0,...parsed.intervals.map(n=>n%12),(parsed.bass-parsed.root+12)%12])].sort((a,b)=>a-b),expectedPitches=expectedIntervals.map(n=>48+parsed.root+n);
+   expectedCount+=expectedPitches.length;assert.deepEqual(c.pitches,expectedPitches);assert.deepEqual(ns.map(n=>n.pitch),expectedPitches);
+   assert.equal(ns[0].pitch%12,parsed.root);assert.ok(ns.at(-1).pitch-ns[0].pitch<12);assert.equal(new Set(ns.map(n=>n.voice)).size,1);assert.equal(ns[0].voice,0);
    for(const n of ns){assert.ok(n.pitch>=0&&n.pitch<=127);assert.equal(n.start,c.start);assert.equal(n.duration,c.end-c.start);}
   }
   const plan=playbackPlan(p,80);assert.equal(plan.timeAt(1),.75);assert.equal(plan.beatAt(.75),1);assert.equal(plan.notes.length,p.notes.length);
  }
- assert.equal(clipped,8);assert.equal(notes,54556);
+ assert.equal(clipped,8);assert.equal(notes,expectedCount);
 });
 
 test('all 354 brick pages index every source passage and have stable unique addresses',()=>{
@@ -62,7 +64,7 @@ test('every brick has a playable source-derived example in its local tonic C',()
   assert.ok(p.beats>0);assert.ok(p.notes.length,brick.name);assert.equal(p.changes[0].tonic,0);assert.equal(p.beats,source.end-source.start);
   for(const c of previewSong.rows[0].chords){assert.ok(row.chords.some(original=>original.symbol===c.symbol&&original.start<source.endBar-row.startBar&&original.end>source.startBar-row.startBar));}
   for(const n of p.notes){assert.ok(n.start>=0);assert.ok(n.start+n.duration<=p.beats+1e-6);assert.ok(Number.isFinite(n.pitch));}
-  const generated=read('../dist/data/brick-performances/'+brick.slug+'.json');assert.deepEqual(generated.previewSong,previewSong);assert.equal(generated.notes.length,p.notes.length);assert.ok(parseMidi(fs.readFileSync(new URL('../dist/midi/bricks/'+brick.slug+'.mid',import.meta.url))).tracks.length===3);
+  const generated=read('../dist/data/brick-performances/'+brick.slug+'.json');assert.deepEqual(generated.previewSong,previewSong);assert.equal(generated.notes.length,p.notes.length);assert.ok(parseMidi(fs.readFileSync(new URL('../dist/midi/bricks/'+brick.slug+'.mid',import.meta.url))).tracks.length===2);
  }
 });
 
@@ -84,4 +86,13 @@ test('all 1271 joins start Rawl tonics at their exact onset, including zero shif
  const alone=songModulations(songs[8]);assert.equal(alone.find(c=>c.beat===4).tonic,0);assert.equal(alone.find(c=>c.beat===12).tonic,0);
  // A row-end modulation appears at the following row's start, not its end.
  const things=songModulations(songs[7]);assert.equal(things.find(c=>c.beat===32).tonic,7);
+});
+
+
+test('close-position chords stay rooted and identical regardless of adjacent chords',()=>{
+ const symbols=['G7','B7b9','C13','C/D','CM7','G7'],song={index:0,title:'Fixture',tonic:['C','Major'],meter:[4,4],bars:symbols.length,rows:[{startBar:0,bars:symbols.length,keys:[{start:0,end:symbols.length,root:'C',mode:'Major'}],joins:[],chords:symbols.map((symbol,i)=>({symbol,start:i,end:i+1}))}]};
+ const p=realizeSong(song,qualities);
+ assert.deepEqual(p.chords.map(c=>c.pitches),[[55,59,62,65],[59,60,63,66,69],[48,50,52,55,57,58],[48,50,52,55],[48,52,55,59],[55,59,62,65]]);
+ assert.deepEqual(playbackPlan(p).channels,[{channel:0,group:0}]);
+ assert.equal(parseMidi(encodeMidi(p)).tracks.length,2);
 });

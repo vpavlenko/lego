@@ -30,13 +30,15 @@ React/DOM integration, geometry, and brick-index checks.
 
 ## Playable standards and brick pages
 
-The default Rawl view realizes the source chord chart as generated piano voicings
-with a separate piano bass voice. It does not add a melody or claim an original
+The default Rawl view realizes the source chord chart as root-position piano
+chords in one voice. It does not add a melody or claim an original
 performance. Every fully legible chord uses the spelling/aliases from the pinned
 Impro-Visor `vocab/My.voc`; `scripts/chord-vocabulary.py` extracts the vocabulary.
 Eight clipped chord cells remain marked rests, preserving their original times.
-The generated voicings use smooth register choices, all declared chord tones,
-and the explicit slash bass. MIDI exports and playback share the same notes,
+Each chord has one simultaneous instance of each declared pitch class, packed
+within an octave above its root (C3–B3 for the root). There is no voice-leading
+optimization. A distinct slash pitch is included once in the same stack; the
+root remains lowest, including for slash chords. MIDI exports and playback share the same notes,
 quarter-note timing, and meter. Default tempo is an audition setting, 120 BPM;
 changing BPM updates playback and MIDI downloads.
 

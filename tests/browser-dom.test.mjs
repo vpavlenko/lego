@@ -20,6 +20,7 @@ test('Rawl playback, brick pages, deep links and existing chart views work toget
  await import('../dist/app.js?browser-dom');
  const $=s=>w.document.querySelector(s);
  await wait(()=>$('#rawl-view [data-note]'));
+ assert.equal($('#bass-voice'),null);assert.ok([...w.document.querySelectorAll('#rawl-view [data-note]')].every(el=>el.dataset.voice==='0'));
  assert.equal($('#notation-view').getAttribute('aria-pressed'),'true');assert.equal($('#analysis').hidden,true);
  const roadmap=read('data/roadmaps.json').songs[0],performance=read('data/performances/000.json'),byId=new Map(performance.notes.map(n=>[n.id,n]));
  assert.equal(w.document.querySelectorAll('#rawl-view .rawln-modulation[data-join]').length,roadmap.rows.reduce((n,r)=>n+r.joins.length,0));

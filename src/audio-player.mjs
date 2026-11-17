@@ -15,7 +15,7 @@ export function createPlayer({onState=()=>{},onPosition=()=>{},onError=()=>{}}={
    await context.resume();if(run!==token)return;
    engine=await audio.prepare(context);if(run!==token)return;
    output=context.createGain();output.gain.value=.28;output.connect(context.destination);nodes=[output];
-   mixers=[0,1].map(i=>{const n=context.createGain();n.gain.value=muted.has(i)?0:(i?.85:1);n.connect(output);nodes.push(n);return n;});
+   mixers=[0].map(i=>{const n=context.createGain();n.gain.value=muted.has(i)?0:1;n.connect(output);nodes.push(n);return n;});
    const plan=playbackPlan(data,tempo),start=engine.play(plan,mixers,position,output);clock=engine.createClock(plan,start,position);emit('playing');tick();
   }catch(error){if(run!==token||error.name==='AbortError')return;cancel();emit('error');onError(error);}
  }
@@ -27,7 +27,7 @@ export function createPlayer({onState=()=>{},onPosition=()=>{},onError=()=>{}}={
   play,pause,stop,seek,
   toggle(){if(state==='playing'||state==='loading')pause();else return play();},
   setTempo(value){const next=Math.max(40,Math.min(260,Number(value)||120)),resume=state==='playing';if(clock)position=clock.position();if(state==='playing'||state==='loading')cancel();tempo=next;if(resume)void play();else if(state==='loading')emit('paused');},
-  setMuted(voice,value){if(value)muted.add(voice);else muted.delete(voice);if(mixers[voice])mixers[voice].gain.setTargetAtTime(value?0:(voice?.85:1),context.currentTime,.008);},
+  setMuted(voice,value){if(value)muted.add(voice);else muted.delete(voice);if(mixers[voice])mixers[voice].gain.setTargetAtTime(value?0:1,context.currentTime,.008);},
   async audition(note){const run=token;try{const audio=globalThis.SoundFontPlayback;context??=audio.getContext()??new (globalThis.AudioContext||globalThis.webkitAudioContext)();await context.resume();engine=await audio.prepare(context);if(run!==token)return;engine.audition({pitch:note.pitch,duration:Math.min(2,note.duration*60/tempo),velocity:note.velocity??74});}catch(error){if(run===token&&error.name!=='AbortError')onError(error);}},
   destroy(){stop();data=null;},
   get state(){return state;},get position(){return position;},get tempo(){return tempo;},get data(){return data;},get mutedVoices(){return [...muted];}

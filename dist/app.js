@@ -77,7 +77,7 @@ async function openSong(index,params,initial=false){
  $('#rawl-view').textContent='Loading';setView(view);if(!initial)window.scrollTo({top:0,behavior:'instant'});
  try{
   const result=await fetchPerformance(current);if(gen!==routeGeneration||routeKind!=='song')return;performance=result;player.load(result);$('#tempo').value=result.tempo;$('#play').disabled=false;
-  for(const id of ['#piano-voice','#bass-voice'])$(id).setAttribute('aria-pressed','true');
+  for(const id of ['#piano-voice'])$(id).setAttribute('aria-pressed','true');
   const clipped=result.chords.filter(c=>c.clipped).length;$('#clipped-count').textContent=clipped;$('#clipped-status').hidden=!clipped;$('#rawl-view').textContent='';
   setView(view);if(Number.isFinite(seek)){player.seek(seek);scrollToBeat(seek);}
  }catch(error){if(gen!==routeGeneration)return;console.error(error);$('#rawl-view').innerHTML='<span>Unavailable</span> <button id="retry-performance">Retry</button>';$('#retry-performance').onclick=()=>openSong(current,params,true);}
@@ -103,7 +103,7 @@ async function openBricks(slug=null){
   const result=await fetch(`./data/brick-performances/${b.slug}.json`).then(r=>{if(!r.ok)throw Error(r.status);return r.json();});
   if(gen!==routeGeneration||routeKind!=='brick')return;
   performance=result;currentBeat=null;lastPlaybackRow=-1;player.load(result);$('#tempo').value=result.tempo;$('#play').disabled=false;
-  for(const id of ['#piano-voice','#bass-voice'])$(id).setAttribute('aria-pressed','true');
+  for(const id of ['#piano-voice'])$(id).setAttribute('aria-pressed','true');
   $('#midi-download').href='./midi/bricks/'+b.slug+'.mid';$('#midi-download').download=b.slug+'.mid';
   const clipped=result.chords.filter(c=>c.clipped).length;$('#clipped-count').textContent=clipped;$('#clipped-status').hidden=!clipped;
   const source=result.source;$('#brick-example-source').textContent=source.title+' · '+(Math.floor(source.startBar)+1)+'–'+Math.ceil(source.endBar);$('#brick-example-source').href='#'+pad(source.song)+'?brick='+b.slug+'&beat='+source.start;
@@ -115,7 +115,7 @@ $('#search').addEventListener('input',catalog);$('#previous').onclick=()=>locati
 
 $('#digital').onclick=()=>setView('analysis');$('#notation-view').onclick=()=>setView('rawl');$('#original').onclick=()=>setView('source');
 $('#play').onclick=()=>player.toggle();$('#stop').onclick=()=>player.stop();$('#tempo').onchange=e=>{player.setTempo(e.target.value);e.target.value=player.tempo;};
-for(const [id,voice]of [['#piano-voice',0],['#bass-voice',1]])$(id).onclick=()=>{const muted=$(id).getAttribute('aria-pressed')==='true';player.setMuted(voice,muted);$(id).setAttribute('aria-pressed',String(!muted));if(rawl)rawl.update(rawlOptions());};
+for(const [id,voice]of [['#piano-voice',0]])$(id).onclick=()=>{const muted=$(id).getAttribute('aria-pressed')==='true';player.setMuted(voice,muted);$(id).setAttribute('aria-pressed',String(!muted));if(rawl)rawl.update(rawlOptions());};
 $('#midi-download').onclick=e=>{if(!performance||player.tempo===performance.tempo)return;e.preventDefault();const url=URL.createObjectURL(new Blob([encodeMidi({...performance,tempo:player.tempo})],{type:'audio/midi'})),a=document.createElement('a');a.href=url;a.download=$('#midi-download').download;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
 $('#menu').onclick=()=>{const on=document.body.classList.toggle('menu-open');$('#menu').setAttribute('aria-expanded',on);$('#shade').hidden=!on;};$('#shade').onclick=closeMenu;
 
