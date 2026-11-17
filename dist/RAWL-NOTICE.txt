@@ -1,0 +1,13 @@
+Rawl notation conventions, palette, voice corner shapes, and tonal guides:
+https://github.com/vpavlenko/rawl
+GPL-3.0; see RAWL-LICENSE.txt.
+
+Pitch geometry and tonal-guide formulas adapted from the user's Caplin
+packages/music/rawl-layout.js and tonal-grid.js. The reusable React source is
+packages/rawl-notation in this site's source repository. No Caplin book text,
+score excerpts, or original recordings are included.
+
+The sample-backed playback runtime is reused from Caplin soundfont-playback.js,
+with SpessaSynth licenses in vendor/spessasynth and the GeneralUser GS license
+in assets/soundfonts. Chord-tone definitions derive from Impro-Visor My.voc at
+commit 550bbb554962249aceb0e82a72142e3e5b3c0d4a. The MIDI voicings are generated.

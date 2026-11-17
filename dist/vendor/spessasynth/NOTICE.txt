@@ -1,0 +1,12 @@
+Pinned SpessaSynth browser assets for the Caplin reader
+
+spessasynth_lib 4.3.14 — Spessasus
+https://github.com/spessasus/spessasynth_lib
+spessasynth_core 4.3.22 — Spessasus
+https://github.com/spessasus/spessasynth_core
+stb-vorbis 0.0.6 — Spessasus
+https://github.com/spessasus/stb-vorbis
+
+All three packages are distributed under Apache License 2.0; their original license files are included alongside this notice. The underlying stb_vorbis.c retains its original public-domain dedication, as documented in the included upstream README-stb-vorbis.md.
+
+index.js bundles the WorkletSynthesizer export and required dependencies using esbuild 0.24.2. The matching spessasynth_processor.min.js and its map are copied verbatim from the spessasynth_lib 4.3.14 package; its prebundled processor dependencies are retained unmodified. No remote module imports are required at runtime. Package archives and generated outputs are pinned in content/synth-lock.json and verified by scripts/prepare-synth.mjs.
