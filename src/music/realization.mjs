@@ -5,13 +5,16 @@ export function parseChord(symbol,qualities){
  const match=/^([A-G][b#]*)(.*?)(?:\/([A-G][b#]*))?$/.exec(symbol);
  if(!match)return null;
  const intervals=qualities[match[2]];if(!intervals)return null;
- return {root:pitch(match[1]),bass:pitch(match[3]||match[1]),intervals,quality:match[2]};
+ return {root:pitch(match[1]),bass:pitch(match[3]||match[1]),intervals,quality:match[2],slash:!!match[3]};
 }
-// Close position: one instance of each chord pitch class, ordered upward
-// within an octave of its root. Slash pitches join the same stack.
-function closePosition(parsed){
- const intervals=[...new Set([0,...parsed.intervals.map(mod),mod(parsed.bass-parsed.root)])].sort((a,b)=>a-b);
- return intervals.map(interval=>48+parsed.root+interval);
+// Keep the core rooted and dense; compound intervals preserve 9/11/13
+// above the seventh. An explicit slash bass sits below the complete chord,
+// including a second instance when that bass is already a chord tone.
+function rootPosition(parsed){
+ const root=48+parsed.root,core=[...new Set([0,...parsed.intervals])].sort((a,b)=>a-b).map(interval=>root+interval);
+ if(!parsed.slash)return core;
+ let bass=48+parsed.bass;while(bass>=root)bass-=12;
+ return [bass,...core];
 }
 export function realizeSong(song,qualities,{tempo=120}={}){
  const barBeats=song.meter[0]*4/song.meter[1],notes=[],chords=[],changes=songModulations(song),rows=[];
@@ -23,11 +26,11 @@ export function realizeSong(song,qualities,{tempo=120}={}){
    // A source ellipsis conceals chord tones. Preserve its time as a marked gap.
    if(c.clipped){c.pitches=[];continue;}
    const parsed=parseChord(symbol,qualities);if(!parsed)throw Error('Unsupported chord '+symbol+' in '+song.title);
-   c.pitches=closePosition(parsed);
+   c.pitches=rootPosition(parsed);
    c.pitches.forEach((p,i)=>notes.push({id:`${id}-${i}`,pitch:p,start,duration:end-start,voice:0,velocity:74,chord:id}));
   }
  }
- return {version:2,voicing:'root-position',song:song.index,title:song.title,tempo,meter:song.meter,beats:song.bars*barBeats,barBeats,rows,tonic:0,changes,notes,chords};
+ return {version:3,voicing:'root-position',song:song.index,title:song.title,tempo,meter:song.meter,beats:song.bars*barBeats,barBeats,rows,tonic:0,changes,notes,chords};
 }
 export function playbackPlan(data,tempo=data.tempo){
  const notes=data.notes.map(n=>({...n,channel:n.voice,group:n.voice,end:n.start+n.duration}));

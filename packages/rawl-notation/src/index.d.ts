@@ -1,11 +1,11 @@
 import * as React from 'react';
 export interface MidiNote { id:string; pitch:number; start:number; duration:number; voice:number; velocity?:number; }
-export interface ScoreRow { start:number; end:number; label?:number; }
+export interface ScoreRow { start:number; end:number; label?:number; style?:React.CSSProperties; }
 export interface TonicChange { beat:number; tonic:number; join?:boolean; name?:string; }
 export interface RawlNotationHandle { setPosition(beat:number|null):void; element:HTMLDivElement|null; }
 export interface RawlNotationProps {
  notes:MidiNote[]; beats:number; rows?:ScoreRow[]; tonic?:number; changes?:TonicChange[];
- barBeats?:number; position?:number|null; mutedVoices?:number[];
+ barBeats?:number; position?:number|null; mutedVoices?:number[]; className?:string; style?:React.CSSProperties;
  onSeek?:(beat:number)=>void; onNote?:(note:MidiNote)=>void;
  renderHeader?:(row:ScoreRow)=>React.ReactNode; renderFooter?:(row:ScoreRow)=>React.ReactNode;
 }

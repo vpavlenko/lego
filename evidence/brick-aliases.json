@@ -1,7 +1,15 @@
 {
   "sourceLabels": 354,
-  "canonicalBricks": 315,
+  "canonicalBricks": 299,
   "groups": [
+    {
+      "name": "Autumn Leaves Opening +...",
+      "aliases": [
+        "Autumn Leaves Gpening +..."
+      ],
+      "standards": 1,
+      "passages": 3
+    },
     {
       "name": "Body & Soul Cadence",
       "aliases": [
@@ -17,6 +25,126 @@
       ],
       "standards": 2,
       "passages": 3
+    },
+    {
+      "name": "Diatonic I ii iii ii",
+      "aliases": [
+        "Diatonic I II iii II"
+      ],
+      "standards": 3,
+      "passages": 5
+    },
+    {
+      "name": "Diatonic I ii iii IV",
+      "aliases": [
+        "Diatonic I II iii IV"
+      ],
+      "standards": 3,
+      "passages": 7
+    },
+    {
+      "name": "Diatonic I IV iii ii",
+      "aliases": [
+        "Diatonic I IV iii II"
+      ],
+      "standards": 1,
+      "passages": 2
+    },
+    {
+      "name": "Diatonic ii iii IV iii ii +...",
+      "aliases": [
+        "Diatonic ii iii Viti ii +..."
+      ],
+      "standards": 1,
+      "passages": 2
+    },
+    {
+      "name": "IV n Back",
+      "aliases": [
+        "I¥ n Back"
+      ],
+      "standards": 13,
+      "passages": 17
+    },
+    {
+      "name": "IV n Bauble",
+      "aliases": [
+        "I¥ n Bauble"
+      ],
+      "standards": 1,
+      "passages": 1
+    },
+    {
+      "name": "IV n Bird",
+      "aliases": [
+        "I¥ n Bird"
+      ],
+      "standards": 3,
+      "passages": 3
+    },
+    {
+      "name": "IV n Bird +...",
+      "aliases": [
+        "IiVn Bird +..."
+      ],
+      "standards": 5,
+      "passages": 5
+    },
+    {
+      "name": "IV n Bird SPOT",
+      "aliases": [
+        "I¥ n Bird SPOT"
+      ],
+      "standards": 4,
+      "passages": 4
+    },
+    {
+      "name": "IV n Bird SPOT +...",
+      "aliases": [
+        "Vn Bird SPOT +..."
+      ],
+      "standards": 3,
+      "passages": 5
+    },
+    {
+      "name": "IV n Hack + Dropback",
+      "aliases": [
+        "I¥ n Hack + Dropback"
+      ],
+      "standards": 1,
+      "passages": 3
+    },
+    {
+      "name": "IV n Hack +...",
+      "aliases": [
+        "Vn Hack +..."
+      ],
+      "standards": 1,
+      "passages": 2
+    },
+    {
+      "name": "IV n Mack",
+      "aliases": [
+        "I¥ n Mack"
+      ],
+      "standards": 1,
+      "passages": 4
+    },
+    {
+      "name": "IV n Yak +...",
+      "aliases": [
+        "Wn Yak +..."
+      ],
+      "standards": 7,
+      "passages": 12
+    },
+    {
+      "name": "IV n Yak To",
+      "aliases": [
+        "I¥ n Yak To"
+      ],
+      "standards": 1,
+      "passages": 2
     },
     {
       "name": "Launcher",
@@ -87,6 +215,78 @@
       "passages": 22
     },
     {
+      "name": "Off On Minor bII",
+      "aliases": [
+        "Off On Minor bil"
+      ],
+      "standards": 1,
+      "passages": 6
+    },
+    {
+      "name": "On Off Major #IV",
+      "aliases": [
+        "On Off Major #1V"
+      ],
+      "standards": 1,
+      "passages": 2
+    },
+    {
+      "name": "On Off Major bII",
+      "aliases": [
+        "On Off Major bil"
+      ],
+      "standards": 2,
+      "passages": 5
+    },
+    {
+      "name": "On Off Major bIII",
+      "aliases": [
+        "On Off Major bill"
+      ],
+      "standards": 1,
+      "passages": 1
+    },
+    {
+      "name": "On Off Major III",
+      "aliases": [
+        "On Off Major Ill"
+      ],
+      "standards": 3,
+      "passages": 3
+    },
+    {
+      "name": "On Off Major VII",
+      "aliases": [
+        "On Off Major Vil"
+      ],
+      "standards": 4,
+      "passages": 6
+    },
+    {
+      "name": "On Off Minor #IV",
+      "aliases": [
+        "On Off Minor #1V"
+      ],
+      "standards": 2,
+      "passages": 2
+    },
+    {
+      "name": "On Off Minor bII",
+      "aliases": [
+        "On Off Minor bil"
+      ],
+      "standards": 1,
+      "passages": 1
+    },
+    {
+      "name": "On Off Minor bIII",
+      "aliases": [
+        "On Off Minor blll"
+      ],
+      "standards": 1,
+      "passages": 2
+    },
+    {
       "name": "Perfect Cadence",
       "aliases": [
         "Perfect Caden.",
@@ -105,6 +305,14 @@
       "passages": 123
     },
     {
+      "name": "Somewhere/Nowhere Approach",
+      "aliases": [
+        "Somewhere/Nowhere Approi"
+      ],
+      "standards": 4,
+      "passages": 8
+    },
+    {
       "name": "Straight Approach",
       "aliases": [
         "Straight App...",
@@ -113,6 +321,14 @@
       ],
       "standards": 40,
       "passages": 61
+    },
+    {
+      "name": "Straight Cadence + Dominant Overrun",
+      "aliases": [
+        "Straight Cadence + Dominant G..."
+      ],
+      "standards": 17,
+      "passages": 27
     },
     {
       "name": "Straight Launcher",
@@ -128,6 +344,14 @@
       "passages": 181
     },
     {
+      "name": "To IV n Back +...",
+      "aliases": [
+        "TolVn Back +..."
+      ],
+      "standards": 3,
+      "passages": 4
+    },
+    {
       "name": "To IV n Bird SPOT +...",
       "aliases": [
         "To IV nBird SPOT +..."
@@ -136,12 +360,36 @@
       "passages": 6
     },
     {
+      "name": "To IV n Mack +...",
+      "aliases": [
+        "TolVn Mack +..."
+      ],
+      "standards": 1,
+      "passages": 3
+    },
+    {
+      "name": "To IV n Yak +...",
+      "aliases": [
+        "Tol¥Vn Yak +..."
+      ],
+      "standards": 2,
+      "passages": 5
+    },
+    {
       "name": "Tritone Launcher",
       "aliases": [
         "Tritone Launc..."
       ],
       "standards": 9,
       "passages": 11
+    },
+    {
+      "name": "Wonderful Opening",
+      "aliases": [
+        "Wonderful Gpening"
+      ],
+      "standards": 4,
+      "passages": 4
     },
     {
       "name": "Yardbird Launcher",

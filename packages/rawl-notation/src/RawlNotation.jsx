@@ -6,8 +6,8 @@ const names=['C','D♭','D','E♭','E','F','F♯','G','A♭','A','B♭','B'];
 const noteName=p=>names[mod(p)]+(Math.floor(p/12)-1);
 
 /** A host-independent Rawl score. Times are quarter-note beats, pitches MIDI. */
-export const RawlNotation=forwardRef(function RawlNotation({notes,beats,rows,tonic=0,changes=[],barBeats=4,position=null,mutedVoices=[],onSeek,onNote,renderHeader,renderFooter},ref){
- const root=useRef(null),noteElements=useRef(new Map()),playheads=useRef([]);
+export const RawlNotation=forwardRef(function RawlNotation({notes,beats,rows,tonic=0,changes=[],barBeats=4,position=null,mutedVoices=[],onSeek,onNote,renderHeader,renderFooter,className='',style},ref){
+ const root=useRef(null),noteElements=useRef(new Map());
  const spans=rows?.length?rows:[{start:0,end:beats,label:1}];
  const markers=useMemo(()=>keyMarkers(tonic,changes),[tonic,changes]);
  const prepared=useMemo(()=>spans.map(row=>{
@@ -20,29 +20,31 @@ export const RawlNotation=forwardRef(function RawlNotation({notes,beats,rows,ton
   el.style.boxShadow=muted?'':'0 0 0px 0.5px black';
  }
  function setPosition(beat){
-  playheads.current.forEach((el,i)=>{if(!el)return;const row=prepared[i].row,active=Number.isFinite(beat)&&beat>=row.start&&beat<row.end;el.hidden=!active;if(active)el.style.left=(beat-row.start)/(row.end-row.start)*100+'%';});
   for(const item of noteElements.current.values()){const {el,note,row}=item;item.active=Number.isFinite(beat)&&beat>=row.start&&beat<row.end&&beat>=note.start&&beat<note.start+note.duration&&!mutedVoices.includes(note.voice);el.classList.toggle('rawln-sounding',item.active);updateNote(item);}
  }
  useImperativeHandle(ref,()=>({setPosition,element:root.current}),[prepared,mutedVoices]);
  useLayoutEffect(()=>{setPosition(position);},[position,prepared,mutedVoices]);
- return <div className="rawln" ref={root}>
+ return <div className={'rawln'+(className?' '+className:'')} style={style} ref={root}>
   {prepared.map(({row,visible,range,axis,regions},ri)=>{
    const span=row.end-row.start,x=beat=>(beat-row.start)/span*100;
    const bars=[];for(let beat=Math.ceil((row.start-1e-6)/barBeats)*barBeats;beat<row.end-1e-6;beat+=barBeats)bars.push(beat);
-   return <div className="rawln-row" key={`${row.start}-${row.end}`} data-start={row.start} data-end={row.end}>
+   return <div className="rawln-row" data-section={row.section} key={`${row.start}-${row.end}`} data-start={row.start} data-end={row.end} style={row.style}>
     {renderHeader&&<div className="rawln-header">{renderHeader(row)}</div>}
     <div className="rawln-score" role="group" aria-label="Rawl notation" style={{height:axis.notesBottom}} onClick={e=>{const box=e.currentTarget.getBoundingClientRect();if(box.width>0)onSeek?.(row.start+Math.max(0,Math.min(1,(e.clientX-box.left)/box.width))*span);}}>
      <div className="rawln-grid" aria-hidden="true">
       {regions.flatMap((region,i)=>tonalLines(range,axis,region.tonic).map((line,j)=><div key={`${i}-${j}`} data-tonic={region.tonic} className={`rawln-${line.kind}-line`} style={{left:x(region.start)+'%',width:(region.end-region.start)/span*100+'%',top:line.y}}/>))}
-      {bars.map(beat=><div className="rawln-bar" key={beat} style={{left:x(beat)+'%'}}><span>{Math.round(beat/barBeats)+1}</span></div>)}
+      {bars.map(beat=><div className="rawln-bar" key={beat} style={{left:x(beat)+'%'}}/>)}
      </div>
      <div className="rawln-modulations">
-      {markers.filter(m=>m.beat>=row.start&&m.beat<row.end).map(m=><div key={m.beat} className="rawln-modulation" data-beat={m.beat} data-tonic={m.tonic} data-join={m.join?m.name:undefined} style={{left:x(m.beat)+'%'}} title={m.name}>
+      {markers.filter(m=>m.beat>=row.start&&m.beat<row.end&&m.delta!==0).map(m=><div key={m.beat} className="rawln-modulation" data-beat={m.beat} data-tonic={m.tonic} data-join={m.join?m.name:undefined} style={{left:x(m.beat)+'%'}} title={m.name}>
        {m.delta!==null&&<div className="rawln-modulation-flag" data-degree={mod(m.delta)} style={{background:RAWL_COLORS[mod(m.delta)].background}}/>}
        <span className="rawln-modulation-label" style={{left:m.previousTonic===null?18:30}}>
         {m.delta!==null&&<><svg viewBox="0 0 24 24" aria-hidden="true">{m.delta<0?<><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></>:<><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></>}</svg>{Math.abs(m.delta)} </>}{TONIC_NAMES[m.tonic]}
        </span>
       </div>)}
+     </div>
+     <div className="rawln-measure-labels" aria-hidden="true">
+      {bars.map(beat=>{const hasFlag=markers.some(m=>m.beat===beat&&m.delta!==null&&m.delta!==0);return <span className="rawln-measure-number" key={beat} data-modulation={hasFlag?'true':undefined} style={{left:x(beat)+'%',color:hasFlag?'black':undefined}}>{Math.round(beat/barBeats)+1}</span>;})}
      </div>
      {visible.map(note=>{
       const start=Math.max(row.start,note.start),end=Math.min(row.end,note.start+note.duration),degree=mod(note.pitch-tonicAt(tonic,changes,note.start+note.duration/2)),color=RAWL_COLORS[degree];
@@ -50,7 +52,6 @@ export const RawlNotation=forwardRef(function RawlNotation({notes,beats,rows,ton
        {color.dot&&<i aria-hidden="true" style={{width:color.dot.size,height:color.dot.size,background:color.dot.color}}/>}
       </button>;
      })}
-     <div className="rawln-playhead" ref={el=>{playheads.current[ri]=el;}} hidden aria-hidden="true"/>
     </div>
     {renderFooter&&<div className="rawln-footer">{renderFooter(row)}</div>}
    </div>;

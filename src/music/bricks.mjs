@@ -5,7 +5,8 @@ export function buildBrickIndex(songs){
  const sourceLabels=[...new Set(songs.flatMap(s=>s.rows.flatMap(r=>r.bricks.map(b=>b.name))))],labels=[...new Set(sourceLabels.map(brickIdentity))].sort((a,b)=>a.localeCompare(b));
  const oldSlugs=new Map(),oldUsed=new Set();
  for(const name of [...sourceLabels].sort((a,b)=>a.localeCompare(b))){let slug=slugify(name);if(oldUsed.has(slug))slug+='-'+suffix(name);oldUsed.add(slug);oldSlugs.set(name,slug);}
- for(const name of labels){let slug=slugify(name);if(slugs.has(slug))slug+='-'+suffix(name);slugs.add(slug);const aliases=sourceLabels.filter(n=>n!==name&&brickIdentity(n)===name).sort((a,b)=>a.localeCompare(b)),aliasSlugs=[...new Set([oldSlugs.get(name),...aliases.map(n=>oldSlugs.get(n))].filter(s=>s&&s!==slug))];byName.set(name,{slug,name,aliases,aliasSlugs,standards:[],passages:0,clipped:/…|\.{2,}/.test(name)});}
+ const reserved=new Map([...oldSlugs].map(([name,slug])=>[slug,brickIdentity(name)]));
+ for(const name of labels){let slug=oldSlugs.get(name)||slugify(name);if(slugs.has(slug)||(reserved.has(slug)&&reserved.get(slug)!==name))slug+='-'+suffix(name);while(slugs.has(slug)||(reserved.has(slug)&&reserved.get(slug)!==name))slug+='x';slugs.add(slug);const aliases=sourceLabels.filter(n=>n!==name&&brickIdentity(n)===name).sort((a,b)=>a.localeCompare(b)),aliasSlugs=[...new Set([oldSlugs.get(name),...aliases.map(n=>oldSlugs.get(n))].filter(s=>s&&s!==slug))];byName.set(name,{slug,name,aliases,aliasSlugs,standards:[],passages:0,clipped:/…|\.{2,}/.test(name)});}
  for(const song of songs){
   const matches=new Map(),barBeats=song.meter[0]*4/song.meter[1];
   song.rows.forEach((row,ri)=>row.bricks.forEach(b=>{

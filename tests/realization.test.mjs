@@ -29,18 +29,19 @@ test('every legible chord in all 242 standards has exact vocabulary tones and a 
    if(c.clipped){clipped++;assert.equal(ns.length,0);continue;}
    const parsed=parseChord(c.symbol,qualities),pcs=new Set(ns.map(n=>n.pitch%12));
    for(const interval of parsed.intervals)assert.ok(pcs.has((parsed.root+interval)%12),c.symbol);
-   const expectedIntervals=[...new Set([0,...parsed.intervals.map(n=>n%12),(parsed.bass-parsed.root+12)%12])].sort((a,b)=>a-b),expectedPitches=expectedIntervals.map(n=>48+parsed.root+n);
+   const root=48+parsed.root,core=[...new Set([0,...parsed.intervals])].sort((a,b)=>a-b).map(n=>root+n);let bass=48+parsed.bass;while(bass>=root)bass-=12;
+   const expectedPitches=parsed.slash?[bass,...core]:core;
    expectedCount+=expectedPitches.length;assert.deepEqual(c.pitches,expectedPitches);assert.deepEqual(ns.map(n=>n.pitch),expectedPitches);
-   assert.equal(ns[0].pitch%12,parsed.root);assert.ok(ns.at(-1).pitch-ns[0].pitch<12);assert.equal(new Set(ns.map(n=>n.voice)).size,1);assert.equal(ns[0].voice,0);
+   assert.equal(ns[parsed.slash?1:0].pitch%12,parsed.root);if(parsed.slash)assert.ok(ns[0].pitch<ns[1].pitch);assert.equal(new Set(ns.map(n=>n.voice)).size,1);assert.equal(ns[0].voice,0);
    for(const n of ns){assert.ok(n.pitch>=0&&n.pitch<=127);assert.equal(n.start,c.start);assert.equal(n.duration,c.end-c.start);}
   }
   const plan=playbackPlan(p,80);assert.equal(plan.timeAt(1),.75);assert.equal(plan.beatAt(.75),1);assert.equal(plan.notes.length,p.notes.length);
  }
- assert.equal(clipped,8);assert.equal(notes,expectedCount);
+ assert.equal(clipped,8);assert.equal(notes,expectedCount);assert.equal(notes,43833);
 });
 
-test('all 315 canonical brick pages index every source passage and have stable unique addresses',()=>{
- const index=buildBrickIndex(songs);assert.equal(index.sourceLabels,354);assert.equal(index.bricks.length,315);assert.equal(new Set(index.bricks.map(b=>b.slug)).size,315);
+test('all 299 canonical brick pages index every source passage and have stable unique addresses',()=>{
+ const index=buildBrickIndex(songs);assert.equal(index.sourceLabels,354);assert.equal(index.bricks.length,299);assert.equal(new Set(index.bricks.map(b=>b.slug)).size,299);
  const names=new Map(index.bricks.map(b=>[b.name,b]));let count=0;
  for(const song of songs)for(const row of song.rows)for(const brick of row.bricks){
   count++;const target=names.get(brickIdentity(brick.name)),match=target.standards.find(s=>s.song===song.index);assert.ok(match);
@@ -92,7 +93,7 @@ test('all 1271 joins start Rawl tonics at their exact onset, including zero shif
 test('close-position chords stay rooted and identical regardless of adjacent chords',()=>{
  const symbols=['G7','B7b9','C13','C/D','CM7','G7'],song={index:0,title:'Fixture',tonic:['C','Major'],meter:[4,4],bars:symbols.length,rows:[{startBar:0,bars:symbols.length,keys:[{start:0,end:symbols.length,root:'C',mode:'Major'}],joins:[],chords:symbols.map((symbol,i)=>({symbol,start:i,end:i+1}))}]};
  const p=realizeSong(song,qualities);
- assert.deepEqual(p.chords.map(c=>c.pitches),[[55,59,62,65],[59,60,63,66,69],[48,50,52,55,57,58],[48,50,52,55],[48,52,55,59],[55,59,62,65]]);
+ assert.deepEqual(p.chords.map(c=>c.pitches),[[55,59,62,65],[59,63,66,69,72],[48,52,55,58,62,69],[38,48,52,55],[48,52,55,59],[55,59,62,65]]);
  assert.deepEqual(playbackPlan(p).channels,[{channel:0,group:0}]);
  assert.equal(parseMidi(encodeMidi(p)).tracks.length,2);
 });

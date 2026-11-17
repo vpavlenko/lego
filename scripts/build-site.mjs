@@ -4,10 +4,15 @@ import {fileURLToPath} from 'node:url';
 import {build} from 'esbuild';
 import {realizeSong} from '../src/music/realization.mjs';
 import {encodeMidi} from '../src/music/midi.mjs';
+import {buildBrickVariants} from '../src/music/brick-variants.mjs';
 import {buildBrickIndex,brickExample} from '../src/music/bricks.mjs';
+import {analyzeForm} from '../src/music/forms.mjs';
+import {groupBricks} from '../src/music/brick-groups.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
-const {songs}=read('dist/data/roadmaps.json'),{qualities}=read('src/music/chord-vocabulary.json');
+const {songs}=read('dist/data/roadmaps.json'),vocabulary=read('src/music/chord-vocabulary.json'),{qualities}=vocabulary;
+fs.copyFileSync(path.join(root,'src/music/rawl-links.json'),path.join(root,'dist/data/rawl-links.json'));
+fs.writeFileSync(path.join(root,'dist/data/forms.json'),JSON.stringify({version:1,forms:songs.map(analyzeForm)}));
 fs.mkdirSync(path.join(root,'dist/data/performances'),{recursive:true});fs.mkdirSync(path.join(root,'dist/midi'),{recursive:true});
 let total=0,clipped=0;
 for(const song of songs){
@@ -24,11 +29,19 @@ fs.writeFileSync(path.join(root,'evidence/brick-aliases.json'),JSON.stringify({s
 fs.writeFileSync(path.join(root,'dist/data/bricks.json'),JSON.stringify(bricks));
 fs.mkdirSync(path.join(root,'dist/data/brick-performances'),{recursive:true});
 fs.mkdirSync(path.join(root,'dist/midi/bricks'),{recursive:true});
+const atlasBricks=[];
+fs.mkdirSync(path.join(root,'dist/data/brick-variants'),{recursive:true});
+fs.mkdirSync(path.join(root,'dist/midi/brick-variants'),{recursive:true});
 for(const brick of bricks.bricks){
  const {previewSong,source}=brickExample(brick,songs),data={...realizeSong(previewSong,qualities),previewSong,source};
  fs.writeFileSync(path.join(root,`dist/data/brick-performances/${brick.slug}.json`),JSON.stringify(data));
  fs.writeFileSync(path.join(root,`dist/midi/bricks/${brick.slug}.mid`),encodeMidi(data));
+ atlasBricks.push({slug:brick.slug,name:brick.name,standards:brick.standards.length,performance:data});
+ const definitions=buildBrickVariants(brick,songs,vocabulary);
+ definitions.variants.forEach((variant,i)=>{variant.number=i+1;variant.performance={...realizeSong(variant.previewSong,qualities),previewSong:variant.previewSong,source:variant.source};variant.midi=`./midi/brick-variants/${brick.slug}--${variant.id}.mid`;fs.writeFileSync(path.join(root,variant.midi.replace('./','dist/')),encodeMidi(variant.performance));});
+ fs.writeFileSync(path.join(root,`dist/data/brick-variants/${brick.slug}.json`),JSON.stringify(definitions));
 }
+fs.writeFileSync(path.join(root,'dist/data/atlas.json'),JSON.stringify({version:1,groups:groupBricks(atlasBricks,read('src/music/brick-types.json'))}));
 fs.copyFileSync(path.join(root,'packages/rawl-notation/src/style.css'),path.join(root,'dist/rawl-notation.css'));
 fs.copyFileSync(path.join(root,'packages/rawl-notation/src/palette.mjs'),path.join(root,'dist/rawl-colors.mjs'));
 fs.copyFileSync(path.join(root,'packages/rawl-notation/LICENSE'),path.join(root,'dist/RAWL-LICENSE.txt'));

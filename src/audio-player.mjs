@@ -6,9 +6,12 @@ export function createPlayer({onState=()=>{},onPosition=()=>{},onError=()=>{}}={
  const emit=s=>{state=s;onState(s);};
  function disconnect(){for(const n of nodes)try{n.disconnect();}catch{}nodes=[];mixers=[];output=null;}
  function cancel(){token++;cancelAnimationFrame(frame);frame=null;clock=null;globalThis.SoundFontPlayback?.stop();disconnect();}
- function tick(){if(state!=='playing'||!clock)return;position=clock.position();onPosition(position);if(position>=data.beats-.001){cancel();position=0;emit('idle');onPosition(null);return;}frame=requestAnimationFrame(tick);}
+ // Caplin's clock separates a transport position from an audible beat. The
+ // scheduled attack (and output device latency) can still be ahead of us;
+ // position() returns the seek offset then, while beat() correctly returns null.
+ function tick(){if(state!=='playing'||!clock)return;const beat=clock.beat();if(beat!==null)position=beat;onPosition(beat);if(beat!==null&&beat>=data.beats-.001){cancel();position=0;emit('idle');onPosition(null);return;}frame=requestAnimationFrame(tick);}
  async function play(){
-  if(!data)return;if(position>=data.beats)position=0;const run=++token;emit('loading');
+  if(!data)return;if(position>=data.beats)position=0;const run=++token;emit('loading');onPosition(null);
   try{
    const audio=globalThis.SoundFontPlayback;if(!audio)throw Error('Playback engine missing');
    context??=audio.getContext()??new (globalThis.AudioContext||globalThis.webkitAudioContext)();
@@ -19,9 +22,9 @@ export function createPlayer({onState=()=>{},onPosition=()=>{},onError=()=>{}}={
    const plan=playbackPlan(data,tempo),start=engine.play(plan,mixers,position,output);clock=engine.createClock(plan,start,position);emit('playing');tick();
   }catch(error){if(run!==token||error.name==='AbortError')return;cancel();emit('error');onError(error);}
  }
- function pause(){if(clock)position=clock.position();cancel();emit('paused');onPosition(position);}
+ function pause(){if(clock)position=clock.position();cancel();emit('paused');onPosition(null);}
  function stop(){cancel();position=0;emit('idle');onPosition(null);}
- function seek(beat){const resume=state==='playing';if(clock)position=clock.position();cancel();position=Math.max(0,Math.min(data?.beats??0,beat));onPosition(position);if(resume)void play();else emit('paused');}
+ function seek(beat){const resume=state==='playing';if(clock)position=clock.position();cancel();position=Math.max(0,Math.min(data?.beats??0,beat));onPosition(null);if(resume)void play();else emit('paused');}
  return {
   load(next){stop();data=next;tempo=next.tempo;muted.clear();},
   play,pause,stop,seek,

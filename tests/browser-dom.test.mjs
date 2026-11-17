@@ -15,7 +15,7 @@ test('Rawl playback, brick pages, deep links and existing chart views work toget
  const fetches=[];globalThis.fetch=async url=>{fetches.push(url);const p=String(url).replace(/^\.\//,'');return {ok:true,json:async()=>read(p)};};
  const events={plays:[],auditions:[]};let stamp=0;
  const ctx={state:'running',get currentTime(){return (Date.now()-stamp)/1000;},destination:{},resume:async()=>{},createGain:()=>({gain:{value:1,setTargetAtTime(){}},connect(){},disconnect(){}})};
- const engine={play(plan,mixers,offset){stamp=Date.now();events.plays.push({plan,offset});return 0;},createClock(plan,start,offset){return {position:()=>Math.min(plan.beats,offset+(Date.now()-stamp)/1000*120/60)};},audition(note){events.auditions.push(note);}};
+ const engine={play(plan,mixers,offset){stamp=Date.now();events.plays.push({plan,offset});return 0;},createClock(plan,start,offset){const beat=()=>Math.min(plan.beats,offset+(Date.now()-stamp)/1000*120/60);return {position:beat,beat};},audition(note){events.auditions.push(note);}};
  globalThis.SoundFontPlayback={getContext:()=>ctx,prepare:async()=>engine,stop(){}};
  await import('../dist/app.js?browser-dom');
  const $=s=>w.document.querySelector(s);
@@ -23,9 +23,14 @@ test('Rawl playback, brick pages, deep links and existing chart views work toget
  assert.equal($('#bass-voice'),null);assert.ok([...w.document.querySelectorAll('#rawl-view [data-note]')].every(el=>el.dataset.voice==='0'));
  assert.equal($('#notation-view').getAttribute('aria-pressed'),'true');assert.equal($('#analysis').hidden,true);
  const roadmap=read('data/roadmaps.json').songs[0],performance=read('data/performances/000.json'),byId=new Map(performance.notes.map(n=>[n.id,n]));
- assert.equal(w.document.querySelectorAll('#rawl-view .rawln-modulation[data-join]').length,roadmap.rows.reduce((n,r)=>n+r.joins.length,0));
+ assert.equal(w.document.querySelectorAll('#rawl-view .rawln-modulation[data-join]').length,roadmap.rows.reduce((n,r)=>n+r.joins.filter(j=>j.delta!==0).length,0));
  const bootstrap=$('#rawl-view .rawln-modulation[data-beat="60"]');assert.equal(bootstrap.dataset.tonic,'5');assert.equal(bootstrap.querySelector('.rawln-modulation-label').textContent.trim(),'5 F');assert.equal(bootstrap.querySelector('.rawln-modulation-flag').dataset.degree,'5');
- const c7=performance.chords.find(c=>c.start===60),cell=[...w.document.querySelectorAll('#rawl-view .rawln-chord')].find(el=>el.title===c7.symbol&&el.querySelector('.rawln-rn').textContent==='V7');assert.ok(cell);assert.equal(cell.querySelector('.harmony-band').dataset.degree,'7');
+ const c7=performance.chords.find(c=>c.start===60),cell=[...w.document.querySelectorAll('#rawl-view .rawln-chord')].find(el=>el.title===c7.symbol);assert.ok(cell);assert.equal(cell.dataset.degree,'7');assert.ok([...w.document.querySelectorAll('#rawl-view .rawln-rn')].some(el=>el.textContent==='V7'));assert.equal(cell.style.background,'');
+ const stripe=$('#rawl-view .harmony-stripe');stripe.dispatchEvent(new w.Event('pointerover',{bubbles:true}));assert.ok(w.document.body.classList.contains('harmony-rn'));stripe.dispatchEvent(new w.Event('pointerout',{bubbles:true}));assert.ok(!w.document.body.classList.contains('harmony-rn'));
+ assert.equal(w.document.querySelectorAll('.rawln-playhead').length,0);
+ assert.deepEqual([...w.document.querySelectorAll('#rawl-view .rawln-row')].map(el=>[el.dataset.section,el.style.gridRow,el.style.gridColumn]),[['A','1','1 / span 8'],['A','2','1 / span 8'],['B','2','9 / span 8'],['A','3','1 / span 8']]);
+ assert.ok($('#songs .catalog-family'));assert.equal($('#reader-tools').querySelector('#transport')!==null,true);
+
  for(const el of w.document.querySelectorAll('#rawl-view [data-note]')){const n=byId.get(el.dataset.note),mid=n.start+n.duration/2;let tonic=0;for(const change of performance.changes)if(change.beat<mid)tonic=change.tonic;assert.equal(Number(el.dataset.degree),(n.pitch-tonic+120)%12);}
  assert.ok($('#rawl-view .rawln-tonic-line[data-tonic="5"]'));
 
@@ -39,24 +44,24 @@ test('Rawl playback, brick pages, deep links and existing chart views work toget
  $('#tempo').value='80';$('#tempo').dispatchEvent(new w.Event('change'));$('#play').click();await wait(()=>events.plays.length===2);assert.equal(events.plays[1].plan.timeAt(1),.75);$('#stop').click();
  $('#piano-voice').click();assert.equal($('#piano-voice').getAttribute('aria-pressed'),'false');await wait(()=>$('#rawl-view .rawln-voice-0.rawln-muted'));
  $('#digital').click();assert.equal($('#analysis').hidden,false);assert.equal($('#rawl-view').hidden,true);assert.equal(w.document.querySelectorAll('#score .chord').length,26);
- assert.equal(w.document.querySelectorAll('#score .rawln-modulation[data-join]').length,5);
- const altered=[...w.document.querySelectorAll('#score .chord')].find(c=>Number(c.dataset.chordStart)===60);assert.equal(altered.dataset.degree,'7');assert.equal(altered.nextElementSibling.textContent,'V7');
+ assert.equal(w.document.querySelectorAll('#score .rawln-modulation[data-join]').length,2);
+ const altered=[...w.document.querySelectorAll('#score .chord')].find(c=>Number(c.dataset.chordStart)===60);assert.equal(altered.dataset.degree,'7');assert.ok([...w.document.querySelectorAll('#score .rn')].some(el=>el.textContent==='V7'));assert.equal(altered.style.background,'');
  const link=$('#score .brick');const slug=link.getAttribute('href');w.location.hash=slug;
  await wait(()=>$('#brick-view').hidden===false);assert.equal($('#song-view').hidden,true);assert.ok($('#brick-view h1').textContent.includes('Donna Lee Start'));
- const index=read('data/bricks.json'),entry=index.bricks.find(b=>'#brick/'+b.slug===slug);assert.equal(w.document.querySelectorAll('.brick-match').length,entry.standards.length);
- await wait(()=>$('#brick-rawl [data-note]')&&!$('#play').disabled);assert.equal($('#transport').parentElement.id,'brick-preview');assert.ok($('#brick-preview').compareDocumentPosition($('#brick-view h2'))&w.Node.DOCUMENT_POSITION_FOLLOWING);
- assert.equal($('#midi-download').getAttribute('href'),'./midi/bricks/'+entry.slug+'.mid');$('#play').click();await wait(()=>$('#play').textContent==='Pause');await wait(()=>$('#brick-rawl .rawln-sounding'));$('#stop').click();assert.equal($('#brick-rawl .rawln-sounding'),null);
+ const index=read('data/bricks.json'),entry=index.bricks.find(b=>'#brick/'+b.slug===slug.split('?')[0]);await wait(()=>$('.variant-rawl [data-note]'));assert.equal(new Set([...w.document.querySelectorAll('.brick-match')].map(el=>Number(el.dataset.song))).size,entry.standards.length);
+ await wait(()=>$('.variant-rawl [data-note]')&&!$('#play').disabled);assert.equal($('#transport').parentElement.id,'brick-preview');assert.ok($('#brick-view h2').textContent.startsWith('Variant '));
+ assert.ok($('#midi-download').getAttribute('href').startsWith('./midi/brick-variants/'+entry.slug+'--'));$('#play').click();await wait(()=>$('#play').textContent==='Pause');await wait(()=>$('.variant-rawl .rawln-sounding'));$('#stop').click();assert.equal($('.variant-rawl .rawln-sounding'),null);
  const passage=$('.passages a');w.location.hash=passage.getAttribute('href');await wait(()=>$('#song-view').hidden===false&&$('#play').disabled===false);
  assert.ok($('#score .selected-brick'));assert.equal($('#stop').disabled,false);
- w.location.hash='#bricks';await wait(()=>$('#brick-view h1')?.textContent==='Bricks');assert.equal(w.document.querySelectorAll('.brick-catalog-row').length,315);
- w.location.hash='#brick/minor-dr';await wait(()=>$('#brick-view h1')?.textContent==='Minor Dropback'&&$('#brick-rawl [data-note]'));assert.equal(w.location.hash,'#brick/minor-dropback');assert.equal(w.document.querySelectorAll('.brick-match').length,9);
+ w.location.hash='#bricks';await wait(()=>$('#brick-view h1')?.textContent==='Bricks');assert.equal(w.document.querySelectorAll('.brick-catalog-row').length,299);
+ w.location.hash='#brick/minor-dr';await wait(()=>$('#brick-view h1')?.textContent==='Minor Dropback'&&$('.variant-rawl [data-note]'));assert.equal(w.location.hash,'#brick/minor-dropback');assert.equal(new Set([...w.document.querySelectorAll('.brick-match')].map(el=>el.dataset.song)).size,9);assert.equal(w.document.querySelectorAll('.brick-variant').length,6);const second=$('.brick-variant:nth-child(2) .variant-play');second.click();await wait(()=>second.textContent==='Pause');assert.equal($('.brick-variant:nth-child(2)').classList.contains('active-variant'),true);$('#stop').click();
  $('#search').value='Minor Dr';$('#search').dispatchEvent(new w.Event('input'));assert.equal(w.document.querySelectorAll('#songs .song-link').length,2);
  const rawMatch=[...w.document.querySelectorAll('.passages a')].find(a=>a.getAttribute('href').includes('brick=minor-dropback'));w.location.hash=rawMatch.getAttribute('href');await wait(()=>$('#song-view').hidden===false&&!$('#play').disabled);assert.ok($('#score .selected-brick'));assert.ok([...w.document.querySelectorAll('#score .selected-brick')].every(el=>el.textContent==='Minor Dropback'));
  w.location.hash='#bricks';await wait(()=>$('#brick-view h1')?.textContent==='Bricks');
  $('#search').value='Straight Cadence';$('#search').dispatchEvent(new w.Event('input'));assert.ok(w.document.querySelectorAll('#songs .song-link').length>0);
  w.location.hash='#012';await wait(()=>$('#title').textContent==='Autumn Leaves'&&!$('#play').disabled);assert.equal($('#tonic').textContent.trim(),'C minor');
- $('#notation-view').click();await wait(()=>$('#rawl-view [data-note]'));assert.equal($('#midi-download').getAttribute('href'),'./midi/012.mid');
- $('#original').click();assert.equal($('#source-view').hidden,false);assert.equal($('#transport').hidden,true);
+ $('#notation-view').click();await wait(()=>$('#rawl-view [data-note]'));assert.equal($('#midi-download').getAttribute('href'),'./midi/012.mid');const rawlLinks=read('data/rawl-links.json').standards[12];assert.ok(rawlLinks.length);assert.equal($('#rawl-links a').href,rawlLinks[0].url);assert.ok([...w.document.querySelectorAll('#rawl-links a')].every(a=>a.target==='_blank'&&a.rel==='noopener'));
+ w.location.hash='#brick/yardbird-clipped';await wait(()=>$('#brick-view h1')?.textContent.startsWith('Yardbird'));await wait(()=>$('.unresolved-variants'));assert.equal(w.document.querySelectorAll('.brick-variant').length,0);assert.equal($('#play').disabled,true);w.location.hash='#012';await wait(()=>$('#song-view').hidden===false&&!$('#play').disabled);$('#original').click();assert.equal($('#source-view').hidden,false);assert.equal($('#transport').hidden,true);
  assert.ok(!$('#pdf-link').getAttribute('href').includes('Insights%20in%20Jazz'));
  w.dispatchEvent(new w.Event('beforeunload'));dom.window.close();
 });

@@ -35,10 +35,11 @@ chords in one voice. It does not add a melody or claim an original
 performance. Every fully legible chord uses the spelling/aliases from the pinned
 Impro-Visor `vocab/My.voc`; `scripts/chord-vocabulary.py` extracts the vocabulary.
 Eight clipped chord cells remain marked rests, preserving their original times.
-Each chord has one simultaneous instance of each declared pitch class, packed
-within an octave above its root (C3–B3 for the root). There is no voice-leading
-optimization. A distinct slash pitch is included once in the same stack; the
-root remains lowest, including for slash chords. MIDI exports and playback share the same notes,
+Each chord has a simultaneous root-position core (C3–B3 for the root), with
+9ths, 11ths and 13ths in the next octave above the seventh. There is no voice-leading
+optimization. Explicit slash bass sits strictly below the complete root-starting
+upper chord; it can duplicate a core pitch class in a lower octave. All notes
+remain in one piano voice. MIDI exports and playback share the same notes,
 quarter-note timing, and meter. Default tempo is an audition setting, 120 BPM;
 changing BPM updates playback and MIDI downloads.
 
@@ -54,12 +55,12 @@ key changes, render callbacks, and playback position. It uses Caplin's 3 px pitc
 axis and 5 px notes, Rawl's colors/corner shapes, and row-local held-note ranges.
 The host owns audio, routing, realization, and download controls.
 
-`#bricks` lists 315 canonical brick identities from the 354 source labels. Each
+`#bricks` lists 299 canonical brick identities from the 354 source labels. Each
 `#brick/<slug>` page lists every matching standard and its exact source passages.
 Brick links in both score views are reciprocal. Passage links open the standard
 at that beat and highlight its brick label. These are matches in the PDF's
 242 analyses, not fresh analyses of the larger Impro-Visor corpus. A reviewed
-alias table combines 39 typographic variants. Ambiguous stems and hidden semantic
+alias table combines 70 literal typography/OCR variants. Ambiguous stems and hidden semantic
 extensions remain distinct. Raw labels remain unchanged in `roadmaps.json` and
 each indexed passage; old abbreviated page addresses resolve to their canonical
 page. Search accepts both the canonical and abbreviated names.
@@ -72,7 +73,10 @@ background and its contrasting foreground, including distinguishing dots for
 chromatic degrees 1 and 6. Interface controls, branding, focus, selection, and
 source-clipping indicators are grayscale.
 
-Chord roots, Roman numerals and Rawl notes share the active modulation reference.
+The single transparent harmony stripe displays chord symbols by default.
+Hovering any stripe swaps all stripes to Roman numerals using identically
+positioned overlay cells; no layout measurement changes. Chord roots, Roman
+numerals and Rawl notes share the active modulation reference.
 The song itself remains transposed to its home tonic C. Flags use the signed shift modulo 12:
 up 2 uses degree 2 (red), while down 2 uses degree 10 (orange). Source view and
 PDF downloads retain the original source documents.
@@ -123,7 +127,7 @@ Geologica is reused from the user's CompGeom site with its OFL license.
 Lucide arrow paths are from lucide-react 1.17.0, ISC-licensed; the original path
 modules and license are included under `dist/icons/`.
 
-Brick detail pages start with a playable, MIDI-downloadable example taken from the longest fully legible matching roadmap passage, transposed to the local brick tonic C. Its source link returns to the exact passage. All 315 canonical brick identities have examples. These are source passages, not expansions from the brick dictionary.
+Brick detail pages group standards by their exact structural usage. Every complete variant has its own Rawl preview and MIDI, transposed from its local tonic to C, with a source passage link. The index compares relative chord roots, register-aware qualities, explicit slash bass, key context, and rational rhythmic proportions; uniform duration scaling and transposition share a definition. Row continuations join only without a boundary join. There are 1,007 definitions across 299 canonical identities; nine clipped or incomplete occurrences remain unresolved, including the unresolved-only Yardbird page. All 3,452 original row spans remain accounted for. `evidence/brick-variants-audit.json` records the definitions and usage. These are actual source passages, not dictionary expansions.
 
 Active and hovered Rawl notes double their height upward with the bottom edge fixed, following Rawl’s `getNoteRectangles.tsx`; playback adds no outline or brightness change. Only the note copy in the current row responds to playback. Muted voices collapse to 0.5 px.
 
@@ -132,3 +136,17 @@ For the one selected example with no overlapping key label (Diatonic I ii iii bi
 The join-key lookup uses the region covering the join onset, including joins within an unchanged key region. This corrects 90 previously forward-looking tonic pairs. Key changes without a join remain on the same shared timeline. Rawl flag geometry follows `AnalysisGrid.tsx` `NewTonicSymbol`: an 80 × 12 px gradient mask anchored at onset, with white interval/tonic text offset beside the measure number.
 
 Typography aliases are explicit in `src/music/brick-aliases.mjs`; `evidence/brick-aliases.json` records the merged groups and counts. Impro-Visor `RoadMapSettings.trimString` and `GraphicBrick` shorten labels to fit pixels. Visible `+` modifiers are retained; an unknown `+...` extension is not equated with a base brick or a guessed Overrun/Dropback. Minor Dropback combines four shortened spellings into one page with nine unique standards and eleven source passages.
+
+`atlas.html` renders every canonical brick on a single full-width page without the reader's top bar or sidebar. Impro-Visor type groups flow into dense columns, each group retaining a vertical stack of complete Rawl previews. Cards link to their standards page and share one playback transport. All previews render together; a single 848 KB dataset supplies the 299 examples.
+
+Type metadata is pinned in `src/music/brick-types.json` from the inspected `My.dictionary`. Exact types take precedence; multiple declared types use the name's explicit type or the most common declaration. Old Launcher labels correspond to Approach, and explicit type words provide fallbacks for historic names absent from the current dictionary. Classification basis is retained in the atlas data. Truncated names and hidden `+...` modifiers whose type cannot be identified remain Unclassified (51 entries); no missing extension is guessed.
+
+
+The reader chrome is two 32px lines. The drawer groups all standards by structural family. `src/music/forms.mjs` compares timed harmonic sections with transposition-aware root/quality fingerprints and cadential-tail tolerance; confirmed source examples are recorded in `evidence/form-source-audit.json`. AABA sections lay out as A / A B / A; related repeated-A forms use the same left anchor, with novel sections extending horizontally. Inferred families remain provisional; ambiguous forms remain Other. Solar is not classified as blues merely because it has twelve bars.
+
+Zero-shift joins remain in the tonic timeline but have no marker. Rawl's measure numbers are layered above modulation flags, with black numbers over visible flags. There is no vertical playback cursor. Active notes double height upward only at audible output time, using the same nullable output-aware `clock.beat()` as Caplin; render-ahead and output latency do not activate notes early.
+
+`evidence/typography-audit.json` records the complete 354-label / 3452-passage audit. Thirty-one additional literal corrections include yen/missing-IV strokes, accidental/Roman OCR, and confirmed diatonic spellings. Forty-six ambiguous or hidden-modifier labels remain unresolved, and 58 structural collision groups remain semantically distinct. Every original route is reserved by identity, so sharp-IV cannot steal natural-IV's address.
+
+
+`src/music/rawl-links.json` supplies 69 verified public Rawl renditions across 34 standards. Standard headers and brick usage lists expose the links, with original rendition titles when several exist. `scripts/rawl-links.mjs --verify` refreshes the read-only public-record checks; the audit records composition matching, MIDI headers/note onsets, and duplicate payload exclusions. Empty entries mean no verified match in the audited public index. No login is required for this reader; Sites access is public.

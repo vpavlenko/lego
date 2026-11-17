@@ -28,7 +28,7 @@ All times are quarter-note beats. Pitch is a MIDI note number. Notes held across
 row boundaries are drawn in both rows and determine each row's pitch range.
 Notes are five pixels high on a three-pixel semitone axis; resizing changes the
 horizontal time scale. A ref exposes `setPosition(beat)` for an audio-clock-driven
-playhead and active-note height changes without React rendering every frame.
+active-note height changes without React rendering every frame.
 Active or hovered notes double upward, preserving their bottom edge. Playback
 adds no outline, brightness, or stacking change. A held note only grows in the
 current playback row; muted voices collapse to 0.5 px, as in Rawl.
@@ -41,3 +41,8 @@ Rawl conventions are GPL-3.0; see LICENSE. No Caplin book content is included.
 rectangle with the signed interval and new tonic beside the measure number.
 Equal-tonic events remain visible, so hosts can retain zero-shift joins. Notes
 use Rawl’s midpoint rule; tonal guides change at the onset.
+
+Zero-shift markers are suppressed without dropping tonic events. Rawl measure
+labels remain above the fading flag layer. The renderer draws no vertical cursor.
+The host can use `row.style` and container `className`/`style` to align repeated
+sections; note geometry remains unchanged.
