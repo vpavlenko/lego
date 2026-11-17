@@ -6,9 +6,12 @@ import {modulationAt} from './music/modulations.mjs';
 import {notationRows} from './music/notation-rows.mjs';
 import {brickNameParts} from './music/brick-labels.mjs';
 import {RAWL_COLORS} from 'librawl/palette';
+import {melodyDisplay} from './music/melody-display.mjs';
 
 function HostView({song,performance,brickMap,onSeek,onNote,onNoteHover,onMeasureSelect,selectedMeasure=null,controller,mutedVoices,selected,compact=false,form=null,measureWidth=null,barsPerRow=null,continuous=false}){
  const [mobile,setMobile]=useState(()=>matchMedia('(max-width:760px)').matches),notation=useRef(null);
+ const display=React.useMemo(()=>melodyDisplay(performance.notes),[performance.notes]);
+ const sourceNote=note=>note?display.sourceById.get(note.id)??note:null;
  useEffect(()=>{const q=matchMedia('(max-width:760px)'),fn=()=>setMobile(q.matches);q.addEventListener('change',fn);return()=>q.removeEventListener('change',fn);},[]);
  const rows=React.useMemo(()=>notationRows({song,performance,form,compact,mobile,measureWidth,barsPerRow,continuous}),[song,performance,form,compact,mobile,measureWidth,barsPerRow,continuous]);
  useEffect(()=>{controller.current=notation.current;notation.current?.setPosition(controller.position);return()=>{controller.current=null;};});
@@ -28,7 +31,7 @@ function HostView({song,performance,brickMap,onSeek,onNote,onNoteHover,onMeasure
    <div className="harmony-rns">{cells.map(({c,rn,display,degree,style})=><div key={c.id} className={'rawln-rn harmony-cell'+(c.clipped?' uncertain':'')} data-degree={degree} style={style} title={rn}>{display?.bass?<>{rn.slice(0,rn.lastIndexOf('/'))}<span className="chord-slash">/</span><span className="chord-bass" data-degree={display.bass.degree} style={{color:RAWL_COLORS[display.bass.degree].background}}>{rn.slice(rn.lastIndexOf('/')+1)}</span></>:rn}</div>)}</div>
   </div>;
  };
- return <RawlNotation className={(form?.layoutAligned??form?.aligned)&&!compact?'rawln-form':''} style={(form?.layoutAligned??form?.aligned)&&!compact?{gridTemplateColumns:`repeat(${form.layoutColumns??form.columns},minmax(0,1fr))`,minWidth:Math.max(1,(form.layoutColumns??form.columns)/(form.layoutSections??form.sections)[0].bars)*300}:undefined} ref={notation} notes={performance.notes} beats={performance.beats} rows={rows} tonic={0} changes={changes} barBeats={performance.barBeats} beatBeats={4/(song.meter?.[1]??4)} phraseStarts={form?.phraseStarts} measureMap={performance.measureMap} hideInitialTonic={compact} mutedVoices={mutedVoices} onSeek={onSeek} onNote={onNote} onNoteHover={onNoteHover} onMeasureSelect={onMeasureSelect} selectedMeasure={selectedMeasure} renderHeader={compact?undefined:header} renderFooter={footer}/>;
+ return <RawlNotation className={(form?.layoutAligned??form?.aligned)&&!compact?'rawln-form':''} style={(form?.layoutAligned??form?.aligned)&&!compact?{gridTemplateColumns:`repeat(${form.layoutColumns??form.columns},minmax(0,1fr))`,minWidth:Math.max(1,(form.layoutColumns??form.columns)/(form.layoutSections??form.sections)[0].bars)*300}:undefined} ref={notation} notes={display.notes} beats={performance.beats} rows={rows} tonic={0} changes={changes} barBeats={performance.barBeats} beatBeats={4/(song.meter?.[1]??4)} phraseStarts={form?.phraseStarts} measureMap={performance.measureMap} hideInitialTonic={compact} mutedVoices={mutedVoices} onSeek={onSeek} onNote={note=>onNote?.(sourceNote(note))} onNoteAudition={note=>onNote?.(sourceNote(note))} onNoteHover={note=>onNoteHover?.(sourceNote(note))} onMeasureSelect={onMeasureSelect} selectedMeasure={selectedMeasure} renderHeader={compact?undefined:header} renderFooter={footer}/>;
 }
 export function mountRawlView(element,options){
  const root=createRoot(element),controller={current:null,position:null};let props=options;

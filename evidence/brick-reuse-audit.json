@@ -319,7 +319,7 @@
       ],
       "passages": 1,
       "action": "merge",
-      "target": "Nowhere Turnaround Minor",
+      "target": "♭VI Turnaround Minor",
       "distance": 0.25,
       "reason": "clear-supported-harmonic-variant"
     },
@@ -331,7 +331,7 @@
       ],
       "passages": 1,
       "action": "merge",
-      "target": "Nowhere",
+      "target": "♭VI",
       "distance": 0,
       "reason": "clear-supported-harmonic-variant"
     },
@@ -9120,7 +9120,7 @@
       "candidates": [],
       "nearestRejected": [
         {
-          "name": "Nowhere Turnaround",
+          "name": "♭VI Turnaround",
           "slug": "nowhere-turnaround",
           "sourceVariantId": "v-hf4wa5-1deb3gf",
           "targetVariantId": "v-ur22us-1gfidiq",
@@ -9284,7 +9284,7 @@
           "reason": "insufficient-complete-core-support"
         },
         {
-          "name": "Nowhere",
+          "name": "♭VI",
           "slug": "nowhere",
           "sourceVariantId": "v-hf4wa5-1deb3gf",
           "targetVariantId": "v-1rwgovq-1wwmnkk",
@@ -9440,7 +9440,7 @@
           "reason": "root-core-anchor-or-distance-guard"
         },
         {
-          "name": "Nowhere Minor",
+          "name": "♭VI Minor",
           "slug": "nowhere-minor",
           "sourceVariantId": "v-hf4wa5-1deb3gf",
           "targetVariantId": "v-12tbujk-1k02sp2",
@@ -16080,7 +16080,7 @@
         "unresolvedStandards": []
       },
       "target": {
-        "name": "Nowhere Turnaround Minor",
+        "name": "♭VI Turnaround Minor",
         "slug": "nowhere-turnaround-minor",
         "distinctStandards": 3,
         "standards": [
@@ -16283,7 +16283,7 @@
       ],
       "candidates": [
         {
-          "name": "Nowhere Turnaround Minor",
+          "name": "♭VI Turnaround Minor",
           "slug": "nowhere-turnaround-minor",
           "standards": [
             49,
@@ -16612,7 +16612,7 @@
         "unresolvedStandards": []
       },
       "target": {
-        "name": "Nowhere",
+        "name": "♭VI",
         "slug": "nowhere",
         "distinctStandards": 100,
         "standards": [
@@ -16909,7 +16909,7 @@
       ],
       "candidates": [
         {
-          "name": "Nowhere",
+          "name": "♭VI",
           "slug": "nowhere",
           "standards": [
             4,
@@ -17531,7 +17531,7 @@
           "reason": "insufficient-complete-core-support"
         },
         {
-          "name": "Nowhere Turnaround",
+          "name": "♭VI Turnaround",
           "slug": "nowhere-turnaround",
           "sourceVariantId": "v-rafb63-pi3om9",
           "targetVariantId": "v-8ejnfs-13fkgh2",

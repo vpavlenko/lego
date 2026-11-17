@@ -161,13 +161,13 @@
     {
       "action": "merge",
       "source": "Nowhere Turnaround to Minor On",
-      "target": "Nowhere Turnaround Minor",
+      "target": "♭VI Turnaround Minor",
       "reason": "clear-supported-harmonic-variant"
     },
     {
       "action": "merge",
       "source": "Nowhere...",
-      "target": "Nowhere",
+      "target": "♭VI",
       "reason": "clear-supported-harmonic-variant"
     },
     {
