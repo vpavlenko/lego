@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "version": 208,
+  "sourceCommit": "1ca85621877f94f15c7c824087f85ecd8029e3ee",
+  "records": [
+    {
+      "path": "librawl-caplin-notes.js",
+      "sha256": "2a2b21e32d0ced2f7223e65e04dbac36e9e0125813ff6c3ca2709526dd0b3902",
+      "bytes": 737350
+    },
+    {
+      "path": "librawl-tempo-keys.js",
+      "sha256": "8970b644da14955854fda3877c1cab0a72d3d298b97dcb56d240c88152b85e28",
+      "bytes": 2097
+    },
+    {
+      "path": "soundfont-playback.js",
+      "sha256": "8a5eb9b050ad7c17cede32a9b1816eb738dc645923f06301cd44dbfcbb728dfd",
+      "bytes": 37372
+    },
+    {
+      "path": "reader.js",
+      "sha256": "24b627b595ee3b734fc08e4c9761a06ae369fd30fdd118250bace30d263f66ab",
+      "bytes": 93154
+    }
+  ],
+  "allAuthoredScriptReferencesRetained": true,
+  "platformInjectedHTML": true
+}

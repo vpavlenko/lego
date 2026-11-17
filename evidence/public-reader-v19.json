@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "version": 19,
+  "sourceCommit": "2e7dc07296b1870f96da98d6f2dfd5068bbe067e",
+  "library": "0.3.4",
+  "charts": 507,
+  "melodyCompositions": 258,
+  "literalSolidScaleDegreeColors": [
+    "red",
+    "#9500b3",
+    "#03b9d5"
+  ],
+  "seventh": "black",
+  "records": [
+    {
+      "path": "icons/favicon.svg",
+      "sha256": "f6f666c9aa0da66d5fd620775651982fef11c6ce2161cec403f8c60dbc47a120",
+      "bytes": 500
+    },
+    {
+      "path": "rawl-view.js",
+      "sha256": "998f0c9f360f6cc4c6fae351afeb0dfb7016e4bb59e1d76ecc5711703e8df15a",
+      "bytes": 266290
+    },
+    {
+      "path": "audio-player.js",
+      "sha256": "f7068b08570b0f557da96e0dbabe2889da5a8d02d9057da929ba6ee843b27bab",
+      "bytes": 6128
+    },
+    {
+      "path": "soundfont-playback.js",
+      "sha256": "03f84e8f1eb4b0bb92ac3877f6ee979c22f2fd3e80555797f596f7621584951a",
+      "bytes": 37574
+    },
+    {
+      "path": "librawl-provenance.json",
+      "sha256": "3d43a0af93cdf71e5d238f70fad724593b8fd80edd3c47aae8bac36db2c9f01a",
+      "bytes": 2840
+    },
+    {
+      "path": "data/forms.json",
+      "sha256": "160d57382a8a2585c6747b3fadc9f69db03bd164db04f20d35614df83f38ac83",
+      "bytes": 514443
+    },
+    {
+      "path": "data/bricks.json",
+      "sha256": "773dd312982c38611fddbad131f25561469a55c1b9a464f932b4fe517a2abb0d",
+      "bytes": 825502
+    },
+    {
+      "path": "data/standards.json",
+      "sha256": "dce3230a948a047e5998b204bdc5682eab3194e9f0b84c921436be55ab25d41e",
+      "bytes": 7751608
+    }
+  ]
+}

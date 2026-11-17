@@ -3,8 +3,8 @@
   "library": {
     "repository": "https://github.com/vpavlenko/librawl",
     "lego": "0.3.4",
-    "rawl": "0.3.2",
-    "caplin": "0.3.0",
+    "rawl": "0.3.4",
+    "caplin": "0.3.4",
     "tests": 71
   },
   "implementations": {
@@ -18,7 +18,7 @@
     "tempo": "Shared continuous SoundFont rate change keeps running notes/clock/mixers/room; Rawl native WASM rate setter stays unchanged",
     "noteTooltips": "Suppressed in shared native notes, including plain, bent, quartertone and drums; accessible labels retained",
     "shiftHover": "Shared library gesture and original-note audition callback; Lego source/UI integration validated",
-    "favicon": "Three solid degree2/4/6 bands only on ii; superscript7 black",
+    "favicon": "Literal solid scale-degree2/4/6 bands: Dred/Fpurple/Acyan; black7; equal19.5-unit red/purple halves in both stems",
     "standardNavigation": "One composition entry links directly to a melody arrangement where available; exact source/brick-passage addresses retained",
     "nowhereName": "Primary learner names replace Nowhere with♭VI; Cork aliases/routes retained",
     "innerSections": "Inner AABA display partition takes priority over long repeated outer choruses; 10 arrangements",
@@ -42,12 +42,17 @@
     },
     "raw": {
       "typescriptErrors": 0,
-      "focused": 49,
-      "playbackGates": 4
+      "focused": 58,
+      "playbackGates": 4,
+      "heldNoteRateRetriggers": 0
     },
     "caplin": {
       "checks": 110,
-      "datasets": 500
+      "datasets": 500,
+      "rows": 985,
+      "rectangles": 66798,
+      "heldNoteRateRetriggers": 0,
+      "originalUnrelatedFilesPreserved": 20965
     },
     "originalBaseline": {
       "commit": "743a1791c8092e809ad2f92725de4b6d73ece0b7",
@@ -56,7 +61,7 @@
       "byteIdentical": true,
       "aggregateSha256": "099315aa502bb7bda6b646531873ec5f992b8498b03ffd7bb136cf95dd7441da"
     },
-    "browser": "Current UI verified through actual React/JSDOM; native Chrome displayed stale assets and could not provide a final current visual comparison",
+    "browser": "Rawl final fresh Chrome render and console passed; exact Shift-hover gesture counts verified through executing actual host callbacks because native text entry was unreliable. Published reader was observed in Chrome; all final runtime assets/data checked anonymously.",
     "previousBatch": {
       "arrangements": 486,
       "files": 972,
@@ -67,18 +72,21 @@
   },
   "publication": {
     "raw": "https://rawl.rocks/",
-    "rawCommit": "c99678c53",
+    "rawCommit": "5d30ca5dd",
     "caplin": "https://caplin.cxielamiko.chatgpt.site",
-    "caplinVersion": 207,
+    "caplinVersion": 208,
     "lego": {
       "url": "https://insights-roadmaps.cxielamiko.chatgpt.site",
-      "version": 17,
-      "sourceCommit": "ae8536bcb2e22262c5113458e73e10f2f621c080",
+      "version": 19,
+      "sourceCommit": "2e7dc07296b1870f96da98d6f2dfd5068bbe067e",
       "status": "succeeded",
-      "library": "0.3.3",
+      "library": "0.3.4",
       "melodyCompositions": 258,
-      "charts": 507
-    }
+      "charts": 507,
+      "anonymousReadback": "evidence/public-reader-v19.json"
+    },
+    "rawPagesCommit": "6c0d8fe47f5568da618a42e4be2949791eea7e75",
+    "caplinCommit": "1ca85621877f94f15c7c824087f85ecd8029e3ee"
   },
   "remaining": {
     "melodies": 11,
@@ -94,7 +102,7 @@
       "Love Came on Stealthy Fingers / Thunderbirds: identified encoded head not found"
     ],
     "currentRelease": [
-      "Publish continuous tempo package0.3.4 in all three consumers"
+      "Publish exactly equal favicon stem halves"
     ]
   }
 }
