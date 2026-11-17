@@ -1,7 +1,7 @@
 import {cadenceDiagramHTML} from './cadence-diagrams.js';
 import {brickNameHTML} from './brick-labels.js';
 import {mountRawlView,bindHarmonyHover} from './rawl-view.js';
-import {createPlayer,bindTempoKeys} from './audio-player.js';
+import {createPlayer,bindTempoKeys,DEFAULT_TEMPO} from './audio-player.js';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const icon=pause=>`<svg viewBox="0 0 24 24" aria-hidden="true">${pause?'<path d="M10 4H6v16h4zM18 4h-4v16h4z"/>':'<path d="m8 5 11 7-11 7V5Z"/>'}</svg>`;
 export async function mountAtlas(root){
@@ -13,7 +13,7 @@ export async function mountAtlas(root){
  root.querySelector('#cadences>.cadence-matrix').innerHTML=cadences.rows.filter(row=>row.matches.length).map(row=>`<div class="cadence-pattern" data-scheme-row="${row.row}"><h3 class="cadence-pattern-rn">${cadenceDiagramHTML(row.roots,row.qualities,'scheme-'+row.row)}</h3>${matchesHTML(row.matches)}</div>`).join('');
  const generalized=cadences.generalized.filter(group=>group.matches.length);root.querySelector('.cadence-generalized').hidden=!generalized.length;
  root.querySelector('.cadence-generalized .cadence-matrix').innerHTML=generalized.map((group,i)=>`<div class="cadence-pattern"><h3 class="cadence-pattern-rn">${cadenceDiagramHTML(group.matches[0].roots,group.qualities,'generalized-'+i)}</h3>${matchesHTML(group.matches)}</div>`).join('');
- const player=createPlayer({onState:state=>{
+ const player=createPlayer({defaultTempo:DEFAULT_TEMPO,onState:state=>{
   if(!active)return;const running=state==='playing',label=running?'Pause':state==='loading'?'Loading':'Play';active.button.innerHTML=icon(running);active.button.setAttribute('aria-label',label);active.button.title=label;active.button.setAttribute('aria-busy',String(state==='loading'));active.error.hidden=state!=='error';
  },onPosition:beat=>active?.view.setPosition(beat),onError:error=>{console.error(error);if(active)active.error.hidden=false;}});
  function activate(card){if(active===card)return;player.stop();active=card;player.load(card.item.performance);}
@@ -24,7 +24,7 @@ export async function mountAtlas(root){
  }
  for(const item of items)cards.set(item.slug,mountCard(item,root.querySelector(`[data-brick="${item.slug}"]`)));
  for(const item of comparisons)comparisonCards.push(mountCard(item,root.querySelector(`[data-comparison="${item.id}"]`)));
- const unbindTempo=bindTempoKeys({adjustTempo:delta=>{if(!active)return false;player.setTempo(player.tempo+delta*active.item.performance.tempo);}});
+ const unbindTempo=bindTempoKeys({adjustTempo:delta=>{if(!active)return false;player.setTempo(player.tempo+delta*DEFAULT_TEMPO);}});
  let destroyed=false;const destroy=()=>{if(destroyed)return;destroyed=true;unbindTempo();player.destroy();destroyHarmony();for(const card of [...cards.values(),...comparisonCards])card.view.destroy();window.removeEventListener('beforeunload',destroy);};window.addEventListener('beforeunload',destroy,{once:true});
  if(location.hash)requestAnimationFrame(()=>document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView({block:'start'}));
  return {cards,comparisonCards,player,destroy};

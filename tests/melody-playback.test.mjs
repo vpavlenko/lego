@@ -6,7 +6,7 @@ import {createHash} from 'node:crypto';
 import {createRequire} from 'node:module';
 import {playbackPlan} from '../src/music/realization.mjs';
 import {encodeMidi} from '../src/music/midi.mjs';
-import {createPlayer} from '../src/audio-player.mjs';
+import {createPlayer,DEFAULT_TEMPO} from '../src/audio-player.mjs';
 const {parseMidi}=createRequire(import.meta.url)('midi-file');
 const piano={id:'c',pitch:60,voice:0,start:0,duration:4,velocity:74},melody={id:'m',pitch:79,voice:1,start:0,duration:3,velocity:81};
 const data={title:'Fixture',tempo:120,meter:[4,4],beats:8,notes:[piano,melody,{id:'m2',pitch:77,voice:1,start:4,duration:2}]};
@@ -33,15 +33,21 @@ test('shipped sax bank contains a real GM65 preset and sampled instrument, prese
  const old=fs.readFileSync(new URL('../dist/assets/soundfonts/GeneralUser-GS-v4.sf2.1',import.meta.url));assert.equal(createHash('sha256').update(old).digest('hex'),'f2a57c0c85d3b118b39d6cf6f5eb9447e8a22ec3884e6f616951412d7f5c3460');
 });
 
-function setup(){
+function setup({defaultTempo}={}){
  let frame,pump,render=10,output=9.9,wall=20000;const positions=[],events=[];
  const context={state:'running',get currentTime(){return render;},destination:{},resume:async()=>{},getOutputTimestamp:()=>({contextTime:output,performanceTime:wall}),createGain:()=>({gain:{value:1,setTargetAtTime(value){this.value=value;},setValueAtTime(value){this.value=value;}},connect(){},disconnect(){}})};
  const realm={performance:{now:()=>wall},setInterval:fn=>{pump=fn;return 1;},clearInterval(){},setTimeout:()=>1,clearTimeout(){},console};vm.runInNewContext(fs.readFileSync(new URL('../dist/soundfont-playback.js',import.meta.url),'utf8'),realm);
  const synth={midiChannels:Array.from({length:16},()=>({setDrums(){}})),stopAll(){},connectChannel(){},disconnectChannel(){},controllerChange(channel,controller,value,options){events.push({type:'cc',channel,controller,value,time:options.time});},programChange(channel,program,options){events.push({type:'program',channel,program,time:options.time});},noteOn(channel,pitch,velocity,options){events.push({type:'on',channel,pitch,velocity,time:options.time});},noteOff(){}};
  const engine=new realm.SoundFontPlayback.PlaybackEngine(context,synth);globalThis.requestAnimationFrame=fn=>{frame=fn;return 1;};globalThis.cancelAnimationFrame=()=>{};globalThis.SoundFontPlayback={getContext:()=>context,prepare:async()=>engine,stop:()=>engine.stop()};
- const player=createPlayer({onPosition:b=>positions.push(b)});player.load(data);return{player,engine,events,positions,setTime(r,o=r-.1){render=r;output=o;wall+=20;},tick(){pump?.();frame?.();}};
+ const player=createPlayer({defaultTempo,onPosition:b=>positions.push(b)});player.load(data);return{player,engine,events,positions,setTime(r,o=r-.1){render=r;output=o;wall+=20;},tick(){pump?.();frame?.();}};
 }
 const settle=async()=>{await Promise.resolve();await Promise.resolve();};
+test('the website160BPM default leaves source tempo intact and live tempo edits retain sounding notes',async()=>{
+ const before=JSON.stringify(data),s=setup({defaultTempo:DEFAULT_TEMPO});
+ assert.equal(s.player.tempo,160);assert.equal(s.player.data.tempo,160);assert.equal(data.tempo,120);assert.equal(JSON.stringify(data),before);
+ await s.player.play();const start=s.events.find(event=>event.type==='on').time;s.setTime(start+.2,start+.1);s.tick();
+ const attacks=s.events.filter(event=>event.type==='on').length;s.player.setTempo(176);s.tick();assert.equal(s.player.tempo,176);assert.equal(s.events.filter(event=>event.type==='on').length,attacks);assert.equal(s.engine.getRate(),1.1);s.player.stop();
+});
 test('shared scheduler keeps both programs and melody mute through seeks and tempo changes on the audible clock',async()=>{
  const s=setup();s.player.setMuted(1,true);await s.player.play();assert.deepEqual(s.events.filter(e=>e.type==='program').map(e=>[e.channel,e.program]),[[0,0],[1,65]]);assert.equal(s.engine.connections.find(([channel])=>channel===1)[1].gain.value,0);assert.equal(s.positions.at(-1),null);
  const start=s.events.find(e=>e.type==='on').time;s.setTime(start+.2,start+.1);s.tick();assert.ok(s.positions.at(-1)>0);

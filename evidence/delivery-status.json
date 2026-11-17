@@ -19,14 +19,15 @@
     "noteTooltips": "Suppressed in shared native notes, including plain, bent, quartertone and drums; accessible labels retained",
     "shiftHover": "Shared library gesture and original-note audition callback; Lego source/UI integration validated",
     "favicon": "Black background, white7; hard scale-degree2/4/6 colors; each ii stem has equal red/purple halves",
-    "standardNavigation": "Composition links prefer an available melody arrangement; brick usage brightness checks exact target arrangement",
+    "standardNavigation": "Only242PDFversions visible in drawer, search, version selection and direct routes; hidden source versions redirect to their PDF chart or the first PDF chart. Corpus heads remain as151PDFoverlays.",
     "nowhereName": "Primary learner names replace Nowhere with♭VI; Cork aliases/routes retained",
     "innerSections": "Inner AABA display partition takes priority over long repeated outer choruses; 10 arrangements",
-    "melodyRegister": "One minimal visual octave offset per arrangement, 262 shifted; original objects/pitches preserved for click/Shift audition and all playback/exports",
+    "melodyRegister": "Closest one constant whole-octave visual offset, including lowering where appropriate; constrain only simultaneous positive-duration chord/melody overlap, gap>=1semitone. Original sax audio register retained.",
     "automaticAnalyses": "Hidden on all standard/catalogue/brick surfaces, including inferred key changes. Original PDF analyses and raw source datasets retained.",
     "swing": "67%default for melody playback/display unless source explicitly states straight;14source-pinned SatinDoll dotted cells interpreted67%, other dotted figures preserved",
     "continuationFlags": "Shared librawl0.3.5 carries tonic context without repeating modulation arrow/shift",
-    "pdfMelodies": "151 new corpus heads mapped onto PDF chords/bricks by exact bar grids and source chorus navigation, including59pickup pre-rolls with114pickupnotes retained. Reharmonization does not block attachment. Source arrangements and507archivedperformance/MIDI pairs retained."
+    "pdfMelodies": "151 new corpus heads mapped onto PDF chords/bricks by exact bar grids and source chorus navigation, including59pickup pre-rolls with114pickupnotes retained. Reharmonization does not block attachment. Source arrangements and507archivedperformance/MIDI pairs retained.",
+    "tempoDefault": 160
   },
   "melodies": {
     "arrangements": 507,
@@ -37,12 +38,14 @@
     "newHeads": 21,
     "newNotes": 2985,
     "pdfOverlays": 151,
-    "pdfChartsWithMelody": 152
+    "pdfChartsWithMelody": 152,
+    "visiblePDFStandards": 242,
+    "visiblePDFWithMelody": 152
   },
   "validation": {
     "reader": {
-      "tests": 283,
-      "pass": 283,
+      "tests": 287,
+      "pass": 287,
       "fail": 0,
       "skip": 0
     },
@@ -83,12 +86,14 @@
     "caplinVersion": 208,
     "lego": {
       "url": "https://insights-roadmaps.cxielamiko.chatgpt.site",
-      "version": 21,
-      "sourceCommit": "5b4688dd094e03021c8c513a130892da51b23325",
+      "version": 22,
+      "sourceCommit": "e7df7903defd045fc632f888c1de4bd1e656ecdf",
       "status": "succeeded",
       "library": "0.3.5",
       "charts": 507,
-      "melodyCompositions": 258
+      "visiblePDFStandards": 242,
+      "pdfMelodyOverlays": 151,
+      "anonymousReadback": "evidence/public-reader-v22.json"
     },
     "rawPagesCommit": "6c0d8fe47f5568da618a42e4be2949791eea7e75",
     "caplinCommit": "1ca85621877f94f15c7c824087f85ecd8029e3ee"
@@ -107,7 +112,7 @@
       "Love Came on Stealthy Fingers / Thunderbirds: identified encoded head not found"
     ],
     "currentRelease": [
-      "Publish151PDFmelody overlays withsourcechorus andpickupmapping"
+      "PublishPDF-only navigation,160BPM default and closest simultaneous melody register"
     ],
     "pdfMelodyMappings": 79,
     "dottedInterpretations": {
