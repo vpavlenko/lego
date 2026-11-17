@@ -2,27 +2,30 @@
   "date": "2026-11-17",
   "library": {
     "repository": "https://github.com/vpavlenko/librawl",
-    "lego": "0.3.4",
+    "lego": "0.3.5",
     "rawl": "0.3.4",
     "caplin": "0.3.4",
-    "tests": 71
+    "tests": 78
   },
   "implementations": {
     "grouping": "shared Dominant Cycle / IV and / II and / Diatonic families",
     "names": "50 RN prototypes with original Cork aliases",
     "coloring": "representative root chunks; exact user Autumn Leaves mapping",
     "definitions": "representative RN sequence beside every brick title",
-    "cadences": "Only populated classes; source-style bracket/arc diagrams and one right-aligned vertical list",
+    "cadences": "Colored RN arrow/bracket diagrams; names align at terminal I; Generalized always expanded",
     "comparisons": "four complete source variants, 100px/bar, visual alignment only",
     "recoloring": "shared per-score measure selection, preview, commit, Escape",
     "tempo": "Shared continuous SoundFont rate change keeps running notes/clock/mixers/room; Rawl native WASM rate setter stays unchanged",
     "noteTooltips": "Suppressed in shared native notes, including plain, bent, quartertone and drums; accessible labels retained",
     "shiftHover": "Shared library gesture and original-note audition callback; Lego source/UI integration validated",
-    "favicon": "Literal solid scale-degree2/4/6 bands: Dred/Fpurple/Acyan; black7; equal19.5-unit red/purple halves in both stems",
-    "standardNavigation": "One composition entry links directly to a melody arrangement where available; exact source/brick-passage addresses retained",
+    "favicon": "Black background, white7; hard scale-degree2/4/6 colors; each ii stem has equal red/purple halves",
+    "standardNavigation": "Composition links prefer an available melody arrangement; brick usage brightness checks exact target arrangement",
     "nowhereName": "Primary learner names replace Nowhere with♭VI; Cork aliases/routes retained",
     "innerSections": "Inner AABA display partition takes priority over long repeated outer choruses; 10 arrangements",
-    "melodyRegister": "One minimal visual octave offset per arrangement, 262 shifted; original objects/pitches preserved for click/Shift audition and all playback/exports"
+    "melodyRegister": "One minimal visual octave offset per arrangement, 262 shifted; original objects/pitches preserved for click/Shift audition and all playback/exports",
+    "automaticAnalyses": "Hidden on all standard/catalogue/brick surfaces, including inferred key changes. Original PDF analyses and raw source datasets retained.",
+    "swing": "67%default for melody playback/display unless source explicitly states straight;14source-pinned SatinDoll dotted cells interpreted67%, other dotted figures preserved",
+    "continuationFlags": "Shared librawl0.3.5 carries tonic context without repeating modulation arrow/shift"
   },
   "melodies": {
     "arrangements": 507,
@@ -35,8 +38,8 @@
   },
   "validation": {
     "reader": {
-      "tests": 242,
-      "pass": 242,
+      "tests": 267,
+      "pass": 267,
       "fail": 0,
       "skip": 0
     },
@@ -102,7 +105,7 @@
       "Love Came on Stealthy Fingers / Thunderbirds: identified encoded head not found"
     ],
     "currentRelease": [
-      "Publish exactly equal favicon stem halves"
+      "Publish current no-automatic-analysis release"
     ]
   }
 }

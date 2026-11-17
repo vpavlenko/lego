@@ -1,6 +1,6 @@
 /** Curated full source variants on one visual bar grid; musical time stays intact. */
 export const BRICK_COMPARISON_ALIGNMENT={id:'dropback-pullback-autumn',measureWidth:100,items:[
- {slug:'dropback',variantId:'v-zryolr-my997p',offsetBars:2,beats:16,chords:[['C',0,8],['A7',8,16]],anchors:[{symbol:'C',beat:0,screenBar:2}]},
+ {slug:'dropback',variantId:'v-1wmd23p-1e8ogsj',offsetBars:2,beats:16,chords:[['CM7',0,8],['A7',8,16]],anchors:[{symbol:'CM7',beat:0,screenBar:2}]},
  {slug:'ttfa-dropback',variantId:'v-1cdct8p-1c6rnm7',offsetBars:2,beats:16,chords:[['CM7',0,8],['Em7',8,12],['A7',12,16]],anchors:[{symbol:'CM7',beat:0,screenBar:2}]},
  {slug:'pullback',variantId:'v-hu8opg-1d2z1a2',offsetBars:0,beats:16,chords:[['Dm7',0,4],['G7',4,8],['Em7b5',8,12],['A7',12,16]],anchors:[{symbol:'Dm7',beat:0,screenBar:0}]},
  {slug:'autumn-leaves-opening',variantId:'v-3ji1qf-1uurvh',offsetBars:0,beats:32,chords:[['Dm7',0,4],['G7',4,8],['CM7',8,12],['FM7',12,16],['Bm7b5',16,20],['E7',20,24],['Am7',24,32]],anchors:[{symbol:'Dm7',beat:0,screenBar:0},{symbol:'CM7',beat:8,screenBar:2}]}

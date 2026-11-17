@@ -1,4 +1,6 @@
 import {buildBrickComparisons} from '../src/music/brick-comparisons.mjs';
+import {performanceStyle} from '../src/music/performance-style.mjs';
+import {visibleAnalysis} from '../src/music/visible-analysis.mjs';
 import {pitch} from '../dist/harmony.mjs';
 import {buildCadenceSystem} from '../src/music/cadence-system.mjs';
 import fs from 'node:fs';
@@ -25,7 +27,7 @@ const root=fileURLToPath(new URL('../',import.meta.url));
 const require=createRequire(import.meta.url),libraryFile=specifier=>require.resolve('librawl/'+specifier),libraryDist=path.dirname(libraryFile('style.css'));
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const original=read('dist/data/roadmaps.json'),additional=fs.existsSync(path.join(root,'dist/data/additional-standards.json'))?read('dist/data/additional-standards.json'):{songs:[]};
-const rawSongs=[...original.songs,...additional.songs],vocabulary=read('src/music/chord-vocabulary.json'),{qualities}=vocabulary;
+const sourceSongs=[...original.songs,...additional.songs],rawSongs=sourceSongs.map(visibleAnalysis),vocabulary=read('src/music/chord-vocabulary.json'),{qualities}=vocabulary;
 const sourceIndex=buildBrickIndex(rawSongs),coverage=removeUnhelpfulBricks(rawSongs,vocabulary),allFamilies=buildLearnerBrickIndex(sourceIndex),learner=buildLearnerBrickIndex(buildBrickIndex(coverage.songs));
 // Removed labels may own old page addresses of a still useful family.
 // Keep their names/routes searchable without restoring discarded passages.
@@ -42,6 +44,9 @@ const coverageAudit=read('evidence/one-chord-bricks.json');fs.writeFileSync(path
 if(songs.some((song,i)=>song.index!==i))throw Error('Non-contiguous standard indices');
 const melodyFile=fs.existsSync(path.join(root,'dist/data/melody-sources.json'))?'dist/data/melody-sources.json':'dist/data/melodies.json',melodyData=fs.existsSync(path.join(root,melodyFile))?read(melodyFile):{entries:{}},melodies=new Map(Object.values(melodyData.entries).map(entry=>[entry.id,entry])),melodyMatches=new Map((melodyData.existingMatches??[]).map(match=>[match.song,match]));
 const modulationRecords=[];
+const styleReferences=fs.existsSync(path.join(root,'src/music/performance-style-references.json'))?read('src/music/performance-style-references.json'):{entries:[]};
+const swingReviews=fs.existsSync(path.join(root,'src/music/swing-cell-reviews.json'))?read('src/music/swing-cell-reviews.json'):{entries:[]};
+fs.writeFileSync(path.join(root,'dist/data/performance-styles.json'),JSON.stringify({version:1,styles:songs.map(song=>performanceStyle(song,melodies.get(song.melodyId??melodyMatches.get(song.index)?.melodyId),styleReferences,swingReviews))}));
 function realizedView(song,record=false){const performance=realizeSong(song,qualities),projection=cleanModulationRegions(song,performance.changes,vocabulary);if(projection.stats.remainingOneHarmonyModulations)throw Error('Unresolved one-chord modulation in '+song.title);if(record)modulationRecords.push({song:song.index,title:song.title,...projection});return {...performance,sourceChanges:performance.changes,changes:projection.changes};}
 fs.copyFileSync(path.join(root,'src/music/rawl-links.json'),path.join(root,'dist/data/rawl-links.json'));
 const brickMap=new Map(bricks.bricks.flatMap(b=>[b.name,...b.aliases,...(b.sourceNames??[])].map(name=>[name,b])));
@@ -54,7 +59,10 @@ fs.writeFileSync(path.join(root,'dist/data/forms.json'),JSON.stringify({version:
 fs.mkdirSync(path.join(root,'dist/data/performances'),{recursive:true});fs.mkdirSync(path.join(root,'dist/midi'),{recursive:true});
 let total=0,clipped=0;const melodyStandards=new Set(),melodyCharts=new Set();
 for(const song of songs){
- const alignment=melodyMatches.get(song.index),entry=melodies.get(song.melodyId??alignment?.melodyId),data=attachMelody(realizedView(song,true),song,entry,song.melodyId?null:alignment),id=String(song.index).padStart(3,'0');if(data.notes.some(note=>note.voice===1)){melodyStandards.add(song.arrangementOf??song.index);melodyCharts.add(song.index);}total+=data.notes.length;clipped+=data.chords.filter(c=>c.clipped).length;
+ // Public color contexts follow visible analyses. Source exports retain their
+ // existing bytes, including the archived parser evidence.
+ realizedView(song,true);
+ const alignment=melodyMatches.get(song.index),entry=melodies.get(song.melodyId??alignment?.melodyId),data=attachMelody(realizedView(sourceSongs[song.index]),song,entry,song.melodyId?null:alignment),id=String(song.index).padStart(3,'0');if(data.notes.some(note=>note.voice===1)){melodyStandards.add(song.arrangementOf??song.index);melodyCharts.add(song.index);}total+=data.notes.length;clipped+=data.chords.filter(c=>c.clipped).length;
  fs.writeFileSync(path.join(root,`dist/data/performances/${id}.json`),JSON.stringify(data));fs.writeFileSync(path.join(root,`dist/midi/${id}.mid`),encodeMidi(data));
 }
 fs.writeFileSync(path.join(root,'dist/data/standards.json'),JSON.stringify({...original,songs,melodyStandards:[...melodyStandards].sort((a,b)=>a-b),melodyCharts:[...melodyCharts].sort((a,b)=>a-b)}));

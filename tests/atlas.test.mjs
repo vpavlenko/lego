@@ -13,7 +13,7 @@ test('atlas covers every canonical brick exactly once and retains source types a
   const brick=index.bricks.find(b=>b.slug===item.slug),definitions=read('data/brick-variants/'+item.slug+'.json').variants,selected=definitions.find(v=>v.id===item.variantId);assert.ok(selected);assert.deepEqual(item.performance,selected.performance);assert.equal(item.standards,distinct(brick.standards),item.name+' counts each composition once across arrangements');assert.ok(item.performance.notes.length);
   for(const variant of definitions){const selectedCount=distinct(selected.standards),otherCount=distinct(variant.standards);assert.ok(selectedCount>=otherCount,item.name+' selects widest composition coverage');if(selectedCount===otherCount){assert.ok(selected.completeOccurrences>=variant.completeOccurrences,item.name+' occurrence tie-break');if(selected.completeOccurrences===variant.completeOccurrences)assert.ok(selected.number<=variant.number,item.name+' semantic-order tie-break');}}
  }
- assert.ok(index.bricks.some(brick=>brick.standards.length>distinct(brick.standards)),'Real corpus includes alternate arrangements, so composition deduplication is exercised');
+ assert.ok(index.bricks.every(brick=>brick.standards.every(ref=>!songs[ref.song].provenance?.analysisBasis)),'Catalogue usage excludes automatically parsed arrangements');
  assert.equal(brickType('Straight Cadence',types).type,'Cadence');assert.equal(brickType('Minor Dropback',types).type,'Dropback');assert.equal(brickType('POT',types).type,'Turnaround');assert.equal(brickType('Straight Launcher',types).type,'Approach');
  assert.equal(brickType('Minor Dropback +...',types).type,'Unclassified');assert.equal(brickType('Straight...',types).type,'Unclassified');
 });

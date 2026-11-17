@@ -7,11 +7,13 @@ import {notationRows} from './music/notation-rows.mjs';
 import {brickNameParts} from './music/brick-labels.mjs';
 import {RAWL_COLORS} from 'librawl/palette';
 import {melodyDisplay} from './music/melody-display.mjs';
+import {performedNotes} from './music/performance-style.mjs';
 
 function HostView({song,performance,brickMap,onSeek,onNote,onNoteHover,onMeasureSelect,selectedMeasure=null,controller,mutedVoices,selected,compact=false,form=null,measureWidth=null,barsPerRow=null,continuous=false}){
  const [mobile,setMobile]=useState(()=>matchMedia('(max-width:760px)').matches),notation=useRef(null);
- const display=React.useMemo(()=>melodyDisplay(performance.notes),[performance.notes]);
- const sourceNote=note=>note?display.sourceById.get(note.id)??note:null;
+ const display=React.useMemo(()=>melodyDisplay(performedNotes(performance)),[performance.notes,performance.playbackStyle,performance.measureMap,performance.beats]);
+ const sourceById=React.useMemo(()=>new Map(performance.notes.map(n=>[n.id,n])),[performance.notes]);
+ const sourceNote=note=>note?sourceById.get(note.id)??note:null;
  useEffect(()=>{const q=matchMedia('(max-width:760px)'),fn=()=>setMobile(q.matches);q.addEventListener('change',fn);return()=>q.removeEventListener('change',fn);},[]);
  const rows=React.useMemo(()=>notationRows({song,performance,form,compact,mobile,measureWidth,barsPerRow,continuous}),[song,performance,form,compact,mobile,measureWidth,barsPerRow,continuous]);
  useEffect(()=>{controller.current=notation.current;notation.current?.setPosition(controller.position);return()=>{controller.current=null;};});

@@ -48,9 +48,9 @@ test('compact scores hide only the initial tonic label and retain all tonal stat
  }finally{host.destroy();full.unmount();hidden.unmount();dom.window.close();}
 });
 
-test('favicon uses three solid Rawl 2–4–6 bands over transparent ii superscript seven',()=>{
+test('favicon uses three solid Rawl 2–4–6 bands with a black background and white superscript seven',()=>{
  const svg=fs.readFileSync(new URL('../dist/icons/favicon.svg',import.meta.url),'utf8'),dom=new JSDOM(svg,{contentType:'image/svg+xml'}),document=dom.window.document;
- assert.equal(document.documentElement.getAttribute('viewBox'),'0 0 64 64');assert.equal(document.documentElement.getAttribute('aria-label'),'ii⁷');assert.equal(document.querySelector('rect'),null);
- assert.equal(document.querySelector('linearGradient,radialGradient,stop'),null);assert.equal(document.querySelector('g').getAttribute('clip-path'),'url(#ii)');assert.deepEqual([...document.querySelectorAll('g>path')].map(p=>p.getAttribute('fill')),['red','#9500b3','#03b9d5']);assert.deepEqual([...document.querySelectorAll('g>path')].map(p=>p.getAttribute('d')),['M0 44.5H64V64H0z','M0 21.333333H64V44.5H0z','M0 0H64V21.333333H0z']);assert.equal(document.querySelectorAll('circle').length,2);assert.equal(document.querySelector('svg>path').getAttribute('fill'),'black');assert.ok(document.querySelector('svg>path').getAttribute('d').includes('M41 0h23'));
- assert.ok(!/background/i.test(svg));dom.window.close();
+ assert.equal(document.documentElement.getAttribute('viewBox'),'0 0 64 64');assert.equal(document.documentElement.getAttribute('aria-label'),'ii⁷');assert.equal(document.querySelector('rect').getAttribute('fill'),'black');assert.equal(document.querySelector('rect').getAttribute('width'),'64');assert.equal(document.querySelector('rect').getAttribute('height'),'64');
+ assert.equal(document.querySelector('linearGradient,radialGradient,stop'),null);assert.equal(document.querySelector('g').getAttribute('clip-path'),'url(#ii)');assert.deepEqual([...document.querySelectorAll('g>path')].map(p=>p.getAttribute('fill')),['red','#9500b3','#03b9d5']);assert.deepEqual([...document.querySelectorAll('g>path')].map(p=>p.getAttribute('d')),['M0 44.5H64V64H0z','M0 21.333333H64V44.5H0z','M0 0H64V21.333333H0z']);assert.equal(document.querySelectorAll('circle').length,2);assert.equal(document.querySelector('svg>path').getAttribute('fill'),'white');assert.ok(document.querySelector('svg>path').getAttribute('d').includes('M41 0h23'));
+ assert.equal(document.querySelectorAll('rect').length,1);dom.window.close();
 });

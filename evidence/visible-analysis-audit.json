@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "automaticParsingVisible": false,
+  "sourceFiles": [
+    {
+      "file": "dist/data/roadmaps.json",
+      "sha256": "ce5eca77201bc0e3cbeb6ec6fa954b0cba68a77b0179248ae85530b5877abc4a"
+    },
+    {
+      "file": "dist/data/additional-standards.json",
+      "sha256": "f5fd57d16c70564853d53056703e343f36aa33c9d71091a65d76da46cb5c8411"
+    },
+    {
+      "file": "dist/data/melody-sources.json",
+      "sha256": "7d3c67433e8d5f03297624aa16bf05bf52b11e386af37dd28ec8dc89c4c7f31c"
+    }
+  ],
+  "originalCharts": 242,
+  "additionalCharts": 265,
+  "hiddenBrickSpans": 6905,
+  "hiddenJoins": 6205,
+  "visibleBrickSpans": 2782,
+  "catalogueFamilies": 91,
+  "sourceExports": "All507performanceJSONandMIDI files unchanged; display overrides tonal contexts independently",
+  "tests": "tests/visible-analysis.test.mjs"
+}

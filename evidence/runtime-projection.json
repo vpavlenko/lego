@@ -4,44 +4,44 @@
   "primaryStandards": 269,
   "originalCharts": 242,
   "additionalCharts": 265,
-  "rawSourceIdentities": 351,
+  "rawSourceIdentities": 299,
   "coverage": {
-    "rawPassages": 10357,
-    "removedPassages": 3166,
-    "keptPassages": 7191,
-    "rawOccurrences": 9765,
-    "removedOccurrences": 3121,
-    "keptOccurrences": 6644,
+    "rawPassages": 3452,
+    "removedPassages": 622,
+    "keptPassages": 2830,
+    "rawOccurrences": 3404,
+    "removedOccurrences": 621,
+    "keptOccurrences": 2783,
     "reasons": {
       "single-harmony": {
-        "passages": 2449,
-        "occurrences": 2431
+        "passages": 433,
+        "occurrences": 433
       },
       "on-off-family": {
-        "passages": 717,
-        "occurrences": 690
+        "passages": 189,
+        "occurrences": 188
       }
     }
   },
   "reuse": {
-    "inputFamilies": 164,
-    "singleStandardFamilies": 38,
-    "reusableTargets": 126,
-    "mergedFamilies": 10,
-    "removedFamilies": 28,
-    "outputFamilies": 126,
-    "rawPassages": 7191,
-    "mergedPassages": 20,
-    "removedPassages": 46,
-    "keptPassages": 7145,
+    "inputFamilies": 127,
+    "singleStandardFamilies": 36,
+    "reusableTargets": 91,
+    "mergedFamilies": 9,
+    "removedFamilies": 27,
+    "outputFamilies": 91,
+    "rawPassages": 2830,
+    "mergedPassages": 17,
+    "removedPassages": 48,
+    "keptPassages": 2782,
     "supportBasis": "distinct standards",
     "minimumTargetStandards": 2,
     "maxVariantDistance": 0.28,
     "ambiguityMargin": 0.025
   },
-  "definitions": 1650,
+  "definitions": 809,
   "unresolvedOccurrences": 8,
-  "unchangedMusicalDataSha256": "9a29d7f1443b04fa9c784a38d7ccbbd14742ccc02c64d280e3c6ef38c76d320a",
+  "unchangedMusicalDataSha256": "5c83f4f02149879f13d24d8d7cb5101bc9617a36f0b11e2eefa9a6025c3ca446",
   "decisions": [
     {
       "action": "remove",
@@ -60,11 +60,6 @@
     },
     {
       "action": "remove",
-      "source": "Cadence+TTFA Dropback",
-      "reason": "no-clear-supported-harmonic-variant"
-    },
-    {
-      "action": "remove",
       "source": "Chromatic Major Walkup",
       "reason": "no-clear-supported-harmonic-variant"
     },
@@ -79,30 +74,27 @@
       "reason": "no-clear-supported-harmonic-variant"
     },
     {
+      "action": "remove",
+      "source": "Diatonic I IV iii ii",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
       "action": "merge",
-      "source": "Diatonic I ii iii vi",
-      "target": "Diatonic I ii iii",
+      "source": "Diatonic ii iii IV",
+      "target": "Diatonic I ii iii IV",
       "reason": "clear-supported-harmonic-variant"
     },
     {
-      "action": "remove",
-      "source": "Diatonic ii iii IV V",
-      "reason": "no-clear-supported-harmonic-variant"
+      "action": "merge",
+      "source": "Dogleg Slow",
+      "target": "Cadence",
+      "reason": "clear-supported-harmonic-variant"
     },
     {
-      "action": "remove",
-      "source": "Dizzy Cadence with bIII7",
-      "reason": "no-clear-supported-harmonic-variant"
-    },
-    {
-      "action": "remove",
+      "action": "merge",
       "source": "Dominant Cy...",
-      "reason": "ambiguous-supported-families"
-    },
-    {
-      "action": "remove",
-      "source": "Dominant Cycle 6 Steps",
-      "reason": "no-clear-supported-harmonic-variant"
+      "target": "Dominant Cycle",
+      "reason": "clear-supported-harmonic-variant"
     },
     {
       "action": "remove",
@@ -111,8 +103,8 @@
     },
     {
       "action": "merge",
-      "source": "Four Star",
-      "target": "♯ivø VII7 iii VI7 ii V",
+      "source": "♭III7 ii V I",
+      "target": "Straight",
       "reason": "clear-supported-harmonic-variant"
     },
     {
@@ -133,14 +125,13 @@
     },
     {
       "action": "remove",
-      "source": "IV n Yak To",
+      "source": "IV iv I",
       "reason": "no-clear-supported-harmonic-variant"
     },
     {
-      "action": "merge",
-      "source": "IV to II",
-      "target": "♯ivø VII7 iii VI7",
-      "reason": "clear-supported-harmonic-variant"
+      "action": "remove",
+      "source": "IV n Yak To",
+      "reason": "no-clear-supported-harmonic-variant"
     },
     {
       "action": "remove",
@@ -148,14 +139,18 @@
       "reason": "no-clear-supported-harmonic-variant"
     },
     {
-      "action": "merge",
-      "source": "Minor Plagal",
-      "target": "Amen",
-      "reason": "clear-supported-harmonic-variant"
+      "action": "remove",
+      "source": "Multi Sub POT",
+      "reason": "no-clear-supported-harmonic-variant"
     },
     {
       "action": "remove",
-      "source": "Multi Sub POT",
+      "source": "♭VIΔ V7 I",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "♭VI Turnaround",
       "reason": "no-clear-supported-harmonic-variant"
     },
     {
@@ -169,11 +164,6 @@
       "source": "Nowhere...",
       "target": "♭VI",
       "reason": "clear-supported-harmonic-variant"
-    },
-    {
-      "action": "remove",
-      "source": "Passacaglia",
-      "reason": "no-clear-supported-harmonic-variant"
     },
     {
       "action": "remove",
@@ -191,16 +181,9 @@
       "reason": "no-clear-supported-harmonic-variant"
     },
     {
-      "action": "merge",
-      "source": "Rhythm Bridge",
-      "target": "Dogleg Cycle",
-      "reason": "clear-supported-harmonic-variant"
-    },
-    {
-      "action": "merge",
+      "action": "remove",
       "source": "Satin",
-      "target": "Side Slips",
-      "reason": "clear-supported-harmonic-variant"
+      "reason": "no-clear-supported-harmonic-variant"
     },
     {
       "action": "remove",
@@ -209,19 +192,14 @@
     },
     {
       "action": "remove",
-      "source": "Somewhere Turnaround",
-      "reason": "ambiguous-supported-families"
+      "source": "vii ii V",
+      "reason": "no-clear-supported-harmonic-variant"
     },
     {
       "action": "merge",
-      "source": "Starlight Dropback",
-      "target": "♯ivø VII7 iii VI7",
+      "source": "Supertension Ending",
+      "target": "Tension",
       "reason": "clear-supported-harmonic-variant"
-    },
-    {
-      "action": "remove",
-      "source": "Suspended",
-      "reason": "no-clear-supported-harmonic-variant"
     },
     {
       "action": "remove",
@@ -234,6 +212,12 @@
       "reason": "no-clear-supported-harmonic-variant"
     },
     {
+      "action": "merge",
+      "source": "To IV n Mack",
+      "target": "To IV",
+      "reason": "clear-supported-harmonic-variant"
+    },
+    {
       "action": "remove",
       "source": "Tritone Straight",
       "reason": "no-clear-supported-harmonic-variant"
@@ -242,6 +226,11 @@
       "action": "remove",
       "source": "Yardbird ...",
       "reason": "unsupported-or-incomplete-source"
+    },
+    {
+      "action": "remove",
+      "source": "I vi ♭VII7",
+      "reason": "no-clear-supported-harmonic-variant"
     }
   ]
 }

@@ -33,7 +33,7 @@ test('natural, onset-shifted and carried flags follow Rawl placement and zero jo
  const changes=[{beat:0,tonic:0},{beat:4,tonic:5},{beat:8,tonic:5,join:true},{beat:12,tonic:7,onsetOverride:true},{beat:15,tonic:9}],layout=measureHeaderLayout({row,width:800,changes});
  assert.deepEqual(layout.markers.map(m=>[m.beat,m.pixelOffset,m.labelOffset]),[[0,-1,18],[4,-1,30],[12,0,0],[15,0,0]]);
  const carried=measureHeaderLayout({row:{start:16,end:32},width:400,changes}).markers;
- assert.equal(carried.length,1);assert.equal(carried[0].beat,15);assert.equal(carried[0].continued,true);assert.equal(carried[0].left,0);assert.equal(carried[0].pixelOffset,-1);assert.equal(carried[0].labelOffset,30);
+ assert.equal(carried.length,1);assert.equal(carried[0].beat,16);assert.equal(carried[0].originBeat,15);assert.equal(carried[0].delta,null);assert.equal(carried[0].previousTonic,null);assert.equal(carried[0].continued,true);assert.equal(carried[0].left,0);assert.equal(carried[0].pixelOffset,-1);assert.equal(carried[0].labelOffset,18);
  assert.deepEqual(measureHeaderLayout({row:{start:20,end:36},width:400,changes}).markers,[]);
  assert.equal(modulationLabelOffset(396,4,{initial:true}),34);
 });
