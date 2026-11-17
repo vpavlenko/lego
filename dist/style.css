@@ -41,3 +41,5 @@ main{margin-left:var(--sidebar);padding:66px 24px 0;max-width:1400px;min-height:
 .rawln .harmony-band{display:block;width:100%;padding:1px 4px;color:var(--degree-fg);overflow:hidden}
 .rawln-chord sup{color:inherit}
 .rawln .rawln-rn.harmony-band{margin-top:4px}
+
+.score-row .rawln-modulation-flag{padding:0;display:block}.rawln .rawln-footer{height:42px;min-height:42px}

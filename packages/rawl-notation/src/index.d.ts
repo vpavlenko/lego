@@ -1,7 +1,7 @@
 import * as React from 'react';
 export interface MidiNote { id:string; pitch:number; start:number; duration:number; voice:number; velocity?:number; }
 export interface ScoreRow { start:number; end:number; label?:number; }
-export interface TonicChange { beat:number; tonic:number; }
+export interface TonicChange { beat:number; tonic:number; join?:boolean; name?:string; }
 export interface RawlNotationHandle { setPosition(beat:number|null):void; element:HTMLDivElement|null; }
 export interface RawlNotationProps {
  notes:MidiNote[]; beats:number; rows?:ScoreRow[]; tonic?:number; changes?:TonicChange[];

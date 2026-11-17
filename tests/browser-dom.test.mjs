@@ -21,6 +21,13 @@ test('Rawl playback, brick pages, deep links and existing chart views work toget
  const $=s=>w.document.querySelector(s);
  await wait(()=>$('#rawl-view [data-note]'));
  assert.equal($('#notation-view').getAttribute('aria-pressed'),'true');assert.equal($('#analysis').hidden,true);
+ const roadmap=read('data/roadmaps.json').songs[0],performance=read('data/performances/000.json'),byId=new Map(performance.notes.map(n=>[n.id,n]));
+ assert.equal(w.document.querySelectorAll('#rawl-view .rawln-modulation[data-join]').length,roadmap.rows.reduce((n,r)=>n+r.joins.length,0));
+ const bootstrap=$('#rawl-view .rawln-modulation[data-beat="60"]');assert.equal(bootstrap.dataset.tonic,'5');assert.equal(bootstrap.querySelector('.rawln-modulation-label').textContent.trim(),'5 F');assert.equal(bootstrap.querySelector('.rawln-modulation-flag').dataset.degree,'5');
+ const c7=performance.chords.find(c=>c.start===60),cell=[...w.document.querySelectorAll('#rawl-view .rawln-chord')].find(el=>el.title===c7.symbol&&el.querySelector('.rawln-rn').textContent==='V7');assert.ok(cell);assert.equal(cell.querySelector('.harmony-band').dataset.degree,'7');
+ for(const el of w.document.querySelectorAll('#rawl-view [data-note]')){const n=byId.get(el.dataset.note),mid=n.start+n.duration/2;let tonic=0;for(const change of performance.changes)if(change.beat<mid)tonic=change.tonic;assert.equal(Number(el.dataset.degree),(n.pitch-tonic+120)%12);}
+ assert.ok($('#rawl-view .rawln-tonic-line[data-tonic="5"]'));
+
  const firstNote=$('#rawl-view [data-note]'),baseTop=parseFloat(firstNote.style.top),baseHeight=parseFloat(firstNote.style.height);
  assert.equal(baseHeight,5);
  $('#play').click();await wait(()=>$('#play').textContent==='Pause');await wait(()=>$('#rawl-view .rawln-sounding'));
@@ -31,6 +38,8 @@ test('Rawl playback, brick pages, deep links and existing chart views work toget
  $('#tempo').value='80';$('#tempo').dispatchEvent(new w.Event('change'));$('#play').click();await wait(()=>events.plays.length===2);assert.equal(events.plays[1].plan.timeAt(1),.75);$('#stop').click();
  $('#piano-voice').click();assert.equal($('#piano-voice').getAttribute('aria-pressed'),'false');await wait(()=>$('#rawl-view .rawln-voice-0.rawln-muted'));
  $('#digital').click();assert.equal($('#analysis').hidden,false);assert.equal($('#rawl-view').hidden,true);assert.equal(w.document.querySelectorAll('#score .chord').length,26);
+ assert.equal(w.document.querySelectorAll('#score .rawln-modulation[data-join]').length,5);
+ const altered=[...w.document.querySelectorAll('#score .chord')].find(c=>Number(c.dataset.chordStart)===60);assert.equal(altered.dataset.degree,'7');assert.equal(altered.nextElementSibling.textContent,'V7');
  const link=$('#score .brick');const slug=link.getAttribute('href');w.location.hash=slug;
  await wait(()=>$('#brick-view').hidden===false);assert.equal($('#song-view').hidden,true);assert.ok($('#brick-view h1').textContent.includes('Donna Lee Start'));
  const index=read('data/bricks.json'),entry=index.bricks.find(b=>'#brick/'+b.slug===slug);assert.equal(w.document.querySelectorAll('.brick-match').length,entry.standards.length);

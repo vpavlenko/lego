@@ -1,4 +1,5 @@
 import {pitch,mod,transposeChord,transposeRoot} from '../../dist/harmony.mjs';
+import {songModulations} from './modulations.mjs';
 
 export function parseChord(symbol,qualities){
  const match=/^([A-G][b#]*)(.*?)(?:\/([A-G][b#]*))?$/.exec(symbol);
@@ -25,11 +26,10 @@ function voice(pcs,previous){
  choices.sort((a,b)=>a.cost-b.cost||a.notes[0]-b.notes[0]);return choices[0].notes;
 }
 export function realizeSong(song,qualities,{tempo=120}={}){
- const barBeats=song.meter[0]*4/song.meter[1],notes=[],chords=[],changes=[],rows=[];
- let previous,previousBass=40,priorTonic=null;
+ const barBeats=song.meter[0]*4/song.meter[1],notes=[],chords=[],changes=songModulations(song),rows=[];
+ let previous,previousBass=40;
  for(let ri=0;ri<song.rows.length;ri++){
   const row=song.rows[ri];rows.push({start:row.startBar*barBeats,end:(row.startBar+row.bars)*barBeats,label:row.startBar+1});
-  for(const key of row.keys){const tonic=pitch(transposeRoot(key.root,song.tonic[0]));if(tonic!==priorTonic){changes.push({beat:(row.startBar+key.start)*barBeats,tonic});priorTonic=tonic;}}
   for(const cell of row.chords){
    const symbol=transposeChord(cell.symbol,song.tonic[0]),start=(row.startBar+cell.start)*barBeats,end=(row.startBar+cell.end)*barBeats,id=chords.length;
    const c={id,row:ri,start,end,symbol,sourceSymbol:cell.symbol,clipped:!!cell.clipped};chords.push(c);

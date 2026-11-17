@@ -36,3 +36,8 @@ current playback row; muted voices collapse to 0.5 px, as in Rawl.
 Geometry derives from `caplin/packages/music/rawl-layout.js` and tonal guides
 from its `tonal-grid.js`, themselves based on https://github.com/vpavlenko/rawl.
 Rawl conventions are GPL-3.0; see LICENSE. No Caplin book content is included.
+
+`changes` also draws Rawl modulation flags at exact onsets: an 80 × 12 px fading
+rectangle with the signed interval and new tonic beside the measure number.
+Equal-tonic events remain visible, so hosts can retain zero-shift joins. Notes
+use Rawl’s midpoint rule; tonal guides change at the onset.

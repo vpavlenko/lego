@@ -17,13 +17,13 @@ React/DOM integration, geometry, and brick-index checks.
   in `scripts/build-data.py`; other home keys follow the source roadmap's dominant
   tonal region, rather than an often unset leadsheet key-signature field.
 - Chord roots and slash basses transpose together, with diatonic spelling preserved.
-- Roman numerals appear below chords. Song mode references C throughout; Brick
-  mode references the local brick key. Minor chords use lowercase numerals.
-- Every source join is represented by a Lucide up/down arrow and the shortest
-  signed interval between its adjacent brick tonic roots. Zero uses up-arrow 0;
-  tritones use up-arrow 6. A join's original name and tonic pair remain available
-  on hover or click. These are not the interval to the next chord's root, and
-  are not necessarily the interval implied by a named regular-cadence join.
+- Roman numerals appear below chords and follow the active Rawl tonic from each
+  modulation onset. Minor chords use lowercase numerals.
+- Every source join starts a Rawl modulation: an onset-anchored fading flag,
+  Lucide up/down arrow, semitone shift, and new tonic. Zero joins are retained as
+  up-arrow 0; tritones use up-arrow 6. Notes, tonal guides, chord bands and RN
+  share one tonic timeline, including changes carried across row breaks.
+  Original join names remain in the source data and marker metadata.
 - Hash routes identify individual analyses. Search matches song and brick names.
 - Source view retains the exact original image; PDF links target its source page.
 - JSON exports contain the selected analysis transposed to C.
@@ -67,8 +67,8 @@ background and its contrasting foreground, including distinguishing dots for
 chromatic degrees 1 and 6. Interface controls, branding, focus, selection, and
 source-clipping indicators are grayscale.
 
-Chord roots and Roman numerals share the selected Song/Brick reference. Key-root
-labels reference the song tonic C. Join badges use the signed shift modulo 12:
+Chord roots, Roman numerals and Rawl notes share the active modulation reference.
+The song itself remains transposed to its home tonic C. Flags use the signed shift modulo 12:
 up 2 uses degree 2 (red), while down 2 uses degree 10 (orange). Source view and
 PDF downloads retain the original source documents.
 
@@ -123,3 +123,5 @@ Brick detail pages start with a playable, MIDI-downloadable example taken from t
 Active and hovered Rawl notes double their height upward with the bottom edge fixed, following Rawl’s `getNoteRectangles.tsx`; playback adds no outline or brightness change. Only the note copy in the current row responds to playback. Muted voices collapse to 0.5 px.
 
 For the one selected example with no overlapping key label (Diatonic I ii iii biii in Polkadots and Moonbeams), the original standard tonic provides the transposition reference. Source key labels are otherwise retained.
+
+The join-key lookup uses the region covering the join onset, including joins within an unchanged key region. This corrects 90 previously forward-looking tonic pairs. Key changes without a join remain on the same shared timeline. Rawl flag geometry follows `AnalysisGrid.tsx` `NewTonicSymbol`: an 80 × 12 px gradient mask anchored at onset, with white interval/tonic text offset beside the measure number.

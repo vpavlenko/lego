@@ -5,7 +5,9 @@ import {createRequire} from 'node:module';
 import {realizeSong,parseChord,playbackPlan} from '../src/music/realization.mjs';
 import {encodeMidi} from '../src/music/midi.mjs';
 import {buildBrickIndex,brickExample} from '../src/music/bricks.mjs';
-import {pitchRange,staveGeometry,tonicAt} from '../packages/rawl-notation/src/geometry.mjs';
+import {songModulations,modulationAt,modulationDelta} from '../src/music/modulations.mjs';
+import {pitch,transposeRoot} from '../dist/harmony.mjs';
+import {pitchRange,staveGeometry,tonicAt,keyMarkers} from '../packages/rawl-notation/src/geometry.mjs';
 const require=createRequire(import.meta.url),{parseMidi}=require('midi-file');
 const read=p=>JSON.parse(fs.readFileSync(new URL(p,import.meta.url),'utf8'));
 const {songs}=read('../dist/data/roadmaps.json'),{qualities}=read('../src/music/chord-vocabulary.json');
@@ -62,4 +64,24 @@ test('every brick has a playable source-derived example in its local tonic C',()
   for(const n of p.notes){assert.ok(n.start>=0);assert.ok(n.start+n.duration<=p.beats+1e-6);assert.ok(Number.isFinite(n.pitch));}
   const generated=read('../dist/data/brick-performances/'+brick.slug+'.json');assert.deepEqual(generated.previewSong,previewSong);assert.equal(generated.notes.length,p.notes.length);assert.ok(parseMidi(fs.readFileSync(new URL('../dist/midi/bricks/'+brick.slug+'.mid',import.meta.url))).tracks.length===3);
  }
+});
+
+
+test('all 1271 joins start Rawl tonics at their exact onset, including zero shifts',()=>{
+ let joins=0,zeros=0;
+ for(const song of songs){
+  const changes=songModulations(song),p=read('../dist/data/performances/'+String(song.index).padStart(3,'0')+'.json'),markers=keyMarkers(0,changes),bb=song.meter[0]*4/song.meter[1];
+  assert.deepEqual(p.changes,changes);
+  for(const row of song.rows)for(const join of row.joins){
+   joins++;const beat=(row.startBar+join.at)*bb,event=changes.find(c=>c.beat===beat),marker=markers.find(c=>c.beat===beat);
+   assert.ok(event?.join,song.title+' '+join.name);assert.equal(event.name,join.name);assert.equal(event.tonic,pitch(transposeRoot(join.to,song.tonic[0])));
+   assert.equal(modulationAt(changes,beat).tonic,event.tonic);assert.equal(tonicAt(0,changes,beat+1e-5),event.tonic);
+   assert.equal(marker.delta,join.delta);assert.equal(marker.delta,modulationDelta(marker.previousTonic,event.tonic));if(join.delta===0)zeros++;
+  }
+ }
+ assert.equal(joins,1271);assert.ok(zeros>0);
+ // Homer stays in C minor; it must not jump to the next later F-minor label.
+ const alone=songModulations(songs[8]);assert.equal(alone.find(c=>c.beat===4).tonic,0);assert.equal(alone.find(c=>c.beat===12).tonic,0);
+ // A row-end modulation appears at the following row's start, not its end.
+ const things=songModulations(songs[7]);assert.equal(things.find(c=>c.beat===32).tonic,7);
 });

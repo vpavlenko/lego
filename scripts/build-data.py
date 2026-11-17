@@ -96,7 +96,11 @@ for d in songs:
    at=round((j['box'][2]-d['left'])/d['step']*8)/8
    if at>row['bars']+.1:continue
    leftkey=next((k for k in row['keys'][::-1] if k['start']<at-.01),row['keys'][0])
-   rightkey=next((k for k in row['keys'] if k['start']>=at-.01),None)
+   # A join can be inside a key region (e.g. a Homer between two D-minor
+   # bricks). Use the key at its onset, not the next later key label.
+   rightkey=next((k for k in row['keys'] if k['start']<=at+.01 and k['end']>at+.01),None)
+   if rightkey is None and at<row['bars']-.01:
+    rightkey=next((k for k in row['keys'][::-1] if k['start']<=at+.01),leftkey)
    if rightkey is None:rightkey=rows[ri+1]['keys'][0] if ri+1<len(rows) else rows[0]['keys'][0]
    delta=(pc(rightkey['root'])-pc(leftkey['root']))%12
    if delta>6:delta-=12
@@ -107,7 +111,7 @@ for d in songs:
  if best and top>.9:record['leadsheet']='https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/'+best[1]['file']
  output.append(record)
  audits.append({'index':idx,'title':title,'tonic':tonic,'bars':startbar,'titleMatch':round(top,3),'corpusMatch':round(best[0],3) if best else None,'shift':best[2] if best else None,'corpusFile':best[1]['file'] if best else None,'weights':[(str(k),v) for k,v in weights.most_common()]})
-(PROJECT/'dist/data/roadmaps.json').write_text(json.dumps({'source':'InsightsRoadmapsConsolidated.pdf','author':'Bob Keller','date':'2011-10-06','revision':1,'songs':output},ensure_ascii=False,separators=(',',':')))
+(PROJECT/'dist/data/roadmaps.json').write_text(json.dumps({'source':'InsightsRoadmapsConsolidated.pdf','author':'Bob Keller','date':'2011-10-06','revision':2,'songs':output},ensure_ascii=False,separators=(',',':')))
 (PROJECT/'evidence/corpus-check.json').write_text(json.dumps(audits,indent=2,ensure_ascii=False))
 for a in audits:print(f"{a['index']:03}",a['title'],a['tonic'],a['bars'],a['corpusMatch'])
 print('TOTAL',len(output),'chords',sum(len(r['chords']) for s in output for r in s['rows']),'joins',sum(len(r['joins']) for s in output for r in s['rows']))

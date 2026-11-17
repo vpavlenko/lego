@@ -27,4 +27,5 @@ fs.copyFileSync(path.join(root,'packages/rawl-notation/src/palette.mjs'),path.jo
 fs.copyFileSync(path.join(root,'packages/rawl-notation/LICENSE'),path.join(root,'dist/RAWL-LICENSE.txt'));
 await build({entryPoints:[path.join(root,'src/rawl-view.jsx')],outfile:path.join(root,'dist/rawl-view.js'),bundle:true,format:'esm',platform:'browser',target:['es2020'],jsx:'automatic',minify:true,legalComments:'eof',define:{'process.env.NODE_ENV':'"production"'}});
 await build({entryPoints:[path.join(root,'src/audio-player.mjs')],outfile:path.join(root,'dist/audio-player.js'),bundle:true,format:'esm',platform:'browser',target:['es2020'],minify:true});
+await build({entryPoints:[path.join(root,'src/music/modulations.mjs')],outfile:path.join(root,'dist/modulations.js'),bundle:true,format:'esm',platform:'browser',target:['es2020'],minify:true});
 console.log(JSON.stringify({songs:songs.length,bricks:bricks.bricks.length,notes:total,clipped,status:'built'}));

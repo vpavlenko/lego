@@ -1,11 +1,12 @@
 import {transposeRoot,transposeChord,prettyRoot,chordParts,roman,pitch,mod} from './harmony.mjs';
 import {colorIndex} from './rawl-colors.mjs';
+import {songModulations,modulationAt,modulationDelta,TONIC_NAMES} from './modulations.js';
 import {mountRawlView} from './rawl-view.js';
 import {createPlayer,encodeMidi} from './audio-player.js';
 const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const [data,brickData]=await Promise.all(['./data/roadmaps.json','./data/bricks.json'].map(url=>fetch(url).then(r=>{if(!r.ok)throw Error(r.status);return r.json();})));
-const songs=data.songs,bricks=brickData.bricks,brickMap=new Map(bricks.map(b=>[b.name,b])),brickBySlug=new Map(bricks.map(b=>[b.slug,b]));
-let current=0,currentBrick=null,routeKind='song',rnMode=localStorage.getItem('insights-rn')==='brick'?'brick':'song',view=['analysis','source','rawl'].includes(localStorage.getItem('insights-view'))?localStorage.getItem('insights-view'):'rawl';
+const songs=data.songs,modulationMap=songs.map(songModulations),bricks=brickData.bricks,brickMap=new Map(bricks.map(b=>[b.name,b])),brickBySlug=new Map(bricks.map(b=>[b.slug,b]));
+let current=0,currentBrick=null,routeKind='song',view=['analysis','source','rawl'].includes(localStorage.getItem('insights-view'))?localStorage.getItem('insights-view'):'rawl';
 let rawl=null,performance=null,currentBeat=null,selected=null,routeGeneration=0,detailTimer,lastPlaybackRow=-1;
 const transport=$('#transport'),songRawl=$('#rawl-view');
 const rawlElement=()=>routeKind==='brick'?$('#brick-rawl'):songRawl;
@@ -34,17 +35,23 @@ function rowHTML(row,song,rowIndex){
  const scale=song.columns,tonic=song.tonic[0],barBeats=song.meter[0]*4/song.meter[1];let html=`<div class="score-row" data-row="${rowIndex}" aria-label="${row.startBar+1}–${row.startBar+row.bars}"><div class="bar-ticks">`;
  for(let n=0;n<=row.bars;n++)html+=`<div class="bar-tick${n===row.bars?' end':''}" style="left:${n/scale*100}%">${n<row.bars?`<span>${row.startBar+n+1}</span>`:''}</div>`;
  html+='</div>';
- for(const key of row.keys){const root=transposeRoot(key.root,tonic),text=prettyRoot(root)+' '+key.mode.toLowerCase();html+=`<div class="key-label ${key.mode.toLowerCase()}" style="${at(key,scale)}" title="${esc(text)}">${token(prettyRoot(root),pitch(root))} <span>${esc(key.mode.toLowerCase())}</span></div>`;}
+
  for(const b of row.bricks)if(b.name)html+=`<a class="brick${selected===b.name?' selected-brick':''}" style="${at(b,scale)}" title="${esc(b.name)}" href="#brick/${brickMap.get(b.name).slug}">${esc(b.name)}</a>`;
  for(const c of row.chords){
-  const symbol=transposeChord(c.symbol,tonic),parts=chordParts(symbol),key=row.keys.find(k=>c.start>=k.start-.01&&c.start<k.end-.01)||row.keys[0],base=rnMode==='brick'&&key?transposeRoot(key.root,tonic):'C',degree=mod(pitch(symbol)-pitch(base)),rn=roman(symbol,base);
+  const symbol=transposeChord(c.symbol,tonic),parts=chordParts(symbol),base=modulationAt(modulationMap[song.index],(row.startBar+c.start)*barBeats).root,degree=mod(pitch(symbol)-pitch(base)),rn=roman(symbol,base);
   html+=`<div class="chord degree-color harmony-band${c.clipped?' uncertain':''}" data-degree="${colorIndex(degree)}" data-chord-start="${(row.startBar+c.start)*barBeats}" data-chord-end="${(row.startBar+c.end)*barBeats}" style="${at(c,scale)}" title="${esc(symbol)}"><span class="root">${esc(parts.root)}</span><sup>${esc(parts.quality)}</sup></div><div class="rn degree-color harmony-band" data-degree="${colorIndex(degree)}" style="${at(c,scale)}" title="${esc(rn)}">${esc(rn)}</div>`;
  }
- for(const j of row.joins){const delta=j.delta,from=transposeRoot(j.from,tonic),to=transposeRoot(j.to,tonic),label=`${j.name} · ${prettyRoot(from)} → ${prettyRoot(to)}`;html+=`<button class="join degree-color" data-degree="${colorIndex(delta)}" data-join="${esc(label)}" data-delta="${delta}" style="left:clamp(14px, ${j.at/scale*100}%, calc(100% - 14px))" title="${esc(label)}" aria-label="${esc(prettyRoot(from)+' → '+prettyRoot(to))}">${arrow(delta)}<span>${Math.abs(delta)}</span></button>`;}
+ const events=modulationMap[song.index];
+ for(let i=0;i<events.length;i++){
+  const event=events[i],bar=event.beat/barBeats;if(bar<row.startBar||bar>=row.startBar+row.bars)continue;
+  const delta=i?modulationDelta(events[i-1].tonic,event.tonic):null;
+  html+=`<div class="rawln-modulation" data-beat="${event.beat}" data-tonic="${event.tonic}" ${event.join?`data-join="${esc(event.name)}"`:''} style="left:${(bar-row.startBar)/scale*100}%" title="${esc(event.name||TONIC_NAMES[event.tonic])}">${delta===null?'':`<div class="rawln-modulation-flag degree-color" data-degree="${colorIndex(delta)}"></div>`}<span class="rawln-modulation-label" style="left:${i?30:18}px">${delta===null?'':arrow(delta)+Math.abs(delta)+' '}${TONIC_NAMES[event.tonic]}</span></div>`;
+ }
+
  return html+'</div>';
 }
-function score(){const s=songs[current];$('#score').innerHTML=s.rows.map((r,i)=>rowHTML(r,s,i)).join('');$('#rn-song').setAttribute('aria-pressed',rnMode==='song');$('#rn-brick').setAttribute('aria-pressed',rnMode==='brick');}
-function rawlOptions(){return {song:performance?.previewSong||songs[current],performance,brickMap,rnMode,selected,mutedVoices:player.mutedVoices,onSeek:beat=>player.seek(beat),onNote:note=>player.audition(note)};}
+function score(){const s=songs[current];$('#score').innerHTML=s.rows.map((r,i)=>rowHTML(r,s,i)).join('');}
+function rawlOptions(){return {song:performance?.previewSong||songs[current],performance,brickMap,selected,mutedVoices:player.mutedVoices,onSeek:beat=>player.seek(beat),onNote:note=>player.audition(note)};}
 function ensureRawl(){if(!performance)return;if(rawl)rawl.update(rawlOptions());else{rawl=mountRawlView(rawlElement(),rawlOptions());rawl.setPosition(currentBeat);}}
 function setView(mode){
  view=mode;localStorage.setItem('insights-view',mode);$('#analysis').hidden=mode!=='analysis';$('#rawl-view').hidden=mode!=='rawl';$('#source-view').hidden=mode!=='source';$('#transport').hidden=mode==='source';
@@ -105,13 +112,13 @@ async function openBricks(slug=null){
 }
 function route(initial=false){const [path,query='']=location.hash.slice(1).split('?');if(path==='bricks')return openBricks();if(path.startsWith('brick/'))return openBricks(path.slice(6));const index=Number(path);void openSong(Number.isInteger(index)&&index>=0&&index<songs.length?index:0,new URLSearchParams(query),initial);}
 $('#search').addEventListener('input',catalog);$('#previous').onclick=()=>location.hash=pad(current-1);$('#next').onclick=()=>location.hash=pad(current+1);
-for(const [id,mode]of [['#rn-song','song'],['#rn-brick','brick']])$(id).onclick=()=>{rnMode=mode;localStorage.setItem('insights-rn',mode);score();if(rawl)rawl.update(rawlOptions());};
+
 $('#digital').onclick=()=>setView('analysis');$('#notation-view').onclick=()=>setView('rawl');$('#original').onclick=()=>setView('source');
 $('#play').onclick=()=>player.toggle();$('#stop').onclick=()=>player.stop();$('#tempo').onchange=e=>{player.setTempo(e.target.value);e.target.value=player.tempo;};
 for(const [id,voice]of [['#piano-voice',0],['#bass-voice',1]])$(id).onclick=()=>{const muted=$(id).getAttribute('aria-pressed')==='true';player.setMuted(voice,muted);$(id).setAttribute('aria-pressed',String(!muted));if(rawl)rawl.update(rawlOptions());};
 $('#midi-download').onclick=e=>{if(!performance||player.tempo===performance.tempo)return;e.preventDefault();const url=URL.createObjectURL(new Blob([encodeMidi({...performance,tempo:player.tempo})],{type:'audio/midi'})),a=document.createElement('a');a.href=url;a.download=$('#midi-download').download;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
 $('#menu').onclick=()=>{const on=document.body.classList.toggle('menu-open');$('#menu').setAttribute('aria-expanded',on);$('#shade').hidden=!on;};$('#shade').onclick=closeMenu;
-$('#score').onclick=e=>{const join=e.target.closest('[data-join]');if(!join)return;$('.join-detail')?.remove();clearTimeout(detailTimer);const el=document.createElement('div'),delta=Number(join.dataset.delta);el.className='join-detail';el.innerHTML=`<span>${esc(join.dataset.join)}</span><span class="delta degree-color" data-degree="${colorIndex(delta)}">${delta<0?'↓':'↑'}${Math.abs(delta)}</span>`;document.body.append(el);detailTimer=setTimeout(()=>el.remove(),4500);};
+
 $('#data-download').onclick=()=>{const s=structuredClone(songs[current]),tonic=s.tonic[0];for(const row of s.rows){for(const c of row.chords)c.symbol=transposeChord(c.symbol,tonic);for(const k of row.keys)k.root=transposeRoot(k.root,tonic);for(const j of row.joins){j.from=transposeRoot(j.from,tonic);j.to=transposeRoot(j.to,tonic);}}s.originalTonic=s.tonic;s.tonic=['C',s.tonic[1]];const url=URL.createObjectURL(new Blob([JSON.stringify(s,null,2)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download=s.title.replace(/[^a-z0-9]+/gi,'-').toLowerCase()+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
 window.addEventListener('hashchange',()=>route());window.addEventListener('beforeunload',()=>player.destroy());
 window.addEventListener('keydown',e=>{if(e.key==='Escape'){closeMenu();$('.join-detail')?.remove();}if(e.key==='/'&&!['INPUT','TEXTAREA'].includes(document.activeElement.tagName)){e.preventDefault();if(innerWidth<=760&&!document.body.classList.contains('menu-open'))$('#menu').click();$('#search').focus();}if(e.code==='Space'&&routeKind!=='bricks'&&performance&&!['INPUT','TEXTAREA','BUTTON'].includes(document.activeElement.tagName)){e.preventDefault();void player.toggle();}});
