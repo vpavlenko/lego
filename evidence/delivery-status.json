@@ -54,7 +54,18 @@
     "rawCommit": "1f79832aaaaa9ac65b8b6f2c78367f834ce4d830",
     "caplin": "https://caplin.cxielamiko.chatgpt.site",
     "caplinVersion": 207,
-    "lego": "pending final Site release"
+    "lego": {
+      "url": "https://insights-roadmaps.cxielamiko.chatgpt.site",
+      "version": 15,
+      "sourceCommit": "78ab10471e780142b48017de6b57aafe9ac426ec",
+      "status": "succeeded",
+      "anonymousReadback": {
+        "charts": 486,
+        "melodyCompositions": 237,
+        "comparisons": 4,
+        "library": "0.3.1"
+      }
+    }
   },
   "remaining": {
     "melodies": 32,
