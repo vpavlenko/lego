@@ -2,3 +2,7 @@
 @media(max-width:600px){.atlas-page main{padding:12px}.atlas-groups{columns:1}.atlas-group{margin-bottom:20px}}
 
 .atlas-preview .rawln-footer{height:20px;min-height:20px}.atlas-preview .harmony-stripe .harmony-cell{padding:0 2px;background:none!important}.atlas-preview .harmony-stripe .rawln-rn{margin:0;line-height:20px}
+
+.atlas-groups{columns:auto;display:flex;flex-wrap:wrap;align-items:flex-start;gap:0 20px}.atlas-group{flex:0 0 auto;max-width:100%}.atlas-preview{overflow-x:auto;max-width:100%}.atlas-card{max-width:100%}
+
+.atlas-page main{padding-top:47px}

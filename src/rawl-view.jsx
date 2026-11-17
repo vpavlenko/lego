@@ -6,10 +6,10 @@ import {modulationAt} from './music/modulations.mjs';
 import {notationRows} from './music/notation-rows.mjs';
 import {RAWL_COLORS} from '../packages/rawl-notation/src/palette.mjs';
 
-function HostView({song,performance,brickMap,onSeek,onNote,controller,mutedVoices,selected,compact=false,form=null,measureWidth=null,barsPerRow=null}){
+function HostView({song,performance,brickMap,onSeek,onNote,controller,mutedVoices,selected,compact=false,form=null,measureWidth=null,barsPerRow=null,continuous=false}){
  const [mobile,setMobile]=useState(()=>matchMedia('(max-width:760px)').matches),notation=useRef(null);
  useEffect(()=>{const q=matchMedia('(max-width:760px)'),fn=()=>setMobile(q.matches);q.addEventListener('change',fn);return()=>q.removeEventListener('change',fn);},[]);
- const rows=React.useMemo(()=>notationRows({song,performance,form,compact,mobile,measureWidth,barsPerRow}),[song,performance,form,compact,mobile,measureWidth,barsPerRow]);
+ const rows=React.useMemo(()=>notationRows({song,performance,form,compact,mobile,measureWidth,barsPerRow,continuous}),[song,performance,form,compact,mobile,measureWidth,barsPerRow,continuous]);
  useEffect(()=>{controller.current=notation.current;notation.current?.setPosition(controller.position);return()=>{controller.current=null;};});
  const changes=performance.changes;
  const header=row=>song.rows.flatMap(r=>r.bricks.map(b=>({...b,start:(r.startBar+b.start)*performance.barBeats,end:(r.startBar+b.end)*performance.barBeats}))).filter(b=>b.start<row.end&&b.end>row.start).map((b,i)=>{
@@ -27,7 +27,7 @@ function HostView({song,performance,brickMap,onSeek,onNote,controller,mutedVoice
    <div className="harmony-rns">{cells.map(({c,rn,degree,style})=><div key={c.id} className={'rawln-rn harmony-cell'+(c.clipped?' uncertain':'')} data-degree={degree} style={style} title={rn}>{rn}</div>)}</div>
   </div>;
  };
- return <RawlNotation className={form?.aligned&&!compact?'rawln-form':''} style={form?.aligned&&!compact?{gridTemplateColumns:`repeat(${form.columns},minmax(0,1fr))`,minWidth:Math.max(1,form.columns/form.sections[0].bars)*300}:undefined} ref={notation} notes={performance.notes} beats={performance.beats} rows={rows} tonic={0} changes={changes} barBeats={performance.barBeats} mutedVoices={mutedVoices} onSeek={onSeek} onNote={onNote} renderHeader={compact?undefined:header} renderFooter={footer}/>;
+ return <RawlNotation className={form?.aligned&&!compact?'rawln-form':''} style={form?.aligned&&!compact?{gridTemplateColumns:`repeat(${form.layoutColumns??form.columns},minmax(0,1fr))`,minWidth:Math.max(1,(form.layoutColumns??form.columns)/(form.layoutSections??form.sections)[0].bars)*300}:undefined} ref={notation} notes={performance.notes} beats={performance.beats} rows={rows} tonic={0} changes={changes} barBeats={performance.barBeats} hideInitialTonic={compact} mutedVoices={mutedVoices} onSeek={onSeek} onNote={onNote} renderHeader={compact?undefined:header} renderFooter={footer}/>;
 }
 export function mountRawlView(element,options){
  const root=createRoot(element),controller={current:null,position:null};let props=options;

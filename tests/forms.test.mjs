@@ -22,3 +22,5 @@ test('all six former ABCA forms are source-reviewed without conflating unrelated
 });
 
 test('House follows encoded 10 + 10 + 8 + 10 phrase boundaries rather than assumed eight-bar blocks',()=>{const form=analyzeForm(songs[80]);assert.equal(form.pattern,'AABA');assert.equal(form.basis,'source-audit');assert.deepEqual(form.sections.map(s=>[s.start,s.end]),[[0,10],[10,20],[20,28],[28,38]]);assert.deepEqual(form.sections.map(s=>[s.layoutRow,s.layoutColumn]),[[0,0],[1,0],[1,10],[2,0]]);});
+
+test('Ipanema keeps its sixteen-bar bridge between eight-bar A sections',()=>{const form=analyzeForm(songs[73]);assert.equal(form.pattern,'AABA');assert.equal(form.basis,'source-audit');assert.deepEqual(form.sections.map(s=>[s.start,s.end]),[[0,8],[8,16],[16,32],[32,40]]);assert.deepEqual(form.sections.map(s=>[s.layoutRow,s.layoutColumn]),[[0,0],[1,0],[1,8],[2,0]]);});

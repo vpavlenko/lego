@@ -12,10 +12,12 @@ function track(events,endTick){
 export function encodeMidi(performance){
  const ppq=480,end=Math.round(performance.beats*ppq),us=Math.round(60000000/performance.tempo);
  const tracks=[track([{tick:0,kind:'meta',data:meta(3,bytes(performance.title))},{tick:0,kind:'meta',data:meta(81,[(us>>>16)&255,(us>>>8)&255,us&255])},{tick:0,kind:'meta',data:meta(88,[performance.meter[0],Math.round(Math.log2(performance.meter[1])),24,8])}],end)];
- for(const voice of [0]){
-  const events=[{tick:0,kind:'meta',data:meta(3,bytes('Piano'))},{tick:0,kind:'program',data:[192+voice,0]}];
-  for(const note of performance.notes.filter(n=>n.voice===voice))events.push({tick:Math.round(note.start*ppq),kind:'on',data:[144+voice,note.pitch,note.velocity]},{tick:Math.round((note.start+note.duration)*ppq),kind:'off',data:[128+voice,note.pitch,0]});
+ const plan=playbackPlan(performance);
+ for(const {voice,program,name} of plan.voices){
+  const events=[{tick:0,kind:'meta',data:meta(3,bytes(name))},{tick:0,kind:'program',data:[192+voice,program]}];
+  for(const note of plan.notes.filter(n=>n.voice===voice))events.push({tick:Math.round(note.start*ppq),kind:'on',data:[144+voice,note.pitch,note.velocity]},{tick:Math.round((note.start+note.duration)*ppq),kind:'off',data:[128+voice,note.pitch,0]});
   tracks.push(track(events,end));
  }
  return Uint8Array.from([...bytes('MThd'),...u32(6),0,1,0,tracks.length,(ppq>>>8)&255,ppq&255,...tracks.flat()]);
 }
+import {playbackPlan} from './realization.mjs';

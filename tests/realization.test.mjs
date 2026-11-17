@@ -61,8 +61,8 @@ test('Caplin geometry keeps held notes in both rows and keeps exact note heights
 
 
 test('every brick has a playable source-derived example in its local tonic C',()=>{
- for(const brick of buildLearnerBrickIndex(buildBrickIndex(songs)).bricks){
-  const {previewSong,source}=brickExample(brick,songs),p=realizeSong(previewSong,qualities),sourceSong=songs.find(s=>s.index===source.song),row=sourceSong.rows[source.row];
+ const allSongs=read('../dist/data/standards.json').songs;for(const brick of read('../dist/data/bricks.json').bricks){
+  const {previewSong,source}=brickExample(brick,allSongs),p=realizeSong(previewSong,qualities),sourceSong=allSongs.find(s=>s.index===source.song),row=sourceSong.rows[source.row];
   assert.ok(p.beats>0);assert.ok(p.notes.length,brick.name);assert.equal(p.changes[0].tonic,0);assert.equal(p.beats,source.end-source.start);
   for(const c of previewSong.rows[0].chords){assert.ok(row.chords.some(original=>original.symbol===c.symbol&&original.start<source.endBar-row.startBar&&original.end>source.startBar-row.startBar));}
   for(const n of p.notes){assert.ok(n.start>=0);assert.ok(n.start+n.duration<=p.beats+1e-6);assert.ok(Number.isFinite(n.pitch));}

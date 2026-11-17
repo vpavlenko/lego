@@ -1,0 +1,1748 @@
+{
+  "version": 1,
+  "scope": "Display layout only; formal sections/pattern/family, source times and musical events remain unchanged",
+  "sources": [
+    "dist/data/roadmaps.json",
+    "src/music/forms.mjs",
+    "src/music/bricks.mjs",
+    "src/music/brick-families.mjs"
+  ],
+  "guards": {
+    "formalASections": 2,
+    "minimumHalfBars": 2,
+    "coverage": "One same canonical brick per half, with only actual adjacent source-row continuations joined",
+    "harmony": "Complete legible multi-chord coverage; no one-chord repetition or opening-only inference",
+    "agreement": "All formal As have the same half length and canonical brick, with matching halves within and across every A",
+    "minimumScore": 0.9,
+    "minimumRootScore": 0.9,
+    "comparison": "Transposition-invariant roots and form quality kinds; sampled core plus full-duration verification"
+  },
+  "counts": {
+    "standards": 242,
+    "matches": 5
+  },
+  "matches": [
+    {
+      "song": 74,
+      "title": "Gone With the Wind",
+      "sourcePage": 48,
+      "pattern": "ABAC",
+      "family": "ABAC",
+      "formalSections": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 0,
+          "bars": 8
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "B",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 8,
+          "bars": 8
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 0,
+          "bars": 8
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "C",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 8,
+          "bars": 8
+        }
+      ],
+      "layoutSections": [
+        {
+          "start": 0,
+          "end": 4,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 0,
+          "subphrase": 0,
+          "subphraseBrick": "7 Chord Dropback",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 8
+          }
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 0,
+          "subphrase": 1,
+          "subphraseBrick": "7 Chord Dropback",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 8
+          }
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "B",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 4,
+          "bars": 8
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 2,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 2,
+          "subphrase": 0,
+          "subphraseBrick": "7 Chord Dropback",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 8
+          }
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 3,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 2,
+          "subphrase": 1,
+          "subphraseBrick": "7 Chord Dropback",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 8
+          }
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "C",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 3,
+          "layoutColumn": 4,
+          "bars": 8
+        }
+      ],
+      "formalColumns": 16,
+      "layoutColumns": 12,
+      "halves": [
+        {
+          "start": 0,
+          "end": 4,
+          "brick": "7 Chord Dropback",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 8
+          },
+          "sourceBricks": [
+            {
+              "row": 0,
+              "label": "7 Chord Dropback",
+              "start": 0,
+              "end": 4
+            }
+          ],
+          "chords": [
+            {
+              "start": 0,
+              "end": 0.5,
+              "symbol": "Fm7",
+              "kind": "minor"
+            },
+            {
+              "start": 0.5,
+              "end": 1,
+              "symbol": "Bb7",
+              "kind": "dominant"
+            },
+            {
+              "start": 1,
+              "end": 1.5,
+              "symbol": "EbM7",
+              "kind": "major"
+            },
+            {
+              "start": 1.5,
+              "end": 2,
+              "symbol": "C7",
+              "kind": "dominant"
+            },
+            {
+              "start": 2,
+              "end": 2.5,
+              "symbol": "Fm7",
+              "kind": "minor"
+            },
+            {
+              "start": 2.5,
+              "end": 3,
+              "symbol": "Bb7",
+              "kind": "dominant"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "symbol": "EbM7",
+              "kind": "major"
+            }
+          ]
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "brick": "7 Chord Dropback",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 8
+          },
+          "sourceBricks": [
+            {
+              "row": 0,
+              "label": "7 Chord Dropback",
+              "start": 4,
+              "end": 8
+            }
+          ],
+          "chords": [
+            {
+              "start": 4,
+              "end": 4.5,
+              "symbol": "Am7",
+              "kind": "minor"
+            },
+            {
+              "start": 4.5,
+              "end": 5,
+              "symbol": "D7",
+              "kind": "dominant"
+            },
+            {
+              "start": 5,
+              "end": 5.5,
+              "symbol": "GM7",
+              "kind": "major"
+            },
+            {
+              "start": 5.5,
+              "end": 6,
+              "symbol": "E7",
+              "kind": "dominant"
+            },
+            {
+              "start": 6,
+              "end": 6.5,
+              "symbol": "Am7",
+              "kind": "minor"
+            },
+            {
+              "start": 6.5,
+              "end": 7,
+              "symbol": "D7",
+              "kind": "dominant"
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "symbol": "GM7",
+              "kind": "major"
+            }
+          ]
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "brick": "7 Chord Dropback",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 8
+          },
+          "sourceBricks": [
+            {
+              "row": 2,
+              "label": "7 Chord Dropback",
+              "start": 16,
+              "end": 20
+            }
+          ],
+          "chords": [
+            {
+              "start": 16,
+              "end": 16.5,
+              "symbol": "Fm7",
+              "kind": "minor"
+            },
+            {
+              "start": 16.5,
+              "end": 17,
+              "symbol": "Bb7",
+              "kind": "dominant"
+            },
+            {
+              "start": 17,
+              "end": 17.5,
+              "symbol": "EbM7",
+              "kind": "major"
+            },
+            {
+              "start": 17.5,
+              "end": 18,
+              "symbol": "C7",
+              "kind": "dominant"
+            },
+            {
+              "start": 18,
+              "end": 18.5,
+              "symbol": "Fm7",
+              "kind": "minor"
+            },
+            {
+              "start": 18.5,
+              "end": 19,
+              "symbol": "Bb7",
+              "kind": "dominant"
+            },
+            {
+              "start": 19,
+              "end": 20,
+              "symbol": "EbM7",
+              "kind": "major"
+            }
+          ]
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "brick": "7 Chord Dropback",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 8
+          },
+          "sourceBricks": [
+            {
+              "row": 2,
+              "label": "7 Chord Dropback",
+              "start": 20,
+              "end": 24
+            }
+          ],
+          "chords": [
+            {
+              "start": 20,
+              "end": 20.5,
+              "symbol": "Am7",
+              "kind": "minor"
+            },
+            {
+              "start": 20.5,
+              "end": 21,
+              "symbol": "D7",
+              "kind": "dominant"
+            },
+            {
+              "start": 21,
+              "end": 21.5,
+              "symbol": "GM7",
+              "kind": "major"
+            },
+            {
+              "start": 21.5,
+              "end": 22,
+              "symbol": "E7",
+              "kind": "dominant"
+            },
+            {
+              "start": 22,
+              "end": 22.5,
+              "symbol": "Am7",
+              "kind": "minor"
+            },
+            {
+              "start": 22.5,
+              "end": 23,
+              "symbol": "D7",
+              "kind": "dominant"
+            },
+            {
+              "start": 23,
+              "end": 24,
+              "symbol": "GM7",
+              "kind": "major"
+            }
+          ]
+        }
+      ],
+      "note": "Repeated halves retain the same root/quality-family structure."
+    },
+    {
+      "song": 119,
+      "title": "Laura",
+      "sourcePage": 77,
+      "pattern": "ABAC",
+      "family": "ABAC",
+      "formalSections": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 0,
+          "bars": 8
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "B",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 8,
+          "bars": 8
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 0,
+          "bars": 8
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "C",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 8,
+          "bars": 8
+        }
+      ],
+      "layoutSections": [
+        {
+          "start": 0,
+          "end": 4,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 0,
+          "subphrase": 0,
+          "subphraseBrick": "Straight",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 2
+          }
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 0,
+          "subphrase": 1,
+          "subphraseBrick": "Straight",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 2
+          }
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "B",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 4,
+          "bars": 8
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 2,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 2,
+          "subphrase": 0,
+          "subphraseBrick": "Straight",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 2
+          }
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 3,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 2,
+          "subphrase": 1,
+          "subphraseBrick": "Straight",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 2
+          }
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "C",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 3,
+          "layoutColumn": 4,
+          "bars": 8
+        }
+      ],
+      "formalColumns": 16,
+      "layoutColumns": 12,
+      "halves": [
+        {
+          "start": 0,
+          "end": 4,
+          "brick": "Straight",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 2
+          },
+          "sourceBricks": [
+            {
+              "row": 0,
+              "label": "Straight Cadence",
+              "start": 0,
+              "end": 4
+            }
+          ],
+          "chords": [
+            {
+              "start": 0,
+              "end": 1,
+              "symbol": "Am7",
+              "kind": "minor"
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "symbol": "D7",
+              "kind": "dominant"
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "symbol": "GM7",
+              "kind": "major"
+            }
+          ]
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "brick": "Straight",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 2
+          },
+          "sourceBricks": [
+            {
+              "row": 0,
+              "label": "Straight Cadence",
+              "start": 4,
+              "end": 8
+            }
+          ],
+          "chords": [
+            {
+              "start": 4,
+              "end": 5,
+              "symbol": "Gm7",
+              "kind": "minor"
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "symbol": "C7",
+              "kind": "dominant"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "symbol": "FM7",
+              "kind": "major"
+            }
+          ]
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "brick": "Straight",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 2
+          },
+          "sourceBricks": [
+            {
+              "row": 2,
+              "label": "Straight Cadence",
+              "start": 16,
+              "end": 20
+            }
+          ],
+          "chords": [
+            {
+              "start": 16,
+              "end": 17,
+              "symbol": "Am7",
+              "kind": "minor"
+            },
+            {
+              "start": 17,
+              "end": 18,
+              "symbol": "D7",
+              "kind": "dominant"
+            },
+            {
+              "start": 18,
+              "end": 20,
+              "symbol": "GM7",
+              "kind": "major"
+            }
+          ]
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "brick": "Straight",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 2
+          },
+          "sourceBricks": [
+            {
+              "row": 2,
+              "label": "Straight Cadence",
+              "start": 20,
+              "end": 24
+            }
+          ],
+          "chords": [
+            {
+              "start": 20,
+              "end": 21,
+              "symbol": "Gm7",
+              "kind": "minor"
+            },
+            {
+              "start": 21,
+              "end": 22,
+              "symbol": "C7",
+              "kind": "dominant"
+            },
+            {
+              "start": 22,
+              "end": 24,
+              "symbol": "FM7",
+              "kind": "major"
+            }
+          ]
+        }
+      ],
+      "note": "Repeated halves retain the same root/quality-family structure."
+    },
+    {
+      "song": 218,
+      "title": "Tune Up",
+      "sourcePage": 134,
+      "pattern": "ABAC",
+      "family": "ABAC",
+      "formalSections": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 0,
+          "bars": 8
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "B",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 8,
+          "bars": 8
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 0,
+          "bars": 8
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "C",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 8,
+          "bars": 8
+        }
+      ],
+      "layoutSections": [
+        {
+          "start": 0,
+          "end": 4,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 0,
+          "subphrase": 0,
+          "subphraseBrick": "Straight",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 2
+          }
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 0,
+          "subphrase": 1,
+          "subphraseBrick": "Straight",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 2
+          }
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "B",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 4,
+          "bars": 8
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 2,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 2,
+          "subphrase": 0,
+          "subphraseBrick": "Straight",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 2
+          }
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 3,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 2,
+          "subphrase": 1,
+          "subphraseBrick": "Straight",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 2
+          }
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "C",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 3,
+          "layoutColumn": 4,
+          "bars": 8
+        }
+      ],
+      "formalColumns": 16,
+      "layoutColumns": 12,
+      "halves": [
+        {
+          "start": 0,
+          "end": 4,
+          "brick": "Straight",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 2
+          },
+          "sourceBricks": [
+            {
+              "row": 0,
+              "label": "Straight Cadence",
+              "start": 0,
+              "end": 4
+            }
+          ],
+          "chords": [
+            {
+              "start": 0,
+              "end": 1,
+              "symbol": "Em7",
+              "kind": "minor"
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "symbol": "A7",
+              "kind": "dominant"
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "symbol": "DM7",
+              "kind": "major"
+            }
+          ]
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "brick": "Straight",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 2
+          },
+          "sourceBricks": [
+            {
+              "row": 0,
+              "label": "Straight Cadence",
+              "start": 4,
+              "end": 8
+            }
+          ],
+          "chords": [
+            {
+              "start": 4,
+              "end": 5,
+              "symbol": "Dm7",
+              "kind": "minor"
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "symbol": "G7",
+              "kind": "dominant"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "symbol": "CM7",
+              "kind": "major"
+            }
+          ]
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "brick": "Straight",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 2
+          },
+          "sourceBricks": [
+            {
+              "row": 2,
+              "label": "Straight Cadence",
+              "start": 16,
+              "end": 20
+            }
+          ],
+          "chords": [
+            {
+              "start": 16,
+              "end": 17,
+              "symbol": "Em7",
+              "kind": "minor"
+            },
+            {
+              "start": 17,
+              "end": 18,
+              "symbol": "A7",
+              "kind": "dominant"
+            },
+            {
+              "start": 18,
+              "end": 20,
+              "symbol": "DM7",
+              "kind": "major"
+            }
+          ]
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "brick": "Straight",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 2
+          },
+          "sourceBricks": [
+            {
+              "row": 2,
+              "label": "Straight Cadence",
+              "start": 20,
+              "end": 24
+            }
+          ],
+          "chords": [
+            {
+              "start": 20,
+              "end": 21,
+              "symbol": "Dm7",
+              "kind": "minor"
+            },
+            {
+              "start": 21,
+              "end": 22,
+              "symbol": "G7",
+              "kind": "dominant"
+            },
+            {
+              "start": 22,
+              "end": 24,
+              "symbol": "CM7",
+              "kind": "major"
+            }
+          ]
+        }
+      ],
+      "note": "Repeated halves retain the same root/quality-family structure."
+    },
+    {
+      "song": 227,
+      "title": "What Am I Here For?",
+      "sourcePage": 139,
+      "pattern": "ABAC",
+      "family": "ABAC",
+      "formalSections": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 0,
+          "bars": 8
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "B",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 8,
+          "bars": 8
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 0,
+          "bars": 8
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "C",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 8,
+          "bars": 8
+        }
+      ],
+      "layoutSections": [
+        {
+          "start": 0,
+          "end": 4,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 0,
+          "subphrase": 0,
+          "subphraseBrick": "Whoopee Turnaround",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 0
+          }
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 0,
+          "subphrase": 1,
+          "subphraseBrick": "Whoopee Turnaround",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 0
+          }
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "B",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 4,
+          "bars": 8
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 2,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 2,
+          "subphrase": 0,
+          "subphraseBrick": "Whoopee Turnaround",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 0
+          }
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 3,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 2,
+          "subphrase": 1,
+          "subphraseBrick": "Whoopee Turnaround",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 0
+          }
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "C",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 3,
+          "layoutColumn": 4,
+          "bars": 8
+        }
+      ],
+      "formalColumns": 16,
+      "layoutColumns": 12,
+      "halves": [
+        {
+          "start": 0,
+          "end": 4,
+          "brick": "Whoopee Turnaround",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 0
+          },
+          "sourceBricks": [
+            {
+              "row": 0,
+              "label": "Whoopee Turnaround",
+              "start": 0,
+              "end": 4
+            }
+          ],
+          "chords": [
+            {
+              "start": 0,
+              "end": 1,
+              "symbol": "BbM7",
+              "kind": "major"
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "symbol": "Bo",
+              "kind": "dim"
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "symbol": "Cm7",
+              "kind": "minor"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "symbol": "F7",
+              "kind": "dominant"
+            }
+          ]
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "brick": "Whoopee Turnaround",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 0
+          },
+          "sourceBricks": [
+            {
+              "row": 0,
+              "label": "Whoopee Turnaround",
+              "start": 4,
+              "end": 8
+            }
+          ],
+          "chords": [
+            {
+              "start": 4,
+              "end": 5,
+              "symbol": "BbM7",
+              "kind": "major"
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "symbol": "Bo",
+              "kind": "dim"
+            },
+            {
+              "start": 6,
+              "end": 7,
+              "symbol": "Cm7",
+              "kind": "minor"
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "symbol": "F7",
+              "kind": "dominant"
+            }
+          ]
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "brick": "Whoopee Turnaround",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 0
+          },
+          "sourceBricks": [
+            {
+              "row": 2,
+              "label": "Whoopee Turnaround",
+              "start": 16,
+              "end": 20
+            }
+          ],
+          "chords": [
+            {
+              "start": 16,
+              "end": 17,
+              "symbol": "BbM7",
+              "kind": "major"
+            },
+            {
+              "start": 17,
+              "end": 18,
+              "symbol": "Bo",
+              "kind": "dim"
+            },
+            {
+              "start": 18,
+              "end": 19,
+              "symbol": "Cm7",
+              "kind": "minor"
+            },
+            {
+              "start": 19,
+              "end": 20,
+              "symbol": "F7",
+              "kind": "dominant"
+            }
+          ]
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "brick": "Whoopee Turnaround",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 0
+          },
+          "sourceBricks": [
+            {
+              "row": 2,
+              "label": "Whoopee Turnaround",
+              "start": 20,
+              "end": 24
+            }
+          ],
+          "chords": [
+            {
+              "start": 20,
+              "end": 21,
+              "symbol": "BbM7",
+              "kind": "major"
+            },
+            {
+              "start": 21,
+              "end": 22,
+              "symbol": "Bo",
+              "kind": "dim"
+            },
+            {
+              "start": 22,
+              "end": 23,
+              "symbol": "Cm7",
+              "kind": "minor"
+            },
+            {
+              "start": 23,
+              "end": 24,
+              "symbol": "F7",
+              "kind": "dominant"
+            }
+          ]
+        }
+      ],
+      "note": "Repeated halves retain the same root/quality-family structure."
+    },
+    {
+      "song": 228,
+      "title": "What is This Thing Called Love?",
+      "sourcePage": 139,
+      "pattern": "AABA",
+      "family": "AABA",
+      "formalSections": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 0,
+          "bars": 8
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 0,
+          "bars": 8
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "B",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 8,
+          "bars": 8
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 2,
+          "layoutColumn": 0,
+          "bars": 8
+        }
+      ],
+      "layoutSections": [
+        {
+          "start": 0,
+          "end": 4,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 0,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 0,
+          "subphrase": 0,
+          "subphraseBrick": "Sad",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 5
+          }
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 1,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 0,
+          "subphrase": 1,
+          "subphraseBrick": "Sad",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 5
+          }
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 2,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 1,
+          "subphrase": 0,
+          "subphraseBrick": "Sad",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 5
+          }
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 3,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 1,
+          "subphrase": 1,
+          "subphraseBrick": "Sad",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 5
+          }
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "label": "B",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 3,
+          "layoutColumn": 4,
+          "bars": 8
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 4,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 3,
+          "subphrase": 0,
+          "subphraseBrick": "Sad",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 5
+          }
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "label": "A",
+          "similarity": 1,
+          "transpose": 0,
+          "layoutRow": 5,
+          "layoutColumn": 0,
+          "bars": 4,
+          "formalSection": 3,
+          "subphrase": 1,
+          "subphraseBrick": "Sad",
+          "subphraseComparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 5
+          }
+        }
+      ],
+      "formalColumns": 16,
+      "layoutColumns": 12,
+      "halves": [
+        {
+          "start": 0,
+          "end": 4,
+          "brick": "Sad",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 5
+          },
+          "sourceBricks": [
+            {
+              "row": 0,
+              "label": "Sad Cadence",
+              "start": 0,
+              "end": 4
+            }
+          ],
+          "chords": [
+            {
+              "start": 0,
+              "end": 1,
+              "symbol": "Gm7b5",
+              "kind": "dim"
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "symbol": "C7",
+              "kind": "dominant"
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "symbol": "Fm",
+              "kind": "minor"
+            }
+          ]
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "brick": "Sad",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 5
+          },
+          "sourceBricks": [
+            {
+              "row": 0,
+              "label": "Sad Cadence",
+              "start": 4,
+              "end": 8
+            }
+          ],
+          "chords": [
+            {
+              "start": 4,
+              "end": 5,
+              "symbol": "Dm7b5",
+              "kind": "dim"
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "symbol": "G7",
+              "kind": "dominant"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "symbol": "CmM7",
+              "kind": "minor"
+            }
+          ]
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "brick": "Sad",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 5
+          },
+          "sourceBricks": [
+            {
+              "row": 1,
+              "label": "Sad Cadence",
+              "start": 8,
+              "end": 12
+            }
+          ],
+          "chords": [
+            {
+              "start": 8,
+              "end": 9,
+              "symbol": "Gm7b5",
+              "kind": "dim"
+            },
+            {
+              "start": 9,
+              "end": 10,
+              "symbol": "C7",
+              "kind": "dominant"
+            },
+            {
+              "start": 10,
+              "end": 12,
+              "symbol": "Fm",
+              "kind": "minor"
+            }
+          ]
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "brick": "Sad",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 5
+          },
+          "sourceBricks": [
+            {
+              "row": 1,
+              "label": "Sad Cadence",
+              "start": 12,
+              "end": 16
+            }
+          ],
+          "chords": [
+            {
+              "start": 12,
+              "end": 13,
+              "symbol": "Dm7b5",
+              "kind": "dim"
+            },
+            {
+              "start": 13,
+              "end": 14,
+              "symbol": "G7",
+              "kind": "dominant"
+            },
+            {
+              "start": 14,
+              "end": 16,
+              "symbol": "CmM7",
+              "kind": "minor"
+            }
+          ]
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "brick": "Sad",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 5
+          },
+          "sourceBricks": [
+            {
+              "row": 3,
+              "label": "Sad Cadence",
+              "start": 24,
+              "end": 28
+            }
+          ],
+          "chords": [
+            {
+              "start": 24,
+              "end": 25,
+              "symbol": "Gm7b5",
+              "kind": "dim"
+            },
+            {
+              "start": 25,
+              "end": 26,
+              "symbol": "C7",
+              "kind": "dominant"
+            },
+            {
+              "start": 26,
+              "end": 28,
+              "symbol": "Fm",
+              "kind": "minor"
+            }
+          ]
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "brick": "Sad",
+          "comparison": {
+            "score": 1,
+            "rootScore": 1,
+            "shift": 5
+          },
+          "sourceBricks": [
+            {
+              "row": 3,
+              "label": "Sad Cadence",
+              "start": 28,
+              "end": 32
+            }
+          ],
+          "chords": [
+            {
+              "start": 28,
+              "end": 29,
+              "symbol": "Dm7b5",
+              "kind": "dim"
+            },
+            {
+              "start": 29,
+              "end": 30,
+              "symbol": "G7",
+              "kind": "dominant"
+            },
+            {
+              "start": 30,
+              "end": 32,
+              "symbol": "CmM7",
+              "kind": "minor"
+            }
+          ]
+        }
+      ],
+      "note": "Minor tonic Fm versus CmM7 differs in extension; roots and minor quality family remain transposition-equivalent."
+    }
+  ]
+}

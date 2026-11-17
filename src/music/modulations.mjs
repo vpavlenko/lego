@@ -1,4 +1,5 @@
 import {pitch,mod,transposeRoot} from '../../dist/harmony.mjs';
+export {modulationLabelOffset} from '../../packages/rawl-notation/src/geometry.mjs';
 
 // The source's key regions supply carried keys; every join is retained as an
 // onset, including joins whose destination has the same pitch class.

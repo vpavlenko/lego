@@ -1,27 +1,44 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {createHash} from 'node:crypto';
 import {build} from 'esbuild';
+import {attachMelody} from '../src/music/melody.mjs';
 import {realizeSong} from '../src/music/realization.mjs';
 import {encodeMidi} from '../src/music/midi.mjs';
 import {orderBrickVariants} from '../src/music/variant-order.mjs';
 import {buildLearnerBrickIndex} from '../src/music/brick-families.mjs';
+import {removeUnhelpfulBricks} from '../src/music/brick-coverage.mjs';
+import {refineSingleUseFamilies} from '../src/music/brick-reuse.mjs';
 import {buildBrickVariants} from '../src/music/brick-variants.mjs';
 import {buildBrickIndex,brickExample} from '../src/music/bricks.mjs';
 import {analyzeForm} from '../src/music/forms.mjs';
+import {alignRepeatedSubphrases} from '../src/music/section-layout.mjs';
 import {groupBricks} from '../src/music/brick-groups.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
-const {songs}=read('dist/data/roadmaps.json'),vocabulary=read('src/music/chord-vocabulary.json'),{qualities}=vocabulary;
+const original=read('dist/data/roadmaps.json'),additional=fs.existsSync(path.join(root,'dist/data/additional-standards.json'))?read('dist/data/additional-standards.json'):{songs:[]};
+const rawSongs=[...original.songs,...additional.songs],vocabulary=read('src/music/chord-vocabulary.json'),{qualities}=vocabulary;
+const sourceIndex=buildBrickIndex(rawSongs),coverage=removeUnhelpfulBricks(rawSongs,vocabulary),allFamilies=buildLearnerBrickIndex(sourceIndex),learner=buildLearnerBrickIndex(buildBrickIndex(coverage.songs));
+// Removed labels may own old page addresses of a still useful family.
+// Keep their names/routes searchable without restoring discarded passages.
+for(const brick of learner.bricks){const old=allFamilies.bricks.find(b=>b.name===brick.name);if(old)for(const field of ['aliases','aliasSlugs'])brick[field]=[...new Set([...brick[field],...old[field]])].sort();}
+const reuse=refineSingleUseFamilies(learner,coverage.songs,vocabulary),songs=reuse.songs,bricks=reuse.index;
+const musicalData=list=>JSON.stringify(list.map(({bricks,rows,...song})=>({...song,rows:rows.map(({bricks,...row})=>row)}))),fingerprint=value=>createHash('sha256').update(value).digest('hex');
+if(musicalData(rawSongs)!==musicalData(songs))throw Error('Brick projection changed musical source data');
+if(songs.some((song,i)=>song.index!==i))throw Error('Non-contiguous standard indices');
+fs.writeFileSync(path.join(root,'dist/data/standards.json'),JSON.stringify({...original,songs}));
+const melodyData=fs.existsSync(path.join(root,'dist/data/melodies.json'))?read('dist/data/melodies.json'):{entries:{}},melodies=new Map(Object.values(melodyData.entries).map(entry=>[entry.id,entry])),melodyMatches=new Map((melodyData.existingMatches??[]).map(match=>[match.song,match]));
 fs.copyFileSync(path.join(root,'src/music/rawl-links.json'),path.join(root,'dist/data/rawl-links.json'));
-fs.writeFileSync(path.join(root,'dist/data/forms.json'),JSON.stringify({version:1,forms:songs.map(analyzeForm)}));
+const brickMap=new Map(bricks.bricks.flatMap(b=>[b.name,...b.aliases,...(b.sourceNames??[])].map(name=>[name,b])));
+fs.writeFileSync(path.join(root,'dist/data/forms.json'),JSON.stringify({version:2,forms:songs.map(song=>alignRepeatedSubphrases(song,analyzeForm(song),brickMap))}));
 fs.mkdirSync(path.join(root,'dist/data/performances'),{recursive:true});fs.mkdirSync(path.join(root,'dist/midi'),{recursive:true});
 let total=0,clipped=0;
 for(const song of songs){
- const data=realizeSong(song,qualities),id=String(song.index).padStart(3,'0');total+=data.notes.length;clipped+=data.chords.filter(c=>c.clipped).length;
+ const alignment=melodyMatches.get(song.index),entry=melodies.get(song.melodyId??alignment?.melodyId),data=attachMelody(realizeSong(song,qualities),song,entry,song.melodyId?null:alignment),id=String(song.index).padStart(3,'0');total+=data.notes.length;clipped+=data.chords.filter(c=>c.clipped).length;
  fs.writeFileSync(path.join(root,`dist/data/performances/${id}.json`),JSON.stringify(data));fs.writeFileSync(path.join(root,`dist/midi/${id}.mid`),encodeMidi(data));
 }
-const previousBricks=read('dist/data/bricks.json').bricks,sourceIndex=buildBrickIndex(songs),bricks=buildLearnerBrickIndex(sourceIndex);
+const previousBricks=read('dist/data/bricks.json').bricks;
 fs.writeFileSync(path.join(root,'dist/data/source-bricks.json'),JSON.stringify(sourceIndex));
 const currentSlugs=new Set(bricks.bricks.map(b=>b.slug));
 for(const old of previousBricks)if(!currentSlugs.has(old.slug)){
@@ -32,7 +49,7 @@ fs.writeFileSync(path.join(root,'evidence/brick-aliases.json'),JSON.stringify({s
 fs.writeFileSync(path.join(root,'dist/data/bricks.json'),JSON.stringify(bricks));
 fs.mkdirSync(path.join(root,'dist/data/brick-performances'),{recursive:true});
 fs.mkdirSync(path.join(root,'dist/midi/bricks'),{recursive:true});
-const atlasBricks=[];
+const atlasBricks=[];let definitionCount=0,unresolvedOccurrences=0;
 fs.mkdirSync(path.join(root,'dist/data/brick-variants'),{recursive:true});
 fs.mkdirSync(path.join(root,'dist/midi/brick-variants'),{recursive:true});
 for(const name of fs.readdirSync(path.join(root,'dist/data/brick-variants')))if(name.endsWith('.json')&&!currentSlugs.has(name.slice(0,-5)))fs.rmSync(path.join(root,'dist/data/brick-variants',name));
@@ -43,14 +60,17 @@ for(const brick of bricks.bricks){
  fs.writeFileSync(path.join(root,`dist/midi/bricks/${brick.slug}.mid`),encodeMidi(data));
  atlasBricks.push({slug:brick.slug,name:brick.name,representativeName:brick.representativeName,sourceNames:brick.sourceNames,standards:brick.standards.length,performance:data});
  const definitions=buildBrickVariants(brick,songs,vocabulary);definitions.variants=orderBrickVariants(definitions.variants);const currentIds=new Set(definitions.variants.map(v=>v.id));for(const name of fs.readdirSync(path.join(root,'dist/midi/brick-variants')))if(name.startsWith(brick.slug+'--')&&!currentIds.has(name.slice(brick.slug.length+2,-4)))fs.rmSync(path.join(root,'dist/midi/brick-variants',name));
+ definitionCount+=definitions.variants.length;unresolvedOccurrences+=definitions.stats.unknownOccurrences+definitions.stats.partialOccurrences;
  definitions.variants.forEach((variant,i)=>{variant.number=i+1;variant.performance={...realizeSong(variant.previewSong,qualities),previewSong:variant.previewSong,source:variant.source};variant.midi=`./midi/brick-variants/${brick.slug}--${variant.id}.mid`;fs.writeFileSync(path.join(root,variant.midi.replace('./','dist/')),encodeMidi(variant.performance));});
  fs.writeFileSync(path.join(root,`dist/data/brick-variants/${brick.slug}.json`),JSON.stringify(definitions));
 }
 fs.writeFileSync(path.join(root,'dist/data/atlas.json'),JSON.stringify({version:1,groups:groupBricks(atlasBricks,read('src/music/brick-types.json'))}));
+fs.writeFileSync(path.join(root,'evidence/runtime-projection.json'),JSON.stringify({version:1,charts:songs.length,primaryStandards:songs.filter(s=>!Number.isInteger(s.arrangementOf)).length,originalCharts:original.songs.length,additionalCharts:additional.songs.length,rawSourceIdentities:sourceIndex.bricks.length,coverage:coverage.stats,reuse:reuse.stats,definitions:definitionCount,unresolvedOccurrences,unchangedMusicalDataSha256:fingerprint(musicalData(songs)),decisions:reuse.decisions.map(d=>({action:d.action,source:d.source.name,target:d.target?.name,reason:d.reason}))},null,2));
 fs.copyFileSync(path.join(root,'packages/rawl-notation/src/style.css'),path.join(root,'dist/rawl-notation.css'));
 fs.copyFileSync(path.join(root,'packages/rawl-notation/src/palette.mjs'),path.join(root,'dist/rawl-colors.mjs'));
 fs.copyFileSync(path.join(root,'packages/rawl-notation/LICENSE'),path.join(root,'dist/RAWL-LICENSE.txt'));
 await build({entryPoints:[path.join(root,'src/rawl-view.jsx')],outfile:path.join(root,'dist/rawl-view.js'),bundle:true,format:'esm',platform:'browser',target:['es2020'],jsx:'automatic',minify:true,legalComments:'eof',define:{'process.env.NODE_ENV':'"production"'}});
 await build({entryPoints:[path.join(root,'src/audio-player.mjs')],outfile:path.join(root,'dist/audio-player.js'),bundle:true,format:'esm',platform:'browser',target:['es2020'],minify:true});
 await build({entryPoints:[path.join(root,'src/music/modulations.mjs')],outfile:path.join(root,'dist/modulations.js'),bundle:true,format:'esm',platform:'browser',target:['es2020'],minify:true});
-console.log(JSON.stringify({songs:songs.length,bricks:bricks.bricks.length,notes:total,clipped,status:'built'}));
+await build({entryPoints:[path.join(root,'src/music/aaba-groups.mjs')],outfile:path.join(root,'dist/aaba-groups.js'),bundle:true,format:'esm',platform:'browser',target:['es2020'],minify:true});
+console.log(JSON.stringify({songs:songs.length,bricks:bricks.bricks.length,notes:total,clipped,coverage:coverage.stats,reuse:reuse.stats,status:'built'}));

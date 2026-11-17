@@ -1,12 +1,12 @@
 import React,{forwardRef,useImperativeHandle,useLayoutEffect,useMemo,useRef} from 'react';
-import {pitchRange,staveGeometry,tonalSegments,tonalLines,tonicAt,mod,NOTE_HEIGHT,keyMarkers,TONIC_NAMES} from './geometry.mjs';
+import {pitchRange,staveGeometry,tonalSegments,tonalLines,tonicAt,mod,NOTE_HEIGHT,keyMarkers,TONIC_NAMES,modulationLabelOffset} from './geometry.mjs';
 import {RAWL_COLORS} from './palette.mjs';
 
 const names=['C','D♭','D','E♭','E','F','F♯','G','A♭','A','B♭','B'];
 const noteName=p=>names[mod(p)]+(Math.floor(p/12)-1);
 
 /** A host-independent Rawl score. Times are quarter-note beats, pitches MIDI. */
-export const RawlNotation=forwardRef(function RawlNotation({notes,beats,rows,tonic=0,changes=[],barBeats=4,position=null,mutedVoices=[],onSeek,onNote,renderHeader,renderFooter,className='',style},ref){
+export const RawlNotation=forwardRef(function RawlNotation({notes,beats,rows,tonic=0,changes=[],barBeats=4,hideInitialTonic=false,position=null,mutedVoices=[],onSeek,onNote,renderHeader,renderFooter,className='',style},ref){
  const root=useRef(null),noteElements=useRef(new Map());
  const spans=rows?.length?rows:[{start:0,end:beats,label:1}];
  const markers=useMemo(()=>keyMarkers(tonic,changes),[tonic,changes]);
@@ -36,9 +36,9 @@ export const RawlNotation=forwardRef(function RawlNotation({notes,beats,rows,ton
       {bars.map(beat=><div className="rawln-bar" key={beat} style={{left:x(beat)+'%'}}/>)}
      </div>
      <div className="rawln-modulations">
-      {markers.filter(m=>m.beat>=row.start&&m.beat<row.end&&m.delta!==0).map(m=><div key={m.beat} className="rawln-modulation" data-beat={m.beat} data-tonic={m.tonic} data-join={m.join?m.name:undefined} style={{left:x(m.beat)+'%'}} title={m.name}>
+      {markers.filter(m=>m.beat>=row.start&&m.beat<row.end&&m.delta!==0&&!(hideInitialTonic&&m.previousTonic===null)).map(m=><div key={m.beat} className="rawln-modulation" data-beat={m.beat} data-tonic={m.tonic} data-join={m.join?m.name:undefined} style={{left:x(m.beat)+'%'}} title={m.name}>
        {m.delta!==null&&<div className="rawln-modulation-flag" data-degree={mod(m.delta)} style={{background:RAWL_COLORS[mod(m.delta)].background}}/>}
-       <span className="rawln-modulation-label" style={{left:m.previousTonic===null?18:30}}>
+       <span className="rawln-modulation-label" style={{left:modulationLabelOffset(m.beat,barBeats)}}>
         {m.delta!==null&&<><svg viewBox="0 0 24 24" aria-hidden="true">{m.delta<0?<><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></>:<><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></>}</svg>{Math.abs(m.delta)} </>}{TONIC_NAMES[m.tonic]}
        </span>
       </div>)}
@@ -58,5 +58,5 @@ export const RawlNotation=forwardRef(function RawlNotation({notes,beats,rows,ton
   })}
  </div>;
 });
-export {pitchRange,staveGeometry} from './geometry.mjs';
+export {pitchRange,staveGeometry,modulationLabelOffset} from './geometry.mjs';
 export {RAWL_COLORS} from './palette.mjs';

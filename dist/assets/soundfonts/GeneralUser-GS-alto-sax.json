@@ -1,0 +1,197 @@
+{
+  "source": {
+    "url": "https://raw.githubusercontent.com/mrbumpy409/GeneralUser-GS/684543d5e5efaef08d02be50dcda8d552478fa60/GeneralUser-GS.sf2",
+    "bytes": 32319396,
+    "sha256": "9575028c7a1f589f5770fccc8cff2734566af40cd26ed836944e9a5152688cfe"
+  },
+  "subset": {
+    "file": "GeneralUser-GS-alto-sax.sf2",
+    "bytes": 505140,
+    "sha256": "d7079d82a5fb6c985770578a89db8db153c20cefff38ed94270bb790bf3378e6",
+    "program": 65,
+    "preset": "Alto Sax",
+    "instruments": [
+      "Alto Sax"
+    ],
+    "samples": [
+      {
+        "name": "Alto Sax-A#3",
+        "sampleRate": 44100,
+        "originalKey": 58,
+        "loopStart": 12285,
+        "loopEnd": 13422,
+        "sha256": "51f5600b0ad6b0008b85998ee7803a4a753bf7ee84a1a38b6665760d7ae77995"
+      },
+      {
+        "name": "Alto Sax-A4",
+        "sampleRate": 44100,
+        "originalKey": 69,
+        "loopStart": 14137,
+        "loopEnd": 14534,
+        "sha256": "d3e037f47b5185054e4ed16d4c69a955456cd5ba11f7a2765c821373322d6267"
+      },
+      {
+        "name": "Alto Sax-A5",
+        "sampleRate": 44100,
+        "originalKey": 81,
+        "loopStart": 15897,
+        "loopEnd": 15996,
+        "sha256": "7ea8ebb4ef6243eb8437d048c2257346027c060c2ae5235dc7918ee6d323ac42"
+      },
+      {
+        "name": "Alto Sax-C5",
+        "sampleRate": 44100,
+        "originalKey": 72,
+        "loopStart": 12640,
+        "loopEnd": 12891,
+        "sha256": "3c32e3b0c6ccffecc769de31a63fd0494dd36cc0f235a9def79a429d8afa36ee"
+      },
+      {
+        "name": "Alto Sax-D4",
+        "sampleRate": 44100,
+        "originalKey": 62,
+        "loopStart": 14556,
+        "loopEnd": 31195,
+        "sha256": "d4f648783d14488124c9315fd6698f8f808c25e331307c7431b6c1ba794d8a6f"
+      },
+      {
+        "name": "Alto Sax-E4",
+        "sampleRate": 44100,
+        "originalKey": 64,
+        "loopStart": 17133,
+        "loopEnd": 17265,
+        "sha256": "73de0e266d0270153ae582f801bc96b3196929abe96eb8619b48323961baa0e8"
+      },
+      {
+        "name": "Alto Sax-E5",
+        "sampleRate": 44100,
+        "originalKey": 76,
+        "loopStart": 27516,
+        "loopEnd": 28304,
+        "sha256": "c10c2d20a198b4e84f5213d143a16c947177a9d9129c8de89acb1f349190e884"
+      },
+      {
+        "name": "Alto Sax-F#5",
+        "sampleRate": 44100,
+        "originalKey": 78,
+        "loopStart": 17841,
+        "loopEnd": 18949,
+        "sha256": "3881fcaec0ce8860da47b0158c91533a5ce58ae0f0f9e0ad6518d97d12700df8"
+      },
+      {
+        "name": "Alto Sax-F3",
+        "sampleRate": 44100,
+        "originalKey": 53,
+        "loopStart": 21462,
+        "loopEnd": 21715,
+        "sha256": "0402b02cabbd49eb5e35ebe506e38304c784db31f2b9145bb9851f4383f0d413"
+      },
+      {
+        "name": "Alto Sax-F6",
+        "sampleRate": 44100,
+        "originalKey": 89,
+        "loopStart": 18837,
+        "loopEnd": 19689,
+        "sha256": "54f566bf7b144278ae05b32d34c4f47b0e58d00f793cb78e4bebffad7c6f6fa9"
+      },
+      {
+        "name": "Alto Sax-G#5",
+        "sampleRate": 44100,
+        "originalKey": 80,
+        "loopStart": 13865,
+        "loopEnd": 14589,
+        "sha256": "a53c327d0ee8b96fe2efb260ea5d7c0ed0ab996b9f137784ffbbd31d818563c3"
+      },
+      {
+        "name": "Alto Sax-G3",
+        "sampleRate": 44100,
+        "originalKey": 55,
+        "loopStart": 16820,
+        "loopEnd": 21554,
+        "sha256": "4eea579465a4e5fe8ca8cd6ffcc745ff25ce204e348272963b49e1259d105d0e"
+      },
+      {
+        "name": "Alto Sax-G4",
+        "sampleRate": 44100,
+        "originalKey": 67,
+        "loopStart": 17786,
+        "loopEnd": 18009,
+        "sha256": "ecd36e3815d71d95f48b03a604def96b6f4f9bfdff9cafe2c4d5a325eee26ea6"
+      }
+    ]
+  },
+  "license": "GeneralUser-GS-LICENSE.txt",
+  "writer": {
+    "name": "spessasynth_core",
+    "version": "4.3.22",
+    "programs": [
+      65
+    ],
+    "transformation": "Select preset and retain referenced instrument/sample closure; no reencoding, resampling or key-range trimming"
+  },
+  "verification": {
+    "presetZonesEqual": true,
+    "sampleBytesEqual": true,
+    "dualBankPCM": {
+      "sampleRate": 22050,
+      "framesPerRender": 22050,
+      "method": "Bit-identical full-bank versus runtime piano-subset plus sax-subset Float32 stereo render, with 0.35 s held note and release. Sax waveform differs from piano.",
+      "checks": [
+        {
+          "program": 65,
+          "pitch": 48,
+          "velocity": 48,
+          "stereoFloat32Sha256": "8f7123be3c9bc5745193a4e9f833f2eec41e18f0eda3822856e7a1afff2a9203"
+        },
+        {
+          "program": 65,
+          "pitch": 48,
+          "velocity": 96,
+          "stereoFloat32Sha256": "31952447b0e15d12d8d3e0fde414662ba2bee5f8661c0a60160c32e555e93547"
+        },
+        {
+          "program": 65,
+          "pitch": 60,
+          "velocity": 48,
+          "stereoFloat32Sha256": "197dafad0808a65bfb35500565b1c390abd904ee922f544972c76f170751a535"
+        },
+        {
+          "program": 65,
+          "pitch": 60,
+          "velocity": 96,
+          "stereoFloat32Sha256": "9f4d66a9e12c1cb0e0273371a09d70d4b132c3c06fbd523f764c5d5d9e24a74b"
+        },
+        {
+          "program": 65,
+          "pitch": 72,
+          "velocity": 48,
+          "stereoFloat32Sha256": "a60b1e5adcb7696c2f77643395a880d00721bf3a5d2b80b8381a7d786057e195"
+        },
+        {
+          "program": 65,
+          "pitch": 72,
+          "velocity": 96,
+          "stereoFloat32Sha256": "c230ab1581e30c16bae5bff36a23cd9b65d2ccccedba3cce9861b7b71e0aac0c"
+        },
+        {
+          "program": 65,
+          "pitch": 84,
+          "velocity": 48,
+          "stereoFloat32Sha256": "685a3624a51b56ff73d581804b110c1cada4e7cb5ab24e6c0702d2323a28a1af"
+        },
+        {
+          "program": 65,
+          "pitch": 84,
+          "velocity": 96,
+          "stereoFloat32Sha256": "9b79d73dd7b58d3ae4d4f75623a40144e11b7eced2618cdaf05f259a83132ec0"
+        },
+        {
+          "program": 0,
+          "pitch": 60,
+          "velocity": 96,
+          "stereoFloat32Sha256": "33838770733c8c07165961dfa245c7dc69aea168c630af7a5b64c55b70e24394"
+        }
+      ]
+    }
+  }
+}

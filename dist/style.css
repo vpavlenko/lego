@@ -101,3 +101,15 @@ body:not(.atlas-page) #shade{top:32px}body.song-route #shade{top:64px}
 
 /* Keep short-chart footers at the viewport floor. */
 body.song-route main{display:flex;flex-direction:column;min-height:100vh;min-height:100dvh}#song-view{display:flex;flex-direction:column;flex:1}#song-view>section{flex-shrink:0}#song-view>footer{margin-top:auto;flex-shrink:0}
+
+#source-encoded{font:12px/1.8 var(--mono);white-space:pre-wrap;color:#aaa;margin:0;padding:8px 0}.voice-controls #melody-voice[aria-pressed=false]{text-decoration:none;color:#666}
+
+#arrangement{background:#000;color:#aaa;border:0;border-radius:0;font:10px Geologica,Arial,sans-serif;max-width:90px;padding:0;flex:none}
+
+/* Global navigation and pane-local standard heading. */
+body.song-route .reader-chrome{height:32px}body.song-route main{padding-top:46px}body.song-route #sidebar,body.song-route #shade{top:32px}.standard-heading{display:flex;align-items:center;gap:12px;min-height:30px;margin-bottom:8px;flex:0 0 auto}.standard-heading .top-actions{font-size:10px;gap:10px;white-space:nowrap}.standard-heading .icon-button{width:22px;height:26px}.standard-heading .icon-button svg{width:14px;height:14px}.standard-heading .tonic{margin-left:0}.source-footer{display:flex;align-items:center;gap:16px;width:100%;color:#555;font-size:10px}.source-footer #source-key{margin-left:auto}#song-view>footer{display:flex;flex-direction:column;align-items:stretch;gap:4px}#song-view>footer #reader-tools{padding:0;height:32px;flex:none}.atlas-page main{padding-top:47px}.atlas-page .reader-chrome{height:32px}
+/* Dense drawer without standard indices. */
+.catalog-head{padding:10px 18px 8px}.search{margin-top:8px;padding-bottom:5px}.song-link{padding:2px 18px;line-height:1.3}body.song-route #songs .song-link{display:block}.catalog-family{margin-bottom:4px}.catalog-family h2{margin:5px 18px 2px;padding:2px 0;line-height:1.2}.catalog-family.aaba-family>h2{justify-content:flex-start;gap:7px}.aaba-grouping{margin-left:auto;background:#000;border:0;color:#888;font:10px var(--mono);padding:0}.catalog-subgroup{margin:3px 0 5px}.catalog-subgroup h3{display:flex;justify-content:space-between;gap:8px;font:10px/1.3 var(--mono);color:#888;margin:3px 18px 1px}.catalog-subgroup h3 span{color:#555}.catalog-subgroup .song-link{padding-left:24px}
+/* A whole brick keeps its natural width and wraps only between cards. */
+#brick-variants{columns:auto;display:flex;flex-wrap:wrap;align-items:flex-start;gap:18px 24px}.brick-variant{display:block;flex:0 0 auto;max-width:100%;margin:0}.unresolved-variants{flex:0 0 100%;width:100%}
+@media(max-width:760px){body.song-route main{padding-top:44px}.standard-heading{gap:6px}.standard-heading .top-actions{font-size:9px;gap:6px}.source-footer{gap:10px;flex-wrap:wrap}.catalog-head{padding:8px 16px}.song-link{padding-top:2px;padding-bottom:2px}}

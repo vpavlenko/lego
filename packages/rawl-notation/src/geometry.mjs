@@ -13,6 +13,13 @@ export function staveGeometry(range,{above=0,transpose=0}={}){
 export const mod=n=>((n%12)+12)%12;
 export function tonicAt(tonic,changes,beat){let result=tonic;for(const c of changes){if(c.beat<beat)result=c.tonic;else break;}return result;}
 export const TONIC_NAMES=['C','D♭','D','E♭','E','F','F♯','G','A♭','A','B♭','B'];
+// Measure labels use 9px monospace, 4px left padding and a 2px trailing gap.
+// Fractional-bar changes have no measure number to clear.
+export function modulationLabelOffset(beat,barBeats){
+ const measure=beat/barBeats;
+ if(!Number.isFinite(measure)||barBeats<=0||Math.abs(measure-Math.round(measure))>1e-7)return 2;
+ return 6+Math.ceil(String(Math.round(measure)+1).length*9*.6);
+}
 export function keyMarkers(tonic,changes){
  const events=[{beat:0,tonic},...changes].sort((a,b)=>a.beat-b.beat),onsets=[];
  for(const event of events){if(onsets.at(-1)?.beat===event.beat)onsets[onsets.length-1]=event;else onsets.push(event);}

@@ -33,13 +33,17 @@ export function realizeSong(song,qualities,{tempo=120}={}){
  return {version:3,voicing:'root-position',song:song.index,title:song.title,tempo,meter:song.meter,beats:song.bars*barBeats,barBeats,rows,tonic:0,changes,notes,chords};
 }
 export function playbackPlan(data,tempo=data.tempo){
- const notes=data.notes.map(n=>({...n,channel:n.voice,group:n.voice,end:n.start+n.duration}));
+ const notes=data.notes.map(n=>{const voice=n.voice??0;return {...n,voice,velocity:n.velocity??(voice===1?80:74),channel:voice,group:voice,end:n.start+n.duration};});
+ const voices=[...new Set(notes.map(n=>n.voice))].sort((a,b)=>a-b).map(voice=>{
+  const supplied=data.voices?.find(v=>v.voice===voice),fallback=voice===1?65:0;
+  return {voice,program:Number.isInteger(supplied?.program)&&supplied.program>=0&&supplied.program<=127?supplied.program:fallback,name:supplied?.name??(voice===1?'Alto Sax':'Piano')};
+ });
  const events=[];
- for(const channel of [0]){
-  events.push({beat:0,type:'program',channel,program:0});
+ for(const {voice:channel,program} of voices){
+  events.push({beat:0,type:'program',channel,program});
   for(const [controller,value] of [[0,0],[32,0],[7,100],[10,64],[11,127],[64,0]])events.push({beat:0,type:'cc',channel,controller,value});
  }
  for(const n of notes)events.push({beat:n.start,type:'on',channel:n.channel,pitch:n.pitch,velocity:n.velocity},{beat:n.end,type:'off',channel:n.channel,pitch:n.pitch});
  const priority={program:0,cc:1,off:2,on:3};events.sort((a,b)=>a.beat-b.beat||priority[a.type]-priority[b.type]);
- return {beats:data.beats,duration:data.beats*60/tempo,notes,events,channels:[{channel:0,group:0}],timeAt:beat=>beat*60/tempo,beatAt:time=>time*tempo/60};
+ return {beats:data.beats,duration:data.beats*60/tempo,notes,events,voices,channels:voices.map(v=>({channel:v.voice,group:v.voice})),timeAt:beat=>beat*60/tempo,beatAt:time=>time*tempo/60};
 }

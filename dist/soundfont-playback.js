@@ -6,6 +6,7 @@
  // coefficient, not a claim to recover a recording's unidentifiable wet mix.
  const ROOM=Object.freeze({wet:.14,seconds:1.1,decaySeconds:.85,preDelay:.014,seed:241024});
  const BANK={bytes:5758964,sha256:'f2a57c0c85d3b118b39d6cf6f5eb9447e8a22ec3884e6f616951412d7f5c3460'};
+ const SAX_BANK={bytes:505140,sha256:'d7079d82a5fb6c985770578a89db8db153c20cefff38ed94270bb790bf3378e6'};
  let engine,pending,audioContext,phase='idle',lastError=null;
  const aborted=()=>Object.assign(new Error('SoundFont initialization cancelled'),{name:'AbortError'});
  function bounded(promise,milliseconds,stage,signal){
@@ -67,8 +68,8 @@
    if(!entry.ended){entry.ended=true;try{entry.onEnd('cancelled');}catch(error){console.error(error);}}
    try{entry.onDispose();}catch(error){console.error(error);}
   }
-  audition({pitch,duration,velocity=72},onEnd=()=>{},onDispose=()=>{}){
-   if(!Number.isInteger(pitch)||pitch<0||pitch>127||!Number.isFinite(duration)||duration<=0||!Number.isFinite(velocity))throw new Error('Invalid audition note');
+  audition({pitch,duration,velocity=72,program=0},onEnd=()=>{},onDispose=()=>{}){
+   if(!Number.isInteger(pitch)||pitch<0||pitch>127||!Number.isFinite(duration)||duration<=0||!Number.isFinite(velocity)||!Number.isInteger(program)||program<0||program>127)throw new Error('Invalid audition note');
    if(typeof this.synth.midiChannels?.[AUDITION_CHANNEL]?.setDrums!=='function')throw new Error('Audition channel unavailable');
    this.stopAudition();
    const context=this.context,start=Math.max(context.currentTime+.01,this.auditionFence+.005),end=start+duration;
@@ -83,7 +84,7 @@
     entry.connected=true;this.synth.connectChannel(output,AUDITION_CHANNEL);
     this.synth.midiChannels[AUDITION_CHANNEL].setDrums(false);
     for(const [controller,value]of [[0,0],[32,0],[7,100],[10,64],[11,127],[64,0]])this.synth.controllerChange(AUDITION_CHANNEL,controller,value,{time:start});
-    this.synth.programChange(AUDITION_CHANNEL,0,{time:start});
+    this.synth.programChange(AUDITION_CHANNEL,program,{time:start});
     this.synth.noteOn(AUDITION_CHANNEL,pitch,Math.max(1,Math.min(127,Math.round(velocity))),{time:start});this.auditionFence=start;
     // Keep note-off outside the worklet's future queue. Replacing a preview
     // must never leave an old same-pitch note-off capable of cutting the new one.
@@ -107,8 +108,8 @@
    const bus=this.overlapAudition;if(!bus)return;
    for(const entry of [...bus.entries])entry.cancel();
   }
-  auditionOverlap({pitch,duration,velocity=72},onEnd=()=>{},onDispose=()=>{}){
-   if(!Number.isInteger(pitch)||pitch<0||pitch>127||!Number.isFinite(duration)||duration<=0||!Number.isFinite(velocity))throw new Error('Invalid audition note');
+  auditionOverlap({pitch,duration,velocity=72,program=0},onEnd=()=>{},onDispose=()=>{}){
+   if(!Number.isInteger(pitch)||pitch<0||pitch>127||!Number.isFinite(duration)||duration<=0||!Number.isFinite(velocity)||!Number.isInteger(program)||program<0||program>127)throw new Error('Invalid audition note');
    if(typeof this.synth.midiChannels?.[AUDITION_CHANNEL]?.setDrums!=='function')throw new Error('Audition channel unavailable');
    // A Shift sweep owns one continuously connected dry/room graph. MIDI ports
    // have independent keys but share reserved output9, so two attacks of the
@@ -168,7 +169,7 @@
     for(const controller of [8,71,72,73,74,75,76,77,78,81,83])this.synth.controllerChange(channel,controller,64,{time:start});
     for(const controller of [100,101])this.synth.controllerChange(channel,controller,127,{time:start});
     for(const [controller,value]of [[0,0],[32,0],[7,100],[10,64],[11,127],[64,0]])this.synth.controllerChange(channel,controller,value,{time:start});
-    this.synth.programChange(channel,0,{time:start});
+    this.synth.programChange(channel,program,{time:start});
     this.synth.noteOn(channel,pitch,Math.max(1,Math.min(127,Math.round(velocity))),{time:start});this.auditionFence=start;
     const release=()=>{
      if(!bus.entries.has(entry))return;entry.offTimer=null;
@@ -265,16 +266,17 @@
     if(!context.audioWorklet)throw new Error('AudioWorklet unavailable');
     if(context.state&&context.state!=='running'){phase='resume';await bounded(context.resume(),10000,'resume',signal);}
     phase='assets';
-    const [library,bytes]=await bounded(Promise.all([import('./vendor/spessasynth/index.js'),(async()=>{
+    const loadBank=async(path,lock)=>{
      // Content-addressed URL prevents the old16MB first-part cache entry from
      // being mistaken for the new4.9MB complete bank at the same pathname.
-     const response=await fetch('assets/soundfonts/GeneralUser-GS-v4.sf2.1?sha256='+BANK.sha256,{signal});
+     const response=await fetch(path+'?sha256='+lock.sha256,{signal});
      if(!response.ok)throw new Error('SoundFont HTTP '+response.status);
      const bytes=new Uint8Array(await response.arrayBuffer());
-     if(bytes.length!==BANK.bytes)throw new Error('SoundFont bank length '+bytes.length);
-     if(global.crypto?.subtle){const digest=await global.crypto.subtle.digest('SHA-256',bytes),hash=Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('');if(hash!==BANK.sha256)throw new Error('SoundFont bank checksum');}
+     if(bytes.length!==lock.bytes)throw new Error('SoundFont bank length '+bytes.length);
+     if(global.crypto?.subtle){const digest=await global.crypto.subtle.digest('SHA-256',bytes),hash=Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('');if(hash!==lock.sha256)throw new Error('SoundFont bank checksum');}
      return bytes;
-    })()]),30000,'assets',signal);
+    };
+    const [library,bytes,saxBytes]=await bounded(Promise.all([import('./vendor/spessasynth/index.js'),loadBank('assets/soundfonts/GeneralUser-GS-v4.sf2.1',BANK),loadBank('assets/soundfonts/GeneralUser-GS-alto-sax.sf2',SAX_BANK)]),30000,'assets',signal);
     phase='module';await bounded(context.audioWorklet.addModule('vendor/spessasynth/spessasynth_processor.min.js'),10000,'module',signal);
     let fail;
     const failure=new Promise((_,reject)=>{fail=error=>reject(error instanceof Error?error:new Error(String(error)));});failure.catch(()=>{});
@@ -294,6 +296,7 @@
     phase='ready';await bounded(Promise.race([synth.isReady,failure]),10000,'ready',signal);
     synth.setLogLevel(false,false,false);
     phase='bank';await bounded(Promise.race([synth.soundBankManager.addSoundBank(bytes.buffer,'caplin'),failure]),10000,'bank',signal);
+    phase='bank';await bounded(Promise.race([synth.soundBankManager.addSoundBank(saxBytes.buffer,'alto-sax'),failure]),10000,'sax bank',signal);
     if(signal.aborted)throw aborted();
     synth.setSystemParameter('effectsEnabled',false);synth.setSystemParameter('gain',.8);
     synth.disconnect(warmup);warmup.disconnect();attempt.warmup=null;

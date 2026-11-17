@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "charts": 272,
+  "primaryStandards": 264,
+  "originalCharts": 242,
+  "additionalCharts": 30,
+  "rawSourceIdentities": 317,
+  "coverage": {
+    "rawPassages": 4181,
+    "removedPassages": 952,
+    "keptPassages": 3229,
+    "rawOccurrences": 4081,
+    "removedOccurrences": 943,
+    "keptOccurrences": 3138,
+    "reasons": {
+      "single-harmony": {
+        "passages": 694,
+        "occurrences": 692
+      },
+      "on-off-family": {
+        "passages": 258,
+        "occurrences": 251
+      }
+    }
+  },
+  "reuse": {
+    "inputFamilies": 139,
+    "singleStandardFamilies": 40,
+    "reusableTargets": 99,
+    "mergedFamilies": 10,
+    "removedFamilies": 30,
+    "outputFamilies": 99,
+    "rawPassages": 3229,
+    "mergedPassages": 20,
+    "removedPassages": 51,
+    "keptPassages": 3178,
+    "supportBasis": "distinct standards",
+    "minimumTargetStandards": 2,
+    "maxVariantDistance": 0.28,
+    "ambiguityMargin": 0.025
+  },
+  "definitions": 919,
+  "unresolvedOccurrences": 8,
+  "unchangedMusicalDataSha256": "bedda6f749c0575034331d01f378afa0ccfe795c9d16d7d310d910a40dfa156c",
+  "decisions": [
+    {
+      "action": "remove",
+      "source": "Ascending Major CESH",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Bemsha Turnaround 1",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Bemsha Turnaround 2",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Bemsha Turnaround 3",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Chromatic Major Walkup",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Cyclic",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Diatonic I ii iii",
+      "reason": "ambiguous-supported-families"
+    },
+    {
+      "action": "remove",
+      "source": "Diatonic I ii iii biii",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Diatonic I IV iii ii",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "merge",
+      "source": "Diatonic ii iii IV",
+      "target": "Diatonic I ii iii IV",
+      "reason": "clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Dominant Cy...",
+      "reason": "ambiguous-supported-families"
+    },
+    {
+      "action": "merge",
+      "source": "Dominant Cycle 4 Steps",
+      "target": "Dominant Cycle",
+      "reason": "clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Dominant Cycle 6 Steps",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Dominant Turnaround",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Foggy",
+      "reason": "ambiguous-supported-families"
+    },
+    {
+      "action": "remove",
+      "source": "GDS",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "merge",
+      "source": "Generalized Dominant Cycle",
+      "target": "Dogleg Cycle",
+      "reason": "clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "IV n Bauble",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "IV n Mack",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "IV n Yak To",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Minor Dogleg Slow",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "merge",
+      "source": "Minor Plagal",
+      "target": "Amen",
+      "reason": "clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Multi Sub POT",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Night & Day",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "merge",
+      "source": "Nowhere Turnaround to Minor On",
+      "target": "Nowhere Turnaround Minor",
+      "reason": "clear-supported-harmonic-variant"
+    },
+    {
+      "action": "merge",
+      "source": "Nowhere...",
+      "target": "Nowhere",
+      "reason": "clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "POT Spring sub",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Pullback+Cadence",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Rainbow Overrun",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "merge",
+      "source": "Reverse Dominant Cycle 2 Steps",
+      "target": "Reverse Dominant Cycle",
+      "reason": "clear-supported-harmonic-variant"
+    },
+    {
+      "action": "merge",
+      "source": "Satin",
+      "target": "Side Slips",
+      "reason": "clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Sharp Fourpenny Ending",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "merge",
+      "source": "Supertension Ending",
+      "target": "Tension",
+      "reason": "clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "To II n Back",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "To IV n Bird POT",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "merge",
+      "source": "To IV n Mack",
+      "target": "To IV",
+      "reason": "clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Tritone Straight",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Turnaround to VI",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Yardbird ...",
+      "reason": "unsupported-or-incomplete-source"
+    },
+    {
+      "action": "remove",
+      "source": "Yardbird Sub Turnaround",
+      "reason": "no-clear-supported-harmonic-variant"
+    }
+  ]
+}

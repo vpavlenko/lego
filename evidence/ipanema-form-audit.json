@@ -1,0 +1,587 @@
+{
+  "version": 1,
+  "song": 73,
+  "title": "The Girl from Ipanema",
+  "bars": 40,
+  "tonic": [
+    "F",
+    "Major"
+  ],
+  "meter": [
+    4,
+    4
+  ],
+  "source": {
+    "image": "dist/source/roadmap-073.png",
+    "imageSha256": "b58c89f49bb7d00e8b85a0db0e3aff968d1208f88e8f5a514e03e5b7b0598613",
+    "imageInspected": true,
+    "pdfPage": 47,
+    "encoded": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/insights/GirlFromIpanema.ls",
+    "localPath": "/Users/chipfocus/repos/lego/Impro-Visor/leadsheets/insights/GirlFromIpanema.ls",
+    "sha256": "d76b4b9e36a5b49cf182fe251e22d4fcefdc0ee9bb699c9b4c286401b657dbd1",
+    "lineRanges": [
+      {
+        "lines": [
+          41,
+          42
+        ],
+        "bars": [
+          0,
+          8
+        ],
+        "identity": "A"
+      },
+      {
+        "lines": [
+          47,
+          48
+        ],
+        "bars": [
+          8,
+          16
+        ],
+        "identity": "A"
+      },
+      {
+        "lines": [
+          53,
+          54
+        ],
+        "bars": [
+          16,
+          24
+        ],
+        "identity": "B first half"
+      },
+      {
+        "lines": [
+          59,
+          60
+        ],
+        "bars": [
+          24,
+          32
+        ],
+        "identity": "B second half"
+      },
+      {
+        "lines": [
+          65,
+          66
+        ],
+        "bars": [
+          32,
+          40
+        ],
+        "identity": "A"
+      }
+    ]
+  },
+  "priorInferredForm": {
+    "family": "AABC",
+    "spans": [
+      [
+        0,
+        8
+      ],
+      [
+        8,
+        16
+      ],
+      [
+        16,
+        24
+      ],
+      [
+        24,
+        40
+      ]
+    ],
+    "reason": "The generic 32–40-bar heuristic assigns the final section the entire remaining length, splitting the bridge and combining its second half with the final A."
+  },
+  "decision": {
+    "pattern": "AABA",
+    "spans": [
+      {
+        "start": 0,
+        "end": 8,
+        "label": "A"
+      },
+      {
+        "start": 8,
+        "end": 16,
+        "label": "A"
+      },
+      {
+        "start": 16,
+        "end": 32,
+        "label": "B"
+      },
+      {
+        "start": 32,
+        "end": 40,
+        "label": "A"
+      }
+    ],
+    "basis": "Source-reviewed harmony and exact A return. The original roadmap has five eight-bar rows; rows 1, 2 and 5 share the Donna Lee Opening; contrasting rows 3 and 4 together form the 16-bar B.",
+    "timingOrHarmonyChanges": false,
+    "scope": "Explicit song 73 form metadata; no generic threshold change or change to source chord timing."
+  },
+  "comparisons": {
+    "firstASecondA": {
+      "score": 0.9615384615384616,
+      "rootScore": 0.9615384615384616,
+      "shift": 0
+    },
+    "firstAFinalA": {
+      "score": 1,
+      "rootScore": 1,
+      "shift": 0
+    },
+    "method": "Existing compareSections: timed root/quality sampling at quarter-bar intervals, first six bars weighted 1 and tail weighted 0.25; nonzero transposition penalty 0.015.",
+    "finalAReturnExactTimedSymbols": true
+  },
+  "sourceRows": [
+    {
+      "startBar": 0,
+      "bars": 8,
+      "keys": [
+        {
+          "start": 0,
+          "end": 7,
+          "root": "F",
+          "mode": "Major"
+        },
+        {
+          "start": 7,
+          "end": 8,
+          "root": "Gb",
+          "mode": "Dominant"
+        }
+      ],
+      "bricks": [
+        {
+          "start": 0,
+          "end": 7,
+          "name": "Donna Lee Opening"
+        },
+        {
+          "start": 7,
+          "end": 8,
+          "name": "Tritone Launcher"
+        }
+      ],
+      "chords": [
+        {
+          "start": 0,
+          "end": 2,
+          "symbol": "FM7"
+        },
+        {
+          "start": 2,
+          "end": 4,
+          "symbol": "G7"
+        },
+        {
+          "start": 4,
+          "end": 5,
+          "symbol": "Gm7"
+        },
+        {
+          "start": 5,
+          "end": 6,
+          "symbol": "Gb7"
+        },
+        {
+          "start": 6,
+          "end": 7,
+          "symbol": "FM7"
+        },
+        {
+          "start": 7,
+          "end": 8,
+          "symbol": "Gb7"
+        }
+      ]
+    },
+    {
+      "startBar": 8,
+      "bars": 8,
+      "keys": [
+        {
+          "start": 0,
+          "end": 8,
+          "root": "F",
+          "mode": "Major"
+        }
+      ],
+      "bricks": [
+        {
+          "start": 0,
+          "end": 8,
+          "name": "Donna Lee Opening"
+        }
+      ],
+      "chords": [
+        {
+          "start": 0,
+          "end": 2,
+          "symbol": "FM7"
+        },
+        {
+          "start": 2,
+          "end": 4,
+          "symbol": "G7"
+        },
+        {
+          "start": 4,
+          "end": 5,
+          "symbol": "Gm7"
+        },
+        {
+          "start": 5,
+          "end": 6,
+          "symbol": "Gb7"
+        },
+        {
+          "start": 6,
+          "end": 8,
+          "symbol": "FM7"
+        }
+      ]
+    },
+    {
+      "startBar": 16,
+      "bars": 8,
+      "keys": [
+        {
+          "start": 0,
+          "end": 4,
+          "root": "Gb",
+          "mode": "Major"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "root": "Gb",
+          "mode": "Minor"
+        }
+      ],
+      "bricks": [
+        {
+          "start": 0,
+          "end": 4,
+          "name": "On Off Major IV"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "name": "On Off Minor Nowhere"
+        }
+      ],
+      "chords": [
+        {
+          "start": 0,
+          "end": 2,
+          "symbol": "F#M7"
+        },
+        {
+          "start": 2,
+          "end": 4,
+          "symbol": "B7"
+        },
+        {
+          "start": 4,
+          "end": 6,
+          "symbol": "F#m7"
+        },
+        {
+          "start": 6,
+          "end": 8,
+          "symbol": "D7"
+        }
+      ]
+    },
+    {
+      "startBar": 24,
+      "bars": 8,
+      "keys": [
+        {
+          "start": 0,
+          "end": 4,
+          "root": "G",
+          "mode": "Minor"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "root": "F",
+          "mode": "Major"
+        }
+      ],
+      "bricks": [
+        {
+          "start": 0,
+          "end": 4,
+          "name": "On Off Minor Nowhere"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "name": "SPOT"
+        }
+      ],
+      "chords": [
+        {
+          "start": 0,
+          "end": 2,
+          "symbol": "Gm7"
+        },
+        {
+          "start": 2,
+          "end": 4,
+          "symbol": "Eb7"
+        },
+        {
+          "start": 4,
+          "end": 5,
+          "symbol": "Am7"
+        },
+        {
+          "start": 5,
+          "end": 6,
+          "symbol": "D7#11"
+        },
+        {
+          "start": 6,
+          "end": 7,
+          "symbol": "Gm7"
+        },
+        {
+          "start": 7,
+          "end": 8,
+          "symbol": "C7#11"
+        }
+      ]
+    },
+    {
+      "startBar": 32,
+      "bars": 8,
+      "keys": [
+        {
+          "start": 0,
+          "end": 7,
+          "root": "F",
+          "mode": "Major"
+        },
+        {
+          "start": 7,
+          "end": 8,
+          "root": "Gb",
+          "mode": "Dominant"
+        }
+      ],
+      "bricks": [
+        {
+          "start": 0,
+          "end": 7,
+          "name": "Donna Lee Opening"
+        },
+        {
+          "start": 7,
+          "end": 8,
+          "name": "Tritone Launcher"
+        }
+      ],
+      "chords": [
+        {
+          "start": 0,
+          "end": 2,
+          "symbol": "FM7"
+        },
+        {
+          "start": 2,
+          "end": 4,
+          "symbol": "G7"
+        },
+        {
+          "start": 4,
+          "end": 5,
+          "symbol": "Gm7"
+        },
+        {
+          "start": 5,
+          "end": 6,
+          "symbol": "Gb7"
+        },
+        {
+          "start": 6,
+          "end": 7,
+          "symbol": "FM7"
+        },
+        {
+          "start": 7,
+          "end": 8,
+          "symbol": "Gb7"
+        }
+      ]
+    }
+  ],
+  "subgroups": {
+    "bEntry": {
+      "absoluteRoot": "Gb",
+      "absoluteMode": "Major",
+      "relativeToOriginalTonic": "F Major",
+      "semitones": 1,
+      "label": "♭II major"
+    },
+    "aCore": {
+      "start": 0,
+      "end": 6,
+      "representative": "Donna Lee Opening"
+    },
+    "originalAABAMembershipAfterReview": 101,
+    "bKeyGroupCount": 17,
+    "aBrickGroupCount": 23
+  },
+  "narrow40BarScreen": {
+    "scope": "All nine original 40-bar charts screened only by existing timed comparisons; no other source-image or complete-form audit was performed in this bounded review.",
+    "criteria": "Candidate for the same 8+8+16+8 boundary issue must have both first/second eight-bar and first/final eight-bar similarities meeting current score>=0.82 and rootScore>=0.78.",
+    "matchingIndices": [
+      73
+    ],
+    "entries": [
+      {
+        "index": 60,
+        "title": "Emily",
+        "firstSecond": {
+          "score": 0.7446153846153846,
+          "rootScore": 0.6923076923076923,
+          "shift": 3
+        },
+        "firstFinal8": {
+          "score": 0.6388461538461538,
+          "rootScore": 0.6538461538461539,
+          "shift": 10
+        }
+      },
+      {
+        "index": 73,
+        "title": "The Girl from Ipanema",
+        "firstSecond": {
+          "score": 0.9615384615384616,
+          "rootScore": 0.9615384615384616,
+          "shift": 0
+        },
+        "firstFinal8": {
+          "score": 1,
+          "rootScore": 1,
+          "shift": 0
+        }
+      },
+      {
+        "index": 110,
+        "title": "It Might As Well Be Spring",
+        "firstSecond": {
+          "score": 0.9663461538461539,
+          "rootScore": 0.9615384615384616,
+          "shift": 0
+        },
+        "firstFinal8": {
+          "score": 0.2614423076923077,
+          "rootScore": 0.25961538461538464,
+          "shift": 2
+        }
+      },
+      {
+        "index": 133,
+        "title": "The Masquerade is Over",
+        "firstSecond": {
+          "score": 0.3173076923076923,
+          "rootScore": 0.28846153846153844,
+          "shift": 0
+        },
+        "firstFinal8": {
+          "score": 0.3648076923076923,
+          "rootScore": 0.38461538461538464,
+          "shift": 7
+        }
+      },
+      {
+        "index": 135,
+        "title": "Meditation",
+        "firstSecond": {
+          "score": 0.3119230769230769,
+          "rootScore": 0.3076923076923077,
+          "shift": 1
+        },
+        "firstFinal8": {
+          "score": 0.35038461538461535,
+          "rootScore": 0.3076923076923077,
+          "shift": 7
+        }
+      },
+      {
+        "index": 142,
+        "title": "Moon River",
+        "firstSecond": {
+          "score": 0.24942307692307691,
+          "rootScore": 0.2692307692307692,
+          "shift": 2
+        },
+        "firstFinal8": {
+          "score": 0.3023076923076923,
+          "rootScore": 0.3076923076923077,
+          "shift": 3
+        }
+      },
+      {
+        "index": 153,
+        "title": "A Night in Tunisia",
+        "firstSecond": {
+          "score": 1,
+          "rootScore": 1,
+          "shift": 0
+        },
+        "firstFinal8": {
+          "score": 0.36,
+          "rootScore": 0.34615384615384615,
+          "shift": 9
+        }
+      },
+      {
+        "index": 215,
+        "title": "Too Close for Comfort",
+        "firstSecond": {
+          "score": 0.9326923076923077,
+          "rootScore": 0.9230769230769231,
+          "shift": 0
+        },
+        "firstFinal8": {
+          "score": 0.49942307692307686,
+          "rootScore": 0.46153846153846156,
+          "shift": 9
+        }
+      },
+      {
+        "index": 237,
+        "title": "You Go to My Head",
+        "firstSecond": {
+          "score": 0.9519230769230769,
+          "rootScore": 0.9423076923076923,
+          "shift": 0
+        },
+        "firstFinal8": {
+          "score": 0.40384615384615385,
+          "rootScore": 0.3269230769230769,
+          "shift": 0
+        }
+      }
+    ],
+    "conclusion": "Only Ipanema passes both comparisons. No blanket repartitioning of other 40-bar charts is justified by this screen."
+  },
+  "sourceHashes": {
+    "dist/data/roadmaps.json": "ce5eca77201bc0e3cbeb6ec6fa954b0cba68a77b0179248ae85530b5877abc4a",
+    "src/music/forms.mjs": "11ed1d127442f4c8c0e3d1b70202706ce7f8c53c8bf30de8089524c6ed74f17d"
+  }
+}
