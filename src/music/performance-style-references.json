@@ -1,0 +1,4203 @@
+{
+  "version": 1,
+  "defaultFeel": "swing",
+  "defaultRatio": 0.67,
+  "unitBeats": 1,
+  "entries": [
+    {
+      "id": "composition:original-2",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 2,
+      "compositionKey": "original-2",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/insights/AintMisbehavin.ls",
+          "path": "leadsheets/insights/AintMisbehavin.ls",
+          "sha256": "5ce74cdb83daaff7b843e5e437083da04c7c74f8829be0284ccec06fd7484c10",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 1152,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 19,
+            "quote": "(style swing"
+          },
+          {
+            "line": 20,
+            "quote": "(swing 0.67)"
+          },
+          {
+            "line": 21,
+            "quote": "(comp-swing 0.67)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.67,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/swing.sty",
+              "path": "styles/swing.sty",
+              "sha256": "6f793ab056720150551e510b293c50571af834ec2f8a9285d9cf00327f9e9e62",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 2711,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.67)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/swing.sty",
+              "path": "styles/swing.sty",
+              "sha256": "6f793ab056720150551e510b293c50571af834ec2f8a9285d9cf00327f9e9e62",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 2711,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.67)"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceSha256": "5ce74cdb83daaff7b843e5e437083da04c7c74f8829be0284ccec06fd7484c10",
+      "sourcePath": "leadsheets/insights/AintMisbehavin.ls"
+    },
+    {
+      "id": "composition:original-4",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 4,
+      "compositionKey": "original-4",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/style-samples/waltz-chopin.ls",
+          "path": "leadsheets/style-samples/waltz-chopin.ls",
+          "sha256": "3ca207916766d6220b38f7cfeef01ad47da30462183499b8681fb5a0bbcb6ed2",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 1269,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 19,
+            "quote": "(style waltz-chopin"
+          },
+          {
+            "line": 20,
+            "quote": "(swing 0.5)"
+          },
+          {
+            "line": 21,
+            "quote": "(comp-swing 0.5)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.5,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/waltz-chopin.sty",
+              "path": "styles/waltz-chopin.sty",
+              "sha256": "c97bfa32b8d19c0cb33e223425958edfdca5b0267cd1a7aaff6a1672d314784a",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 272,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.5)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/waltz-chopin.sty",
+              "path": "styles/waltz-chopin.sty",
+              "sha256": "c97bfa32b8d19c0cb33e223425958edfdca5b0267cd1a7aaff6a1672d314784a",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 272,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.5)"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceSha256": "3ca207916766d6220b38f7cfeef01ad47da30462183499b8681fb5a0bbcb6ed2",
+      "sourcePath": "leadsheets/style-samples/waltz-chopin.ls"
+    },
+    {
+      "id": "composition:original-21",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 21,
+      "compositionKey": "original-21",
+      "mode": "Minor",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/insights/BlueBossa.ls",
+          "path": "leadsheets/insights/BlueBossa.ls",
+          "sha256": "d0981aaa0cde867005f62700665deb40d8eceed50928456d066f64b6d1ea9dc1",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 912,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 19,
+            "quote": "(style latin"
+          },
+          {
+            "line": 20,
+            "quote": "(swing 0.55)"
+          },
+          {
+            "line": 21,
+            "quote": "(comp-swing 0.55)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.55,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceSha256": "d0981aaa0cde867005f62700665deb40d8eceed50928456d066f64b6d1ea9dc1",
+      "sourcePath": "leadsheets/insights/BlueBossa.ls"
+    },
+    {
+      "id": "composition:original-33",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 33,
+      "compositionKey": "original-33",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/insights/Ceora.ls",
+          "path": "leadsheets/insights/Ceora.ls",
+          "sha256": "909736d7bb30a68b133eb2e3a79b94a71dab7fea236d6a469c5a4f315afdcb16",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 1134,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 19,
+            "quote": "(style latin"
+          },
+          {
+            "line": 20,
+            "quote": "(swing 0.55)"
+          },
+          {
+            "line": 21,
+            "quote": "(comp-swing 0.55)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.55,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceSha256": "909736d7bb30a68b133eb2e3a79b94a71dab7fea236d6a469c5a4f315afdcb16",
+      "sourcePath": "leadsheets/insights/Ceora.ls"
+    },
+    {
+      "id": "composition:original-34",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 34,
+      "compositionKey": "original-34",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/insights/CheekToCheek.ls",
+          "path": "leadsheets/insights/CheekToCheek.ls",
+          "sha256": "39cfa55faf3c0631cd19f95e8249d7759db37b1958b7dd8a844ad5345c0cae82",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 1403,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 19,
+            "quote": "(style cha-cha-cha-2"
+          },
+          {
+            "line": 20,
+            "quote": "(swing 0.5)"
+          },
+          {
+            "line": 21,
+            "quote": "(comp-swing 0.5)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.5,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/cha-cha-cha-2.sty",
+              "path": "styles/cha-cha-cha-2.sty",
+              "sha256": "daa7f4bd8ff77cb3fab57975ec4c409f0996ef0856259767cc03bcbf6aaaacc9",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 2486,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.5)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/cha-cha-cha-2.sty",
+              "path": "styles/cha-cha-cha-2.sty",
+              "sha256": "daa7f4bd8ff77cb3fab57975ec4c409f0996ef0856259767cc03bcbf6aaaacc9",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 2486,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.5)"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceSha256": "39cfa55faf3c0631cd19f95e8249d7759db37b1958b7dd8a844ad5345c0cae82",
+      "sourcePath": "leadsheets/insights/CheekToCheek.ls"
+    },
+    {
+      "id": "composition:original-40",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 40,
+      "compositionKey": "original-40",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/insights/Corcovado.ls",
+          "path": "leadsheets/insights/Corcovado.ls",
+          "sha256": "a8af7b5e04f33ffc47cc38c6f6a5c0fd9385dad406bd5726bc13cd5a3f2a332e",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 1165,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 19,
+            "quote": "(style latin"
+          },
+          {
+            "line": 20,
+            "quote": "(swing 0.55)"
+          },
+          {
+            "line": 21,
+            "quote": "(comp-swing 0.55)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.55,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceSha256": "a8af7b5e04f33ffc47cc38c6f6a5c0fd9385dad406bd5726bc13cd5a3f2a332e",
+      "sourcePath": "leadsheets/insights/Corcovado.ls"
+    },
+    {
+      "id": "composition:original-48",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 48,
+      "compositionKey": "original-48",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/changes/Desafinado.ls",
+          "path": "leadsheets/changes/Desafinado.ls",
+          "sha256": "835bedc1ebdf2f9ed0e486fd061fca45e1cc6f40605bd0a55390b6c390ed14f4",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 1583,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 19,
+            "quote": "(style latin"
+          },
+          {
+            "line": 20,
+            "quote": "(swing 0.55)"
+          },
+          {
+            "line": 21,
+            "quote": "(comp-swing 0.55)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.55,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceSha256": "835bedc1ebdf2f9ed0e486fd061fca45e1cc6f40605bd0a55390b6c390ed14f4",
+      "sourcePath": "leadsheets/changes/Desafinado.ls"
+    },
+    {
+      "id": "composition:original-66",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 66,
+      "compositionKey": "original-66",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/insights/Flamingo.ls",
+          "path": "leadsheets/insights/Flamingo.ls",
+          "sha256": "9db13f16772a244e9d9f3f540ff2e73eb44456c0ae61f148bb7378b359124802",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 1092,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 19,
+            "quote": "(style latin"
+          },
+          {
+            "line": 20,
+            "quote": "(swing 0.55)"
+          },
+          {
+            "line": 21,
+            "quote": "(comp-swing 0.55)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.55,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceSha256": "9db13f16772a244e9d9f3f540ff2e73eb44456c0ae61f148bb7378b359124802",
+      "sourcePath": "leadsheets/insights/Flamingo.ls"
+    },
+    {
+      "id": "composition:original-73",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 73,
+      "compositionKey": "original-73",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/insights/GirlFromIpanema.ls",
+          "path": "leadsheets/insights/GirlFromIpanema.ls",
+          "sha256": "d76b4b9e36a5b49cf182fe251e22d4fcefdc0ee9bb699c9b4c286401b657dbd1",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 1144,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 19,
+            "quote": "(style latin"
+          },
+          {
+            "line": 20,
+            "quote": "(swing 0.55)"
+          },
+          {
+            "line": 21,
+            "quote": "(comp-swing 0.55)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.55,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceSha256": "d76b4b9e36a5b49cf182fe251e22d4fcefdc0ee9bb699c9b4c286401b657dbd1",
+      "sourcePath": "leadsheets/insights/GirlFromIpanema.ls"
+    },
+    {
+      "id": "composition:original-78",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 78,
+      "compositionKey": "original-78",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/insights/HeresThatRainyDay.ls",
+          "path": "leadsheets/insights/HeresThatRainyDay.ls",
+          "sha256": "6473eecc56dc6d5ac38d9874ca886ef6447686ddce113d0f39b376e8f1c12782",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 1136,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 19,
+            "quote": "(style latin"
+          },
+          {
+            "line": 20,
+            "quote": "(swing 0.55)"
+          },
+          {
+            "line": 21,
+            "quote": "(comp-swing 0.55)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.55,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceSha256": "6473eecc56dc6d5ac38d9874ca886ef6447686ddce113d0f39b376e8f1c12782",
+      "sourcePath": "leadsheets/insights/HeresThatRainyDay.ls"
+    },
+    {
+      "id": "composition:original-79",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 79,
+      "compositionKey": "original-79",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/insights/HoneysuckleRose.ls",
+          "path": "leadsheets/insights/HoneysuckleRose.ls",
+          "sha256": "68d97951bc9a547049149ddea6c6d30bce041d0073c813fb1faa03b6c732fce1",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 1145,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 19,
+            "quote": "(style swing"
+          },
+          {
+            "line": 20,
+            "quote": "(swing 0.67)"
+          },
+          {
+            "line": 21,
+            "quote": "(comp-swing 0.67)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.67,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/swing.sty",
+              "path": "styles/swing.sty",
+              "sha256": "6f793ab056720150551e510b293c50571af834ec2f8a9285d9cf00327f9e9e62",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 2711,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.67)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/swing.sty",
+              "path": "styles/swing.sty",
+              "sha256": "6f793ab056720150551e510b293c50571af834ec2f8a9285d9cf00327f9e9e62",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 2711,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.67)"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceSha256": "68d97951bc9a547049149ddea6c6d30bce041d0073c813fb1faa03b6c732fce1",
+      "sourcePath": "leadsheets/insights/HoneysuckleRose.ls"
+    },
+    {
+      "id": "composition:original-94",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 94,
+      "compositionKey": "original-94",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/insights/IWishYouLove.ls",
+          "path": "leadsheets/insights/IWishYouLove.ls",
+          "sha256": "bc89982296a783ac23705f812b76791ed78b892eae734443934588d389ba915f",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 1192,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 19,
+            "quote": "(style latin"
+          },
+          {
+            "line": 20,
+            "quote": "(swing 0.55)"
+          },
+          {
+            "line": 21,
+            "quote": "(comp-swing 0.55)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.55,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceSha256": "bc89982296a783ac23705f812b76791ed78b892eae734443934588d389ba915f",
+      "sourcePath": "leadsheets/insights/IWishYouLove.ls"
+    },
+    {
+      "id": "composition:original-135",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 135,
+      "compositionKey": "original-135",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/imaginary-book/Meditation.ls",
+          "path": "leadsheets/imaginary-book/Meditation.ls",
+          "sha256": "6ce13b1dd25b5a35d9006599b9c8e7c8618dc2368641b5648df22c6dd0868d83",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 1173,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 17,
+            "quote": "(style bossa"
+          },
+          {
+            "line": 18,
+            "quote": "(swing 0.55)"
+          },
+          {
+            "line": 19,
+            "quote": "(comp-swing 0.55)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.55,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/bossa.sty",
+              "path": "styles/bossa.sty",
+              "sha256": "0f57a89442ff75ee8e258f4bf6d349272a136b46b0d4743ead5691167f58903d",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1622,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/bossa.sty",
+              "path": "styles/bossa.sty",
+              "sha256": "0f57a89442ff75ee8e258f4bf6d349272a136b46b0d4743ead5691167f58903d",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1622,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceSha256": "6ce13b1dd25b5a35d9006599b9c8e7c8618dc2368641b5648df22c6dd0868d83",
+      "sourcePath": "leadsheets/imaginary-book/Meditation.ls"
+    },
+    {
+      "id": "composition:original-171",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 171,
+      "compositionKey": "original-171",
+      "mode": "Minor",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/solos/RecordaMe+.ls",
+          "path": "leadsheets/solos/RecordaMe+.ls",
+          "sha256": "fc98540077b278a700bc124017a4d24e94d16946a98f4e541945c7220d85c762",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 2354,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 20,
+            "quote": "(style latin"
+          },
+          {
+            "line": 21,
+            "quote": "(swing 0.55)"
+          },
+          {
+            "line": 22,
+            "quote": "(comp-swing 0.55)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.55,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceSha256": "fc98540077b278a700bc124017a4d24e94d16946a98f4e541945c7220d85c762",
+      "sourcePath": "leadsheets/solos/RecordaMe+.ls"
+    },
+    {
+      "id": "composition:original-176",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 176,
+      "compositionKey": "original-176",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/changes/StThomas.ls",
+          "path": "leadsheets/changes/StThomas.ls",
+          "sha256": "ab3c56f44a805387276585e17caabf304b8a29d4e06781d67ebfe9d662a59ab3",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 968,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 19,
+            "quote": "(style latin"
+          },
+          {
+            "line": 20,
+            "quote": "(swing 0.55)"
+          },
+          {
+            "line": 21,
+            "quote": "(comp-swing 0.55)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.55,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceSha256": "ab3c56f44a805387276585e17caabf304b8a29d4e06781d67ebfe9d662a59ab3",
+      "sourcePath": "leadsheets/changes/StThomas.ls"
+    },
+    {
+      "id": "composition:original-222",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 222,
+      "compositionKey": "original-222",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/imaginary-book/Wave.ls",
+          "path": "leadsheets/imaginary-book/Wave.ls",
+          "sha256": "98b0635c6d4575ef2ac41ac7b9c053b327b08a67b8642e8cf588e828b5082e39",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 970,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 13,
+            "quote": "(style latin"
+          },
+          {
+            "line": 14,
+            "quote": "(swing 0.55)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.55,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/latin.sty",
+              "path": "styles/latin.sty",
+              "sha256": "378e0054a9f4ae10a45ddcbefb94e438ee7849fdeaba0f5434a3584d457e54bf",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1509,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceSha256": "98b0635c6d4575ef2ac41ac7b9c053b327b08a67b8642e8cf588e828b5082e39",
+      "sourcePath": "leadsheets/imaginary-book/Wave.ls"
+    },
+    {
+      "id": "composition:favela",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 256,
+      "compositionKey": "favela",
+      "mode": "Minor",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Favela/Favela.musicxml",
+          "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Favela/Favela.musicxml",
+          "sha256": "5e6b3ab07d831eaa51efce55f3ab1ca65eea009ddc8da83f9969dbbd0ed0e4a7",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 83164,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 114,
+            "quote": "Med. Bossa Nova"
+          }
+        ]
+      },
+      "sourceSha256": "5e6b3ab07d831eaa51efce55f3ab1ca65eea009ddc8da83f9969dbbd0ed0e4a7",
+      "sourcePath": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Favela/Favela.musicxml"
+    },
+    {
+      "id": "composition:itneverenteredmymind",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 265,
+      "compositionKey": "itneverenteredmymind",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/It never entered my mind/It never entered my mind.musicxml",
+          "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/It never entered my mind/It never entered my mind.musicxml",
+          "sha256": "3ada69d31af3f9de0cd607cbfd249ea1f04f08cb8f029d0a73cee2cb536dbecd",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 70767,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 116,
+            "quote": "(Straight Ballade)"
+          }
+        ]
+      },
+      "sourceSha256": "3ada69d31af3f9de0cd607cbfd249ea1f04f08cb8f029d0a73cee2cb536dbecd",
+      "sourcePath": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/It never entered my mind/It never entered my mind.musicxml"
+    },
+    {
+      "id": "composition:ladiesinmercedes",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 269,
+      "compositionKey": "ladiesinmercedes",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Ladies in Mercedes/Ladies in Mercedes.musicxml",
+          "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Ladies in Mercedes/Ladies in Mercedes.musicxml",
+          "sha256": "58ba96b3decb789f6ef70c789333ee7c4a433dc9f7336a8420693480a4ece7ca",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 68750,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 117,
+            "quote": "Salsa"
+          }
+        ]
+      },
+      "sourceSha256": "58ba96b3decb789f6ef70c789333ee7c4a433dc9f7336a8420693480a4ece7ca",
+      "sourcePath": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Ladies in Mercedes/Ladies in Mercedes.musicxml"
+    },
+    {
+      "id": "composition:littlesunflower",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 271,
+      "compositionKey": "littlesunflower",
+      "mode": "Minor",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1305_PSE_30_AtbME_Gridx_AdplexToE/Little sunflower/Little sunflower.musicxml",
+          "path": "RealBook/20250327-1305_PSE_30_AtbME_Gridx_AdplexToE/Little sunflower/Little sunflower.musicxml",
+          "sha256": "5c89371cd79ca10a4824a4a7ad9106e8066642b5c7092aaf9eff4751fbd6425e",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 53002,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 117,
+            "quote": "Latin"
+          }
+        ]
+      },
+      "sourceSha256": "5c89371cd79ca10a4824a4a7ad9106e8066642b5c7092aaf9eff4751fbd6425e",
+      "sourcePath": "RealBook/20250327-1305_PSE_30_AtbME_Gridx_AdplexToE/Little sunflower/Little sunflower.musicxml"
+    },
+    {
+      "id": "composition:saturdaymorninghallelujah",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 333,
+      "compositionKey": "saturdaymorninghallelujah",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/melodies/SaturdayMorningHallelujah.ls",
+          "path": "leadsheets/melodies/SaturdayMorningHallelujah.ls",
+          "sha256": "c9cf984cde2396f5b4be6ca0dd8af7fb221f24e7f7ac45f1af8ddef3f2481959",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 1780,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 17,
+            "quote": "(style rock-heavy-even"
+          },
+          {
+            "line": 18,
+            "quote": "(swing 0.5)"
+          },
+          {
+            "line": 19,
+            "quote": "(comp-swing 0.5)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.5,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/rock-heavy-even.sty",
+              "path": "styles/rock-heavy-even.sty",
+              "sha256": "993f568d1eb166ec8de0adc2c997be1001e448c2edd956326db9f498ac4483fa",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1121,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.5)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/rock-heavy-even.sty",
+              "path": "styles/rock-heavy-even.sty",
+              "sha256": "993f568d1eb166ec8de0adc2c997be1001e448c2edd956326db9f498ac4483fa",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1121,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.5)"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceSha256": "c9cf984cde2396f5b4be6ca0dd8af7fb221f24e7f7ac45f1af8ddef3f2481959",
+      "sourcePath": "leadsheets/melodies/SaturdayMorningHallelujah.ls"
+    },
+    {
+      "id": "psjazz-realbook-alice-in-wonderland",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 4,
+      "compositionKey": "original-4",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Alice in wonderland/Alice in wonderland.musicxml",
+          "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Alice in wonderland/Alice in wonderland.musicxml",
+          "sha256": "01a097f69dfaebf2c56ff3b04e46a7cab22cb897605316c91f0a281446653fd0",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 52827,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 119,
+            "quote": "Swing"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-alice-in-wonderland",
+      "sourceSha256": "01a097f69dfaebf2c56ff3b04e46a7cab22cb897605316c91f0a281446653fd0",
+      "sourcePath": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Alice in wonderland/Alice in wonderland.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-bessie-s-blues",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 244,
+      "compositionKey": "bessiesblues",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1247_PSE_165_AtbME_Gridx_AdplexToE/Bessie's blues/Bessie's blues.musicxml",
+          "path": "RealBook/20250327-1247_PSE_165_AtbME_Gridx_AdplexToE/Bessie's blues/Bessie's blues.musicxml",
+          "sha256": "89ec57bc11cac2b5a415bd092d76d6270fdd80b0b2d61bf17cc914f40bfda7fd",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 47023,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 117,
+            "quote": "Med. Swing"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-bessie-s-blues",
+      "sourceSha256": "89ec57bc11cac2b5a415bd092d76d6270fdd80b0b2d61bf17cc914f40bfda7fd",
+      "sourcePath": "RealBook/20250327-1247_PSE_165_AtbME_Gridx_AdplexToE/Bessie's blues/Bessie's blues.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-black-narcissus",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 245,
+      "compositionKey": "blacknarcissus",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1247_PSE_165_AtbME_Gridx_AdplexToE/Black narcissus/Black narcissus.musicxml",
+          "path": "RealBook/20250327-1247_PSE_165_AtbME_Gridx_AdplexToE/Black narcissus/Black narcissus.musicxml",
+          "sha256": "21a4c913d4c6a289743671a91bbfbb2b418e30753019e7d66247310b019a39c5",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 53347,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 117,
+            "quote": "Swing"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-black-narcissus",
+      "sourceSha256": "21a4c913d4c6a289743671a91bbfbb2b418e30753019e7d66247310b019a39c5",
+      "sourcePath": "RealBook/20250327-1247_PSE_165_AtbME_Gridx_AdplexToE/Black narcissus/Black narcissus.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-bohemia-after-dark",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 246,
+      "compositionKey": "bohemiaafterdark",
+      "mode": "Minor",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Bohemia after dark/Bohemia after dark.musicxml",
+          "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Bohemia after dark/Bohemia after dark.musicxml",
+          "sha256": "6a39173b16b468526a0e5d510888a40ed697dd16615b772194a29006911fef8e",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 59154,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 119,
+            "quote": "(Med. Swing)"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-bohemia-after-dark",
+      "sourceSha256": "6a39173b16b468526a0e5d510888a40ed697dd16615b772194a29006911fef8e",
+      "sourcePath": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Bohemia after dark/Bohemia after dark.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-ceora",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 33,
+      "compositionKey": "original-33",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Ceora/Ceora.musicxml",
+          "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Ceora/Ceora.musicxml",
+          "sha256": "dfd2d89f037a1cc0a4009d6d4b3f24ec8ad9dbb8093269cbb722b0a36bbec776",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 78356,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 117,
+            "quote": "Straight"
+          },
+          {
+            "line": 122,
+            "quote": "(Medium Bossa)"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-ceora",
+      "sourceSha256": "dfd2d89f037a1cc0a4009d6d4b3f24ec8ad9dbb8093269cbb722b0a36bbec776",
+      "sourcePath": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Ceora/Ceora.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-cheerokee",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 36,
+      "compositionKey": "original-36",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Cherokee/Cherokee.musicxml",
+          "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Cherokee/Cherokee.musicxml",
+          "sha256": "410052105e01a68c580ff593f66667ab69b87b68190f772396aac9bef55e888d",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 65626,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 130,
+            "quote": "Swing)"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-cheerokee",
+      "sourceSha256": "410052105e01a68c580ff593f66667ab69b87b68190f772396aac9bef55e888d",
+      "sourcePath": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Cherokee/Cherokee.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-cry-me-a-river",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 42,
+      "compositionKey": "original-42",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Cry me a river/Cry me a river.musicxml",
+          "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Cry me a river/Cry me a river.musicxml",
+          "sha256": "01450aab1078b2b8ca9331a12a6f2b463176de3cb7caca821999f800cb0b9c4c",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 70155,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 124,
+            "quote": "Swing"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-cry-me-a-river",
+      "sourceSha256": "01450aab1078b2b8ca9331a12a6f2b463176de3cb7caca821999f800cb0b9c4c",
+      "sourcePath": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Cry me a river/Cry me a river.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-east-of-the-sun",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 57,
+      "compositionKey": "original-57",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1247_PSE_165_AtbME_Gridx_AdplexToE/East of the sun/East of the sun.musicxml",
+          "path": "RealBook/20250327-1247_PSE_165_AtbME_Gridx_AdplexToE/East of the sun/East of the sun.musicxml",
+          "sha256": "783f5322af91088a246b5dd30a07a9b54fbc9aff923b6c64e024b054d3fc1550",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 69664,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 114,
+            "quote": "Easy Swing"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-east-of-the-sun",
+      "sourceSha256": "783f5322af91088a246b5dd30a07a9b54fbc9aff923b6c64e024b054d3fc1550",
+      "sourcePath": "RealBook/20250327-1247_PSE_165_AtbME_Gridx_AdplexToE/East of the sun/East of the sun.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-easy-to-love",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 254,
+      "compositionKey": "easytolove",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Easy to love/Easy to love.musicxml",
+          "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Easy to love/Easy to love.musicxml",
+          "sha256": "cade02fdad626e537a5c0e6fbf177e4eb7776c4c29a761725c0a3e9309880992",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 35773,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 117,
+            "quote": "Swing"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-easy-to-love",
+      "sourceSha256": "cade02fdad626e537a5c0e6fbf177e4eb7776c4c29a761725c0a3e9309880992",
+      "sourcePath": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Easy to love/Easy to love.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-emily",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 60,
+      "compositionKey": "original-60",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Emily/Emily.musicxml",
+          "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Emily/Emily.musicxml",
+          "sha256": "19f9784f4aef6bdda3e641a610e1b108dc7db3d117636cd4301a2182d234dfee",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 56883,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 116,
+            "quote": "Straight"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-emily",
+      "sourceSha256": "19f9784f4aef6bdda3e641a610e1b108dc7db3d117636cd4301a2182d234dfee",
+      "sourcePath": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Emily/Emily.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-favela",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 256,
+      "compositionKey": "favela",
+      "mode": "Minor",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Favela/Favela.musicxml",
+          "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Favela/Favela.musicxml",
+          "sha256": "5e6b3ab07d831eaa51efce55f3ab1ca65eea009ddc8da83f9969dbbd0ed0e4a7",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 83164,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 114,
+            "quote": "Med. Bossa Nova"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-favela",
+      "sourceSha256": "5e6b3ab07d831eaa51efce55f3ab1ca65eea009ddc8da83f9969dbbd0ed0e4a7",
+      "sourcePath": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Favela/Favela.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-harlem-nocturne",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 259,
+      "compositionKey": "harlemnocturne",
+      "mode": "Minor",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Harlem nocturne/Harlem nocturne.musicxml",
+          "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Harlem nocturne/Harlem nocturne.musicxml",
+          "sha256": "d40f8d100b66c44083c1c8fee06b12a3a757cb2588e981616d595252ad06034c",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 92963,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 119,
+            "quote": "Swing"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-harlem-nocturne",
+      "sourceSha256": "d40f8d100b66c44083c1c8fee06b12a3a757cb2588e981616d595252ad06034c",
+      "sourcePath": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Harlem nocturne/Harlem nocturne.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-how-about-you",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 81,
+      "compositionKey": "original-81",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1247_PSE_165_AtbME_Gridx_AdplexToE/How about you/How about you.musicxml",
+          "path": "RealBook/20250327-1247_PSE_165_AtbME_Gridx_AdplexToE/How about you/How about you.musicxml",
+          "sha256": "a353e1557b32a70356cf8dcebb5ff2e070d8c38f3cd94350531f41777eb7ac71",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 59126,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 116,
+            "quote": "(Easy Swing)"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-how-about-you",
+      "sourceSha256": "a353e1557b32a70356cf8dcebb5ff2e070d8c38f3cd94350531f41777eb7ac71",
+      "sourcePath": "RealBook/20250327-1247_PSE_165_AtbME_Gridx_AdplexToE/How about you/How about you.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-i-cover-the-waterfront",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 262,
+      "compositionKey": "icoverthewaterfront",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/I cover the waterfront/I cover the waterfront.musicxml",
+          "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/I cover the waterfront/I cover the waterfront.musicxml",
+          "sha256": "5ef07ae0a4c22fe765b9f3948169cdc300bc583d2a55ccf2a351eb2abb729876",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 62037,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 117,
+            "quote": "(Med. Up Swing)"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-i-cover-the-waterfront",
+      "sourceSha256": "5ef07ae0a4c22fe765b9f3948169cdc300bc583d2a55ccf2a351eb2abb729876",
+      "sourcePath": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/I cover the waterfront/I cover the waterfront.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-i-didn-t-know-what-time-it-was",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 263,
+      "compositionKey": "ididntknowwhattimeitwas",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/I didn't know what time it was/I didn't know what time it was.musicxml",
+          "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/I didn't know what time it was/I didn't know what time it was.musicxml",
+          "sha256": "96bb255adfe2b2315dc0f6a449ce1ef5dddcbd164359481b8d140c5c0d62acae",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 54698,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 119,
+            "quote": "(Medium Swing)"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-i-didn-t-know-what-time-it-was",
+      "sourceSha256": "96bb255adfe2b2315dc0f6a449ce1ef5dddcbd164359481b8d140c5c0d62acae",
+      "sourcePath": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/I didn't know what time it was/I didn't know what time it was.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-in-a-sentimental-mood",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 264,
+      "compositionKey": "inasentimentalmood",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/In a sentimental mood/In a sentimental mood.musicxml",
+          "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/In a sentimental mood/In a sentimental mood.musicxml",
+          "sha256": "aa237616ac2ae56ad3fd89a03b39b0a1a9aafd3433212fe2fc8ad3c1d51c80b5",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 60355,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 114,
+            "quote": "(Swing Ballade)"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-in-a-sentimental-mood",
+      "sourceSha256": "aa237616ac2ae56ad3fd89a03b39b0a1a9aafd3433212fe2fc8ad3c1d51c80b5",
+      "sourcePath": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/In a sentimental mood/In a sentimental mood.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-it-never-entered-my-mind",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 265,
+      "compositionKey": "itneverenteredmymind",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/It never entered my mind/It never entered my mind.musicxml",
+          "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/It never entered my mind/It never entered my mind.musicxml",
+          "sha256": "3ada69d31af3f9de0cd607cbfd249ea1f04f08cb8f029d0a73cee2cb536dbecd",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 70767,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 116,
+            "quote": "(Straight Ballade)"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-it-never-entered-my-mind",
+      "sourceSha256": "3ada69d31af3f9de0cd607cbfd249ea1f04f08cb8f029d0a73cee2cb536dbecd",
+      "sourcePath": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/It never entered my mind/It never entered my mind.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-just-the-way-you-are",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 115,
+      "compositionKey": "original-115",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1247_PSE_165_AtbME_Gridx_AdplexToE/Just the way you are/Just the way you are.musicxml",
+          "path": "RealBook/20250327-1247_PSE_165_AtbME_Gridx_AdplexToE/Just the way you are/Just the way you are.musicxml",
+          "sha256": "d6cbbfe4fe42c1264359a7f432d3daf6bd6ca377097a4a5ddbb77f6eabac35d8",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 97254,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 117,
+            "quote": "(Med Rock)"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-just-the-way-you-are",
+      "sourceSha256": "d6cbbfe4fe42c1264359a7f432d3daf6bd6ca377097a4a5ddbb77f6eabac35d8",
+      "sourcePath": "RealBook/20250327-1247_PSE_165_AtbME_Gridx_AdplexToE/Just the way you are/Just the way you are.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-just-you-just-me",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 268,
+      "compositionKey": "justyoujustme",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Just you, just me/Just you, just me.musicxml",
+          "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Just you, just me/Just you, just me.musicxml",
+          "sha256": "68788b2ec09c554ed7b2bc48ced3b7c137edb270ce2f2469b205c4774b6b6809",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 66608,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 117,
+            "quote": "(Bright Swing)"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-just-you-just-me",
+      "sourceSha256": "68788b2ec09c554ed7b2bc48ced3b7c137edb270ce2f2469b205c4774b6b6809",
+      "sourcePath": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Just you, just me/Just you, just me.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-ladies-in-mercedes",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 269,
+      "compositionKey": "ladiesinmercedes",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Ladies in Mercedes/Ladies in Mercedes.musicxml",
+          "path": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Ladies in Mercedes/Ladies in Mercedes.musicxml",
+          "sha256": "58ba96b3decb789f6ef70c789333ee7c4a433dc9f7336a8420693480a4ece7ca",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 68750,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 117,
+            "quote": "Salsa"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-ladies-in-mercedes",
+      "sourceSha256": "58ba96b3decb789f6ef70c789333ee7c4a433dc9f7336a8420693480a4ece7ca",
+      "sourcePath": "RealBook/20250327-1237_PSE_165_AtbME_Gridx_AdplexToE/Ladies in Mercedes/Ladies in Mercedes.musicxml"
+    },
+    {
+      "id": "psjazz-realbook-little-sunflower",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 271,
+      "compositionKey": "littlesunflower",
+      "mode": "Minor",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/florento/PSjazzEval/blob/b6a559e8bd2719c3279ed0e81554b5cdbab0da03/RealBook/20250327-1305_PSE_30_AtbME_Gridx_AdplexToE/Little sunflower/Little sunflower.musicxml",
+          "path": "RealBook/20250327-1305_PSE_30_AtbME_Gridx_AdplexToE/Little sunflower/Little sunflower.musicxml",
+          "sha256": "5c89371cd79ca10a4824a4a7ad9106e8066642b5c7092aaf9eff4751fbd6425e",
+          "commit": "b6a559e8bd2719c3279ed0e81554b5cdbab0da03",
+          "bytes": 53002,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 117,
+            "quote": "Latin"
+          }
+        ]
+      },
+      "melodyId": "psjazz-realbook-little-sunflower",
+      "sourceSha256": "5c89371cd79ca10a4824a4a7ad9106e8066642b5c7092aaf9eff4751fbd6425e",
+      "sourcePath": "RealBook/20250327-1305_PSE_30_AtbME_Gridx_AdplexToE/Little sunflower/Little sunflower.musicxml"
+    },
+    {
+      "id": "improvisor-after-you-ve-gone-9ccaa8904d",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 272,
+      "compositionKey": "afteryouvegone",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/melodies/AfterYouveGone.ls",
+          "path": "leadsheets/melodies/AfterYouveGone.ls",
+          "sha256": "fd19e03f4d91436918f68e59661a28df4ba05c9eebc714e935e158204adecdf7",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 938,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 9,
+            "quote": "(style swing)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.67,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/swing.sty",
+              "path": "styles/swing.sty",
+              "sha256": "6f793ab056720150551e510b293c50571af834ec2f8a9285d9cf00327f9e9e62",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 2711,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.67)"
+              }
+            ]
+          }
+        ]
+      },
+      "melodyId": "improvisor-after-you-ve-gone-9ccaa8904d",
+      "sourceSha256": "fd19e03f4d91436918f68e59661a28df4ba05c9eebc714e935e158204adecdf7",
+      "sourcePath": "leadsheets/melodies/AfterYouveGone.ls"
+    },
+    {
+      "id": "openbook-ain-t-misbehavin-fake",
+      "melodyId": "openbook-ain-t-misbehavin-fake",
+      "sourceSha256": "23f42f1568bcfe2f9e2d88a8471e549d7d757fb6b17c49f9884d02d15b987a0e",
+      "sourcePath": "src/openbook/aint_misbehavin.ly.tera",
+      "sourceVersion": "Fake",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 2,
+      "compositionKey": "original-2",
+      "mode": "Major",
+      "evidence": {
+        "basis": "same-composition",
+        "referenceId": "composition:original-2"
+      }
+    },
+    {
+      "id": "openbook-alice-in-wonderland-real",
+      "melodyId": "openbook-alice-in-wonderland-real",
+      "sourceSha256": "3b2793dc1957f9f0df499a954318c71202f63db7f248033e87cec828a856f758",
+      "sourcePath": "src/openbook/alice_in_wonderland.ly.tera",
+      "sourceVersion": "Real",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 4,
+      "compositionKey": "original-4",
+      "mode": "Major",
+      "evidence": {
+        "basis": "same-composition",
+        "referenceId": "composition:original-4"
+      }
+    },
+    {
+      "id": "openbook-all-of-me-real",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 5,
+      "compositionKey": "original-5",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/all_of_me.ly.tera",
+          "path": "src/openbook/all_of_me.ly.tera",
+          "sha256": "0e1fb0d4e29aa54dee5eb519d4f109a4e94e05298b5a2fd8df38c9f74b32dd57",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 3018,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 9,
+            "quote": "piece = \"Mod. Swing\""
+          }
+        ]
+      },
+      "melodyId": "openbook-all-of-me-real",
+      "sourceSha256": "0e1fb0d4e29aa54dee5eb519d4f109a4e94e05298b5a2fd8df38c9f74b32dd57",
+      "sourcePath": "src/openbook/all_of_me.ly.tera",
+      "sourceVersion": "Real"
+    },
+    {
+      "id": "openbook-avalon-wikifonia",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 13,
+      "compositionKey": "original-13",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/avalon.ly.tera",
+          "path": "src/openbook/avalon.ly.tera",
+          "sha256": "db473d2c597ca329766eef31a90f13dd1902ca3ff28ff27c3e226d1f18bb4ccb",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 2650,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Swing\""
+          },
+          {
+            "line": 91,
+            "quote": "\\tempo \"Swing\" 4 = 144"
+          }
+        ]
+      },
+      "melodyId": "openbook-avalon-wikifonia",
+      "sourceSha256": "db473d2c597ca329766eef31a90f13dd1902ca3ff28ff27c3e226d1f18bb4ccb",
+      "sourcePath": "src/openbook/avalon.ly.tera",
+      "sourceVersion": "Wikifonia"
+    },
+    {
+      "id": "improvisor-blues-for-gary-6fdfc14b84",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 283,
+      "compositionKey": "bluesforgary",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/compositions/BluesForGary.ls",
+          "path": "leadsheets/compositions/BluesForGary.ls",
+          "sha256": "6b679317f5ee181f4d537ad8ca7507465015d9a8b62b2ea326793be17df0b30f",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 5086,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 19,
+            "quote": "(style swing"
+          },
+          {
+            "line": 20,
+            "quote": "(swing 0.67)"
+          },
+          {
+            "line": 21,
+            "quote": "(comp-swing 0.67)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.67,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/swing.sty",
+              "path": "styles/swing.sty",
+              "sha256": "6f793ab056720150551e510b293c50571af834ec2f8a9285d9cf00327f9e9e62",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 2711,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.67)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/swing.sty",
+              "path": "styles/swing.sty",
+              "sha256": "6f793ab056720150551e510b293c50571af834ec2f8a9285d9cf00327f9e9e62",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 2711,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.67)"
+              }
+            ]
+          }
+        ]
+      },
+      "melodyId": "improvisor-blues-for-gary-6fdfc14b84",
+      "sourceSha256": "6b679317f5ee181f4d537ad8ca7507465015d9a8b62b2ea326793be17df0b30f",
+      "sourcePath": "leadsheets/compositions/BluesForGary.ls"
+    },
+    {
+      "id": "improvisor-blues-for-gary-aa572ea26d",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 283,
+      "compositionKey": "bluesforgary",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/compositions/BluesForGary.ls",
+          "path": "leadsheets/compositions/BluesForGary.ls",
+          "sha256": "6b679317f5ee181f4d537ad8ca7507465015d9a8b62b2ea326793be17df0b30f",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 5086,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 19,
+            "quote": "(style swing"
+          },
+          {
+            "line": 20,
+            "quote": "(swing 0.67)"
+          },
+          {
+            "line": 21,
+            "quote": "(comp-swing 0.67)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.67,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/swing.sty",
+              "path": "styles/swing.sty",
+              "sha256": "6f793ab056720150551e510b293c50571af834ec2f8a9285d9cf00327f9e9e62",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 2711,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.67)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/swing.sty",
+              "path": "styles/swing.sty",
+              "sha256": "6f793ab056720150551e510b293c50571af834ec2f8a9285d9cf00327f9e9e62",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 2711,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.67)"
+              }
+            ]
+          }
+        ]
+      },
+      "melodyId": "improvisor-blues-for-gary-aa572ea26d",
+      "sourceSha256": "6b679317f5ee181f4d537ad8ca7507465015d9a8b62b2ea326793be17df0b30f",
+      "sourcePath": "leadsheets/compositions/BluesForGary.ls"
+    },
+    {
+      "id": "improvisor-blues-for-gary-e4f0a7f8b5",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 283,
+      "compositionKey": "bluesforgary",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/compositions/BluesForGary.ls",
+          "path": "leadsheets/compositions/BluesForGary.ls",
+          "sha256": "6b679317f5ee181f4d537ad8ca7507465015d9a8b62b2ea326793be17df0b30f",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 5086,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 19,
+            "quote": "(style swing"
+          },
+          {
+            "line": 20,
+            "quote": "(swing 0.67)"
+          },
+          {
+            "line": 21,
+            "quote": "(comp-swing 0.67)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.67,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/swing.sty",
+              "path": "styles/swing.sty",
+              "sha256": "6f793ab056720150551e510b293c50571af834ec2f8a9285d9cf00327f9e9e62",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 2711,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.67)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/swing.sty",
+              "path": "styles/swing.sty",
+              "sha256": "6f793ab056720150551e510b293c50571af834ec2f8a9285d9cf00327f9e9e62",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 2711,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.67)"
+              }
+            ]
+          }
+        ]
+      },
+      "melodyId": "improvisor-blues-for-gary-e4f0a7f8b5",
+      "sourceSha256": "6b679317f5ee181f4d537ad8ca7507465015d9a8b62b2ea326793be17df0b30f",
+      "sourcePath": "leadsheets/compositions/BluesForGary.ls"
+    },
+    {
+      "id": "openbook-ceora-real",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 33,
+      "compositionKey": "original-33",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/ceora.ly.tera",
+          "path": "src/openbook/ceora.ly.tera",
+          "sha256": "5a780f2038e62263b774ad3d6344584e5917025503faccf0714326940408b8c9",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 4048,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Bossa\""
+          }
+        ]
+      },
+      "melodyId": "openbook-ceora-real",
+      "sourceSha256": "5a780f2038e62263b774ad3d6344584e5917025503faccf0714326940408b8c9",
+      "sourcePath": "src/openbook/ceora.ly.tera",
+      "sourceVersion": "Real"
+    },
+    {
+      "id": "openbook-cute-fake",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 43,
+      "compositionKey": "original-43",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/cute.ly.tera",
+          "path": "src/openbook/cute.ly.tera",
+          "sha256": "bcedf2b809d95f087a34099fc46b16c1435621428bd475bb687a6d4c8fd7f771",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 2710,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 9,
+            "quote": "piece = \"Medium swing\""
+          }
+        ]
+      },
+      "melodyId": "openbook-cute-fake",
+      "sourceSha256": "bcedf2b809d95f087a34099fc46b16c1435621428bd475bb687a6d4c8fd7f771",
+      "sourcePath": "src/openbook/cute.ly.tera",
+      "sourceVersion": "Fake"
+    },
+    {
+      "id": "improvisor-dear-old-stockholm-9c4641933d",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 46,
+      "compositionKey": "original-46",
+      "mode": "Minor",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/melodies/DearOldStockholm.ls",
+          "path": "leadsheets/melodies/DearOldStockholm.ls",
+          "sha256": "b6a6bcde94c1b832695bc70da10915a1253a892d6805ad4ef01394391770924e",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 1804,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 17,
+            "quote": "(style ballad"
+          },
+          {
+            "line": 18,
+            "quote": "(swing 0.67)"
+          },
+          {
+            "line": 19,
+            "quote": "(comp-swing 0.67)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.67,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/ballad.sty",
+              "path": "styles/ballad.sty",
+              "sha256": "e15e4b07dd2f049b59bd6229f7ca5161a1aa4ea0b93076f866b7b71c3851c5b1",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1609,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/ballad.sty",
+              "path": "styles/ballad.sty",
+              "sha256": "e15e4b07dd2f049b59bd6229f7ca5161a1aa4ea0b93076f866b7b71c3851c5b1",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1609,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.55)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/pedal-bass-3.sty",
+              "path": "styles/pedal-bass-3.sty",
+              "sha256": "da5f9faf6d2a9abe5b3d29ded016712fcaada7301ee0f5702ca49139d82f6248",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 889,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.67)"
+              }
+            ]
+          }
+        ]
+      },
+      "melodyId": "improvisor-dear-old-stockholm-9c4641933d",
+      "sourceSha256": "b6a6bcde94c1b832695bc70da10915a1253a892d6805ad4ef01394391770924e",
+      "sourcePath": "leadsheets/melodies/DearOldStockholm.ls"
+    },
+    {
+      "id": "openbook-have-you-met-miss-jones-fake",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 77,
+      "compositionKey": "original-77",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/have_you_met_miss_jones.ly.tera",
+          "path": "src/openbook/have_you_met_miss_jones.ly.tera",
+          "sha256": "c0620318fb818d31aa27e6d59809d2845f27f7c794ff605dc32c507b7091cfdd",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 4704,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 9,
+            "quote": "piece = \"Medum Swing\""
+          }
+        ]
+      },
+      "melodyId": "openbook-have-you-met-miss-jones-fake",
+      "sourceSha256": "c0620318fb818d31aa27e6d59809d2845f27f7c794ff605dc32c507b7091cfdd",
+      "sourcePath": "src/openbook/have_you_met_miss_jones.ly.tera",
+      "sourceVersion": "Fake"
+    },
+    {
+      "id": "openbook-here-s-that-rainy-day-real",
+      "melodyId": "openbook-here-s-that-rainy-day-real",
+      "sourceSha256": "ab4fe3c346261fb9984f30ef540b099829a8e0d2297ffecfa521fdbd363b9077",
+      "sourcePath": "src/openbook/heres_that_rainy_day.ly.tera",
+      "sourceVersion": "Real",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 78,
+      "compositionKey": "original-78",
+      "mode": "Major",
+      "evidence": {
+        "basis": "same-composition",
+        "referenceId": "composition:original-78"
+      }
+    },
+    {
+      "id": "openbook-honeysuckle-rose-fake",
+      "melodyId": "openbook-honeysuckle-rose-fake",
+      "sourceSha256": "3db86d818855a585e20510111d3f4b3b7cd5cadc86e95b1814fc2c35db2a9308",
+      "sourcePath": "src/openbook/honeysuckle_rose.ly.tera",
+      "sourceVersion": "Fake",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 79,
+      "compositionKey": "original-79",
+      "mode": "Major",
+      "evidence": {
+        "basis": "same-composition",
+        "referenceId": "composition:original-79"
+      }
+    },
+    {
+      "id": "improvisor-hot-house-71759af39e",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 304,
+      "compositionKey": "hothouse",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/solos/HotHouseBb.ls",
+          "path": "leadsheets/solos/HotHouseBb.ls",
+          "sha256": "5a4e39bac3251c7a0ae83e5979d5557d5e6678dc00b196d9439784c17fbab9c4",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 4687,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 20,
+            "quote": "(style swing-BarryHarris"
+          },
+          {
+            "line": 21,
+            "quote": "(swing 0.67)"
+          },
+          {
+            "line": 22,
+            "quote": "(comp-swing 0.67)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.67,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/swing-BarryHarris.sty",
+              "path": "styles/swing-BarryHarris.sty",
+              "sha256": "5a91dedfa0d39e92af50e7081fd7c1434d6f0978df27521dfd39051d73d3d410",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 3763,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 7,
+                "quote": "(swing 0.67)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/swing-BarryHarris.sty",
+              "path": "styles/swing-BarryHarris.sty",
+              "sha256": "5a91dedfa0d39e92af50e7081fd7c1434d6f0978df27521dfd39051d73d3d410",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 3763,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 7,
+                "quote": "(swing 0.67)"
+              }
+            ]
+          }
+        ]
+      },
+      "melodyId": "improvisor-hot-house-71759af39e",
+      "sourceSha256": "5a4e39bac3251c7a0ae83e5979d5557d5e6678dc00b196d9439784c17fbab9c4",
+      "sourcePath": "leadsheets/solos/HotHouseBb.ls"
+    },
+    {
+      "id": "openbook-i-remember-clifford-laurent",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 90,
+      "compositionKey": "original-90",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/i_remember_clifford.ly.tera",
+          "path": "src/openbook/i_remember_clifford.ly.tera",
+          "sha256": "4ad74aaf15771a05fe1bdbf585a60083375357ab59cc18b282eb2f81e77d5271",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 4309,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Med Swing\""
+          }
+        ]
+      },
+      "melodyId": "openbook-i-remember-clifford-laurent",
+      "sourceSha256": "4ad74aaf15771a05fe1bdbf585a60083375357ab59cc18b282eb2f81e77d5271",
+      "sourcePath": "src/openbook/i_remember_clifford.ly.tera",
+      "sourceVersion": "Laurent"
+    },
+    {
+      "id": "openbook-it-had-to-be-you-wikifonia",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 109,
+      "compositionKey": "original-109",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/it_had_to_be_you.ly.tera",
+          "path": "src/openbook/it_had_to_be_you.ly.tera",
+          "sha256": "daaec60406cc678971ee0e96ceee524469704a8563c8a6446183d8a153c8fc23",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 3540,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Swing\""
+          },
+          {
+            "line": 101,
+            "quote": "\\tempo \"Swing\" 4 = 144"
+          }
+        ]
+      },
+      "melodyId": "openbook-it-had-to-be-you-wikifonia",
+      "sourceSha256": "daaec60406cc678971ee0e96ceee524469704a8563c8a6446183d8a153c8fc23",
+      "sourcePath": "src/openbook/it_had_to_be_you.ly.tera",
+      "sourceVersion": "Wikifonia"
+    },
+    {
+      "id": "openbook-i-ve-got-a-crush-on-you-wikifonia",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 98,
+      "compositionKey": "original-98",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/ive_got_a_crush_on_you.ly.tera",
+          "path": "src/openbook/ive_got_a_crush_on_you.ly.tera",
+          "sha256": "154bd0c41b5b8d3198e3a5f973a9c0b913e1021e96b8c41e8de81e22a9754c6a",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 2967,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Swing\""
+          },
+          {
+            "line": 78,
+            "quote": "\\tempo \"Swing\" 4 = 144"
+          }
+        ]
+      },
+      "melodyId": "openbook-i-ve-got-a-crush-on-you-wikifonia",
+      "sourceSha256": "154bd0c41b5b8d3198e3a5f973a9c0b913e1021e96b8c41e8de81e22a9754c6a",
+      "sourcePath": "src/openbook/ive_got_a_crush_on_you.ly.tera",
+      "sourceVersion": "Wikifonia"
+    },
+    {
+      "id": "openbook-manhattan-fake",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 132,
+      "compositionKey": "original-132",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/manhattan.ly.tera",
+          "path": "src/openbook/manhattan.ly.tera",
+          "sha256": "1ef2f701010fa7d6225a7f019a3d1cd8c4926b12d849372e55260fad4e108a40",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 4088,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Broadway\""
+          },
+          {
+            "line": 9,
+            "quote": "piece = \"Moderate Swing\""
+          }
+        ]
+      },
+      "melodyId": "openbook-manhattan-fake",
+      "sourceSha256": "1ef2f701010fa7d6225a7f019a3d1cd8c4926b12d849372e55260fad4e108a40",
+      "sourcePath": "src/openbook/manhattan.ly.tera",
+      "sourceVersion": "Fake"
+    },
+    {
+      "id": "openbook-remember-wikifonia",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 173,
+      "compositionKey": "original-173",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/remember.ly.tera",
+          "path": "src/openbook/remember.ly.tera",
+          "sha256": "f293c38ab7c30f2009534990af602f92b889089940a76da6c66e0df531f5070a",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 2891,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Swing\""
+          },
+          {
+            "line": 100,
+            "quote": "\\tempo \"Swing\" 4 = 144"
+          }
+        ]
+      },
+      "melodyId": "openbook-remember-wikifonia",
+      "sourceSha256": "f293c38ab7c30f2009534990af602f92b889089940a76da6c66e0df531f5070a",
+      "sourcePath": "src/openbook/remember.ly.tera",
+      "sourceVersion": "Wikifonia"
+    },
+    {
+      "id": "improvisor-saturday-morning-hallelujah-1379955ba8",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 333,
+      "compositionKey": "saturdaymorninghallelujah",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/melodies/SaturdayMorningHallelujah.ls",
+          "path": "leadsheets/melodies/SaturdayMorningHallelujah.ls",
+          "sha256": "c9cf984cde2396f5b4be6ca0dd8af7fb221f24e7f7ac45f1af8ddef3f2481959",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 1780,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 17,
+            "quote": "(style rock-heavy-even"
+          },
+          {
+            "line": 18,
+            "quote": "(swing 0.5)"
+          },
+          {
+            "line": 19,
+            "quote": "(comp-swing 0.5)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.5,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/rock-heavy-even.sty",
+              "path": "styles/rock-heavy-even.sty",
+              "sha256": "993f568d1eb166ec8de0adc2c997be1001e448c2edd956326db9f498ac4483fa",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1121,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.5)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/rock-heavy-even.sty",
+              "path": "styles/rock-heavy-even.sty",
+              "sha256": "993f568d1eb166ec8de0adc2c997be1001e448c2edd956326db9f498ac4483fa",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 1121,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 6,
+                "quote": "(swing 0.5)"
+              }
+            ]
+          }
+        ]
+      },
+      "melodyId": "improvisor-saturday-morning-hallelujah-1379955ba8",
+      "sourceSha256": "c9cf984cde2396f5b4be6ca0dd8af7fb221f24e7f7ac45f1af8ddef3f2481959",
+      "sourcePath": "leadsheets/melodies/SaturdayMorningHallelujah.ls"
+    },
+    {
+      "id": "openbook-soon-wikifonia",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 193,
+      "compositionKey": "original-193",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/soon.ly.tera",
+          "path": "src/openbook/soon.ly.tera",
+          "sha256": "6fd8d86f9995218773d59cd218e5db6d2e1b157bbed652afeccfb4edd19e5ec4",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 3102,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Swing\""
+          },
+          {
+            "line": 99,
+            "quote": "\\tempo \"Swing\" 4 = 144"
+          }
+        ]
+      },
+      "melodyId": "openbook-soon-wikifonia",
+      "sourceSha256": "6fd8d86f9995218773d59cd218e5db6d2e1b157bbed652afeccfb4edd19e5ec4",
+      "sourcePath": "src/openbook/soon.ly.tera",
+      "sourceVersion": "Wikifonia"
+    },
+    {
+      "id": "openbook-st-thomas-fake",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 176,
+      "compositionKey": "original-176",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/st_thomas.ly.tera",
+          "path": "src/openbook/st_thomas.ly.tera",
+          "sha256": "1ed45164882a99e7567d35ea7e7025204b71d26f8301e0dad2c2f6a5f2736aea",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 2035,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Latin/Calypso\""
+          }
+        ]
+      },
+      "melodyId": "openbook-st-thomas-fake",
+      "sourceSha256": "1ed45164882a99e7567d35ea7e7025204b71d26f8301e0dad2c2f6a5f2736aea",
+      "sourcePath": "src/openbook/st_thomas.ly.tera",
+      "sourceVersion": "Fake"
+    },
+    {
+      "id": "openbook-s-wonderful-wikifonia",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 175,
+      "compositionKey": "original-175",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/s_wonderful.ly.tera",
+          "path": "src/openbook/s_wonderful.ly.tera",
+          "sha256": "1ee2cc27fbfc93c8f1377430c596da798f13879192f433bd00efc202f3b69621",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 2859,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Swing\""
+          },
+          {
+            "line": 91,
+            "quote": "\\tempo \"Swing\" 4 = 144"
+          }
+        ]
+      },
+      "melodyId": "openbook-s-wonderful-wikifonia",
+      "sourceSha256": "1ee2cc27fbfc93c8f1377430c596da798f13879192f433bd00efc202f3b69621",
+      "sourcePath": "src/openbook/s_wonderful.ly.tera",
+      "sourceVersion": "Wikifonia"
+    },
+    {
+      "id": "openbook-take-the-a-train-fake",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 0,
+      "compositionKey": "original-0",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/take_the_a_train.ly.tera",
+          "path": "src/openbook/take_the_a_train.ly.tera",
+          "sha256": "14b409e640365fec4e9a7ae06202c0dd90ea19efa0f98f1e01cb221664ff0b42",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 5074,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 9,
+            "quote": "piece = \"Easy Swing\""
+          }
+        ]
+      },
+      "melodyId": "openbook-take-the-a-train-fake",
+      "sourceSha256": "14b409e640365fec4e9a7ae06202c0dd90ea19efa0f98f1e01cb221664ff0b42",
+      "sourcePath": "src/openbook/take_the_a_train.ly.tera",
+      "sourceVersion": "Fake"
+    },
+    {
+      "id": "improvisor-tour-de-force-cacda758ed",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 349,
+      "compositionKey": "tourdeforce",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/leadsheets/exercises/TourDeForceGuideTones.ls",
+          "path": "leadsheets/exercises/TourDeForceGuideTones.ls",
+          "sha256": "94b5d3a2f392951808c358f9272d7be091be1bc9d22f627378a96d5ad858c3aa",
+          "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+          "bytes": 12858,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 20,
+            "quote": "(style swing-RedGarland"
+          },
+          {
+            "line": 21,
+            "quote": "(swing 0.67)"
+          },
+          {
+            "line": 22,
+            "quote": "(comp-swing 0.67)"
+          }
+        ],
+        "sourceDeclaredRatio": 0.67,
+        "styleDefinitions": [
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/swing-RedGarland.sty",
+              "path": "styles/swing-RedGarland.sty",
+              "sha256": "1c32c001f9e8d82247384a861b40c4d27d26de69ab203823967d213c3eda1aaa",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 3839,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 7,
+                "quote": "(swing 0.67)"
+              }
+            ]
+          },
+          {
+            "source": {
+              "url": "https://github.com/Impro-Visor/Impro-Visor/blob/550bbb554962249aceb0e82a72142e3e5b3c0d4a/styles/swing-RedGarland.sty",
+              "path": "styles/swing-RedGarland.sty",
+              "sha256": "1c32c001f9e8d82247384a861b40c4d27d26de69ab203823967d213c3eda1aaa",
+              "commit": "550bbb554962249aceb0e82a72142e3e5b3c0d4a",
+              "bytes": 3839,
+              "verified": true
+            },
+            "declarations": [
+              {
+                "line": 7,
+                "quote": "(swing 0.67)"
+              }
+            ]
+          }
+        ]
+      },
+      "melodyId": "improvisor-tour-de-force-cacda758ed",
+      "sourceSha256": "94b5d3a2f392951808c358f9272d7be091be1bc9d22f627378a96d5ad858c3aa",
+      "sourcePath": "leadsheets/exercises/TourDeForceGuideTones.ls"
+    },
+    {
+      "id": "openbook-tune-up-fake",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 218,
+      "compositionKey": "original-218",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/tune_up.ly.tera",
+          "path": "src/openbook/tune_up.ly.tera",
+          "sha256": "108a712e419a13b745d276637382ad8124a79eefece42ceafcae1ffbb118b5ac",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 1866,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Medium Swing\""
+          }
+        ]
+      },
+      "melodyId": "openbook-tune-up-fake",
+      "sourceSha256": "108a712e419a13b745d276637382ad8124a79eefece42ceafcae1ffbb118b5ac",
+      "sourcePath": "src/openbook/tune_up.ly.tera",
+      "sourceVersion": "Fake"
+    },
+    {
+      "id": "openbook-the-joint-is-jumpin-fake",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 112,
+      "compositionKey": "original-112",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/the_joint_is_jumpin.ly.tera",
+          "path": "src/openbook/the_joint_is_jumpin.ly.tera",
+          "sha256": "e8e7bc99e0d94acb9ef460cda274cf34934567fe39c2964369b5147b7c8f596e",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 5434,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Swing\""
+          },
+          {
+            "line": 9,
+            "quote": "piece = \"Tempo di-sturb de neighbors\""
+          }
+        ]
+      },
+      "melodyId": "openbook-the-joint-is-jumpin-fake",
+      "sourceSha256": "e8e7bc99e0d94acb9ef460cda274cf34934567fe39c2964369b5147b7c8f596e",
+      "sourcePath": "src/openbook/the_joint_is_jumpin.ly.tera",
+      "sourceVersion": "Fake"
+    },
+    {
+      "id": "openbook-a-foggy-day-real",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 68,
+      "compositionKey": "original-68",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/a_foggy_day.ly.tera",
+          "path": "src/openbook/a_foggy_day.ly.tera",
+          "sha256": "9d0993dc4b5fc266061fc99e8d0b01a4a10921ad698f92fee47633d46cc99d9c",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 7149,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 10,
+            "quote": "piece = \"Medium Swing\""
+          }
+        ]
+      },
+      "melodyId": "openbook-a-foggy-day-real",
+      "sourceSha256": "9d0993dc4b5fc266061fc99e8d0b01a4a10921ad698f92fee47633d46cc99d9c",
+      "sourcePath": "src/openbook/a_foggy_day.ly.tera",
+      "sourceVersion": "Real"
+    },
+    {
+      "id": "openbook-desafinado-fake",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 48,
+      "compositionKey": "original-48",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/desafinado.ly.tera",
+          "path": "src/openbook/desafinado.ly.tera",
+          "sha256": "f14f91b47eeaf7ca3901e77c0ef68dfad788974215330a23054d452409bb87b1",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 8117,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 10,
+            "quote": "piece = \"Medium Bossa Nova\""
+          }
+        ]
+      },
+      "melodyId": "openbook-desafinado-fake",
+      "sourceSha256": "f14f91b47eeaf7ca3901e77c0ef68dfad788974215330a23054d452409bb87b1",
+      "sourcePath": "src/openbook/desafinado.ly.tera",
+      "sourceVersion": "Fake"
+    },
+    {
+      "id": "openbook-embraceable-you-wikifonia",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 59,
+      "compositionKey": "original-59",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/embraceable_you.ly.tera",
+          "path": "src/openbook/embraceable_you.ly.tera",
+          "sha256": "17d7aee003e4c3bcd7f5daa52782f293518f5bea85aa4aea8d822825065192a0",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 3264,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Swing\""
+          },
+          {
+            "line": 100,
+            "quote": "\\tempo \"Swing\" 4 = 144"
+          }
+        ]
+      },
+      "melodyId": "openbook-embraceable-you-wikifonia",
+      "sourceSha256": "17d7aee003e4c3bcd7f5daa52782f293518f5bea85aa4aea8d822825065192a0",
+      "sourcePath": "src/openbook/embraceable_you.ly.tera",
+      "sourceVersion": "Wikifonia"
+    },
+    {
+      "id": "openbook-the-girl-from-ipanema-fake",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 73,
+      "compositionKey": "original-73",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/the_girl_from_ipanema.ly.tera",
+          "path": "src/openbook/the_girl_from_ipanema.ly.tera",
+          "sha256": "e2dfdb70a78f9d7e7d24f3f6ab99b84c01fad6d8aaabd6845e54106e517bd884",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 4621,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 10,
+            "quote": "piece = \"Moderate Bossa Nova\""
+          }
+        ]
+      },
+      "melodyId": "openbook-the-girl-from-ipanema-fake",
+      "sourceSha256": "e2dfdb70a78f9d7e7d24f3f6ab99b84c01fad6d8aaabd6845e54106e517bd884",
+      "sourcePath": "src/openbook/the_girl_from_ipanema.ly.tera",
+      "sourceVersion": "Fake"
+    },
+    {
+      "id": "openbook-if-i-had-you-wikifonia",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 103,
+      "compositionKey": "original-103",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/if_i_had_you.ly.tera",
+          "path": "src/openbook/if_i_had_you.ly.tera",
+          "sha256": "10c958ea6027ac99d9a9abc9cec5f6abe5a47989791d8507c5caef850beb505c",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 3650,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Swing\""
+          },
+          {
+            "line": 100,
+            "quote": "\\tempo \"Swing\" 4 = 144"
+          }
+        ]
+      },
+      "melodyId": "openbook-if-i-had-you-wikifonia",
+      "sourceSha256": "10c958ea6027ac99d9a9abc9cec5f6abe5a47989791d8507c5caef850beb505c",
+      "sourcePath": "src/openbook/if_i_had_you.ly.tera",
+      "sourceVersion": "Wikifonia"
+    },
+    {
+      "id": "openbook-lullaby-of-birdland-fake",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 129,
+      "compositionKey": "original-129",
+      "mode": "Minor",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/lullaby_of_birdland.ly.tera",
+          "path": "src/openbook/lullaby_of_birdland.ly.tera",
+          "sha256": "0925080643d8010b7716d8b14ddb3fcd6e9a48728159774c5252925acabb439c",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 5877,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 9,
+            "quote": "piece = \"Relaxed Swing\""
+          }
+        ]
+      },
+      "melodyId": "openbook-lullaby-of-birdland-fake",
+      "sourceSha256": "0925080643d8010b7716d8b14ddb3fcd6e9a48728159774c5252925acabb439c",
+      "sourcePath": "src/openbook/lullaby_of_birdland.ly.tera",
+      "sourceVersion": "Fake"
+    },
+    {
+      "id": "openbook-meditation-laurent",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 135,
+      "compositionKey": "original-135",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/meditation.ly.tera",
+          "path": "src/openbook/meditation.ly.tera",
+          "sha256": "3702ade7c0494bf813d7ebc5f282ff435abe720fc538c42ef4d804ccef6fba4d",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 2282,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 7,
+            "quote": "style = \"Bossa Nova\""
+          }
+        ]
+      },
+      "melodyId": "openbook-meditation-laurent",
+      "sourceSha256": "3702ade7c0494bf813d7ebc5f282ff435abe720fc538c42ef4d804ccef6fba4d",
+      "sourcePath": "src/openbook/meditation.ly.tera",
+      "sourceVersion": "Laurent"
+    },
+    {
+      "id": "openbook-somebody-loves-me-wikifonia",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 191,
+      "compositionKey": "original-191",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/somebody_loves_me.ly.tera",
+          "path": "src/openbook/somebody_loves_me.ly.tera",
+          "sha256": "7835164374e6f9df1d9863170cf5659e2f7eb782c943d911583b2690b8b0757c",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 2810,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Swing\""
+          },
+          {
+            "line": 91,
+            "quote": "\\tempo \"Swing\" 4 = 144"
+          }
+        ]
+      },
+      "melodyId": "openbook-somebody-loves-me-wikifonia",
+      "sourceSha256": "7835164374e6f9df1d9863170cf5659e2f7eb782c943d911583b2690b8b0757c",
+      "sourcePath": "src/openbook/somebody_loves_me.ly.tera",
+      "sourceVersion": "Wikifonia"
+    },
+    {
+      "id": "openbook-star-eyes-real",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 196,
+      "compositionKey": "original-196",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/star_eyes.ly.tera",
+          "path": "src/openbook/star_eyes.ly.tera",
+          "sha256": "13fb213ade9dbe026e04071cae7785dfb9b948270952d0426d92d0d4d6eb74b9",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 2881,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 9,
+            "quote": "piece = \"Medium Swing\""
+          }
+        ]
+      },
+      "melodyId": "openbook-star-eyes-real",
+      "sourceSha256": "13fb213ade9dbe026e04071cae7785dfb9b948270952d0426d92d0d4d6eb74b9",
+      "sourcePath": "src/openbook/star_eyes.ly.tera",
+      "sourceVersion": "Real"
+    },
+    {
+      "id": "openbook-what-is-this-thing-called-love-wikifonia",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 228,
+      "compositionKey": "original-228",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/what_is_this_thing_called_love.ly.tera",
+          "path": "src/openbook/what_is_this_thing_called_love.ly.tera",
+          "sha256": "8703250bde849038a1bd98837df865bd3ad9884f299aad1206d695e69f60fb77",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 3700,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Swing\""
+          },
+          {
+            "line": 110,
+            "quote": "\\tempo \"Swing\" 4 = 144"
+          }
+        ]
+      },
+      "melodyId": "openbook-what-is-this-thing-called-love-wikifonia",
+      "sourceSha256": "8703250bde849038a1bd98837df865bd3ad9884f299aad1206d695e69f60fb77",
+      "sourcePath": "src/openbook/what_is_this_thing_called_love.ly.tera",
+      "sourceVersion": "Wikifonia"
+    },
+    {
+      "id": "openbook-afternoon-in-paris-real",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 1,
+      "compositionKey": "original-1",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/afternoon_in_paris.ly.tera",
+          "path": "src/openbook/afternoon_in_paris.ly.tera",
+          "sha256": "e36d59157f5eed52a65c2a349a0bab511310827c31c6eb4b8a0b11cb0319fa90",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 4373,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Swing\""
+          }
+        ]
+      },
+      "melodyId": "openbook-afternoon-in-paris-real",
+      "sourceSha256": "e36d59157f5eed52a65c2a349a0bab511310827c31c6eb4b8a0b11cb0319fa90",
+      "sourcePath": "src/openbook/afternoon_in_paris.ly.tera",
+      "sourceVersion": "Real"
+    },
+    {
+      "id": "openbook-blue-bossa-real",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 21,
+      "compositionKey": "original-21",
+      "mode": "Minor",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/blue_bossa.ly.tera",
+          "path": "src/openbook/blue_bossa.ly.tera",
+          "sha256": "a984d7fd3a2e21ea2ae65c308d263912b826bc35c718ec863c30abf3d03d1b3c",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 3942,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 9,
+            "quote": "piece = \"Bossa Nova\""
+          }
+        ]
+      },
+      "melodyId": "openbook-blue-bossa-real",
+      "sourceSha256": "a984d7fd3a2e21ea2ae65c308d263912b826bc35c718ec863c30abf3d03d1b3c",
+      "sourcePath": "src/openbook/blue_bossa.ly.tera",
+      "sourceVersion": "Real"
+    },
+    {
+      "id": "openbook-flamingo-fake",
+      "melodyId": "openbook-flamingo-fake",
+      "sourceSha256": "ea7e5702a8c76d9c65d9fe9e15111cb88e1f4e533517deb990d7dd38adc7ec28",
+      "sourcePath": "src/openbook/flamingo.ly.tera",
+      "sourceVersion": "Fake",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 66,
+      "compositionKey": "original-66",
+      "mode": "Major",
+      "evidence": {
+        "basis": "same-composition",
+        "referenceId": "composition:original-66"
+      }
+    },
+    {
+      "id": "openbook-four-fake",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 69,
+      "compositionKey": "original-69",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/four.ly.tera",
+          "path": "src/openbook/four.ly.tera",
+          "sha256": "6f3830e381705e27ac539652344b9ccb64cdd79067486c0fc0bebc49a61489c4",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 4193,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Medium Swing\""
+          }
+        ]
+      },
+      "melodyId": "openbook-four-fake",
+      "sourceSha256": "6f3830e381705e27ac539652344b9ccb64cdd79067486c0fc0bebc49a61489c4",
+      "sourcePath": "src/openbook/four.ly.tera",
+      "sourceVersion": "Fake"
+    },
+    {
+      "id": "openbook-i-can-t-believe-that-you-re-in-love-with-me-wikifonia",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 82,
+      "compositionKey": "original-82",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/i_cant_believe_that_youre_in_love_with_me.ly.tera",
+          "path": "src/openbook/i_cant_believe_that_youre_in_love_with_me.ly.tera",
+          "sha256": "8857ee998ba1044db5a7b3d6ea7d25aa5795b2072451a2ff6ca4e948b3099a84",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 2831,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Swing\""
+          },
+          {
+            "line": 91,
+            "quote": "\\tempo \"Swing\" 4 = 120"
+          }
+        ]
+      },
+      "melodyId": "openbook-i-can-t-believe-that-you-re-in-love-with-me-wikifonia",
+      "sourceSha256": "8857ee998ba1044db5a7b3d6ea7d25aa5795b2072451a2ff6ca4e948b3099a84",
+      "sourcePath": "src/openbook/i_cant_believe_that_youre_in_love_with_me.ly.tera",
+      "sourceVersion": "Wikifonia"
+    },
+    {
+      "id": "openbook-i-wish-you-love-fake",
+      "melodyId": "openbook-i-wish-you-love-fake",
+      "sourceSha256": "e4144fd525fd432bff9794865ff4a2bda09f98532afef088fb32fa84f623c0f8",
+      "sourcePath": "src/openbook/i_wish_you_love.ly.tera",
+      "sourceVersion": "Fake",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 94,
+      "compositionKey": "original-94",
+      "mode": "Major",
+      "evidence": {
+        "basis": "same-composition",
+        "referenceId": "composition:original-94"
+      }
+    },
+    {
+      "id": "openbook-just-friends-real",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 113,
+      "compositionKey": "original-113",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/just_friends.ly.tera",
+          "path": "src/openbook/just_friends.ly.tera",
+          "sha256": "8b86a4378508bf0be9a1cf3163fa1f2003667fb28033d1009269cf871575a8f3",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 5188,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 9,
+            "quote": "piece = \"Medium Swing\""
+          }
+        ]
+      },
+      "melodyId": "openbook-just-friends-real",
+      "sourceSha256": "8b86a4378508bf0be9a1cf3163fa1f2003667fb28033d1009269cf871575a8f3",
+      "sourcePath": "src/openbook/just_friends.ly.tera",
+      "sourceVersion": "Real"
+    },
+    {
+      "id": "openbook-misty-real",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 138,
+      "compositionKey": "original-138",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/misty.ly.tera",
+          "path": "src/openbook/misty.ly.tera",
+          "sha256": "bb2b4bc7add6df3aa4276750d40156e289854177df9dbbf752117cbee4571378",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 6906,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 9,
+            "quote": "piece = \"Slowly, with a smooth swing\""
+          }
+        ]
+      },
+      "melodyId": "openbook-misty-real",
+      "sourceSha256": "bb2b4bc7add6df3aa4276750d40156e289854177df9dbbf752117cbee4571378",
+      "sourcePath": "src/openbook/misty.ly.tera",
+      "sourceVersion": "Real"
+    },
+    {
+      "id": "openbook-on-the-sunny-side-of-the-street-fake",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 159,
+      "compositionKey": "original-159",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/on_the_sunny_side_of_the_street.ly.tera",
+          "path": "src/openbook/on_the_sunny_side_of_the_street.ly.tera",
+          "sha256": "dbce7202c932e795a5b20c6d60533232e7d2169ed2f7e4ce2cbc0c1b7d994963",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 3487,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 9,
+            "quote": "piece = \"Medium swing\""
+          }
+        ]
+      },
+      "melodyId": "openbook-on-the-sunny-side-of-the-street-fake",
+      "sourceSha256": "dbce7202c932e795a5b20c6d60533232e7d2169ed2f7e4ce2cbc0c1b7d994963",
+      "sourcePath": "src/openbook/on_the_sunny_side_of_the_street.ly.tera",
+      "sourceVersion": "Fake"
+    },
+    {
+      "id": "openbook-shiny-stockings-fake",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 183,
+      "compositionKey": "original-183",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/shiny_stockings.ly.tera",
+          "path": "src/openbook/shiny_stockings.ly.tera",
+          "sha256": "0346520b853778e29d2de7a6f8591114cc7e08b14693b10565585992ddeb8ca5",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 2573,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 9,
+            "quote": "piece = \"Medium Swing\""
+          },
+          {
+            "line": 82,
+            "quote": "\\tempo \"Medium Swing\" 2 = 72"
+          }
+        ]
+      },
+      "melodyId": "openbook-shiny-stockings-fake",
+      "sourceSha256": "0346520b853778e29d2de7a6f8591114cc7e08b14693b10565585992ddeb8ca5",
+      "sourcePath": "src/openbook/shiny_stockings.ly.tera",
+      "sourceVersion": "Fake"
+    },
+    {
+      "id": "openbook-there-will-never-be-another-you-real",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 210,
+      "compositionKey": "original-210",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/there_will_never_be_another_you.ly.tera",
+          "path": "src/openbook/there_will_never_be_another_you.ly.tera",
+          "sha256": "872c7132e6110c2d262952be7931ff520b60e15134fb90ecfb27c50d66296d8b",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 5007,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 9,
+            "quote": "piece = \"Easy Swing\""
+          }
+        ]
+      },
+      "melodyId": "openbook-there-will-never-be-another-you-real",
+      "sourceSha256": "872c7132e6110c2d262952be7931ff520b60e15134fb90ecfb27c50d66296d8b",
+      "sourcePath": "src/openbook/there_will_never_be_another_you.ly.tera",
+      "sourceVersion": "Real"
+    },
+    {
+      "id": "openbook-wave-real",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 222,
+      "compositionKey": "original-222",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/wave.ly.tera",
+          "path": "src/openbook/wave.ly.tera",
+          "sha256": "d781c958ec637c61d7f63082db5950e4517c6f5ba605cf60393dd7c802aebdad",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 3711,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 10,
+            "quote": "piece = \"Medium Bossa Nova\""
+          }
+        ]
+      },
+      "melodyId": "openbook-wave-real",
+      "sourceSha256": "d781c958ec637c61d7f63082db5950e4517c6f5ba605cf60393dd7c802aebdad",
+      "sourcePath": "src/openbook/wave.ly.tera",
+      "sourceVersion": "Real"
+    },
+    {
+      "id": "openbook-oh-lady-be-good-wikifonia",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 116,
+      "compositionKey": "original-116",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/oh_lady_be_good.ly.tera",
+          "path": "src/openbook/oh_lady_be_good.ly.tera",
+          "sha256": "c80652305566cecca7552d57ec5aa58a4b0db201393e509bdfb99aaab6b13e9d",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 3130,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Swing\""
+          },
+          {
+            "line": 100,
+            "quote": "\\tempo \"Swing\" 4 = 144"
+          }
+        ]
+      },
+      "melodyId": "openbook-oh-lady-be-good-wikifonia",
+      "sourceSha256": "c80652305566cecca7552d57ec5aa58a4b0db201393e509bdfb99aaab6b13e9d",
+      "sourcePath": "src/openbook/oh_lady_be_good.ly.tera",
+      "sourceVersion": "Wikifonia"
+    },
+    {
+      "id": "openbook-ornithology-fake",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 160,
+      "compositionKey": "original-160",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/ornithology.ly.tera",
+          "path": "src/openbook/ornithology.ly.tera",
+          "sha256": "0400ad68f40dd51a6f4c855071876e9d30f3e0b1c3afb692fac4e839d454420c",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 2663,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Fast Swing\""
+          }
+        ]
+      },
+      "melodyId": "openbook-ornithology-fake",
+      "sourceSha256": "0400ad68f40dd51a6f4c855071876e9d30f3e0b1c3afb692fac4e839d454420c",
+      "sourcePath": "src/openbook/ornithology.ly.tera",
+      "sourceVersion": "Fake"
+    },
+    {
+      "id": "openbook-quiet-nights-of-quiet-stars-fake",
+      "melodyId": "openbook-quiet-nights-of-quiet-stars-fake",
+      "sourceSha256": "400e8d47083dd9e16f56fef2bf4783f737107ff51fd40a8140b4e028334384da",
+      "sourcePath": "src/openbook/quiet_nights_of_quiet_stars.ly.tera",
+      "sourceVersion": "Fake",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 40,
+      "compositionKey": "original-40",
+      "mode": "Major",
+      "evidence": {
+        "basis": "same-composition",
+        "referenceId": "composition:original-40"
+      }
+    },
+    {
+      "id": "openbook-recorda-me-wikifonia",
+      "melodyId": "openbook-recorda-me-wikifonia",
+      "sourceSha256": "d45a7329bb0962f8c330fc41b752ea9e60978b034bd5f04462e0de395e154957",
+      "sourcePath": "src/openbook/recorda_me.ly.tera",
+      "sourceVersion": "Wikifonia",
+      "feel": "straight",
+      "ratio": 0.5,
+      "unitBeats": 1,
+      "canonicalSong": 171,
+      "compositionKey": "original-171",
+      "mode": "Minor",
+      "evidence": {
+        "basis": "same-composition",
+        "referenceId": "composition:original-171"
+      }
+    },
+    {
+      "id": "openbook-a-night-in-tunisia-fake",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 153,
+      "compositionKey": "original-153",
+      "mode": "Minor",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/a_night_in_tunisia.ly.tera",
+          "path": "src/openbook/a_night_in_tunisia.ly.tera",
+          "sha256": "070d45e2fecf4e2fc84545237efca4e5c7bfa15e4770b8346545c02ae80157e8",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 5052,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Bright Swing\""
+          }
+        ]
+      },
+      "melodyId": "openbook-a-night-in-tunisia-fake",
+      "sourceSha256": "070d45e2fecf4e2fc84545237efca4e5c7bfa15e4770b8346545c02ae80157e8",
+      "sourcePath": "src/openbook/a_night_in_tunisia.ly.tera",
+      "sourceVersion": "Fake"
+    },
+    {
+      "id": "wikifonia-49-devil-may-care",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 49,
+      "compositionKey": "original-49",
+      "mode": "Minor",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://web.archive.org/web/20140701055029id_/http://www.synthzone.com/files/Wikifonia/Wikifonia.zip",
+          "path": "Wikifonia/Bob Dorough, Terrell P. Kirk - Devil May Care.mxl",
+          "sha256": "59eb237fb21dff0f63cffa4032a6e7edaec2893ec32295e9b8bfa29619102187",
+          "xmlSha256": "ca0d62d7bc4975ef33d42cea6ffd9ad18ec5cf73fbc7175789b6cd96868ee5b4",
+          "commit": null,
+          "bytes": 6942,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 103,
+            "quote": "Ballad/Easy Swing"
+          }
+        ]
+      },
+      "melodyId": "wikifonia-49-devil-may-care",
+      "sourceSha256": "59eb237fb21dff0f63cffa4032a6e7edaec2893ec32295e9b8bfa29619102187",
+      "sourcePath": "Wikifonia/Bob Dorough, Terrell P. Kirk - Devil May Care.mxl",
+      "sourceVersion": "Wikifonia"
+    },
+    {
+      "id": "openbook-it-don-t-mean-a-thing-real",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 108,
+      "compositionKey": "original-108",
+      "mode": "Minor",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/it_dont_mean_a_thing.ly.tera",
+          "path": "src/openbook/it_dont_mean_a_thing.ly.tera",
+          "sha256": "e717acfcfe249a969efbef3c2bdf90f2021666c98b800b043a2cabe40d4ba30e",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 4454,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 7,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 10,
+            "quote": "piece = \"Fast Swing\""
+          }
+        ]
+      },
+      "melodyId": "openbook-it-don-t-mean-a-thing-real",
+      "sourceSha256": "e717acfcfe249a969efbef3c2bdf90f2021666c98b800b043a2cabe40d4ba30e",
+      "sourcePath": "src/openbook/it_dont_mean_a_thing.ly.tera",
+      "sourceVersion": "Real"
+    },
+    {
+      "id": "openbook-let-it-snow-let-it-snow-let-it-snow-fake",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 120,
+      "compositionKey": "original-120",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/let_it_snow_let_it_snow_let_it_snow.ly.tera",
+          "path": "src/openbook/let_it_snow_let_it_snow_let_it_snow.ly.tera",
+          "sha256": "cc14099c856969cf72a8b59e55249e875d9feed9f41868c87327cb03209eed42",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 3377,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Swing\""
+          },
+          {
+            "line": 9,
+            "quote": "piece = \"Moderately\""
+          }
+        ]
+      },
+      "melodyId": "openbook-let-it-snow-let-it-snow-let-it-snow-fake",
+      "sourceSha256": "cc14099c856969cf72a8b59e55249e875d9feed9f41868c87327cb03209eed42",
+      "sourcePath": "src/openbook/let_it_snow_let_it_snow_let_it_snow.ly.tera",
+      "sourceVersion": "Fake"
+    },
+    {
+      "id": "openbook-love-for-sale-fake",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 124,
+      "compositionKey": "original-124",
+      "mode": "Minor",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/love_for_sale.ly.tera",
+          "path": "src/openbook/love_for_sale.ly.tera",
+          "sha256": "03c3a69492a35c06ab1a44c44875278c82635088bb8b5035b017615f69fd06b3",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 3917,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 9,
+            "quote": "piece = \"With Swinging Rhythm\""
+          }
+        ]
+      },
+      "melodyId": "openbook-love-for-sale-fake",
+      "sourceSha256": "03c3a69492a35c06ab1a44c44875278c82635088bb8b5035b017615f69fd06b3",
+      "sourcePath": "src/openbook/love_for_sale.ly.tera",
+      "sourceVersion": "Fake"
+    },
+    {
+      "id": "openbook-makin-whoopee-wikifonia",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 131,
+      "compositionKey": "original-131",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/makin_whoopee.ly.tera",
+          "path": "src/openbook/makin_whoopee.ly.tera",
+          "sha256": "d22b79bfabd5ff75dd772968af267d0b17c44c681cdf77f535226133d909db96",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 3238,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Jazz\""
+          },
+          {
+            "line": 8,
+            "quote": "piece = \"Swing\""
+          },
+          {
+            "line": 93,
+            "quote": "\\tempo \"Swing\" 4 = 144"
+          }
+        ]
+      },
+      "melodyId": "openbook-makin-whoopee-wikifonia",
+      "sourceSha256": "d22b79bfabd5ff75dd772968af267d0b17c44c681cdf77f535226133d909db96",
+      "sourcePath": "src/openbook/makin_whoopee.ly.tera",
+      "sourceVersion": "Wikifonia"
+    },
+    {
+      "id": "openbook-undecided-fake",
+      "feel": "swing",
+      "ratio": 0.67,
+      "unitBeats": 1,
+      "canonicalSong": 219,
+      "compositionKey": "original-219",
+      "mode": "Major",
+      "evidence": {
+        "basis": "own-source",
+        "source": {
+          "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/undecided.ly.tera",
+          "path": "src/openbook/undecided.ly.tera",
+          "sha256": "cb7b3c002063f0de34676ffc263b99d4502534205381cceb17ffddf3166a7f32",
+          "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+          "bytes": 3254,
+          "verified": true
+        },
+        "declarations": [
+          {
+            "line": 6,
+            "quote": "style = \"Swing\""
+          },
+          {
+            "line": 9,
+            "quote": "piece = \"Moderately\""
+          }
+        ]
+      },
+      "melodyId": "openbook-undecided-fake",
+      "sourceSha256": "cb7b3c002063f0de34676ffc263b99d4502534205381cceb17ffddf3166a7f32",
+      "sourcePath": "src/openbook/undecided.ly.tera",
+      "sourceVersion": "Fake"
+    }
+  ]
+}
