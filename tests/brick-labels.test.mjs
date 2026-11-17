@@ -11,13 +11,18 @@ test('the user-authored Autumn Leaves mapping preserves exact case, spaces and s
  for(const name of ['Autumn Leaves','autumn leaves','AUTUMN LEAVES']){
   const parts=brickNameParts(name,[2,7,0,11,4]);assert.equal(parts.map(p=>p.text).join(''),name);assert.deepEqual(parts.filter(p=>p.degree!==null).map(p=>p.degree),[5,10,3,2,7,0]);assert.deepEqual(parts.filter(p=>p.degree!==null).map(p=>p.text),[name.slice(0,2),name.slice(2,4),name.slice(4,6),name.slice(7,9),name.slice(9,11),name.slice(11,13)]);
  }
- const parts=brickNameParts('Autumn Leaves Opening',{nameColorRoots:[2,7,0,11,4]});assert.equal(parts.map(p=>p.text).join(''),'Autumn Leaves Opening');assert.deepEqual(parts.filter(p=>p.degree!==null).slice(6).map(p=>[p.text,p.degree]),[['Op',5],['en',10],['ing',3]]);
+ const parts=brickNameParts('Autumn Leaves Opening',{nameColorRoots:[2,7,0,11,4]});assert.equal(parts.map(p=>p.text).join(''),'Autumn Leaves Opening');assert.deepEqual(parts.filter(p=>p.degree!==null).slice(6).map(p=>[p.text,p.degree]),[['Opening',0]]);
 });
-test('all non-RN words use deterministic 2–3-letter chunks of actual representative roots, cycling without recoloring counts or punctuation',()=>{
- const name='Dominant Cycle 3 Steps',parts=brickNameParts(name,[2,7]),colored=parts.filter(p=>p.degree!==null);
- assert.equal(parts.map(p=>p.text).join(''),name);assert.deepEqual(colored.map(p=>p.degree),colored.map((p,i)=>i%2?7:2));assert.ok(colored.every(p=>p.text.length>=2&&p.text.length<=3));assert.ok(parts.some(p=>p.degree===null&&p.text.includes('3')));
- assert.deepEqual(brickNameParts('Dizzy',[-1,14]),[{text:'Di',degree:11},{text:'zzy',degree:2}]);assert.deepEqual(brickNameParts('Dizzy',{roots:[-1,14]}),brickNameParts('Dizzy',[-1,14]));
+test('name colors fit the actual root sequence once rather than inventing repeated chord events',()=>{
+ assert.deepEqual(brickNameParts('Dropback',[0,9]),[{text:'Drop',degree:0},{text:'back',degree:9}]);
+ assert.deepEqual(brickNameParts('Pullback',[2,7,10,9]),[{text:'Pu',degree:2},{text:'ll',degree:7},{text:'ba',degree:10},{text:'ck',degree:9}]);
+ assert.deepEqual(brickNameParts('Dizzy',[-1,14]),[{text:'Di',degree:11},{text:'zzy',degree:2}]);
+ const name='Dominant Cycle 3 Steps',parts=brickNameParts(name,[2,7]);assert.equal(parts.map(p=>p.text).join(''),name);assert.deepEqual(parts.filter(p=>p.degree!==null).map(p=>[p.text,p.degree]),[['Dominant',2],['C',2],['ycle',7],['Steps',7]]);assert.ok(parts.some(p=>p.degree===null&&p.text.includes('3')));
+ assert.deepEqual(brickNameParts('Dizzy',{roots:[-1,14]}),brickNameParts('Dizzy',[-1,14]));
  assert.equal(brickNameParts('7 Chord Dropback',[]).every(p=>p.degree===null),true);assert.deepEqual(brickNameParts('Dizzy',{nameColorRoots:[NaN,Infinity,'7']}),brickNameParts('Dizzy'));
+ // An eight-event repeated SPOT excerpt cannot fit eight distinct chunks
+ // into four letters: retain evenly sampled real roots and both endpoints.
+ assert.deepEqual(brickNameParts('SPOT',[4,9,2,7,4,9,2,7]),[{text:'S',degree:4},{text:'P',degree:2},{text:'O',degree:9},{text:'T',degree:7}]);
 });
 test('explicit RN functions, extensions and quality symbols retain their semantic degree within colored names',()=>{
  for(const [name,expected]of [['IV and Bird',[5]],['vii°7/ii–ii–V–I',[1,2,7,0]],['♭IIIΔ7–V7–i',[3,7,0]],['♯iv(ø)–VII7',[6,11]]]){
