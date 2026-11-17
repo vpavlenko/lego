@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "sourceCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+  "entries": [
+    {
+      "canonicalSong": 35,
+      "canonicalTitle": "Chelsea Bridge",
+      "canonicalRoadmapTonic": [
+        "Bb",
+        "Minor"
+      ],
+      "sourceDeclaredKey": {
+        "root": "Db",
+        "mode": "Major"
+      },
+      "normalizationTonic": {
+        "root": "Db",
+        "mode": "Major"
+      },
+      "sourceSha256": "8d43e2d2719dae13650ab9f10aaf562fe6572fde2d611ab22c6c563fda600175",
+      "sourcePath": "src/openbook/chelsea_bridge.ly.tera",
+      "sourceVersion": "Fake",
+      "melodyId": "openbook-chelsea-bridge-fake",
+      "evidence": {
+        "tonicChordEvents": [
+          {
+            "index": 8,
+            "symbol": "Db6",
+            "start": 27.0,
+            "end": 31.0,
+            "sourceLine": 63
+          },
+          {
+            "index": 19,
+            "symbol": "Db6",
+            "start": 59.0,
+            "end": 63.0,
+            "sourceLine": 63
+          },
+          {
+            "index": 20,
+            "symbol": "Db6",
+            "start": 63.0,
+            "end": 65.0,
+            "sourceLine": 69
+          },
+          {
+            "index": 47,
+            "symbol": "Db6",
+            "start": 123.0,
+            "end": 127.0,
+            "sourceLine": 83
+          }
+        ],
+        "dominantResolutions": [
+          {
+            "dominant": {
+              "index": 7,
+              "symbol": "Ab13",
+              "start": 23.0,
+              "end": 27.0,
+              "sourceLine": 63
+            },
+            "tonic": {
+              "index": 8,
+              "symbol": "Db6",
+              "start": 27.0,
+              "end": 31.0,
+              "sourceLine": 63
+            }
+          },
+          {
+            "dominant": {
+              "index": 18,
+              "symbol": "Ab13",
+              "start": 55.0,
+              "end": 59.0,
+              "sourceLine": 63
+            },
+            "tonic": {
+              "index": 19,
+              "symbol": "Db6",
+              "start": 59.0,
+              "end": 63.0,
+              "sourceLine": 63
+            }
+          },
+          {
+            "dominant": {
+              "index": 46,
+              "symbol": "Ab13",
+              "start": 119.0,
+              "end": 123.0,
+              "sourceLine": 83
+            },
+            "tonic": {
+              "index": 47,
+              "symbol": "Db6",
+              "start": 123.0,
+              "end": 127.0,
+              "sourceLine": 83
+            }
+          }
+        ],
+        "finalChord": {
+          "index": 47,
+          "symbol": "Db6",
+          "start": 123.0,
+          "end": 127.0,
+          "sourceLine": 83
+        }
+      },
+      "basis": "Literal authored Db-major key, three complete Ab13\u2192Db6 cadences and final Db6. This independent source arrangement retains Db-major normalization; the original Bb-minor roadmap is unchanged. No relative-key guess or source note edit."
+    }
+  ]
+}

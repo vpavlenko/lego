@@ -18,7 +18,7 @@ import {parseBrickDictionary} from '../src/music/brick-parser.mjs';
 import {fingerprint,notesFingerprint,byteHash,validateReviewedEntry} from '../src/music/reviewed-melodies.mjs';
 export {fingerprint,notesFingerprint,byteHash} from '../src/music/reviewed-melodies.mjs';
 const project=fileURLToPath(new URL('../',import.meta.url)),read=file=>JSON.parse(fs.readFileSync(file,'utf8'));
-const entriesOf=data=>Array.isArray(data.entries)?data.entries:Object.values(data.entries??{});
+const entriesOf=data=>Array.isArray(data)?data:Array.isArray(data.entries)?data.entries:Object.values(data.entries??{});
 const mergeUnique=(old,added,key)=>{const result=new Map(old.map(value=>[key(value),value]));for(const value of added){const id=key(value),prior=result.get(id);if(prior&&fingerprint(prior)!==fingerprint(value))throw Error('Conflicting existing source identity '+id);if(!prior)result.set(id,value);}return [...result.values()];};
 function mergeDictionary(old,added){const byName=new Map(old.map(value=>[value.name,structuredClone(value)]));for(const value of added){const prior=byName.get(value.name);if(!prior){byName.set(value.name,value);continue;}prior.definitions=mergeUnique(prior.definitions,value.definitions,d=>d.id);prior.standards=mergeUnique(prior.standards,value.standards,s=>s.song);prior.support=new Set(prior.standards.map(s=>s.composition)).size;}return [...byName.values()].sort((a,b)=>b.support-a.support||a.name.localeCompare(b.name));}
 export function importReviewedMelodies({root=project,inputPaths,reviewPath,dictionaryPath=path.join(root,'../Impro-Visor/vocab/My.dictionary'),apply=false}={}){
@@ -27,12 +27,12 @@ export function importReviewedMelodies({root=project,inputPaths,reviewPath,dicti
  const input=inputPaths.flatMap(input=>entriesOf(read(input))),reviews=review.entries??[];if(new Set(input.map(e=>e.id)).size!==input.length||new Set(reviews.map(e=>e.melodyId)).size!==reviews.length)throw Error('Duplicate reviewed source ID');
  if(input.length!==reviews.length||input.some(e=>!reviews.some(r=>r.melodyId===e.id)))throw Error('Candidate/review IDs differ; no implicit source intake');
  const originals=read(file('dist/data/roadmaps.json')).songs,priorData=read(file('dist/data/additional-standards.json')),prior=priorData.songs,runtime=optional('dist/data/standards.json',{songs:[...originals,...prior]}).songs,qualities=read(file('src/music/chord-vocabulary.json')).qualities,merged=read(file('dist/data/melody-sources.json')),openbook=read(file('dist/data/openbook-melodies.json')),openAudit=read(file('evidence/openbook-melody-audit.json')),intake=optional('evidence/melody-source-intake.json',{records:{records:[]}}),discovery=read(file('dist/data/discovered-bricks.json'));
- const harmonic=optional('src/music/melody-tonic-references.json',{entries:[]}).entries,primary=optional('src/music/melody-primary-voices.json',{entries:[]}).entries;
+ const harmonic=optional('src/music/melody-tonic-references.json',{entries:[]}).entries,arrangements=optional('src/music/melody-arrangement-references.json',{entries:[]}).entries,primary=optional('src/music/melody-primary-voices.json',{entries:[]}).entries;
  const candidates=[],accepted=[],alreadyPresent=[],midiCopies=[],proofCopies=[];
  for(const sourceEntry of input){
   const record=reviews.find(r=>r.melodyId===sourceEntry.id);for(const key of ['sourceFile','midiFile','proofFile','proofSha256'])if(typeof record[key]!=='string')throw Error('Review file identity missing: '+key);
   const sourceBytes=fs.readFileSync(resolve(record.sourceFile)),midiBytes=fs.readFileSync(resolve(record.midiFile)),proofBytes=fs.readFileSync(resolve(record.proofFile));if(byteHash(proofBytes)!==record.proofSha256)throw Error('Reviewed compiler proof bytes differ');
-  const proof=JSON.parse(proofBytes),validated=validateReviewedEntry(sourceEntry,record,{canonicalSongs:runtime,sourceBytes,midiBytes,proof,harmonicReferences:harmonic,primaryVoiceReferences:primary});
+  const proof=JSON.parse(proofBytes),validated=validateReviewedEntry(sourceEntry,record,{canonicalSongs:runtime,sourceBytes,midiBytes,proof,harmonicReferences:harmonic,primaryVoiceReferences:primary,arrangementReferences:arrangements});
   const entry=structuredClone(sourceEntry);entry.compositionTitle=validated.canonical.title;entry.midi='melodies/'+entry.id+'.mid';
   const existing=merged.entries[entry.id];if(existing&&fingerprint(existing)!==fingerprint(entry))throw Error('Existing melody source changed: '+entry.id);
   if(prior.some(song=>song.melodyId===entry.id)){if(!existing)throw Error('Existing arrangement lacks its source');alreadyPresent.push(entry.id);continue;}

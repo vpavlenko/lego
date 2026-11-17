@@ -28,16 +28,29 @@ export function validateMelodyMidi(entry,bytes){
  const sourceMeters=entry.provenance?.midiMeterEvents;if(sourceMeters&&!same(meters,sourceMeters))fail('MIDI meter events differ');
  return {notes:actual.length,totalBeats:end,meters};
 }
-function validateHarmonicReference(entry,canonical,references){
+export function validateHarmonicReference(entry,canonical,references){
  const p=entry.provenance,declared=p.sourceDeclaredKey??p.sourceKeySignature;
- if(!declared||declared.mode===entry.tonic[1]&&pitch(declared.root)===pitch(entry.tonic[0]))return;
- const ref=references.find(r=>r.melodyId===entry.id);if(!ref||!same(ref,p.harmonicTonicReference)||ref.canonicalSong!==canonical.index||ref.sourcePath!==p.path||ref.sourceSha256!==p.sha256||ref.sourceVersion!==p.sourceVersion||!same(ref.sourceDeclaredKey,declared)||!same(ref.normalizationTonic,{root:entry.tonic[0],mode:entry.tonic[1]})||entry.tonic[1]!=='Minor'||canonical.tonic[1]!=='Minor'||pitch(entry.tonic[0])!==pitch(canonical.tonic[0]))fail('harmonic normalization lacks a pinned reference');
+ if(!declared||declared.mode===entry.tonic[1]&&pitch(declared.root)===pitch(entry.tonic[0])&&!p.harmonicTonicReference)return;
+ const ref=references.find(r=>r.melodyId===entry.id);if(!ref||!same(ref,p.harmonicTonicReference)||ref.canonicalSong!==canonical.index||ref.sourcePath!==p.path||ref.sourceSha256!==p.sha256||ref.sourceVersion!==p.sourceVersion||!same(ref.sourceDeclaredKey,declared)||!same(ref.normalizationTonic,{root:entry.tonic[0],mode:entry.tonic[1]})||entry.tonic[1]!=='Minor'||canonical.tonic[1]!=='Minor')fail('harmonic normalization lacks a pinned reference');
+ const delta=mod(pitch(entry.tonic[0])-pitch(canonical.tonic[0]));if(ref.sourceTransposition){if(!same(ref.sourceTransposition.canonicalTonic,canonical.tonic)||ref.sourceTransposition.semitones!==delta)fail('harmonic source transposition differs');}else if(delta!==0)fail('harmonic source transposition lacks an explicit reference');
+ if(ref.evidence.canonicalRoadmap?.tonic&&!same(ref.evidence.canonicalRoadmap.tonic,canonical.tonic))fail('harmonic canonical roadmap tonic differs');
  const tonic=pitch(entry.tonic[0]),checked=event=>{const c=entry.chords[event.index];if(!c||['symbol','start','end','sourceLine'].some(k=>c[k]!==event[k]))fail('harmonic reference event changed');const root=pitch(c.symbol),intervals=new Set((c.sourceCorePitches??c.sourcePitches??[]).map(n=>mod(n-root)));return {root,intervals};};
  if(ref.evidence.tonicChordEvents.length<2||!ref.evidence.dominantResolutions.length)fail('insufficient harmonic normalization evidence');
  for(const e of ref.evidence.tonicChordEvents){const c=checked(e);if(c.root!==tonic||!c.intervals.has(3)||c.intervals.has(4))fail('harmonic normalization tonic evidence differs');}
  for(const r of ref.evidence.dominantResolutions){const d=checked(r.dominant),t=checked(r.tonic);if(r.tonic.index!==r.dominant.index+1||!close(r.dominant.end,r.tonic.start)||d.root!==mod(tonic+7)||![4,10].every(n=>d.intervals.has(n))||t.root!==tonic||!t.intervals.has(3)||t.intervals.has(4))fail('harmonic normalization V7-i evidence differs');}
 }
-export function validateReviewedEntry(entry,review,{canonicalSongs,sourceBytes,midiBytes,proof,harmonicReferences=[],primaryVoiceReferences=[]}){
+/** A separately presented source arrangement may have another mode only when
+ * literal key, compiled major cadence and final tonic all agree exactly. */
+export function validateSourceArrangementReference(entry,canonical,references){
+ const p=entry.provenance,declared=p.sourceDeclaredKey??p.sourceKeySignature,ref=references.find(r=>r.melodyId===entry.id);
+ if(!ref||!same(ref,p.sourceArrangementReference)||ref.canonicalSong!==canonical.index||ref.canonicalTitle!==canonical.title||!same(ref.canonicalRoadmapTonic,canonical.tonic)||ref.sourcePath!==p.path||ref.sourceSha256!==p.sha256||ref.sourceVersion!==p.sourceVersion||!same(ref.sourceDeclaredKey,declared)||!same(ref.normalizationTonic,declared)||!same(ref.normalizationTonic,{root:entry.tonic[0],mode:entry.tonic[1]})||entry.tonic[1]!=='Major'||canonical.tonic[1]!=='Minor')fail('different-mode arrangement lacks an exact pinned source reference');
+ const tonic=pitch(entry.tonic[0]),checked=event=>{const c=entry.chords[event.index];if(!c||['symbol','start','end','sourceLine'].some(k=>c[k]!==event[k]))fail('source arrangement evidence event changed');const root=pitch(c.symbol),intervals=new Set((c.sourceCorePitches??c.sourcePitches??[]).map(n=>mod(n-root)));return {root,intervals};},isTonic=c=>c.root===tonic&&[0,4,7].every(n=>c.intervals.has(n))&&!c.intervals.has(3),evidence=ref.evidence;
+ if(!evidence||new Set(evidence.tonicChordEvents?.map(e=>e.index)).size<2||!evidence.dominantResolutions?.length)fail('insufficient source arrangement cadence evidence');
+ for(const event of evidence.tonicChordEvents)if(!isTonic(checked(event)))fail('source arrangement major tonic evidence differs');
+ for(const r of evidence.dominantResolutions){const d=checked(r.dominant),t=checked(r.tonic);if(r.tonic.index!==r.dominant.index+1||!close(r.dominant.end,r.tonic.start)||d.root!==mod(tonic+7)||![4,10].every(n=>d.intervals.has(n))||!isTonic(t))fail('source arrangement V7-I evidence differs');}
+ if(evidence.finalChord?.index!==entry.chords.length-1||!isTonic(checked(evidence.finalChord)))fail('source arrangement final major tonic differs');
+}
+export function validateReviewedEntry(entry,review,{canonicalSongs,sourceBytes,midiBytes,proof,harmonicReferences=[],primaryVoiceReferences=[],arrangementReferences=[]}){
  if(!entry||!review||entry.id!==review.melodyId||!Number.isInteger(review.canonicalSong))fail('review identity missing');
  const canonical=canonicalSongs.find(s=>s.index===review.canonicalSong&&!Number.isInteger(s.arrangementOf));if(!canonical||canonical.title!==review.canonicalTitle)fail('canonical composition identity differs');
  const p=entry.provenance??{};
@@ -48,7 +61,8 @@ export function validateReviewedEntry(entry,review,{canonicalSongs,sourceBytes,m
  if(review.noteCount!==entry.notes.length||review.totalBeats!==entry.totalBeats||!(entry.totalBeats>0)||!entry.notes.length)fail('reviewed duration or note count differs');
  let previousEnd=0;for(const n of [...entry.notes].sort((a,b)=>a.start-b.start||a.pitch-b.pitch)){if(!Number.isInteger(n.pitch)||n.pitch<0||n.pitch>127||!Number.isInteger(n.velocity)||n.velocity<1||n.velocity>127||!Number.isFinite(n.start)||!Number.isFinite(n.duration)||n.duration<=0||n.start<-EPS||n.start<previousEnd-EPS||n.start+n.duration>entry.totalBeats+EPS)fail('melody is polyphonic or outside the exact source timeline');previousEnd=n.start+n.duration;}
  let end=0;for(const c of entry.chords??[]){if(!Number.isFinite(c.start)||!Number.isFinite(c.end)||!close(c.start,end)||!(c.end>c.start)||c.end>entry.totalBeats+EPS)fail('harmony does not cover the exact source timeline');end=c.end;}if(!close(end,entry.totalBeats))fail('incomplete source harmony');
- if(!entry.tonic||entry.tonic[1]!==canonical.tonic[1])fail('source and canonical mode require explicit review');
+ if(!entry.tonic)fail('source tonic is missing');
+ if(entry.tonic[1]!==canonical.tonic[1]||p.sourceArrangementReference)validateSourceArrangementReference(entry,canonical,arrangementReferences);
  validateHarmonicReference(entry,canonical,harmonicReferences);
  if(p.curatedPrimaryVoice){const ref=primaryVoiceReferences.find(r=>r.melodyId===entry.id);if(!ref||ref.sourcePath!==p.path||ref.sourceSha256!==p.sha256||ref.sourceVersion!==p.sourceVersion||!same(ref.events,p.curatedPrimaryVoice.events)||!same(ref.evidence,p.curatedPrimaryVoice.evidence))fail('primary voice choice lacks a pinned reference');for(const e of ref.events)if(!entry.notes.some(n=>n.pitch===e.selectedPitch&&close(n.start,e.start)&&close(n.duration,e.duration))||entry.notes.some(n=>e.omittedPitches.includes(n.pitch)&&close(n.start,e.start)&&close(n.duration,e.duration)))fail('primary voice selection differs');}
  const midi=validateMelodyMidi(entry,midiBytes);if(review.midiSha256!==byteHash(midiBytes))fail('reviewed MIDI digest differs');
