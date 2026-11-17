@@ -1,0 +1,917 @@
+{
+  "version": 1,
+  "melodyId": "openbook-satin-doll-laurent",
+  "performanceIndexAtReview": 332,
+  "source": {
+    "repository": "https://github.com/veltzer/book-openbook",
+    "commit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+    "path": "src/openbook/satin_doll.ly.tera",
+    "sha256": "bc81849b766df62a5825a53c4bd70437877f1a1e69dbb6a3aa417ca9a1e722f5",
+    "version": "Laurent",
+    "writtenMeter": [
+      4,
+      4
+    ],
+    "writtenTempo": "\\tempo \"Andante\" 4 = 60",
+    "style": "Jazz",
+    "piece": "Smoothly",
+    "explicitSwingMark": false
+  },
+  "witness": {
+    "archiveUrl": "https://web.archive.org/web/20140701055029id_/http://www.synthzone.com/files/Wikifonia/Wikifonia.zip",
+    "archiveSha256": "e7bce509462a73cee175308b6a3cdafa9effd6e8958b3ce03b4edb293cc6b691",
+    "member": "Wikifonia/Billy Strayhorn, Duke Ellington - Satin Doll.mxl",
+    "memberSha256": "5f42c3fd67ee40929a699fb4e4cfc6580558dee676dffd3e0abae4f8e3e72d05",
+    "xmlSha256": "0a91e013e1519a19c4fc0ac1d59a47c661e36ade5ace4a4e94c71d748728e6d1",
+    "writtenMeter": [
+      4,
+      4
+    ],
+    "writtenMeasures": 26,
+    "performedSourceMeasureNumbers": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26"
+    ],
+    "explicitSwingMark": false
+  },
+  "compiler": {
+    "version": "LilyPond 2.26.0",
+    "sourceNotes": 97,
+    "sourceQuarterBeats": 128,
+    "sourceNotesSha256": "cfd8c87556030369f07ae973149c3b383ac983cc05eff4f8479898dc5b54fe6a",
+    "normalAndDiagnosticMidiEventsIdentical": true,
+    "committedSourceNotesEqualFreshCompiler": true
+  },
+  "counts": {
+    "reviewedCells": 14,
+    "ordinaryPairs": 12,
+    "tiedFirstSegments": 2,
+    "ordinaryHalfSplitCells": 43,
+    "unreviewedThreeQuarterSplitCells": 0,
+    "otherRhythmicGridCells": 0,
+    "ambiguousHeldOffCells": 0
+  },
+  "sourceMidi": {
+    "path": "dist/melodies/openbook-satin-doll-laurent.mid",
+    "sha256": "f4a81eecef547d1ceafad014b7bb25874e417731a5b310393aecd011a8311fbb"
+  },
+  "cells": [
+    {
+      "start": 0,
+      "performedBar": 1,
+      "kind": "dotted-eighth-sixteenth-pair",
+      "compiledWrittenSegments": [
+        {
+          "start": 0.0,
+          "duration": 0.75,
+          "sourceLine": 196,
+          "sourceColumn": 2
+        },
+        {
+          "start": 0.75,
+          "duration": 0.25,
+          "sourceLine": 196,
+          "sourceColumn": 7
+        }
+      ],
+      "compiledMergedEvents": [
+        {
+          "index": 0,
+          "pitch": 69,
+          "start": 0.0,
+          "duration": 0.75
+        },
+        {
+          "index": 1,
+          "pitch": 67,
+          "start": 0.75,
+          "duration": 0.25
+        }
+      ],
+      "sourceLiteralLine": "\t\ta'8. g16 a8 g~ g a4. | r8 a4. g8 a4. | b8. a16 b8 a~ a b4. | r8 b4. a8 b4. |",
+      "witness": {
+        "writtenMeasureNumber": "1",
+        "withinMeasure": 0,
+        "notes": [
+          {
+            "start": 0,
+            "duration": 0.5,
+            "pitch": 69,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          },
+          {
+            "start": 0.5,
+            "duration": 0.5,
+            "pitch": 67,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          }
+        ]
+      },
+      "targetSplit": 0.67
+    },
+    {
+      "start": 8,
+      "performedBar": 3,
+      "kind": "dotted-eighth-sixteenth-pair",
+      "compiledWrittenSegments": [
+        {
+          "start": 8.0,
+          "duration": 0.75,
+          "sourceLine": 196,
+          "sourceColumn": 41
+        },
+        {
+          "start": 8.75,
+          "duration": 0.25,
+          "sourceLine": 196,
+          "sourceColumn": 45
+        }
+      ],
+      "compiledMergedEvents": [
+        {
+          "index": 8,
+          "pitch": 71,
+          "start": 8.0,
+          "duration": 0.75
+        },
+        {
+          "index": 9,
+          "pitch": 69,
+          "start": 8.75,
+          "duration": 0.25
+        }
+      ],
+      "sourceLiteralLine": "\t\ta'8. g16 a8 g~ g a4. | r8 a4. g8 a4. | b8. a16 b8 a~ a b4. | r8 b4. a8 b4. |",
+      "witness": {
+        "writtenMeasureNumber": "3",
+        "withinMeasure": 0,
+        "notes": [
+          {
+            "start": 0,
+            "duration": 0.5,
+            "pitch": 71,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          },
+          {
+            "start": 0.5,
+            "duration": 0.5,
+            "pitch": 69,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          }
+        ]
+      },
+      "targetSplit": 0.67
+    },
+    {
+      "start": 32,
+      "performedBar": 9,
+      "kind": "dotted-eighth-sixteenth-pair",
+      "compiledWrittenSegments": [
+        {
+          "start": 32.0,
+          "duration": 0.75,
+          "sourceLine": 196,
+          "sourceColumn": 2
+        },
+        {
+          "start": 32.75,
+          "duration": 0.25,
+          "sourceLine": 196,
+          "sourceColumn": 7
+        }
+      ],
+      "compiledMergedEvents": [
+        {
+          "index": 23,
+          "pitch": 69,
+          "start": 32.0,
+          "duration": 0.75
+        },
+        {
+          "index": 24,
+          "pitch": 67,
+          "start": 32.75,
+          "duration": 0.25
+        }
+      ],
+      "sourceLiteralLine": "\t\ta'8. g16 a8 g~ g a4. | r8 a4. g8 a4. | b8. a16 b8 a~ a b4. | r8 b4. a8 b4. |",
+      "witness": {
+        "writtenMeasureNumber": "1",
+        "withinMeasure": 0,
+        "notes": [
+          {
+            "start": 0,
+            "duration": 0.5,
+            "pitch": 69,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          },
+          {
+            "start": 0.5,
+            "duration": 0.5,
+            "pitch": 67,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          }
+        ]
+      },
+      "targetSplit": 0.67
+    },
+    {
+      "start": 40,
+      "performedBar": 11,
+      "kind": "dotted-eighth-sixteenth-pair",
+      "compiledWrittenSegments": [
+        {
+          "start": 40.0,
+          "duration": 0.75,
+          "sourceLine": 196,
+          "sourceColumn": 41
+        },
+        {
+          "start": 40.75,
+          "duration": 0.25,
+          "sourceLine": 196,
+          "sourceColumn": 45
+        }
+      ],
+      "compiledMergedEvents": [
+        {
+          "index": 31,
+          "pitch": 71,
+          "start": 40.0,
+          "duration": 0.75
+        },
+        {
+          "index": 32,
+          "pitch": 69,
+          "start": 40.75,
+          "duration": 0.25
+        }
+      ],
+      "sourceLiteralLine": "\t\ta'8. g16 a8 g~ g a4. | r8 a4. g8 a4. | b8. a16 b8 a~ a b4. | r8 b4. a8 b4. |",
+      "witness": {
+        "writtenMeasureNumber": "3",
+        "withinMeasure": 0,
+        "notes": [
+          {
+            "start": 0,
+            "duration": 0.5,
+            "pitch": 71,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          },
+          {
+            "start": 0.5,
+            "duration": 0.5,
+            "pitch": 69,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          }
+        ]
+      },
+      "targetSplit": 0.67
+    },
+    {
+      "start": 65,
+      "performedBar": 17,
+      "kind": "dotted-eighth-sixteenth-pair",
+      "compiledWrittenSegments": [
+        {
+          "start": 65.0,
+          "duration": 0.75,
+          "sourceLine": 208,
+          "sourceColumn": 4
+        },
+        {
+          "start": 65.75,
+          "duration": 0.25,
+          "sourceLine": 208,
+          "sourceColumn": 10
+        }
+      ],
+      "compiledMergedEvents": [
+        {
+          "index": 48,
+          "pitch": 70,
+          "start": 65.0,
+          "duration": 0.75
+        },
+        {
+          "index": 49,
+          "pitch": 69,
+          "start": 65.75,
+          "duration": 0.25
+        }
+      ],
+      "sourceLiteralLine": "\tc4 bes8. a16 g8. a16 bes4 | c bes8. a16 g8. a16 bes8 c~ | c1~ | c2. r8 c |",
+      "witness": {
+        "writtenMeasureNumber": "11",
+        "withinMeasure": 1,
+        "notes": [
+          {
+            "start": 1.0,
+            "duration": 0.5,
+            "pitch": 70,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          },
+          {
+            "start": 1.5,
+            "duration": 0.5,
+            "pitch": 69,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          }
+        ]
+      },
+      "targetSplit": 0.67
+    },
+    {
+      "start": 66,
+      "performedBar": 17,
+      "kind": "dotted-eighth-sixteenth-pair",
+      "compiledWrittenSegments": [
+        {
+          "start": 66.0,
+          "duration": 0.75,
+          "sourceLine": 208,
+          "sourceColumn": 14
+        },
+        {
+          "start": 66.75,
+          "duration": 0.25,
+          "sourceLine": 208,
+          "sourceColumn": 18
+        }
+      ],
+      "compiledMergedEvents": [
+        {
+          "index": 50,
+          "pitch": 67,
+          "start": 66.0,
+          "duration": 0.75
+        },
+        {
+          "index": 51,
+          "pitch": 69,
+          "start": 66.75,
+          "duration": 0.25
+        }
+      ],
+      "sourceLiteralLine": "\tc4 bes8. a16 g8. a16 bes4 | c bes8. a16 g8. a16 bes8 c~ | c1~ | c2. r8 c |",
+      "witness": {
+        "writtenMeasureNumber": "11",
+        "withinMeasure": 2,
+        "notes": [
+          {
+            "start": 2.0,
+            "duration": 0.5,
+            "pitch": 67,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          },
+          {
+            "start": 2.5,
+            "duration": 0.5,
+            "pitch": 69,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          }
+        ]
+      },
+      "targetSplit": 0.67
+    },
+    {
+      "start": 69,
+      "performedBar": 18,
+      "kind": "dotted-eighth-sixteenth-pair",
+      "compiledWrittenSegments": [
+        {
+          "start": 69.0,
+          "duration": 0.75,
+          "sourceLine": 208,
+          "sourceColumn": 31
+        },
+        {
+          "start": 69.75,
+          "duration": 0.25,
+          "sourceLine": 208,
+          "sourceColumn": 37
+        }
+      ],
+      "compiledMergedEvents": [
+        {
+          "index": 54,
+          "pitch": 70,
+          "start": 69.0,
+          "duration": 0.75
+        },
+        {
+          "index": 55,
+          "pitch": 69,
+          "start": 69.75,
+          "duration": 0.25
+        }
+      ],
+      "sourceLiteralLine": "\tc4 bes8. a16 g8. a16 bes4 | c bes8. a16 g8. a16 bes8 c~ | c1~ | c2. r8 c |",
+      "witness": {
+        "writtenMeasureNumber": "12",
+        "withinMeasure": 1,
+        "notes": [
+          {
+            "start": 1.0,
+            "duration": 0.5,
+            "pitch": 70,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          },
+          {
+            "start": 1.5,
+            "duration": 0.5,
+            "pitch": 69,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          }
+        ]
+      },
+      "targetSplit": 0.67
+    },
+    {
+      "start": 70,
+      "performedBar": 18,
+      "kind": "dotted-eighth-sixteenth-pair",
+      "compiledWrittenSegments": [
+        {
+          "start": 70.0,
+          "duration": 0.75,
+          "sourceLine": 208,
+          "sourceColumn": 41
+        },
+        {
+          "start": 70.75,
+          "duration": 0.25,
+          "sourceLine": 208,
+          "sourceColumn": 45
+        }
+      ],
+      "compiledMergedEvents": [
+        {
+          "index": 56,
+          "pitch": 67,
+          "start": 70.0,
+          "duration": 0.75
+        },
+        {
+          "index": 57,
+          "pitch": 69,
+          "start": 70.75,
+          "duration": 0.25
+        }
+      ],
+      "sourceLiteralLine": "\tc4 bes8. a16 g8. a16 bes4 | c bes8. a16 g8. a16 bes8 c~ | c1~ | c2. r8 c |",
+      "witness": {
+        "writtenMeasureNumber": "12",
+        "withinMeasure": 2,
+        "notes": [
+          {
+            "start": 2.0,
+            "duration": 0.5,
+            "pitch": 67,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          },
+          {
+            "start": 2.5,
+            "duration": 0.5,
+            "pitch": 69,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          }
+        ]
+      },
+      "targetSplit": 0.67
+    },
+    {
+      "start": 80,
+      "performedBar": 21,
+      "kind": "dotted-eighth-sixteenth-pair",
+      "compiledWrittenSegments": [
+        {
+          "start": 80.0,
+          "duration": 0.75,
+          "sourceLine": 209,
+          "sourceColumn": 1
+        },
+        {
+          "start": 80.75,
+          "duration": 0.25,
+          "sourceLine": 209,
+          "sourceColumn": 5
+        }
+      ],
+      "compiledMergedEvents": [
+        {
+          "index": 61,
+          "pitch": 74,
+          "start": 80.0,
+          "duration": 0.75
+        },
+        {
+          "index": 62,
+          "pitch": 72,
+          "start": 80.75,
+          "duration": 0.25
+        }
+      ],
+      "sourceLiteralLine": "\td8. c16 b8 a~ a8. b16 c4 | d8. c16 b8 a~ a8. b16 c8 d~ | d1~ | d8 r r4 r2 |",
+      "witness": {
+        "writtenMeasureNumber": "15",
+        "withinMeasure": 0,
+        "notes": [
+          {
+            "start": 0,
+            "duration": 0.5,
+            "pitch": 74,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          },
+          {
+            "start": 0.5,
+            "duration": 0.5,
+            "pitch": 72,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          }
+        ]
+      },
+      "targetSplit": 0.67
+    },
+    {
+      "start": 82,
+      "performedBar": 21,
+      "kind": "tied-first-segment",
+      "compiledWrittenSegments": [
+        {
+          "start": 82.0,
+          "duration": 0.75,
+          "sourceLine": 209,
+          "sourceColumn": 15
+        },
+        {
+          "start": 82.75,
+          "duration": 0.25,
+          "sourceLine": 209,
+          "sourceColumn": 19
+        }
+      ],
+      "compiledMergedEvents": [
+        {
+          "index": 64,
+          "pitch": 69,
+          "start": 81.5,
+          "duration": 1.25
+        },
+        {
+          "index": 65,
+          "pitch": 71,
+          "start": 82.75,
+          "duration": 0.25
+        }
+      ],
+      "sourceLiteralLine": "\td8. c16 b8 a~ a8. b16 c4 | d8. c16 b8 a~ a8. b16 c8 d~ | d1~ | d8 r r4 r2 |",
+      "witness": {
+        "writtenMeasureNumber": "15",
+        "withinMeasure": 2,
+        "notes": [
+          {
+            "start": 2.0,
+            "duration": 0.5,
+            "pitch": 69,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          },
+          {
+            "start": 2.5,
+            "duration": 0.5,
+            "pitch": 71,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          }
+        ]
+      },
+      "targetSplit": 0.67
+    },
+    {
+      "start": 84,
+      "performedBar": 22,
+      "kind": "dotted-eighth-sixteenth-pair",
+      "compiledWrittenSegments": [
+        {
+          "start": 84.0,
+          "duration": 0.75,
+          "sourceLine": 209,
+          "sourceColumn": 28
+        },
+        {
+          "start": 84.75,
+          "duration": 0.25,
+          "sourceLine": 209,
+          "sourceColumn": 32
+        }
+      ],
+      "compiledMergedEvents": [
+        {
+          "index": 67,
+          "pitch": 74,
+          "start": 84.0,
+          "duration": 0.75
+        },
+        {
+          "index": 68,
+          "pitch": 72,
+          "start": 84.75,
+          "duration": 0.25
+        }
+      ],
+      "sourceLiteralLine": "\td8. c16 b8 a~ a8. b16 c4 | d8. c16 b8 a~ a8. b16 c8 d~ | d1~ | d8 r r4 r2 |",
+      "witness": {
+        "writtenMeasureNumber": "16",
+        "withinMeasure": 0,
+        "notes": [
+          {
+            "start": 0,
+            "duration": 0.5,
+            "pitch": 74,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          },
+          {
+            "start": 0.5,
+            "duration": 0.5,
+            "pitch": 72,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          }
+        ]
+      },
+      "targetSplit": 0.67
+    },
+    {
+      "start": 86,
+      "performedBar": 22,
+      "kind": "tied-first-segment",
+      "compiledWrittenSegments": [
+        {
+          "start": 86.0,
+          "duration": 0.75,
+          "sourceLine": 209,
+          "sourceColumn": 42
+        },
+        {
+          "start": 86.75,
+          "duration": 0.25,
+          "sourceLine": 209,
+          "sourceColumn": 46
+        }
+      ],
+      "compiledMergedEvents": [
+        {
+          "index": 70,
+          "pitch": 69,
+          "start": 85.5,
+          "duration": 1.25
+        },
+        {
+          "index": 71,
+          "pitch": 71,
+          "start": 86.75,
+          "duration": 0.25
+        }
+      ],
+      "sourceLiteralLine": "\td8. c16 b8 a~ a8. b16 c4 | d8. c16 b8 a~ a8. b16 c8 d~ | d1~ | d8 r r4 r2 |",
+      "witness": {
+        "writtenMeasureNumber": "16",
+        "withinMeasure": 2,
+        "notes": [
+          {
+            "start": 2.0,
+            "duration": 0.5,
+            "pitch": 69,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          },
+          {
+            "start": 2.5,
+            "duration": 0.5,
+            "pitch": 71,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          }
+        ]
+      },
+      "targetSplit": 0.67
+    },
+    {
+      "start": 96,
+      "performedBar": 25,
+      "kind": "dotted-eighth-sixteenth-pair",
+      "compiledWrittenSegments": [
+        {
+          "start": 96.0,
+          "duration": 0.75,
+          "sourceLine": 212,
+          "sourceColumn": 1
+        },
+        {
+          "start": 96.75,
+          "duration": 0.25,
+          "sourceLine": 212,
+          "sourceColumn": 5
+        }
+      ],
+      "compiledMergedEvents": [
+        {
+          "index": 74,
+          "pitch": 69,
+          "start": 96.0,
+          "duration": 0.75
+        },
+        {
+          "index": 75,
+          "pitch": 67,
+          "start": 96.75,
+          "duration": 0.25
+        }
+      ],
+      "sourceLiteralLine": "\ta8. g16 a8 g~ g a4. | r8 a4. g8 a4. | b8. a16 b8 a~ a b4. | r8 b4. a8 b4. |",
+      "witness": {
+        "writtenMeasureNumber": "19",
+        "withinMeasure": 0,
+        "notes": [
+          {
+            "start": 0,
+            "duration": 0.5,
+            "pitch": 69,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          },
+          {
+            "start": 0.5,
+            "duration": 0.5,
+            "pitch": 67,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          }
+        ]
+      },
+      "targetSplit": 0.67
+    },
+    {
+      "start": 104,
+      "performedBar": 27,
+      "kind": "dotted-eighth-sixteenth-pair",
+      "compiledWrittenSegments": [
+        {
+          "start": 104.0,
+          "duration": 0.75,
+          "sourceLine": 212,
+          "sourceColumn": 39
+        },
+        {
+          "start": 104.75,
+          "duration": 0.25,
+          "sourceLine": 212,
+          "sourceColumn": 43
+        }
+      ],
+      "compiledMergedEvents": [
+        {
+          "index": 82,
+          "pitch": 71,
+          "start": 104.0,
+          "duration": 0.75
+        },
+        {
+          "index": 83,
+          "pitch": 69,
+          "start": 104.75,
+          "duration": 0.25
+        }
+      ],
+      "sourceLiteralLine": "\ta8. g16 a8 g~ g a4. | r8 a4. g8 a4. | b8. a16 b8 a~ a b4. | r8 b4. a8 b4. |",
+      "witness": {
+        "writtenMeasureNumber": "21",
+        "withinMeasure": 0,
+        "notes": [
+          {
+            "start": 0,
+            "duration": 0.5,
+            "pitch": 71,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          },
+          {
+            "start": 0.5,
+            "duration": 0.5,
+            "pitch": 69,
+            "writtenType": "eighth",
+            "dots": 0,
+            "sourceDuration": "384",
+            "divisions": 768
+          }
+        ]
+      },
+      "targetSplit": 0.67
+    }
+  ],
+  "scope": "Performance-only data review. No source entry, note, MIDI, lyric, chord, or arrangement is edited. Only the pinned source and listed cells qualify; two held first segments remain one MIDI attack."
+}
