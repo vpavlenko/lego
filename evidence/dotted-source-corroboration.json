@@ -1,0 +1,5520 @@
+{
+  "version": 1,
+  "policy": "Literal/compiler proof joined to alternate-encoding proposals only; no interpretation approval or source timing mutation",
+  "crossSourceProposalsSha256": "6a4168d936f5ab50fb3a5cabfcd990856797befad5f48924178c218d37eab200",
+  "crossSourceReportSha256": "8b5ce16364a0731e5b20a89035ec08e2259850e0758bb281f6a889ad0080aca5",
+  "counts": {
+    "cells": 82,
+    "heads": 10
+  },
+  "cells": [
+    {
+      "melodyId": "openbook-blue-and-sentimental-fake",
+      "start": 9.0,
+      "sourceSha256": "964e939b9fd2ab5d1d51e4b42aa575e6f89868c010164761bfe7b77f0823911b",
+      "sourcePath": "src/openbook/blue_and_sentimental.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 12,
+          "pitch": 63,
+          "start": 9,
+          "duration": 0.75
+        },
+        {
+          "index": 13,
+          "pitch": 60,
+          "start": 9.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 9.0,
+          "end": 9.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            63
+          ],
+          "sourceLine": 89,
+          "sourceToken": "ees8.",
+          "generatedLine": 28,
+          "generatedCharacter": 64,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 14,
+          "noteIndex": 12,
+          "pitch": 63,
+          "tiePiece": false
+        },
+        {
+          "start": 9.75,
+          "end": 10.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            60
+          ],
+          "sourceLine": 89,
+          "sourceToken": "c16",
+          "generatedLine": 28,
+          "generatedCharacter": 70,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 15,
+          "noteIndex": 13,
+          "pitch": 60,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "acbacbfccf0f7787b10fb36778166404b3f8f1065fb1d2797a78b8ea22e7d40e",
+      "compilerLogSha256": "82b00f897b695b3109ef6fc8876886a90f71eb9dbc77252446b1e9e623679350",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-blue-and-sentimental-fake",
+      "start": 33.0,
+      "sourceSha256": "964e939b9fd2ab5d1d51e4b42aa575e6f89868c010164761bfe7b77f0823911b",
+      "sourcePath": "src/openbook/blue_and_sentimental.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 40,
+          "pitch": 65,
+          "start": 33,
+          "duration": 0.75
+        },
+        {
+          "index": 41,
+          "pitch": 63,
+          "start": 33.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 33.0,
+          "end": 33.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            65
+          ],
+          "sourceLine": 95,
+          "sourceToken": "f8.",
+          "generatedLine": 34,
+          "generatedCharacter": 4,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 46,
+          "noteIndex": 40,
+          "pitch": 65,
+          "tiePiece": false
+        },
+        {
+          "start": 33.75,
+          "end": 34.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            63
+          ],
+          "sourceLine": 95,
+          "sourceToken": "ees16",
+          "generatedLine": 34,
+          "generatedCharacter": 8,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 47,
+          "noteIndex": 41,
+          "pitch": 63,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "acbacbfccf0f7787b10fb36778166404b3f8f1065fb1d2797a78b8ea22e7d40e",
+      "compilerLogSha256": "82b00f897b695b3109ef6fc8876886a90f71eb9dbc77252446b1e9e623679350",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-blue-and-sentimental-fake",
+      "start": 35.0,
+      "sourceSha256": "964e939b9fd2ab5d1d51e4b42aa575e6f89868c010164761bfe7b77f0823911b",
+      "sourcePath": "src/openbook/blue_and_sentimental.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 43,
+          "pitch": 65,
+          "start": 35,
+          "duration": 0.75
+        },
+        {
+          "index": 44,
+          "pitch": 63,
+          "start": 35.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 35.0,
+          "end": 35.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            65
+          ],
+          "sourceLine": 95,
+          "sourceToken": "f8.",
+          "generatedLine": 34,
+          "generatedCharacter": 19,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 49,
+          "noteIndex": 43,
+          "pitch": 65,
+          "tiePiece": false
+        },
+        {
+          "start": 35.75,
+          "end": 36.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            63
+          ],
+          "sourceLine": 95,
+          "sourceToken": "ees16",
+          "generatedLine": 34,
+          "generatedCharacter": 23,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 50,
+          "noteIndex": 44,
+          "pitch": 63,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "acbacbfccf0f7787b10fb36778166404b3f8f1065fb1d2797a78b8ea22e7d40e",
+      "compilerLogSha256": "82b00f897b695b3109ef6fc8876886a90f71eb9dbc77252446b1e9e623679350",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-blue-and-sentimental-fake",
+      "start": 41.0,
+      "sourceSha256": "964e939b9fd2ab5d1d51e4b42aa575e6f89868c010164761bfe7b77f0823911b",
+      "sourcePath": "src/openbook/blue_and_sentimental.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 50,
+          "pitch": 65,
+          "start": 41,
+          "duration": 0.75
+        },
+        {
+          "index": 51,
+          "pitch": 63,
+          "start": 41.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 41.0,
+          "end": 41.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            65
+          ],
+          "sourceLine": 95,
+          "sourceToken": "f8.",
+          "generatedLine": 34,
+          "generatedCharacter": 63,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 57,
+          "noteIndex": 50,
+          "pitch": 65,
+          "tiePiece": false
+        },
+        {
+          "start": 41.75,
+          "end": 42.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            63
+          ],
+          "sourceLine": 95,
+          "sourceToken": "ees16",
+          "generatedLine": 34,
+          "generatedCharacter": 67,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 58,
+          "noteIndex": 51,
+          "pitch": 63,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "acbacbfccf0f7787b10fb36778166404b3f8f1065fb1d2797a78b8ea22e7d40e",
+      "compilerLogSha256": "82b00f897b695b3109ef6fc8876886a90f71eb9dbc77252446b1e9e623679350",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-blue-and-sentimental-fake",
+      "start": 43.0,
+      "sourceSha256": "964e939b9fd2ab5d1d51e4b42aa575e6f89868c010164761bfe7b77f0823911b",
+      "sourcePath": "src/openbook/blue_and_sentimental.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 53,
+          "pitch": 65,
+          "start": 43,
+          "duration": 0.75
+        },
+        {
+          "index": 54,
+          "pitch": 63,
+          "start": 43.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 43.0,
+          "end": 43.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            65
+          ],
+          "sourceLine": 95,
+          "sourceToken": "f8.",
+          "generatedLine": 34,
+          "generatedCharacter": 78,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 60,
+          "noteIndex": 53,
+          "pitch": 65,
+          "tiePiece": false
+        },
+        {
+          "start": 43.75,
+          "end": 44.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            63
+          ],
+          "sourceLine": 95,
+          "sourceToken": "ees16",
+          "generatedLine": 34,
+          "generatedCharacter": 82,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 61,
+          "noteIndex": 54,
+          "pitch": 63,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "acbacbfccf0f7787b10fb36778166404b3f8f1065fb1d2797a78b8ea22e7d40e",
+      "compilerLogSha256": "82b00f897b695b3109ef6fc8876886a90f71eb9dbc77252446b1e9e623679350",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-blue-and-sentimental-fake",
+      "start": 57.0,
+      "sourceSha256": "964e939b9fd2ab5d1d51e4b42aa575e6f89868c010164761bfe7b77f0823911b",
+      "sourcePath": "src/openbook/blue_and_sentimental.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 70,
+          "pitch": 63,
+          "start": 57,
+          "duration": 0.75
+        },
+        {
+          "index": 71,
+          "pitch": 60,
+          "start": 57.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 57.0,
+          "end": 57.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            63
+          ],
+          "sourceLine": 98,
+          "sourceToken": "ees8.",
+          "generatedLine": 37,
+          "generatedCharacter": 63,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 80,
+          "noteIndex": 70,
+          "pitch": 63,
+          "tiePiece": false
+        },
+        {
+          "start": 57.75,
+          "end": 58.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            60
+          ],
+          "sourceLine": 98,
+          "sourceToken": "c16",
+          "generatedLine": 37,
+          "generatedCharacter": 69,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 81,
+          "noteIndex": 71,
+          "pitch": 60,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "acbacbfccf0f7787b10fb36778166404b3f8f1065fb1d2797a78b8ea22e7d40e",
+      "compilerLogSha256": "82b00f897b695b3109ef6fc8876886a90f71eb9dbc77252446b1e9e623679350",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-groovin-high-fake",
+      "start": 96.0,
+      "sourceSha256": "f7b25b12fd8349eae42162b40e9d675b57058d61fc42c471a4d65127e6c4eedc",
+      "sourcePath": "src/openbook/groovin_high.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 109,
+          "pitch": 70,
+          "start": 96,
+          "duration": 0.75
+        },
+        {
+          "index": 110,
+          "pitch": 68,
+          "start": 96.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 96.0,
+          "end": 96.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            70
+          ],
+          "sourceLine": 110,
+          "sourceToken": "bes8.",
+          "generatedLine": 41,
+          "generatedCharacter": 70,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 148,
+          "noteIndex": 109,
+          "pitch": 70,
+          "tiePiece": false
+        },
+        {
+          "start": 96.75,
+          "end": 97.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            68
+          ],
+          "sourceLine": 110,
+          "sourceToken": "gis16",
+          "generatedLine": 41,
+          "generatedCharacter": 76,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 149,
+          "noteIndex": 110,
+          "pitch": 68,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "19ce87287d1cfeb3080f68c7681b8557716bf6e6584152570bb51b085008554c",
+      "compilerLogSha256": "bc517b7c6772c5fc2238600eb34cc942407e9f920cf0040e12d490048c74f803",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-groovin-high-fake",
+      "start": 112.0,
+      "sourceSha256": "f7b25b12fd8349eae42162b40e9d675b57058d61fc42c471a4d65127e6c4eedc",
+      "sourcePath": "src/openbook/groovin_high.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 128,
+          "pitch": 68,
+          "start": 112,
+          "duration": 0.75
+        },
+        {
+          "index": 129,
+          "pitch": 64,
+          "start": 112.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 112.0,
+          "end": 112.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            68
+          ],
+          "sourceLine": 113,
+          "sourceToken": "aes8.",
+          "generatedLine": 44,
+          "generatedCharacter": 92,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 173,
+          "noteIndex": 128,
+          "pitch": 68,
+          "tiePiece": false
+        },
+        {
+          "start": 112.75,
+          "end": 113.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            64
+          ],
+          "sourceLine": 113,
+          "sourceToken": "e16",
+          "generatedLine": 44,
+          "generatedCharacter": 98,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 174,
+          "noteIndex": 129,
+          "pitch": 64,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "19ce87287d1cfeb3080f68c7681b8557716bf6e6584152570bb51b085008554c",
+      "compilerLogSha256": "bc517b7c6772c5fc2238600eb34cc942407e9f920cf0040e12d490048c74f803",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-groovin-high-fake",
+      "start": 224.0,
+      "sourceSha256": "f7b25b12fd8349eae42162b40e9d675b57058d61fc42c471a4d65127e6c4eedc",
+      "sourcePath": "src/openbook/groovin_high.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 249,
+          "pitch": 70,
+          "start": 224,
+          "duration": 0.75
+        },
+        {
+          "index": 250,
+          "pitch": 68,
+          "start": 224.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 224.0,
+          "end": 224.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            70
+          ],
+          "sourceLine": 110,
+          "sourceToken": "bes8.",
+          "generatedLine": 41,
+          "generatedCharacter": 70,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 338,
+          "noteIndex": 249,
+          "pitch": 70,
+          "tiePiece": false
+        },
+        {
+          "start": 224.75,
+          "end": 225.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            68
+          ],
+          "sourceLine": 110,
+          "sourceToken": "gis16",
+          "generatedLine": 41,
+          "generatedCharacter": 76,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 339,
+          "noteIndex": 250,
+          "pitch": 68,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "19ce87287d1cfeb3080f68c7681b8557716bf6e6584152570bb51b085008554c",
+      "compilerLogSha256": "bc517b7c6772c5fc2238600eb34cc942407e9f920cf0040e12d490048c74f803",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-groovin-high-fake",
+      "start": 240.0,
+      "sourceSha256": "f7b25b12fd8349eae42162b40e9d675b57058d61fc42c471a4d65127e6c4eedc",
+      "sourcePath": "src/openbook/groovin_high.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 268,
+          "pitch": 68,
+          "start": 240,
+          "duration": 0.75
+        },
+        {
+          "index": 269,
+          "pitch": 64,
+          "start": 240.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 240.0,
+          "end": 240.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            68
+          ],
+          "sourceLine": 113,
+          "sourceToken": "aes8.",
+          "generatedLine": 44,
+          "generatedCharacter": 92,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 363,
+          "noteIndex": 268,
+          "pitch": 68,
+          "tiePiece": false
+        },
+        {
+          "start": 240.75,
+          "end": 241.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            64
+          ],
+          "sourceLine": 113,
+          "sourceToken": "e16",
+          "generatedLine": 44,
+          "generatedCharacter": 98,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 364,
+          "noteIndex": 269,
+          "pitch": 64,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "19ce87287d1cfeb3080f68c7681b8557716bf6e6584152570bb51b085008554c",
+      "compilerLogSha256": "bc517b7c6772c5fc2238600eb34cc942407e9f920cf0040e12d490048c74f803",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-i-fall-in-love-too-easily-real",
+      "start": 1.0,
+      "sourceSha256": "4ea4f9fc54e884a97a46fc61f8c9f854efa09f21b0878a694cfc9ed13882cf93",
+      "sourcePath": "src/openbook/i_fall_in_love_too_easily.ly.tera",
+      "sourceVersion": "Real",
+      "noteTuples": [
+        {
+          "index": 1,
+          "pitch": 71,
+          "start": 1,
+          "duration": 0.75
+        },
+        {
+          "index": 2,
+          "pitch": 72,
+          "start": 1.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 1.0,
+          "end": 1.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            71
+          ],
+          "sourceLine": 88,
+          "sourceToken": "b!8.",
+          "generatedLine": 29,
+          "generatedCharacter": 11,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 2,
+          "noteIndex": 1,
+          "pitch": 71,
+          "tiePiece": false
+        },
+        {
+          "start": 1.75,
+          "end": 2.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 88,
+          "sourceToken": "c16",
+          "generatedLine": 29,
+          "generatedCharacter": 16,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 3,
+          "noteIndex": 2,
+          "pitch": 72,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "de25fcb02db170bbb7d6bf206abe1c242bedb4157ba5dc6601fba35f5220e266",
+      "compilerLogSha256": "f98b597e0cbdb67583fce9fcb2ecf876cea1640a3ab1e076d4592d57cc5a85ff",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-i-fall-in-love-too-easily-real",
+      "start": 9.0,
+      "sourceSha256": "4ea4f9fc54e884a97a46fc61f8c9f854efa09f21b0878a694cfc9ed13882cf93",
+      "sourcePath": "src/openbook/i_fall_in_love_too_easily.ly.tera",
+      "sourceVersion": "Real",
+      "noteTuples": [
+        {
+          "index": 9,
+          "pitch": 67,
+          "start": 9,
+          "duration": 0.75
+        },
+        {
+          "index": 10,
+          "pitch": 68,
+          "start": 9.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 9.0,
+          "end": 9.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 88,
+          "sourceToken": "g8.",
+          "generatedLine": 29,
+          "generatedCharacter": 56,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 11,
+          "noteIndex": 9,
+          "pitch": 67,
+          "tiePiece": false
+        },
+        {
+          "start": 9.75,
+          "end": 10.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            68
+          ],
+          "sourceLine": 88,
+          "sourceToken": "aes16",
+          "generatedLine": 29,
+          "generatedCharacter": 60,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 12,
+          "noteIndex": 10,
+          "pitch": 68,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "de25fcb02db170bbb7d6bf206abe1c242bedb4157ba5dc6601fba35f5220e266",
+      "compilerLogSha256": "f98b597e0cbdb67583fce9fcb2ecf876cea1640a3ab1e076d4592d57cc5a85ff",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-i-fall-in-love-too-easily-real",
+      "start": 17.0,
+      "sourceSha256": "4ea4f9fc54e884a97a46fc61f8c9f854efa09f21b0878a694cfc9ed13882cf93",
+      "sourcePath": "src/openbook/i_fall_in_love_too_easily.ly.tera",
+      "sourceVersion": "Real",
+      "noteTuples": [
+        {
+          "index": 15,
+          "pitch": 64,
+          "start": 17,
+          "duration": 0.75
+        },
+        {
+          "index": 16,
+          "pitch": 65,
+          "start": 17.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 17.0,
+          "end": 17.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            64
+          ],
+          "sourceLine": 89,
+          "sourceToken": "e!8.",
+          "generatedLine": 30,
+          "generatedCharacter": 10,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 18,
+          "noteIndex": 15,
+          "pitch": 64,
+          "tiePiece": false
+        },
+        {
+          "start": 17.75,
+          "end": 18.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            65
+          ],
+          "sourceLine": 89,
+          "sourceToken": "f16",
+          "generatedLine": 30,
+          "generatedCharacter": 15,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 19,
+          "noteIndex": 16,
+          "pitch": 65,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "de25fcb02db170bbb7d6bf206abe1c242bedb4157ba5dc6601fba35f5220e266",
+      "compilerLogSha256": "f98b597e0cbdb67583fce9fcb2ecf876cea1640a3ab1e076d4592d57cc5a85ff",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-i-fall-in-love-too-easily-real",
+      "start": 25.0,
+      "sourceSha256": "4ea4f9fc54e884a97a46fc61f8c9f854efa09f21b0878a694cfc9ed13882cf93",
+      "sourcePath": "src/openbook/i_fall_in_love_too_easily.ly.tera",
+      "sourceVersion": "Real",
+      "noteTuples": [
+        {
+          "index": 24,
+          "pitch": 67,
+          "start": 25,
+          "duration": 0.75
+        },
+        {
+          "index": 25,
+          "pitch": 69,
+          "start": 25.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 25.0,
+          "end": 25.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 89,
+          "sourceToken": "g8.",
+          "generatedLine": 30,
+          "generatedCharacter": 57,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 29,
+          "noteIndex": 24,
+          "pitch": 67,
+          "tiePiece": false
+        },
+        {
+          "start": 25.75,
+          "end": 26.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            69
+          ],
+          "sourceLine": 89,
+          "sourceToken": "a!16",
+          "generatedLine": 30,
+          "generatedCharacter": 61,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 30,
+          "noteIndex": 25,
+          "pitch": 69,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "de25fcb02db170bbb7d6bf206abe1c242bedb4157ba5dc6601fba35f5220e266",
+      "compilerLogSha256": "f98b597e0cbdb67583fce9fcb2ecf876cea1640a3ab1e076d4592d57cc5a85ff",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-i-fall-in-love-too-easily-real",
+      "start": 33.0,
+      "sourceSha256": "4ea4f9fc54e884a97a46fc61f8c9f854efa09f21b0878a694cfc9ed13882cf93",
+      "sourcePath": "src/openbook/i_fall_in_love_too_easily.ly.tera",
+      "sourceVersion": "Real",
+      "noteTuples": [
+        {
+          "index": 30,
+          "pitch": 74,
+          "start": 33,
+          "duration": 0.75
+        },
+        {
+          "index": 31,
+          "pitch": 75,
+          "start": 33.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 33.0,
+          "end": 33.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 90,
+          "sourceToken": "d8.",
+          "generatedLine": 31,
+          "generatedCharacter": 12,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 36,
+          "noteIndex": 30,
+          "pitch": 74,
+          "tiePiece": false
+        },
+        {
+          "start": 33.75,
+          "end": 34.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            75
+          ],
+          "sourceLine": 90,
+          "sourceToken": "ees16",
+          "generatedLine": 31,
+          "generatedCharacter": 16,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 37,
+          "noteIndex": 31,
+          "pitch": 75,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "de25fcb02db170bbb7d6bf206abe1c242bedb4157ba5dc6601fba35f5220e266",
+      "compilerLogSha256": "f98b597e0cbdb67583fce9fcb2ecf876cea1640a3ab1e076d4592d57cc5a85ff",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-i-fall-in-love-too-easily-real",
+      "start": 39.0,
+      "sourceSha256": "4ea4f9fc54e884a97a46fc61f8c9f854efa09f21b0878a694cfc9ed13882cf93",
+      "sourcePath": "src/openbook/i_fall_in_love_too_easily.ly.tera",
+      "sourceVersion": "Real",
+      "noteTuples": [
+        {
+          "index": 36,
+          "pitch": 68,
+          "start": 39,
+          "duration": 0.75
+        },
+        {
+          "index": 37,
+          "pitch": 67,
+          "start": 39.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 39.0,
+          "end": 39.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            68
+          ],
+          "sourceLine": 90,
+          "sourceToken": "aes8.",
+          "generatedLine": 31,
+          "generatedCharacter": 44,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 43,
+          "noteIndex": 36,
+          "pitch": 68,
+          "tiePiece": false
+        },
+        {
+          "start": 39.75,
+          "end": 40.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 90,
+          "sourceToken": "g16",
+          "generatedLine": 31,
+          "generatedCharacter": 50,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 44,
+          "noteIndex": 37,
+          "pitch": 67,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "de25fcb02db170bbb7d6bf206abe1c242bedb4157ba5dc6601fba35f5220e266",
+      "compilerLogSha256": "f98b597e0cbdb67583fce9fcb2ecf876cea1640a3ab1e076d4592d57cc5a85ff",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-i-fall-in-love-too-easily-real",
+      "start": 47.0,
+      "sourceSha256": "4ea4f9fc54e884a97a46fc61f8c9f854efa09f21b0878a694cfc9ed13882cf93",
+      "sourcePath": "src/openbook/i_fall_in_love_too_easily.ly.tera",
+      "sourceVersion": "Real",
+      "noteTuples": [
+        {
+          "index": 43,
+          "pitch": 68,
+          "start": 47,
+          "duration": 0.75
+        },
+        {
+          "index": 44,
+          "pitch": 67,
+          "start": 47.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 47.0,
+          "end": 47.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            68
+          ],
+          "sourceLine": 90,
+          "sourceToken": "aes8.",
+          "generatedLine": 31,
+          "generatedCharacter": 85,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 51,
+          "noteIndex": 43,
+          "pitch": 68,
+          "tiePiece": false
+        },
+        {
+          "start": 47.75,
+          "end": 48.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 90,
+          "sourceToken": "g16",
+          "generatedLine": 31,
+          "generatedCharacter": 91,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 52,
+          "noteIndex": 44,
+          "pitch": 67,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "de25fcb02db170bbb7d6bf206abe1c242bedb4157ba5dc6601fba35f5220e266",
+      "compilerLogSha256": "f98b597e0cbdb67583fce9fcb2ecf876cea1640a3ab1e076d4592d57cc5a85ff",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-i-fall-in-love-too-easily-real",
+      "start": 57.0,
+      "sourceSha256": "4ea4f9fc54e884a97a46fc61f8c9f854efa09f21b0878a694cfc9ed13882cf93",
+      "sourcePath": "src/openbook/i_fall_in_love_too_easily.ly.tera",
+      "sourceVersion": "Real",
+      "noteTuples": [
+        {
+          "index": 53,
+          "pitch": 65,
+          "start": 57,
+          "duration": 0.75
+        },
+        {
+          "index": 54,
+          "pitch": 63,
+          "start": 57.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 57.0,
+          "end": 57.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            65
+          ],
+          "sourceLine": 91,
+          "sourceToken": "f8.",
+          "generatedLine": 32,
+          "generatedCharacter": 65,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 64,
+          "noteIndex": 53,
+          "pitch": 65,
+          "tiePiece": false
+        },
+        {
+          "start": 57.75,
+          "end": 58.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            63
+          ],
+          "sourceLine": 91,
+          "sourceToken": "ees16",
+          "generatedLine": 32,
+          "generatedCharacter": 69,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 65,
+          "noteIndex": 54,
+          "pitch": 63,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "de25fcb02db170bbb7d6bf206abe1c242bedb4157ba5dc6601fba35f5220e266",
+      "compilerLogSha256": "f98b597e0cbdb67583fce9fcb2ecf876cea1640a3ab1e076d4592d57cc5a85ff",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-i-fall-in-love-too-easily-real",
+      "start": 73.0,
+      "sourceSha256": "4ea4f9fc54e884a97a46fc61f8c9f854efa09f21b0878a694cfc9ed13882cf93",
+      "sourcePath": "src/openbook/i_fall_in_love_too_easily.ly.tera",
+      "sourceVersion": "Real",
+      "noteTuples": [
+        {
+          "index": 67,
+          "pitch": 67,
+          "start": 73,
+          "duration": 0.75
+        },
+        {
+          "index": 68,
+          "pitch": 68,
+          "start": 73.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 73.0,
+          "end": 73.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 88,
+          "sourceToken": "g8.",
+          "generatedLine": 29,
+          "generatedCharacter": 56,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 81,
+          "noteIndex": 67,
+          "pitch": 67,
+          "tiePiece": false
+        },
+        {
+          "start": 73.75,
+          "end": 74.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            68
+          ],
+          "sourceLine": 88,
+          "sourceToken": "aes16",
+          "generatedLine": 29,
+          "generatedCharacter": 60,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 82,
+          "noteIndex": 68,
+          "pitch": 68,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "de25fcb02db170bbb7d6bf206abe1c242bedb4157ba5dc6601fba35f5220e266",
+      "compilerLogSha256": "f98b597e0cbdb67583fce9fcb2ecf876cea1640a3ab1e076d4592d57cc5a85ff",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-i-fall-in-love-too-easily-real",
+      "start": 81.0,
+      "sourceSha256": "4ea4f9fc54e884a97a46fc61f8c9f854efa09f21b0878a694cfc9ed13882cf93",
+      "sourcePath": "src/openbook/i_fall_in_love_too_easily.ly.tera",
+      "sourceVersion": "Real",
+      "noteTuples": [
+        {
+          "index": 73,
+          "pitch": 64,
+          "start": 81,
+          "duration": 0.75
+        },
+        {
+          "index": 74,
+          "pitch": 65,
+          "start": 81.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 81.0,
+          "end": 81.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            64
+          ],
+          "sourceLine": 89,
+          "sourceToken": "e!8.",
+          "generatedLine": 30,
+          "generatedCharacter": 10,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 88,
+          "noteIndex": 73,
+          "pitch": 64,
+          "tiePiece": false
+        },
+        {
+          "start": 81.75,
+          "end": 82.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            65
+          ],
+          "sourceLine": 89,
+          "sourceToken": "f16",
+          "generatedLine": 30,
+          "generatedCharacter": 15,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 89,
+          "noteIndex": 74,
+          "pitch": 65,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "de25fcb02db170bbb7d6bf206abe1c242bedb4157ba5dc6601fba35f5220e266",
+      "compilerLogSha256": "f98b597e0cbdb67583fce9fcb2ecf876cea1640a3ab1e076d4592d57cc5a85ff",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-i-fall-in-love-too-easily-real",
+      "start": 89.0,
+      "sourceSha256": "4ea4f9fc54e884a97a46fc61f8c9f854efa09f21b0878a694cfc9ed13882cf93",
+      "sourcePath": "src/openbook/i_fall_in_love_too_easily.ly.tera",
+      "sourceVersion": "Real",
+      "noteTuples": [
+        {
+          "index": 82,
+          "pitch": 67,
+          "start": 89,
+          "duration": 0.75
+        },
+        {
+          "index": 83,
+          "pitch": 69,
+          "start": 89.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 89.0,
+          "end": 89.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 89,
+          "sourceToken": "g8.",
+          "generatedLine": 30,
+          "generatedCharacter": 57,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 99,
+          "noteIndex": 82,
+          "pitch": 67,
+          "tiePiece": false
+        },
+        {
+          "start": 89.75,
+          "end": 90.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            69
+          ],
+          "sourceLine": 89,
+          "sourceToken": "a!16",
+          "generatedLine": 30,
+          "generatedCharacter": 61,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 100,
+          "noteIndex": 83,
+          "pitch": 69,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "de25fcb02db170bbb7d6bf206abe1c242bedb4157ba5dc6601fba35f5220e266",
+      "compilerLogSha256": "f98b597e0cbdb67583fce9fcb2ecf876cea1640a3ab1e076d4592d57cc5a85ff",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-i-fall-in-love-too-easily-real",
+      "start": 97.0,
+      "sourceSha256": "4ea4f9fc54e884a97a46fc61f8c9f854efa09f21b0878a694cfc9ed13882cf93",
+      "sourcePath": "src/openbook/i_fall_in_love_too_easily.ly.tera",
+      "sourceVersion": "Real",
+      "noteTuples": [
+        {
+          "index": 88,
+          "pitch": 74,
+          "start": 97,
+          "duration": 0.75
+        },
+        {
+          "index": 89,
+          "pitch": 75,
+          "start": 97.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 97.0,
+          "end": 97.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 90,
+          "sourceToken": "d8.",
+          "generatedLine": 31,
+          "generatedCharacter": 12,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 106,
+          "noteIndex": 88,
+          "pitch": 74,
+          "tiePiece": false
+        },
+        {
+          "start": 97.75,
+          "end": 98.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            75
+          ],
+          "sourceLine": 90,
+          "sourceToken": "ees16",
+          "generatedLine": 31,
+          "generatedCharacter": 16,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 107,
+          "noteIndex": 89,
+          "pitch": 75,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "de25fcb02db170bbb7d6bf206abe1c242bedb4157ba5dc6601fba35f5220e266",
+      "compilerLogSha256": "f98b597e0cbdb67583fce9fcb2ecf876cea1640a3ab1e076d4592d57cc5a85ff",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-i-fall-in-love-too-easily-real",
+      "start": 103.0,
+      "sourceSha256": "4ea4f9fc54e884a97a46fc61f8c9f854efa09f21b0878a694cfc9ed13882cf93",
+      "sourcePath": "src/openbook/i_fall_in_love_too_easily.ly.tera",
+      "sourceVersion": "Real",
+      "noteTuples": [
+        {
+          "index": 94,
+          "pitch": 68,
+          "start": 103,
+          "duration": 0.75
+        },
+        {
+          "index": 95,
+          "pitch": 67,
+          "start": 103.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 103.0,
+          "end": 103.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            68
+          ],
+          "sourceLine": 90,
+          "sourceToken": "aes8.",
+          "generatedLine": 31,
+          "generatedCharacter": 44,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 113,
+          "noteIndex": 94,
+          "pitch": 68,
+          "tiePiece": false
+        },
+        {
+          "start": 103.75,
+          "end": 104.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 90,
+          "sourceToken": "g16",
+          "generatedLine": 31,
+          "generatedCharacter": 50,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 114,
+          "noteIndex": 95,
+          "pitch": 67,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "de25fcb02db170bbb7d6bf206abe1c242bedb4157ba5dc6601fba35f5220e266",
+      "compilerLogSha256": "f98b597e0cbdb67583fce9fcb2ecf876cea1640a3ab1e076d4592d57cc5a85ff",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-i-fall-in-love-too-easily-real",
+      "start": 111.0,
+      "sourceSha256": "4ea4f9fc54e884a97a46fc61f8c9f854efa09f21b0878a694cfc9ed13882cf93",
+      "sourcePath": "src/openbook/i_fall_in_love_too_easily.ly.tera",
+      "sourceVersion": "Real",
+      "noteTuples": [
+        {
+          "index": 101,
+          "pitch": 68,
+          "start": 111,
+          "duration": 0.75
+        },
+        {
+          "index": 102,
+          "pitch": 67,
+          "start": 111.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 111.0,
+          "end": 111.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            68
+          ],
+          "sourceLine": 90,
+          "sourceToken": "aes8.",
+          "generatedLine": 31,
+          "generatedCharacter": 85,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 121,
+          "noteIndex": 101,
+          "pitch": 68,
+          "tiePiece": false
+        },
+        {
+          "start": 111.75,
+          "end": 112.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 90,
+          "sourceToken": "g16",
+          "generatedLine": 31,
+          "generatedCharacter": 91,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 122,
+          "noteIndex": 102,
+          "pitch": 67,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "de25fcb02db170bbb7d6bf206abe1c242bedb4157ba5dc6601fba35f5220e266",
+      "compilerLogSha256": "f98b597e0cbdb67583fce9fcb2ecf876cea1640a3ab1e076d4592d57cc5a85ff",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-i-fall-in-love-too-easily-real",
+      "start": 121.0,
+      "sourceSha256": "4ea4f9fc54e884a97a46fc61f8c9f854efa09f21b0878a694cfc9ed13882cf93",
+      "sourcePath": "src/openbook/i_fall_in_love_too_easily.ly.tera",
+      "sourceVersion": "Real",
+      "noteTuples": [
+        {
+          "index": 111,
+          "pitch": 65,
+          "start": 121,
+          "duration": 0.75
+        },
+        {
+          "index": 112,
+          "pitch": 63,
+          "start": 121.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 121.0,
+          "end": 121.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            65
+          ],
+          "sourceLine": 91,
+          "sourceToken": "f8.",
+          "generatedLine": 32,
+          "generatedCharacter": 65,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 134,
+          "noteIndex": 111,
+          "pitch": 65,
+          "tiePiece": false
+        },
+        {
+          "start": 121.75,
+          "end": 122.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            63
+          ],
+          "sourceLine": 91,
+          "sourceToken": "ees16",
+          "generatedLine": 32,
+          "generatedCharacter": 69,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 135,
+          "noteIndex": 112,
+          "pitch": 63,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "de25fcb02db170bbb7d6bf206abe1c242bedb4157ba5dc6601fba35f5220e266",
+      "compilerLogSha256": "f98b597e0cbdb67583fce9fcb2ecf876cea1640a3ab1e076d4592d57cc5a85ff",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-let-it-snow-let-it-snow-let-it-snow-fake",
+      "start": 24.0,
+      "sourceSha256": "cc14099c856969cf72a8b59e55249e875d9feed9f41868c87327cb03209eed42",
+      "sourcePath": "src/openbook/let_it_snow_let_it_snow_let_it_snow.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 25,
+          "pitch": 76,
+          "start": 24,
+          "duration": 0.75
+        },
+        {
+          "index": 26,
+          "pitch": 74,
+          "start": 24.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 24.0,
+          "end": 24.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            76
+          ],
+          "sourceLine": 98,
+          "sourceToken": "e'8.",
+          "generatedLine": 33,
+          "generatedCharacter": 23,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "linearStart": 24.0,
+          "linearEnd": 24.75,
+          "route": 0,
+          "routeRestClipped": false,
+          "unitIndex": 25,
+          "noteIndex": 25,
+          "pitch": 76,
+          "tiePiece": false
+        },
+        {
+          "start": 24.75,
+          "end": 25.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 98,
+          "sourceToken": "d16",
+          "generatedLine": 33,
+          "generatedCharacter": 28,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "linearStart": 24.75,
+          "linearEnd": 25.0,
+          "route": 0,
+          "routeRestClipped": false,
+          "unitIndex": 26,
+          "noteIndex": 26,
+          "pitch": 74,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "c6604f4e3e96a34b790ad29afeb84b1e0a088d8d30c75e52f9060a95d45d0961",
+      "compilerLogSha256": "05bea1cb7ca4a7eac9e82ac9a0549b1d695af70e00ec4e333b1ff1c2eac2311f",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-let-it-snow-let-it-snow-let-it-snow-fake",
+      "start": 26.0,
+      "sourceSha256": "cc14099c856969cf72a8b59e55249e875d9feed9f41868c87327cb03209eed42",
+      "sourcePath": "src/openbook/let_it_snow_let_it_snow_let_it_snow.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 28,
+          "pitch": 72,
+          "start": 26,
+          "duration": 0.75
+        },
+        {
+          "index": 29,
+          "pitch": 70,
+          "start": 26.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 26.0,
+          "end": 26.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 98,
+          "sourceToken": "c8.",
+          "generatedLine": 33,
+          "generatedCharacter": 37,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "linearStart": 26.0,
+          "linearEnd": 26.75,
+          "route": 0,
+          "routeRestClipped": false,
+          "unitIndex": 28,
+          "noteIndex": 28,
+          "pitch": 72,
+          "tiePiece": false
+        },
+        {
+          "start": 26.75,
+          "end": 27.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            70
+          ],
+          "sourceLine": 98,
+          "sourceToken": "bes16",
+          "generatedLine": 33,
+          "generatedCharacter": 41,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "linearStart": 26.75,
+          "linearEnd": 27.0,
+          "route": 0,
+          "routeRestClipped": false,
+          "unitIndex": 29,
+          "noteIndex": 29,
+          "pitch": 70,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "c6604f4e3e96a34b790ad29afeb84b1e0a088d8d30c75e52f9060a95d45d0961",
+      "compilerLogSha256": "05bea1cb7ca4a7eac9e82ac9a0549b1d695af70e00ec4e333b1ff1c2eac2311f",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-let-it-snow-let-it-snow-let-it-snow-fake",
+      "start": 28.0,
+      "sourceSha256": "cc14099c856969cf72a8b59e55249e875d9feed9f41868c87327cb03209eed42",
+      "sourcePath": "src/openbook/let_it_snow_let_it_snow_let_it_snow.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 31,
+          "pitch": 69,
+          "start": 28,
+          "duration": 0.75
+        },
+        {
+          "index": 32,
+          "pitch": 67,
+          "start": 28.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 28.0,
+          "end": 28.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            69
+          ],
+          "sourceLine": 98,
+          "sourceToken": "a8.",
+          "generatedLine": 33,
+          "generatedCharacter": 50,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "linearStart": 28.0,
+          "linearEnd": 28.75,
+          "route": 0,
+          "routeRestClipped": false,
+          "unitIndex": 31,
+          "noteIndex": 31,
+          "pitch": 69,
+          "tiePiece": false
+        },
+        {
+          "start": 28.75,
+          "end": 29.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 98,
+          "sourceToken": "g16",
+          "generatedLine": 33,
+          "generatedCharacter": 54,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "linearStart": 28.75,
+          "linearEnd": 29.0,
+          "route": 0,
+          "routeRestClipped": false,
+          "unitIndex": 32,
+          "noteIndex": 32,
+          "pitch": 67,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "c6604f4e3e96a34b790ad29afeb84b1e0a088d8d30c75e52f9060a95d45d0961",
+      "compilerLogSha256": "05bea1cb7ca4a7eac9e82ac9a0549b1d695af70e00ec4e333b1ff1c2eac2311f",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-let-it-snow-let-it-snow-let-it-snow-fake",
+      "start": 56.0,
+      "sourceSha256": "cc14099c856969cf72a8b59e55249e875d9feed9f41868c87327cb03209eed42",
+      "sourcePath": "src/openbook/let_it_snow_let_it_snow_let_it_snow.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 58,
+          "pitch": 76,
+          "start": 56,
+          "duration": 0.75
+        },
+        {
+          "index": 59,
+          "pitch": 74,
+          "start": 56.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 56.0,
+          "end": 56.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            76
+          ],
+          "sourceLine": 98,
+          "sourceToken": "e'8.",
+          "generatedLine": 33,
+          "generatedCharacter": 23,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "linearStart": 56.0,
+          "linearEnd": 56.75,
+          "route": 0,
+          "routeRestClipped": false,
+          "unitIndex": 58,
+          "noteIndex": 58,
+          "pitch": 76,
+          "tiePiece": false
+        },
+        {
+          "start": 56.75,
+          "end": 57.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 98,
+          "sourceToken": "d16",
+          "generatedLine": 33,
+          "generatedCharacter": 28,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "linearStart": 56.75,
+          "linearEnd": 57.0,
+          "route": 0,
+          "routeRestClipped": false,
+          "unitIndex": 59,
+          "noteIndex": 59,
+          "pitch": 74,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "c6604f4e3e96a34b790ad29afeb84b1e0a088d8d30c75e52f9060a95d45d0961",
+      "compilerLogSha256": "05bea1cb7ca4a7eac9e82ac9a0549b1d695af70e00ec4e333b1ff1c2eac2311f",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-let-it-snow-let-it-snow-let-it-snow-fake",
+      "start": 58.0,
+      "sourceSha256": "cc14099c856969cf72a8b59e55249e875d9feed9f41868c87327cb03209eed42",
+      "sourcePath": "src/openbook/let_it_snow_let_it_snow_let_it_snow.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 61,
+          "pitch": 72,
+          "start": 58,
+          "duration": 0.75
+        },
+        {
+          "index": 62,
+          "pitch": 70,
+          "start": 58.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 58.0,
+          "end": 58.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 98,
+          "sourceToken": "c8.",
+          "generatedLine": 33,
+          "generatedCharacter": 37,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "linearStart": 58.0,
+          "linearEnd": 58.75,
+          "route": 0,
+          "routeRestClipped": false,
+          "unitIndex": 61,
+          "noteIndex": 61,
+          "pitch": 72,
+          "tiePiece": false
+        },
+        {
+          "start": 58.75,
+          "end": 59.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            70
+          ],
+          "sourceLine": 98,
+          "sourceToken": "bes16",
+          "generatedLine": 33,
+          "generatedCharacter": 41,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "linearStart": 58.75,
+          "linearEnd": 59.0,
+          "route": 0,
+          "routeRestClipped": false,
+          "unitIndex": 62,
+          "noteIndex": 62,
+          "pitch": 70,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "c6604f4e3e96a34b790ad29afeb84b1e0a088d8d30c75e52f9060a95d45d0961",
+      "compilerLogSha256": "05bea1cb7ca4a7eac9e82ac9a0549b1d695af70e00ec4e333b1ff1c2eac2311f",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-let-it-snow-let-it-snow-let-it-snow-fake",
+      "start": 60.0,
+      "sourceSha256": "cc14099c856969cf72a8b59e55249e875d9feed9f41868c87327cb03209eed42",
+      "sourcePath": "src/openbook/let_it_snow_let_it_snow_let_it_snow.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 64,
+          "pitch": 69,
+          "start": 60,
+          "duration": 0.75
+        },
+        {
+          "index": 65,
+          "pitch": 67,
+          "start": 60.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 60.0,
+          "end": 60.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            69
+          ],
+          "sourceLine": 98,
+          "sourceToken": "a8.",
+          "generatedLine": 33,
+          "generatedCharacter": 50,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "linearStart": 60.0,
+          "linearEnd": 60.75,
+          "route": 0,
+          "routeRestClipped": false,
+          "unitIndex": 64,
+          "noteIndex": 64,
+          "pitch": 69,
+          "tiePiece": false
+        },
+        {
+          "start": 60.75,
+          "end": 61.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 98,
+          "sourceToken": "g16",
+          "generatedLine": 33,
+          "generatedCharacter": 54,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "linearStart": 60.75,
+          "linearEnd": 61.0,
+          "route": 0,
+          "routeRestClipped": false,
+          "unitIndex": 65,
+          "noteIndex": 65,
+          "pitch": 67,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "c6604f4e3e96a34b790ad29afeb84b1e0a088d8d30c75e52f9060a95d45d0961",
+      "compilerLogSha256": "05bea1cb7ca4a7eac9e82ac9a0549b1d695af70e00ec4e333b1ff1c2eac2311f",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-let-it-snow-let-it-snow-let-it-snow-fake",
+      "start": 76.0,
+      "sourceSha256": "cc14099c856969cf72a8b59e55249e875d9feed9f41868c87327cb03209eed42",
+      "sourcePath": "src/openbook/let_it_snow_let_it_snow_let_it_snow.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 81,
+          "pitch": 60,
+          "start": 76,
+          "duration": 0.75
+        },
+        {
+          "index": 82,
+          "pitch": 62,
+          "start": 76.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 76.0,
+          "end": 76.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            60
+          ],
+          "sourceLine": 112,
+          "sourceToken": "c8.",
+          "generatedLine": 47,
+          "generatedCharacter": 50,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "linearStart": 108.0,
+          "linearEnd": 108.75,
+          "route": 1,
+          "routeRestClipped": false,
+          "unitIndex": 81,
+          "noteIndex": 81,
+          "pitch": 60,
+          "tiePiece": false
+        },
+        {
+          "start": 76.75,
+          "end": 77.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            62
+          ],
+          "sourceLine": 112,
+          "sourceToken": "d16",
+          "generatedLine": 47,
+          "generatedCharacter": 54,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "linearStart": 108.75,
+          "linearEnd": 109.0,
+          "route": 1,
+          "routeRestClipped": false,
+          "unitIndex": 82,
+          "noteIndex": 82,
+          "pitch": 62,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "c6604f4e3e96a34b790ad29afeb84b1e0a088d8d30c75e52f9060a95d45d0961",
+      "compilerLogSha256": "05bea1cb7ca4a7eac9e82ac9a0549b1d695af70e00ec4e333b1ff1c2eac2311f",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-let-it-snow-let-it-snow-let-it-snow-fake",
+      "start": 80.0,
+      "sourceSha256": "cc14099c856969cf72a8b59e55249e875d9feed9f41868c87327cb03209eed42",
+      "sourcePath": "src/openbook/let_it_snow_let_it_snow_let_it_snow.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 84,
+          "pitch": 64,
+          "start": 80,
+          "duration": 0.75
+        },
+        {
+          "index": 85,
+          "pitch": 65,
+          "start": 80.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 80.0,
+          "end": 80.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            64
+          ],
+          "sourceLine": 112,
+          "sourceToken": "e8.",
+          "generatedLine": 47,
+          "generatedCharacter": 64,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "linearStart": 112.0,
+          "linearEnd": 112.75,
+          "route": 1,
+          "routeRestClipped": false,
+          "unitIndex": 84,
+          "noteIndex": 84,
+          "pitch": 64,
+          "tiePiece": false
+        },
+        {
+          "start": 80.75,
+          "end": 81.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            65
+          ],
+          "sourceLine": 112,
+          "sourceToken": "f16",
+          "generatedLine": 47,
+          "generatedCharacter": 68,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "linearStart": 112.75,
+          "linearEnd": 113.0,
+          "route": 1,
+          "routeRestClipped": false,
+          "unitIndex": 85,
+          "noteIndex": 85,
+          "pitch": 65,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "c6604f4e3e96a34b790ad29afeb84b1e0a088d8d30c75e52f9060a95d45d0961",
+      "compilerLogSha256": "05bea1cb7ca4a7eac9e82ac9a0549b1d695af70e00ec4e333b1ff1c2eac2311f",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-let-it-snow-let-it-snow-let-it-snow-fake",
+      "start": 82.0,
+      "sourceSha256": "cc14099c856969cf72a8b59e55249e875d9feed9f41868c87327cb03209eed42",
+      "sourcePath": "src/openbook/let_it_snow_let_it_snow_let_it_snow.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 87,
+          "pitch": 69,
+          "start": 82,
+          "duration": 0.75
+        },
+        {
+          "index": 88,
+          "pitch": 67,
+          "start": 82.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 82.0,
+          "end": 82.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            69
+          ],
+          "sourceLine": 113,
+          "sourceToken": "a8.",
+          "generatedLine": 48,
+          "generatedCharacter": 4,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "linearStart": 114.0,
+          "linearEnd": 114.75,
+          "route": 1,
+          "routeRestClipped": false,
+          "unitIndex": 87,
+          "noteIndex": 87,
+          "pitch": 69,
+          "tiePiece": false
+        },
+        {
+          "start": 82.75,
+          "end": 83.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 113,
+          "sourceToken": "g16",
+          "generatedLine": 48,
+          "generatedCharacter": 8,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "linearStart": 114.75,
+          "linearEnd": 115.0,
+          "route": 1,
+          "routeRestClipped": false,
+          "unitIndex": 88,
+          "noteIndex": 88,
+          "pitch": 67,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "c6604f4e3e96a34b790ad29afeb84b1e0a088d8d30c75e52f9060a95d45d0961",
+      "compilerLogSha256": "05bea1cb7ca4a7eac9e82ac9a0549b1d695af70e00ec4e333b1ff1c2eac2311f",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-let-it-snow-let-it-snow-let-it-snow-fake",
+      "start": 120.0,
+      "sourceSha256": "cc14099c856969cf72a8b59e55249e875d9feed9f41868c87327cb03209eed42",
+      "sourcePath": "src/openbook/let_it_snow_let_it_snow_let_it_snow.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 123,
+          "pitch": 76,
+          "start": 120,
+          "duration": 0.75
+        },
+        {
+          "index": 124,
+          "pitch": 74,
+          "start": 120.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 120.0,
+          "end": 120.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            76
+          ],
+          "sourceLine": 98,
+          "sourceToken": "e'8.",
+          "generatedLine": 33,
+          "generatedCharacter": 23,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "linearStart": 88.0,
+          "linearEnd": 88.75,
+          "route": 2,
+          "routeRestClipped": false,
+          "unitIndex": 123,
+          "noteIndex": 123,
+          "pitch": 76,
+          "tiePiece": false
+        },
+        {
+          "start": 120.75,
+          "end": 121.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 98,
+          "sourceToken": "d16",
+          "generatedLine": 33,
+          "generatedCharacter": 28,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "linearStart": 88.75,
+          "linearEnd": 89.0,
+          "route": 2,
+          "routeRestClipped": false,
+          "unitIndex": 124,
+          "noteIndex": 124,
+          "pitch": 74,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "c6604f4e3e96a34b790ad29afeb84b1e0a088d8d30c75e52f9060a95d45d0961",
+      "compilerLogSha256": "05bea1cb7ca4a7eac9e82ac9a0549b1d695af70e00ec4e333b1ff1c2eac2311f",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-let-it-snow-let-it-snow-let-it-snow-fake",
+      "start": 122.0,
+      "sourceSha256": "cc14099c856969cf72a8b59e55249e875d9feed9f41868c87327cb03209eed42",
+      "sourcePath": "src/openbook/let_it_snow_let_it_snow_let_it_snow.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 126,
+          "pitch": 72,
+          "start": 122,
+          "duration": 0.75
+        },
+        {
+          "index": 127,
+          "pitch": 70,
+          "start": 122.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 122.0,
+          "end": 122.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 98,
+          "sourceToken": "c8.",
+          "generatedLine": 33,
+          "generatedCharacter": 37,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "linearStart": 90.0,
+          "linearEnd": 90.75,
+          "route": 2,
+          "routeRestClipped": false,
+          "unitIndex": 126,
+          "noteIndex": 126,
+          "pitch": 72,
+          "tiePiece": false
+        },
+        {
+          "start": 122.75,
+          "end": 123.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            70
+          ],
+          "sourceLine": 98,
+          "sourceToken": "bes16",
+          "generatedLine": 33,
+          "generatedCharacter": 41,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "linearStart": 90.75,
+          "linearEnd": 91.0,
+          "route": 2,
+          "routeRestClipped": false,
+          "unitIndex": 127,
+          "noteIndex": 127,
+          "pitch": 70,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "c6604f4e3e96a34b790ad29afeb84b1e0a088d8d30c75e52f9060a95d45d0961",
+      "compilerLogSha256": "05bea1cb7ca4a7eac9e82ac9a0549b1d695af70e00ec4e333b1ff1c2eac2311f",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-let-it-snow-let-it-snow-let-it-snow-fake",
+      "start": 124.0,
+      "sourceSha256": "cc14099c856969cf72a8b59e55249e875d9feed9f41868c87327cb03209eed42",
+      "sourcePath": "src/openbook/let_it_snow_let_it_snow_let_it_snow.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 129,
+          "pitch": 69,
+          "start": 124,
+          "duration": 0.75
+        },
+        {
+          "index": 130,
+          "pitch": 67,
+          "start": 124.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 124.0,
+          "end": 124.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            69
+          ],
+          "sourceLine": 98,
+          "sourceToken": "a8.",
+          "generatedLine": 33,
+          "generatedCharacter": 50,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "linearStart": 92.0,
+          "linearEnd": 92.75,
+          "route": 2,
+          "routeRestClipped": false,
+          "unitIndex": 129,
+          "noteIndex": 129,
+          "pitch": 69,
+          "tiePiece": false
+        },
+        {
+          "start": 124.75,
+          "end": 125.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 98,
+          "sourceToken": "g16",
+          "generatedLine": 33,
+          "generatedCharacter": 54,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "linearStart": 92.75,
+          "linearEnd": 93.0,
+          "route": 2,
+          "routeRestClipped": false,
+          "unitIndex": 130,
+          "noteIndex": 130,
+          "pitch": 67,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "c6604f4e3e96a34b790ad29afeb84b1e0a088d8d30c75e52f9060a95d45d0961",
+      "compilerLogSha256": "05bea1cb7ca4a7eac9e82ac9a0549b1d695af70e00ec4e333b1ff1c2eac2311f",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-li-l-darlin-fake",
+      "start": 41.0,
+      "sourceSha256": "2b80e3a574661034c4e0a2a4a0d25ab7b759414a4944b6362415483dc8b4579b",
+      "sourcePath": "src/openbook/lil_darlin.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 27,
+          "pitch": 67,
+          "start": 41,
+          "duration": 0.75
+        },
+        {
+          "index": 28,
+          "pitch": 66,
+          "start": 41.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 41.0,
+          "end": 41.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 97,
+          "sourceToken": "g8.",
+          "generatedLine": 32,
+          "generatedCharacter": 61,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 39,
+          "noteIndex": 27,
+          "pitch": 67,
+          "tiePiece": false
+        },
+        {
+          "start": 41.75,
+          "end": 42.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            66
+          ],
+          "sourceLine": 97,
+          "sourceToken": "fis16",
+          "generatedLine": 32,
+          "generatedCharacter": 65,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 40,
+          "noteIndex": 28,
+          "pitch": 66,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "91c2655a5ff78162beb510c685618f8b8833819a7df511fa37ecce5489380028",
+      "compilerLogSha256": "7fd8f42b2bfd41025d4c08e077cf375b181f4f7f7931c07ff06a8dd412060da1",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-li-l-darlin-fake",
+      "start": 42.0,
+      "sourceSha256": "2b80e3a574661034c4e0a2a4a0d25ab7b759414a4944b6362415483dc8b4579b",
+      "sourcePath": "src/openbook/lil_darlin.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 29,
+          "pitch": 67,
+          "start": 42,
+          "duration": 0.75
+        },
+        {
+          "index": 30,
+          "pitch": 69,
+          "start": 42.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 42.0,
+          "end": 42.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 97,
+          "sourceToken": "g8.",
+          "generatedLine": 32,
+          "generatedCharacter": 71,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 41,
+          "noteIndex": 29,
+          "pitch": 67,
+          "tiePiece": false
+        },
+        {
+          "start": 42.75,
+          "end": 43.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            69
+          ],
+          "sourceLine": 97,
+          "sourceToken": "a16",
+          "generatedLine": 32,
+          "generatedCharacter": 75,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 42,
+          "noteIndex": 30,
+          "pitch": 69,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "91c2655a5ff78162beb510c685618f8b8833819a7df511fa37ecce5489380028",
+      "compilerLogSha256": "7fd8f42b2bfd41025d4c08e077cf375b181f4f7f7931c07ff06a8dd412060da1",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-li-l-darlin-fake",
+      "start": 54.0,
+      "sourceSha256": "2b80e3a574661034c4e0a2a4a0d25ab7b759414a4944b6362415483dc8b4579b",
+      "sourcePath": "src/openbook/lil_darlin.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 38,
+          "pitch": 65,
+          "start": 54,
+          "duration": 0.75
+        },
+        {
+          "index": 39,
+          "pitch": 67,
+          "start": 54.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 54.0,
+          "end": 54.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            65
+          ],
+          "sourceLine": 98,
+          "sourceToken": "f8.",
+          "generatedLine": 33,
+          "generatedCharacter": 21,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 52,
+          "noteIndex": 38,
+          "pitch": 65,
+          "tiePiece": false
+        },
+        {
+          "start": 54.75,
+          "end": 55.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 98,
+          "sourceToken": "g16",
+          "generatedLine": 33,
+          "generatedCharacter": 25,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 53,
+          "noteIndex": 39,
+          "pitch": 67,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "91c2655a5ff78162beb510c685618f8b8833819a7df511fa37ecce5489380028",
+      "compilerLogSha256": "7fd8f42b2bfd41025d4c08e077cf375b181f4f7f7931c07ff06a8dd412060da1",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-li-l-darlin-fake",
+      "start": 105.0,
+      "sourceSha256": "2b80e3a574661034c4e0a2a4a0d25ab7b759414a4944b6362415483dc8b4579b",
+      "sourcePath": "src/openbook/lil_darlin.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 69,
+          "pitch": 67,
+          "start": 105,
+          "duration": 0.75
+        },
+        {
+          "index": 70,
+          "pitch": 66,
+          "start": 105.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 105.0,
+          "end": 105.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 105,
+          "sourceToken": "g8.",
+          "generatedLine": 40,
+          "generatedCharacter": 61,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 97,
+          "noteIndex": 69,
+          "pitch": 67,
+          "tiePiece": false
+        },
+        {
+          "start": 105.75,
+          "end": 106.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            66
+          ],
+          "sourceLine": 105,
+          "sourceToken": "fis16",
+          "generatedLine": 40,
+          "generatedCharacter": 65,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 98,
+          "noteIndex": 70,
+          "pitch": 66,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "91c2655a5ff78162beb510c685618f8b8833819a7df511fa37ecce5489380028",
+      "compilerLogSha256": "7fd8f42b2bfd41025d4c08e077cf375b181f4f7f7931c07ff06a8dd412060da1",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-li-l-darlin-fake",
+      "start": 106.0,
+      "sourceSha256": "2b80e3a574661034c4e0a2a4a0d25ab7b759414a4944b6362415483dc8b4579b",
+      "sourcePath": "src/openbook/lil_darlin.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 71,
+          "pitch": 67,
+          "start": 106,
+          "duration": 0.75
+        },
+        {
+          "index": 72,
+          "pitch": 69,
+          "start": 106.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 106.0,
+          "end": 106.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 105,
+          "sourceToken": "g8.",
+          "generatedLine": 40,
+          "generatedCharacter": 71,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 99,
+          "noteIndex": 71,
+          "pitch": 67,
+          "tiePiece": false
+        },
+        {
+          "start": 106.75,
+          "end": 107.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            69
+          ],
+          "sourceLine": 105,
+          "sourceToken": "a16",
+          "generatedLine": 40,
+          "generatedCharacter": 75,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 100,
+          "noteIndex": 72,
+          "pitch": 69,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "91c2655a5ff78162beb510c685618f8b8833819a7df511fa37ecce5489380028",
+      "compilerLogSha256": "7fd8f42b2bfd41025d4c08e077cf375b181f4f7f7931c07ff06a8dd412060da1",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-li-l-darlin-fake",
+      "start": 118.0,
+      "sourceSha256": "2b80e3a574661034c4e0a2a4a0d25ab7b759414a4944b6362415483dc8b4579b",
+      "sourcePath": "src/openbook/lil_darlin.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 80,
+          "pitch": 64,
+          "start": 118,
+          "duration": 0.75
+        },
+        {
+          "index": 81,
+          "pitch": 65,
+          "start": 118.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 118.0,
+          "end": 118.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            64
+          ],
+          "sourceLine": 106,
+          "sourceToken": "e8.",
+          "generatedLine": 41,
+          "generatedCharacter": 21,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 110,
+          "noteIndex": 80,
+          "pitch": 64,
+          "tiePiece": false
+        },
+        {
+          "start": 118.75,
+          "end": 119.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            65
+          ],
+          "sourceLine": 106,
+          "sourceToken": "f16",
+          "generatedLine": 41,
+          "generatedCharacter": 25,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 111,
+          "noteIndex": 81,
+          "pitch": 65,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "91c2655a5ff78162beb510c685618f8b8833819a7df511fa37ecce5489380028",
+      "compilerLogSha256": "7fd8f42b2bfd41025d4c08e077cf375b181f4f7f7931c07ff06a8dd412060da1",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-li-l-darlin-fake",
+      "start": 134.0,
+      "sourceSha256": "2b80e3a574661034c4e0a2a4a0d25ab7b759414a4944b6362415483dc8b4579b",
+      "sourcePath": "src/openbook/lil_darlin.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 89,
+          "pitch": 64,
+          "start": 134,
+          "duration": 0.75
+        },
+        {
+          "index": 90,
+          "pitch": 65,
+          "start": 134.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 134.0,
+          "end": 134.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            64
+          ],
+          "sourceLine": 109,
+          "sourceToken": "e8.",
+          "generatedLine": 44,
+          "generatedCharacter": 22,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 122,
+          "noteIndex": 89,
+          "pitch": 64,
+          "tiePiece": false
+        },
+        {
+          "start": 134.75,
+          "end": 135.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            65
+          ],
+          "sourceLine": 109,
+          "sourceToken": "f16",
+          "generatedLine": 44,
+          "generatedCharacter": 26,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 123,
+          "noteIndex": 90,
+          "pitch": 65,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "91c2655a5ff78162beb510c685618f8b8833819a7df511fa37ecce5489380028",
+      "compilerLogSha256": "7fd8f42b2bfd41025d4c08e077cf375b181f4f7f7931c07ff06a8dd412060da1",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-li-l-darlin-fake",
+      "start": 150.0,
+      "sourceSha256": "2b80e3a574661034c4e0a2a4a0d25ab7b759414a4944b6362415483dc8b4579b",
+      "sourcePath": "src/openbook/lil_darlin.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 98,
+          "pitch": 64,
+          "start": 150,
+          "duration": 0.75
+        },
+        {
+          "index": 99,
+          "pitch": 65,
+          "start": 150.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 150.0,
+          "end": 150.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            64
+          ],
+          "sourceLine": 110,
+          "sourceToken": "e8.",
+          "generatedLine": 45,
+          "generatedCharacter": 22,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 134,
+          "noteIndex": 98,
+          "pitch": 64,
+          "tiePiece": false
+        },
+        {
+          "start": 150.75,
+          "end": 151.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            65
+          ],
+          "sourceLine": 110,
+          "sourceToken": "f16",
+          "generatedLine": 45,
+          "generatedCharacter": 26,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 135,
+          "noteIndex": 99,
+          "pitch": 65,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "91c2655a5ff78162beb510c685618f8b8833819a7df511fa37ecce5489380028",
+      "compilerLogSha256": "7fd8f42b2bfd41025d4c08e077cf375b181f4f7f7931c07ff06a8dd412060da1",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-old-devil-moon-laurent",
+      "start": 78.0,
+      "sourceSha256": "06a4217bb4daaaef40a11f3870375c1e9786f0d6726895e216b021f0e32258ab",
+      "sourcePath": "src/openbook/old_devil_moon.ly.tera",
+      "sourceVersion": "Laurent",
+      "noteTuples": [
+        {
+          "index": 56,
+          "pitch": 65,
+          "start": 78,
+          "duration": 0.75
+        },
+        {
+          "index": 57,
+          "pitch": 62,
+          "start": 78.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 78.0,
+          "end": 78.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            65
+          ],
+          "sourceLine": 77,
+          "sourceToken": "f8.",
+          "generatedLine": 36,
+          "generatedCharacter": 6,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 65,
+          "noteIndex": 56,
+          "pitch": 65,
+          "tiePiece": false
+        },
+        {
+          "start": 78.75,
+          "end": 79.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            62
+          ],
+          "sourceLine": 77,
+          "sourceToken": "d16",
+          "generatedLine": 36,
+          "generatedCharacter": 10,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 66,
+          "noteIndex": 57,
+          "pitch": 62,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "07003795b0d2fc3a3622234c2717a8deba86c03de6273f829a63e76e2031243a",
+      "compilerLogSha256": "27729ac8781a97ef09c600ab4b359ff80da6ffd1a10da4ca1c56ebde0b48da75",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-old-devil-moon-laurent",
+      "start": 82.0,
+      "sourceSha256": "06a4217bb4daaaef40a11f3870375c1e9786f0d6726895e216b021f0e32258ab",
+      "sourcePath": "src/openbook/old_devil_moon.ly.tera",
+      "sourceVersion": "Laurent",
+      "noteTuples": [
+        {
+          "index": 60,
+          "pitch": 65,
+          "start": 82,
+          "duration": 0.75
+        },
+        {
+          "index": 61,
+          "pitch": 62,
+          "start": 82.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 82.0,
+          "end": 82.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            65
+          ],
+          "sourceLine": 77,
+          "sourceToken": "f8.",
+          "generatedLine": 36,
+          "generatedCharacter": 25,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 70,
+          "noteIndex": 60,
+          "pitch": 65,
+          "tiePiece": false
+        },
+        {
+          "start": 82.75,
+          "end": 83.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            62
+          ],
+          "sourceLine": 77,
+          "sourceToken": "d16",
+          "generatedLine": 36,
+          "generatedCharacter": 29,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 71,
+          "noteIndex": 61,
+          "pitch": 62,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "07003795b0d2fc3a3622234c2717a8deba86c03de6273f829a63e76e2031243a",
+      "compilerLogSha256": "27729ac8781a97ef09c600ab4b359ff80da6ffd1a10da4ca1c56ebde0b48da75",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-old-devil-moon-laurent",
+      "start": 94.0,
+      "sourceSha256": "06a4217bb4daaaef40a11f3870375c1e9786f0d6726895e216b021f0e32258ab",
+      "sourcePath": "src/openbook/old_devil_moon.ly.tera",
+      "sourceVersion": "Laurent",
+      "noteTuples": [
+        {
+          "index": 71,
+          "pitch": 67,
+          "start": 94,
+          "duration": 0.75
+        },
+        {
+          "index": 72,
+          "pitch": 65,
+          "start": 94.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 94.0,
+          "end": 94.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 78,
+          "sourceToken": "g8.",
+          "generatedLine": 37,
+          "generatedCharacter": 14,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 83,
+          "noteIndex": 71,
+          "pitch": 67,
+          "tiePiece": false
+        },
+        {
+          "start": 94.75,
+          "end": 95.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            65
+          ],
+          "sourceLine": 78,
+          "sourceToken": "f16",
+          "generatedLine": 37,
+          "generatedCharacter": 18,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 84,
+          "noteIndex": 72,
+          "pitch": 65,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "07003795b0d2fc3a3622234c2717a8deba86c03de6273f829a63e76e2031243a",
+      "compilerLogSha256": "27729ac8781a97ef09c600ab4b359ff80da6ffd1a10da4ca1c56ebde0b48da75",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-old-devil-moon-laurent",
+      "start": 95.0,
+      "sourceSha256": "06a4217bb4daaaef40a11f3870375c1e9786f0d6726895e216b021f0e32258ab",
+      "sourcePath": "src/openbook/old_devil_moon.ly.tera",
+      "sourceVersion": "Laurent",
+      "noteTuples": [
+        {
+          "index": 73,
+          "pitch": 62,
+          "start": 95,
+          "duration": 0.75
+        },
+        {
+          "index": 74,
+          "pitch": 60,
+          "start": 95.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 95.0,
+          "end": 95.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            62
+          ],
+          "sourceLine": 78,
+          "sourceToken": "d8.",
+          "generatedLine": 37,
+          "generatedCharacter": 22,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 85,
+          "noteIndex": 73,
+          "pitch": 62,
+          "tiePiece": false
+        },
+        {
+          "start": 95.75,
+          "end": 96.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            60
+          ],
+          "sourceLine": 78,
+          "sourceToken": "c16",
+          "generatedLine": 37,
+          "generatedCharacter": 26,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 86,
+          "noteIndex": 74,
+          "pitch": 60,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "07003795b0d2fc3a3622234c2717a8deba86c03de6273f829a63e76e2031243a",
+      "compilerLogSha256": "27729ac8781a97ef09c600ab4b359ff80da6ffd1a10da4ca1c56ebde0b48da75",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-on-the-sunny-side-of-the-street-fake",
+      "start": 96.0,
+      "sourceSha256": "dbce7202c932e795a5b20c6d60533232e7d2169ed2f7e4ce2cbc0c1b7d994963",
+      "sourcePath": "src/openbook/on_the_sunny_side_of_the_street.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 80,
+          "pitch": 64,
+          "start": 96,
+          "duration": 0.75
+        },
+        {
+          "index": 81,
+          "pitch": 62,
+          "start": 96.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 96.0,
+          "end": 96.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            64
+          ],
+          "sourceLine": 114,
+          "sourceToken": "e8.",
+          "generatedLine": 40,
+          "generatedCharacter": 50,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 88,
+          "noteIndex": 80,
+          "pitch": 64,
+          "tiePiece": false
+        },
+        {
+          "start": 96.75,
+          "end": 97.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            62
+          ],
+          "sourceLine": 114,
+          "sourceToken": "d16",
+          "generatedLine": 40,
+          "generatedCharacter": 54,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 89,
+          "noteIndex": 81,
+          "pitch": 62,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "9e90beb7859f2db5727f8dd55ef104d0160313b20a7fd6c83eab2aa69bfe32cd",
+      "compilerLogSha256": "d415c682881bbe89c2e5e523fb7144d93aa1224589c0531526a1b728461fe672",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-on-the-sunny-side-of-the-street-fake",
+      "start": 224.0,
+      "sourceSha256": "dbce7202c932e795a5b20c6d60533232e7d2169ed2f7e4ce2cbc0c1b7d994963",
+      "sourcePath": "src/openbook/on_the_sunny_side_of_the_street.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 188,
+          "pitch": 64,
+          "start": 224,
+          "duration": 0.75
+        },
+        {
+          "index": 189,
+          "pitch": 62,
+          "start": 224.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 224.0,
+          "end": 224.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            64
+          ],
+          "sourceLine": 114,
+          "sourceToken": "e8.",
+          "generatedLine": 40,
+          "generatedCharacter": 50,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 207,
+          "noteIndex": 188,
+          "pitch": 64,
+          "tiePiece": false
+        },
+        {
+          "start": 224.75,
+          "end": 225.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            62
+          ],
+          "sourceLine": 114,
+          "sourceToken": "d16",
+          "generatedLine": 40,
+          "generatedCharacter": 54,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 208,
+          "noteIndex": 189,
+          "pitch": 62,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "9e90beb7859f2db5727f8dd55ef104d0160313b20a7fd6c83eab2aa69bfe32cd",
+      "compilerLogSha256": "d415c682881bbe89c2e5e523fb7144d93aa1224589c0531526a1b728461fe672",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-scrapple-from-the-apple-fake",
+      "start": 16.0,
+      "sourceSha256": "39e58635e9cd19203097be4d4fe5b1df6131b9864968b0c07fc0b3e1e59d1f3c",
+      "sourcePath": "src/openbook/scrapple_from_the_apple.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 23,
+          "pitch": 72,
+          "start": 16,
+          "duration": 0.75
+        },
+        {
+          "index": 24,
+          "pitch": 69,
+          "start": 16.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 16.0,
+          "end": 16.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 96,
+          "sourceToken": "c8.",
+          "generatedLine": 30,
+          "generatedCharacter": 2,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 29,
+          "noteIndex": 23,
+          "pitch": 72,
+          "tiePiece": false
+        },
+        {
+          "start": 16.75,
+          "end": 17.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            69
+          ],
+          "sourceLine": 96,
+          "sourceToken": "a16",
+          "generatedLine": 30,
+          "generatedCharacter": 6,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 30,
+          "noteIndex": 24,
+          "pitch": 69,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "fb5036fed4f9cf62786604bfee05a203fc3a86e86eb1ba8b3a56f9762b2f7694",
+      "compilerLogSha256": "8560b52d8388e363780515397ccb40b83d6c9739c11c3c91c07306d4dc2f3905",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-scrapple-from-the-apple-fake",
+      "start": 48.0,
+      "sourceSha256": "39e58635e9cd19203097be4d4fe5b1df6131b9864968b0c07fc0b3e1e59d1f3c",
+      "sourcePath": "src/openbook/scrapple_from_the_apple.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 68,
+          "pitch": 72,
+          "start": 48,
+          "duration": 0.75
+        },
+        {
+          "index": 69,
+          "pitch": 69,
+          "start": 48.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 48.0,
+          "end": 48.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 96,
+          "sourceToken": "c8.",
+          "generatedLine": 30,
+          "generatedCharacter": 2,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 86,
+          "noteIndex": 68,
+          "pitch": 72,
+          "tiePiece": false
+        },
+        {
+          "start": 48.75,
+          "end": 49.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            69
+          ],
+          "sourceLine": 96,
+          "sourceToken": "a16",
+          "generatedLine": 30,
+          "generatedCharacter": 6,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 87,
+          "noteIndex": 69,
+          "pitch": 69,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "fb5036fed4f9cf62786604bfee05a203fc3a86e86eb1ba8b3a56f9762b2f7694",
+      "compilerLogSha256": "8560b52d8388e363780515397ccb40b83d6c9739c11c3c91c07306d4dc2f3905",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-scrapple-from-the-apple-fake",
+      "start": 112.0,
+      "sourceSha256": "39e58635e9cd19203097be4d4fe5b1df6131b9864968b0c07fc0b3e1e59d1f3c",
+      "sourcePath": "src/openbook/scrapple_from_the_apple.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 174,
+          "pitch": 72,
+          "start": 112,
+          "duration": 0.75
+        },
+        {
+          "index": 175,
+          "pitch": 69,
+          "start": 112.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 112.0,
+          "end": 112.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 112,
+          "sourceToken": "c8.",
+          "generatedLine": 46,
+          "generatedCharacter": 1,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 213,
+          "noteIndex": 174,
+          "pitch": 72,
+          "tiePiece": false
+        },
+        {
+          "start": 112.75,
+          "end": 113.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            69
+          ],
+          "sourceLine": 112,
+          "sourceToken": "a16",
+          "generatedLine": 46,
+          "generatedCharacter": 5,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 214,
+          "noteIndex": 175,
+          "pitch": 69,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "fb5036fed4f9cf62786604bfee05a203fc3a86e86eb1ba8b3a56f9762b2f7694",
+      "compilerLogSha256": "8560b52d8388e363780515397ccb40b83d6c9739c11c3c91c07306d4dc2f3905",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-summertime-fake",
+      "start": 23.0,
+      "sourceSha256": "4a31b81b684adcb4c0fcb103f8580b801f18b2066061eebf4ee24afe23519f16",
+      "sourcePath": "src/openbook/summertime.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 14,
+          "pitch": 72,
+          "start": 23,
+          "duration": 0.75
+        },
+        {
+          "index": 15,
+          "pitch": 69,
+          "start": 23.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 23.0,
+          "end": 23.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 215,
+          "sourceToken": "c8.",
+          "generatedLine": 31,
+          "generatedCharacter": 17,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 20,
+          "noteIndex": 14,
+          "pitch": 72,
+          "tiePiece": false
+        },
+        {
+          "start": 23.75,
+          "end": 24.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            69
+          ],
+          "sourceLine": 215,
+          "sourceToken": "a16",
+          "generatedLine": 31,
+          "generatedCharacter": 21,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 21,
+          "noteIndex": 15,
+          "pitch": 69,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "514de71e55bc0066588d533931ff85e48e6a422fd3974b876c6ee882a9d4f664",
+      "compilerLogSha256": "d8537291d3ad4736f8c701f0ef927d476a44df4fa7e2064d505668072f900245",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-summertime-fake",
+      "start": 24.0,
+      "sourceSha256": "4a31b81b684adcb4c0fcb103f8580b801f18b2066061eebf4ee24afe23519f16",
+      "sourcePath": "src/openbook/summertime.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 16,
+          "pitch": 72,
+          "start": 24,
+          "duration": 0.75
+        },
+        {
+          "index": 17,
+          "pitch": 69,
+          "start": 24.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 24.0,
+          "end": 24.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 215,
+          "sourceToken": "c8.",
+          "generatedLine": 31,
+          "generatedCharacter": 25,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 22,
+          "noteIndex": 16,
+          "pitch": 72,
+          "tiePiece": false
+        },
+        {
+          "start": 24.75,
+          "end": 25.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            69
+          ],
+          "sourceLine": 215,
+          "sourceToken": "a16",
+          "generatedLine": 31,
+          "generatedCharacter": 29,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 23,
+          "noteIndex": 17,
+          "pitch": 69,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "514de71e55bc0066588d533931ff85e48e6a422fd3974b876c6ee882a9d4f664",
+      "compilerLogSha256": "d8537291d3ad4736f8c701f0ef927d476a44df4fa7e2064d505668072f900245",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-summertime-fake",
+      "start": 39.0,
+      "sourceSha256": "4a31b81b684adcb4c0fcb103f8580b801f18b2066061eebf4ee24afe23519f16",
+      "sourcePath": "src/openbook/summertime.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 25,
+          "pitch": 74,
+          "start": 39,
+          "duration": 0.75
+        },
+        {
+          "index": 26,
+          "pitch": 72,
+          "start": 39.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 39.0,
+          "end": 39.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 218,
+          "sourceToken": "d8.",
+          "generatedLine": 34,
+          "generatedCharacter": 19,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 35,
+          "noteIndex": 25,
+          "pitch": 74,
+          "tiePiece": false
+        },
+        {
+          "start": 39.75,
+          "end": 40.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 218,
+          "sourceToken": "c16",
+          "generatedLine": 34,
+          "generatedCharacter": 23,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 36,
+          "noteIndex": 26,
+          "pitch": 72,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "514de71e55bc0066588d533931ff85e48e6a422fd3974b876c6ee882a9d4f664",
+      "compilerLogSha256": "d8537291d3ad4736f8c701f0ef927d476a44df4fa7e2064d505668072f900245",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-summertime-fake",
+      "start": 40.0,
+      "sourceSha256": "4a31b81b684adcb4c0fcb103f8580b801f18b2066061eebf4ee24afe23519f16",
+      "sourcePath": "src/openbook/summertime.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 27,
+          "pitch": 74,
+          "start": 40,
+          "duration": 0.75
+        },
+        {
+          "index": 28,
+          "pitch": 76,
+          "start": 40.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 40.0,
+          "end": 40.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 218,
+          "sourceToken": "d8.",
+          "generatedLine": 34,
+          "generatedCharacter": 27,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 37,
+          "noteIndex": 27,
+          "pitch": 74,
+          "tiePiece": false
+        },
+        {
+          "start": 40.75,
+          "end": 41.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            76
+          ],
+          "sourceLine": 218,
+          "sourceToken": "e16",
+          "generatedLine": 34,
+          "generatedCharacter": 31,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 38,
+          "noteIndex": 28,
+          "pitch": 76,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "514de71e55bc0066588d533931ff85e48e6a422fd3974b876c6ee882a9d4f664",
+      "compilerLogSha256": "d8537291d3ad4736f8c701f0ef927d476a44df4fa7e2064d505668072f900245",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-summertime-fake",
+      "start": 79.0,
+      "sourceSha256": "4a31b81b684adcb4c0fcb103f8580b801f18b2066061eebf4ee24afe23519f16",
+      "sourcePath": "src/openbook/summertime.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 48,
+          "pitch": 74,
+          "start": 79,
+          "duration": 0.75
+        },
+        {
+          "index": 49,
+          "pitch": 72,
+          "start": 79.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 79.0,
+          "end": 79.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 222,
+          "sourceToken": "d8.",
+          "generatedLine": 38,
+          "generatedCharacter": 18,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 66,
+          "noteIndex": 48,
+          "pitch": 74,
+          "tiePiece": false
+        },
+        {
+          "start": 79.75,
+          "end": 80.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 222,
+          "sourceToken": "c16",
+          "generatedLine": 38,
+          "generatedCharacter": 22,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 67,
+          "noteIndex": 49,
+          "pitch": 72,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "514de71e55bc0066588d533931ff85e48e6a422fd3974b876c6ee882a9d4f664",
+      "compilerLogSha256": "d8537291d3ad4736f8c701f0ef927d476a44df4fa7e2064d505668072f900245",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-summertime-fake",
+      "start": 80.0,
+      "sourceSha256": "4a31b81b684adcb4c0fcb103f8580b801f18b2066061eebf4ee24afe23519f16",
+      "sourcePath": "src/openbook/summertime.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 50,
+          "pitch": 74,
+          "start": 80,
+          "duration": 0.75
+        },
+        {
+          "index": 51,
+          "pitch": 76,
+          "start": 80.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 80.0,
+          "end": 80.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 222,
+          "sourceToken": "d8.",
+          "generatedLine": 38,
+          "generatedCharacter": 26,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 68,
+          "noteIndex": 50,
+          "pitch": 74,
+          "tiePiece": false
+        },
+        {
+          "start": 80.75,
+          "end": 81.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            76
+          ],
+          "sourceLine": 222,
+          "sourceToken": "e16",
+          "generatedLine": 38,
+          "generatedCharacter": 30,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 69,
+          "noteIndex": 51,
+          "pitch": 76,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "514de71e55bc0066588d533931ff85e48e6a422fd3974b876c6ee882a9d4f664",
+      "compilerLogSha256": "d8537291d3ad4736f8c701f0ef927d476a44df4fa7e2064d505668072f900245",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-summertime-fake",
+      "start": 95.0,
+      "sourceSha256": "4a31b81b684adcb4c0fcb103f8580b801f18b2066061eebf4ee24afe23519f16",
+      "sourcePath": "src/openbook/summertime.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 60,
+          "pitch": 72,
+          "start": 95,
+          "duration": 0.75
+        },
+        {
+          "index": 61,
+          "pitch": 69,
+          "start": 95.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 95.0,
+          "end": 95.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 223,
+          "sourceToken": "c8.",
+          "generatedLine": 39,
+          "generatedCharacter": 19,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 81,
+          "noteIndex": 60,
+          "pitch": 72,
+          "tiePiece": false
+        },
+        {
+          "start": 95.75,
+          "end": 96.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            69
+          ],
+          "sourceLine": 223,
+          "sourceToken": "a16",
+          "generatedLine": 39,
+          "generatedCharacter": 23,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 82,
+          "noteIndex": 61,
+          "pitch": 69,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "514de71e55bc0066588d533931ff85e48e6a422fd3974b876c6ee882a9d4f664",
+      "compilerLogSha256": "d8537291d3ad4736f8c701f0ef927d476a44df4fa7e2064d505668072f900245",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-summertime-fake",
+      "start": 96.0,
+      "sourceSha256": "4a31b81b684adcb4c0fcb103f8580b801f18b2066061eebf4ee24afe23519f16",
+      "sourcePath": "src/openbook/summertime.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 62,
+          "pitch": 72,
+          "start": 96,
+          "duration": 0.75
+        },
+        {
+          "index": 63,
+          "pitch": 69,
+          "start": 96.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 96.0,
+          "end": 96.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 223,
+          "sourceToken": "c8.",
+          "generatedLine": 39,
+          "generatedCharacter": 27,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 83,
+          "noteIndex": 62,
+          "pitch": 72,
+          "tiePiece": false
+        },
+        {
+          "start": 96.75,
+          "end": 97.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            69
+          ],
+          "sourceLine": 223,
+          "sourceToken": "a16",
+          "generatedLine": 39,
+          "generatedCharacter": 31,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 84,
+          "noteIndex": 63,
+          "pitch": 69,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "514de71e55bc0066588d533931ff85e48e6a422fd3974b876c6ee882a9d4f664",
+      "compilerLogSha256": "d8537291d3ad4736f8c701f0ef927d476a44df4fa7e2064d505668072f900245",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-summertime-fake",
+      "start": 111.0,
+      "sourceSha256": "4a31b81b684adcb4c0fcb103f8580b801f18b2066061eebf4ee24afe23519f16",
+      "sourcePath": "src/openbook/summertime.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 71,
+          "pitch": 74,
+          "start": 111,
+          "duration": 0.75
+        },
+        {
+          "index": 72,
+          "pitch": 72,
+          "start": 111.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 111.0,
+          "end": 111.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 226,
+          "sourceToken": "d8.",
+          "generatedLine": 42,
+          "generatedCharacter": 17,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 96,
+          "noteIndex": 71,
+          "pitch": 74,
+          "tiePiece": false
+        },
+        {
+          "start": 111.75,
+          "end": 112.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 226,
+          "sourceToken": "c16",
+          "generatedLine": 42,
+          "generatedCharacter": 21,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 97,
+          "noteIndex": 72,
+          "pitch": 72,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "514de71e55bc0066588d533931ff85e48e6a422fd3974b876c6ee882a9d4f664",
+      "compilerLogSha256": "d8537291d3ad4736f8c701f0ef927d476a44df4fa7e2064d505668072f900245",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-summertime-fake",
+      "start": 112.0,
+      "sourceSha256": "4a31b81b684adcb4c0fcb103f8580b801f18b2066061eebf4ee24afe23519f16",
+      "sourcePath": "src/openbook/summertime.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 73,
+          "pitch": 74,
+          "start": 112,
+          "duration": 0.75
+        },
+        {
+          "index": 74,
+          "pitch": 76,
+          "start": 112.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 112.0,
+          "end": 112.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 226,
+          "sourceToken": "d8.",
+          "generatedLine": 42,
+          "generatedCharacter": 25,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 98,
+          "noteIndex": 73,
+          "pitch": 74,
+          "tiePiece": false
+        },
+        {
+          "start": 112.75,
+          "end": 113.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            76
+          ],
+          "sourceLine": 226,
+          "sourceToken": "e16",
+          "generatedLine": 42,
+          "generatedCharacter": 29,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 99,
+          "noteIndex": 74,
+          "pitch": 76,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "514de71e55bc0066588d533931ff85e48e6a422fd3974b876c6ee882a9d4f664",
+      "compilerLogSha256": "d8537291d3ad4736f8c701f0ef927d476a44df4fa7e2064d505668072f900245",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-willow-weep-for-me-fake",
+      "start": 0.0,
+      "sourceSha256": "a423c94908e547d9d3b2db45ce6226a92ff1262b68a8332d4f769b0c4a43290d",
+      "sourcePath": "src/openbook/willow_weep_for_me.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 0,
+          "pitch": 74,
+          "start": 0,
+          "duration": 0.75
+        },
+        {
+          "index": 1,
+          "pitch": 62,
+          "start": 0.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 0.0,
+          "end": 0.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 92,
+          "sourceToken": "d'8.",
+          "generatedLine": 28,
+          "generatedCharacter": 1,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 0,
+          "noteIndex": 0,
+          "pitch": 74,
+          "tiePiece": false
+        },
+        {
+          "start": 0.75,
+          "end": 1.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            62
+          ],
+          "sourceLine": 92,
+          "sourceToken": "d,16",
+          "generatedLine": 28,
+          "generatedCharacter": 6,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 1,
+          "noteIndex": 1,
+          "pitch": 62,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "f58b31ae09c5022617187ef602ee0a9e3cd800c6d05ef0d990c8f31d85f48b1a",
+      "compilerLogSha256": "cf638b55b1d51efb367e096947804725e463627fea7a7272676155c662549f8a",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-willow-weep-for-me-fake",
+      "start": 4.0,
+      "sourceSha256": "a423c94908e547d9d3b2db45ce6226a92ff1262b68a8332d4f769b0c4a43290d",
+      "sourcePath": "src/openbook/willow_weep_for_me.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 5,
+          "pitch": 74,
+          "start": 4,
+          "duration": 0.75
+        },
+        {
+          "index": 6,
+          "pitch": 62,
+          "start": 4.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 4.0,
+          "end": 4.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 92,
+          "sourceToken": "d'8.",
+          "generatedLine": 28,
+          "generatedCharacter": 40,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 6,
+          "noteIndex": 5,
+          "pitch": 74,
+          "tiePiece": false
+        },
+        {
+          "start": 4.75,
+          "end": 5.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            62
+          ],
+          "sourceLine": 92,
+          "sourceToken": "d,16",
+          "generatedLine": 28,
+          "generatedCharacter": 45,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 7,
+          "noteIndex": 6,
+          "pitch": 62,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "f58b31ae09c5022617187ef602ee0a9e3cd800c6d05ef0d990c8f31d85f48b1a",
+      "compilerLogSha256": "cf638b55b1d51efb367e096947804725e463627fea7a7272676155c662549f8a",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-willow-weep-for-me-fake",
+      "start": 8.0,
+      "sourceSha256": "a423c94908e547d9d3b2db45ce6226a92ff1262b68a8332d4f769b0c4a43290d",
+      "sourcePath": "src/openbook/willow_weep_for_me.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 10,
+          "pitch": 74,
+          "start": 8,
+          "duration": 0.75
+        },
+        {
+          "index": 11,
+          "pitch": 62,
+          "start": 8.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 8.0,
+          "end": 8.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 92,
+          "sourceToken": "d'8.",
+          "generatedLine": 28,
+          "generatedCharacter": 79,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 12,
+          "noteIndex": 10,
+          "pitch": 74,
+          "tiePiece": false
+        },
+        {
+          "start": 8.75,
+          "end": 9.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            62
+          ],
+          "sourceLine": 92,
+          "sourceToken": "d,16",
+          "generatedLine": 28,
+          "generatedCharacter": 84,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 13,
+          "noteIndex": 11,
+          "pitch": 62,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "f58b31ae09c5022617187ef602ee0a9e3cd800c6d05ef0d990c8f31d85f48b1a",
+      "compilerLogSha256": "cf638b55b1d51efb367e096947804725e463627fea7a7272676155c662549f8a",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-willow-weep-for-me-fake",
+      "start": 20.0,
+      "sourceSha256": "a423c94908e547d9d3b2db45ce6226a92ff1262b68a8332d4f769b0c4a43290d",
+      "sourcePath": "src/openbook/willow_weep_for_me.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 28,
+          "pitch": 74,
+          "start": 20,
+          "duration": 0.75
+        },
+        {
+          "index": 29,
+          "pitch": 72,
+          "start": 20.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 20.0,
+          "end": 20.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 93,
+          "sourceToken": "d'8.",
+          "generatedLine": 29,
+          "generatedCharacter": 18,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 33,
+          "noteIndex": 28,
+          "pitch": 74,
+          "tiePiece": false
+        },
+        {
+          "start": 20.75,
+          "end": 21.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 93,
+          "sourceToken": "c16",
+          "generatedLine": 29,
+          "generatedCharacter": 23,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 34,
+          "noteIndex": 29,
+          "pitch": 72,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "f58b31ae09c5022617187ef602ee0a9e3cd800c6d05ef0d990c8f31d85f48b1a",
+      "compilerLogSha256": "cf638b55b1d51efb367e096947804725e463627fea7a7272676155c662549f8a",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-willow-weep-for-me-fake",
+      "start": 36.0,
+      "sourceSha256": "a423c94908e547d9d3b2db45ce6226a92ff1262b68a8332d4f769b0c4a43290d",
+      "sourcePath": "src/openbook/willow_weep_for_me.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 41,
+          "pitch": 74,
+          "start": 36,
+          "duration": 0.75
+        },
+        {
+          "index": 42,
+          "pitch": 62,
+          "start": 36.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 36.0,
+          "end": 36.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 96,
+          "sourceToken": "d'8.",
+          "generatedLine": 32,
+          "generatedCharacter": 40,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 49,
+          "noteIndex": 41,
+          "pitch": 74,
+          "tiePiece": false
+        },
+        {
+          "start": 36.75,
+          "end": 37.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            62
+          ],
+          "sourceLine": 96,
+          "sourceToken": "d,16",
+          "generatedLine": 32,
+          "generatedCharacter": 45,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 50,
+          "noteIndex": 42,
+          "pitch": 62,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "f58b31ae09c5022617187ef602ee0a9e3cd800c6d05ef0d990c8f31d85f48b1a",
+      "compilerLogSha256": "cf638b55b1d51efb367e096947804725e463627fea7a7272676155c662549f8a",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-willow-weep-for-me-fake",
+      "start": 40.0,
+      "sourceSha256": "a423c94908e547d9d3b2db45ce6226a92ff1262b68a8332d4f769b0c4a43290d",
+      "sourcePath": "src/openbook/willow_weep_for_me.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 46,
+          "pitch": 74,
+          "start": 40,
+          "duration": 0.75
+        },
+        {
+          "index": 47,
+          "pitch": 62,
+          "start": 40.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 40.0,
+          "end": 40.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 96,
+          "sourceToken": "d'8.",
+          "generatedLine": 32,
+          "generatedCharacter": 79,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 55,
+          "noteIndex": 46,
+          "pitch": 74,
+          "tiePiece": false
+        },
+        {
+          "start": 40.75,
+          "end": 41.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            62
+          ],
+          "sourceLine": 96,
+          "sourceToken": "d,16",
+          "generatedLine": 32,
+          "generatedCharacter": 84,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 56,
+          "noteIndex": 47,
+          "pitch": 62,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "f58b31ae09c5022617187ef602ee0a9e3cd800c6d05ef0d990c8f31d85f48b1a",
+      "compilerLogSha256": "cf638b55b1d51efb367e096947804725e463627fea7a7272676155c662549f8a",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-willow-weep-for-me-fake",
+      "start": 52.0,
+      "sourceSha256": "a423c94908e547d9d3b2db45ce6226a92ff1262b68a8332d4f769b0c4a43290d",
+      "sourcePath": "src/openbook/willow_weep_for_me.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 64,
+          "pitch": 74,
+          "start": 52,
+          "duration": 0.75
+        },
+        {
+          "index": 65,
+          "pitch": 72,
+          "start": 52.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 52.0,
+          "end": 52.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 97,
+          "sourceToken": "d'8.",
+          "generatedLine": 33,
+          "generatedCharacter": 18,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 76,
+          "noteIndex": 64,
+          "pitch": 74,
+          "tiePiece": false
+        },
+        {
+          "start": 52.75,
+          "end": 53.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 97,
+          "sourceToken": "c16",
+          "generatedLine": 33,
+          "generatedCharacter": 23,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 77,
+          "noteIndex": 65,
+          "pitch": 72,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "f58b31ae09c5022617187ef602ee0a9e3cd800c6d05ef0d990c8f31d85f48b1a",
+      "compilerLogSha256": "cf638b55b1d51efb367e096947804725e463627fea7a7272676155c662549f8a",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-willow-weep-for-me-fake",
+      "start": 64.0,
+      "sourceSha256": "a423c94908e547d9d3b2db45ce6226a92ff1262b68a8332d4f769b0c4a43290d",
+      "sourcePath": "src/openbook/willow_weep_for_me.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 72,
+          "pitch": 67,
+          "start": 64,
+          "duration": 0.75
+        },
+        {
+          "index": 73,
+          "pitch": 72,
+          "start": 64.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 64.0,
+          "end": 64.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 100,
+          "sourceToken": "g8.",
+          "generatedLine": 36,
+          "generatedCharacter": 1,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 87,
+          "noteIndex": 72,
+          "pitch": 67,
+          "tiePiece": false
+        },
+        {
+          "start": 64.75,
+          "end": 65.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 100,
+          "sourceToken": "c16",
+          "generatedLine": 36,
+          "generatedCharacter": 5,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 88,
+          "noteIndex": 73,
+          "pitch": 72,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "f58b31ae09c5022617187ef602ee0a9e3cd800c6d05ef0d990c8f31d85f48b1a",
+      "compilerLogSha256": "cf638b55b1d51efb367e096947804725e463627fea7a7272676155c662549f8a",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-willow-weep-for-me-fake",
+      "start": 68.0,
+      "sourceSha256": "a423c94908e547d9d3b2db45ce6226a92ff1262b68a8332d4f769b0c4a43290d",
+      "sourcePath": "src/openbook/willow_weep_for_me.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 78,
+          "pitch": 70,
+          "start": 68,
+          "duration": 0.75
+        },
+        {
+          "index": 79,
+          "pitch": 67,
+          "start": 68.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 68.0,
+          "end": 68.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            70
+          ],
+          "sourceLine": 100,
+          "sourceToken": "bes8.",
+          "generatedLine": 36,
+          "generatedCharacter": 46,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 94,
+          "noteIndex": 78,
+          "pitch": 70,
+          "tiePiece": false
+        },
+        {
+          "start": 68.75,
+          "end": 69.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 100,
+          "sourceToken": "g16",
+          "generatedLine": 36,
+          "generatedCharacter": 52,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 95,
+          "noteIndex": 79,
+          "pitch": 67,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "f58b31ae09c5022617187ef602ee0a9e3cd800c6d05ef0d990c8f31d85f48b1a",
+      "compilerLogSha256": "cf638b55b1d51efb367e096947804725e463627fea7a7272676155c662549f8a",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-willow-weep-for-me-fake",
+      "start": 76.0,
+      "sourceSha256": "a423c94908e547d9d3b2db45ce6226a92ff1262b68a8332d4f769b0c4a43290d",
+      "sourcePath": "src/openbook/willow_weep_for_me.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 91,
+          "pitch": 68,
+          "start": 76,
+          "duration": 0.75
+        },
+        {
+          "index": 92,
+          "pitch": 70,
+          "start": 76.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 76.0,
+          "end": 76.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            68
+          ],
+          "sourceLine": 100,
+          "sourceToken": "aes8.",
+          "generatedLine": 36,
+          "generatedCharacter": 122,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 108,
+          "noteIndex": 91,
+          "pitch": 68,
+          "tiePiece": false
+        },
+        {
+          "start": 76.75,
+          "end": 77.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            70
+          ],
+          "sourceLine": 100,
+          "sourceToken": "bes16",
+          "generatedLine": 36,
+          "generatedCharacter": 128,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 109,
+          "noteIndex": 92,
+          "pitch": 70,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "f58b31ae09c5022617187ef602ee0a9e3cd800c6d05ef0d990c8f31d85f48b1a",
+      "compilerLogSha256": "cf638b55b1d51efb367e096947804725e463627fea7a7272676155c662549f8a",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-willow-weep-for-me-fake",
+      "start": 80.0,
+      "sourceSha256": "a423c94908e547d9d3b2db45ce6226a92ff1262b68a8332d4f769b0c4a43290d",
+      "sourcePath": "src/openbook/willow_weep_for_me.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 95,
+          "pitch": 67,
+          "start": 80,
+          "duration": 0.75
+        },
+        {
+          "index": 96,
+          "pitch": 72,
+          "start": 80.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 80.0,
+          "end": 80.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 101,
+          "sourceToken": "g8.",
+          "generatedLine": 37,
+          "generatedCharacter": 1,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 114,
+          "noteIndex": 95,
+          "pitch": 67,
+          "tiePiece": false
+        },
+        {
+          "start": 80.75,
+          "end": 81.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 101,
+          "sourceToken": "c16",
+          "generatedLine": 37,
+          "generatedCharacter": 5,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 115,
+          "noteIndex": 96,
+          "pitch": 72,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "f58b31ae09c5022617187ef602ee0a9e3cd800c6d05ef0d990c8f31d85f48b1a",
+      "compilerLogSha256": "cf638b55b1d51efb367e096947804725e463627fea7a7272676155c662549f8a",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-willow-weep-for-me-fake",
+      "start": 84.0,
+      "sourceSha256": "a423c94908e547d9d3b2db45ce6226a92ff1262b68a8332d4f769b0c4a43290d",
+      "sourcePath": "src/openbook/willow_weep_for_me.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 101,
+          "pitch": 70,
+          "start": 84,
+          "duration": 0.75
+        },
+        {
+          "index": 102,
+          "pitch": 67,
+          "start": 84.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 84.0,
+          "end": 84.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            70
+          ],
+          "sourceLine": 101,
+          "sourceToken": "bes8.",
+          "generatedLine": 37,
+          "generatedCharacter": 46,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 121,
+          "noteIndex": 101,
+          "pitch": 70,
+          "tiePiece": false
+        },
+        {
+          "start": 84.75,
+          "end": 85.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            67
+          ],
+          "sourceLine": 101,
+          "sourceToken": "g16",
+          "generatedLine": 37,
+          "generatedCharacter": 52,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 122,
+          "noteIndex": 102,
+          "pitch": 67,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "f58b31ae09c5022617187ef602ee0a9e3cd800c6d05ef0d990c8f31d85f48b1a",
+      "compilerLogSha256": "cf638b55b1d51efb367e096947804725e463627fea7a7272676155c662549f8a",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-willow-weep-for-me-fake",
+      "start": 88.0,
+      "sourceSha256": "a423c94908e547d9d3b2db45ce6226a92ff1262b68a8332d4f769b0c4a43290d",
+      "sourcePath": "src/openbook/willow_weep_for_me.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 107,
+          "pitch": 72,
+          "start": 88,
+          "duration": 0.75
+        },
+        {
+          "index": 108,
+          "pitch": 72,
+          "start": 88.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 88.0,
+          "end": 88.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 101,
+          "sourceToken": "c8.",
+          "generatedLine": 37,
+          "generatedCharacter": 91,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 128,
+          "noteIndex": 107,
+          "pitch": 72,
+          "tiePiece": false
+        },
+        {
+          "start": 88.75,
+          "end": 89.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 101,
+          "sourceToken": "c16",
+          "generatedLine": 37,
+          "generatedCharacter": 95,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 129,
+          "noteIndex": 108,
+          "pitch": 72,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "f58b31ae09c5022617187ef602ee0a9e3cd800c6d05ef0d990c8f31d85f48b1a",
+      "compilerLogSha256": "cf638b55b1d51efb367e096947804725e463627fea7a7272676155c662549f8a",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-willow-weep-for-me-fake",
+      "start": 89.0,
+      "sourceSha256": "a423c94908e547d9d3b2db45ce6226a92ff1262b68a8332d4f769b0c4a43290d",
+      "sourcePath": "src/openbook/willow_weep_for_me.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 109,
+          "pitch": 74,
+          "start": 89,
+          "duration": 0.75
+        },
+        {
+          "index": 110,
+          "pitch": 72,
+          "start": 89.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 89.0,
+          "end": 89.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 101,
+          "sourceToken": "d8.",
+          "generatedLine": 37,
+          "generatedCharacter": 99,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 130,
+          "noteIndex": 109,
+          "pitch": 74,
+          "tiePiece": false
+        },
+        {
+          "start": 89.75,
+          "end": 90.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 101,
+          "sourceToken": "c16",
+          "generatedLine": 37,
+          "generatedCharacter": 103,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 131,
+          "noteIndex": 110,
+          "pitch": 72,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "f58b31ae09c5022617187ef602ee0a9e3cd800c6d05ef0d990c8f31d85f48b1a",
+      "compilerLogSha256": "cf638b55b1d51efb367e096947804725e463627fea7a7272676155c662549f8a",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-willow-weep-for-me-fake",
+      "start": 92.0,
+      "sourceSha256": "a423c94908e547d9d3b2db45ce6226a92ff1262b68a8332d4f769b0c4a43290d",
+      "sourcePath": "src/openbook/willow_weep_for_me.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 114,
+          "pitch": 68,
+          "start": 92,
+          "duration": 0.75
+        },
+        {
+          "index": 115,
+          "pitch": 70,
+          "start": 92.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 92.0,
+          "end": 92.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            68
+          ],
+          "sourceLine": 101,
+          "sourceToken": "aes8.",
+          "generatedLine": 37,
+          "generatedCharacter": 122,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 135,
+          "noteIndex": 114,
+          "pitch": 68,
+          "tiePiece": false
+        },
+        {
+          "start": 92.75,
+          "end": 93.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            70
+          ],
+          "sourceLine": 101,
+          "sourceToken": "bes16",
+          "generatedLine": 37,
+          "generatedCharacter": 128,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 136,
+          "noteIndex": 115,
+          "pitch": 70,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "f58b31ae09c5022617187ef602ee0a9e3cd800c6d05ef0d990c8f31d85f48b1a",
+      "compilerLogSha256": "cf638b55b1d51efb367e096947804725e463627fea7a7272676155c662549f8a",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-willow-weep-for-me-fake",
+      "start": 100.0,
+      "sourceSha256": "a423c94908e547d9d3b2db45ce6226a92ff1262b68a8332d4f769b0c4a43290d",
+      "sourcePath": "src/openbook/willow_weep_for_me.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 125,
+          "pitch": 74,
+          "start": 100,
+          "duration": 0.75
+        },
+        {
+          "index": 126,
+          "pitch": 62,
+          "start": 100.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 100.0,
+          "end": 100.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 104,
+          "sourceToken": "d'8.",
+          "generatedLine": 40,
+          "generatedCharacter": 39,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 148,
+          "noteIndex": 125,
+          "pitch": 74,
+          "tiePiece": false
+        },
+        {
+          "start": 100.75,
+          "end": 101.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            62
+          ],
+          "sourceLine": 104,
+          "sourceToken": "d,16",
+          "generatedLine": 40,
+          "generatedCharacter": 44,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 149,
+          "noteIndex": 126,
+          "pitch": 62,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "f58b31ae09c5022617187ef602ee0a9e3cd800c6d05ef0d990c8f31d85f48b1a",
+      "compilerLogSha256": "cf638b55b1d51efb367e096947804725e463627fea7a7272676155c662549f8a",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-willow-weep-for-me-fake",
+      "start": 104.0,
+      "sourceSha256": "a423c94908e547d9d3b2db45ce6226a92ff1262b68a8332d4f769b0c4a43290d",
+      "sourcePath": "src/openbook/willow_weep_for_me.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 130,
+          "pitch": 74,
+          "start": 104,
+          "duration": 0.75
+        },
+        {
+          "index": 131,
+          "pitch": 62,
+          "start": 104.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 104.0,
+          "end": 104.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 104,
+          "sourceToken": "d'8.",
+          "generatedLine": 40,
+          "generatedCharacter": 78,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 154,
+          "noteIndex": 130,
+          "pitch": 74,
+          "tiePiece": false
+        },
+        {
+          "start": 104.75,
+          "end": 105.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            62
+          ],
+          "sourceLine": 104,
+          "sourceToken": "d,16",
+          "generatedLine": 40,
+          "generatedCharacter": 83,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 155,
+          "noteIndex": 131,
+          "pitch": 62,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "f58b31ae09c5022617187ef602ee0a9e3cd800c6d05ef0d990c8f31d85f48b1a",
+      "compilerLogSha256": "cf638b55b1d51efb367e096947804725e463627fea7a7272676155c662549f8a",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    },
+    {
+      "melodyId": "openbook-willow-weep-for-me-fake",
+      "start": 116.0,
+      "sourceSha256": "a423c94908e547d9d3b2db45ce6226a92ff1262b68a8332d4f769b0c4a43290d",
+      "sourcePath": "src/openbook/willow_weep_for_me.ly.tera",
+      "sourceVersion": "Fake",
+      "noteTuples": [
+        {
+          "index": 148,
+          "pitch": 74,
+          "start": 116,
+          "duration": 0.75
+        },
+        {
+          "index": 149,
+          "pitch": 72,
+          "start": 116.75,
+          "duration": 0.25
+        }
+      ],
+      "writtenSourceUnits": [
+        {
+          "start": 116.0,
+          "end": 116.75,
+          "writtenDuration": "3/4",
+          "kind": "note",
+          "pitches": [
+            74
+          ],
+          "sourceLine": 105,
+          "sourceToken": "d'8.",
+          "generatedLine": 41,
+          "generatedCharacter": 18,
+          "sourceDenominator": 8,
+          "dots": 1,
+          "unitIndex": 175,
+          "noteIndex": 148,
+          "pitch": 74,
+          "tiePiece": false
+        },
+        {
+          "start": 116.75,
+          "end": 117.0,
+          "writtenDuration": "1/4",
+          "kind": "note",
+          "pitches": [
+            72
+          ],
+          "sourceLine": 105,
+          "sourceToken": "c16",
+          "generatedLine": 41,
+          "generatedCharacter": 23,
+          "sourceDenominator": 16,
+          "dots": 0,
+          "unitIndex": 176,
+          "noteIndex": 149,
+          "pitch": 72,
+          "tiePiece": false
+        }
+      ],
+      "compilerGeneratedSha256": "f58b31ae09c5022617187ef602ee0a9e3cd800c6d05ef0d990c8f31d85f48b1a",
+      "compilerLogSha256": "cf638b55b1d51efb367e096947804725e463627fea7a7272676155c662549f8a",
+      "classification": "probable-swing-encoding",
+      "interpretationApproved": false,
+      "independentTranscriptionLineageEstablished": false
+    }
+  ]
+}
