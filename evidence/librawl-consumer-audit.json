@@ -1,0 +1,1897 @@
+{
+  "version": 1,
+  "date": "2026-11-17",
+  "library": {
+    "dependency": "file:vendor/librawl-0.1.0.tgz",
+    "version": "0.1.0",
+    "archiveSha256": "42fa26966eedb15fd0750ec6d292565bf3a34e8a2931bfb0486067f5fcacf1b6",
+    "archiveIntegrity": "sha512-2CYgyoN37z7tk0kjKCnl+LahZmnvbjkDrVqLwwUauujW2NPQpC4klPqE703JT7qAhJarMFDEDukCZPiCSyiOhw==",
+    "react": "19.3.1",
+    "reactDOM": "19.3.1",
+    "audioSourceSha256": "1950f8ca50b0b94fa1b6151f1a309a2413e8c0643f095f3ce0582bb45234c149"
+  },
+  "copies": [
+    {
+      "destination": "packages/rawl-notation/src/style.css",
+      "packageArtifact": "legacy-style.css",
+      "sha256": "55bedac690bbd624cbceaecdb5181b0a983b129096a7b3c5c42d4b13c64a1904"
+    },
+    {
+      "destination": "dist/rawl-notation.css",
+      "packageArtifact": "legacy-style.css",
+      "sha256": "55bedac690bbd624cbceaecdb5181b0a983b129096a7b3c5c42d4b13c64a1904"
+    },
+    {
+      "destination": "dist/soundfont-playback.js",
+      "packageArtifact": "browser/soundfont-playback-sax.js",
+      "sha256": "c43496b15d97620cc607cd4c7c23d651a422162a8997f26bc813cb4b4fe88b95"
+    },
+    {
+      "destination": "dist/rawl-colors.mjs",
+      "packageArtifact": "palette.js",
+      "sha256": "acc6dd7a571bc31e69f5fbe272c4ae452e5f6f0c8938e1680ff435f818484e6f"
+    },
+    {
+      "destination": "dist/RAWL-LICENSE.txt",
+      "packageArtifact": "../LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "destination": "dist/LIBRAWL-NOTICE.md",
+      "packageArtifact": "../NOTICE.md",
+      "sha256": "97e68ae60ed82ef6b59701d843e65b8ad763d8415edbef82176e53ad114d4939"
+    },
+    {
+      "destination": "dist/librawl-provenance.json",
+      "packageArtifact": "provenance.json",
+      "sha256": "cb81f78fe64005717f80b38fe3cb37da608e0d5c420daa5f61903bb3dc952330"
+    }
+  ],
+  "scope": {
+    "migrated": [
+      "Lego controlled RawlNotation and RawlMeasureHeader",
+      "TonicSymbol adapter through library notation",
+      "shared geometry and palette",
+      "SoundFont engine Sax browser profile",
+      "createTransport with injected Lego playbackPlan"
+    ],
+    "hostRetains": [
+      "source corpus and arrangements",
+      "chord realization",
+      "analysis and harmony symbols",
+      "routing and controls",
+      "MIDI export"
+    ],
+    "otherHosts": "Rawl and Caplin integrations are isolated partial migrations, not full renderer replacement."
+  },
+  "runtime": {
+    "charts": 403,
+    "standards": 269,
+    "brickFamilies": 119,
+    "melodyCharts": 162,
+    "encodedHeads": 262,
+    "coveredCompositions": 154
+  },
+  "preservation": {
+    "charts": 360,
+    "comparison": "Exact JSON SHA256 of ordered pitch,start,duration,voice,velocity note tuples, including sax",
+    "unchanged": true,
+    "baselines": [
+      {
+        "index": 0,
+        "notes": 107,
+        "hash": "42997161f347ecc89272eca6d4df7e3297fa06fafead60b2adb25cc7df85c7f0"
+      },
+      {
+        "index": 1,
+        "notes": 172,
+        "hash": "a524a94c4a93a2de12cfa891c2c13de68f094b5645d07e10cd5043d39c04fe2c"
+      },
+      {
+        "index": 2,
+        "notes": 231,
+        "hash": "5145b761ddb68252721100b9b819c8fdd04e55bedb02f05a29f770e25f8f7817"
+      },
+      {
+        "index": 3,
+        "notes": 159,
+        "hash": "fbb8e1eb839eca625d166d146e17eb6340943934bae8dd77c61ec9bfca104512"
+      },
+      {
+        "index": 4,
+        "notes": 272,
+        "hash": "d385f728b23f33a8c648ab62e1f115d8b48af09d268a8ff422ad0c2bb27c5b59"
+      },
+      {
+        "index": 5,
+        "notes": 82,
+        "hash": "264a1fa59c5ab8aad3f28d47ec68ebe2bdc4b7f6fc3f51d30e85eccdd109b352"
+      },
+      {
+        "index": 6,
+        "notes": 151,
+        "hash": "828deb9eb732e06b452937a1b991d4455d4e58dc3ddfa844bc1825866ce937de"
+      },
+      {
+        "index": 7,
+        "notes": 144,
+        "hash": "a2dae280c1f994e1a063e634a44022d0ff2d9ede39694d48b55a34e6651f4216"
+      },
+      {
+        "index": 8,
+        "notes": 214,
+        "hash": "cec991ec05e559ec608b5d387836607259861666a38cdf125becc6659aa14531"
+      },
+      {
+        "index": 9,
+        "notes": 222,
+        "hash": "6490e87b096515268193cf0c4018598348dd61bed146b4affebb730deb693bf0"
+      },
+      {
+        "index": 10,
+        "notes": 144,
+        "hash": "6d7590f8a399d1d69a352107afccff472bebf5fecfffbf9c878e48a62d14613f"
+      },
+      {
+        "index": 11,
+        "notes": 214,
+        "hash": "419da245cf177f9e145655d097af527f1c201e093947263fedfd96b3d02aa6c3"
+      },
+      {
+        "index": 12,
+        "notes": 125,
+        "hash": "7b8b0f34594196b4c7e1edc9fc45270a01ed0b802b057df7993c5bbb6cc95163"
+      },
+      {
+        "index": 13,
+        "notes": 99,
+        "hash": "10fc2ce6f3528caf065f4554d62435700c0c753355e40ebed9c7f70841897742"
+      },
+      {
+        "index": 14,
+        "notes": 129,
+        "hash": "833af385b8dca644cf1cdd494bae4d27bc71655fea32cdad781319e355e30fe3"
+      },
+      {
+        "index": 15,
+        "notes": 139,
+        "hash": "367f83e803ea8b496ef5a8e308063dfcf3f638abca578a0785414d183110770b"
+      },
+      {
+        "index": 16,
+        "notes": 128,
+        "hash": "de51ea876f36b1a434bbd370a7bab4f1b41d993b58d000a3855f52a43c359c60"
+      },
+      {
+        "index": 17,
+        "notes": 141,
+        "hash": "5870ea7a5e11f5e9a43dfa9b161266c065bad5f2cd586964745a9c4ee9119fe7"
+      },
+      {
+        "index": 18,
+        "notes": 248,
+        "hash": "96fb87361ee0f7a941013df91c323aa28f034a451d5ff7692ae4d86b3f198a1b"
+      },
+      {
+        "index": 19,
+        "notes": 212,
+        "hash": "d217daa30d1c9417cdfb2cc274bed6da0731677bf29f603c232822a2821dd425"
+      },
+      {
+        "index": 20,
+        "notes": 162,
+        "hash": "8260e6edeb16bbbf0399ce050a88bc584bf0529c9293dc514b8530b7ed5b04b6"
+      },
+      {
+        "index": 21,
+        "notes": 44,
+        "hash": "35b7247e26953c986fbd03250a36c93802a582de2eabf96c0f52d15dbfb71153"
+      },
+      {
+        "index": 22,
+        "notes": 138,
+        "hash": "d0f05ec61e6db811e148ac21111e537d9c51ec157ab4db06d1eb86b882c8fe70"
+      },
+      {
+        "index": 23,
+        "notes": 220,
+        "hash": "83798d7539c793fb55410a1a68fd3d26b5e7e064c3abff00a0d501cc0bf51452"
+      },
+      {
+        "index": 24,
+        "notes": 47,
+        "hash": "b79d0997727cc6c3a52a7ea2eee82c120a5fa1268ffd4117958c3826df50cdfb"
+      },
+      {
+        "index": 25,
+        "notes": 59,
+        "hash": "3ee4654bc7ed192e790c81aa60de86894e2abacc14cfacba9ff447754751807f"
+      },
+      {
+        "index": 26,
+        "notes": 60,
+        "hash": "4aa6540f1d9f91bdec30a5aa6ab1a2cd5e6c59f902a5241d7b64dd1f07cbc938"
+      },
+      {
+        "index": 27,
+        "notes": 60,
+        "hash": "5e9c16924ab68392993b2980c1ff5ff81eb1ba9f2ee45ee2d49d29717a84b1b2"
+      },
+      {
+        "index": 28,
+        "notes": 287,
+        "hash": "fc4bb26cb9c89268e585ff9eb4aa439dfea45c614e2b282c0ec4645a780e23c2"
+      },
+      {
+        "index": 29,
+        "notes": 172,
+        "hash": "d0bc825ac82a3a02c9a96a317acade75a26c329583e913fa79a4e611f012e998"
+      },
+      {
+        "index": 30,
+        "notes": 188,
+        "hash": "d13d9dced403bcfbb0f407aeae00e878686acbb1a1dd6869c78c6c21b2cfd7a3"
+      },
+      {
+        "index": 31,
+        "notes": 183,
+        "hash": "b15d854cf628a71b135a66d54322796e5832678612d480a40c1372ed13e2d061"
+      },
+      {
+        "index": 32,
+        "notes": 155,
+        "hash": "7c4ade02bc294f80e727626208df82f34fb12ba8ac8ae4626ade2da7f9a19bd0"
+      },
+      {
+        "index": 33,
+        "notes": 158,
+        "hash": "e2cd55f851fe681a39f922b5d2878e4b048514fa080aa800da50ef0ea272db1f"
+      },
+      {
+        "index": 34,
+        "notes": 375,
+        "hash": "0e10e02691073689a0961c4308c026a62c6332ebe915207df4d20ffab975a653"
+      },
+      {
+        "index": 35,
+        "notes": 182,
+        "hash": "c6c347360143f0066cb69636512352dbba4eaf900e62fd2a7373542d72e30cd8"
+      },
+      {
+        "index": 36,
+        "notes": 192,
+        "hash": "06c6facbdbcefd6ff4af70045ee4f15fbb6ae642b466f7932b80964b39c979c9"
+      },
+      {
+        "index": 37,
+        "notes": 396,
+        "hash": "4546d652a8d82564db7ed10d8cff15da3a0a8f55db5b7568ad88f2dd8038ce15"
+      },
+      {
+        "index": 38,
+        "notes": 154,
+        "hash": "9f86f74e4dde59cf3616d7caf1795731ebbfe80a6ae4cfca10f99043a3317650"
+      },
+      {
+        "index": 39,
+        "notes": 196,
+        "hash": "289621c1ad54310fa5b7d55365e901ae6aac86c90888e3d317ae7ec8fd15a819"
+      },
+      {
+        "index": 40,
+        "notes": 118,
+        "hash": "6621674a510d9249df6aca576f73a5b1e468a0d52afcc2753d5737c97ef0019b"
+      },
+      {
+        "index": 41,
+        "notes": 220,
+        "hash": "05a21520b3fc73711ff5e075ba62dc997e514005d220be2125dcb967109fb3a1"
+      },
+      {
+        "index": 42,
+        "notes": 274,
+        "hash": "f992ea1797d70a856f79aa99aa9728a8d1be88b96ffab9503b30fcdfd7800632"
+      },
+      {
+        "index": 43,
+        "notes": 140,
+        "hash": "6a982eadbf7eac236a52f8ff6a2e3d9f138637aada11c7ee6776c3e54108cbc2"
+      },
+      {
+        "index": 44,
+        "notes": 213,
+        "hash": "cfa35ad1eba3efbeb5aaeba0e13bdb546c41463468a80e81b8f8c4bacce939ad"
+      },
+      {
+        "index": 45,
+        "notes": 135,
+        "hash": "9fa3524942bb364a58022073f1b98941c983ff266ef5cfa328fcff4f9316b9d6"
+      },
+      {
+        "index": 46,
+        "notes": 126,
+        "hash": "07a64f68dd400b19d4eaa3b047f4b9edcdac20be61569ac678e672948bf1f103"
+      },
+      {
+        "index": 47,
+        "notes": 147,
+        "hash": "10d97717cb89d6de30de059e02af41f3fbfaff1160fc0e4dd2fcf945765bb545"
+      },
+      {
+        "index": 48,
+        "notes": 249,
+        "hash": "4729899add39799bcfbadad9dbbd9576988cb1433dbbdacdb84f71c3c198305c"
+      },
+      {
+        "index": 49,
+        "notes": 226,
+        "hash": "9fea2e6e45f5d2fb5e32cb9815e576053d658c6d23305f5c92d405f81ef9fa32"
+      },
+      {
+        "index": 50,
+        "notes": 185,
+        "hash": "3d15ea33e57be89241ea5d4bac00ce20e9250d910e476c29b6d6986d05d2d84b"
+      },
+      {
+        "index": 51,
+        "notes": 173,
+        "hash": "fc624f8ea1dc95de484b0f464393a2b6f70e0e240c643f19294103e9103c971f"
+      },
+      {
+        "index": 52,
+        "notes": 119,
+        "hash": "b674bf91e8e7ad37e1a864da746aea397a0aa10d502be2ff280fc1efc4e8aa98"
+      },
+      {
+        "index": 53,
+        "notes": 142,
+        "hash": "ffc0045a0317bfa5668c5c4d45e5e4d7f55d660e0d1110d967153a5656d93861"
+      },
+      {
+        "index": 54,
+        "notes": 81,
+        "hash": "a717844c99870f78c93749b65e67c3e349dfd4ab707e7624d807510c1f1ad52e"
+      },
+      {
+        "index": 55,
+        "notes": 169,
+        "hash": "4b56ad839add3bf5a71fda0afcac66ea0ab95a302f433d20868ff6b367dffbfc"
+      },
+      {
+        "index": 56,
+        "notes": 136,
+        "hash": "2e21b79f1f67afdc8cffef926597a8e2458b08e39cc9c9c38f6af0989b3b384d"
+      },
+      {
+        "index": 57,
+        "notes": 163,
+        "hash": "a16d59157a77d952700417742063b20388751316149dba44e5becb3cb35af45a"
+      },
+      {
+        "index": 58,
+        "notes": 276,
+        "hash": "c55aeae77ccaaa63e9ff678eda24ac38476c36865600df77df7df35431041d61"
+      },
+      {
+        "index": 59,
+        "notes": 216,
+        "hash": "f24324363172c1507274f4a9e23bd4a7cfa3f8e646d6d9bc46ea46f45aa78e98"
+      },
+      {
+        "index": 60,
+        "notes": 161,
+        "hash": "736f71a13ca0a6cff2ad2393e3767390fe2012fd692fa9c22fdf738b74e317db"
+      },
+      {
+        "index": 61,
+        "notes": 215,
+        "hash": "7e58a5644d071f25460aea35e190c18a094b21fde5c8b397a36fe422843b2e76"
+      },
+      {
+        "index": 62,
+        "notes": 236,
+        "hash": "c570cec47f3e088c066bcb92bed8610a79ed6de3a13ea8bfff38710df6cc52f0"
+      },
+      {
+        "index": 63,
+        "notes": 165,
+        "hash": "9bf01de822137f8d693d823a57aad4ff9c5111efd9dafdadc732df626b504cfd"
+      },
+      {
+        "index": 64,
+        "notes": 148,
+        "hash": "7c65a31d858b99453979ed7bec26e01b4fa9dc5b146c90d53f23613e2e2a6b2a"
+      },
+      {
+        "index": 65,
+        "notes": 154,
+        "hash": "9cddedb6e4cf5bbcd21579b8d64fb2b87edff2b93e94a08c58d4d472836d00f4"
+      },
+      {
+        "index": 66,
+        "notes": 184,
+        "hash": "da3239bb3db64a207a669cd0d9131c0579023eb69c0d82da2c8a4cf135659d22"
+      },
+      {
+        "index": 67,
+        "notes": 143,
+        "hash": "e2e2f20be4641200d0e2bc1aca1d022b9e04711dcb6c929d8d7ab82e00e15933"
+      },
+      {
+        "index": 68,
+        "notes": 161,
+        "hash": "b1ac37682e2625f5d516de544f91e47bd99363e753e942b916c9630e2b6526c8"
+      },
+      {
+        "index": 69,
+        "notes": 132,
+        "hash": "4492a46d51b98c4f0f377cb6c200b1766bbdb36fbe96d36f46ed12e27de90b8f"
+      },
+      {
+        "index": 70,
+        "notes": 134,
+        "hash": "4e94839c2d207939d7f1ff8aa036f990be7e66616e96d6fc84a8124cb6911450"
+      },
+      {
+        "index": 71,
+        "notes": 243,
+        "hash": "2c17c6f87a9eb2c43eabdb6872b5268c1665f6a5ffcb8f4a7ea177d1a6759776"
+      },
+      {
+        "index": 72,
+        "notes": 221,
+        "hash": "28d28c3b9f2f7564759db11a560c71322d8a44b90a1ebe9edad8763f2c289667"
+      },
+      {
+        "index": 73,
+        "notes": 242,
+        "hash": "2db99e6cc64723af0261f505927cf5591ba9df4f9cb656dabad9d7420240d77b"
+      },
+      {
+        "index": 74,
+        "notes": 195,
+        "hash": "29095842c4a742cca8dc526105acfefa938b0e89a15d7a863e36441361853ca1"
+      },
+      {
+        "index": 75,
+        "notes": 132,
+        "hash": "127b63345146a2f885f44a771121164191b7557159c61ee887fa4fbb4a2c61a0"
+      },
+      {
+        "index": 76,
+        "notes": 108,
+        "hash": "a10b6d6c9ab29973922d5fde50a27064a45d892f3e8e76572079810fac61168d"
+      },
+      {
+        "index": 77,
+        "notes": 145,
+        "hash": "4419efc4ec28430de97b7754eb91206a312e383e437173918d5c1976a4963455"
+      },
+      {
+        "index": 78,
+        "notes": 155,
+        "hash": "5fa2d8358ab7b78dbe006888e52c1c72a41933d3f3cef806a6d18e95577bd038"
+      },
+      {
+        "index": 79,
+        "notes": 213,
+        "hash": "333244a747d7748ebe23955a5f7ae1df40585f646fe43073d649be8685af9c8c"
+      },
+      {
+        "index": 80,
+        "notes": 234,
+        "hash": "2fe7eac01300c8586a439014003440fce8174c793771b3047836e28dd60b4364"
+      },
+      {
+        "index": 81,
+        "notes": 197,
+        "hash": "49363f327ece0a314069bb7c7d60f5609dba245ba914d4399337fb97aa63205c"
+      },
+      {
+        "index": 82,
+        "notes": 140,
+        "hash": "c6e758b0c30b10ee426826ef9b3103cbd9868e0546de6f6ee08ba62135dd60cd"
+      },
+      {
+        "index": 83,
+        "notes": 284,
+        "hash": "5f7ac73bdcc4d2e456a7a8770b12ec419a922f003e38d4fe2ad39049b384ae48"
+      },
+      {
+        "index": 84,
+        "notes": 113,
+        "hash": "152c18757c01a1c3162fbe880e8a8eaab3d0c8a68c10448b8462be666c10736f"
+      },
+      {
+        "index": 85,
+        "notes": 219,
+        "hash": "6ead8b5a4a8ff89fca833266d380918cc1231a286b56a9a4edc6e39a77c554ba"
+      },
+      {
+        "index": 86,
+        "notes": 195,
+        "hash": "61dafa7e657515793120452a378f34642fb58c14aed3bd3dd2c3d9c057741aa7"
+      },
+      {
+        "index": 87,
+        "notes": 343,
+        "hash": "18560108116297a455ef6f19cfc36d582742dd2e6c047c32ab2e4dc96fdef535"
+      },
+      {
+        "index": 88,
+        "notes": 137,
+        "hash": "99fc4dd2b00df6cc8aecc8406562b86e712920b0ba7d342a72b095070a1ce7f0"
+      },
+      {
+        "index": 89,
+        "notes": 262,
+        "hash": "285306e66eb07a4c63bc4dd2c861e3edbb6dbe9b7b934dd817662cfcc7469310"
+      },
+      {
+        "index": 90,
+        "notes": 267,
+        "hash": "7ded4dcfe6559e00dcc8f7727b51824d6b01ced9f7e7523f2789e9033bcebb07"
+      },
+      {
+        "index": 91,
+        "notes": 211,
+        "hash": "dc84e6b8cc75d2e87734fccb8e9f95114e451efa7c651b04f88e02d87627dc78"
+      },
+      {
+        "index": 92,
+        "notes": 181,
+        "hash": "c49f912d5dd487ccfc483caea54cf23fcbdf5a2be137b68da1c7db373049dafe"
+      },
+      {
+        "index": 93,
+        "notes": 182,
+        "hash": "0cdf9d852892c398acca3f21f62f19dc5826af0c66e9e10211bb5647fcede571"
+      },
+      {
+        "index": 94,
+        "notes": 205,
+        "hash": "373546f323922dfd39045c66cc1ff8f1c1b9346e655c4e968a194a27c0b160db"
+      },
+      {
+        "index": 95,
+        "notes": 165,
+        "hash": "ab7929fb9dec9827dbbcbdaca97ab196fb5e3f7b47a96243d0dd70651f078528"
+      },
+      {
+        "index": 96,
+        "notes": 213,
+        "hash": "25bf63410b63861b99329e8fe7b96535627cde9403c3899a3b7c236c05d7ee75"
+      },
+      {
+        "index": 97,
+        "notes": 229,
+        "hash": "73c7d9da23bb12a7209b413c2dc107d1266d02de67ae009519232e920d8a53dd"
+      },
+      {
+        "index": 98,
+        "notes": 149,
+        "hash": "c3d2dc00d01afd61c4304c490396770fb4455ad70565179ed72ec44ee6a1e6d0"
+      },
+      {
+        "index": 99,
+        "notes": 224,
+        "hash": "db46241410207594d32da48be9ccb6479294610e4bbf26aa7c142d50f89ccc8a"
+      },
+      {
+        "index": 100,
+        "notes": 209,
+        "hash": "9ebe47dac95b1a36bf58a151d64a0dfec140683f9adebcff05e8ddacbc0f417a"
+      },
+      {
+        "index": 101,
+        "notes": 169,
+        "hash": "e326e0ca05335fdc59f05446620f618106c96569a67dbdb9a88bfd1800658b4c"
+      },
+      {
+        "index": 102,
+        "notes": 217,
+        "hash": "44300a19fe77dd82f86837a8970af0c9efa511b35cc590a03e6f1fde71cd5318"
+      },
+      {
+        "index": 103,
+        "notes": 223,
+        "hash": "9dc01fb071a8973063603b9bd095cda68d382442aa5c993636a5a8b2cf5ca03c"
+      },
+      {
+        "index": 104,
+        "notes": 242,
+        "hash": "333d8fddac11d02d88d14f63a18e4637fffd19efdf8adefa8124b8c3a23a70b0"
+      },
+      {
+        "index": 105,
+        "notes": 107,
+        "hash": "1dbca7cd47739bb7da05c7b52e5189b701ad5621830122d8641ef991a2420ea1"
+      },
+      {
+        "index": 106,
+        "notes": 134,
+        "hash": "c9210719178b1e51602bb780422ea2ab9575c80d7b3004a2a562e09b6ccc9a01"
+      },
+      {
+        "index": 107,
+        "notes": 156,
+        "hash": "e36397d56ea821e6545ed14ae83c308149d43a78b585ab8a0a45a1ff5bd6628e"
+      },
+      {
+        "index": 108,
+        "notes": 204,
+        "hash": "bfc2c8a4924fd9a6f89930b238c931149580bf83b3cba382c9b21d9d39c8b2f4"
+      },
+      {
+        "index": 109,
+        "notes": 140,
+        "hash": "772f780290a5c5864d4c94c5880ad5970acb854e38d2f9d94bb055aebf99b76f"
+      },
+      {
+        "index": 110,
+        "notes": 354,
+        "hash": "acb5957787ef482f0bf5bcee1ac348ff33db01a04b89a306ba77da8331836002"
+      },
+      {
+        "index": 111,
+        "notes": 159,
+        "hash": "c8e71953dd0fd7fa5cba8530e1deeebb7510aac27dca28114ab18eb3a7f970c5"
+      },
+      {
+        "index": 112,
+        "notes": 194,
+        "hash": "2e955f2db97f7faf388732f85910d432cdb6fdb1c93276c163c41d0df9f3213d"
+      },
+      {
+        "index": 113,
+        "notes": 132,
+        "hash": "2bf7148c93c7583f965fb92bef301c5bfc0b4c489632f9b4709bb5dd73b9f042"
+      },
+      {
+        "index": 114,
+        "notes": 130,
+        "hash": "b9c6f365f6dcbc95bd445aa894abb17b65f2a0d27ff8b292417a1f5e2af81a0c"
+      },
+      {
+        "index": 115,
+        "notes": 270,
+        "hash": "f3c7d250c0b6349899c1d7d1ec66602040801a2e285ff438a971399baf560fa8"
+      },
+      {
+        "index": 116,
+        "notes": 163,
+        "hash": "c35b6ae14a4be2e80c6cdc6026fa033430e64c82af37069ef7ac1c5e187b3b65"
+      },
+      {
+        "index": 117,
+        "notes": 60,
+        "hash": "c4c905332dc5570f6ffff216e29f10ceff2150a86f13fddb87c24e3e853fb78f"
+      },
+      {
+        "index": 118,
+        "notes": 163,
+        "hash": "94dda0f76fdeb9dc1a6233c301a64b20a571c08a5bcb742a7104c9c1094c7939"
+      },
+      {
+        "index": 119,
+        "notes": 129,
+        "hash": "4babb8cd9d6d25afaad212f7e4f4438443d0486fd93ab99c6de3fe8afa319bcd"
+      },
+      {
+        "index": 120,
+        "notes": 246,
+        "hash": "5465dddb95a56a610eaba9bab908f310441e508f606f56f92aa5f844e5ff90b8"
+      },
+      {
+        "index": 121,
+        "notes": 193,
+        "hash": "39285083f042e01733ba5c7b82baffef0204ba1eee1c8f6475d13e41094717df"
+      },
+      {
+        "index": 122,
+        "notes": 183,
+        "hash": "807c125c6fbb3e77fe0ed8343b8c0a9c1af8e481143a3a7e524d2a7363016ebd"
+      },
+      {
+        "index": 123,
+        "notes": 230,
+        "hash": "326268ea1e8b81c83ffc8ace83df753bb6af6f2a51553a41e2b76ad20827c1e6"
+      },
+      {
+        "index": 124,
+        "notes": 147,
+        "hash": "24e2ef903673dddbd579138ef13064e643e0b8247a0945e810dd458b835a37b5"
+      },
+      {
+        "index": 125,
+        "notes": 197,
+        "hash": "7f79d645dec3da6d43a1317527b915789e17475b6742919349e1381868084bed"
+      },
+      {
+        "index": 126,
+        "notes": 154,
+        "hash": "1c6289baac120d9eeb14b820fc11af42a7b434579355e90f75e611d0b80a63ab"
+      },
+      {
+        "index": 127,
+        "notes": 188,
+        "hash": "5c7440e7328e78b329a1709063a31947803f49c86ac6b5f2c8af35f53f52303b"
+      },
+      {
+        "index": 128,
+        "notes": 238,
+        "hash": "7a019fa7f050a0fda737173ce437d90f033e6526c85df95de3ec89b43bfa129e"
+      },
+      {
+        "index": 129,
+        "notes": 204,
+        "hash": "45c9d73568b2c0fa56d69061e67b9ca5f97cfec967f634c6646fab2d08ff0799"
+      },
+      {
+        "index": 130,
+        "notes": 178,
+        "hash": "3f405b3d23c06745302c80c9494c0be611ffd28fc6a252fcffafed947cf76aed"
+      },
+      {
+        "index": 131,
+        "notes": 242,
+        "hash": "4465f25c2cc4062d11bc114df4b7c9c91a18d45c0849c58bb327e123cde5fe03"
+      },
+      {
+        "index": 132,
+        "notes": 229,
+        "hash": "f726646beceea6bda47cb0799862ce385759ac2de69a432054b2bfb28dfd04fb"
+      },
+      {
+        "index": 133,
+        "notes": 250,
+        "hash": "b06b3c938cda386e857ca1a847adb24cd357dbad718efb29d53d9e36c26e0472"
+      },
+      {
+        "index": 134,
+        "notes": 250,
+        "hash": "6a17197cbdde64ac06ab65bf8bd6756730634e210ff24ee7cbf03a197783cb21"
+      },
+      {
+        "index": 135,
+        "notes": 131,
+        "hash": "f312c4bb54371f48b62ebd5ab1d6a5fa458b790699ff005cdfd261a523270d20"
+      },
+      {
+        "index": 136,
+        "notes": 225,
+        "hash": "1d3afa49c2d08e986f0788e638925fde080f3ed06aec8ce9d5af2d2d096efffd"
+      },
+      {
+        "index": 137,
+        "notes": 132,
+        "hash": "74a27de945684d8afa8fd1e8364adfd01f09be7a3fad3c1256d3ede5eb567878"
+      },
+      {
+        "index": 138,
+        "notes": 205,
+        "hash": "60d0ab2490e3d279f2c3a120155b474496be8bc3c0cd538d022ad024b65e4e27"
+      },
+      {
+        "index": 139,
+        "notes": 236,
+        "hash": "62411738c74ad6c4443d3e258a5acf8f86d39b354c5003505262253c922a5847"
+      },
+      {
+        "index": 140,
+        "notes": 189,
+        "hash": "3534c562e8e19565a3154498262375b038ba169a61c1200c9641cbbd001dfc1a"
+      },
+      {
+        "index": 141,
+        "notes": 179,
+        "hash": "cdbc8a6c18908de7d45b1dfa11b62e086c7369a6553d7565e06923a3ad6ca0e1"
+      },
+      {
+        "index": 142,
+        "notes": 177,
+        "hash": "091396f7d10b79920ee0d3c70c9be60bc5b6bb5d4504aeb9c4b105ca332d4991"
+      },
+      {
+        "index": 143,
+        "notes": 152,
+        "hash": "95788c1be8bdcd9e508a218adf0d61e8080009a8efe5521922d0d7ab6fa96e62"
+      },
+      {
+        "index": 144,
+        "notes": 192,
+        "hash": "ee7ed40593a71cbf71f011e5717a0113d49bfaf7e5debe6f73ac7b8ab15afd28"
+      },
+      {
+        "index": 145,
+        "notes": 217,
+        "hash": "fbb8b76fa3b9987d8da1565834b0f77e12afb02dad78f0920630be1d848b5cb7"
+      },
+      {
+        "index": 146,
+        "notes": 241,
+        "hash": "967aab575fa0806a174decefd3a698b04c630c2e85f704c8cc9679f35b3afa48"
+      },
+      {
+        "index": 147,
+        "notes": 251,
+        "hash": "0ae4febbd010d1f4e58151e03cdc2542bbe5aabe023ff8b6988df6c105ae5e8d"
+      },
+      {
+        "index": 148,
+        "notes": 130,
+        "hash": "99dc4bf230aedb8f918bd28ef03de5283e3a7c300cf95e51cd755adeb404a7e6"
+      },
+      {
+        "index": 149,
+        "notes": 244,
+        "hash": "e058f4852633d64e88d00b817c1134ccce963876708599b7bbdb8ee6d5e19cd5"
+      },
+      {
+        "index": 150,
+        "notes": 207,
+        "hash": "beea3cd85aaf9803a747727c8e058e61af485e56ab7fe0fdb4cddb1f41027fc5"
+      },
+      {
+        "index": 151,
+        "notes": 159,
+        "hash": "a47beebea586c893844bcac649f8e040c5761d6439dfe816c671dcd29d25a2d1"
+      },
+      {
+        "index": 152,
+        "notes": 94,
+        "hash": "b16f5a7bd35227fa4967d83ef8a198ffa327b911390c24e3716075a891a134e2"
+      },
+      {
+        "index": 153,
+        "notes": 140,
+        "hash": "325f3eb09ad4827d8f4493073cc20f489442e86d37067ee2a8568c0e002b61b4"
+      },
+      {
+        "index": 154,
+        "notes": 181,
+        "hash": "c887b54bc7373ceaf72ffb494afd00e0a09de520449e6372a071d672f68405a1"
+      },
+      {
+        "index": 155,
+        "notes": 212,
+        "hash": "edb458b35bc5cb08b31df64d86553f6b52de19562fd8c4dd990906521dab70c1"
+      },
+      {
+        "index": 156,
+        "notes": 131,
+        "hash": "38dfd8623354cfa8c1bb9be44065d7e880210cef23189cec75206ea82e3f0aee"
+      },
+      {
+        "index": 157,
+        "notes": 158,
+        "hash": "e64c9afd1d245849b951ec10b0c199750f69720e6d6b1ffc7cf87333922a8227"
+      },
+      {
+        "index": 158,
+        "notes": 234,
+        "hash": "3d358c89a08203ef56bcf0199f3d11d55d2fc2a6f2f237387cd16b133f0e828f"
+      },
+      {
+        "index": 159,
+        "notes": 149,
+        "hash": "b3bcbf9761d0e06b0f178b40d62132f1ed06abf5433078cfd78ede7876bc34e9"
+      },
+      {
+        "index": 160,
+        "notes": 144,
+        "hash": "e663d8046d0cbe68a92b4a2caf2c301982465662e7f9581041baa37dec22e865"
+      },
+      {
+        "index": 161,
+        "notes": 198,
+        "hash": "c7bed2a874a926c36d0d1671a23a76c8c6636619b71dcf806cae6bfba777bc44"
+      },
+      {
+        "index": 162,
+        "notes": 112,
+        "hash": "41669fe828b98c6666616be090f719cd3f9d7e15159b97b4ac43f3091430e4d4"
+      },
+      {
+        "index": 163,
+        "notes": 284,
+        "hash": "b51e3b2432cb8ab2f833ccfb92ac44db10f29df76af757541cd67f47090129fd"
+      },
+      {
+        "index": 164,
+        "notes": 204,
+        "hash": "549a2b23b7b7c1e6b9aa70c30d535b744ca14c0020cae42d5aac31bdc6c7d5c7"
+      },
+      {
+        "index": 165,
+        "notes": 70,
+        "hash": "d590760b18ae7aad4404370d63488c6b2f7adabb3054308918212be42af07d3d"
+      },
+      {
+        "index": 166,
+        "notes": 153,
+        "hash": "7834642034613599dba87fb29af1bda9fe64c8d6c60ef30a417b4557e75d1f5f"
+      },
+      {
+        "index": 167,
+        "notes": 144,
+        "hash": "942d0e7bc2411a3725043afe081a155935e481258ac317d7b8b1322be170830c"
+      },
+      {
+        "index": 168,
+        "notes": 337,
+        "hash": "a7a67d930f934cfbec1b9f5a471ae78e206e8e0a212936c91837e974e26fbb69"
+      },
+      {
+        "index": 169,
+        "notes": 152,
+        "hash": "802afe4fe955894cebe30eb53c4a35a0a962dd2c37d29e7a160d50278d725db6"
+      },
+      {
+        "index": 170,
+        "notes": 266,
+        "hash": "1785fc9a6fcf116aaed272a1af7efc939903c6c5ff167005a5708d0207ee367e"
+      },
+      {
+        "index": 171,
+        "notes": 124,
+        "hash": "141c05915be3598818d1d84e1161aa9c3ac63a6bcb10fe931b19e429257782f4"
+      },
+      {
+        "index": 172,
+        "notes": 234,
+        "hash": "3d18267d3e37e5e1b7051c89eb1f64ee9ac6e2b915f8fdc721450f0dba838d32"
+      },
+      {
+        "index": 173,
+        "notes": 121,
+        "hash": "59cb3add14872a15d98ca58870bfb1ab0e68e51a514a9f784308e759f48fdc2c"
+      },
+      {
+        "index": 174,
+        "notes": 149,
+        "hash": "6384388114351dec7a721ea974f39556434b4c4669be3289f09232b7d7950258"
+      },
+      {
+        "index": 175,
+        "notes": 147,
+        "hash": "03742b7a224add6d8c648ccc9cf2fbb7d10dea7975ef778edfa6508a6b5e68f9"
+      },
+      {
+        "index": 176,
+        "notes": 92,
+        "hash": "29d60e9cd973ff88215535afc0a2f434abcab0d055d31b32772bd3e805b83822"
+      },
+      {
+        "index": 177,
+        "notes": 227,
+        "hash": "47921da27c45376b863c968c9a56838a15d5265d00f83a56575bb4142815b903"
+      },
+      {
+        "index": 178,
+        "notes": 224,
+        "hash": "6ade69f8f29b20ab55a4d9f22caf7ace84e89f62d5af639f6d6090f3b76b6366"
+      },
+      {
+        "index": 179,
+        "notes": 148,
+        "hash": "2eeef112711d05277632471b1519ea88a13a53f473cae79cf245037fea0e43e0"
+      },
+      {
+        "index": 180,
+        "notes": 220,
+        "hash": "a0de509438fc558a440eb00f4053b468057f9ae67ef902a156f5951e9558397a"
+      },
+      {
+        "index": 181,
+        "notes": 143,
+        "hash": "b27652b383a1081528d8f202f7650606993e2e2fdc3420cc765d7be578bbe350"
+      },
+      {
+        "index": 182,
+        "notes": 122,
+        "hash": "76d246d184f4d5ae064b7a07f87e33469f3e5574c4511428165a5fb68d1d7e38"
+      },
+      {
+        "index": 183,
+        "notes": 138,
+        "hash": "31ba948d4c8bf206ab2e758232c7d52b29b25738b5455fd0ddcaecac9f1f6657"
+      },
+      {
+        "index": 184,
+        "notes": 263,
+        "hash": "9f98c547356a5df4296d47e30168a355c06179cd1a7bddd1f540cdca75895a2f"
+      },
+      {
+        "index": 185,
+        "notes": 140,
+        "hash": "b61f282bacae069f14e698d083969e55fc0199d2527fa7146d65f4ed451557ed"
+      },
+      {
+        "index": 186,
+        "notes": 109,
+        "hash": "f3f807586c96301631a28fa33418e79b6e1eac3162e9b2c155a86a3bb8976beb"
+      },
+      {
+        "index": 187,
+        "notes": 159,
+        "hash": "ff9bd0cb808c500c3f40e49f7fcc9c5b1e3203463324b64dba7000e7f75a8d68"
+      },
+      {
+        "index": 188,
+        "notes": 48,
+        "hash": "b6d3e5583bb35118f9fe9fb95dc3842c9a571b3b3f623657248f94c24c805a8e"
+      },
+      {
+        "index": 189,
+        "notes": 179,
+        "hash": "d2d43015ffce84aadfbb0b6d0e63ac3eb6788e36eb1b84a59c518582370f18c1"
+      },
+      {
+        "index": 190,
+        "notes": 297,
+        "hash": "a77aaf748f5e38895da636184f70ad736478ea369fe3409f196475324982f76b"
+      },
+      {
+        "index": 191,
+        "notes": 196,
+        "hash": "ecca03270313e56c594c40b82bc273150cd88064176617c0dadf6200bb9215b5"
+      },
+      {
+        "index": 192,
+        "notes": 126,
+        "hash": "335cca08f134d84761b1c597fdaafa8c2cc9b3bab47818e15a91895c84fe16f4"
+      },
+      {
+        "index": 193,
+        "notes": 181,
+        "hash": "af6b6bae5780837421d219fefa0f7b6aa4a4f61a3583492fa04e4d5c83771029"
+      },
+      {
+        "index": 194,
+        "notes": 146,
+        "hash": "a5d987e36520d4457a30a7a25b79aa00d0d0f01da813255c77cb766210f9782f"
+      },
+      {
+        "index": 195,
+        "notes": 261,
+        "hash": "8bd5cdf288cd9829ff1a0d8d2c95a1919e0a68d37d6e067bce54fa995f0ddac9"
+      },
+      {
+        "index": 196,
+        "notes": 208,
+        "hash": "e8cb37bbe2eadaf9dceecae0b0d41563c624d69795df75cf3a32cb678af9a474"
+      },
+      {
+        "index": 197,
+        "notes": 217,
+        "hash": "41a25c22555cf83c85c3af19be2c9edfa4319c5f01cad92b9de4a79ea20ec921"
+      },
+      {
+        "index": 198,
+        "notes": 125,
+        "hash": "15778605718295d83b2a90c5e6f7b1f6f146fccd616e4985e10366ef0a8024db"
+      },
+      {
+        "index": 199,
+        "notes": 102,
+        "hash": "f8f8bc154c5fb5acf0dc15282d4659f6688fd8dcdd70fcc7e25e90ffa1ead6d1"
+      },
+      {
+        "index": 200,
+        "notes": 113,
+        "hash": "9a3ee1fcec04a41130963e7d7e28f7622f8a2e55fa864642e83de8c9fdee11c8"
+      },
+      {
+        "index": 201,
+        "notes": 208,
+        "hash": "bc6463a2dd027dcd5f40c276e665c6077a72dc1cc9cc273cef98049333557234"
+      },
+      {
+        "index": 202,
+        "notes": 94,
+        "hash": "3798893f49ac6efa079a0b93e73b601362b9b2457267a3af0f03e910587238b1"
+      },
+      {
+        "index": 203,
+        "notes": 203,
+        "hash": "37aab1ab24acf94bc9da40432638fa451eb985d672d013e631ded726c4f5b992"
+      },
+      {
+        "index": 204,
+        "notes": 175,
+        "hash": "50f17eb98f86b515546bc2055aca676c8821a028f016ad591b5303b6e3c59099"
+      },
+      {
+        "index": 205,
+        "notes": 224,
+        "hash": "4a589512809cf4fb8cb5822301a31b34dea5fb39314ab4424e067dbc2b1819ca"
+      },
+      {
+        "index": 206,
+        "notes": 159,
+        "hash": "83a75503e529a7506b86f6542b0fa3b25d8ed17bf064aa833b210996a131b43e"
+      },
+      {
+        "index": 207,
+        "notes": 288,
+        "hash": "ef7db8115547619860d1d2588aef113aa5e4087da97bd8ae479d648a8a9f4fc9"
+      },
+      {
+        "index": 208,
+        "notes": 136,
+        "hash": "9d58bc8af6aa375f7a10d00df943ec6fc6bfaf5bd3e4068efff76dbe3b008b04"
+      },
+      {
+        "index": 209,
+        "notes": 173,
+        "hash": "cf6033ffc810ff1e34e03dab2c6961c09727d0911e4731b07bc0b74fa0640ffb"
+      },
+      {
+        "index": 210,
+        "notes": 136,
+        "hash": "0e20733312a2b892605e1f813935f156b7ac62577b95f40e74d3d6dcb61eb59b"
+      },
+      {
+        "index": 211,
+        "notes": 243,
+        "hash": "71873066ea803c0edf4a1ddaddb2a9bd3fcc233aabe19b0fd03b6d2815fb17f2"
+      },
+      {
+        "index": 212,
+        "notes": 226,
+        "hash": "dae780fd03c6aeb0e4eefc8f93212b206040b8b2093f465d518f790c04ffe39a"
+      },
+      {
+        "index": 213,
+        "notes": 152,
+        "hash": "ffd9c77d37ff69ccd7ba4da01c49609319bfb763ea2e16e0ae47e9aeb8c768d9"
+      },
+      {
+        "index": 214,
+        "notes": 216,
+        "hash": "cc31975bc0f840a155aac5db2c5cb7b507d5cab168bd6b8044c86959ce9e2b78"
+      },
+      {
+        "index": 215,
+        "notes": 196,
+        "hash": "4cda924086e54e0503aab7a89d43aa7f11da233c3b26ae38fd4c9dd7d18ddc74"
+      },
+      {
+        "index": 216,
+        "notes": 160,
+        "hash": "9c531e23ce4949a2a7fbd36bfaa58ad470e1407e04cbb4251b2c6b2afde181f3"
+      },
+      {
+        "index": 217,
+        "notes": 198,
+        "hash": "9f6c1267ab98e30fcecbe44d95bc3e4e9af8568058ab9d8aa97c178233959aa3"
+      },
+      {
+        "index": 218,
+        "notes": 96,
+        "hash": "b907c545a6c963313f06915e335a7a7c94156035d9d7a78d7df63e1fdc1610fe"
+      },
+      {
+        "index": 219,
+        "notes": 140,
+        "hash": "852cc564001fb3f74e285f0549994c6a6147cbe8b6e378f408e800864a51d3db"
+      },
+      {
+        "index": 220,
+        "notes": 172,
+        "hash": "ba64f74bdf4a9b290742c9a420cdbd8bac6819fb50ba425fcdff9937bb556006"
+      },
+      {
+        "index": 221,
+        "notes": 217,
+        "hash": "84184ac429d9273bc6c58688c54fa3fce374356bc86a53849764b9f22bb6420b"
+      },
+      {
+        "index": 222,
+        "notes": 221,
+        "hash": "d5283a50da1d240a4a494cc2cc095296a9ff5258007e7baaacc70d996b1d1b8f"
+      },
+      {
+        "index": 223,
+        "notes": 257,
+        "hash": "4d3c8a5ccbd1802378b012385801dafed019d1f82d1fb199ee2d3f764e3a3372"
+      },
+      {
+        "index": 224,
+        "notes": 121,
+        "hash": "36693fbe9a5d19344d378d5d15c1d9a95a991c042abe65c5713a179af9070cc7"
+      },
+      {
+        "index": 225,
+        "notes": 212,
+        "hash": "b2d396b3e1acefc7d657a9fdbee524dbd37066bc3fda61589df4ae92fed9b27a"
+      },
+      {
+        "index": 226,
+        "notes": 214,
+        "hash": "b80b0f1cd2cd81bd39f03cc9585e7662560622727e2be34f1ee6201441d4ff40"
+      },
+      {
+        "index": 227,
+        "notes": 136,
+        "hash": "0cf8f89253773da1a66335bbb17a13b33164bda62ca844fbfb9c1b70224ef52e"
+      },
+      {
+        "index": 228,
+        "notes": 89,
+        "hash": "8c9f4191b418c618cec22d0676b8d55e4b637568ca7bf0fc88a9959c27f404c7"
+      },
+      {
+        "index": 229,
+        "notes": 238,
+        "hash": "e98e45f1b65e58ee8ff8d80c249c08b31bb4418ab56d90f4c04a7631be9a89cc"
+      },
+      {
+        "index": 230,
+        "notes": 264,
+        "hash": "7488ca962d928afefad343a1421b673f5304d19f428d74d46f7244985380a61e"
+      },
+      {
+        "index": 231,
+        "notes": 211,
+        "hash": "a9fd7a8c7606fb293a89a698e23c13610d3efe5d87eda2b83c96a9466a45ab43"
+      },
+      {
+        "index": 232,
+        "notes": 172,
+        "hash": "33f07220659e13b6c6eb8161f3880d7b7c5977714a9c9dcba354078464e18516"
+      },
+      {
+        "index": 233,
+        "notes": 368,
+        "hash": "f50a394e1335f6deee24f813e6ebb4b80608798abeed64c34b07a7db9c2196a6"
+      },
+      {
+        "index": 234,
+        "notes": 267,
+        "hash": "6ad4fa66a0d6b4878100fac03d9284c7b36c5dfb47464b83780112733501298e"
+      },
+      {
+        "index": 235,
+        "notes": 153,
+        "hash": "9d7ad2e79a0eb7ea1d99394be734dd4fd74bb45b875101cc94a8585a8f3aae23"
+      },
+      {
+        "index": 236,
+        "notes": 269,
+        "hash": "16ea441487f0a8159800ffef2ac47f266e932168ff2053260c172e96e5dd36e4"
+      },
+      {
+        "index": 237,
+        "notes": 254,
+        "hash": "deac18cbe67a6cb845ba813a55757f8b2f961ecb7310fb8315a353e20b74c4a7"
+      },
+      {
+        "index": 238,
+        "notes": 108,
+        "hash": "4e95a69018c08fb2083c97e65bddf047b1d5c14d35ad3432ce61d0fdfaaa805e"
+      },
+      {
+        "index": 239,
+        "notes": 162,
+        "hash": "c5b43ea144f2df9397d77a694ea9000dfd715aa69a5644c4c58d5006be4607a1"
+      },
+      {
+        "index": 240,
+        "notes": 134,
+        "hash": "c0e71a893fa0f01119ea57b268247ac108d5293a80b01efacfedb5ba297f7be4"
+      },
+      {
+        "index": 241,
+        "notes": 124,
+        "hash": "52dc54f567210193b58830ffb6ac924aff4e4eb243544245631f40c5c3cd12bb"
+      },
+      {
+        "index": 242,
+        "notes": 382,
+        "hash": "598f5d16800a4d11fe2b70147f93ed7ababcc551dceda2b1f226775ddc96ea93"
+      },
+      {
+        "index": 243,
+        "notes": 382,
+        "hash": "a194a1f3a0a5859d95f1f0be3f03356442a38470e535f84173a8ae6b18f1415b"
+      },
+      {
+        "index": 244,
+        "notes": 250,
+        "hash": "b208f79c3bf3d4a0563de63b320ddbfa51a7a17d5b951465d131ddab6a79dbc6"
+      },
+      {
+        "index": 245,
+        "notes": 304,
+        "hash": "a2b8bae869a25039c9078374f5c8745a11a412d85d13f58d9398845341021fa7"
+      },
+      {
+        "index": 246,
+        "notes": 423,
+        "hash": "753f0a8b9e4951102c73f239455373562dfc4716abc338ad6cec71321b81a82d"
+      },
+      {
+        "index": 247,
+        "notes": 396,
+        "hash": "c29f0027b49e70cfa5b914f183b05d2fb345eaa5ff047cbf74866899aec9c5f7"
+      },
+      {
+        "index": 248,
+        "notes": 379,
+        "hash": "5e4b0fa47cc24939999d4d71f2ffb2a19154700333b5b5af571c69f54ad95016"
+      },
+      {
+        "index": 249,
+        "notes": 416,
+        "hash": "76f94b675706f7b772aaceda9373a65fabe242d85122d61ea5bf8d75e850e547"
+      },
+      {
+        "index": 250,
+        "notes": 422,
+        "hash": "9697573778e2fb6bfaea410a99c099972cb0a817542884ff1af4df59e57b0d82"
+      },
+      {
+        "index": 251,
+        "notes": 133,
+        "hash": "497f3cf7776bdf2062277da07b7b74a39b22e4ad7751a0ae775436dde6788512"
+      },
+      {
+        "index": 252,
+        "notes": 325,
+        "hash": "6f7e021f3619c849c506e2306cc2f2b0150ee003a1dbffa375775da225295a77"
+      },
+      {
+        "index": 253,
+        "notes": 285,
+        "hash": "6c11c68f54ba05cde817a56bf8baf3691173c38a741057cd883c5e77f243cb6f"
+      },
+      {
+        "index": 254,
+        "notes": 201,
+        "hash": "62d28bbd8ed4e8d82fd93ba53578c4dfba0f3e422c02b05d7c47491f77300736"
+      },
+      {
+        "index": 255,
+        "notes": 267,
+        "hash": "072d7781017a265a698549a3d053a38cdbe8b5ceadcac1d69a42c9dccc35ee22"
+      },
+      {
+        "index": 256,
+        "notes": 366,
+        "hash": "f1a967d4f73990b12dee7929d730ed10b4de41b53be526ea341ab1aa26b914ac"
+      },
+      {
+        "index": 257,
+        "notes": 424,
+        "hash": "eca396b82dd12b5f4c96696d071835afdceab17932c7fe3130c102e24b91138f"
+      },
+      {
+        "index": 258,
+        "notes": 368,
+        "hash": "0c11d81c3f6ecbab0031859b4c56d5bb0d1f4f7a067765f311047cc4890cbc93"
+      },
+      {
+        "index": 259,
+        "notes": 405,
+        "hash": "75db40c2272e663670fc5b92a354d35f31618cdcc191dc9a4e4cc5e74c577484"
+      },
+      {
+        "index": 260,
+        "notes": 292,
+        "hash": "7431ad7e9853fe66760ebe6e1952798b84a141177bf2af3deccd93f73a195c52"
+      },
+      {
+        "index": 261,
+        "notes": 311,
+        "hash": "1b81f8e5604bbacd07838f440f029af157f5d5ee167aa7fc1210c57070559fac"
+      },
+      {
+        "index": 262,
+        "notes": 328,
+        "hash": "cdb00ffc7b7c09dfa9882a5285d0635bb9a4156851e201aa0bcba36f081b36e9"
+      },
+      {
+        "index": 263,
+        "notes": 393,
+        "hash": "878e4514035a91dd262327bce250fc605634b0caf129fce0f73e8062889b50fd"
+      },
+      {
+        "index": 264,
+        "notes": 365,
+        "hash": "4110ffffd22822805b01142cf0789d72909bc62c9a7c11375fc3bad0274d9def"
+      },
+      {
+        "index": 265,
+        "notes": 384,
+        "hash": "2b6c3fb9f9c6ca8d7b1e3f2904adb3abdc4decd1eb4e3334e271a4749f0f482a"
+      },
+      {
+        "index": 266,
+        "notes": 345,
+        "hash": "53a337d6fd56b03d8d5a0f29471db06ac907eec2ef1e14085bdea21abdae760d"
+      },
+      {
+        "index": 267,
+        "notes": 598,
+        "hash": "5bca7cd65970599d8a77b4d8c725b16dbb331994d628a0e49108c04f7f7ca6ea"
+      },
+      {
+        "index": 268,
+        "notes": 316,
+        "hash": "4883fce187c39dfb36d85fa2c93c523d9e8bc70cb5b1b3d80bfe618a5820166b"
+      },
+      {
+        "index": 269,
+        "notes": 292,
+        "hash": "df7564fb61526b45aaf9b6b64148debbe48eae3d4b0340fe718e7e21e0f4f484"
+      },
+      {
+        "index": 270,
+        "notes": 425,
+        "hash": "e556558ccc863845ec4b13bc3c82894ca0c08e31d4b923401d1d6b3e3a488f55"
+      },
+      {
+        "index": 271,
+        "notes": 325,
+        "hash": "4e6e8d80078c05714e8e04967a1bd451bb6c9938a130b48e4e64af50387bfbdc"
+      },
+      {
+        "index": 272,
+        "notes": 180,
+        "hash": "57833a2526c3146d3b56f433ed931ecb8d634f7b3b24e7b04d14e1db690f6b7b"
+      },
+      {
+        "index": 273,
+        "notes": 364,
+        "hash": "5c4655ff8ea29088fe285e5b2abc917a74635cd35fd1e69498c32c1886c98751"
+      },
+      {
+        "index": 274,
+        "notes": 382,
+        "hash": "2b109d5215e89fee1a1255cc89c96bb649e717d0fe39dd34dba9bf4a28a301aa"
+      },
+      {
+        "index": 275,
+        "notes": 158,
+        "hash": "31bd017efca042e440035c0b19e2bfc652189efba7de9be5292479449a2f3440"
+      },
+      {
+        "index": 276,
+        "notes": 219,
+        "hash": "2e4d54a93a6c190938c9c4e8c4ad64efba1a7e6fc564af622656aea16f10705c"
+      },
+      {
+        "index": 277,
+        "notes": 333,
+        "hash": "8acc6d7b06ce3cefcc833b252e9847c86ba4a4548709f2c785bc7acaa943c3f3"
+      },
+      {
+        "index": 278,
+        "notes": 324,
+        "hash": "b61d52d37337c1fb5cbc5df6de5a4c4be21a5c90086a76826d7b1c1fb99c715c"
+      },
+      {
+        "index": 279,
+        "notes": 132,
+        "hash": "e82cc7e8edb5c419441d58be1c5fed9920e932c6325368ee11140ec3cbdffa8f"
+      },
+      {
+        "index": 280,
+        "notes": 168,
+        "hash": "c9171d7160a664de07b90ca0911559048fd6b393b94cbf3b981149ab778b3ee2"
+      },
+      {
+        "index": 281,
+        "notes": 326,
+        "hash": "7a16ada3d78796d8835da550e5907343e5ffcc572e3dfae7fad3c8d341ebae20"
+      },
+      {
+        "index": 282,
+        "notes": 624,
+        "hash": "ea9c2653e2c654be974551a9c207a7596e3f9ebebc5f86d980d255b3b1f8ba37"
+      },
+      {
+        "index": 283,
+        "notes": 129,
+        "hash": "556b0fde34711e9a7861322819454d20f739809fc0eb6f73ebf218a8eb2dd245"
+      },
+      {
+        "index": 284,
+        "notes": 128,
+        "hash": "17efa26474b2f215ace96a6bce27c21789e81bcad66e911b5575391c21253784"
+      },
+      {
+        "index": 285,
+        "notes": 121,
+        "hash": "639aa685275a240a070ac7fd9b8c88cd72b7dfb9b993375457f7bd49959554a6"
+      },
+      {
+        "index": 286,
+        "notes": 411,
+        "hash": "c1a9a74c69e80b281e09074f2c48c18f642489ddea9f3d8b6d8f4803adbce2c5"
+      },
+      {
+        "index": 287,
+        "notes": 253,
+        "hash": "8cbfe29d4dee3d23a11dc7b37368a2dac33a948383d57815898d0842f7357fd1"
+      },
+      {
+        "index": 288,
+        "notes": 209,
+        "hash": "ba2c7dd032ae88a35fd26d535c0cba6cfe7f5285aa50da5785c98ec3730f34f7"
+      },
+      {
+        "index": 289,
+        "notes": 182,
+        "hash": "a3b1c78072321abd50352460bf7b207a447ed0134fa0f7a155a6e3e9160bdc2e"
+      },
+      {
+        "index": 290,
+        "notes": 652,
+        "hash": "0a712b1c6a5b8977ad560523e1f676916f6035c011ed1cd49d51c0fbafeaf6a4"
+      },
+      {
+        "index": 291,
+        "notes": 310,
+        "hash": "2935ab170c65ce1d4b84aac4bb64a8d37b2ebd091f6465595a8a54519276f554"
+      },
+      {
+        "index": 292,
+        "notes": 376,
+        "hash": "14ad32bb67b72141087deb8f41e18296b6bd95816ce4156b2bef9757e2a9706e"
+      },
+      {
+        "index": 293,
+        "notes": 214,
+        "hash": "3f64f23a69ba2edac01a5bfcbbf5acb64113cdada5a9fb6536f25170af6f2e25"
+      },
+      {
+        "index": 294,
+        "notes": 346,
+        "hash": "3e9e271c60d5a010a695316a30089b75eb96517879b1f24ffe0c1069081ea279"
+      },
+      {
+        "index": 295,
+        "notes": 326,
+        "hash": "9d2a974433d81dba0e86e57f9463561f86ae717c05fdc5268e73bb877b76e849"
+      },
+      {
+        "index": 296,
+        "notes": 711,
+        "hash": "e240445eddd8b8a70db5a5cdc25ce8269c8acfe99ace3215fc78eb8aec101934"
+      },
+      {
+        "index": 297,
+        "notes": 392,
+        "hash": "ebcdae692ac7382a2bce9d307750f90d82c6c0b64e992d020a4301fad6db0d48"
+      },
+      {
+        "index": 298,
+        "notes": 256,
+        "hash": "89211d60e886c410afa48134693b777899f32d6f93b601706c7e025563bbb966"
+      },
+      {
+        "index": 299,
+        "notes": 324,
+        "hash": "ab53a3f132f9ba2dbc1aef77acbdb5e53d89c8546270223e43b2292fdf353195"
+      },
+      {
+        "index": 300,
+        "notes": 527,
+        "hash": "249acf57231355606075c84f93f13aba3abaacc2377255cc148fe6c2199139b4"
+      },
+      {
+        "index": 301,
+        "notes": 304,
+        "hash": "2482e3071086d2df825abb723085b00ecc64870760056d1cd56ecab9346e5fcd"
+      },
+      {
+        "index": 302,
+        "notes": 254,
+        "hash": "8d790c4165fe2b3b5e203d457968be7d3e48ac324c3bb5d906d397d73a42ce32"
+      },
+      {
+        "index": 303,
+        "notes": 733,
+        "hash": "20ff82fe57fa036f1b48835541fbbfdfff58c7ededef1578bcaf562e67fc633c"
+      },
+      {
+        "index": 304,
+        "notes": 291,
+        "hash": "6944cb47938bf86e243611c7874120dfe1f72a29e7aead733c35f63aa694b9f3"
+      },
+      {
+        "index": 305,
+        "notes": 354,
+        "hash": "c24d349f88af1ff651516bc2df3e78449dbe228cd2b6d466b084d65a19b7681f"
+      },
+      {
+        "index": 306,
+        "notes": 728,
+        "hash": "ca4b5da01dc2fafdce74af14bcd4cc36301070657053957c52affb78be1f7da2"
+      },
+      {
+        "index": 307,
+        "notes": 315,
+        "hash": "f2dcfc1b901cd8027f7a64273828a1ba093c27001f4dd516c565874dca45d9d6"
+      },
+      {
+        "index": 308,
+        "notes": 259,
+        "hash": "74227e5b1fafd95e0bd50e3161df349bc01c45c0d430cea765636f628e3de561"
+      },
+      {
+        "index": 309,
+        "notes": 477,
+        "hash": "569d0dacd819ec3ee47ab5d3a71fa92c7c295aef938e346687fecf3b5fdbd19b"
+      },
+      {
+        "index": 310,
+        "notes": 615,
+        "hash": "d4f6509997d809aeba092eef397f23c460e24ba305948d4e795dae43fe806726"
+      },
+      {
+        "index": 311,
+        "notes": 665,
+        "hash": "7be4da2dbaf6cc17c20b9ba620825834809e094a61c0f93fb9d7d7b3da9ff598"
+      },
+      {
+        "index": 312,
+        "notes": 614,
+        "hash": "c45b16f789a12492c869d1781b21392df2434eff32beb3549a4192a2e08b5cd2"
+      },
+      {
+        "index": 313,
+        "notes": 672,
+        "hash": "ee68b1c0630dfa0147279886feedf494cbb34c46f6d030d4a9cc1b3e0b658496"
+      },
+      {
+        "index": 314,
+        "notes": 436,
+        "hash": "8c2a45243087b8e0dc2e80cd84ef6ca9b04913261ffeb42d8d56a8940be41d6d"
+      },
+      {
+        "index": 315,
+        "notes": 225,
+        "hash": "e8a0357ca617d38a16b8cc580095baaa54c034107a6e5d8ffecc33a32534c9d7"
+      },
+      {
+        "index": 316,
+        "notes": 194,
+        "hash": "0a73d92c0a19b00295c7bc91ad8386d6f6a356881bca2c1184323cdcf7765534"
+      },
+      {
+        "index": 317,
+        "notes": 207,
+        "hash": "b2f077ffd2c45d4da5b87a8b67538ceb2e77ab4e23d6b4c855baa7e1bad72c85"
+      },
+      {
+        "index": 318,
+        "notes": 330,
+        "hash": "76d1c902f90747c78cd9b02f1964b2432f93c286cb65ff2624b25855b0635d58"
+      },
+      {
+        "index": 319,
+        "notes": 663,
+        "hash": "264b4b672d92f266eafcc58a4522ec99240d54fe2bf3232f83314680d92808ec"
+      },
+      {
+        "index": 320,
+        "notes": 637,
+        "hash": "daa600e283301c51c63c456e5c50e1ef10f3b1dc091c437d6071f39130cc848f"
+      },
+      {
+        "index": 321,
+        "notes": 290,
+        "hash": "f5da299e5bec2154e2f9c5b52c51021fcf5ed2d4f20648d7be7e4bc4349cd1f6"
+      },
+      {
+        "index": 322,
+        "notes": 512,
+        "hash": "8374ea4ad37755e00438787c20b127d517615d5476188131973e091087fec5fe"
+      },
+      {
+        "index": 323,
+        "notes": 714,
+        "hash": "034b5d78fb9fdc08a2d018345eebcd4dcd023e342fbdc98870ed895f3d1c0d25"
+      },
+      {
+        "index": 324,
+        "notes": 209,
+        "hash": "374a9bb72f3b07fc98a28c6e38715eee06a9576c25ac987d37a8eace25567929"
+      },
+      {
+        "index": 325,
+        "notes": 514,
+        "hash": "d2989d94485e599abdd0e088c2761b69d366b7299cb8539f8f61d86e12067b65"
+      },
+      {
+        "index": 326,
+        "notes": 241,
+        "hash": "d78e11d55c2e51e887772aeee1485863e2c081f91729f95c72c071da8e74116b"
+      },
+      {
+        "index": 327,
+        "notes": 193,
+        "hash": "a14eac20171f86fe7a9efeec3eadbdf4608f67df31939166ecfc12c981e2b4ab"
+      },
+      {
+        "index": 328,
+        "notes": 299,
+        "hash": "f4d366e502b3797e71f47dc3d7f5db37b6ed5a33a2c4cfc16a82410c16d6193a"
+      },
+      {
+        "index": 329,
+        "notes": 509,
+        "hash": "b995304fc5df4cf6264dadd121c70528e5a83ecebbfcbb069355ce2f1c71396b"
+      },
+      {
+        "index": 330,
+        "notes": 385,
+        "hash": "16be4a1601d252fc988314b9aa38a59ec029ffe79a138b577920726f33be6d0d"
+      },
+      {
+        "index": 331,
+        "notes": 421,
+        "hash": "6d70f4dd64209d243eecfba070ebcdda9505bd30bed2f90794558bc0053bf60f"
+      },
+      {
+        "index": 332,
+        "notes": 271,
+        "hash": "dbf2989a8b84eb34c879d4fe9728684618a2f63ee521fa632ef8ac4a59cf31b2"
+      },
+      {
+        "index": 333,
+        "notes": 297,
+        "hash": "3bf2d1e4cdd2b09b8c4c5bd6b494328c16cdb3eb619fb9e0ac0ab8de5b8d2723"
+      },
+      {
+        "index": 334,
+        "notes": 319,
+        "hash": "3eb2919d97c7131fd1df51092d9edcf3bde9a8e18d62bf66b4c64e1036491d94"
+      },
+      {
+        "index": 335,
+        "notes": 187,
+        "hash": "d33c49584daed98452cbd76b113fc5b689efbfd36c236a21bc0ae8b493629b6c"
+      },
+      {
+        "index": 336,
+        "notes": 418,
+        "hash": "40da9db11bef58565046f954b28d80f9ed4be3ce20ea1f93108c02bd98bab2e9"
+      },
+      {
+        "index": 337,
+        "notes": 264,
+        "hash": "4e3066916ba317e33b5a440fff4be3331c5f1bcd7282fefd5bc16673a9764632"
+      },
+      {
+        "index": 338,
+        "notes": 494,
+        "hash": "ca805825d4577450dd13a3f16f24d278a73e35e6d214679e1737cdb823e2a87c"
+      },
+      {
+        "index": 339,
+        "notes": 482,
+        "hash": "be158a4b59fcc0236e31f3a12b6b817e95f09df7b983c4ccf18ae67f136f1c67"
+      },
+      {
+        "index": 340,
+        "notes": 354,
+        "hash": "440ca1d871482586272d56f284e3ce749941cdce74fef6d19d058c65b3396c37"
+      },
+      {
+        "index": 341,
+        "notes": 250,
+        "hash": "ce26a264fe3a6d0b6235b8c28e68586ed4d507aa4c5f0a609bb7000b97497499"
+      },
+      {
+        "index": 342,
+        "notes": 243,
+        "hash": "2bf43a24cc9144f8c0f96e5c2391c8246f7d676e452f426a7946a102d2bada37"
+      },
+      {
+        "index": 343,
+        "notes": 417,
+        "hash": "d8144cf2f37930b34e1335be75f4362522efc483606e1670230e2f3dfbfa4fcf"
+      },
+      {
+        "index": 344,
+        "notes": 188,
+        "hash": "141df164a0438871f58b6a95b0beed0d3ebc87ae764f6a6bf4a8ffd11ad1d0d9"
+      },
+      {
+        "index": 345,
+        "notes": 190,
+        "hash": "fbf26ed391332862f38eb2520598f448e92add1dabf10020f96d4b545fc97bc3"
+      },
+      {
+        "index": 346,
+        "notes": 273,
+        "hash": "5bf1e93a16a65d6e30a28612d46773ce6fd03b0f144f2b0feaa5e1b883645e75"
+      },
+      {
+        "index": 347,
+        "notes": 167,
+        "hash": "5b9c97d7de7374b4a233a2921e357df00f446ad621e576b11c057d9e99781043"
+      },
+      {
+        "index": 348,
+        "notes": 693,
+        "hash": "7010804846319bb687011c9af95cbf6907ddf554963e3d949008ea2bfdd8e405"
+      },
+      {
+        "index": 349,
+        "notes": 357,
+        "hash": "d4e4de88dead5a62f109ca96e082cfaca7da8ae8c94ec268b11d72032f91e783"
+      },
+      {
+        "index": 350,
+        "notes": 168,
+        "hash": "e833a123ebc7541032c0691eb052f46ca386dbd00b410ac92d01b6021dbf2b12"
+      },
+      {
+        "index": 351,
+        "notes": 323,
+        "hash": "3939f05b25e89c792bd6ec83410830639bb0a9bf863e56665b5e51786aa5e604"
+      },
+      {
+        "index": 352,
+        "notes": 427,
+        "hash": "e2115920817a3d572906da7f8bfa32909658a63c97bc8c80cb529ddb8e07d76d"
+      },
+      {
+        "index": 353,
+        "notes": 324,
+        "hash": "30ac7dd8bc21ba1299607f37b73cb1d160c940076c3a27147a16595472e1fe51"
+      },
+      {
+        "index": 354,
+        "notes": 447,
+        "hash": "b978697e0060bfa92403a3e3ed9a3805aee4d8bd87449f9cb287c6b9a71f5cec"
+      },
+      {
+        "index": 355,
+        "notes": 288,
+        "hash": "7ba204d606c5b4ed97be2d89120631c4e9e509825c304676bf8615c9d49d466e"
+      },
+      {
+        "index": 356,
+        "notes": 392,
+        "hash": "b7e77abbc20d4154e43e7f01075437f6095da213b6cf17188408c09db28f0ed9"
+      },
+      {
+        "index": 357,
+        "notes": 186,
+        "hash": "cc5f7ee16a0263e517de8f17222674239324c5fa0289118a1c7d25d11a83d59f"
+      },
+      {
+        "index": 358,
+        "notes": 803,
+        "hash": "8fd8417c782e0bca80afc2c70de05315f9b5b51fa8d1a7a25d9b42689d0b8001"
+      },
+      {
+        "index": 359,
+        "notes": 180,
+        "hash": "a537b9ee0fdaa65e8965f88a33c0ef7d5cdfbe969e0bfa248b149bca5b4c0b44"
+      }
+    ]
+  },
+  "checks": {
+    "build": "passed",
+    "full": {
+      "passed": 180,
+      "failed": 0,
+      "skipped": 0
+    },
+    "finalFocused": {
+      "passed": 30,
+      "failed": 0,
+      "skipped": 0
+    },
+    "sourceMusicalData": "First360 source charts match prior release after excluding learner brick annotations",
+    "publication": "Root-owned; not performed by this integration task"
+  }
+}

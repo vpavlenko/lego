@@ -5,9 +5,17 @@
   "type": "module",
   "license": "GPL-3.0-only",
   "exports": {
-    ".": {"types":"./src/index.d.ts","default":"./src/RawlNotation.jsx"},
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/RawlNotation.jsx"
+    },
     "./geometry": "./src/geometry.mjs",
     "./style.css": "./src/style.css"
   },
-  "peerDependencies": {"react": ">=18 <20"}
+  "peerDependencies": {
+    "react": ">=16.14 <20"
+  },
+  "dependencies": {
+    "librawl": "0.1.0"
+  }
 }

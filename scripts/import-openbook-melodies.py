@@ -86,17 +86,17 @@ def quality(value):
   degree,sign=alteration.groups();result+=('b' if sign=='-' else '#' if sign=='+' else 'add')+degree
  return result
 
-def symbol_for(token,pitches,qualities):
+def symbol_for(token,pitches,qualities,allow_source_intervals=False):
  token=re.split(r'[_^\\]',token,maxsplit=1)[0].rstrip('|{}')
  if re.match(r'^[rs](?:\d|\.|$)',token):return 'NC'
- match=re.match(r'^([a-g](?:(?:is|es)*|s))[,\']*(?:\d+\.*(?:\*\d+(?:/\d+)?)?)?(?::([^/\s]+))?(?:/([a-g](?:(?:is|es)*|s)))?',token)
+ match=re.match(r'^([a-g](?:(?:is|es)*|s))[,\']*(?:\d+\.*(?:\*\d+(?:/\d+)?)?)?(?::([^/\s]+))?(?:/\+?([a-g](?:(?:is|es)*|s)))?',token)
  if not match:raise ValueError('Unsupported chord token '+token)
  root=root_name(match[1]);q=quality(match[2] or '');bass=root_name(match[3]) if match[3] else None
- if q not in qualities:raise ValueError('Unsupported chord quality '+token+' -> '+q)
+ if q not in qualities and not allow_source_intervals:raise ValueError('Unsupported chord quality '+token+' -> '+q)
  actual={(int(p)-pc(root))%12 for p in pitches}
- expected={int(p)%12 for p in qualities[q]}
+ expected={int(p)%12 for p in qualities.get(q,[])}
  if bass:expected.add((pc(bass)-pc(root))%12)
- if actual!=expected:raise ValueError('Source/compiler chord mismatch '+token+' '+str(sorted(actual))+' != '+str(sorted(expected)))
+ if actual!=expected and not allow_source_intervals:raise ValueError('Source/compiler chord mismatch '+token+' '+str(sorted(actual))+' != '+str(sorted(expected)))
  return root+q+('/'+bass if bass and pc(bass)!=pc(root) else '')
 
 def vlq(value):
@@ -140,7 +140,7 @@ def decode_midi(path):
   if any(active.values()):raise ValueError('Unclosed MIDI notes')
  return sorted(notes,key=lambda n:(n['start'],n['pitch'],n['duration'])),ppq
 
-def decode(path,version,lilypond,qualities,source_root,work_dir):
+def decode(path,version,lilypond,qualities,source_root,work_dir,allow_source_intervals=False):
  text=path.read_text();meta=tomllib.loads(re.search(r'{#(.*?)#}',text,re.S)[1]);attrs=meta['attributes'];raw_chords,chord_line=section(text,'Chords'+version);raw_voice,voice_line=section(text,'Voice'+version)
  combined=raw_chords+'\n'+raw_voice
  if r'\transpose' in combined:raise ValueError('Source transposition wrapper requires explicit key review')
@@ -151,6 +151,9 @@ def decode(path,version,lilypond,qualities,source_root,work_dir):
  if not meters or len(set(meters))!=1:raise ValueError('Missing or changing source meter')
  tonic=[root_name(keys[0][0]),keys[0][1].capitalize()];meter=list(map(int,meters[0]));bar_beats=Fraction(meter[0]*4,meter[1])
  chords=clean(raw_chords);voice=clean(raw_voice);prefix=SCHEME+'\nchords = \\dump "chords" '+chords+'\n'
+ if allow_source_intervals:
+  core_chords=re.sub(r'/\+?[a-g](?:(?:is|es)*|s)[,\']*','',chords)
+  prefix+='\ncoreChords = \\dump "coreChords" '+core_chords+'\n'
  generated=prefix+'\n\\score { \\new Staff { \\set Staff.midiInstrument = "alto sax" \\dump "voice" \\unfoldRepeats \\relative c\' '+voice+' } \\midi {} }\n'
  stem=slug(path.stem)+ '-'+slug(version);target=work_dir/(stem+'.ly');target.write_text(generated)
  result=subprocess.run([lilypond,'-dno-print-pages','-o',str(work_dir/stem),str(target)],capture_output=True,text=True)
@@ -183,8 +186,22 @@ def decode(path,version,lilypond,qualities,source_root,work_dir):
    if abs(previous['end']-float(event['start']))>1e-8:raise ValueError('Skip does not follow harmony continuously')
    previous.setdefault('sourceContinuations',[]).append({'sourceSymbol':token,'sourceLine':source_line,'start':rounded(event['start']),'end':rounded(event['start']+event['duration'])})
    previous['end']=rounded(event['start']+event['duration']);continue
-  symbol='NC' if event['kind'] in ('REST','SKIP') else symbol_for(token,event['pitches'],qualities)
-  chord_events.append({'symbol':symbol,'start':rounded(event['start']),'end':rounded(event['start']+event['duration']),'sourceSymbol':token,'sourceLine':chord_line+event['line']-generated_chord_line,'sourcePitches':event['pitches']})
+  symbol='NC' if event['kind'] in ('REST','SKIP') else symbol_for(token,event['pitches'],qualities,allow_source_intervals)
+  source_override={}
+  if allow_source_intervals and symbol!='NC':
+   try:symbol_for(token,event['pitches'],qualities)
+   except ValueError as mismatch:
+    core=[e for e in raw_events if e['stream']=='coreChords' and e['kind']=='CHORD' and e['start']==event['start'] and e['duration']==event['duration']]
+    if len(core)!=1:raise ValueError('Ambiguous independently compiled chord core')
+    root=pc(re.match(r'^([A-G][b#]*)',symbol)[1]);roots=[p for p in core[0]['pitches'] if p%12==root]
+    if not roots:raise ValueError('Compiled chord core has no explicit root')
+    base=min(roots);intervals=sorted(set(p-base for p in core[0]['pitches']))
+    if any(i<0 or i>48 for i in intervals):raise ValueError('Invalid compound source chord interval')
+    bass_match=re.search(r'/([A-G][b#]*)$',symbol);expected_core={p%12 for p in core[0]['pitches']}
+    if bass_match:expected_core.add(pc(bass_match[1]))
+    if expected_core!={p%12 for p in event['pitches']}:raise ValueError('Original compiled slash chord disagrees with independently compiled core plus bass')
+    source_override={'sourceIntervals':intervals,'realizationBasis':'source-compiled-chord','sourceCorePitches':core[0]['pitches'],'vocabularyDifference':str(mismatch)}
+  chord_events.append({**source_override,'symbol':symbol,'start':rounded(event['start']),'end':rounded(event['start']+event['duration']),'sourceSymbol':token,'sourceLine':chord_line+event['line']-generated_chord_line,'sourcePitches':event['pitches']})
  chord_events.sort(key=lambda c:c['start'])
  if not chord_events or chord_events[0]['start']!=0 or abs(chord_events[-1]['end']-float(total))>1e-8:raise ValueError('Incomplete harmony coverage')
  for a,b in zip(chord_events,chord_events[1:]):
@@ -194,11 +211,15 @@ def decode(path,version,lilypond,qualities,source_root,work_dir):
  for a,b in zip(notes,notes[1:]):
   if a['start']+a['duration']>b['start']+1e-7:raise ValueError('Polyphonic source melody requires voice selection review')
  local=path.relative_to(source_root).as_posix();identifier='openbook-'+slug(attrs['title'])+'-'+slug(version)
- provenance={'format':'LilyPond','repository':REPO,'repositoryCommit':COMMIT,'path':local,'url':REPO+'/blob/'+COMMIT+'/'+local,'rawUrl':'https://raw.githubusercontent.com/veltzer/book-openbook/'+COMMIT+'/'+local,'sha256':sha(path),'sourceRights':attrs.get('copyright'),'sourceRightsExtra':attrs.get('copyrightextra'),'sourceVersion':version,'sourceStructure':attrs.get('structure'),'sourceKeySignature':{'root':tonic[0],'mode':tonic[1]},'tonicBasis':'Explicit initial LilyPond key and mode; no pitch-distribution estimate','sourceMeters':['/'.join(map(str,meter))],'unfoldStatus':'expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats','tiesMerged':True,'decoder':'LilyPond 2.26.0','sourcePPQ':ppq,'sections':{'chords':{'name':'Chords'+version,'startLine':chord_line},'melody':{'name':'Voice'+version,'startLine':voice_line}},'irregularMeasures':[],'leadOverfullMeasures':[],'leadUnderfullMeasures':[],'conflictingHarmonies':[],'omittedHarmonyAnnotations':[],'titleMetadata':{'selectedFrom':'source attributes.title','printedTitle':attrs['title'],'workTitle':attrs['title'],'movementTitle':None,'filenameTitle':path.name},'skipPolicy':'SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.','validation':'Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation'}
+ provenance={'format':'LilyPond','repository':REPO,'repositoryCommit':COMMIT,'path':local,'url':REPO+'/blob/'+COMMIT+'/'+local,'rawUrl':'https://raw.githubusercontent.com/veltzer/book-openbook/'+COMMIT+'/'+local,'sha256':sha(path),'sourceRights':attrs.get('copyright'),'sourceRightsExtra':attrs.get('copyrightextra'),'sourceVersion':version,'sourceStructure':attrs.get('structure'),'sourceKeySignature':{'root':tonic[0],'mode':tonic[1]},'tonicBasis':'Explicit initial LilyPond key and mode; no pitch-distribution estimate','sourceMeters':['/'.join(map(str,meter))],'unfoldStatus':'expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats','tiesMerged':True,'decoder':'LilyPond 2.26.0','sourcePPQ':ppq,'sections':{'chords':{'name':'Chords'+version,'startLine':chord_line},'melody':{'name':'Voice'+version,'startLine':voice_line}},'irregularMeasures':[],'leadOverfullMeasures':[],'leadUnderfullMeasures':[],'conflictingHarmonies':[],'omittedHarmonyAnnotations':[],'titleMetadata':{'selectedFrom':'source attributes.title','printedTitle':attrs['title'],'workTitle':attrs['title'],'movementTitle':None,'filenameTitle':path.name},'skipPolicy':'SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.','sourceIntervalPolicy':'Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.' if allow_source_intervals else None,'validation':'Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation'}
+ if not allow_source_intervals:provenance.pop('sourceIntervalPolicy',None)
  return {'id':identifier,'melodyId':identifier,'normalizedTitle':normalize(attrs['title']),'title':attrs['title'],'composer':attrs.get('composer',''),'tonic':tonic,'tonicConfidence':'high','meter':meter,'barBeats':rounded(bar_beats),'bars':int(total/bar_beats),'totalBeats':rounded(total),'pickupBeats':0,'notes':notes,'chords':chord_events,'measures':[{'sourceNumber':str(i+1),'start':rounded(i*bar_beats),'duration':rounded(bar_beats)} for i in range(int(total/bar_beats))],'provenance':provenance,'midi':'melodies/'+identifier+'.mid'}
 
 def main():
- parser=argparse.ArgumentParser();parser.add_argument('--source-dir',type=Path,required=True);parser.add_argument('--lilypond',required=True);parser.add_argument('--work-dir',type=Path,default=Path(tempfile.gettempdir())/'insights-openbook-build');parser.add_argument('--archive',type=Path);parser.add_argument('--only',default=None);parser.add_argument('--jobs',type=int,default=4);args=parser.parse_args();args.work_dir.mkdir(parents=True,exist_ok=True)
+ parser=argparse.ArgumentParser();parser.add_argument('--source-dir',type=Path,required=True);parser.add_argument('--lilypond',required=True);parser.add_argument('--work-dir',type=Path,default=Path(tempfile.gettempdir())/'insights-openbook-build');parser.add_argument('--archive',type=Path);parser.add_argument('--only',default=None);parser.add_argument('--jobs',type=int,default=4);parser.add_argument('--append-missing',action='store_true');parser.add_argument('--source-intervals',action='store_true');args=parser.parse_args();args.work_dir.mkdir(parents=True,exist_ok=True)
+ prior=json.loads((ROOT/'dist/data/openbook-melodies.json').read_text()) if args.append_missing else None
+ prior_audit=json.loads((ROOT/'evidence/openbook-melody-audit.json').read_text()) if args.append_missing else None
+ existing_titles={e['normalizedTitle'] for e in prior['entries']} if prior else set()
  originals=json.loads((ROOT/'dist/data/roadmaps.json').read_text())['songs'];by_title={normalize(s['title']):s for s in originals};qualities=json.loads((ROOT/'src/music/chord-vocabulary.json').read_text())['qualities'];paths=[];metadata_errors=[]
  archive=args.archive or args.source_dir.parent/'openbook.tar.gz'
  with tarfile.open(archive) as packed:
@@ -209,20 +230,20 @@ def main():
    local=path.relative_to(args.source_dir).as_posix()
    if archive_hashes.get(local)!=sha(path):raise ValueError('Extracted source differs from pinned archive')
    meta=tomllib.loads(re.search(r'{#(.*?)#}',path.read_text(),re.S)[1]);title=meta['attributes']['title']
-   if normalize(title) in by_title and (not args.only or normalize(args.only)==normalize(title)):paths.append((path,meta))
+   if normalize(title) in by_title and normalize(title) not in existing_titles and (not args.only or normalize(args.only)==normalize(title)):paths.append((path,meta))
   except Exception as error:metadata_errors.append({'path':str(path.relative_to(args.source_dir)),'reason':str(error)})
  def run(item):
   path,meta=item;versions=list(dict.fromkeys(['Real',meta.get('default_version')]+list(meta.get('versions',{}))));attempts=[]
   for version in versions:
    if version not in meta.get('versions',{}):continue
    try:
-    entry=decode(path,version,args.lilypond,qualities,args.source_dir,args.work_dir)
+    entry=decode(path,version,args.lilypond,qualities,args.source_dir,args.work_dir,args.source_intervals)
     original=by_title[entry['normalizedTitle']]
     if entry['tonic'][1].lower()!=original['tonic'][1].lower():raise ValueError('Source key declaration mode disagrees with original harmonic mode; requires tonic review')
     return entry,attempts
-   except Exception as error:attempts.append({'path':str(path.relative_to(args.source_dir)),'version':version,'reason':str(error)})
+   except Exception as error:attempts.append({'title':meta['attributes']['title'],'path':str(path.relative_to(args.source_dir)),'version':version,'reason':str(error)})
   return None,attempts
- entries=[];failures=[]
+ entries=list(prior['entries']) if prior else [];failures=[]
  with ThreadPoolExecutor(max_workers=args.jobs) as pool:
   for i,(entry,attempts) in enumerate(pool.map(run,paths)):
    failures.extend(attempts)
@@ -235,7 +256,7 @@ def main():
   for old in (ROOT/'dist/melodies').glob('openbook-*.mid'):
    if old.name not in current_midis:old.unlink()
  output={'version':1,'timeUnit':'quarter-note','pitchBasis':'source','sources':[source],'entries':entries};(ROOT/'dist/data/openbook-melodies.json').write_text(json.dumps(output,separators=(',',':'),ensure_ascii=False)+'\n')
- audit={'version':1,'sources':[source],'counts':{'originalTitleSources':len(paths),'validatedArrangements':len(entries),'notes':sum(len(e['notes']) for e in entries),'attemptsExcluded':len(failures)},'policy':{'selection':'Only original-catalogue title matches. Prefer complete Real version, then declared default, then remaining encoded versions; first fully validated arrangement per composition.','tonic':'Explicit source key/mode only. Source declaration mode differing from original composition harmonic mode is excluded for review; relative-major signatures are not silently treated as actual tonic.','skips':'Blank chord-label skips hold preceding harmony with explicit continuation provenance; rests are NC and initial blanks remain NC.','navigation':'Textual DC/DS/Coda and pickups excluded. No inferred return or invented note. Written volta and alternatives unfolded by LilyPond.','timing':'Compiled melody MIDI and independently unfolded chord AST must have equal total duration; every explicit barcheck must be on the fixed meter grid.','sourceChordValidation':'Direct syntax mapping must exist in Impro-Visor vocabulary and agree exactly with the LilyPond-compiled pitch-class set including explicit slash bass.','alignment':'Entries are whole source arrangements. Existing roadmap compatibility still requires exact root/rhythm check; title match alone never authorizes melody overlay.'},'entries':[{'id':e['id'],'title':e['title'],'originalSong':by_title[e['normalizedTitle']]['index'],'originalBars':by_title[e['normalizedTitle']]['bars'],'sourceBars':e['bars'],'notes':len(e['notes']),'chords':len(e['chords']),'provenance':e['provenance']} for e in entries],'excludedAttempts':failures,'metadataErrors':metadata_errors}
+ audit={'version':1,'sources':[source],'counts':{'originalTitleSources':(prior_audit['counts']['originalTitleSources'] if prior_audit else len(paths)),'validatedArrangements':len(entries),'notes':sum(len(e['notes']) for e in entries),'attemptsExcluded':len(failures),'sourceIntervalOverrides':sum('sourceIntervals' in c for e in entries for c in e['chords'])},'policy':{'selection':'Only original-catalogue title matches. Prefer complete Real version, then declared default, then remaining encoded versions; first fully validated arrangement per composition.','tonic':'Explicit source key/mode only. Source declaration mode differing from original composition harmonic mode is excluded for review; relative-major signatures are not silently treated as actual tonic.','skips':'Blank chord-label skips hold preceding harmony with explicit continuation provenance; rests are NC and initial blanks remain NC.','navigation':'Textual DC/DS/Coda and pickups excluded. No inferred return or invented note. Written volta and alternatives unfolded by LilyPond.','timing':'Compiled melody MIDI and independently unfolded chord AST must have equal total duration; every explicit barcheck must be on the fixed meter grid.','sourceChordValidation':'Direct syntax agrees exactly with compiled pitches. Where vocabulary differs, independently compiled slash-free source chord cores provide explicit compound intervals; original and core pitch-class sets plus explicit bass must agree.','alignment':'Entries are whole source arrangements. Existing roadmap compatibility still requires exact root/rhythm check; title match alone never authorizes melody overlay.'},'entries':[{'id':e['id'],'title':e['title'],'originalSong':by_title[e['normalizedTitle']]['index'],'originalBars':by_title[e['normalizedTitle']]['bars'],'sourceBars':e['bars'],'notes':len(e['notes']),'chords':len(e['chords']),'provenance':e['provenance']} for e in entries],'excludedAttempts':failures,'metadataErrors':metadata_errors}
  (ROOT/'evidence/openbook-melody-audit.json').write_text(json.dumps(audit,indent=2,ensure_ascii=False)+'\n');print(json.dumps(audit['counts']))
 
 if __name__=='__main__':main()

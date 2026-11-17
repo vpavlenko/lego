@@ -78,7 +78,7 @@ test('previous wrapper-family routes and aliases resolve to the main family',()=
 
 test('combined original and additional source usages and every source route remain intact',()=>{
  const additional=JSON.parse(fs.readFileSync(new URL('../dist/data/additional-standards.json',import.meta.url),'utf8')).songs,combined=buildBrickIndex([...songs,...additional]),before=JSON.stringify(combined),index=buildLearnerBrickIndex(combined);
- assert.equal(index.bricks.length,202);assert.deepEqual(spans(index),spans(combined));assert.equal(JSON.stringify(combined),before);
+ assert.equal(index.bricks.length,207);assert.deepEqual(spans(index),spans(combined));assert.equal(JSON.stringify(combined),before);
  assert.equal(familyFor(index,'Dogleg Slow Launcher'),familyFor(index,'Dogleg Cadence'));
  const routes=new Map();for(const b of index.bricks)for(const slug of [b.slug,...b.aliasSlugs]){assert.ok(!routes.has(slug),slug);routes.set(slug,b);}
  for(const b of combined.bricks)for(const slug of [b.slug,...b.aliasSlugs])assert.equal(routes.get(slug),familyFor(index,b.name),slug);

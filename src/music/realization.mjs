@@ -1,11 +1,13 @@
 import {pitch,mod,transposeChord} from '../../dist/harmony.mjs';
 import {songModulations} from './modulations.mjs';
 
-export function parseChord(symbol,qualities){
+export function parseChord(symbol,qualities,sourceCell=null){
  const match=/^([A-G][b#]*)(.*?)(?:\/([A-G][b#]*))?$/.exec(symbol);
  if(!match)return null;
- const intervals=qualities[match[2]];if(!intervals)return null;
- return {root:pitch(match[1]),bass:pitch(match[3]||match[1]),intervals,quality:match[2],slash:!!match[3]};
+ const override=sourceCell?.sourceIntervals;
+ if(override!==undefined&&(sourceCell.realizationBasis!=='source-compiled-chord'||!Array.isArray(override)||!override.length||!override.includes(0)||override.some(i=>!Number.isInteger(i)||i<0||i>48)))throw Error('Invalid source chord intervals');
+ const intervals=override??qualities[match[2]];if(!intervals)return null;
+ return {root:pitch(match[1]),bass:pitch(match[3]||match[1]),intervals,quality:match[2],slash:!!match[3],...(override?{sourceOverride:true}:{})};
 }
 // Keep the core rooted and dense; compound intervals preserve 9/11/13
 // above the seventh. An explicit slash bass sits below the complete chord,
@@ -25,7 +27,7 @@ export function realizeSong(song,qualities,{tempo=120}={}){
    const c={id,row:ri,start,end,symbol,sourceSymbol:cell.symbol,clipped:!!cell.clipped};chords.push(c);
    // A source ellipsis conceals chord tones. Preserve its time as a marked gap.
    if(c.clipped){c.pitches=[];continue;}
-   const parsed=parseChord(symbol,qualities);if(!parsed)throw Error('Unsupported chord '+symbol+' in '+song.title);
+   const parsed=parseChord(symbol,qualities,cell);if(!parsed)throw Error('Unsupported chord '+symbol+' in '+song.title);
    c.pitches=rootPosition(parsed);
    c.pitches.forEach((p,i)=>notes.push({id:`${id}-${i}`,pitch:p,start,duration:end-start,voice:0,velocity:74,chord:id}));
   }

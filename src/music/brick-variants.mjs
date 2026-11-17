@@ -93,7 +93,7 @@ export function occurrencePreview(brick,song,source){
 export function brickStructure(previewSong,vocabulary={}){
  const qualities=vocabulary.qualities??vocabulary,tonic=pitch(previewSong.tonic[0]),duration=previewSong.bars;
  const row=previewSong.rows[0],chords=row.chords.map(cell=>{
-  const parsed=parseChord(cell.symbol,qualities),symbol=transposeChord(cell.symbol,previewSong.tonic[0]);
+  const parsed=parseChord(cell.symbol,qualities,cell),symbol=transposeChord(cell.symbol,previewSong.tonic[0]);
   const fallback=/^([A-G][b#]*)(.*?)(?:\/([A-G][b#]*))?$/.exec(cell.symbol);
   const harmony=cell.clipped||!fallback?null:[mod(pitch(fallback[1])-tonic),parsed?[...parsed.intervals]:fallback[2],fallback[3]?mod(pitch(fallback[3])-tonic):null];
   return {symbol,harmony,at:ratio(cell.start,duration),duration:ratio(cell.end-cell.start,duration)};

@@ -33,7 +33,7 @@ export function melodyEligibility(entry,qualities){
  if(!Number.isInteger(entry.bars)||!close(entry.totalBeats,entry.bars*entry.barBeats))reasons.push('incomplete bar grid');
  if(p.conflictingHarmonies?.length)reasons.push('conflicting harmonies');
  if(p.omittedHarmonyAnnotations.some(c=>c.kind!=='none'))reasons.push('unsupported source harmony');
- if(entry.chords.some(c=>c.symbol!=='NC'&&!parseChord(c.symbol,qualities)))reasons.push('unsupported chord vocabulary');
+ if(entry.chords.some(c=>c.symbol!=='NC'&&!parseChord(c.symbol,qualities,c)))reasons.push('unsupported chord vocabulary');
  if(!entry.chords.length)reasons.push('no harmony');
  if(entry.tonicConfidence!=='high')reasons.push('uncertain tonic');
  return [...new Set(reasons)];

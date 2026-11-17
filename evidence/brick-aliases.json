@@ -1,6 +1,6 @@
 {
-  "sourceLabels": 396,
-  "canonicalBricks": 334,
+  "sourceLabels": 402,
+  "canonicalBricks": 339,
   "groups": [
     {
       "name": "Autumn Leaves Opening +...",
@@ -23,16 +23,16 @@
       "aliases": [
         "Chromatically Descending Dom..."
       ],
-      "standards": 3,
-      "passages": 4
+      "standards": 6,
+      "passages": 8
     },
     {
       "name": "Diatonic I ii iii ii",
       "aliases": [
         "Diatonic I II iii II"
       ],
-      "standards": 3,
-      "passages": 5
+      "standards": 6,
+      "passages": 13
     },
     {
       "name": "Diatonic I ii iii IV",
@@ -79,8 +79,8 @@
       "aliases": [
         "I¥ n Bird"
       ],
-      "standards": 6,
-      "passages": 8
+      "standards": 7,
+      "passages": 9
     },
     {
       "name": "IV n Bird +...",
@@ -95,8 +95,8 @@
       "aliases": [
         "I¥ n Bird SPOT"
       ],
-      "standards": 4,
-      "passages": 4
+      "standards": 6,
+      "passages": 7
     },
     {
       "name": "IV n Bird SPOT +...",
@@ -169,8 +169,8 @@
         "Minor Chrom...",
         "Minor Chroma..."
       ],
-      "standards": 12,
-      "passages": 27
+      "standards": 13,
+      "passages": 28
     },
     {
       "name": "Minor Dropback",
@@ -180,8 +180,8 @@
         "Minor Dropb",
         "Minor Dropbac"
       ],
-      "standards": 9,
-      "passages": 11
+      "standards": 12,
+      "passages": 16
     },
     {
       "name": "Minor Dropback +...",
@@ -203,8 +203,8 @@
         "Minor Perfect Cade",
         "Minor Perfect."
       ],
-      "standards": 38,
-      "passages": 87
+      "standards": 42,
+      "passages": 97
     },
     {
       "name": "Nowhere Launcher",
@@ -219,48 +219,48 @@
       "aliases": [
         "Off On Minor bil"
       ],
-      "standards": 2,
-      "passages": 8
+      "standards": 4,
+      "passages": 12
     },
     {
       "name": "On Off Major #IV",
       "aliases": [
         "On Off Major #1V"
       ],
-      "standards": 3,
-      "passages": 4
+      "standards": 4,
+      "passages": 6
     },
     {
       "name": "On Off Major bII",
       "aliases": [
         "On Off Major bil"
       ],
-      "standards": 5,
-      "passages": 9
+      "standards": 7,
+      "passages": 12
     },
     {
       "name": "On Off Major bIII",
       "aliases": [
         "On Off Major bill"
       ],
-      "standards": 2,
-      "passages": 3
+      "standards": 3,
+      "passages": 4
     },
     {
       "name": "On Off Major III",
       "aliases": [
         "On Off Major Ill"
       ],
-      "standards": 6,
-      "passages": 8
+      "standards": 8,
+      "passages": 12
     },
     {
       "name": "On Off Major VII",
       "aliases": [
         "On Off Major Vil"
       ],
-      "standards": 10,
-      "passages": 15
+      "standards": 14,
+      "passages": 22
     },
     {
       "name": "On Off Minor #IV",
@@ -275,16 +275,16 @@
       "aliases": [
         "On Off Minor bil"
       ],
-      "standards": 6,
-      "passages": 9
+      "standards": 7,
+      "passages": 11
     },
     {
       "name": "On Off Minor bIII",
       "aliases": [
         "On Off Minor blll"
       ],
-      "standards": 6,
-      "passages": 8
+      "standards": 7,
+      "passages": 10
     },
     {
       "name": "Perfect Cadence",
@@ -292,8 +292,8 @@
         "Perfect Caden.",
         "Perfect Cadenc..."
       ],
-      "standards": 83,
-      "passages": 229
+      "standards": 105,
+      "passages": 337
     },
     {
       "name": "Sad Launcher",
@@ -309,8 +309,8 @@
       "aliases": [
         "Somewhere/Nowhere Approi"
       ],
-      "standards": 5,
-      "passages": 9
+      "standards": 6,
+      "passages": 11
     },
     {
       "name": "Straight Approach",
@@ -319,8 +319,8 @@
         "Straight Appro.",
         "Straight Approa..."
       ],
-      "standards": 106,
-      "passages": 205
+      "standards": 124,
+      "passages": 258
     },
     {
       "name": "Straight Cadence + Dominant Overrun",

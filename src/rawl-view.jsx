@@ -1,10 +1,10 @@
 import React,{useEffect,useState,useRef} from 'react';
 import {createRoot} from 'react-dom/client';
-import {RawlNotation,RawlMeasureHeader} from '../packages/rawl-notation/src/RawlNotation.jsx';
+import {RawlNotation,RawlMeasureHeader} from 'librawl';
 import {pitch,mod,chordParts,chordDisplay,roman} from '../dist/harmony.mjs';
 import {modulationAt} from './music/modulations.mjs';
 import {notationRows} from './music/notation-rows.mjs';
-import {RAWL_COLORS} from '../packages/rawl-notation/src/palette.mjs';
+import {RAWL_COLORS} from 'librawl/palette';
 
 function HostView({song,performance,brickMap,onSeek,onNote,onNoteHover,onMeasureSelect,selectedMeasure=null,controller,mutedVoices,selected,compact=false,form=null,measureWidth=null,barsPerRow=null,continuous=false}){
  const [mobile,setMobile]=useState(()=>matchMedia('(max-width:760px)').matches),notation=useRef(null);

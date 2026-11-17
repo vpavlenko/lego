@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {createRequire} from 'node:module';
 import {createHash} from 'node:crypto';
 import {build} from 'esbuild';
 import {attachMelody} from '../src/music/melody.mjs';
@@ -18,6 +19,7 @@ import {alignRepeatedSubphrases} from '../src/music/section-layout.mjs';
 import {groupBricks} from '../src/music/brick-groups.mjs';
 import {cleanModulationRegions} from '../src/music/modulation-regions.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
+const require=createRequire(import.meta.url),libraryFile=specifier=>require.resolve('librawl/'+specifier),libraryDist=path.dirname(libraryFile('style.css'));
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const original=read('dist/data/roadmaps.json'),additional=fs.existsSync(path.join(root,'dist/data/additional-standards.json'))?read('dist/data/additional-standards.json'):{songs:[]};
 const rawSongs=[...original.songs,...additional.songs],vocabulary=read('src/music/chord-vocabulary.json'),{qualities}=vocabulary;
@@ -86,9 +88,14 @@ const catalogueGroups=groupBricks(atlasBricks,read('src/music/brick-types.json')
 fs.writeFileSync(path.join(root,'dist/data/atlas.json'),JSON.stringify({version:1,groups:catalogueGroups}));
 fs.writeFileSync(path.join(root,'dist/data/bricks.json'),JSON.stringify({...bricks,groups:catalogueGroups.map(group=>({type:group.type,slugs:group.bricks.map(brick=>brick.slug)}))}));
 fs.writeFileSync(path.join(root,'evidence/runtime-projection.json'),JSON.stringify({version:1,charts:songs.length,primaryStandards:songs.filter(s=>!Number.isInteger(s.arrangementOf)).length,originalCharts:original.songs.length,additionalCharts:additional.songs.length,rawSourceIdentities:sourceIndex.bricks.length,coverage:coverage.stats,reuse:reuse.stats,definitions:definitionCount,unresolvedOccurrences,unchangedMusicalDataSha256:fingerprint(musicalData(songs)),decisions:reuse.decisions.map(d=>({action:d.action,source:d.source.name,target:d.target?.name,reason:d.reason}))},null,2));
-fs.copyFileSync(path.join(root,'packages/rawl-notation/src/style.css'),path.join(root,'dist/rawl-notation.css'));
-fs.copyFileSync(path.join(root,'packages/rawl-notation/src/palette.mjs'),path.join(root,'dist/rawl-colors.mjs'));
-fs.copyFileSync(path.join(root,'packages/rawl-notation/LICENSE'),path.join(root,'dist/RAWL-LICENSE.txt'));
+// Generated compatibility mirror: never edit the local CSS implementation.
+fs.copyFileSync(libraryFile('legacy-style.css'),path.join(root,'packages/rawl-notation/src/style.css'));
+fs.copyFileSync(libraryFile('legacy-style.css'),path.join(root,'dist/rawl-notation.css'));
+fs.copyFileSync(path.join(libraryDist,'palette.js'),path.join(root,'dist/rawl-colors.mjs'));
+fs.copyFileSync(path.join(libraryDist,'../LICENSE'),path.join(root,'dist/RAWL-LICENSE.txt'));
+fs.copyFileSync(path.join(libraryDist,'../NOTICE.md'),path.join(root,'dist/LIBRAWL-NOTICE.md'));
+fs.copyFileSync(path.join(libraryDist,'provenance.json'),path.join(root,'dist/librawl-provenance.json'));
+fs.copyFileSync(libraryFile('browser/soundfont-playback-sax.js'),path.join(root,'dist/soundfont-playback.js'));
 await build({entryPoints:[path.join(root,'src/rawl-view.jsx')],outfile:path.join(root,'dist/rawl-view.js'),bundle:true,format:'esm',platform:'browser',target:['es2020'],jsx:'automatic',minify:true,legalComments:'eof',define:{'process.env.NODE_ENV':'"production"'}});
 await build({entryPoints:[path.join(root,'src/audio-player.mjs')],outfile:path.join(root,'dist/audio-player.js'),bundle:true,format:'esm',platform:'browser',target:['es2020'],minify:true});
 await build({entryPoints:[path.join(root,'src/music/modulations.mjs')],outfile:path.join(root,'dist/modulations.js'),bundle:true,format:'esm',platform:'browser',target:['es2020'],minify:true});

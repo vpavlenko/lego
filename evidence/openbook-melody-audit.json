@@ -16,9 +16,10 @@
   ],
   "counts": {
     "originalTitleSources": 206,
-    "validatedArrangements": 79,
-    "notes": 10582,
-    "attemptsExcluded": 157
+    "validatedArrangements": 122,
+    "notes": 17126,
+    "attemptsExcluded": 106,
+    "sourceIntervalOverrides": 137
   },
   "policy": {
     "selection": "Only original-catalogue title matches. Prefer complete Real version, then declared default, then remaining encoded versions; first fully validated arrangement per composition.",
@@ -26,10 +27,69 @@
     "skips": "Blank chord-label skips hold preceding harmony with explicit continuation provenance; rests are NC and initial blanks remain NC.",
     "navigation": "Textual DC/DS/Coda and pickups excluded. No inferred return or invented note. Written volta and alternatives unfolded by LilyPond.",
     "timing": "Compiled melody MIDI and independently unfolded chord AST must have equal total duration; every explicit barcheck must be on the fixed meter grid.",
-    "sourceChordValidation": "Direct syntax mapping must exist in Impro-Visor vocabulary and agree exactly with the LilyPond-compiled pitch-class set including explicit slash bass.",
+    "sourceChordValidation": "Direct syntax agrees exactly with compiled pitches. Where vocabulary differs, independently compiled slash-free source chord cores provide explicit compound intervals; original and core pitch-class sets plus explicit bass must agree.",
     "alignment": "Entries are whole source arrangements. Existing roadmap compatibility still requires exact root/rhythm check; title match alone never authorizes melody overlay."
   },
   "entries": [
+    {
+      "id": "openbook-a-foggy-day-real",
+      "title": "A Foggy Day",
+      "originalSong": 68,
+      "originalBars": 34,
+      "sourceBars": 34,
+      "notes": 72,
+      "chords": 45,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/a_foggy_day.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/a_foggy_day.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/a_foggy_day.ly.tera",
+        "sha256": "9d0993dc4b5fc266061fc99e8d0b01a4a10921ad698f92fee47633d46cc99d9c",
+        "sourceRights": "1937, Gershwin Publishing Corporation",
+        "sourceRightsExtra": "Copyright Renewed, Assigned to Chappell & Co, Inc.",
+        "sourceVersion": "Real",
+        "sourceStructure": "AB",
+        "sourceKeySignature": {
+          "root": "F",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsReal",
+            "startLine": 90
+          },
+          "melody": {
+            "name": "VoiceReal",
+            "startLine": 114
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "A Foggy Day",
+          "workTitle": "A Foggy Day",
+          "movementTitle": null,
+          "filenameTitle": "a_foggy_day.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
     {
       "id": "openbook-ain-t-misbehavin-fake",
       "title": "Ain't Misbehavin'",
@@ -263,6 +323,65 @@
       }
     },
     {
+      "id": "openbook-angel-eyes-fake",
+      "title": "Angel Eyes",
+      "originalSong": 9,
+      "originalBars": 32,
+      "sourceBars": 34,
+      "notes": 129,
+      "chords": 75,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/angel_eyes.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/angel_eyes.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/angel_eyes.ly.tera",
+        "sha256": "cc012ab3da99c9bff56f5c1e9f86617c927a92f418e1ad3db2877fec2e920f5f",
+        "sourceRights": "1946 (Renewed 1973) Dorsey Brothers Music",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Fake",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "C",
+          "mode": "Minor"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 56
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 91
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Angel Eyes",
+          "workTitle": "Angel Eyes",
+          "movementTitle": null,
+          "filenameTitle": "angel_eyes.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
       "id": "openbook-anything-goes-wikifonia",
       "title": "Anything Goes",
       "originalSong": 10,
@@ -379,6 +498,65 @@
       }
     },
     {
+      "id": "openbook-autumn-in-new-york-real",
+      "title": "Autumn In New York",
+      "originalSong": 11,
+      "originalBars": 32,
+      "sourceBars": 32,
+      "notes": 99,
+      "chords": 54,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/autumn_in_new_york.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/autumn_in_new_york.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/autumn_in_new_york.ly.tera",
+        "sha256": "6ae7f16b863305e20b50006654f44064d20dcd17d083b032d11b59488cb32485",
+        "sourceRights": "1934 by Kay Duke Music.",
+        "sourceRightsExtra": "Copyright Renewed. All Rights Administered by BMG Songs, Inc.",
+        "sourceVersion": "Real",
+        "sourceStructure": "ABAC",
+        "sourceKeySignature": {
+          "root": "F",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsReal",
+            "startLine": 71
+          },
+          "melody": {
+            "name": "VoiceReal",
+            "startLine": 103
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Autumn In New York",
+          "workTitle": "Autumn In New York",
+          "movementTitle": null,
+          "filenameTitle": "autumn_in_new_york.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
       "id": "openbook-avalon-wikifonia",
       "title": "Avalon",
       "originalSong": 13,
@@ -491,6 +669,65 @@
           "filenameTitle": "baubles_bangles_and_beads.ly.tera"
         },
         "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-between-the-devil-and-the-deep-blue-sea-wikifonia",
+      "title": "Between The Devil And The Deep Blue Sea",
+      "originalSong": 18,
+      "originalBars": 32,
+      "sourceBars": 32,
+      "notes": 105,
+      "chords": 64,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/between_the_devil_and_the_deep_blue_sea.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/between_the_devil_and_the_deep_blue_sea.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/between_the_devil_and_the_deep_blue_sea.ly.tera",
+        "sha256": "0b06c4cbd1942495460f2da383de7efce5ee3697f23be30a58c44fd16ac841b9",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "F",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 42
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 87
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Between The Devil And The Deep Blue Sea",
+          "workTitle": "Between The Devil And The Deep Blue Sea",
+          "movementTitle": null,
+          "filenameTitle": "between_the_devil_and_the_deep_blue_sea.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
         "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
       }
     },
@@ -959,6 +1196,65 @@
       }
     },
     {
+      "id": "openbook-come-rain-or-come-shine-fake",
+      "title": "Come Rain Or Come Shine",
+      "originalSong": 38,
+      "originalBars": 32,
+      "sourceBars": 32,
+      "notes": 123,
+      "chords": 56,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/come_rain_or_come_shine.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/come_rain_or_come_shine.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/come_rain_or_come_shine.ly.tera",
+        "sha256": "f82f095982969b3e8ef807c9c47e84c3d50bca3b457de030ed773f5ff54d6e2c",
+        "sourceRights": "1946, by A-M Music Corp. Copyright Renewed, all rights controlled by Chappell & Co., Inc.",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Fake",
+        "sourceStructure": "AB",
+        "sourceKeySignature": {
+          "root": "F",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 68
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 92
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Come Rain Or Come Shine",
+          "workTitle": "Come Rain Or Come Shine",
+          "movementTitle": null,
+          "filenameTitle": "come_rain_or_come_shine.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
       "id": "openbook-confirmation-fake",
       "title": "Confirmation",
       "originalSong": 39,
@@ -1071,6 +1367,124 @@
           "filenameTitle": "cute.ly.tera"
         },
         "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-dearly-beloved-fake",
+      "title": "Dearly Beloved",
+      "originalSong": 47,
+      "originalBars": 32,
+      "sourceBars": 32,
+      "notes": 67,
+      "chords": 36,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/dearly_beloved.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/dearly_beloved.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/dearly_beloved.ly.tera",
+        "sha256": "427ff47e70d13c8d993e62536193305328439ada732f5ee07f848e95f9f2c611",
+        "sourceRights": "1942 T.B. Harms Company. Copyright Renewed.",
+        "sourceRightsExtra": "(c/o The Welk Music Group, Santa Monica, CA 90401)",
+        "sourceVersion": "Fake",
+        "sourceStructure": "ABAC",
+        "sourceKeySignature": {
+          "root": "C",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 57
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 85
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Dearly Beloved",
+          "workTitle": "Dearly Beloved",
+          "movementTitle": null,
+          "filenameTitle": "dearly_beloved.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-desafinado-fake",
+      "title": "Desafinado",
+      "originalSong": 48,
+      "originalBars": 68,
+      "sourceBars": 68,
+      "notes": 210,
+      "chords": 66,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/desafinado.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/desafinado.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/desafinado.ly.tera",
+        "sha256": "f14f91b47eeaf7ca3901e77c0ef68dfad788974215330a23054d452409bb87b1",
+        "sourceRights": "1959 and 1962, Editora Musical Arapua, Sao Paulo, Brazil",
+        "sourceRightsExtra": "1959 1962, Editora Musical Arapua, Sao Paulo, Brazil",
+        "sourceVersion": "Fake",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "F",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 78
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 123
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Desafinado",
+          "workTitle": "Desafinado",
+          "movementTitle": null,
+          "filenameTitle": "desafinado.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
         "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
       }
     },
@@ -1191,6 +1605,65 @@
       }
     },
     {
+      "id": "openbook-dream-dancing-wikifonia",
+      "title": "Dream Dancing",
+      "originalSong": 55,
+      "originalBars": 36,
+      "sourceBars": 105,
+      "notes": 222,
+      "chords": 112,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/dream_dancing.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/dream_dancing.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/dream_dancing.ly.tera",
+        "sha256": "64d9ae64f50e15ebcbbfed8e8d81758b3acf326b994b960b0610f54c2f92e814",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "C",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 42
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 117
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Dream Dancing",
+          "workTitle": "Dream Dancing",
+          "movementTitle": null,
+          "filenameTitle": "dream_dancing.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
       "id": "openbook-easy-living-real",
       "title": "Easy Living",
       "originalSong": 58,
@@ -1245,6 +1718,65 @@
           "filenameTitle": "easy_living.ly.tera"
         },
         "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-embraceable-you-wikifonia",
+      "title": "Embraceable You",
+      "originalSong": 59,
+      "originalBars": 32,
+      "sourceBars": 64,
+      "notes": 174,
+      "chords": 107,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/embraceable_you.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/embraceable_you.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/embraceable_you.ly.tera",
+        "sha256": "17d7aee003e4c3bcd7f5daa52782f293518f5bea85aa4aea8d822825065192a0",
+        "sourceRights": "Original composition (1930); public domain in the US",
+        "sourceRightsExtra": "Instrumental lead sheet; later lyrics and arrangements are excluded.",
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "G",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 45
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 99
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Embraceable You",
+          "workTitle": "Embraceable You",
+          "movementTitle": null,
+          "filenameTitle": "embraceable_you.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
         "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
       }
     },
@@ -1423,6 +1955,183 @@
       }
     },
     {
+      "id": "openbook-gee-baby-ain-t-i-good-to-you-fake",
+      "title": "Gee Baby, Ain't I Good To You",
+      "originalSong": 70,
+      "originalBars": 16,
+      "sourceBars": 32,
+      "notes": 152,
+      "chords": 83,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/gee_baby_aint_i_good_to_you.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/gee_baby_aint_i_good_to_you.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/gee_baby_aint_i_good_to_you.ly.tera",
+        "sha256": "0731ef4063961247ab9330bf33c508d2e23ff9e15d6d663bda0208c24921dc69",
+        "sourceRights": "1929 and 1944 by MICHAEL H. GOLDSEN, INC.",
+        "sourceRightsExtra": "Copyright Renewed.",
+        "sourceVersion": "Fake",
+        "sourceStructure": "AB",
+        "sourceKeySignature": {
+          "root": "Eb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 53
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 83
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Gee Baby, Ain't I Good To You",
+          "workTitle": "Gee Baby, Ain't I Good To You",
+          "movementTitle": null,
+          "filenameTitle": "gee_baby_aint_i_good_to_you.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-the-girl-from-ipanema-fake",
+      "title": "The Girl From Ipanema",
+      "originalSong": 73,
+      "originalBars": 40,
+      "sourceBars": 44,
+      "notes": 141,
+      "chords": 30,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/the_girl_from_ipanema.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/the_girl_from_ipanema.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/the_girl_from_ipanema.ly.tera",
+        "sha256": "e2dfdb70a78f9d7e7d24f3f6ab99b84c01fad6d8aaabd6845e54106e517bd884",
+        "sourceRights": "1963, Antonio Carlos Jobim and Vincius De Moraes, Brazil",
+        "sourceRightsExtra": "Sole Selling Agent Duchess Music Corporation (MCA), New York, NY for all. English speaking countries",
+        "sourceVersion": "Fake",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "F",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 65
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 103
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "The Girl From Ipanema",
+          "workTitle": "The Girl From Ipanema",
+          "movementTitle": null,
+          "filenameTitle": "the_girl_from_ipanema.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-gone-with-the-wind-fake",
+      "title": "Gone With The Wind",
+      "originalSong": 74,
+      "originalBars": 32,
+      "sourceBars": 64,
+      "notes": 190,
+      "chords": 101,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/gone_with_the_wind.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/gone_with_the_wind.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/gone_with_the_wind.ly.tera",
+        "sha256": "7cdbc262d306f0a641e48d2ec7a24340f37598cea61d64561e943c92b76621a3",
+        "sourceRights": "1937 by Bourne Co.",
+        "sourceRightsExtra": "Copyright Renewed.",
+        "sourceVersion": "Fake",
+        "sourceStructure": "ABAC",
+        "sourceKeySignature": {
+          "root": "Eb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 52
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 94
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Gone With The Wind",
+          "workTitle": "Gone With The Wind",
+          "movementTitle": null,
+          "filenameTitle": "gone_with_the_wind.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
       "id": "openbook-have-you-met-miss-jones-fake",
       "title": "Have you met Miss Jones?",
       "originalSong": 77,
@@ -1597,6 +2306,65 @@
       }
     },
     {
+      "id": "openbook-how-about-you-wikifonia",
+      "title": "How About You",
+      "originalSong": 81,
+      "originalBars": 32,
+      "sourceBars": 84,
+      "notes": 237,
+      "chords": 142,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/how_about_you.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/how_about_you.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/how_about_you.ly.tera",
+        "sha256": "df6dd4c003012849a837bfb70d3dcac962af166be1f271741afd9a28ed97ec70",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "G",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 41
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 108
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "How About You",
+          "workTitle": "How About You",
+          "movementTitle": null,
+          "filenameTitle": "how_about_you.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
       "id": "openbook-i-fall-in-love-too-easily-real",
       "title": "I Fall In Love Too Easily",
       "originalSong": 84,
@@ -1655,6 +2423,65 @@
       }
     },
     {
+      "id": "openbook-if-i-had-you-wikifonia",
+      "title": "If I Had You",
+      "originalSong": 103,
+      "originalBars": 32,
+      "sourceBars": 64,
+      "notes": 228,
+      "chords": 118,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/if_i_had_you.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/if_i_had_you.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/if_i_had_you.ly.tera",
+        "sha256": "10c958ea6027ac99d9a9abc9cec5f6abe5a47989791d8507c5caef850beb505c",
+        "sourceRights": "Original composition (1928); public domain in the US",
+        "sourceRightsExtra": "Instrumental lead sheet; later lyrics and arrangements are excluded.",
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "Bb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 45
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 99
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "If I Had You",
+          "workTitle": "If I Had You",
+          "movementTitle": null,
+          "filenameTitle": "if_i_had_you.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
       "id": "openbook-i-get-along-without-you-very-well-wikifonia",
       "title": "I Get Along Without You Very Well",
       "originalSong": 85,
@@ -1709,6 +2536,124 @@
           "filenameTitle": "i_get_along_without_you_very_well.ly.tera"
         },
         "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-i-ll-remember-april-laurent",
+      "title": "I'll Remember April",
+      "originalSong": 95,
+      "originalBars": 48,
+      "sourceBars": 48,
+      "notes": 121,
+      "chords": 48,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/ill_remember_april.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/ill_remember_april.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/ill_remember_april.ly.tera",
+        "sha256": "6a8b524da1990f1eb2b39a167c37249446de06cc6b525a942268a90e27748139",
+        "sourceRights": "1941, 1942 by MCA Music Publishing, A Division of MCA, Inc.",
+        "sourceRightsExtra": "Renewed 1969, 1970 Pic Corp.",
+        "sourceVersion": "Laurent",
+        "sourceStructure": "ABA",
+        "sourceKeySignature": {
+          "root": "G",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsLaurent",
+            "startLine": 151
+          },
+          "melody": {
+            "name": "VoiceLaurent",
+            "startLine": 183
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "I'll Remember April",
+          "workTitle": "I'll Remember April",
+          "movementTitle": null,
+          "filenameTitle": "ill_remember_april.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-i-m-confessin-that-i-love-you-fake",
+      "title": "I'm Confessin' That I Love You",
+      "originalSong": 96,
+      "originalBars": 32,
+      "sourceBars": 64,
+      "notes": 234,
+      "chords": 118,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/im_confessin_that_i_love_you.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/im_confessin_that_i_love_you.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/im_confessin_that_i_love_you.ly.tera",
+        "sha256": "15a27f387741d446fea27c33ffbd919858fd2112689923fe48470e071ca90b81",
+        "sourceRights": "1930 Bourne Co. Copyright Renewed.",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Fake",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "G",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 51
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 88
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "I'm Confessin' That I Love You",
+          "workTitle": "I'm Confessin' That I Love You",
+          "movementTitle": null,
+          "filenameTitle": "im_confessin_that_i_love_you.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
         "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
       }
     },
@@ -1887,6 +2832,65 @@
       }
     },
     {
+      "id": "openbook-i-remember-you-wikifonia",
+      "title": "I Remember You",
+      "originalSong": 91,
+      "originalBars": 36,
+      "sourceBars": 72,
+      "notes": 176,
+      "chords": 114,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/i_remember_you.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/i_remember_you.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/i_remember_you.ly.tera",
+        "sha256": "4e3703942d6a300819ba614a4b47fc12e2f999416d567eec6bb4d387e6f721f5",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "F",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 42
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 100
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "I Remember You",
+          "workTitle": "I Remember You",
+          "movementTitle": null,
+          "filenameTitle": "i_remember_you.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
       "id": "openbook-i-should-care-fake",
       "title": "I Should Care",
       "originalSong": 92,
@@ -1941,6 +2945,65 @@
           "filenameTitle": "i_should_care.ly.tera"
         },
         "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-it-could-happen-to-you-wikifonia",
+      "title": "It Could Happen To You",
+      "originalSong": 107,
+      "originalBars": 32,
+      "sourceBars": 64,
+      "notes": 134,
+      "chords": 84,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/it_could_happen_to_you.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/it_could_happen_to_you.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/it_could_happen_to_you.ly.tera",
+        "sha256": "879aff7e3998ae58dc40382c50f84a0c943b818b4da389959dd10a5f9e2cb91c",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "G",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 42
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 96
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "It Could Happen To You",
+          "workTitle": "It Could Happen To You",
+          "movementTitle": null,
+          "filenameTitle": "it_could_happen_to_you.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
         "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
       }
     },
@@ -2235,6 +3298,65 @@
       }
     },
     {
+      "id": "openbook-i-ve-got-the-world-on-a-string-wikifonia",
+      "title": "I've Got The World On  A String",
+      "originalSong": 99,
+      "originalBars": 32,
+      "sourceBars": 33,
+      "notes": 120,
+      "chords": 56,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/ive_got_the_world_on_a_string.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/ive_got_the_world_on_a_string.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/ive_got_the_world_on_a_string.ly.tera",
+        "sha256": "d5dc55a07eb298aa07b004e6c3edc23cc6b5dc4f3c708d2763b461faa4496612",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "F",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 42
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 88
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "I've Got The World On  A String",
+          "workTitle": "I've Got The World On  A String",
+          "movementTitle": null,
+          "filenameTitle": "ive_got_the_world_on_a_string.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
       "id": "openbook-the-joint-is-jumpin-fake",
       "title": "The Joint Is Jumpin'",
       "originalSong": 112,
@@ -2289,6 +3411,65 @@
           "filenameTitle": "the_joint_is_jumpin.ly.tera"
         },
         "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-just-in-time-fake",
+      "title": "Just In Time",
+      "originalSong": 114,
+      "originalBars": 32,
+      "sourceBars": 64,
+      "notes": 162,
+      "chords": 71,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/just_in_time.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/just_in_time.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/just_in_time.ly.tera",
+        "sha256": "666ab730fd243214bba7b682ae840021f740ee03be4a2bd9620f0b2becc170d3",
+        "sourceRights": "1956 by Betty Comden, Adolph Green and Jule Styne",
+        "sourceRightsExtra": "Copyright Renewed. Stratford Music Corporation, owner, and Chappell & Co., Inc. and G. Schirmer, Inc., Administrators of publication and allied rights",
+        "sourceVersion": "Fake",
+        "sourceStructure": "ABCD",
+        "sourceKeySignature": {
+          "root": "Bb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 53
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 95
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Just In Time",
+          "workTitle": "Just In Time",
+          "movementTitle": null,
+          "filenameTitle": "just_in_time.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
         "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
       }
     },
@@ -2351,6 +3532,124 @@
       }
     },
     {
+      "id": "openbook-the-lady-is-a-tramp-fake",
+      "title": "The Lady Is A Tramp",
+      "originalSong": 118,
+      "originalBars": 32,
+      "sourceBars": 48,
+      "notes": 111,
+      "chords": 75,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/the_lady_is_a_tramp.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/the_lady_is_a_tramp.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/the_lady_is_a_tramp.ly.tera",
+        "sha256": "7ed933d2df33521610615bd92a70a756aca27279ab4d25a073ff2fc7d8fb77d9",
+        "sourceRights": "1937 by Chappell & Co., Inc.",
+        "sourceRightsExtra": "Copyright Renewed.",
+        "sourceVersion": "Fake",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "C",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 54
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 88
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "The Lady Is A Tramp",
+          "workTitle": "The Lady Is A Tramp",
+          "movementTitle": null,
+          "filenameTitle": "the_lady_is_a_tramp.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-laura-laurent",
+      "title": "Laura",
+      "originalSong": 119,
+      "originalBars": 32,
+      "sourceBars": 67,
+      "notes": 185,
+      "chords": 106,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/laura.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/laura.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/laura.ly.tera",
+        "sha256": "87d34d3e9a895398762b7eeb62efc3c4f31f0ede4f110a03d7279fe0b860dc83",
+        "sourceRights": null,
+        "sourceRightsExtra": null,
+        "sourceVersion": "Laurent",
+        "sourceStructure": "ABAC",
+        "sourceKeySignature": {
+          "root": "C",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsLaurent",
+            "startLine": 37
+          },
+          "melody": {
+            "name": "VoiceLaurent",
+            "startLine": 84
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Laura",
+          "workTitle": "Laura",
+          "movementTitle": null,
+          "filenameTitle": "laura.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
       "id": "openbook-like-someone-in-love-laurent",
       "title": "Like Someone In Love",
       "originalSong": 122,
@@ -2405,6 +3704,65 @@
           "filenameTitle": "like_someone_in_love.ly.tera"
         },
         "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-li-l-darlin-fake",
+      "title": "Li'l Darlin'",
+      "originalSong": 121,
+      "originalBars": 32,
+      "sourceBars": 40,
+      "notes": 109,
+      "chords": 85,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/lil_darlin.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/lil_darlin.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/lil_darlin.ly.tera",
+        "sha256": "2b80e3a574661034c4e0a2a4a0d25ab7b759414a4944b6362415483dc8b4579b",
+        "sourceRights": "1958 & 1962 by Neal Hefti Music Inc., Encino, CA",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Fake",
+        "sourceStructure": "ABAB",
+        "sourceKeySignature": {
+          "root": "F",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 49
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 87
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Li'l Darlin'",
+          "workTitle": "Li'l Darlin'",
+          "movementTitle": null,
+          "filenameTitle": "lil_darlin.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
         "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
       }
     },
@@ -2467,6 +3825,242 @@
       }
     },
     {
+      "id": "openbook-lover-man-laurent",
+      "title": "Lover Man",
+      "originalSong": 128,
+      "originalBars": 32,
+      "sourceBars": 32,
+      "notes": 155,
+      "chords": 65,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/lover_man.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/lover_man.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/lover_man.ly.tera",
+        "sha256": "83ca0579cd5b56daf6c920e3790a367223d5bf514b9f16dce6468ca8832743b8",
+        "sourceRights": null,
+        "sourceRightsExtra": null,
+        "sourceVersion": "Laurent",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "F",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsLaurent",
+            "startLine": 37
+          },
+          "melody": {
+            "name": "VoiceLaurent",
+            "startLine": 72
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Lover Man",
+          "workTitle": "Lover Man",
+          "movementTitle": null,
+          "filenameTitle": "lover_man.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-love-walked-in-fake",
+      "title": "Love Walked In",
+      "originalSong": 126,
+      "originalBars": 32,
+      "sourceBars": 32,
+      "notes": 85,
+      "chords": 44,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/love_walked_in.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/love_walked_in.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/love_walked_in.ly.tera",
+        "sha256": "b42ae60ec0e4e53e6d785daefd0c2a93d3dbe6ab6fc206a32991b7d4d7720fed",
+        "sourceRights": "1938 by Gershwin Publishing Corporation",
+        "sourceRightsExtra": "Copyright Renewed, Assigned to Chappell & Co., Inc.",
+        "sourceVersion": "Fake",
+        "sourceStructure": "ABAC",
+        "sourceKeySignature": {
+          "root": "Eb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 52
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 84
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Love Walked In",
+          "workTitle": "Love Walked In",
+          "movementTitle": null,
+          "filenameTitle": "love_walked_in.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-lullaby-of-birdland-fake",
+      "title": "Lullaby of birdland",
+      "originalSong": 129,
+      "originalBars": 32,
+      "sourceBars": 42,
+      "notes": 166,
+      "chords": 78,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/lullaby_of_birdland.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/lullaby_of_birdland.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/lullaby_of_birdland.ly.tera",
+        "sha256": "0925080643d8010b7716d8b14ddb3fcd6e9a48728159774c5252925acabb439c",
+        "sourceRights": "1952, 1953, 1954 Adam R. Levy & Father Ent., Inc., New York NY. Copyrights Renewed.",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Fake",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "F",
+          "mode": "Minor"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 70
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 111
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Lullaby of birdland",
+          "workTitle": "Lullaby of birdland",
+          "movementTitle": null,
+          "filenameTitle": "lullaby_of_birdland.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-lullaby-of-the-leaves-fake",
+      "title": "Lullaby Of The Leaves",
+      "originalSong": 130,
+      "originalBars": 32,
+      "sourceBars": 64,
+      "notes": 262,
+      "chords": 121,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/lullaby_of_the_leaves.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/lullaby_of_the_leaves.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/lullaby_of_the_leaves.ly.tera",
+        "sha256": "366cfffcd457a295a8d8c17cf502b3bbd932da90f797ffd093720ff4fec3a5c5",
+        "sourceRights": "1932 IRVING BERLIN, INC.",
+        "sourceRightsExtra": "Renewed 1960 WAROCK CORP.",
+        "sourceVersion": "Fake",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "C",
+          "mode": "Minor"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 52
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 95
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Lullaby Of The Leaves",
+          "workTitle": "Lullaby Of The Leaves",
+          "movementTitle": null,
+          "filenameTitle": "lullaby_of_the_leaves.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
       "id": "openbook-manhattan-fake",
       "title": "Manhattan",
       "originalSong": 132,
@@ -2521,6 +4115,65 @@
           "filenameTitle": "manhattan.ly.tera"
         },
         "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-meditation-laurent",
+      "title": "Meditation",
+      "originalSong": 135,
+      "originalBars": 40,
+      "sourceBars": 56,
+      "notes": 141,
+      "chords": 52,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/meditation.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/meditation.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/meditation.ly.tera",
+        "sha256": "3702ade7c0494bf813d7ebc5f282ff435abe720fc538c42ef4d804ccef6fba4d",
+        "sourceRights": null,
+        "sourceRightsExtra": null,
+        "sourceVersion": "Laurent",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "C",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsLaurent",
+            "startLine": 37
+          },
+          "melody": {
+            "name": "VoiceLaurent",
+            "startLine": 69
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Meditation",
+          "workTitle": "Meditation",
+          "movementTitle": null,
+          "filenameTitle": "meditation.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
         "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
       }
     },
@@ -2583,6 +4236,65 @@
       }
     },
     {
+      "id": "openbook-moment-s-notice-real",
+      "title": "Moment's Notice",
+      "originalSong": 139,
+      "originalBars": 37,
+      "sourceBars": 38,
+      "notes": 88,
+      "chords": 62,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/moments_notice.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/moments_notice.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/moments_notice.ly.tera",
+        "sha256": "dd2b8f2beb8d24e78526921fde2b35ff35bad616a7bf5462c6c0b05ea02df1db",
+        "sourceRights": "1957 (Renewed 1985) JOWCOL MUSIC",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Real",
+        "sourceStructure": "AAB",
+        "sourceKeySignature": {
+          "root": "Eb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsReal",
+            "startLine": 49
+          },
+          "melody": {
+            "name": "VoiceReal",
+            "startLine": 80
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Moment's Notice",
+          "workTitle": "Moment's Notice",
+          "movementTitle": null,
+          "filenameTitle": "moments_notice.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
       "id": "openbook-moonglow-fake",
       "title": "Moonglow",
       "originalSong": 140,
@@ -2641,6 +4353,65 @@
       }
     },
     {
+      "id": "openbook-moonlight-in-vermont-fake",
+      "title": "Moonlight in Vermont",
+      "originalSong": 141,
+      "originalBars": 26,
+      "sourceBars": 28,
+      "notes": 99,
+      "chords": 52,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/moonlight_in_vermont.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/moonlight_in_vermont.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/moonlight_in_vermont.ly.tera",
+        "sha256": "2df82215c4f3923c8bc32199671dc9c7819b1db2e8d37c7a399eb953f6934887",
+        "sourceRights": "1944-1945 by MICHAEL H GOLDSEN, INC.",
+        "sourceRightsExtra": "Renewed 1972-1973 MICHAEL H GOLDSEN, INC.",
+        "sourceVersion": "Fake",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "Eb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 58
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 88
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Moonlight in Vermont",
+          "workTitle": "Moonlight in Vermont",
+          "movementTitle": null,
+          "filenameTitle": "moonlight_in_vermont.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
       "id": "openbook-moon-river-real",
       "title": "Moon River",
       "originalSong": 142,
@@ -2695,6 +4466,65 @@
           "filenameTitle": "moon_river.ly.tera"
         },
         "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-my-funny-valentine-fake",
+      "title": "My Funny Valentine",
+      "originalSong": 145,
+      "originalBars": 36,
+      "sourceBars": 36,
+      "notes": 90,
+      "chords": 51,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/my_funny_valentine.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/my_funny_valentine.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/my_funny_valentine.ly.tera",
+        "sha256": "8c147c5b52b8dcde0bdab330f9b07a536a5149d0d697239fe25dc8d48bf8819a",
+        "sourceRights": "1937 by Chappell & Co., Inc. Copyright Renewed",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Fake",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "C",
+          "mode": "Minor"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 54
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 87
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "My Funny Valentine",
+          "workTitle": "My Funny Valentine",
+          "movementTitle": null,
+          "filenameTitle": "my_funny_valentine.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
         "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
       }
     },
@@ -2869,6 +4699,65 @@
           "filenameTitle": "never_let_me_go.ly.tera"
         },
         "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-old-devil-moon-laurent",
+      "title": "Old Devil Moon",
+      "originalSong": 155,
+      "originalBars": 48,
+      "sourceBars": 48,
+      "notes": 139,
+      "chords": 54,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/old_devil_moon.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/old_devil_moon.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/old_devil_moon.ly.tera",
+        "sha256": "06a4217bb4daaaef40a11f3870375c1e9786f0d6726895e216b021f0e32258ab",
+        "sourceRights": null,
+        "sourceRightsExtra": null,
+        "sourceVersion": "Laurent",
+        "sourceStructure": "AA",
+        "sourceKeySignature": {
+          "root": "F",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsLaurent",
+            "startLine": 36
+          },
+          "melody": {
+            "name": "VoiceLaurent",
+            "startLine": 63
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Old Devil Moon",
+          "workTitle": "Old Devil Moon",
+          "movementTitle": null,
+          "filenameTitle": "old_devil_moon.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
         "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
       }
     },
@@ -3101,6 +4990,65 @@
           "filenameTitle": "prelude_to_a_kiss.ly.tera"
         },
         "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-red-sails-in-the-sunset-fake",
+      "title": "Red Sails In The Sunset",
+      "originalSong": 172,
+      "originalBars": 32,
+      "sourceBars": 64,
+      "notes": 180,
+      "chords": 90,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/red_sails_in_the_sunset.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/red_sails_in_the_sunset.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/red_sails_in_the_sunset.ly.tera",
+        "sha256": "d5d98e1b9ca0c44882f4b99055c414566b5d1ce00b1847c9075c3624ae942a08",
+        "sourceRights": "1935 The Peter Maurice Music Co. Ltd., London, England",
+        "sourceRightsExtra": "United Sates Copyright Renewed and Assigned to Sharpiro, Bernstein & Co., Inc.",
+        "sourceVersion": "Fake",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "G",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 56
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 98
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Red Sails In The Sunset",
+          "workTitle": "Red Sails In The Sunset",
+          "movementTitle": null,
+          "filenameTitle": "red_sails_in_the_sunset.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
         "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
       }
     },
@@ -3395,6 +5343,65 @@
       }
     },
     {
+      "id": "openbook-smile-wikifonia",
+      "title": "Smile",
+      "originalSong": 186,
+      "originalBars": 34,
+      "sourceBars": 34,
+      "notes": 102,
+      "chords": 39,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/smile.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/smile.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/smile.ly.tera",
+        "sha256": "39840938109fdc5bdc4e9fc31e8891e25c7bb834e9977c6d767b0c7315702246",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": "Archived MusicXML notice retained; underlying music is not relicensed.",
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "F",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 46
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 93
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Smile",
+          "workTitle": "Smile",
+          "movementTitle": null,
+          "filenameTitle": "smile.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
       "id": "openbook-softly-as-in-a-morning-sunrise-real",
       "title": "Softly As In A Morning Sunrise",
       "originalSong": 187,
@@ -3449,6 +5456,65 @@
           "filenameTitle": "softly_as_in_a_morning_sunrise.ly.tera"
         },
         "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-somebody-loves-me-wikifonia",
+      "title": "Somebody Loves Me",
+      "originalSong": 191,
+      "originalBars": 32,
+      "sourceBars": 32,
+      "notes": 68,
+      "chords": 40,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/somebody_loves_me.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/somebody_loves_me.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/somebody_loves_me.ly.tera",
+        "sha256": "7835164374e6f9df1d9863170cf5659e2f7eb782c943d911583b2690b8b0757c",
+        "sourceRights": "Original composition (1924); public domain in the US",
+        "sourceRightsExtra": "Instrumental lead sheet; later lyrics and arrangements are excluded.",
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "G",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 45
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 90
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Somebody Loves Me",
+          "workTitle": "Somebody Loves Me",
+          "movementTitle": null,
+          "filenameTitle": "somebody_loves_me.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
         "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
       }
     },
@@ -3623,6 +5689,65 @@
           "filenameTitle": "star_dust.ly.tera"
         },
         "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-star-eyes-real",
+      "title": "Star Eyes",
+      "originalSong": 196,
+      "originalBars": 36,
+      "sourceBars": 36,
+      "notes": 129,
+      "chords": 50,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/star_eyes.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/star_eyes.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/star_eyes.ly.tera",
+        "sha256": "13fb213ade9dbe026e04071cae7785dfb9b948270952d0426d92d0d4d6eb74b9",
+        "sourceRights": null,
+        "sourceRightsExtra": null,
+        "sourceVersion": "Real",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "Eb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsReal",
+            "startLine": 54
+          },
+          "melody": {
+            "name": "VoiceReal",
+            "startLine": 90
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Star Eyes",
+          "workTitle": "Star Eyes",
+          "movementTitle": null,
+          "filenameTitle": "star_eyes.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
         "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
       }
     },
@@ -4149,6 +6274,183 @@
       }
     },
     {
+      "id": "openbook-there-s-no-you-wikifonia",
+      "title": "There's No You",
+      "originalSong": 209,
+      "originalBars": 32,
+      "sourceBars": 40,
+      "notes": 170,
+      "chords": 57,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/theres_no_you.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/theres_no_you.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/theres_no_you.ly.tera",
+        "sha256": "44255902a72793009c4f516558a7bdca5ec5bd2ad2077637a968c6413d7b734d",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": "Archived MusicXML notice retained; underlying music is not relicensed.",
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "F",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 46
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 99
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "There's No You",
+          "workTitle": "There's No You",
+          "movementTitle": null,
+          "filenameTitle": "theres_no_you.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-these-foolish-things-fake",
+      "title": "These Foolish Things",
+      "originalSong": 211,
+      "originalBars": 32,
+      "sourceBars": 64,
+      "notes": 268,
+      "chords": 123,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/these_foolish_things.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/these_foolish_things.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/these_foolish_things.ly.tera",
+        "sha256": "e3522e7c579d23615ae32a4bc1a8fb0fe0d3a66e513b1e015433ac657cbaf939",
+        "sourceRights": "1935 Boosey & Co. Ltd., London, England.",
+        "sourceRightsExtra": "Publication rights for United States, Canada and Newfoundland Assigned to Bourne Co. Copyright Renewed.",
+        "sourceVersion": "Fake",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "Eb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 52
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 94
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "These Foolish Things",
+          "workTitle": "These Foolish Things",
+          "movementTitle": null,
+          "filenameTitle": "these_foolish_things.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-too-marvelous-for-words-wikifonia",
+      "title": "Too Marvelous For Words",
+      "originalSong": 216,
+      "originalBars": 32,
+      "sourceBars": 65,
+      "notes": 204,
+      "chords": 111,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/too_marvelous_for_words.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/too_marvelous_for_words.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/too_marvelous_for_words.ly.tera",
+        "sha256": "6344bcd07058fd3254320510f3b25624f88311dbe0fd9cfaea6afe65d27947f1",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "G",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 41
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 95
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Too Marvelous For Words",
+          "workTitle": "Too Marvelous For Words",
+          "movementTitle": null,
+          "filenameTitle": "too_marvelous_for_words.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
       "id": "openbook-tune-up-fake",
       "title": "Tune Up",
       "originalSong": 218,
@@ -4203,6 +6505,124 @@
           "filenameTitle": "tune_up.ly.tera"
         },
         "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-under-a-blanket-of-blue-fake",
+      "title": "Under A Blanket Of Blue",
+      "originalSong": 220,
+      "originalBars": 32,
+      "sourceBars": 32,
+      "notes": 111,
+      "chords": 40,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/under_a_blanket_of_blue.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/under_a_blanket_of_blue.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/under_a_blanket_of_blue.ly.tera",
+        "sha256": "f9429388de77616a02d203a7e1d578e145111ae675a9e33b8f8e796743ace397",
+        "sourceRights": "1933 by Santly Bros., Inc.",
+        "sourceRightsExtra": "Copyright assigned 1942 to Joy Music, Inc., New York. Copyright renewed 1961 by Jerry Livingston. Renewal Copyright assigned 1961 to Hallmark Music Co., Inc., Beverly Hills, CA",
+        "sourceVersion": "Fake",
+        "sourceStructure": "AABA",
+        "sourceKeySignature": {
+          "root": "Eb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 52
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 84
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "Under A Blanket Of Blue",
+          "workTitle": "Under A Blanket Of Blue",
+          "movementTitle": null,
+          "filenameTitle": "under_a_blanket_of_blue.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-we-ll-be-together-again-wikifonia",
+      "title": "We'll Be Together Again",
+      "originalSong": 223,
+      "originalBars": 32,
+      "sourceBars": 65,
+      "notes": 222,
+      "chords": 118,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/well_be_together_again.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/well_be_together_again.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/well_be_together_again.ly.tera",
+        "sha256": "82cd100c47769531b2bf4467dfbbdbd75c17da21c4daa3462babc1b2db5a82f3",
+        "sourceRights": "All Rights Reserved",
+        "sourceRightsExtra": null,
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "C",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 42
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 96
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "We'll Be Together Again",
+          "workTitle": "We'll Be Together Again",
+          "movementTitle": null,
+          "filenameTitle": "well_be_together_again.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
         "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
       }
     },
@@ -4319,6 +6739,124 @@
           "filenameTitle": "what_am_i_here_for.ly.tera"
         },
         "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-what-is-this-thing-called-love-wikifonia",
+      "title": "What Is This Thing Called Love?",
+      "originalSong": 228,
+      "originalBars": 32,
+      "sourceBars": 81,
+      "notes": 182,
+      "chords": 75,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/what_is_this_thing_called_love.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/what_is_this_thing_called_love.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/what_is_this_thing_called_love.ly.tera",
+        "sha256": "8703250bde849038a1bd98837df865bd3ad9884f299aad1206d695e69f60fb77",
+        "sourceRights": "Original composition (1929); public domain in the US",
+        "sourceRightsExtra": "Instrumental lead sheet; later lyrics and arrangements are excluded.",
+        "sourceVersion": "Wikifonia",
+        "sourceStructure": null,
+        "sourceKeySignature": {
+          "root": "C",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "2/2"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsWikifonia",
+            "startLine": 45
+          },
+          "melody": {
+            "name": "VoiceWikifonia",
+            "startLine": 109
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "What Is This Thing Called Love?",
+          "workTitle": "What Is This Thing Called Love?",
+          "movementTitle": null,
+          "filenameTitle": "what_is_this_thing_called_love.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
+        "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
+      }
+    },
+    {
+      "id": "openbook-when-i-fall-in-love-fake",
+      "title": "When I Fall In Love",
+      "originalSong": 229,
+      "originalBars": 32,
+      "sourceBars": 64,
+      "notes": 182,
+      "chords": 95,
+      "provenance": {
+        "format": "LilyPond",
+        "repository": "https://github.com/veltzer/book-openbook",
+        "repositoryCommit": "adbe5c68ff59e20068dd754e7d227979fa628d33",
+        "path": "src/openbook/when_i_fall_in_love.ly.tera",
+        "url": "https://github.com/veltzer/book-openbook/blob/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/when_i_fall_in_love.ly.tera",
+        "rawUrl": "https://raw.githubusercontent.com/veltzer/book-openbook/adbe5c68ff59e20068dd754e7d227979fa628d33/src/openbook/when_i_fall_in_love.ly.tera",
+        "sha256": "a433af6b83decb53798bf0e3c0764c0fe2f24a005344d2fa9d49d108fa7885bd",
+        "sourceRights": "1952 by Victor Young Publications, Inc. Copyright Renewed, Assigned to Chappell & Co., Inc. and Intersong -USA,Inc.",
+        "sourceRightsExtra": "All Rights Administered by Chappell & Co., Inc.",
+        "sourceVersion": "Fake",
+        "sourceStructure": "ABAC",
+        "sourceKeySignature": {
+          "root": "Eb",
+          "mode": "Major"
+        },
+        "tonicBasis": "Explicit initial LilyPond key and mode; no pitch-distribution estimate",
+        "sourceMeters": [
+          "4/4"
+        ],
+        "unfoldStatus": "expanded by LilyPond unfold-repeats-fully and matching MIDI unfoldRepeats",
+        "tiesMerged": true,
+        "decoder": "LilyPond 2.26.0",
+        "sourcePPQ": 384,
+        "sections": {
+          "chords": {
+            "name": "ChordsFake",
+            "startLine": 60
+          },
+          "melody": {
+            "name": "VoiceFake",
+            "startLine": 102
+          }
+        },
+        "irregularMeasures": [],
+        "leadOverfullMeasures": [],
+        "leadUnderfullMeasures": [],
+        "conflictingHarmonies": [],
+        "omittedHarmonyAnnotations": [],
+        "titleMetadata": {
+          "selectedFrom": "source attributes.title",
+          "printedTitle": "When I Fall In Love",
+          "workTitle": "When I Fall In Love",
+          "movementTitle": null,
+          "filenameTitle": "when_i_fall_in_love.ly.tera"
+        },
+        "skipPolicy": "SkipEvent omits a chord label and continues preceding explicit harmony; RestEvent is NC; initial skip is unharmonized. Continuation locations retained per chord.",
+        "sourceIntervalPolicy": "Independently compiled slash-free chord core supplies explicit compound intervals only where vocabulary differs; slash bass remains separate. No inferred tones.",
         "validation": "Exact source compiler durations, regular bar checks, complete harmony coverage, monophonic note bounds, chord-token versus compiled pitch-class validation"
       }
     },
@@ -4625,21 +7163,6 @@
       "reason": "Textual navigation or pickup requires explicit source review"
     },
     {
-      "path": "src/openbook/a_foggy_day.ly.tera",
-      "version": "Real",
-      "reason": "Source/compiler chord mismatch bes:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
-      "path": "src/openbook/a_foggy_day.ly.tera",
-      "version": "Fake",
-      "reason": "Textual navigation or pickup requires explicit source review"
-    },
-    {
-      "path": "src/openbook/a_foggy_day.ly.tera",
-      "version": "Laurent",
-      "reason": "Textual navigation or pickup requires explicit source review"
-    },
-    {
       "path": "src/openbook/a_house_is_not_a_home.ly.tera",
       "version": "Wikifonia",
       "reason": "Missing or changing source meter"
@@ -4667,7 +7190,7 @@
     {
       "path": "src/openbook/airegin.ly.tera",
       "version": "Fake",
-      "reason": "Source/compiler chord mismatch c:7.5-.9+ [0, 3, 4, 6, 10] != [0, 3, 4, 6, 7, 10]"
+      "reason": "Source key declaration mode disagrees with original harmonic mode; requires tonic review"
     },
     {
       "path": "src/openbook/all_of_you.ly.tera",
@@ -4678,16 +7201,6 @@
       "path": "src/openbook/alone_together.ly.tera",
       "version": "Real",
       "reason": "Textual navigation or pickup requires explicit source review"
-    },
-    {
-      "path": "src/openbook/angel_eyes.ly.tera",
-      "version": "Fake",
-      "reason": "Source/compiler chord mismatch c:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
-      "path": "src/openbook/autumn_in_new_york.ly.tera",
-      "version": "Real",
-      "reason": "Source/compiler chord mismatch ees:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
     },
     {
       "path": "src/openbook/autumn_leaves.ly.tera",
@@ -4707,7 +7220,7 @@
     {
       "path": "src/openbook/beautiful_love.ly.tera",
       "version": "Real",
-      "reason": "Source/compiler chord mismatch e2.:dim5m7 [0, 6, 10] != [0, 3, 6, 10]"
+      "reason": "Source key declaration mode disagrees with original harmonic mode; requires tonic review"
     },
     {
       "path": "src/openbook/beautiful_love.ly.tera",
@@ -4722,12 +7235,7 @@
     {
       "path": "src/openbook/bernies_tune.ly.tera",
       "version": "Fake",
-      "reason": "Source/compiler chord mismatch d1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
-      "path": "src/openbook/between_the_devil_and_the_deep_blue_sea.ly.tera",
-      "version": "Wikifonia",
-      "reason": "Source/compiler chord mismatch f4.:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+      "reason": "Source key declaration mode disagrees with original harmonic mode; requires tonic review"
     },
     {
       "path": "src/openbook/blue_bossa.ly.tera",
@@ -4745,19 +7253,9 @@
       "reason": "Textual navigation or pickup requires explicit source review"
     },
     {
-      "path": "src/openbook/but_not_for_me.ly.tera",
-      "version": "Real",
-      "reason": "Textual navigation or pickup requires explicit source review"
-    },
-    {
-      "path": "src/openbook/bye_bye_blackbird.ly.tera",
-      "version": "Fake",
-      "reason": "Source/compiler chord mismatch g:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
       "path": "src/openbook/cheek_to_cheek.ly.tera",
       "version": "Real",
-      "reason": "Chord/melody source length mismatch {'chords': Fraction(188, 1), 'voice': Fraction(0, 1)}"
+      "reason": "Chord/melody source length mismatch {'chords': Fraction(188, 1), 'coreChords': Fraction(188, 1), 'voice': Fraction(0, 1)}"
     },
     {
       "path": "src/openbook/chelsea_bridge.ly.tera",
@@ -4765,14 +7263,9 @@
       "reason": "Textual navigation or pickup requires explicit source review"
     },
     {
-      "path": "src/openbook/come_rain_or_come_shine.ly.tera",
-      "version": "Fake",
-      "reason": "Unsupported chord quality c4:7.5 -> 7add5"
-    },
-    {
       "path": "src/openbook/cry_me_a_river.ly.tera",
       "version": "Fake",
-      "reason": "Source/compiler chord mismatch c:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+      "reason": "Source key declaration mode disagrees with original harmonic mode; requires tonic review"
     },
     {
       "path": "src/openbook/days_of_wine_and_roses.ly.tera",
@@ -4785,21 +7278,6 @@
       "reason": "Textual navigation or pickup requires explicit source review"
     },
     {
-      "path": "src/openbook/dearly_beloved.ly.tera",
-      "version": "Fake",
-      "reason": "Source/compiler chord mismatch g:11 [0, 2, 4, 5, 7, 10] != [0, 2, 5, 7, 10]"
-    },
-    {
-      "path": "src/openbook/desafinado.ly.tera",
-      "version": "Fake",
-      "reason": "Unsupported chord quality e:9- -> 9-"
-    },
-    {
-      "path": "src/openbook/desafinado.ly.tera",
-      "version": "Laurent",
-      "reason": "Source/compiler chord mismatch bes:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
       "path": "src/openbook/dont_take_your_love_from_me.ly.tera",
       "version": "Fake",
       "reason": "Textual navigation or pickup requires explicit source review"
@@ -4808,16 +7286,6 @@
       "path": "src/openbook/doxy.ly.tera",
       "version": "Fake",
       "reason": "Textual navigation or pickup requires explicit source review"
-    },
-    {
-      "path": "src/openbook/dream_dancing.ly.tera",
-      "version": "Wikifonia",
-      "reason": "Source/compiler chord mismatch f1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
-      "path": "src/openbook/embraceable_you.ly.tera",
-      "version": "Wikifonia",
-      "reason": "Source/compiler chord mismatch e2:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
     },
     {
       "path": "src/openbook/everything_happens_to_me.ly.tera",
@@ -4850,24 +7318,9 @@
       "reason": "Textual navigation or pickup requires explicit source review"
     },
     {
-      "path": "src/openbook/gee_baby_aint_i_good_to_you.ly.tera",
-      "version": "Fake",
-      "reason": "Source/compiler chord mismatch aes:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
-      "path": "src/openbook/gone_with_the_wind.ly.tera",
-      "version": "Fake",
-      "reason": "Source/compiler chord mismatch f2:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
       "path": "src/openbook/groovin_high.ly.tera",
       "version": "Fake",
       "reason": "Textual navigation or pickup requires explicit source review"
-    },
-    {
-      "path": "src/openbook/how_about_you.ly.tera",
-      "version": "Wikifonia",
-      "reason": "Unsupported chord quality d2:sus4.7.9.11.13 -> sus4add7add9add11add13"
     },
     {
       "path": "src/openbook/i_cant_believe_that_youre_in_love_with_me.ly.tera",
@@ -4895,34 +7348,14 @@
       "reason": "Textual navigation or pickup requires explicit source review"
     },
     {
-      "path": "src/openbook/i_remember_you.ly.tera",
-      "version": "Wikifonia",
-      "reason": "Source/compiler chord mismatch e2:11 [0, 2, 4, 5, 7, 10] != [0, 2, 5, 7, 10]"
-    },
-    {
       "path": "src/openbook/i_wish_you_love.ly.tera",
       "version": "Fake",
       "reason": "Textual navigation or pickup requires explicit source review"
     },
     {
-      "path": "src/openbook/if_i_had_you.ly.tera",
-      "version": "Wikifonia",
-      "reason": "Source/compiler chord mismatch ees1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
       "path": "src/openbook/ill_remember_april.ly.tera",
       "version": "Fake",
       "reason": "Textual navigation or pickup requires explicit source review"
-    },
-    {
-      "path": "src/openbook/ill_remember_april.ly.tera",
-      "version": "Laurent",
-      "reason": "Source/compiler chord mismatch g:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
-      "path": "src/openbook/im_confessin_that_i_love_you.ly.tera",
-      "version": "Fake",
-      "reason": "Source/compiler chord mismatch c:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
     },
     {
       "path": "src/openbook/imagination.ly.tera",
@@ -4933,11 +7366,6 @@
       "path": "src/openbook/in_a_mellow_tone.ly.tera",
       "version": "Wikifonia",
       "reason": "Textual navigation or pickup requires explicit source review"
-    },
-    {
-      "path": "src/openbook/it_could_happen_to_you.ly.tera",
-      "version": "Wikifonia",
-      "reason": "Source/compiler chord mismatch a2:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
     },
     {
       "path": "src/openbook/it_dont_mean_a_thing.ly.tera",
@@ -4960,11 +7388,6 @@
       "reason": "Missing source section ChordsLaurent"
     },
     {
-      "path": "src/openbook/ive_got_the_world_on_a_string.ly.tera",
-      "version": "Wikifonia",
-      "reason": "Source/compiler chord mismatch bes2:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
       "path": "src/openbook/ive_grown_accustomed_to_her_face.ly.tera",
       "version": "Fake",
       "reason": "Textual navigation or pickup requires explicit source review"
@@ -4985,29 +7408,9 @@
       "reason": "Textual navigation or pickup requires explicit source review"
     },
     {
-      "path": "src/openbook/just_in_time.ly.tera",
-      "version": "Fake",
-      "reason": "Source/compiler chord mismatch g1:m6/e [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
       "path": "src/openbook/just_the_way_you_are.ly.tera",
       "version": "Wikifonia",
       "reason": "Textual navigation or pickup requires explicit source review"
-    },
-    {
-      "path": "src/openbook/laura.ly.tera",
-      "version": "Laurent",
-      "reason": "Source/compiler chord mismatch a2:m7/+d [0, 3, 5, 7, 10] != [0, 3, 7, 10]"
-    },
-    {
-      "path": "src/openbook/like_someone_in_love.ly.tera",
-      "version": "Fake",
-      "reason": "Unsupported chord quality f4:5+ -> 5+"
-    },
-    {
-      "path": "src/openbook/lil_darlin.ly.tera",
-      "version": "Fake",
-      "reason": "Source/compiler chord mismatch bes:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
     },
     {
       "path": "src/openbook/love_for_sale.ly.tera",
@@ -5020,31 +7423,6 @@
       "reason": "Textual navigation or pickup requires explicit source review"
     },
     {
-      "path": "src/openbook/love_walked_in.ly.tera",
-      "version": "Fake",
-      "reason": "Source/compiler chord mismatch aes:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
-      "path": "src/openbook/lover_man.ly.tera",
-      "version": "Laurent",
-      "reason": "Source/compiler chord mismatch g:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
-      "path": "src/openbook/lullaby_of_birdland.ly.tera",
-      "version": "Fake",
-      "reason": "Source/compiler chord mismatch f2:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
-      "path": "src/openbook/lullaby_of_birdland.ly.tera",
-      "version": "Laurent",
-      "reason": "Source/compiler chord mismatch c:m7/+cis [0, 1, 3, 7, 10] != [0, 3, 7, 10]"
-    },
-    {
-      "path": "src/openbook/lullaby_of_the_leaves.ly.tera",
-      "version": "Fake",
-      "reason": "Source/compiler chord mismatch c:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
       "path": "src/openbook/makin_whoopee.ly.tera",
       "version": "Wikifonia",
       "reason": "Textual navigation or pickup requires explicit source review"
@@ -5055,14 +7433,9 @@
       "reason": "Textual navigation or pickup requires explicit source review"
     },
     {
-      "path": "src/openbook/meditation.ly.tera",
-      "version": "Laurent",
-      "reason": "Source/compiler chord mismatch d:m7/+g [0, 3, 5, 7, 10] != [0, 3, 7, 10]"
-    },
-    {
       "path": "src/openbook/minority.ly.tera",
       "version": "Wikifonia",
-      "reason": "Source/compiler chord mismatch f1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+      "reason": "Source key declaration mode disagrees with original harmonic mode; requires tonic review"
     },
     {
       "path": "src/openbook/misty.ly.tera",
@@ -5073,16 +7446,6 @@
       "path": "src/openbook/misty.ly.tera",
       "version": "Fake",
       "reason": "Textual navigation or pickup requires explicit source review"
-    },
-    {
-      "path": "src/openbook/moments_notice.ly.tera",
-      "version": "Real",
-      "reason": "Source/compiler chord mismatch c:7.13- [0, 4, 7, 8, 10] != [0, 4, 8, 10]"
-    },
-    {
-      "path": "src/openbook/moonlight_in_vermont.ly.tera",
-      "version": "Fake",
-      "reason": "Unsupported chord quality bes:7.11 -> 7add11"
     },
     {
       "path": "src/openbook/my_foolish_heart.ly.tera",
@@ -5093,11 +7456,6 @@
       "path": "src/openbook/my_foolish_heart.ly.tera",
       "version": "Laurent",
       "reason": "Textual navigation or pickup requires explicit source review"
-    },
-    {
-      "path": "src/openbook/my_funny_valentine.ly.tera",
-      "version": "Fake",
-      "reason": "Source/compiler chord mismatch d:7.5-.9- [0, 1, 4, 6, 10] != [0, 1, 4, 6, 7, 10]"
     },
     {
       "path": "src/openbook/my_romance.ly.tera",
@@ -5118,11 +7476,6 @@
       "path": "src/openbook/nobody_else_but_me.ly.tera",
       "version": "Wikifonia",
       "reason": "Textual navigation or pickup requires explicit source review"
-    },
-    {
-      "path": "src/openbook/old_devil_moon.ly.tera",
-      "version": "Laurent",
-      "reason": "Source/compiler chord mismatch c:m7/+f [0, 3, 5, 7, 10] != [0, 3, 7, 10]"
     },
     {
       "path": "src/openbook/on_a_misty_night.ly.tera",
@@ -5165,19 +7518,9 @@
       "reason": "Source key declaration mode disagrees with original harmonic mode; requires tonic review"
     },
     {
-      "path": "src/openbook/red_sails_in_the_sunset.ly.tera",
-      "version": "Fake",
-      "reason": "Source/compiler chord mismatch c:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
       "path": "src/openbook/rosetta.ly.tera",
       "version": "Fake",
       "reason": "Textual navigation or pickup requires explicit source review"
-    },
-    {
-      "path": "src/openbook/satin_doll.ly.tera",
-      "version": "Fake",
-      "reason": "Unsupported chord quality c:9- -> 9-"
     },
     {
       "path": "src/openbook/september_in_the_rain.ly.tera",
@@ -5195,11 +7538,6 @@
       "reason": "Textual navigation or pickup requires explicit source review"
     },
     {
-      "path": "src/openbook/smile.ly.tera",
-      "version": "Wikifonia",
-      "reason": "Source/compiler chord mismatch g2:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
       "path": "src/openbook/solar.ly.tera",
       "version": "Real",
       "reason": "Source key declaration mode disagrees with original harmonic mode; requires tonic review"
@@ -5215,19 +7553,9 @@
       "reason": "Missing or changing source meter"
     },
     {
-      "path": "src/openbook/somebody_loves_me.ly.tera",
-      "version": "Wikifonia",
-      "reason": "Source/compiler chord mismatch e1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
       "path": "src/openbook/soul_eyes.ly.tera",
       "version": "Fake",
       "reason": "Textual navigation or pickup requires explicit source review"
-    },
-    {
-      "path": "src/openbook/star_eyes.ly.tera",
-      "version": "Real",
-      "reason": "Unsupported chord quality f2:m7.9- -> m7b9"
     },
     {
       "path": "src/openbook/stella_by_starlight.ly.tera",
@@ -5270,16 +7598,6 @@
       "reason": "Textual navigation or pickup requires explicit source review"
     },
     {
-      "path": "src/openbook/the_girl_from_ipanema.ly.tera",
-      "version": "Fake",
-      "reason": "Source/compiler chord mismatch d:7.5-.9- [0, 1, 4, 6, 10] != [0, 1, 4, 6, 7, 10]"
-    },
-    {
-      "path": "src/openbook/the_lady_is_a_tramp.ly.tera",
-      "version": "Fake",
-      "reason": "Source/compiler chord mismatch d:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
       "path": "src/openbook/the_more_i_see_you.ly.tera",
       "version": "Real",
       "reason": "Textual navigation or pickup requires explicit source review"
@@ -5310,16 +7628,6 @@
       "reason": "Textual navigation or pickup requires explicit source review"
     },
     {
-      "path": "src/openbook/theres_no_you.ly.tera",
-      "version": "Wikifonia",
-      "reason": "Unsupported chord quality c2.:sus4.7.9 -> sus4add7add9"
-    },
-    {
-      "path": "src/openbook/these_foolish_things.ly.tera",
-      "version": "Fake",
-      "reason": "Source/compiler chord mismatch c2:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
       "path": "src/openbook/they_cant_take_that_away_from_me.ly.tera",
       "version": "Fake",
       "reason": "Textual navigation or pickup requires explicit source review"
@@ -5327,22 +7635,12 @@
     {
       "path": "src/openbook/too_close_for_comfort.ly.tera",
       "version": "Wikifonia",
-      "reason": "Source/compiler chord mismatch c1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
-      "path": "src/openbook/too_marvelous_for_words.ly.tera",
-      "version": "Wikifonia",
-      "reason": "Source/compiler chord mismatch d2:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
+      "reason": "Polyphonic source melody requires voice selection review"
     },
     {
       "path": "src/openbook/undecided.ly.tera",
       "version": "Fake",
       "reason": "Textual navigation or pickup requires explicit source review"
-    },
-    {
-      "path": "src/openbook/under_a_blanket_of_blue.ly.tera",
-      "version": "Fake",
-      "reason": "Source/compiler chord mismatch aes:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
     },
     {
       "path": "src/openbook/violets_for_your_furs.ly.tera",
@@ -5355,24 +7653,9 @@
       "reason": "Textual navigation or pickup requires explicit source review"
     },
     {
-      "path": "src/openbook/well_be_together_again.ly.tera",
-      "version": "Wikifonia",
-      "reason": "Source/compiler chord mismatch c1:m6 [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
-      "path": "src/openbook/what_is_this_thing_called_love.ly.tera",
-      "version": "Wikifonia",
-      "reason": "Source/compiler chord mismatch f2:m6/c [0, 3, 7, 9] != [0, 3, 5, 7, 9]"
-    },
-    {
       "path": "src/openbook/whats_new.ly.tera",
       "version": "Fake",
       "reason": "Textual navigation or pickup requires explicit source review"
-    },
-    {
-      "path": "src/openbook/when_i_fall_in_love.ly.tera",
-      "version": "Fake",
-      "reason": "Unsupported chord quality c:7.9-.5+ -> 7b9#5"
     },
     {
       "path": "src/openbook/whisper_not.ly.tera",

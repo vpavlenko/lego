@@ -12,7 +12,7 @@ function onOffFamily(brick){
 // Duration and lettering aliases do not create another harmony. Compound
 // intervals and an explicitly written bass do: C/C retains its extra bass.
 function harmony(cell,qualities){
- const parsed=cell.clipped||/[.…]/.test(cell.symbol)?null:parseChord(cell.symbol,qualities);
+ const parsed=cell.clipped||/[.…]/.test(cell.symbol)?null:parseChord(cell.symbol,qualities,cell);
  return parsed?{root:parsed.root,intervals:[...new Set(parsed.intervals)].sort((a,b)=>a-b),bass:parsed.slash?parsed.bass:null}:{unknown:cell.symbol};
 }
 function occurrenceHarmonies(song,source,qualities){

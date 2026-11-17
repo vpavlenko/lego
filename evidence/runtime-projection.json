@@ -1,47 +1,47 @@
 {
   "version": 1,
-  "charts": 360,
+  "charts": 403,
   "primaryStandards": 269,
   "originalCharts": 242,
-  "additionalCharts": 118,
-  "rawSourceIdentities": 334,
+  "additionalCharts": 161,
+  "rawSourceIdentities": 339,
   "coverage": {
-    "rawPassages": 6245,
-    "removedPassages": 1607,
-    "keptPassages": 4638,
-    "rawOccurrences": 5982,
-    "removedOccurrences": 1587,
-    "keptOccurrences": 4395,
+    "rawPassages": 7631,
+    "removedPassages": 2165,
+    "keptPassages": 5466,
+    "rawOccurrences": 7244,
+    "removedOccurrences": 2134,
+    "keptOccurrences": 5110,
     "reasons": {
       "single-harmony": {
-        "passages": 1200,
-        "occurrences": 1195
+        "passages": 1662,
+        "occurrences": 1650
       },
       "on-off-family": {
-        "passages": 407,
-        "occurrences": 392
+        "passages": 503,
+        "occurrences": 484
       }
     }
   },
   "reuse": {
-    "inputFamilies": 154,
-    "singleStandardFamilies": 37,
-    "reusableTargets": 117,
-    "mergedFamilies": 9,
+    "inputFamilies": 157,
+    "singleStandardFamilies": 38,
+    "reusableTargets": 119,
+    "mergedFamilies": 10,
     "removedFamilies": 28,
-    "outputFamilies": 117,
-    "rawPassages": 4638,
-    "mergedPassages": 16,
-    "removedPassages": 50,
-    "keptPassages": 4588,
+    "outputFamilies": 119,
+    "rawPassages": 5466,
+    "mergedPassages": 18,
+    "removedPassages": 49,
+    "keptPassages": 5417,
     "supportBasis": "distinct standards",
     "minimumTargetStandards": 2,
     "maxVariantDistance": 0.28,
     "ambiguityMargin": 0.025
   },
-  "definitions": 1218,
+  "definitions": 1366,
   "unresolvedOccurrences": 8,
-  "unchangedMusicalDataSha256": "a8cdb140027e7cfe4d62bcff9c07215875bb89dfa411d0abe1cd6ce1b72e984a",
+  "unchangedMusicalDataSha256": "a84b119cd5c1ff9755e6c700def185c9c6cf999005f12e8d91223727db648d3d",
   "decisions": [
     {
       "action": "remove",
@@ -76,6 +76,22 @@
     {
       "action": "remove",
       "source": "Diatonic I ii iii biii",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "merge",
+      "source": "Diatonic I ii iii vi",
+      "target": "Diatonic I ii iii",
+      "reason": "clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Diatonic ii iii IV V",
+      "reason": "no-clear-supported-harmonic-variant"
+    },
+    {
+      "action": "remove",
+      "source": "Dizzy Sub Turnaround",
       "reason": "no-clear-supported-harmonic-variant"
     },
     {
@@ -192,11 +208,6 @@
     },
     {
       "action": "remove",
-      "source": "Suprise Major Tension",
-      "reason": "no-clear-supported-harmonic-variant"
-    },
-    {
-      "action": "remove",
       "source": "To II n Back",
       "reason": "no-clear-supported-harmonic-variant"
     },
@@ -231,11 +242,6 @@
       "action": "remove",
       "source": "Yardbird ...",
       "reason": "unsupported-or-incomplete-source"
-    },
-    {
-      "action": "remove",
-      "source": "Yardbird Sub Turnaround",
-      "reason": "no-clear-supported-harmonic-variant"
     }
   ]
 }

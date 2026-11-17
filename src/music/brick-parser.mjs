@@ -36,8 +36,8 @@ export function parseBrickDictionary(text){
  }
  return {version:1,definitions,equivalences,typeCosts};
 }
-function chordData(symbol,qualities){
- const parsed=parseChord(symbol,qualities);if(!parsed)return null;
+function chordData(symbol,qualities,sourceCell=null){
+ const parsed=parseChord(symbol,qualities,sourceCell);if(!parsed)return null;
  return {...parsed,qualityClass:null};
 }
 /** Conservative nested grammar matching. Unlike Java's 100x-cost fallback
@@ -50,10 +50,11 @@ export function createBrickParser(dictionary,{qualities,maxChordSpan=32,maxResul
  const classes=new Map();dictionary.equivalences.forEach((group,i)=>group.forEach(q=>classes.set(q,i)));
  function qualityMatch(a,b){
   if(json(a.intervals)===json(b.intervals))return 'exact';
+  if(a.sourceOverride||b.sourceOverride)return null;
   return classes.has(a.quality)&&classes.get(a.quality)===classes.get(b.quality)?'equivalence':null;
  }
  function parse(chordEvents,{boundaries=[]}={}){
-  const chords=chordEvents.map(c=>({...c,parsed:c.clipped?null:chordData(c.symbol,qualities)}));
+  const chords=chordEvents.map(c=>({...c,parsed:c.clipped?null:chordData(c.symbol,qualities,c)}));
   for(let i=0;i<chords.length;i++)if(!(chords[i].end>chords[i].start)||i&&chords[i].start<chords[i-1].end-EPS)throw Error('Invalid chord timeline');
   const cache=new Map(),pending=new Set(),diagnostics={cycleGuards:0,truncatedResults:0,maxChordSpan,maxResults};
   function matches(name,start){
@@ -109,8 +110,8 @@ export function createBrickParser(dictionary,{qualities,maxChordSpan=32,maxResul
 
 function fraction(value,total){const ratio=value/total;for(let d=1;d<=4096;d++){const n=Math.round(ratio*d);if(same(n/d,ratio))return `${n}/${d}`;}return ratio.toPrecision(12);}
 function patternFor(chords,qualities){
- const first=chordData(chords[0].symbol,qualities);if(!first)return null;const duration=chords.at(-1).end-chords[0].start;
- const sequence=[];for(const chord of chords){const p=chordData(chord.symbol,qualities);if(!p||chord.clipped)return null;sequence.push([mod(p.root-first.root),p.intervals,p.slash?mod(p.bass-first.root):null,fraction(chord.end-chord.start,duration)]);}
+ const first=chordData(chords[0].symbol,qualities,chords[0]);if(!first)return null;const duration=chords.at(-1).end-chords[0].start;
+ const sequence=[];for(const chord of chords){const p=chordData(chord.symbol,qualities,chord);if(!p||chord.clipped)return null;sequence.push([mod(p.root-first.root),p.intervals,p.slash?mod(p.bass-first.root):null,fraction(chord.end-chord.start,duration)]);}
  return {signature:json(sequence),sequence,reference:first.root,duration};
 }
 function genericCadence(sequence){

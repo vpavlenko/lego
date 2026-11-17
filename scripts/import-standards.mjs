@@ -21,7 +21,7 @@ function cleanChords(entry,qualities){
  for(let i=0;i<raw.length;i++){
   const cell=raw[i];if(!Number.isFinite(cell.start)||!Number.isFinite(cell.end)||cell.end<=cell.start||cell.start<cursor-EPS||cell.end>beats+EPS)throw Error('invalid-chord-timeline');
   if(cell.start>cursor+EPS)chords.push({symbol:'NC',start:cursor/entry.barBeats,end:cell.start/entry.barBeats,clipped:true,sourceGap:true});
-  const parsed=parseChord(cell.symbol,qualities),silent=/^(?:NC|N\.C\.)$/i.test(cell.symbol),clipped=!!cell.clipped||!parsed;
+  const parsed=parseChord(cell.symbol,qualities,cell),silent=/^(?:NC|N\.C\.)$/i.test(cell.symbol),clipped=!!cell.clipped||!parsed;
   if(silent)noHarmony.push({symbol:cell.symbol,start:cell.start,end:cell.end,sourceIndex:i});
   else if(clipped)unsupported.push({symbol:cell.symbol,start:cell.start,end:cell.end,sourceIndex:i});
   chords.push({...cell,start:cell.start/entry.barBeats,end:cell.end/entry.barBeats,sourceIndex:i,...(clipped?{clipped:true}:{}),...(silent?{noHarmony:true}:{})});cursor=cell.end;
@@ -90,7 +90,7 @@ export function prepareAdditionalStandards(entries,{originalSongs,priorSongs=[],
  const songs=prepared.map(song=>{
   const discoveries=bySong.get(song.index)??[],replaced=new Set(discoveries.flatMap(m=>Array.from({length:m.endIndex-m.startIndex},(_,i)=>m.startIndex+i)));
   const retained=song._parse.segments.filter(s=>!Array.from({length:s.endIndex-s.startIndex},(_,i)=>s.startIndex+i).some(i=>replaced.has(i)));
-  const segments=[...retained,...discoveries.map(m=>{const first=parseChord(song._chords[m.startIndex].symbol,qualities);return{kind:'discovered',...m,tonic:m.reference,mode:first?.intervals.includes(3)&&!first.intervals.includes(4)?'Minor':'Major'};})].sort((a,b)=>a.start-b.start);
+  const segments=[...retained,...discoveries.map(m=>{const first=parseChord(song._chords[m.startIndex].symbol,qualities,song._chords[m.startIndex]);return{kind:'discovered',...m,tonic:m.reference,mode:first?.intervals.includes(3)&&!first.intervals.includes(4)?'Minor':'Major'};})].sort((a,b)=>a.start-b.start);
   segments.forEach((s,i)=>{s.analysisId=song.index+'-'+i;});
   const covered=segments.flatMap(s=>Array.from({length:s.endIndex-s.startIndex},(_,i)=>s.startIndex+i));if(covered.length!==song._chords.length||new Set(covered).size!==song._chords.length)throw Error('Analysis coverage failure for '+song.title);
   const rows=rowsFor(song,segments),visible=segments.filter(s=>s.kind==='known'||s.kind==='discovered'),meaningful=segments.filter(s=>s.kind==='known'&&!(s.type==='On'&&s.endIndex-s.startIndex===1));

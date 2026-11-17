@@ -3,8 +3,8 @@
 Public reader: https://insights-roadmaps.cxielamiko.chatgpt.site
 
 The reader preserves all 242 analyses from Bob Keller's
-`InsightsRoadmapsConsolidated.pdf` (revision 1, 6 October 2011), and adds 118 sourced
-arrangements. There are 269 standards in the drawer and 360 charts.
+`InsightsRoadmapsConsolidated.pdf` (revision 1, 6 October 2011), and adds 161 sourced
+arrangements. There are 269 standards in the drawer and 403 charts.
 
 ## Run and verify
 
@@ -31,7 +31,7 @@ The existing Sites identity is retained in `.openai/hosting.json`.
   upward with their bottom edge fixed. There is no vertical playback cursor.
 - Join flags show Lucide up/down arrows and signed semitone shifts, followed by
   the new tonic. Zero shifts remain in the tonic timeline but have no marker.
-  Measure numbers remain above flags; arrows follow their actual digit width.
+  Measure numbers remain above flags; labels use Rawl's initial, subsequent and onset-aligned offsets.
 - The transparent harmony stripe shows chords by default. Hovering any stripe
   shows Roman numerals everywhere through fixed overlay cells, without reflow.
   Notes, chord/RN symbols and flags share the active tonic reference. Interface
@@ -40,14 +40,24 @@ The existing Sites identity is retained in `.openai/hosting.json`.
   follows Caplin's output-aware audible clock, including render-ahead and device
   latency. Seek, tempo changes, voice muting and route changes cancel stale work.
 
-`packages/rawl-notation/` is a host-independent React component. It accepts MIDI
-note events, row spans, tonic changes and render/interaction callbacks; the host
-owns audio, harmony realization, routing and export. It can be extracted later.
+The controlled React notation component and SoundFont engine now come from
+`librawl`, pinned as `vendor/librawl-0.1.0.tgz` with lockfile integrity. React and
+ReactDOM are both 19.3.1. `packages/rawl-notation/` contains compatibility
+re-exports and generated CSS; no separate renderer or geometry implementation
+remains there. `src/audio-player.mjs` injects Lego's existing playback plan and
+callbacks into the library transport. The build copies the library's exact CSS,
+palette, Sax browser profile, GPL license, source notice and provenance manifest.
+
+Lego retains harmony realization, source arrangements, musical analysis, routing,
+controls and MIDI export. The library supplies the complete current Lego
+controlled view and shared SoundFont engine. Rawl/Caplin integrations are
+isolated partial migrations; this does not claim replacement of their complete
+React/DOM renderers or Rawl's native MIDI backend.
 
 ## Melodies and arrangements
 
 `dist/data/melodies.json` contains 131 imported lead melodies (16,456 notes), and
-`dist/melodies/` contains 131 GM65 MIDI files. The source is the MusicXML RealBook
+the corresponding 131 GM65 MIDI files are in `dist/melodies/`. The source is the MusicXML RealBook
 in [PSjazzEval](https://github.com/florento/PSjazzEval), pinned to
 `b6a559e8bd2719c3279ed0e81554b5cdbab0da03`. Per-file URLs, hashes, source rights,
 selection decisions, repeats, ties, rests, pickups and malformed source measures
@@ -79,7 +89,7 @@ then run:
 ```
 python3 scripts/import-melodies.py --source-dir /path/to/PSjazzEval
 node scripts/import-melodies.mjs
-node scripts/import-standards.mjs
+node scripts/merge-melody-sources.mjs
 npm run build
 ```
 
@@ -89,13 +99,13 @@ underlying compositions public domain. No downloaded score PDFs are shipped.
 ## Reusable bricks
 
 `bricks.html` is the single grouped catalogue, with the same top navigation as
-standards and no left drawer. Its 117 learner families are grouped into 11
+standards and no left drawer. Its 119 learner families are grouped into 11
 Impro-Visor brick types. Each group is a column. Complete previews keep 100px
 measures on one continuous line; groups/cards use natural widths and wrap only
 between complete examples. Oversize examples scroll horizontally.
 
 Each brick page groups standards under their exact structural variants, with
-1,218 complete definitions and eight unresolved occurrences. Simple core forms
+1,366 complete definitions and eight unresolved occurrences. Simple core forms
 come first, the same added-chord families stay adjacent, and substitutions,
 qualities, explicit bass and rhythm determine neighboring variants. There are
 Lucide play buttons beside examples; no variant-number rows, source captions or
@@ -107,15 +117,15 @@ The data pipeline has separate source and learner layers:
 
 1. `roadmaps.json` retains every original label, chord, key, join and position.
    Explicit typography corrections group 354 labels into 299 source identities.
-   The additional charts bring the source index to 334 identities.
+   The additional charts bring the source index to 339 identities.
 2. `brick-families.mjs` combines named Approach/Cadence/Launcher roles and
    terminal adjuncts, then repetition wrappers such as Two Goes and guarded
    length/tempo qualifiers. Mode, degree and destination remain meaningful.
-3. `brick-coverage.mjs` removes 1,607 row spans: 1,200 one-harmony spans and 407
+3. `brick-coverage.mjs` removes 2,165 row spans: 1,662 one-harmony spans and 503
    On/Off or Off/On spans. Harmony and modulation stay in the charts unbricked.
-4. `brick-reuse.mjs` reviews the 37 families used by one distinct standard.
-   Nine merge into a supported harmonic variant; twenty-eight are removed, taking 50
-   further labels out of the chart. All 117 remaining families are reused.
+4. `brick-reuse.mjs` reviews the 38 families used by one distinct standard.
+   Ten merge into a supported harmonic variant; twenty-eight are removed, taking 49
+   further labels out of the chart. All 119 remaining families are reused.
 
 Singleton matches require complete source material, ordered tonic-relative
 root/core-quality anchors, support in at least two target standards, limited
@@ -123,7 +133,7 @@ structural distance and an unambiguous best family. Repeated occurrences in one
 standard do not count as independent reuse. Full qualities, compound extensions,
 explicit bass, key context and rational durations remain in variant definitions.
 Ambiguous and idiosyncratic labels are removed without deleting their chords.
-The final index accounts for 4,588 retained row spans. Surviving/merged legacy
+The final index accounts for 5,417 retained row spans. Surviving/merged legacy
 page routes and search aliases are preserved.
 
 `evidence/brick-reuse-audit.json` records every singleton decision with source
@@ -194,9 +204,10 @@ rendition URLs are guessed.
 
 ## Expanded melody sources and current interactions
 
-The combined registry `dist/data/melody-sources.json` contains 219 encoded heads:
-131 PSjazzEval melodies, 79 validated OpenBook arrangements and nine explicit
-Impro-Visor Head parts. There are 119 melody-enabled charts. The original 30
+The combined registry `dist/data/melody-sources.json` contains 262 encoded heads:
+131 PSjazzEval melodies, 122 validated OpenBook arrangements and nine explicit
+Impro-Visor Head parts. There are 162 melody-enabled charts, covering 154 of the
+269 compositions. The original 30
 PSjazzEval chart addresses242–271 are retained; new arrangements append after
 them. `scripts/merge-melody-sources.mjs` combines validated sources without
 changing existing addresses. `evidence/melody-source-intake.json` records intake.
@@ -208,6 +219,36 @@ Omitted repeated chord labels continue their explicit preceding harmony; source
 rests remain unharmonized. Pickups, unresolved textual D.C./Coda and uncertain
 key/mode cases are excluded. The repository README and current license disagree;
 both notices and per-song copyright are retained in the source manifest.
+
+The latest append-only intake adds 43 arrangements at indices 360–402, containing
+6,544 actual melody notes and covering 41 previously unserved compositions
+(113→154). All earlier 360 chart performances retain identical note pitches,
+onsets, durations, voices and velocities. For 137 new source chord cells whose
+LilyPond definitions differ from the existing Impro-Visor vocabulary, the importer
+independently compiles the slash-free core and retains its explicit compound
+intervals. The separately compiled original chord must agree with that core plus
+its explicit bass. No new genuine chord is clipped or given guessed tones; the
+old vocabulary and arrangements are unchanged.
+
+`evidence/melody-coverage-audit.json` inventories all 115 compositions still
+without a playable melody arrangement. Sixty-five have encoded pickup sources,
+ten have textual repeat navigation and twelve have other existing encoded heads
+that fail chart admission; these categories overlap. Pickups need an explicit
+measure-map contract, and textual DC/DS/coda requires a verified return/end map.
+They are retained as unresolved sources rather than padded or stretched into
+uniform bars. To append newly supported OpenBook sources without reordering
+existing charts, run:
+
+```sh
+python3.11 scripts/import-openbook-melodies.py \
+  --source-dir /path/to/book-openbook \
+  --archive /path/to/openbook.tar.gz \
+  --lilypond /path/to/lilypond \
+  --append-missing --source-intervals
+node scripts/merge-melody-sources.mjs
+npm run build
+npm run check
+```
 
 Body and Soul is available as **OpenBook Real**, chart286:32bars,129 melody
 notes, explicit Db-major source transposed to C. Its changes differ from the
@@ -229,9 +270,9 @@ selection. Notes, tonic/fifth guides, flags and chord/RN colors share the previe
 This is guest-state analysis in the current chart, matching Rawl's local behavior;
 source data, MIDI pitches and playback position are unchanged.
 
-The tonal display merges395 one-harmony modulation regions into their preceding
+The tonal display merges 475 one-harmony modulation regions into their preceding
 or following context. All34 weak/tied passages were reviewed individually;
-17 decisions override the automatic score. The49 initial C home contexts remain.
+17 decisions override the automatic score. The 57 initial C home contexts remain.
 `modulation-regions-audit.json` and generated `modulation-projection.json` retain
 both alternatives, guarded musical rationales and source/cleaned timelines.
 
@@ -243,10 +284,11 @@ then existing semantic order. Brick-to-standard title links scroll to and pulse
 the matching passage while playback remains at the beginning.
 
 Longer primitive repeated phrases are aligned generally rather than accepting
-printed row breaks as musical structure.29 charts receive longer phrase grouping;
+printed row breaks as musical structure. Forty-five charts receive longer phrase grouping;
 Love for Sale displays0–16 A /16–32 A +32–48 B. Existing fine brick-sized layouts
 remain. Formal metadata and every source event time stay intact. Section letters
-are enclosed in square boxes. `general-section-layout.json` records every case.
+are enclosed in square boxes. `general-section-layout.json` records the initial
+360-chart audit; current 403-chart display metadata is in `dist/data/forms.json`.
 
 
 Measure grids use the Rawl AnalysisGrid Measure and NewTonicSymbol source at

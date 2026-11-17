@@ -21,7 +21,7 @@ test('all OpenBook candidates retain pinned provenance, exact harmony coverage a
  for(const e of data.entries){
   assert.equal(e.id,e.melodyId);assert.equal(e.tonicConfidence,'high');assert.match(e.provenance.tonicBasis,/Explicit/);assert.match(e.provenance.url,/adbe5c68ff59e20068dd754e7d227979fa628d33/);assert.match(e.provenance.sha256,/^[a-f0-9]{64}$/);assert.equal(e.provenance.decoder,'LilyPond 2.26.0');assert.deepEqual(melodyEligibility(e,qualities),[],e.title);assert.equal(e.totalBeats,e.barBeats*e.bars);assert.equal(e.pickupBeats,0);const original=songs[audit.entries.find(a=>a.id===e.id).originalSong];assert.equal(e.tonic[1].toLowerCase(),original.tonic[1].toLowerCase());
   assert.equal(e.chords[0].start,0);assert.equal(e.chords.at(-1).end,e.totalBeats);
-  for(let i=0;i<e.chords.length;i++){const c=e.chords[i];assert.ok(c.end>c.start);if(i)assert.ok(Math.abs(c.start-e.chords[i-1].end)<1e-7,e.title);assert.ok(c.sourceLine>=e.provenance.sections.chords.startLine);if(c.symbol==='NC')continue;const parsed=parseChord(c.symbol,qualities);assert.ok(parsed,c.symbol);const expected=new Set(parsed.intervals.map(x=>mod(parsed.root+x)));if(parsed.slash)expected.add(parsed.bass);assert.deepEqual([...new Set(c.sourcePitches.map(mod))].sort((a,b)=>a-b),[...expected].sort((a,b)=>a-b),e.title+' '+c.symbol);}
+  for(let i=0;i<e.chords.length;i++){const c=e.chords[i];assert.ok(c.end>c.start);if(i)assert.ok(Math.abs(c.start-e.chords[i-1].end)<1e-7,e.title);assert.ok(c.sourceLine>=e.provenance.sections.chords.startLine);if(c.symbol==='NC')continue;const parsed=parseChord(c.symbol,qualities,c);assert.ok(parsed,c.symbol);const expected=new Set(parsed.intervals.map(x=>mod(parsed.root+x)));if(parsed.slash)expected.add(parsed.bass);assert.deepEqual([...new Set(c.sourcePitches.map(mod))].sort((a,b)=>a-b),[...expected].sort((a,b)=>a-b),e.title+' '+c.symbol);}
   const {midi,notes}=notesFromMidi(fs.readFileSync(new URL('dist/'+e.midi,root)));assert.ok(midi.tracks.flat().some(e=>e.type==='programChange'&&e.programNumber===65));assert.equal(notes.length,e.notes.length,e.title);
   for(let i=0;i<notes.length;i++){assert.equal(notes[i].pitch,e.notes[i].pitch);assert.equal(notes[i].velocity,e.notes[i].velocity);assert.ok(Math.abs(notes[i].start-e.notes[i].start)<1/10080+1e-8);assert.ok(Math.abs(notes[i].duration-e.notes[i].duration)<1/10080+1e-8);assert.ok(e.notes[i].start+e.notes[i].duration<=e.totalBeats+1e-7);}
  }
@@ -54,12 +54,12 @@ a1:m7 | c1 |
 \repeat volta 2 { r4 \tuplet 3/2 {c8 d e} f2 | g1~ | } \alternative { {g1 |} {g1 |} }
 a1 | c1 |
 }{% endif %}`;
-function compileFixture(text){
+function compileFixture(text,sourceIntervals=false){
  const directory=fs.mkdtempSync(path.join(os.tmpdir(),'openbook-fixture-'));
  try{
   const source=path.join(directory,'fixture.ly.tera');fs.writeFileSync(source,text);
-  const script=`import importlib.util,pathlib,json,sys\np=pathlib.Path(sys.argv[1]);spec=importlib.util.spec_from_file_location('openbook',p);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);q=json.loads(pathlib.Path(sys.argv[5]).read_text())['qualities'];print(json.dumps(m.decode(pathlib.Path(sys.argv[2]),'Real',sys.argv[3],q,pathlib.Path(sys.argv[4]),pathlib.Path(sys.argv[4]))))`;
-  return spawnSync(python,['-c',script,new URL('scripts/import-openbook-melodies.py',root).pathname,source,lilypond,directory,new URL('src/music/chord-vocabulary.json',root).pathname],{encoding:'utf8'});
+  const script=`import importlib.util,pathlib,json,sys\np=pathlib.Path(sys.argv[1]);spec=importlib.util.spec_from_file_location('openbook',p);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);q=json.loads(pathlib.Path(sys.argv[5]).read_text())['qualities'];print(json.dumps(m.decode(pathlib.Path(sys.argv[2]),'Real',sys.argv[3],q,pathlib.Path(sys.argv[4]),pathlib.Path(sys.argv[4]),sys.argv[6]=='true')))`;
+  return spawnSync(python,['-c',script,new URL('scripts/import-openbook-melodies.py',root).pathname,source,lilypond,directory,new URL('src/music/chord-vocabulary.json',root).pathname,String(sourceIntervals)],{encoding:'utf8'});
  }finally{fs.rmSync(directory,{recursive:true,force:true});}
 }
 test('compiler fixture unfolds both alternate endings and merges actual tied notes without losing tuplets or rests',{skip:!python||!lilypond?'Requires Python 3.11+ and LilyPond':false},()=>{
@@ -73,4 +73,13 @@ test('compiler rejects unencoded textual navigation and mismatched melody/harmon
 
 test('blank chord-label skips continue harmony while explicit rests remain no-chord',{skip:!python||!lilypond?'Requires Python 3.11+ and LilyPond':false},()=>{
  const result=compileFixture(fixture.replace('c1 | g:7 |','c1 | s1 |').replace('a1:m7 | c1 |','r1 | c1 |'));assert.equal(result.status,0,result.stderr);const e=JSON.parse(result.stdout);assert.deepEqual(e.chords.slice(0,2).map(c=>[c.symbol,c.start,c.end]),[['C',0,8],['C',8,12]]);assert.equal(e.chords[0].sourceContinuations.length,1);assert.equal(e.chords[0].sourceContinuations[0].sourceSymbol,'s1');assert.equal(e.chords.find(c=>c.start===24).symbol,'NC');
+});
+
+
+test('source-only compound interval overrides preserve compiled m6 and explicit added slash bass',{skip:!python||!lilypond?'Requires Python 3.11+ and LilyPond':false},()=>{
+ const text=fixture.replace('a1:m7 | c1 |','a1:m6 | c1:m6/+d |');
+ const strict=compileFixture(text);assert.notEqual(strict.status,0);assert.match(strict.stderr,/chord mismatch/);
+ const result=compileFixture(text,true);assert.equal(result.status,0,result.stderr);const e=JSON.parse(result.stdout);
+ assert.deepEqual(e.chords.at(-2).sourceIntervals,[0,3,7,9]);assert.deepEqual(e.chords.at(-1).sourceIntervals,[0,3,7,9]);assert.equal(e.chords.at(-1).symbol,'Cm6/D');
+ for(const c of e.chords.slice(-2)){assert.equal(c.realizationBasis,'source-compiled-chord');assert.ok(c.sourceCorePitches.length);assert.deepEqual(parseChord(c.symbol,qualities,c).intervals,c.sourceIntervals);}
 });

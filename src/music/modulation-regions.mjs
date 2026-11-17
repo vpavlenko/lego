@@ -56,7 +56,7 @@ function core(parsed){
 function cellsFor(song,qualities){
  const barBeats=song.meter[0]*4/song.meter[1];
  return song.rows.flatMap((row,ri)=>row.chords.map((cell,ci)=>{
-  const symbol=transposeChord(cell.symbol,song.tonic[0]),parsed=cell.clipped||/[.…]/.test(symbol)?null:parseChord(symbol,qualities);
+  const symbol=transposeChord(cell.symbol,song.tonic[0]),parsed=cell.clipped||/[.…]/.test(symbol)?null:parseChord(symbol,qualities,cell);
   const identity=parsed?{root:parsed.root,intervals:[...new Set(parsed.intervals)].sort((a,b)=>a-b),bass:parsed.slash?parsed.bass:null}:{unknown:cell.symbol};
   return {row:ri,cell:ci,start:(row.startBar+cell.start)*barBeats,end:(row.startBar+cell.end)*barBeats,symbol,sourceSymbol:cell.symbol,parsed,core:core(parsed),identity,key:JSON.stringify(identity)};
  })).sort((a,b)=>a.start-b.start||a.end-b.end);
