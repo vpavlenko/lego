@@ -25,13 +25,14 @@ function rhythmBridge(events,tonic){
 }
 export function analyzeForm(song){
  const events=chordTimeline(song),tonic=pitch(song.tonic[0]);let spans=[];
- if(song.bars>=16&&song.bars<=20){spans=[0,4,8,12].map((start,i)=>({start,end:i===3?song.bars:start+4}));}
+ if(song.index===80&&song.bars===38){spans=[[0,10],[10,20],[20,28],[28,38]].map(([start,end])=>({start,end}));}
+ else if(song.bars>=16&&song.bars<=20){spans=[0,4,8,12].map((start,i)=>({start,end:i===3?song.bars:start+4}));}
  else if(song.bars>=32&&song.bars<=40){spans=[0,8,16,24].map((start,i)=>({start,end:i===3?song.bars:start+8}));}
  else if([48,64].includes(song.bars)){const length=song.bars/4;spans=[0,1,2,3].map(i=>({start:i*length,end:(i+1)*length}));}
  // These six former ABCA results were reviewed against the source roadmaps.
  // Shared openings with a different cadential/bridge lead-in are A variations;
  // a short common opening alone does not make the whole section another A.
- const reviews={16:{pattern:'AABA',variations:[1]},94:{pattern:'AABA',variations:[1]},241:{pattern:'AABA',variations:[1]},97:{pattern:'ABCA'},112:{pattern:'ABCA'},191:{pattern:'ABCA'}};
+ const reviews={80:{pattern:'AABA'},16:{pattern:'AABA',variations:[1]},94:{pattern:'AABA',variations:[1]},241:{pattern:'AABA',variations:[1]},97:{pattern:'ABCA'},112:{pattern:'ABCA'},191:{pattern:'ABCA'}};
  const sections=labelSections(events,spans),review=reviews[song.index],confirmed=review?.pattern??{0:'AABA',20:'AABA',35:'AABA',54:'AABA',70:'AABA'}[song.index];
  if(confirmed&&sections.length===4)sections.forEach((s,i)=>{s.label=confirmed[i];if(review?.variations?.includes(i)){const comparison=compareSections(events,spans[0],s);s.variation=true;s.similarity=comparison.score;s.transpose=comparison.shift;}});
  const pattern=sections.map(s=>s.label).join('');

@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {createRequire} from 'node:module';
 import {realizeSong,parseChord,playbackPlan} from '../src/music/realization.mjs';
+import {buildLearnerBrickIndex} from '../src/music/brick-families.mjs';
 import {encodeMidi} from '../src/music/midi.mjs';
 import {buildBrickIndex,brickExample,brickIdentity} from '../src/music/bricks.mjs';
 import {songModulations,modulationAt,modulationDelta} from '../src/music/modulations.mjs';
@@ -60,7 +61,7 @@ test('Caplin geometry keeps held notes in both rows and keeps exact note heights
 
 
 test('every brick has a playable source-derived example in its local tonic C',()=>{
- for(const brick of buildBrickIndex(songs).bricks){
+ for(const brick of buildLearnerBrickIndex(buildBrickIndex(songs)).bricks){
   const {previewSong,source}=brickExample(brick,songs),p=realizeSong(previewSong,qualities),sourceSong=songs.find(s=>s.index===source.song),row=sourceSong.rows[source.row];
   assert.ok(p.beats>0);assert.ok(p.notes.length,brick.name);assert.equal(p.changes[0].tonic,0);assert.equal(p.beats,source.end-source.start);
   for(const c of previewSong.rows[0].chords){assert.ok(row.chords.some(original=>original.symbol===c.symbol&&original.start<source.endBar-row.startBar&&original.end>source.startBar-row.startBar));}

@@ -55,7 +55,7 @@ key changes, render callbacks, and playback position. It uses Caplin's 3 px pitc
 axis and 5 px notes, Rawl's colors/corner shapes, and row-local held-note ranges.
 The host owns audio, routing, realization, and download controls.
 
-`bricks.html` is the single grouped catalogue of 299 canonical brick identities from the 354 source labels. Each
+`bricks.html` is the single grouped catalogue of 186 learner families over 299 source identities and 354 original labels. Each
 `#brick/<slug>` page lists every matching standard and its exact source passages.
 Brick links in both score views are reciprocal. Passage links open the standard
 at that beat and highlight its brick label. These are matches in the PDF's
@@ -127,7 +127,9 @@ Geologica is reused from the user's CompGeom site with its OFL license.
 Lucide arrow paths are from lucide-react 1.17.0, ISC-licensed; the original path
 modules and license are included under `dist/icons/`.
 
-Brick detail pages group standards by their exact structural usage. Every complete variant has its own Rawl preview and MIDI, transposed from its local tonic to C, with a source passage link. The index compares relative chord roots, register-aware qualities, explicit slash bass, key context, and rational rhythmic proportions; uniform duration scaling and transposition share a definition. Row continuations join only without a boundary join. There are 1,007 definitions across 299 canonical identities; nine clipped or incomplete occurrences remain unresolved, including the unresolved-only Yardbird page. All 3,452 original row spans remain accounted for. `evidence/brick-variants-audit.json` records the definitions and usage. These are actual source passages, not dictionary expansions.
+Brick detail pages group standards by exact structural usage within each learner family. There are 972 complete definitions across 186 families; nine clipped or incomplete occurrences remain unresolved. All 3,452 original row spans remain accounted for. A source layer retains 299 typographic canonical identities, while `src/music/brick-families.mjs` merges named Approach/Cadence/Launcher roles and added tails for learning. `evidence/brick-families-audit.json` records the grouping and preserved routes. Body & Soul combines five source identities, 25 standards and 44 passages. Actual differences remain in the variant previews; no missing source harmony is guessed.
+
+The structural index compares relative roots, compound chord qualities, explicit slash bass, local key context and rational rhythmic proportions. Uniform duration scaling and transposition share a definition. Row continuations join only without a boundary join. MIDI assets remain generated and verified, but brick pages have no MIDI buttons or source-caption rows. Usage links provide the original song measures.
 
 Active and hovered Rawl notes double their height upward with the bottom edge fixed, following Rawl’s `getNoteRectangles.tsx`; playback adds no outline or brightness change. Only the note copy in the current row responds to playback. Muted voices collapse to 0.5 px.
 
@@ -135,11 +137,11 @@ For the one selected example with no overlapping key label (Diatonic I ii iii bi
 
 The join-key lookup uses the region covering the join onset, including joins within an unchanged key region. This corrects 90 previously forward-looking tonic pairs. Key changes without a join remain on the same shared timeline. Rawl flag geometry follows `AnalysisGrid.tsx` `NewTonicSymbol`: an 80 × 12 px gradient mask anchored at onset, with white interval/tonic text offset beside the measure number.
 
-Typography aliases are explicit in `src/music/brick-aliases.mjs`; `evidence/brick-aliases.json` records the merged groups and counts. Impro-Visor `RoadMapSettings.trimString` and `GraphicBrick` shorten labels to fit pixels. Visible `+` modifiers are retained; an unknown `+...` extension is not equated with a base brick or a guessed Overrun/Dropback. Minor Dropback combines four shortened spellings into one page with nine unique standards and eleven source passages.
+Typography aliases remain explicit in `src/music/brick-aliases.mjs`; `evidence/brick-aliases.json` records source-level spellings. Source labels retain modifiers and ambiguities. The separate learner-family layer combines similar roles without changing the raw labels, chords, or source passage positions.
 
-`bricks.html` renders every canonical brick on a single full-width page without the reader's top bar or sidebar. Impro-Visor type groups flow into dense columns, each group retaining a vertical stack of complete Rawl previews. Cards link to their standards page and share one playback transport. All previews render together; a single dataset supplies the 299 examples. The Bricks navigation and detail-page back links go directly here. Legacy `#bricks` and `atlas.html` URLs redirect here; the separate alphabetical catalogue has been removed.
+`bricks.html` renders every canonical brick on a single full-width page without the reader's top bar or sidebar. Impro-Visor type groups flow into dense columns, each group retaining a vertical stack of complete Rawl previews. Cards link to their standards page and share one playback transport. All previews render together; a single dataset supplies the 186 examples. The Bricks navigation and detail-page back links go directly here. Legacy `#bricks` and `atlas.html` URLs redirect here; the separate alphabetical catalogue has been removed.
 
-Type metadata is pinned in `src/music/brick-types.json` from the inspected `My.dictionary`. Exact types take precedence; multiple declared types use the name's explicit type or the most common declaration. Old Launcher labels correspond to Approach, and explicit type words provide fallbacks for historic names absent from the current dictionary. Classification basis is retained in the atlas data. Truncated names and hidden `+...` modifiers whose type cannot be identified remain Unclassified (51 entries); no missing extension is guessed.
+Type metadata is pinned in `src/music/brick-types.json` from the inspected `My.dictionary`. Exact types take precedence; multiple declared types use the name's explicit type or the most common declaration. Old Launcher labels correspond to Approach, and explicit type words provide fallbacks for historic names absent from the current dictionary. Classification basis is retained in the atlas data. Truncated names and hidden `+...` modifiers whose type cannot be identified remain Unclassified (8 entries); no missing extension is guessed.
 
 
 The reader chrome is two 32px lines. The drawer groups all standards by structural family. `src/music/forms.mjs` compares timed harmonic sections with transposition-aware root/quality fingerprints and cadential-tail tolerance; confirmed source examples are recorded in `evidence/form-source-audit.json`. AABA sections lay out as A / A B / A; related repeated-A forms use the same left anchor, with novel sections extending horizontally. Inferred families remain provisional; ambiguous forms remain Other. Solar is not classified as blues merely because it has twelve bars.
@@ -159,3 +161,8 @@ Brick-detail previews use a fixed 150 CSS pixels per measure and horizontal over
 
 
 Variant usage lists are linear comma-separated standards. Measure links immediately follow each title in parentheses; standard catalogue indices are omitted. Existing verified Rawl links remain inline.
+
+
+Brick variant cards flow into dense columns, with Lucide play/pause icons left of fixed 150px measures and two measures per row. Repeated brick annotations, variant labels, MIDI buttons and source captions are omitted. `src/music/variant-order.mjs` puts simple cores first, keeps identical added-chord families together, and arranges substitutions, quality/extension/slash-bass and rhythm variants by weighted sequence similarity. Original Lucide play/pause SVGs are retained under `dist/icons/` with the existing license.
+
+Short chart rows keep their proportional width, so 4, 6 and 8 measures never expand to the same width. A House is Not a Home is source-audited against its encoded Impro-Visor leadsheet: 38 measures in 10+10+8+10 phrases. Its A sections align vertically. Source chord quality differences are retained rather than silently overwritten from another edition. The song footer follows long content and sits at the bottom of the first viewport for shorter charts.

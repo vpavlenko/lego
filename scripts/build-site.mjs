@@ -4,6 +4,8 @@ import {fileURLToPath} from 'node:url';
 import {build} from 'esbuild';
 import {realizeSong} from '../src/music/realization.mjs';
 import {encodeMidi} from '../src/music/midi.mjs';
+import {orderBrickVariants} from '../src/music/variant-order.mjs';
+import {buildLearnerBrickIndex} from '../src/music/brick-families.mjs';
 import {buildBrickVariants} from '../src/music/brick-variants.mjs';
 import {buildBrickIndex,brickExample} from '../src/music/bricks.mjs';
 import {analyzeForm} from '../src/music/forms.mjs';
@@ -19,25 +21,28 @@ for(const song of songs){
  const data=realizeSong(song,qualities),id=String(song.index).padStart(3,'0');total+=data.notes.length;clipped+=data.chords.filter(c=>c.clipped).length;
  fs.writeFileSync(path.join(root,`dist/data/performances/${id}.json`),JSON.stringify(data));fs.writeFileSync(path.join(root,`dist/midi/${id}.mid`),encodeMidi(data));
 }
-const previousBricks=read('dist/data/bricks.json').bricks,bricks=buildBrickIndex(songs);
+const previousBricks=read('dist/data/bricks.json').bricks,sourceIndex=buildBrickIndex(songs),bricks=buildLearnerBrickIndex(sourceIndex);
+fs.writeFileSync(path.join(root,'dist/data/source-bricks.json'),JSON.stringify(sourceIndex));
 const currentSlugs=new Set(bricks.bricks.map(b=>b.slug));
 for(const old of previousBricks)if(!currentSlugs.has(old.slug)){
  fs.rmSync(path.join(root,`dist/data/brick-performances/${old.slug}.json`),{force:true});
  fs.rmSync(path.join(root,`dist/midi/bricks/${old.slug}.mid`),{force:true});
 }
-fs.writeFileSync(path.join(root,'evidence/brick-aliases.json'),JSON.stringify({sourceLabels:bricks.sourceLabels,canonicalBricks:bricks.bricks.length,groups:bricks.bricks.filter(b=>b.aliases.length).map(({name,aliases,standards,passages})=>({name,aliases,standards:standards.length,passages}))},null,2));
+fs.writeFileSync(path.join(root,'evidence/brick-aliases.json'),JSON.stringify({sourceLabels:sourceIndex.sourceLabels,canonicalBricks:sourceIndex.bricks.length,groups:sourceIndex.bricks.filter(b=>b.aliases.length).map(({name,aliases,standards,passages})=>({name,aliases,standards:standards.length,passages}))},null,2));
 fs.writeFileSync(path.join(root,'dist/data/bricks.json'),JSON.stringify(bricks));
 fs.mkdirSync(path.join(root,'dist/data/brick-performances'),{recursive:true});
 fs.mkdirSync(path.join(root,'dist/midi/bricks'),{recursive:true});
 const atlasBricks=[];
 fs.mkdirSync(path.join(root,'dist/data/brick-variants'),{recursive:true});
 fs.mkdirSync(path.join(root,'dist/midi/brick-variants'),{recursive:true});
+for(const name of fs.readdirSync(path.join(root,'dist/data/brick-variants')))if(name.endsWith('.json')&&!currentSlugs.has(name.slice(0,-5)))fs.rmSync(path.join(root,'dist/data/brick-variants',name));
+for(const name of fs.readdirSync(path.join(root,'dist/midi/brick-variants')))if(name.endsWith('.mid')&&!currentSlugs.has(name.split('--')[0]))fs.rmSync(path.join(root,'dist/midi/brick-variants',name));
 for(const brick of bricks.bricks){
  const {previewSong,source}=brickExample(brick,songs),data={...realizeSong(previewSong,qualities),previewSong,source};
  fs.writeFileSync(path.join(root,`dist/data/brick-performances/${brick.slug}.json`),JSON.stringify(data));
  fs.writeFileSync(path.join(root,`dist/midi/bricks/${brick.slug}.mid`),encodeMidi(data));
- atlasBricks.push({slug:brick.slug,name:brick.name,standards:brick.standards.length,performance:data});
- const definitions=buildBrickVariants(brick,songs,vocabulary);
+ atlasBricks.push({slug:brick.slug,name:brick.name,representativeName:brick.representativeName,sourceNames:brick.sourceNames,standards:brick.standards.length,performance:data});
+ const definitions=buildBrickVariants(brick,songs,vocabulary);definitions.variants=orderBrickVariants(definitions.variants);const currentIds=new Set(definitions.variants.map(v=>v.id));for(const name of fs.readdirSync(path.join(root,'dist/midi/brick-variants')))if(name.startsWith(brick.slug+'--')&&!currentIds.has(name.slice(brick.slug.length+2,-4)))fs.rmSync(path.join(root,'dist/midi/brick-variants',name));
  definitions.variants.forEach((variant,i)=>{variant.number=i+1;variant.performance={...realizeSong(variant.previewSong,qualities),previewSong:variant.previewSong,source:variant.source};variant.midi=`./midi/brick-variants/${brick.slug}--${variant.id}.mid`;fs.writeFileSync(path.join(root,variant.midi.replace('./','dist/')),encodeMidi(variant.performance));});
  fs.writeFileSync(path.join(root,`dist/data/brick-variants/${brick.slug}.json`),JSON.stringify(definitions));
 }

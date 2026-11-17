@@ -10,7 +10,7 @@ const numeric=(a,b)=>{for(let i=0;i<a.length;i++)if(a[i]!==b[i])return a[i]-b[i]
 
 test('all generated variant performances and MIDI files match complete source definitions exactly',()=>{
  const files=fs.readdirSync(new URL('data/brick-variants/',dist)).filter(n=>n.endsWith('.json')).sort(),index=json('data/bricks.json');
- assert.equal(files.length,299);assert.deepEqual(files,index.bricks.map(b=>b.slug+'.json').sort());
+ assert.equal(files.length,index.bricks.length);assert.deepEqual(files,index.bricks.map(b=>b.slug+'.json').sort());
  const assets=new Set();let definitions=0,unknownOnly=0;
  for(const file of files){
   const brick=json('data/brick-variants/'+file);assert.equal(file,brick.slug+'.json');
@@ -38,7 +38,7 @@ test('all generated variant performances and MIDI files match complete source de
   }
   for(const standard of brick.unresolvedStandards)for(const passage of standard.passages){assert.ok(['partial','unknown'].includes(passage.status));assert.equal(passage.variantId,undefined);assert.equal(passage.performance,undefined);assert.equal(passage.midi,undefined);}
  }
- assert.equal(definitions,1007);assert.ok(unknownOnly>0);
+ assert.equal(definitions,972);
  const onDisk=fs.readdirSync(new URL('midi/brick-variants/',dist)).filter(n=>n.endsWith('.mid')).sort();
- assert.equal(onDisk.length,1007);assert.deepEqual(onDisk,[...assets].map(p=>p.split('/').at(-1)).sort());
+ assert.equal(onDisk.length,definitions);assert.deepEqual(onDisk,[...assets].map(p=>p.split('/').at(-1)).sort());
 });

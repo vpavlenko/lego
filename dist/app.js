@@ -18,13 +18,14 @@ function destroyViews(){if(brickViews.length)brickViews.forEach(v=>v.controller.
 function restoreTransport(){$('#reader-tools').append(transport);}
 const cache=new Map(),pad=n=>String(n).padStart(3,'0');
 const arrow=delta=>`<svg class="lucide lucide-arrow-${delta<0?'down':'up'}" viewBox="0 0 24 24" aria-hidden="true">${delta<0?'<path d="M12 5v14"/><path d="m19 12-7 7-7-7"/>':'<path d="m5 12 7-7 7 7"/><path d="M12 19V5"/>'}</svg>`;
+const playIcon=pause=>`<svg class="lucide lucide-${pause?'pause':'play'}" viewBox="0 0 24 24" aria-hidden="true">${pause?'<rect x="14" y="3" width="5" height="18" rx="1"/><rect x="5" y="3" width="5" height="18" rx="1"/>':'<path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/>'}</svg>`;
 const token=(text,semitones)=>`<span class="degree-color" data-degree="${colorIndex(semitones)}">${esc(text)}</span>`;
 const externalIcon='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M10 14 21 3M21 14v7H3V3h7"/></svg>';
 function rawlLinksHTML(index){const links=rawlLinkData.standards[index]??[];if(!links.length)return '';const anchor=l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener" title="${esc(l.title)}">${esc(l.title)} ${externalIcon}</a>`;return links.length===1?`<a class="rawl-rendition" href="${esc(links[0].url)}" target="_blank" rel="noopener" title="${esc(links[0].title)}">Rawl ${externalIcon}</a>`:`<details class="rawl-renditions"><summary>Rawl ${links.length}</summary><div>${links.map(anchor).join('')}</div></details>`;}
 const clock=seconds=>Math.floor(seconds/60)+':'+String(Math.floor(seconds%60)).padStart(2,'0');
 const player=createPlayer({onState:state=>{
  $('#play').textContent=state==='playing'?'Pause':state==='loading'?'Loading':'Play';$('#play').setAttribute('aria-label',$('#play').textContent);$('#play').setAttribute('aria-busy',String(state==='loading'));
- for(const item of brickViews)item.button.textContent=item===activeVariant&&state==='playing'?'Pause':'Play';
+ for(const item of brickViews){const running=item===activeVariant&&state==='playing',label=running?'Pause':item===activeVariant&&state==='loading'?'Loading':'Play';item.button.innerHTML=playIcon(running);item.button.setAttribute('aria-label',label);item.button.title=label;item.button.setAttribute('aria-busy',String(item===activeVariant&&state==='loading'));}
  $('#stop').disabled=!performance||(state==='idle'&&player.position===0);$('#playback-error').hidden=state!=='error';
 },onPosition:beat=>{
  currentBeat=beat;rawl?.setPosition(beat);$('#playback-time').textContent=clock((beat??player.position)*60/player.tempo);
@@ -79,7 +80,7 @@ function scrollToBeat(beat){requestAnimationFrame(()=>displayedRowAt(beat)?.scro
 async function openSong(index,params,initial=false){
  restoreTransport();
  const old=current,wasSong=routeKind==='song';current=Math.max(0,Math.min(songs.length-1,index));routeKind='song';currentBrick=null;selected=brickBySlug.get(params.get('brick'))?.name??null;
- document.body.classList.add('song-route');$('#song-heading').hidden=false;
+ document.body.classList.remove('brick-route');document.body.classList.add('song-route');$('#midi-download').hidden=false;$('#play').hidden=false;$('#song-heading').hidden=false;
  const s=songs[current];$('#song-view').hidden=false;$('#brick-view').hidden=true;$('#pdf-link').hidden=false;
  $('#rawl-links').innerHTML=rawlLinksHTML(current);$('#rawl-links').hidden=false;$('#title').textContent=s.title;document.title=s.title+' · Insights Roadmaps';$('#position').textContent=`${pad(current+1)} / ${songs.length}`;
  $('#composer').textContent=s.composer||'';$('#measure-count').textContent=s.bars+' bars';$('#meter').textContent=s.meter.join('/');$('#tonic').innerHTML=token('C',0)+' <span>'+esc(s.tonic[1].toLowerCase())+'</span>';
@@ -104,15 +105,15 @@ async function openBrick(slug,params=new URLSearchParams()){
  restoreTransport();const gen=++routeGeneration;player.stop();destroyViews();performance=null;routeKind='brick';currentBrick=brickBySlug.get(slug)||null;
  if(!currentBrick){location.replace('./bricks.html');return;}
  if(currentBrick&&slug!==currentBrick.slug)history.replaceState(null,'','#brick/'+currentBrick.slug+(params.size?'?'+params:''));
- document.body.classList.remove('song-route');$('#song-heading').hidden=true;$('#rawl-links').hidden=true;
+ document.body.classList.add('brick-route');document.body.classList.remove('song-route');$('#midi-download').hidden=true;$('#play').hidden=true;$('#song-heading').hidden=true;$('#rawl-links').hidden=true;
  $('#song-view').hidden=true;$('#brick-view').hidden=false;$('#pdf-link').hidden=true;closeMenu();$('#search').value='';
  const b=currentBrick;document.title=b.name+' · Insights Roadmaps';$('#brick-view').innerHTML=`<a class="back-link" href="./bricks.html">Bricks</a><h1>${esc(b.name)}</h1><div class="brick-counts"><span>${b.standards.length} <span>standards</span></span><span>${b.passages} <span>passages</span></span></div><div id="brick-preview"><div id="brick-transport"></div><div id="brick-variants">Loading</div></div>`;
  catalog();window.scrollTo({top:0,behavior:'instant'});
  $('#brick-transport').replaceWith(transport);transport.hidden=false;$('#play').disabled=true;$('#stop').disabled=true;$('#clipped-status').hidden=true;$('#playback-error').hidden=true;
  try{
   const definitions=await fetch(`./data/brick-variants/${b.slug}.json`).then(r=>{if(!r.ok)throw Error(r.status);return r.json();});if(gen!==routeGeneration||routeKind!=='brick')return;
-  $('#brick-variants').innerHTML=definitions.variants.map(v=>`<section class="brick-variant" id="${v.id}"><div class="variant-heading"><h2>Variant ${v.number}</h2><button class="variant-play">Play</button><a href="${v.midi}" download>MIDI</a><a class="variant-source" href="#${pad(v.source.song)}?brick=${b.slug}&beat=${v.source.start}">${esc(v.source.title)} · ${Math.floor(v.source.startBar)+1}–${Math.ceil(v.source.endBar)}</a></div><div class="variant-rawl" aria-label="Rawl notation"></div><div class="brick-matches">${standardMatches(v.standards,b)}</div></section>`).join('')+(definitions.unresolvedStandards.length?`<section class="unresolved-variants"><h2>Unresolved</h2><div class="brick-matches">${standardMatches(definitions.unresolvedStandards,b)}</div></section>`:'');
-  for(const variant of definitions.variants){const card=document.getElementById(variant.id),item={variant,element:card.querySelector('.variant-rawl'),button:card.querySelector('.variant-play'),controller:null};item.controller=mountRawlView(item.element,{song:variant.previewSong,performance:variant.performance,brickMap,measureWidth:150,onSeek:beat=>{activateVariant(item);player.seek(beat);},onNote:note=>player.audition(note),mutedVoices:[]});item.button.onclick=()=>{activateVariant(item);player.toggle();};brickViews.push(item);}
+  $('#brick-variants').innerHTML=definitions.variants.map(v=>`<section class="brick-variant" id="${v.id}"><div class="variant-score"><button class="variant-play" aria-label="Play" title="Play">${playIcon(false)}</button><div class="variant-rawl" aria-label="Rawl notation"></div></div><div class="brick-matches">${standardMatches(v.standards,b)}</div></section>`).join('')+(definitions.unresolvedStandards.length?`<section class="unresolved-variants"><h2>Unresolved</h2><div class="brick-matches">${standardMatches(definitions.unresolvedStandards,b)}</div></section>`:'');
+  for(const variant of definitions.variants){const card=document.getElementById(variant.id),item={variant,element:card.querySelector('.variant-rawl'),button:card.querySelector('.variant-play'),controller:null};item.controller=mountRawlView(item.element,{song:variant.previewSong,performance:variant.performance,brickMap,measureWidth:150,barsPerRow:2,compact:true,onSeek:beat=>{activateVariant(item);player.seek(beat);},onNote:note=>player.audition(note),mutedVoices:[]});item.button.onclick=()=>{activateVariant(item);player.toggle();};brickViews.push(item);}
   const song=Number(params.get('song')),beat=Number(params.get('beat'));const wanted=params.has('song')?brickViews.find(item=>item.variant.standards.some(m=>m.song===song&&m.passages.some(p=>beat>=p.start&&beat<p.end))):null;
   if(brickViews.length)activateVariant(wanted??brickViews[0]);if(wanted)requestAnimationFrame(()=>wanted.element.closest('.brick-variant').scrollIntoView({block:'start'}));
  }catch(error){if(gen!==routeGeneration)return;console.error(error);$('#brick-variants').textContent='Unavailable';}

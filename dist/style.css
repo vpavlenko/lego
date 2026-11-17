@@ -94,3 +94,10 @@ body:not(.atlas-page) #shade{top:32px}body.song-route #shade{top:64px}
 
 /* Standard usages flow as a comma-separated sentence. */
 .brick-matches{font-size:12px;line-height:1.9;color:#888}.brick-matches .brick-match{display:inline;padding:0;margin:0;border:0}.brick-matches .standard-title{display:inline;font-size:12px}.brick-matches .passages{display:inline;padding:0;margin:0;max-width:none;font:10px var(--mono)}.brick-matches .passages a{padding:0}.brick-matches .rawl-renditions{display:inline-block}.brick-matches .rawl-rendition{font-size:10px}.brick-matches .rawl-renditions summary{font-size:10px}
+
+/* Compact, column-flowing variant examples. */
+#brick-variants{columns:340px;column-gap:24px}.brick-variant{display:inline-block;vertical-align:top;width:100%;break-inside:avoid;page-break-inside:avoid;margin:0 0 18px}.variant-score{display:flex;gap:8px;align-items:flex-start}.variant-score .variant-rawl{flex:1;min-width:0}.variant-play{flex:0 0 18px;width:18px;height:20px;display:flex;align-items:center;justify-content:center;color:#888}.variant-play svg{width:14px;height:14px}.variant-play:hover{color:#fff}.brick-variant .brick-matches{margin-top:4px;padding-left:26px;font-size:11px;line-height:1.6}.brick-variant .standard-title{font-size:11px}.unresolved-variants{break-inside:avoid}.brick-route #brick-preview>.transport{width:max-content;max-width:100%;gap:12px;margin:0 0 12px}.brick-route .realization-label{display:none}
+@media(max-width:400px){#brick-variants{columns:1}.brick-variant .brick-matches{padding-left:26px}}
+
+/* Keep short-chart footers at the viewport floor. */
+body.song-route main{display:flex;flex-direction:column;min-height:100vh;min-height:100dvh}#song-view{display:flex;flex-direction:column;flex:1}#song-view>section{flex-shrink:0}#song-view>footer{margin-top:auto;flex-shrink:0}

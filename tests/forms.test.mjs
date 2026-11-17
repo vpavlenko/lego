@@ -20,3 +20,5 @@ test('all six former ABCA forms are source-reviewed without conflating unrelated
  for(const index of [97,112,191]){const form=analyzeForm(songs[index]);assert.equal(form.basis,'source-audit');assert.equal(form.pattern,'ABCA');assert.notEqual(form.sections[1].layoutColumn,0);assert.equal(form.sections[1].variation,undefined);}
  const bemsha=analyzeForm(songs[16]);assert.equal(bemsha.columns,8);assert.deepEqual(bemsha.sections.map(s=>s.start),[0,4,8,12]);assert.equal(analyzeForm(songs[97]).sections[3].bars,12);
 });
+
+test('House follows encoded 10 + 10 + 8 + 10 phrase boundaries rather than assumed eight-bar blocks',()=>{const form=analyzeForm(songs[80]);assert.equal(form.pattern,'AABA');assert.equal(form.basis,'source-audit');assert.deepEqual(form.sections.map(s=>[s.start,s.end]),[[0,10],[10,20],[20,28],[28,38]]);assert.deepEqual(form.sections.map(s=>[s.layoutRow,s.layoutColumn]),[[0,0],[1,0],[1,10],[2,0]]);});

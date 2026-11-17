@@ -1,0 +1,3509 @@
+{
+  "version": 1,
+  "source": "dist/data/roadmaps.json via buildBrickIndex",
+  "purpose": "Learner families over preserved source brick identities",
+  "scope": {
+    "roles": [
+      "Approach",
+      "Cadence",
+      "Launcher"
+    ],
+    "tails": [
+      "Dropback",
+      "Overrun",
+      "Dominant Overrun",
+      "On",
+      "clipped plus tail"
+    ],
+    "excludedRoles": [
+      "Ending",
+      "Opening",
+      "Turnaround",
+      "Pullback",
+      "POT",
+      "SPOT",
+      "Start"
+    ],
+    "genericCore": "Cadence and Launcher share Cadence; source roles and original passage labels remain available."
+  },
+  "counts": {
+    "sourceLabels": 354,
+    "sourceBricks": 299,
+    "learnerFamilies": 186,
+    "mergedFamilies": 65,
+    "standards": 242,
+    "sourcePassages": 3452,
+    "learnerPassages": 3452,
+    "legacyRoutes": 367,
+    "newFamilyRoutes": 56
+  },
+  "passageAudit": {
+    "sourceSha256": "84354fede674858f4f062e832ce84d478161157d8aa59423a6dd98e6f0d6ba8c",
+    "learnerSha256": "84354fede674858f4f062e832ce84d478161157d8aa59423a6dd98e6f0d6ba8c",
+    "key": [
+      "song",
+      "row",
+      "startBar",
+      "endBar",
+      "start",
+      "end",
+      "label"
+    ]
+  },
+  "mergedFamilies": [
+    {
+      "name": "7 Chord Dropback",
+      "slug": "7-chord-dropback",
+      "representativeName": "7 Chord Dropback",
+      "sourceNames": [
+        "7 Chord Dropback",
+        "7 Chord Dropback +..."
+      ],
+      "sourceSlugs": [
+        "7-chord-dropback",
+        "7-chord-dropback-plus-clipped"
+      ],
+      "aliases": [
+        "7 Chord Dropback +..."
+      ],
+      "aliasSlugs": [
+        "7-chord-dropback-plus-clipped"
+      ],
+      "standards": 14,
+      "passages": 21
+    },
+    {
+      "name": "Amen",
+      "slug": "amen",
+      "representativeName": "Amen Cadence",
+      "sourceNames": [
+        "Amen Cadence",
+        "Amen Cadence + Overrun"
+      ],
+      "sourceSlugs": [
+        "amen-cadence",
+        "amen-cadence-plus-overrun"
+      ],
+      "aliases": [
+        "Amen Cadence",
+        "Amen Cadence + Overrun"
+      ],
+      "aliasSlugs": [
+        "amen-cadence",
+        "amen-cadence-plus-overrun"
+      ],
+      "standards": 6,
+      "passages": 11
+    },
+    {
+      "name": "Autumn Leaves Opening",
+      "slug": "autumn-leaves-opening",
+      "representativeName": "Autumn Leaves Opening",
+      "sourceNames": [
+        "Autumn Leaves Opening",
+        "Autumn Leaves Opening +..."
+      ],
+      "sourceSlugs": [
+        "autumn-leaves-opening",
+        "autumn-leaves-opening-plus-clipped"
+      ],
+      "aliases": [
+        "Autumn Leaves Gpening +...",
+        "Autumn Leaves Opening +..."
+      ],
+      "aliasSlugs": [
+        "autumn-leaves-gpening-plus-clipped",
+        "autumn-leaves-opening-plus-clipped"
+      ],
+      "standards": 4,
+      "passages": 9
+    },
+    {
+      "name": "Autumnal",
+      "slug": "autumnal",
+      "representativeName": "Autumnal Cadence",
+      "sourceNames": [
+        "Autumnal Approach",
+        "Autumnal Cadence",
+        "Autumnal Cadence +...",
+        "Autumnal Launcher"
+      ],
+      "sourceSlugs": [
+        "autumnal-approach",
+        "autumnal-cadence",
+        "autumnal-cadence-plus-clipped",
+        "autumnal-launcher"
+      ],
+      "aliases": [
+        "Autumnal Approach",
+        "Autumnal Cadence",
+        "Autumnal Cadence +...",
+        "Autumnal Launcher"
+      ],
+      "aliasSlugs": [
+        "autumnal-approach",
+        "autumnal-cadence",
+        "autumnal-cadence-plus-clipped",
+        "autumnal-launcher"
+      ],
+      "standards": 31,
+      "passages": 46
+    },
+    {
+      "name": "Body & Soul",
+      "slug": "body-soul",
+      "representativeName": "Body & Soul Cadence",
+      "sourceNames": [
+        "Body & Soul Approach",
+        "Body & Soul Cadence",
+        "Body & Soul Cadence + Dropback",
+        "Body & Soul Cadence +...",
+        "Body & Soul Launcher"
+      ],
+      "sourceSlugs": [
+        "body-soul-approach",
+        "body-soul-cadence",
+        "body-soul-cadence-plus-dropback",
+        "body-soul-cadence-plus-clipped",
+        "body-soul-launcher"
+      ],
+      "aliases": [
+        "Body & Soul Approach",
+        "Body & Soul Cade...",
+        "Body & Soul Cadence",
+        "Body & Soul Cadence + Dropback",
+        "Body & Soul Cadence +...",
+        "Body & Soul Launcher"
+      ],
+      "aliasSlugs": [
+        "body-soul-approach",
+        "body-soul-cade-clipped",
+        "body-soul-cadence",
+        "body-soul-cadence-plus-clipped",
+        "body-soul-cadence-plus-dropback",
+        "body-soul-launcher"
+      ],
+      "standards": 25,
+      "passages": 44
+    },
+    {
+      "name": "Cadence",
+      "slug": "cadence",
+      "representativeName": "Cadence",
+      "sourceNames": [
+        "Cadence",
+        "Cadence + Dropback",
+        "Cadence + Overrun",
+        "Launcher"
+      ],
+      "sourceSlugs": [
+        "cadence",
+        "cadence-plus-dropback",
+        "cadence-plus-overrun",
+        "launcher"
+      ],
+      "aliases": [
+        "Cadence + Dropback",
+        "Cadence + Overrun",
+        "Laun..",
+        "Launche",
+        "Launcher"
+      ],
+      "aliasSlugs": [
+        "cadence-plus-dropback",
+        "cadence-plus-overrun",
+        "laun-clipped",
+        "launche",
+        "launcher"
+      ],
+      "standards": 59,
+      "passages": 99
+    },
+    {
+      "name": "Chromatic Minor Descending",
+      "slug": "chromatic-minor-descending",
+      "representativeName": "Chromatic Minor Descending",
+      "sourceNames": [
+        "Chromatic Minor Descending",
+        "Chromatic Minor..."
+      ],
+      "sourceSlugs": [
+        "chromatic-minor-descending",
+        "chromatic-minor-clipped"
+      ],
+      "aliases": [
+        "Chromatic Minor..."
+      ],
+      "aliasSlugs": [
+        "chromatic-minor-clipped"
+      ],
+      "standards": 4,
+      "passages": 6
+    },
+    {
+      "name": "Descending Minor CESH",
+      "slug": "descending-minor-cesh",
+      "representativeName": "Descending Minor CESH",
+      "sourceNames": [
+        "Descending Minor CESH",
+        "Descending Minor CESH +..."
+      ],
+      "sourceSlugs": [
+        "descending-minor-cesh",
+        "descending-minor-cesh-plus-clipped"
+      ],
+      "aliases": [
+        "Descending Minor CESH +..."
+      ],
+      "aliasSlugs": [
+        "descending-minor-cesh-plus-clipped"
+      ],
+      "standards": 4,
+      "passages": 6
+    },
+    {
+      "name": "Diatonic I ii iii IV",
+      "slug": "diatonic-i-ii-iii-iv",
+      "representativeName": "Diatonic I ii iii IV",
+      "sourceNames": [
+        "Diatonic I ii iii IV",
+        "Diatonic I II iii IV + Overrun"
+      ],
+      "sourceSlugs": [
+        "diatonic-i-ii-iii-iv",
+        "diatonic-i-ii-iii-iv-plus-overrun"
+      ],
+      "aliases": [
+        "Diatonic I II iii IV",
+        "Diatonic I II iii IV + Overrun"
+      ],
+      "aliasSlugs": [
+        "diatonic-i-ii-iii-iv-6rejp7",
+        "diatonic-i-ii-iii-iv-plus-overrun"
+      ],
+      "standards": 3,
+      "passages": 8
+    },
+    {
+      "name": "Diatonic ii iii IV iii ii",
+      "slug": "diatonic-ii-iii-iv-iii-ii",
+      "representativeName": "Diatonic ii iii IV iii ii",
+      "sourceNames": [
+        "Diatonic ii iii IV iii ii",
+        "Diatonic ii iii IV iii ii +..."
+      ],
+      "sourceSlugs": [
+        "diatonic-ii-iii-iv-iii-ii",
+        "diatonic-ii-iii-iv-iii-ii-plus-clipped"
+      ],
+      "aliases": [
+        "Diatonic ii iii IV iii ii +...",
+        "Diatonic ii iii Viti ii +..."
+      ],
+      "aliasSlugs": [
+        "diatonic-ii-iii-iv-iii-ii-plus-clipped",
+        "diatonic-ii-iii-viti-ii-plus-clipped"
+      ],
+      "standards": 2,
+      "passages": 3
+    },
+    {
+      "name": "Diatonic Walkup",
+      "slug": "diatonic-walkup",
+      "representativeName": "Diatonic Walkup",
+      "sourceNames": [
+        "Diatonic Walkup",
+        "Diatonic Walkup +..."
+      ],
+      "sourceSlugs": [
+        "diatonic-walkup",
+        "diatonic-walkup-plus-clipped"
+      ],
+      "aliases": [
+        "Diatonic Walkup +..."
+      ],
+      "aliasSlugs": [
+        "diatonic-walkup-plus-clipped"
+      ],
+      "standards": 2,
+      "passages": 3
+    },
+    {
+      "name": "Dizzy",
+      "slug": "dizzy",
+      "representativeName": "Dizzy Cadence",
+      "sourceNames": [
+        "Dizzy Approach",
+        "Dizzy Cadence",
+        "Dizzy Launcher"
+      ],
+      "sourceSlugs": [
+        "dizzy-approach",
+        "dizzy-cadence",
+        "dizzy-launcher"
+      ],
+      "aliases": [
+        "Dizzy Approach",
+        "Dizzy Cadence",
+        "Dizzy Launcher"
+      ],
+      "aliasSlugs": [
+        "dizzy-approach",
+        "dizzy-cadence",
+        "dizzy-launcher"
+      ],
+      "standards": 9,
+      "passages": 13
+    },
+    {
+      "name": "Dominant Cycle",
+      "slug": "dominant-cycle",
+      "representativeName": "Dominant Cycle Cadence",
+      "sourceNames": [
+        "Dominant Cycle",
+        "Dominant Cycle Cadence"
+      ],
+      "sourceSlugs": [
+        "dominant-cycle",
+        "dominant-cycle-cadence"
+      ],
+      "aliases": [
+        "Dominant Cycle Cadence"
+      ],
+      "aliasSlugs": [
+        "dominant-cycle-cadence"
+      ],
+      "standards": 28,
+      "passages": 50
+    },
+    {
+      "name": "Dominant Cycle Minor",
+      "slug": "dominant-cycle-minor",
+      "representativeName": "Dominant Cycle Minor Cadence",
+      "sourceNames": [
+        "Dominant Cycle Minor",
+        "Dominant Cycle Minor Cadence"
+      ],
+      "sourceSlugs": [
+        "dominant-cycle-minor",
+        "dominant-cycle-minor-cadence"
+      ],
+      "aliases": [
+        "Dominant Cycle Minor Cadence"
+      ],
+      "aliasSlugs": [
+        "dominant-cycle-minor-cadence"
+      ],
+      "standards": 3,
+      "passages": 8
+    },
+    {
+      "name": "Donna Lee Start",
+      "slug": "donna-lee-start",
+      "representativeName": "Donna Lee Start",
+      "sourceNames": [
+        "Donna Lee Start",
+        "Donna Lee Start +..."
+      ],
+      "sourceSlugs": [
+        "donna-lee-start",
+        "donna-lee-start-plus-clipped"
+      ],
+      "aliases": [
+        "Donna Lee Start +..."
+      ],
+      "aliasSlugs": [
+        "donna-lee-start-plus-clipped"
+      ],
+      "standards": 10,
+      "passages": 14
+    },
+    {
+      "name": "Dropback",
+      "slug": "dropback",
+      "representativeName": "Dropback",
+      "sourceNames": [
+        "Dropback",
+        "Dropback +..."
+      ],
+      "sourceSlugs": [
+        "dropback",
+        "dropback-plus-clipped"
+      ],
+      "aliases": [
+        "Dropback +..."
+      ],
+      "aliasSlugs": [
+        "dropback-plus-clipped"
+      ],
+      "standards": 13,
+      "passages": 23
+    },
+    {
+      "name": "Extended",
+      "slug": "extended",
+      "representativeName": "Extended Cadence",
+      "sourceNames": [
+        "Extended Approach",
+        "Extended Approach +...",
+        "Extended Cadence",
+        "Extended Cadence + Overrun",
+        "Extended Launcher"
+      ],
+      "sourceSlugs": [
+        "extended-approach",
+        "extended-approach-plus-clipped",
+        "extended-cadence",
+        "extended-cadence-plus-overrun",
+        "extended-launcher"
+      ],
+      "aliases": [
+        "Extended Approach",
+        "Extended Approach +...",
+        "Extended Cadence",
+        "Extended Cadence + Overrun",
+        "Extended Launcher"
+      ],
+      "aliasSlugs": [
+        "extended-approach",
+        "extended-approach-plus-clipped",
+        "extended-cadence",
+        "extended-cadence-plus-overrun",
+        "extended-launcher"
+      ],
+      "standards": 26,
+      "passages": 38
+    },
+    {
+      "name": "Four Goes Straight",
+      "slug": "four-goes-straight",
+      "representativeName": "Four Goes Straight Approach",
+      "sourceNames": [
+        "Four Goes Straight Approach",
+        "Four Goes Straight Launcher"
+      ],
+      "sourceSlugs": [
+        "four-goes-straight-approach",
+        "four-goes-straight-launcher"
+      ],
+      "aliases": [
+        "Four Goes Straight Approach",
+        "Four Goes Straight Launcher"
+      ],
+      "aliasSlugs": [
+        "four-goes-straight-approach",
+        "four-goes-straight-launcher"
+      ],
+      "standards": 2,
+      "passages": 5
+    },
+    {
+      "name": "Happenstance",
+      "slug": "happenstance",
+      "representativeName": "Happenstance Cadence",
+      "sourceNames": [
+        "Happenstance App...",
+        "Happenstance Cadence",
+        "Happenstance Launcher"
+      ],
+      "sourceSlugs": [
+        "happenstance-app-clipped",
+        "happenstance-cadence",
+        "happenstance-launcher"
+      ],
+      "aliases": [
+        "Happenstance App...",
+        "Happenstance Cadence",
+        "Happenstance Launcher"
+      ],
+      "aliasSlugs": [
+        "happenstance-app-clipped",
+        "happenstance-cadence",
+        "happenstance-launcher"
+      ],
+      "standards": 9,
+      "passages": 13
+    },
+    {
+      "name": "Honeysuckle Bridge",
+      "slug": "honeysuckle-bridge",
+      "representativeName": "Honeysuckle Bridge",
+      "sourceNames": [
+        "Honeysuckle Bridge",
+        "Honeysuckle Bridge + Dropback"
+      ],
+      "sourceSlugs": [
+        "honeysuckle-bridge",
+        "honeysuckle-bridge-plus-dropback"
+      ],
+      "aliases": [
+        "Honeysuckle Bridge + Dropback"
+      ],
+      "aliasSlugs": [
+        "honeysuckle-bridge-plus-dropback"
+      ],
+      "standards": 6,
+      "passages": 6
+    },
+    {
+      "name": "II n Back",
+      "slug": "ii-n-back",
+      "representativeName": "II n Back",
+      "sourceNames": [
+        "II n Back",
+        "II n Back + Dropback"
+      ],
+      "sourceSlugs": [
+        "ii-n-back",
+        "ii-n-back-plus-dropback"
+      ],
+      "aliases": [
+        "II n Back + Dropback"
+      ],
+      "aliasSlugs": [
+        "ii-n-back-plus-dropback"
+      ],
+      "standards": 6,
+      "passages": 10
+    },
+    {
+      "name": "II n Bird",
+      "slug": "ii-n-bird",
+      "representativeName": "II n Bird Approach",
+      "sourceNames": [
+        "II n Bird Approach",
+        "II n Bird Approach +...",
+        "II n Bird Launcher"
+      ],
+      "sourceSlugs": [
+        "ii-n-bird-approach",
+        "ii-n-bird-approach-plus-clipped",
+        "ii-n-bird-launcher"
+      ],
+      "aliases": [
+        "II n Bird Approach",
+        "II n Bird Approach +...",
+        "II n Bird Launcher"
+      ],
+      "aliasSlugs": [
+        "ii-n-bird-approach",
+        "ii-n-bird-approach-plus-clipped",
+        "ii-n-bird-launcher"
+      ],
+      "standards": 8,
+      "passages": 13
+    },
+    {
+      "name": "IV n Back",
+      "slug": "iv-n-back",
+      "representativeName": "IV n Back",
+      "sourceNames": [
+        "IV n Back",
+        "IV n Back + Dropback"
+      ],
+      "sourceSlugs": [
+        "iv-n-back",
+        "iv-n-back-plus-dropback"
+      ],
+      "aliases": [
+        "I¥ n Back",
+        "IV n Back + Dropback"
+      ],
+      "aliasSlugs": [
+        "i-n-back",
+        "iv-n-back-plus-dropback"
+      ],
+      "standards": 14,
+      "passages": 18
+    },
+    {
+      "name": "IV n Bird",
+      "slug": "iv-n-bird",
+      "representativeName": "IV n Bird",
+      "sourceNames": [
+        "IV n Bird",
+        "IV n Bird +..."
+      ],
+      "sourceSlugs": [
+        "iv-n-bird",
+        "iv-n-bird-plus-clipped"
+      ],
+      "aliases": [
+        "I¥ n Bird",
+        "IiVn Bird +...",
+        "IV n Bird +..."
+      ],
+      "aliasSlugs": [
+        "i-n-bird",
+        "iivn-bird-plus-clipped",
+        "iv-n-bird-plus-clipped"
+      ],
+      "standards": 8,
+      "passages": 8
+    },
+    {
+      "name": "IV n Bird SPOT",
+      "slug": "iv-n-bird-spot",
+      "representativeName": "IV n Bird SPOT",
+      "sourceNames": [
+        "IV n Bird SPOT",
+        "IV n Bird SPOT +..."
+      ],
+      "sourceSlugs": [
+        "iv-n-bird-spot",
+        "iv-n-bird-spot-plus-clipped"
+      ],
+      "aliases": [
+        "I¥ n Bird SPOT",
+        "IV n Bird SPOT +...",
+        "Vn Bird SPOT +..."
+      ],
+      "aliasSlugs": [
+        "i-n-bird-spot",
+        "iv-n-bird-spot-plus-clipped",
+        "vn-bird-spot-plus-clipped"
+      ],
+      "standards": 6,
+      "passages": 9
+    },
+    {
+      "name": "IV n Hack",
+      "slug": "iv-n-hack",
+      "representativeName": "IV n Hack + Dropback",
+      "sourceNames": [
+        "IV n Hack + Dropback",
+        "IV n Hack +..."
+      ],
+      "sourceSlugs": [
+        "iv-n-hack-plus-dropback",
+        "iv-n-hack-plus-clipped"
+      ],
+      "aliases": [
+        "I¥ n Hack + Dropback",
+        "IV n Hack + Dropback",
+        "IV n Hack +...",
+        "Vn Hack +..."
+      ],
+      "aliasSlugs": [
+        "i-n-hack-plus-dropback",
+        "iv-n-hack-plus-clipped",
+        "iv-n-hack-plus-dropback",
+        "vn-hack-plus-clipped"
+      ],
+      "standards": 2,
+      "passages": 5
+    },
+    {
+      "name": "IV n Yak",
+      "slug": "iv-n-yak",
+      "representativeName": "IV n Yak",
+      "sourceNames": [
+        "IV n Yak",
+        "IV n Yak + Dropback",
+        "IV n Yak +..."
+      ],
+      "sourceSlugs": [
+        "iv-n-yak",
+        "iv-n-yak-plus-dropback",
+        "iv-n-yak-plus-clipped"
+      ],
+      "aliases": [
+        "IV n Yak + Dropback",
+        "IV n Yak +...",
+        "Wn Yak +..."
+      ],
+      "aliasSlugs": [
+        "iv-n-yak-plus-clipped",
+        "iv-n-yak-plus-dropback",
+        "wn-yak-plus-clipped"
+      ],
+      "standards": 29,
+      "passages": 46
+    },
+    {
+      "name": "Lonely",
+      "slug": "lonely",
+      "representativeName": "Lonely Cadence",
+      "sourceNames": [
+        "Lonely Cadence",
+        "Lonely Launcher"
+      ],
+      "sourceSlugs": [
+        "lonely-cadence",
+        "lonely-launcher"
+      ],
+      "aliases": [
+        "Lonely Cadence",
+        "Lonely Launcher"
+      ],
+      "aliasSlugs": [
+        "lonely-cadence",
+        "lonely-launcher"
+      ],
+      "standards": 3,
+      "passages": 4
+    },
+    {
+      "name": "Long",
+      "slug": "long",
+      "representativeName": "Long Cadence",
+      "sourceNames": [
+        "Long Approach",
+        "Long Cadence",
+        "Long Cadence + Overrun",
+        "Long Launcher"
+      ],
+      "sourceSlugs": [
+        "long-approach",
+        "long-cadence",
+        "long-cadence-plus-overrun",
+        "long-launcher"
+      ],
+      "aliases": [
+        "Long Approach",
+        "Long Cadence",
+        "Long Cadence + Overrun",
+        "Long Launcher"
+      ],
+      "aliasSlugs": [
+        "long-approach",
+        "long-cadence",
+        "long-cadence-plus-overrun",
+        "long-launcher"
+      ],
+      "standards": 29,
+      "passages": 43
+    },
+    {
+      "name": "Minor Dropback",
+      "slug": "minor-dropback",
+      "representativeName": "Minor Dropback",
+      "sourceNames": [
+        "Minor Dropback",
+        "Minor Dropback +..."
+      ],
+      "sourceSlugs": [
+        "minor-dropback",
+        "minor-dropback-plus-clipped"
+      ],
+      "aliases": [
+        "Minor Dr.",
+        "Minor Dro.",
+        "Minor Dropb",
+        "Minor Dropbac",
+        "Minor Dropback +",
+        "Minor Dropback +..."
+      ],
+      "aliasSlugs": [
+        "minor-dr",
+        "minor-dro",
+        "minor-dropb",
+        "minor-dropbac",
+        "minor-dropback-plus",
+        "minor-dropback-plus-clipped"
+      ],
+      "standards": 12,
+      "passages": 16
+    },
+    {
+      "name": "Minor POT",
+      "slug": "minor-pot",
+      "representativeName": "Minor POT",
+      "sourceNames": [
+        "Minor POT",
+        "Minor POT+On"
+      ],
+      "sourceSlugs": [
+        "minor-pot",
+        "minor-pot-plus-on"
+      ],
+      "aliases": [
+        "Minor POT+On"
+      ],
+      "aliasSlugs": [
+        "minor-pot-plus-on"
+      ],
+      "standards": 15,
+      "passages": 36
+    },
+    {
+      "name": "Moment's",
+      "slug": "moment-s",
+      "representativeName": "Moment's Cadence",
+      "sourceNames": [
+        "Moment's Cadence",
+        "Moment's Launcher"
+      ],
+      "sourceSlugs": [
+        "moment-s-cadence",
+        "moment-s-launcher"
+      ],
+      "aliases": [
+        "Moment's Cadence",
+        "Moment's Launcher"
+      ],
+      "aliasSlugs": [
+        "moment-s-cadence",
+        "moment-s-launcher"
+      ],
+      "standards": 4,
+      "passages": 9
+    },
+    {
+      "name": "Nowhere",
+      "slug": "nowhere",
+      "representativeName": "Nowhere Cadence",
+      "sourceNames": [
+        "Nowhere Approach",
+        "Nowhere Cadence",
+        "Nowhere Launcher"
+      ],
+      "sourceSlugs": [
+        "nowhere-approach",
+        "nowhere-cadence",
+        "nowhere-launcher"
+      ],
+      "aliases": [
+        "Nowhere Approach",
+        "Nowhere Cadence",
+        "Nowhere Lau...",
+        "Nowhere Launcher"
+      ],
+      "aliasSlugs": [
+        "nowhere-approach",
+        "nowhere-cadence",
+        "nowhere-lau-clipped",
+        "nowhere-launcher"
+      ],
+      "standards": 35,
+      "passages": 60
+    },
+    {
+      "name": "Nowhere Turnaround",
+      "slug": "nowhere-turnaround",
+      "representativeName": "Nowhere Turnaround",
+      "sourceNames": [
+        "Nowhere Turnaround",
+        "Nowhere Turnaround+On"
+      ],
+      "sourceSlugs": [
+        "nowhere-turnaround",
+        "nowhere-turnaround-plus-on"
+      ],
+      "aliases": [
+        "Nowhere Turnaround+On"
+      ],
+      "aliasSlugs": [
+        "nowhere-turnaround-plus-on"
+      ],
+      "standards": 1,
+      "passages": 3
+    },
+    {
+      "name": "On Off On To V",
+      "slug": "on-off-on-to-v",
+      "representativeName": "On Off On To V",
+      "sourceNames": [
+        "On Off On To V",
+        "On Off On To V+..."
+      ],
+      "sourceSlugs": [
+        "on-off-on-to-v",
+        "on-off-on-to-v-plus-clipped"
+      ],
+      "aliases": [
+        "On Off On To V+..."
+      ],
+      "aliasSlugs": [
+        "on-off-on-to-v-plus-clipped"
+      ],
+      "standards": 7,
+      "passages": 12
+    },
+    {
+      "name": "Pennies",
+      "slug": "pennies",
+      "representativeName": "Pennies Approach",
+      "sourceNames": [
+        "Pennies Approach",
+        "Pennies Launcher"
+      ],
+      "sourceSlugs": [
+        "pennies-approach",
+        "pennies-launcher"
+      ],
+      "aliases": [
+        "Pennies Approach",
+        "Pennies Launcher"
+      ],
+      "aliasSlugs": [
+        "pennies-approach",
+        "pennies-launcher"
+      ],
+      "standards": 3,
+      "passages": 4
+    },
+    {
+      "name": "Pennies Ending",
+      "slug": "pennies-ending",
+      "representativeName": "Pennies Ending",
+      "sourceNames": [
+        "Pennies Ending",
+        "Pennies Ending + Dropback",
+        "Pennies Ending +..."
+      ],
+      "sourceSlugs": [
+        "pennies-ending",
+        "pennies-ending-plus-dropback",
+        "pennies-ending-plus-clipped"
+      ],
+      "aliases": [
+        "Pennies Ending + Dropback",
+        "Pennies Ending +..."
+      ],
+      "aliasSlugs": [
+        "pennies-ending-plus-clipped",
+        "pennies-ending-plus-dropback"
+      ],
+      "standards": 7,
+      "passages": 9
+    },
+    {
+      "name": "Perfect",
+      "slug": "perfect",
+      "representativeName": "Perfect Cadence",
+      "sourceNames": [
+        "Perfect Cadence",
+        "Perfect Cadence +..."
+      ],
+      "sourceSlugs": [
+        "perfect-cadence",
+        "perfect-cadence-plus-clipped"
+      ],
+      "aliases": [
+        "Perfect Caden.",
+        "Perfect Cadenc...",
+        "Perfect Cadence",
+        "Perfect Cadence +..."
+      ],
+      "aliasSlugs": [
+        "perfect-caden",
+        "perfect-cadenc-clipped",
+        "perfect-cadence",
+        "perfect-cadence-plus-clipped"
+      ],
+      "standards": 32,
+      "passages": 53
+    },
+    {
+      "name": "POT",
+      "slug": "pot",
+      "representativeName": "POT",
+      "sourceNames": [
+        "POT",
+        "POT+On"
+      ],
+      "sourceSlugs": [
+        "pot",
+        "pot-plus-on"
+      ],
+      "aliases": [
+        "POT+On"
+      ],
+      "aliasSlugs": [
+        "pot-plus-on"
+      ],
+      "standards": 102,
+      "passages": 238
+    },
+    {
+      "name": "Pullback to Cadence",
+      "slug": "pullback-to-cadence",
+      "representativeName": "Pullback to Cadence",
+      "sourceNames": [
+        "Pullback to Cadence",
+        "Pullback to Cadence + Dropback",
+        "Pullback to Cadence + Overrun",
+        "Pullback to Cadence +..."
+      ],
+      "sourceSlugs": [
+        "pullback-to-cadence",
+        "pullback-to-cadence-plus-dropback",
+        "pullback-to-cadence-plus-overrun",
+        "pullback-to-cadence-plus-clipped"
+      ],
+      "aliases": [
+        "Pullback to Cadence + Dropback",
+        "Pullback to Cadence + Overrun",
+        "Pullback to Cadence +..."
+      ],
+      "aliasSlugs": [
+        "pullback-to-cadence-plus-clipped",
+        "pullback-to-cadence-plus-dropback",
+        "pullback-to-cadence-plus-overrun"
+      ],
+      "standards": 17,
+      "passages": 24
+    },
+    {
+      "name": "Rainbow",
+      "slug": "rainbow",
+      "representativeName": "Rainbow Cadence",
+      "sourceNames": [
+        "Rainbow Cadence",
+        "Rainbow Cadence + Dropback",
+        "Rainbow Cadence +..."
+      ],
+      "sourceSlugs": [
+        "rainbow-cadence",
+        "rainbow-cadence-plus-dropback",
+        "rainbow-cadence-plus-clipped"
+      ],
+      "aliases": [
+        "Rainbow Cadence",
+        "Rainbow Cadence + Dropback",
+        "Rainbow Cadence +..."
+      ],
+      "aliasSlugs": [
+        "rainbow-cadence",
+        "rainbow-cadence-plus-clipped",
+        "rainbow-cadence-plus-dropback"
+      ],
+      "standards": 8,
+      "passages": 18
+    },
+    {
+      "name": "Rainy",
+      "slug": "rainy",
+      "representativeName": "Rainy Cadence",
+      "sourceNames": [
+        "Rainy Approach",
+        "Rainy Cadence",
+        "Rainy Cadence +...",
+        "Rainy Launcher"
+      ],
+      "sourceSlugs": [
+        "rainy-approach",
+        "rainy-cadence",
+        "rainy-cadence-plus-clipped",
+        "rainy-launcher"
+      ],
+      "aliases": [
+        "Rainy Approach",
+        "Rainy Cadence",
+        "Rainy Cadence +...",
+        "Rainy Launcher"
+      ],
+      "aliasSlugs": [
+        "rainy-approach",
+        "rainy-cadence",
+        "rainy-cadence-plus-clipped",
+        "rainy-launcher"
+      ],
+      "standards": 22,
+      "passages": 33
+    },
+    {
+      "name": "Sad",
+      "slug": "sad",
+      "representativeName": "Sad Cadence",
+      "sourceNames": [
+        "Sad Approach",
+        "Sad Approach +...",
+        "Sad Cadence",
+        "Sad Cadence +...",
+        "Sad Cadence with Overrun",
+        "Sad Launcher"
+      ],
+      "sourceSlugs": [
+        "sad-approach",
+        "sad-approach-plus-clipped",
+        "sad-cadence",
+        "sad-cadence-plus-clipped",
+        "sad-cadence-with-overrun",
+        "sad-launcher"
+      ],
+      "aliases": [
+        "Sad Approach",
+        "Sad Approach +...",
+        "Sad Cadence",
+        "Sad Cadence +...",
+        "Sad Cadence with Overrun",
+        "Sad Lau..",
+        "Sad Laun...",
+        "Sad Launcher"
+      ],
+      "aliasSlugs": [
+        "sad-approach",
+        "sad-approach-plus-clipped",
+        "sad-cadence",
+        "sad-cadence-plus-clipped",
+        "sad-cadence-with-overrun",
+        "sad-lau-clipped",
+        "sad-laun-clipped",
+        "sad-launcher"
+      ],
+      "standards": 101,
+      "passages": 217
+    },
+    {
+      "name": "Slow",
+      "slug": "slow",
+      "representativeName": "Slow Cadence",
+      "sourceNames": [
+        "Slow Approach",
+        "Slow Cadence",
+        "Slow Cadence + Dropback",
+        "Slow Launcher"
+      ],
+      "sourceSlugs": [
+        "slow-approach",
+        "slow-cadence",
+        "slow-cadence-plus-dropback",
+        "slow-launcher"
+      ],
+      "aliases": [
+        "Slow Approach",
+        "Slow Cadence",
+        "Slow Cadence + Dropback",
+        "Slow Launcher"
+      ],
+      "aliasSlugs": [
+        "slow-approach",
+        "slow-cadence",
+        "slow-cadence-plus-dropback",
+        "slow-launcher"
+      ],
+      "standards": 62,
+      "passages": 83
+    },
+    {
+      "name": "Somewhere/Nowhere",
+      "slug": "somewhere-nowhere",
+      "representativeName": "Somewhere/Nowhere Approach",
+      "sourceNames": [
+        "Somewhere/Nowhere Approach",
+        "Somewhere/Nowhere Launcher"
+      ],
+      "sourceSlugs": [
+        "somewhere-nowhere-approach",
+        "somewhere-nowhere-launcher"
+      ],
+      "aliases": [
+        "Somewhere/Nowhere Approach",
+        "Somewhere/Nowhere Approi",
+        "Somewhere/Nowhere Launcher"
+      ],
+      "aliasSlugs": [
+        "somewhere-nowhere-approach",
+        "somewhere-nowhere-approi",
+        "somewhere-nowhere-launcher"
+      ],
+      "standards": 5,
+      "passages": 11
+    },
+    {
+      "name": "SPOT",
+      "slug": "spot",
+      "representativeName": "SPOT",
+      "sourceNames": [
+        "SPOT",
+        "SPOT +..."
+      ],
+      "sourceSlugs": [
+        "spot",
+        "spot-plus-clipped"
+      ],
+      "aliases": [
+        "SPOT +..."
+      ],
+      "aliasSlugs": [
+        "spot-plus-clipped"
+      ],
+      "standards": 68,
+      "passages": 116
+    },
+    {
+      "name": "Stablemates",
+      "slug": "stablemates",
+      "representativeName": "Stablemates Cadence",
+      "sourceNames": [
+        "Stablemates Approach",
+        "Stablemates Cadence",
+        "Stablemates Launcher"
+      ],
+      "sourceSlugs": [
+        "stablemates-approach",
+        "stablemates-cadence",
+        "stablemates-launcher"
+      ],
+      "aliases": [
+        "Stablemates Approach",
+        "Stablemates Cadence",
+        "Stablemates Launcher"
+      ],
+      "aliasSlugs": [
+        "stablemates-approach",
+        "stablemates-cadence",
+        "stablemates-launcher"
+      ],
+      "standards": 17,
+      "passages": 27
+    },
+    {
+      "name": "Starlight",
+      "slug": "starlight",
+      "representativeName": "Starlight Cadence",
+      "sourceNames": [
+        "Starlight Approach",
+        "Starlight Cadence",
+        "Starlight Cadence +...",
+        "Starlight Launcher"
+      ],
+      "sourceSlugs": [
+        "starlight-approach",
+        "starlight-cadence",
+        "starlight-cadence-plus-clipped",
+        "starlight-launcher"
+      ],
+      "aliases": [
+        "Starlight Approach",
+        "Starlight Cadence",
+        "Starlight Cadence +...",
+        "Starlight Launcher"
+      ],
+      "aliasSlugs": [
+        "starlight-approach",
+        "starlight-cadence",
+        "starlight-cadence-plus-clipped",
+        "starlight-launcher"
+      ],
+      "standards": 27,
+      "passages": 46
+    },
+    {
+      "name": "Starlight Opening",
+      "slug": "starlight-opening",
+      "representativeName": "Starlight Opening",
+      "sourceNames": [
+        "Starlight Opening",
+        "Starlight Opening +..."
+      ],
+      "sourceSlugs": [
+        "starlight-opening",
+        "starlight-opening-plus-clipped"
+      ],
+      "aliases": [
+        "Starlight Opening +..."
+      ],
+      "aliasSlugs": [
+        "starlight-opening-plus-clipped"
+      ],
+      "standards": 2,
+      "passages": 2
+    },
+    {
+      "name": "Straight",
+      "slug": "straight",
+      "representativeName": "Straight Cadence",
+      "sourceNames": [
+        "Straigh...",
+        "Straight ...",
+        "Straight Approach",
+        "Straight Approach +...",
+        "Straight Cadence",
+        "Straight Cadence + Dominant Overrun",
+        "Straight Cadence + Dropback",
+        "Straight Cadence with Dropback",
+        "Straight Launcher",
+        "Straight..."
+      ],
+      "sourceSlugs": [
+        "straigh-clipped",
+        "straight-clipped",
+        "straight-approach",
+        "straight-approach-plus-clipped",
+        "straight-cadence",
+        "straight-cadence-plus-dominant-overrun",
+        "straight-cadence-plus-dropback",
+        "straight-cadence-with-dropback",
+        "straight-launcher",
+        "straight-clipped-e1fk0z"
+      ],
+      "aliases": [
+        "Straigh...",
+        "Straight ...",
+        "Straight App...",
+        "Straight Appro.",
+        "Straight Approa...",
+        "Straight Approach",
+        "Straight Approach +...",
+        "Straight Cadence",
+        "Straight Cadence + Dominant G...",
+        "Straight Cadence + Dominant Overrun",
+        "Straight Cadence + Dropback",
+        "Straight Cadence with Dropback",
+        "Straight L...",
+        "Straight Lau...",
+        "Straight Laun...",
+        "Straight Launc..",
+        "Straight Launc...",
+        "Straight Launchei",
+        "Straight Launcher",
+        "Straight..."
+      ],
+      "aliasSlugs": [
+        "straigh-clipped",
+        "straight-app-clipped",
+        "straight-appro",
+        "straight-approa-clipped",
+        "straight-approach",
+        "straight-approach-plus-clipped",
+        "straight-cadence",
+        "straight-cadence-plus-dominant-g-clipped",
+        "straight-cadence-plus-dominant-overrun",
+        "straight-cadence-plus-dropback",
+        "straight-cadence-with-dropback",
+        "straight-clipped",
+        "straight-clipped-e1fk0z",
+        "straight-l-clipped",
+        "straight-lau-clipped",
+        "straight-laun-clipped",
+        "straight-launc-clipped",
+        "straight-launc-clipped-10lq4m0",
+        "straight-launchei",
+        "straight-launcher"
+      ],
+      "standards": 174,
+      "passages": 496
+    },
+    {
+      "name": "Sus",
+      "slug": "sus",
+      "representativeName": "Sus Cadence",
+      "sourceNames": [
+        "Sus Approach",
+        "Sus Cadence"
+      ],
+      "sourceSlugs": [
+        "sus-approach",
+        "sus-cadence"
+      ],
+      "aliases": [
+        "Sus Approach",
+        "Sus Cadence"
+      ],
+      "aliasSlugs": [
+        "sus-approach",
+        "sus-cadence"
+      ],
+      "standards": 4,
+      "passages": 11
+    },
+    {
+      "name": "Tension",
+      "slug": "tension",
+      "representativeName": "Tension Cadence",
+      "sourceNames": [
+        "Tension Cadence",
+        "Tension Cadence +..."
+      ],
+      "sourceSlugs": [
+        "tension-cadence",
+        "tension-cadence-plus-clipped"
+      ],
+      "aliases": [
+        "Tension Cadence",
+        "Tension Cadence +..."
+      ],
+      "aliasSlugs": [
+        "tension-cadence",
+        "tension-cadence-plus-clipped"
+      ],
+      "standards": 13,
+      "passages": 15
+    },
+    {
+      "name": "Three Goes Straight",
+      "slug": "three-goes-straight",
+      "representativeName": "Three Goes Straight Cadence",
+      "sourceNames": [
+        "Three Goes Straight Approach",
+        "Three Goes Straight Cadence"
+      ],
+      "sourceSlugs": [
+        "three-goes-straight-approach",
+        "three-goes-straight-cadence"
+      ],
+      "aliases": [
+        "Three Goes Straight Approach",
+        "Three Goes Straight Cadence"
+      ],
+      "aliasSlugs": [
+        "three-goes-straight-approach",
+        "three-goes-straight-cadence"
+      ],
+      "standards": 4,
+      "passages": 8
+    },
+    {
+      "name": "To IV n Back",
+      "slug": "to-iv-n-back",
+      "representativeName": "To IV n Back",
+      "sourceNames": [
+        "To IV n Back",
+        "To IV n Back +..."
+      ],
+      "sourceSlugs": [
+        "to-iv-n-back",
+        "to-iv-n-back-plus-clipped"
+      ],
+      "aliases": [
+        "To IV n Back +...",
+        "TolVn Back +..."
+      ],
+      "aliasSlugs": [
+        "to-iv-n-back-plus-clipped",
+        "tolvn-back-plus-clipped"
+      ],
+      "standards": 5,
+      "passages": 9
+    },
+    {
+      "name": "To IV n Bird SPOT",
+      "slug": "to-iv-n-bird-spot",
+      "representativeName": "To IV n Bird SPOT",
+      "sourceNames": [
+        "To IV n Bird SPOT",
+        "To IV n Bird SPOT +..."
+      ],
+      "sourceSlugs": [
+        "to-iv-n-bird-spot",
+        "to-iv-n-bird-spot-plus-clipped"
+      ],
+      "aliases": [
+        "To IV n Bird SPOT +...",
+        "To IV nBird SPOT +..."
+      ],
+      "aliasSlugs": [
+        "to-iv-n-bird-spot-plus-clipped",
+        "to-iv-nbird-spot-plus-clipped"
+      ],
+      "standards": 7,
+      "passages": 14
+    },
+    {
+      "name": "To IV n Yak",
+      "slug": "to-iv-n-yak",
+      "representativeName": "To IV n Yak",
+      "sourceNames": [
+        "To IV n Yak",
+        "To IV n Yak +..."
+      ],
+      "sourceSlugs": [
+        "to-iv-n-yak",
+        "to-iv-n-yak-plus-clipped"
+      ],
+      "aliases": [
+        "To IV n Yak +...",
+        "Tol¥Vn Yak +..."
+      ],
+      "aliasSlugs": [
+        "to-iv-n-yak-plus-clipped",
+        "tol-vn-yak-plus-clipped"
+      ],
+      "standards": 6,
+      "passages": 15
+    },
+    {
+      "name": "Tritone",
+      "slug": "tritone",
+      "representativeName": "Tritone Cadence",
+      "sourceNames": [
+        "Tritone Approach",
+        "Tritone Cadence",
+        "Tritone Launcher"
+      ],
+      "sourceSlugs": [
+        "tritone-approach",
+        "tritone-cadence",
+        "tritone-launcher"
+      ],
+      "aliases": [
+        "Tritone Approach",
+        "Tritone Cadence",
+        "Tritone Launc...",
+        "Tritone Launcher"
+      ],
+      "aliasSlugs": [
+        "tritone-approach",
+        "tritone-cadence",
+        "tritone-launc-clipped",
+        "tritone-launcher"
+      ],
+      "standards": 16,
+      "passages": 20
+    },
+    {
+      "name": "TTFA Dropback",
+      "slug": "ttfa-dropback",
+      "representativeName": "TTFA Dropback",
+      "sourceNames": [
+        "TTFA Dropback",
+        "TTFA Dropback +..."
+      ],
+      "sourceSlugs": [
+        "ttfa-dropback",
+        "ttfa-dropback-plus-clipped"
+      ],
+      "aliases": [
+        "TTFA Dropback +..."
+      ],
+      "aliasSlugs": [
+        "ttfa-dropback-plus-clipped"
+      ],
+      "standards": 60,
+      "passages": 120
+    },
+    {
+      "name": "Two Goes",
+      "slug": "two-goes",
+      "representativeName": "Two Goes Approach",
+      "sourceNames": [
+        "Two Goes Approach",
+        "Two Goes Approach +..."
+      ],
+      "sourceSlugs": [
+        "two-goes-approach",
+        "two-goes-approach-plus-clipped"
+      ],
+      "aliases": [
+        "Two Goes Approach",
+        "Two Goes Approach +..."
+      ],
+      "aliasSlugs": [
+        "two-goes-approach",
+        "two-goes-approach-plus-clipped"
+      ],
+      "standards": 2,
+      "passages": 2
+    },
+    {
+      "name": "Two Goes Dominant",
+      "slug": "two-goes-dominant",
+      "representativeName": "Two Goes Dominant Approach",
+      "sourceNames": [
+        "Two Goes Dominant Approach",
+        "Two Goes Dominant Approach +..."
+      ],
+      "sourceSlugs": [
+        "two-goes-dominant-approach",
+        "two-goes-dominant-approach-plus-clipped"
+      ],
+      "aliases": [
+        "Two Goes Dominant Approach",
+        "Two Goes Dominant Approach +..."
+      ],
+      "aliasSlugs": [
+        "two-goes-dominant-approach",
+        "two-goes-dominant-approach-plus-clipped"
+      ],
+      "standards": 2,
+      "passages": 4
+    },
+    {
+      "name": "Two Goes Sad",
+      "slug": "two-goes-sad",
+      "representativeName": "Two Goes Sad Approach",
+      "sourceNames": [
+        "Two Goes Sad Approach",
+        "Two Goes Sad Approach +..."
+      ],
+      "sourceSlugs": [
+        "two-goes-sad-approach",
+        "two-goes-sad-approach-plus-clipped"
+      ],
+      "aliases": [
+        "Two Goes Sad Approach",
+        "Two Goes Sad Approach +..."
+      ],
+      "aliasSlugs": [
+        "two-goes-sad-approach",
+        "two-goes-sad-approach-plus-clipped"
+      ],
+      "standards": 3,
+      "passages": 3
+    },
+    {
+      "name": "Two Goes Straight",
+      "slug": "two-goes-straight",
+      "representativeName": "Two Goes Straight Cadence",
+      "sourceNames": [
+        "Two Goes Straight Approach",
+        "Two Goes Straight Cadence",
+        "Two Goes Straight Cadence + Overrun",
+        "Two Goes Straight Cadence with Overrun",
+        "Two Goes Straight Launcher"
+      ],
+      "sourceSlugs": [
+        "two-goes-straight-approach",
+        "two-goes-straight-cadence",
+        "two-goes-straight-cadence-plus-overrun",
+        "two-goes-straight-cadence-with-overrun",
+        "two-goes-straight-launcher"
+      ],
+      "aliases": [
+        "Two Goes Straight Approach",
+        "Two Goes Straight Cadence",
+        "Two Goes Straight Cadence + Overrun",
+        "Two Goes Straight Cadence with Overrun",
+        "Two Goes Straight Launcher"
+      ],
+      "aliasSlugs": [
+        "two-goes-straight-approach",
+        "two-goes-straight-cadence",
+        "two-goes-straight-cadence-plus-overrun",
+        "two-goes-straight-cadence-with-overrun",
+        "two-goes-straight-launcher"
+      ],
+      "standards": 21,
+      "passages": 55
+    },
+    {
+      "name": "Twopenny Ending",
+      "slug": "twopenny-ending",
+      "representativeName": "Twopenny Ending",
+      "sourceNames": [
+        "Twopenny Ending",
+        "Twopenny Ending +..."
+      ],
+      "sourceSlugs": [
+        "twopenny-ending",
+        "twopenny-ending-plus-clipped"
+      ],
+      "aliases": [
+        "Twopenny Ending +..."
+      ],
+      "aliasSlugs": [
+        "twopenny-ending-plus-clipped"
+      ],
+      "standards": 6,
+      "passages": 10
+    },
+    {
+      "name": "Yardbird",
+      "slug": "yardbird",
+      "representativeName": "Yardbird Cadence",
+      "sourceNames": [
+        "Yardbird Approach",
+        "Yardbird Cadence",
+        "Yardbird Cadence + Dropback",
+        "Yardbird Launcher"
+      ],
+      "sourceSlugs": [
+        "yardbird-approach",
+        "yardbird-cadence",
+        "yardbird-cadence-plus-dropback",
+        "yardbird-launcher"
+      ],
+      "aliases": [
+        "Yardbird Approach",
+        "Yardbird Cadence",
+        "Yardbird Cadence + Dropback",
+        "Yardbird L...",
+        "Yardbird Lau...",
+        "Yardbird Launche:",
+        "Yardbird Launcher"
+      ],
+      "aliasSlugs": [
+        "yardbird-approach",
+        "yardbird-cadence",
+        "yardbird-cadence-plus-dropback",
+        "yardbird-l-clipped",
+        "yardbird-lau-clipped",
+        "yardbird-launche",
+        "yardbird-launcher"
+      ],
+      "standards": 34,
+      "passages": 51
+    },
+    {
+      "name": "Yardbird Sub",
+      "slug": "yardbird-sub",
+      "representativeName": "Yardbird Sub Cadence",
+      "sourceNames": [
+        "Yardbird Sub Cadence",
+        "Yardbird Sub Cadence + Dropback",
+        "Yardbird Sub Cadence + Overrun",
+        "Yardbird Sub Cadence +..."
+      ],
+      "sourceSlugs": [
+        "yardbird-sub-cadence",
+        "yardbird-sub-cadence-plus-dropback",
+        "yardbird-sub-cadence-plus-overrun",
+        "yardbird-sub-cadence-plus-clipped"
+      ],
+      "aliases": [
+        "Yardbird Sub Cadence",
+        "Yardbird Sub Cadence + Dropback",
+        "Yardbird Sub Cadence + Overrun",
+        "Yardbird Sub Cadence +..."
+      ],
+      "aliasSlugs": [
+        "yardbird-sub-cadence",
+        "yardbird-sub-cadence-plus-clipped",
+        "yardbird-sub-cadence-plus-dropback",
+        "yardbird-sub-cadence-plus-overrun"
+      ],
+      "standards": 9,
+      "passages": 13
+    }
+  ],
+  "unresolvedClipped": [
+    {
+      "name": "Dominant Cy...",
+      "slug": "dominant-cy-clipped",
+      "representativeName": "Dominant Cy...",
+      "sourceNames": [
+        "Dominant Cy..."
+      ],
+      "sourceSlugs": [
+        "dominant-cy-clipped"
+      ],
+      "aliases": [],
+      "aliasSlugs": [],
+      "standards": 1,
+      "passages": 2,
+      "note": "Prefix alone does not uniquely identify one learner family."
+    },
+    {
+      "name": "GDS",
+      "slug": "gds",
+      "representativeName": "GDS Cadence +...",
+      "sourceNames": [
+        "GDS Cadence +..."
+      ],
+      "sourceSlugs": [
+        "gds-cadence-plus-clipped"
+      ],
+      "aliases": [
+        "GDS Cadence +..."
+      ],
+      "aliasSlugs": [
+        "gds-cadence-plus-clipped"
+      ],
+      "standards": 1,
+      "passages": 2,
+      "note": "Source identity remains clipped or unresolved; no additional learner inference."
+    },
+    {
+      "name": "Minor...",
+      "slug": "minor-clipped",
+      "representativeName": "Minor...",
+      "sourceNames": [
+        "Minor..."
+      ],
+      "sourceSlugs": [
+        "minor-clipped"
+      ],
+      "aliases": [],
+      "aliasSlugs": [],
+      "standards": 2,
+      "passages": 3,
+      "note": "Prefix alone does not uniquely identify one learner family."
+    },
+    {
+      "name": "Nowhere...",
+      "slug": "nowhere-clipped",
+      "representativeName": "Nowhere...",
+      "sourceNames": [
+        "Nowhere..."
+      ],
+      "sourceSlugs": [
+        "nowhere-clipped"
+      ],
+      "aliases": [],
+      "aliasSlugs": [],
+      "standards": 1,
+      "passages": 1,
+      "note": "Prefix alone does not uniquely identify one learner family."
+    },
+    {
+      "name": "POT Spring sub",
+      "slug": "pot-spring-sub",
+      "representativeName": "POT Spring sub +...",
+      "sourceNames": [
+        "POT Spring sub +..."
+      ],
+      "sourceSlugs": [
+        "pot-spring-sub-plus-clipped"
+      ],
+      "aliases": [
+        "POT Spring sub +..."
+      ],
+      "aliasSlugs": [
+        "pot-spring-sub-plus-clipped"
+      ],
+      "standards": 1,
+      "passages": 1,
+      "note": "Source identity remains clipped or unresolved; no additional learner inference."
+    },
+    {
+      "name": "To IV n Mack",
+      "slug": "to-iv-n-mack",
+      "representativeName": "To IV n Mack +...",
+      "sourceNames": [
+        "To IV n Mack +..."
+      ],
+      "sourceSlugs": [
+        "to-iv-n-mack-plus-clipped"
+      ],
+      "aliases": [
+        "To IV n Mack +...",
+        "TolVn Mack +..."
+      ],
+      "aliasSlugs": [
+        "to-iv-n-mack-plus-clipped",
+        "tolvn-mack-plus-clipped"
+      ],
+      "standards": 1,
+      "passages": 3,
+      "note": "Source identity remains clipped or unresolved; no additional learner inference."
+    },
+    {
+      "name": "Yardbir...",
+      "slug": "yardbir-clipped",
+      "representativeName": "Yardbir...",
+      "sourceNames": [
+        "Yardbir..."
+      ],
+      "sourceSlugs": [
+        "yardbir-clipped"
+      ],
+      "aliases": [],
+      "aliasSlugs": [],
+      "standards": 1,
+      "passages": 1,
+      "note": "Prefix alone does not uniquely identify one learner family."
+    },
+    {
+      "name": "Yardbird ...",
+      "slug": "yardbird-clipped",
+      "representativeName": "Yardbird ...",
+      "sourceNames": [
+        "Yardbird ..."
+      ],
+      "sourceSlugs": [
+        "yardbird-clipped"
+      ],
+      "aliases": [],
+      "aliasSlugs": [],
+      "standards": 1,
+      "passages": 1,
+      "note": "Prefix alone does not uniquely identify one learner family."
+    }
+  ],
+  "familyMap": [
+    {
+      "name": "7 Chord Dropback",
+      "slug": "7-chord-dropback",
+      "sourceNames": [
+        "7 Chord Dropback",
+        "7 Chord Dropback +..."
+      ],
+      "representativeName": "7 Chord Dropback"
+    },
+    {
+      "name": "Amen",
+      "slug": "amen",
+      "sourceNames": [
+        "Amen Cadence",
+        "Amen Cadence + Overrun"
+      ],
+      "representativeName": "Amen Cadence"
+    },
+    {
+      "name": "Ascending & Descending Minor CESH",
+      "slug": "ascending-descending-minor-cesh",
+      "sourceNames": [
+        "Ascending & Descending Minor CESH"
+      ],
+      "representativeName": "Ascending & Descending Minor CESH"
+    },
+    {
+      "name": "Ascending Minor CESH",
+      "slug": "ascending-minor-cesh",
+      "sourceNames": [
+        "Ascending Minor CESH"
+      ],
+      "representativeName": "Ascending Minor CESH"
+    },
+    {
+      "name": "Autumn Leaves Opening",
+      "slug": "autumn-leaves-opening",
+      "sourceNames": [
+        "Autumn Leaves Opening",
+        "Autumn Leaves Opening +..."
+      ],
+      "representativeName": "Autumn Leaves Opening"
+    },
+    {
+      "name": "Autumnal",
+      "slug": "autumnal",
+      "sourceNames": [
+        "Autumnal Approach",
+        "Autumnal Cadence",
+        "Autumnal Cadence +...",
+        "Autumnal Launcher"
+      ],
+      "representativeName": "Autumnal Cadence"
+    },
+    {
+      "name": "Bemsha Turnaround 1",
+      "slug": "bemsha-turnaround-1",
+      "sourceNames": [
+        "Bemsha Turnaround 1"
+      ],
+      "representativeName": "Bemsha Turnaround 1"
+    },
+    {
+      "name": "Bemsha Turnaround 2",
+      "slug": "bemsha-turnaround-2",
+      "sourceNames": [
+        "Bemsha Turnaround 2"
+      ],
+      "representativeName": "Bemsha Turnaround 2"
+    },
+    {
+      "name": "Bemsha Turnaround 3",
+      "slug": "bemsha-turnaround-3",
+      "sourceNames": [
+        "Bemsha Turnaround 3"
+      ],
+      "representativeName": "Bemsha Turnaround 3"
+    },
+    {
+      "name": "Body & Soul",
+      "slug": "body-soul",
+      "sourceNames": [
+        "Body & Soul Approach",
+        "Body & Soul Cadence",
+        "Body & Soul Cadence + Dropback",
+        "Body & Soul Cadence +...",
+        "Body & Soul Launcher"
+      ],
+      "representativeName": "Body & Soul Cadence"
+    },
+    {
+      "name": "Cadence",
+      "slug": "cadence",
+      "sourceNames": [
+        "Cadence",
+        "Cadence + Dropback",
+        "Cadence + Overrun",
+        "Launcher"
+      ],
+      "representativeName": "Cadence"
+    },
+    {
+      "name": "Chromatic Dropback",
+      "slug": "chromatic-dropback",
+      "sourceNames": [
+        "Chromatic Dropback"
+      ],
+      "representativeName": "Chromatic Dropback"
+    },
+    {
+      "name": "Chromatic Major Walkup",
+      "slug": "chromatic-major-walkup",
+      "sourceNames": [
+        "Chromatic Major Walkup"
+      ],
+      "representativeName": "Chromatic Major Walkup"
+    },
+    {
+      "name": "Chromatic Minor Descending",
+      "slug": "chromatic-minor-descending",
+      "sourceNames": [
+        "Chromatic Minor Descending",
+        "Chromatic Minor..."
+      ],
+      "representativeName": "Chromatic Minor Descending"
+    },
+    {
+      "name": "Chromatically Descending Dominants",
+      "slug": "chromatically-descending-dominants",
+      "sourceNames": [
+        "Chromatically Descending Dominants"
+      ],
+      "representativeName": "Chromatically Descending Dominants"
+    },
+    {
+      "name": "Cyclic",
+      "slug": "cyclic",
+      "sourceNames": [
+        "Cyclic Approach"
+      ],
+      "representativeName": "Cyclic Approach"
+    },
+    {
+      "name": "Descending Minor CESH",
+      "slug": "descending-minor-cesh",
+      "sourceNames": [
+        "Descending Minor CESH",
+        "Descending Minor CESH +..."
+      ],
+      "representativeName": "Descending Minor CESH"
+    },
+    {
+      "name": "Diatonic I ii iii biii",
+      "slug": "diatonic-i-ii-iii-biii",
+      "sourceNames": [
+        "Diatonic I ii iii biii"
+      ],
+      "representativeName": "Diatonic I ii iii biii"
+    },
+    {
+      "name": "Diatonic I ii iii ii",
+      "slug": "diatonic-i-ii-iii-ii",
+      "sourceNames": [
+        "Diatonic I ii iii ii"
+      ],
+      "representativeName": "Diatonic I ii iii ii"
+    },
+    {
+      "name": "Diatonic I ii iii IV",
+      "slug": "diatonic-i-ii-iii-iv",
+      "sourceNames": [
+        "Diatonic I ii iii IV",
+        "Diatonic I II iii IV + Overrun"
+      ],
+      "representativeName": "Diatonic I ii iii IV"
+    },
+    {
+      "name": "Diatonic I IV iii ii",
+      "slug": "diatonic-i-iv-iii-ii",
+      "sourceNames": [
+        "Diatonic I IV iii ii"
+      ],
+      "representativeName": "Diatonic I IV iii ii"
+    },
+    {
+      "name": "Diatonic ii iii IV",
+      "slug": "diatonic-ii-iii-iv",
+      "sourceNames": [
+        "Diatonic ii iii IV"
+      ],
+      "representativeName": "Diatonic ii iii IV"
+    },
+    {
+      "name": "Diatonic ii iii IV iii ii",
+      "slug": "diatonic-ii-iii-iv-iii-ii",
+      "sourceNames": [
+        "Diatonic ii iii IV iii ii",
+        "Diatonic ii iii IV iii ii +..."
+      ],
+      "representativeName": "Diatonic ii iii IV iii ii"
+    },
+    {
+      "name": "Diatonic Walkup",
+      "slug": "diatonic-walkup",
+      "sourceNames": [
+        "Diatonic Walkup",
+        "Diatonic Walkup +..."
+      ],
+      "representativeName": "Diatonic Walkup"
+    },
+    {
+      "name": "Dizzy",
+      "slug": "dizzy",
+      "sourceNames": [
+        "Dizzy Approach",
+        "Dizzy Cadence",
+        "Dizzy Launcher"
+      ],
+      "representativeName": "Dizzy Cadence"
+    },
+    {
+      "name": "Dogleg Cycle",
+      "slug": "dogleg-cycle",
+      "sourceNames": [
+        "Dogleg Cycle"
+      ],
+      "representativeName": "Dogleg Cycle"
+    },
+    {
+      "name": "Dogleg Slow",
+      "slug": "dogleg-slow",
+      "sourceNames": [
+        "Dogleg Slow Launcher"
+      ],
+      "representativeName": "Dogleg Slow Launcher"
+    },
+    {
+      "name": "Dominant",
+      "slug": "dominant",
+      "sourceNames": [
+        "Dominant"
+      ],
+      "representativeName": "Dominant"
+    },
+    {
+      "name": "Dominant Cy...",
+      "slug": "dominant-cy-clipped",
+      "sourceNames": [
+        "Dominant Cy..."
+      ],
+      "representativeName": "Dominant Cy..."
+    },
+    {
+      "name": "Dominant Cycle",
+      "slug": "dominant-cycle",
+      "sourceNames": [
+        "Dominant Cycle",
+        "Dominant Cycle Cadence"
+      ],
+      "representativeName": "Dominant Cycle Cadence"
+    },
+    {
+      "name": "Dominant Cycle Minor",
+      "slug": "dominant-cycle-minor",
+      "sourceNames": [
+        "Dominant Cycle Minor",
+        "Dominant Cycle Minor Cadence"
+      ],
+      "representativeName": "Dominant Cycle Minor Cadence"
+    },
+    {
+      "name": "Dominant Turnaround",
+      "slug": "dominant-turnaround",
+      "sourceNames": [
+        "Dominant Turnaround"
+      ],
+      "representativeName": "Dominant Turnaround"
+    },
+    {
+      "name": "Donna Lee Opening",
+      "slug": "donna-lee-opening",
+      "sourceNames": [
+        "Donna Lee Opening"
+      ],
+      "representativeName": "Donna Lee Opening"
+    },
+    {
+      "name": "Donna Lee Start",
+      "slug": "donna-lee-start",
+      "sourceNames": [
+        "Donna Lee Start",
+        "Donna Lee Start +..."
+      ],
+      "representativeName": "Donna Lee Start"
+    },
+    {
+      "name": "Dropback",
+      "slug": "dropback",
+      "sourceNames": [
+        "Dropback",
+        "Dropback +..."
+      ],
+      "representativeName": "Dropback"
+    },
+    {
+      "name": "Extended",
+      "slug": "extended",
+      "sourceNames": [
+        "Extended Approach",
+        "Extended Approach +...",
+        "Extended Cadence",
+        "Extended Cadence + Overrun",
+        "Extended Launcher"
+      ],
+      "representativeName": "Extended Cadence"
+    },
+    {
+      "name": "Foggy",
+      "slug": "foggy",
+      "sourceNames": [
+        "Foggy Cadence"
+      ],
+      "representativeName": "Foggy Cadence"
+    },
+    {
+      "name": "Foggy Turnaround",
+      "slug": "foggy-turnaround",
+      "sourceNames": [
+        "Foggy Turnaround"
+      ],
+      "representativeName": "Foggy Turnaround"
+    },
+    {
+      "name": "Foolish",
+      "slug": "foolish",
+      "sourceNames": [
+        "Foolish Launcher"
+      ],
+      "representativeName": "Foolish Launcher"
+    },
+    {
+      "name": "Four Goes Straight",
+      "slug": "four-goes-straight",
+      "sourceNames": [
+        "Four Goes Straight Approach",
+        "Four Goes Straight Launcher"
+      ],
+      "representativeName": "Four Goes Straight Approach"
+    },
+    {
+      "name": "GDS",
+      "slug": "gds",
+      "sourceNames": [
+        "GDS Cadence +..."
+      ],
+      "representativeName": "GDS Cadence +..."
+    },
+    {
+      "name": "Generalized Dominant Cycle",
+      "slug": "generalized-dominant-cycle",
+      "sourceNames": [
+        "Generalized Dominant Cycle"
+      ],
+      "representativeName": "Generalized Dominant Cycle"
+    },
+    {
+      "name": "Happenstance",
+      "slug": "happenstance",
+      "sourceNames": [
+        "Happenstance App...",
+        "Happenstance Cadence",
+        "Happenstance Launcher"
+      ],
+      "representativeName": "Happenstance Cadence"
+    },
+    {
+      "name": "Honeysuckle Bridge",
+      "slug": "honeysuckle-bridge",
+      "sourceNames": [
+        "Honeysuckle Bridge",
+        "Honeysuckle Bridge + Dropback"
+      ],
+      "representativeName": "Honeysuckle Bridge"
+    },
+    {
+      "name": "II n Back",
+      "slug": "ii-n-back",
+      "sourceNames": [
+        "II n Back",
+        "II n Back + Dropback"
+      ],
+      "representativeName": "II n Back"
+    },
+    {
+      "name": "II n Bird",
+      "slug": "ii-n-bird",
+      "sourceNames": [
+        "II n Bird Approach",
+        "II n Bird Approach +...",
+        "II n Bird Launcher"
+      ],
+      "representativeName": "II n Bird Approach"
+    },
+    {
+      "name": "II n Bird POT",
+      "slug": "ii-n-bird-pot",
+      "sourceNames": [
+        "II n Bird POT"
+      ],
+      "representativeName": "II n Bird POT"
+    },
+    {
+      "name": "II n Bird SPOT",
+      "slug": "ii-n-bird-spot",
+      "sourceNames": [
+        "II n Bird SPOT"
+      ],
+      "representativeName": "II n Bird SPOT"
+    },
+    {
+      "name": "ITCHY Opening",
+      "slug": "itchy-opening",
+      "sourceNames": [
+        "ITCHY Opening"
+      ],
+      "representativeName": "ITCHY Opening"
+    },
+    {
+      "name": "IV n Back",
+      "slug": "iv-n-back",
+      "sourceNames": [
+        "IV n Back",
+        "IV n Back + Dropback"
+      ],
+      "representativeName": "IV n Back"
+    },
+    {
+      "name": "IV n Bauble",
+      "slug": "iv-n-bauble",
+      "sourceNames": [
+        "IV n Bauble"
+      ],
+      "representativeName": "IV n Bauble"
+    },
+    {
+      "name": "IV n Bird",
+      "slug": "iv-n-bird",
+      "sourceNames": [
+        "IV n Bird",
+        "IV n Bird +..."
+      ],
+      "representativeName": "IV n Bird"
+    },
+    {
+      "name": "IV n Bird SPOT",
+      "slug": "iv-n-bird-spot",
+      "sourceNames": [
+        "IV n Bird SPOT",
+        "IV n Bird SPOT +..."
+      ],
+      "representativeName": "IV n Bird SPOT"
+    },
+    {
+      "name": "IV n Hack",
+      "slug": "iv-n-hack",
+      "sourceNames": [
+        "IV n Hack + Dropback",
+        "IV n Hack +..."
+      ],
+      "representativeName": "IV n Hack + Dropback"
+    },
+    {
+      "name": "IV n Mack",
+      "slug": "iv-n-mack",
+      "sourceNames": [
+        "IV n Mack"
+      ],
+      "representativeName": "IV n Mack"
+    },
+    {
+      "name": "IV n Yak",
+      "slug": "iv-n-yak",
+      "sourceNames": [
+        "IV n Yak",
+        "IV n Yak + Dropback",
+        "IV n Yak +..."
+      ],
+      "representativeName": "IV n Yak"
+    },
+    {
+      "name": "IV n Yak To",
+      "slug": "iv-n-yak-to",
+      "sourceNames": [
+        "IV n Yak To"
+      ],
+      "representativeName": "IV n Yak To"
+    },
+    {
+      "name": "Ladybird Turnaround",
+      "slug": "ladybird-turnaround",
+      "sourceNames": [
+        "Ladybird Turnaround"
+      ],
+      "representativeName": "Ladybird Turnaround"
+    },
+    {
+      "name": "Light & Day",
+      "slug": "light-day",
+      "sourceNames": [
+        "Light & Day Launcher"
+      ],
+      "representativeName": "Light & Day Launcher"
+    },
+    {
+      "name": "Lonely",
+      "slug": "lonely",
+      "sourceNames": [
+        "Lonely Cadence",
+        "Lonely Launcher"
+      ],
+      "representativeName": "Lonely Cadence"
+    },
+    {
+      "name": "Long",
+      "slug": "long",
+      "sourceNames": [
+        "Long Approach",
+        "Long Cadence",
+        "Long Cadence + Overrun",
+        "Long Launcher"
+      ],
+      "representativeName": "Long Cadence"
+    },
+    {
+      "name": "Major On",
+      "slug": "major-on",
+      "sourceNames": [
+        "Major On"
+      ],
+      "representativeName": "Major On"
+    },
+    {
+      "name": "Minor Chromatic Walkdown",
+      "slug": "minor-chromatic-walkdown",
+      "sourceNames": [
+        "Minor Chromatic Walkdown"
+      ],
+      "representativeName": "Minor Chromatic Walkdown"
+    },
+    {
+      "name": "Minor Dogleg Slow",
+      "slug": "minor-dogleg-slow",
+      "sourceNames": [
+        "Minor Dogleg Slow Launcher"
+      ],
+      "representativeName": "Minor Dogleg Slow Launcher"
+    },
+    {
+      "name": "Minor Dropback",
+      "slug": "minor-dropback",
+      "sourceNames": [
+        "Minor Dropback",
+        "Minor Dropback +..."
+      ],
+      "representativeName": "Minor Dropback"
+    },
+    {
+      "name": "Minor On",
+      "slug": "minor-on",
+      "sourceNames": [
+        "Minor On"
+      ],
+      "representativeName": "Minor On"
+    },
+    {
+      "name": "Minor Perfect",
+      "slug": "minor-perfect",
+      "sourceNames": [
+        "Minor Perfect Cadence"
+      ],
+      "representativeName": "Minor Perfect Cadence"
+    },
+    {
+      "name": "Minor POT",
+      "slug": "minor-pot",
+      "sourceNames": [
+        "Minor POT",
+        "Minor POT+On"
+      ],
+      "representativeName": "Minor POT"
+    },
+    {
+      "name": "Minor...",
+      "slug": "minor-clipped",
+      "sourceNames": [
+        "Minor..."
+      ],
+      "representativeName": "Minor..."
+    },
+    {
+      "name": "Moment's",
+      "slug": "moment-s",
+      "sourceNames": [
+        "Moment's Cadence",
+        "Moment's Launcher"
+      ],
+      "representativeName": "Moment's Cadence"
+    },
+    {
+      "name": "Multi Sub POT",
+      "slug": "multi-sub-pot",
+      "sourceNames": [
+        "Multi Sub POT"
+      ],
+      "representativeName": "Multi Sub POT"
+    },
+    {
+      "name": "Night & Day",
+      "slug": "night-day",
+      "sourceNames": [
+        "Night & Day Cadence"
+      ],
+      "representativeName": "Night & Day Cadence"
+    },
+    {
+      "name": "Nobody's",
+      "slug": "nobody-s",
+      "sourceNames": [
+        "Nobody's Cadence"
+      ],
+      "representativeName": "Nobody's Cadence"
+    },
+    {
+      "name": "Nowhere",
+      "slug": "nowhere",
+      "sourceNames": [
+        "Nowhere Approach",
+        "Nowhere Cadence",
+        "Nowhere Launcher"
+      ],
+      "representativeName": "Nowhere Cadence"
+    },
+    {
+      "name": "Nowhere Minor",
+      "slug": "nowhere-minor",
+      "sourceNames": [
+        "Nowhere Minor Cadence"
+      ],
+      "representativeName": "Nowhere Minor Cadence"
+    },
+    {
+      "name": "Nowhere Turnaround",
+      "slug": "nowhere-turnaround",
+      "sourceNames": [
+        "Nowhere Turnaround",
+        "Nowhere Turnaround+On"
+      ],
+      "representativeName": "Nowhere Turnaround"
+    },
+    {
+      "name": "Nowhere Turnaround Minor",
+      "slug": "nowhere-turnaround-minor",
+      "sourceNames": [
+        "Nowhere Turnaround Minor"
+      ],
+      "representativeName": "Nowhere Turnaround Minor"
+    },
+    {
+      "name": "Nowhere Turnaround to Minor On",
+      "slug": "nowhere-turnaround-to-minor-on",
+      "sourceNames": [
+        "Nowhere Turnaround to Minor On"
+      ],
+      "representativeName": "Nowhere Turnaround to Minor On"
+    },
+    {
+      "name": "Nowhere...",
+      "slug": "nowhere-clipped",
+      "sourceNames": [
+        "Nowhere..."
+      ],
+      "representativeName": "Nowhere..."
+    },
+    {
+      "name": "Off On Major Nowhere",
+      "slug": "off-on-major-nowhere",
+      "sourceNames": [
+        "Off On Major Nowhere"
+      ],
+      "representativeName": "Off On Major Nowhere"
+    },
+    {
+      "name": "Off On Minor bII",
+      "slug": "off-on-minor-bii",
+      "sourceNames": [
+        "Off On Minor bII"
+      ],
+      "representativeName": "Off On Minor bII"
+    },
+    {
+      "name": "Off On Minor IV",
+      "slug": "off-on-minor-iv",
+      "sourceNames": [
+        "Off On Minor IV"
+      ],
+      "representativeName": "Off On Minor IV"
+    },
+    {
+      "name": "On Off Four Times On To II",
+      "slug": "on-off-four-times-on-to-ii",
+      "sourceNames": [
+        "On Off Four Times On To II"
+      ],
+      "representativeName": "On Off Four Times On To II"
+    },
+    {
+      "name": "On Off Major #IV",
+      "slug": "on-off-major-iv-193fh7a",
+      "sourceNames": [
+        "On Off Major #IV"
+      ],
+      "representativeName": "On Off Major #IV"
+    },
+    {
+      "name": "On Off Major bII",
+      "slug": "on-off-major-bii",
+      "sourceNames": [
+        "On Off Major bII"
+      ],
+      "representativeName": "On Off Major bII"
+    },
+    {
+      "name": "On Off Major bIII",
+      "slug": "on-off-major-biii",
+      "sourceNames": [
+        "On Off Major bIII"
+      ],
+      "representativeName": "On Off Major bIII"
+    },
+    {
+      "name": "On Off Major bVII",
+      "slug": "on-off-major-bvii",
+      "sourceNames": [
+        "On Off Major bVII"
+      ],
+      "representativeName": "On Off Major bVII"
+    },
+    {
+      "name": "On Off Major III",
+      "slug": "on-off-major-iii",
+      "sourceNames": [
+        "On Off Major III"
+      ],
+      "representativeName": "On Off Major III"
+    },
+    {
+      "name": "On Off Major IV",
+      "slug": "on-off-major-iv",
+      "sourceNames": [
+        "On Off Major IV"
+      ],
+      "representativeName": "On Off Major IV"
+    },
+    {
+      "name": "On Off Major Nowhere",
+      "slug": "on-off-major-nowhere",
+      "sourceNames": [
+        "On Off Major Nowhere"
+      ],
+      "representativeName": "On Off Major Nowhere"
+    },
+    {
+      "name": "On Off Major Somewhere",
+      "slug": "on-off-major-somewhere",
+      "sourceNames": [
+        "On Off Major Somewhere"
+      ],
+      "representativeName": "On Off Major Somewhere"
+    },
+    {
+      "name": "On Off Major V",
+      "slug": "on-off-major-v",
+      "sourceNames": [
+        "On Off Major V"
+      ],
+      "representativeName": "On Off Major V"
+    },
+    {
+      "name": "On Off Major VI",
+      "slug": "on-off-major-vi",
+      "sourceNames": [
+        "On Off Major VI"
+      ],
+      "representativeName": "On Off Major VI"
+    },
+    {
+      "name": "On Off Major VII",
+      "slug": "on-off-major-vii",
+      "sourceNames": [
+        "On Off Major VII"
+      ],
+      "representativeName": "On Off Major VII"
+    },
+    {
+      "name": "On Off Minor #IV",
+      "slug": "on-off-minor-iv",
+      "sourceNames": [
+        "On Off Minor #IV"
+      ],
+      "representativeName": "On Off Minor #IV"
+    },
+    {
+      "name": "On Off Minor bII",
+      "slug": "on-off-minor-bii",
+      "sourceNames": [
+        "On Off Minor bII"
+      ],
+      "representativeName": "On Off Minor bII"
+    },
+    {
+      "name": "On Off Minor bIII",
+      "slug": "on-off-minor-biii",
+      "sourceNames": [
+        "On Off Minor bIII"
+      ],
+      "representativeName": "On Off Minor bIII"
+    },
+    {
+      "name": "On Off Minor IV",
+      "slug": "on-off-minor-iv-jwgxd3",
+      "sourceNames": [
+        "On Off Minor IV"
+      ],
+      "representativeName": "On Off Minor IV"
+    },
+    {
+      "name": "On Off Minor Nowhere",
+      "slug": "on-off-minor-nowhere",
+      "sourceNames": [
+        "On Off Minor Nowhere"
+      ],
+      "representativeName": "On Off Minor Nowhere"
+    },
+    {
+      "name": "On Off Minor Somewhere",
+      "slug": "on-off-minor-somewhere",
+      "sourceNames": [
+        "On Off Minor Somewhere"
+      ],
+      "representativeName": "On Off Minor Somewhere"
+    },
+    {
+      "name": "On Off Minor V",
+      "slug": "on-off-minor-v",
+      "sourceNames": [
+        "On Off Minor V"
+      ],
+      "representativeName": "On Off Minor V"
+    },
+    {
+      "name": "On Off On +Dropback IV Major",
+      "slug": "on-off-on-plus-dropback-iv-major",
+      "sourceNames": [
+        "On Off On +Dropback IV Major"
+      ],
+      "representativeName": "On Off On +Dropback IV Major"
+    },
+    {
+      "name": "On Off On Minor V",
+      "slug": "on-off-on-minor-v",
+      "sourceNames": [
+        "On Off On Minor V"
+      ],
+      "representativeName": "On Off On Minor V"
+    },
+    {
+      "name": "On Off On To bVII",
+      "slug": "on-off-on-to-bvii",
+      "sourceNames": [
+        "On Off On To bVII"
+      ],
+      "representativeName": "On Off On To bVII"
+    },
+    {
+      "name": "On Off On To II",
+      "slug": "on-off-on-to-ii",
+      "sourceNames": [
+        "On Off On To II"
+      ],
+      "representativeName": "On Off On To II"
+    },
+    {
+      "name": "On Off On To IV Major",
+      "slug": "on-off-on-to-iv-major",
+      "sourceNames": [
+        "On Off On To IV Major"
+      ],
+      "representativeName": "On Off On To IV Major"
+    },
+    {
+      "name": "On Off On To V",
+      "slug": "on-off-on-to-v",
+      "sourceNames": [
+        "On Off On To V",
+        "On Off On To V+..."
+      ],
+      "representativeName": "On Off On To V"
+    },
+    {
+      "name": "On Off On Twice Minor V",
+      "slug": "on-off-on-twice-minor-v",
+      "sourceNames": [
+        "On Off On Twice Minor V"
+      ],
+      "representativeName": "On Off On Twice Minor V"
+    },
+    {
+      "name": "On Off Thrice On To bVII",
+      "slug": "on-off-thrice-on-to-bvii",
+      "sourceNames": [
+        "On Off Thrice On To bVII"
+      ],
+      "representativeName": "On Off Thrice On To bVII"
+    },
+    {
+      "name": "On Off Thrice On To II",
+      "slug": "on-off-thrice-on-to-ii",
+      "sourceNames": [
+        "On Off Thrice On To II"
+      ],
+      "representativeName": "On Off Thrice On To II"
+    },
+    {
+      "name": "On Off Thrice To IV",
+      "slug": "on-off-thrice-to-iv",
+      "sourceNames": [
+        "On Off Thrice To IV"
+      ],
+      "representativeName": "On Off Thrice To IV"
+    },
+    {
+      "name": "On Off To IV Twice Major then Minor",
+      "slug": "on-off-to-iv-twice-major-then-minor",
+      "sourceNames": [
+        "On Off To IV Twice Major then Minor"
+      ],
+      "representativeName": "On Off To IV Twice Major then Minor"
+    },
+    {
+      "name": "On Off Twice Minor V",
+      "slug": "on-off-twice-minor-v",
+      "sourceNames": [
+        "On Off Twice Minor V"
+      ],
+      "representativeName": "On Off Twice Minor V"
+    },
+    {
+      "name": "On Off Twice On To V",
+      "slug": "on-off-twice-on-to-v",
+      "sourceNames": [
+        "On Off Twice On To V"
+      ],
+      "representativeName": "On Off Twice On To V"
+    },
+    {
+      "name": "On Off Twice to bVII",
+      "slug": "on-off-twice-to-bvii",
+      "sourceNames": [
+        "On Off Twice to bVII"
+      ],
+      "representativeName": "On Off Twice to bVII"
+    },
+    {
+      "name": "On Off Twice To II",
+      "slug": "on-off-twice-to-ii",
+      "sourceNames": [
+        "On Off Twice To II"
+      ],
+      "representativeName": "On Off Twice To II"
+    },
+    {
+      "name": "On Off Twice To V",
+      "slug": "on-off-twice-to-v",
+      "sourceNames": [
+        "On Off Twice To V"
+      ],
+      "representativeName": "On Off Twice To V"
+    },
+    {
+      "name": "Pennies",
+      "slug": "pennies",
+      "sourceNames": [
+        "Pennies Approach",
+        "Pennies Launcher"
+      ],
+      "representativeName": "Pennies Approach"
+    },
+    {
+      "name": "Pennies Ending",
+      "slug": "pennies-ending",
+      "sourceNames": [
+        "Pennies Ending",
+        "Pennies Ending + Dropback",
+        "Pennies Ending +..."
+      ],
+      "representativeName": "Pennies Ending"
+    },
+    {
+      "name": "Pennies Turnaround",
+      "slug": "pennies-turnaround",
+      "sourceNames": [
+        "Pennies Turnaround"
+      ],
+      "representativeName": "Pennies Turnaround"
+    },
+    {
+      "name": "Perfect",
+      "slug": "perfect",
+      "sourceNames": [
+        "Perfect Cadence",
+        "Perfect Cadence +..."
+      ],
+      "representativeName": "Perfect Cadence"
+    },
+    {
+      "name": "POT",
+      "slug": "pot",
+      "sourceNames": [
+        "POT",
+        "POT+On"
+      ],
+      "representativeName": "POT"
+    },
+    {
+      "name": "POT Spring sub",
+      "slug": "pot-spring-sub",
+      "sourceNames": [
+        "POT Spring sub +..."
+      ],
+      "representativeName": "POT Spring sub +..."
+    },
+    {
+      "name": "Pullback",
+      "slug": "pullback",
+      "sourceNames": [
+        "Pullback"
+      ],
+      "representativeName": "Pullback"
+    },
+    {
+      "name": "Pullback Extended",
+      "slug": "pullback-extended",
+      "sourceNames": [
+        "Pullback Extended"
+      ],
+      "representativeName": "Pullback Extended"
+    },
+    {
+      "name": "Pullback to Cadence",
+      "slug": "pullback-to-cadence",
+      "sourceNames": [
+        "Pullback to Cadence",
+        "Pullback to Cadence + Dropback",
+        "Pullback to Cadence + Overrun",
+        "Pullback to Cadence +..."
+      ],
+      "representativeName": "Pullback to Cadence"
+    },
+    {
+      "name": "Rainbow",
+      "slug": "rainbow",
+      "sourceNames": [
+        "Rainbow Cadence",
+        "Rainbow Cadence + Dropback",
+        "Rainbow Cadence +..."
+      ],
+      "representativeName": "Rainbow Cadence"
+    },
+    {
+      "name": "Rainbow Overrun",
+      "slug": "rainbow-overrun",
+      "sourceNames": [
+        "Rainbow Overrun"
+      ],
+      "representativeName": "Rainbow Overrun"
+    },
+    {
+      "name": "Raindrop",
+      "slug": "raindrop",
+      "sourceNames": [
+        "Raindrop"
+      ],
+      "representativeName": "Raindrop"
+    },
+    {
+      "name": "Rainy",
+      "slug": "rainy",
+      "sourceNames": [
+        "Rainy Approach",
+        "Rainy Cadence",
+        "Rainy Cadence +...",
+        "Rainy Launcher"
+      ],
+      "representativeName": "Rainy Cadence"
+    },
+    {
+      "name": "Reverse Dominant Cycle",
+      "slug": "reverse-dominant-cycle",
+      "sourceNames": [
+        "Reverse Dominant Cycle"
+      ],
+      "representativeName": "Reverse Dominant Cycle"
+    },
+    {
+      "name": "Rhythm Turnaround",
+      "slug": "rhythm-turnaround",
+      "sourceNames": [
+        "Rhythm Turnaround"
+      ],
+      "representativeName": "Rhythm Turnaround"
+    },
+    {
+      "name": "Sad",
+      "slug": "sad",
+      "sourceNames": [
+        "Sad Approach",
+        "Sad Approach +...",
+        "Sad Cadence",
+        "Sad Cadence +...",
+        "Sad Cadence with Overrun",
+        "Sad Launcher"
+      ],
+      "representativeName": "Sad Cadence"
+    },
+    {
+      "name": "Sad SPOT",
+      "slug": "sad-spot",
+      "sourceNames": [
+        "Sad SPOT"
+      ],
+      "representativeName": "Sad SPOT"
+    },
+    {
+      "name": "Satin",
+      "slug": "satin",
+      "sourceNames": [
+        "Satin Cadence"
+      ],
+      "representativeName": "Satin Cadence"
+    },
+    {
+      "name": "Sharp Fourpenny Ending",
+      "slug": "sharp-fourpenny-ending",
+      "sourceNames": [
+        "Sharp Fourpenny Ending"
+      ],
+      "representativeName": "Sharp Fourpenny Ending"
+    },
+    {
+      "name": "Side Slips",
+      "slug": "side-slips",
+      "sourceNames": [
+        "Side Slips"
+      ],
+      "representativeName": "Side Slips"
+    },
+    {
+      "name": "Slow",
+      "slug": "slow",
+      "sourceNames": [
+        "Slow Approach",
+        "Slow Cadence",
+        "Slow Cadence + Dropback",
+        "Slow Launcher"
+      ],
+      "representativeName": "Slow Cadence"
+    },
+    {
+      "name": "Somewhere",
+      "slug": "somewhere",
+      "sourceNames": [
+        "Somewhere Approach"
+      ],
+      "representativeName": "Somewhere Approach"
+    },
+    {
+      "name": "Somewhere/Nowhere",
+      "slug": "somewhere-nowhere",
+      "sourceNames": [
+        "Somewhere/Nowhere Approach",
+        "Somewhere/Nowhere Launcher"
+      ],
+      "representativeName": "Somewhere/Nowhere Approach"
+    },
+    {
+      "name": "SPOT",
+      "slug": "spot",
+      "sourceNames": [
+        "SPOT",
+        "SPOT +..."
+      ],
+      "representativeName": "SPOT"
+    },
+    {
+      "name": "Spring",
+      "slug": "spring",
+      "sourceNames": [
+        "Spring Cadence"
+      ],
+      "representativeName": "Spring Cadence"
+    },
+    {
+      "name": "Stablemates",
+      "slug": "stablemates",
+      "sourceNames": [
+        "Stablemates Approach",
+        "Stablemates Cadence",
+        "Stablemates Launcher"
+      ],
+      "representativeName": "Stablemates Cadence"
+    },
+    {
+      "name": "Starlight",
+      "slug": "starlight",
+      "sourceNames": [
+        "Starlight Approach",
+        "Starlight Cadence",
+        "Starlight Cadence +...",
+        "Starlight Launcher"
+      ],
+      "representativeName": "Starlight Cadence"
+    },
+    {
+      "name": "Starlight Opening",
+      "slug": "starlight-opening",
+      "sourceNames": [
+        "Starlight Opening",
+        "Starlight Opening +..."
+      ],
+      "representativeName": "Starlight Opening"
+    },
+    {
+      "name": "Straight",
+      "slug": "straight",
+      "sourceNames": [
+        "Straigh...",
+        "Straight ...",
+        "Straight Approach",
+        "Straight Approach +...",
+        "Straight Cadence",
+        "Straight Cadence + Dominant Overrun",
+        "Straight Cadence + Dropback",
+        "Straight Cadence with Dropback",
+        "Straight Launcher",
+        "Straight..."
+      ],
+      "representativeName": "Straight Cadence"
+    },
+    {
+      "name": "Supertension Ending",
+      "slug": "supertension-ending",
+      "sourceNames": [
+        "Supertension Ending"
+      ],
+      "representativeName": "Supertension Ending"
+    },
+    {
+      "name": "Surge",
+      "slug": "surge",
+      "sourceNames": [
+        "Surge"
+      ],
+      "representativeName": "Surge"
+    },
+    {
+      "name": "Surprise Major",
+      "slug": "surprise-major",
+      "sourceNames": [
+        "Surprise Major Cadence"
+      ],
+      "representativeName": "Surprise Major Cadence"
+    },
+    {
+      "name": "Surprise Minor",
+      "slug": "surprise-minor",
+      "sourceNames": [
+        "Surprise Minor Cadence"
+      ],
+      "representativeName": "Surprise Minor Cadence"
+    },
+    {
+      "name": "Sus",
+      "slug": "sus",
+      "sourceNames": [
+        "Sus Approach",
+        "Sus Cadence"
+      ],
+      "representativeName": "Sus Cadence"
+    },
+    {
+      "name": "Tension",
+      "slug": "tension",
+      "sourceNames": [
+        "Tension Cadence",
+        "Tension Cadence +..."
+      ],
+      "representativeName": "Tension Cadence"
+    },
+    {
+      "name": "Tension Pullback",
+      "slug": "tension-pullback",
+      "sourceNames": [
+        "Tension Pullback"
+      ],
+      "representativeName": "Tension Pullback"
+    },
+    {
+      "name": "Tension SPOT",
+      "slug": "tension-spot",
+      "sourceNames": [
+        "Tension SPOT"
+      ],
+      "representativeName": "Tension SPOT"
+    },
+    {
+      "name": "Three Goes Nowhere",
+      "slug": "three-goes-nowhere",
+      "sourceNames": [
+        "Three Goes Nowhere Cadence"
+      ],
+      "representativeName": "Three Goes Nowhere Cadence"
+    },
+    {
+      "name": "Three Goes Pullback+Cadence",
+      "slug": "three-goes-pullback-plus-cadence",
+      "sourceNames": [
+        "Three Goes Pullback+Cadence"
+      ],
+      "representativeName": "Three Goes Pullback+Cadence"
+    },
+    {
+      "name": "Three Goes Straight",
+      "slug": "three-goes-straight",
+      "sourceNames": [
+        "Three Goes Straight Approach",
+        "Three Goes Straight Cadence"
+      ],
+      "representativeName": "Three Goes Straight Cadence"
+    },
+    {
+      "name": "To II n Back",
+      "slug": "to-ii-n-back",
+      "sourceNames": [
+        "To II n Back"
+      ],
+      "representativeName": "To II n Back"
+    },
+    {
+      "name": "To IV",
+      "slug": "to-iv",
+      "sourceNames": [
+        "To IV"
+      ],
+      "representativeName": "To IV"
+    },
+    {
+      "name": "To IV n Back",
+      "slug": "to-iv-n-back",
+      "sourceNames": [
+        "To IV n Back",
+        "To IV n Back +..."
+      ],
+      "representativeName": "To IV n Back"
+    },
+    {
+      "name": "To IV n Bird POT",
+      "slug": "to-iv-n-bird-pot",
+      "sourceNames": [
+        "To IV n Bird POT"
+      ],
+      "representativeName": "To IV n Bird POT"
+    },
+    {
+      "name": "To IV n Bird SPOT",
+      "slug": "to-iv-n-bird-spot",
+      "sourceNames": [
+        "To IV n Bird SPOT",
+        "To IV n Bird SPOT +..."
+      ],
+      "representativeName": "To IV n Bird SPOT"
+    },
+    {
+      "name": "To IV n Mack",
+      "slug": "to-iv-n-mack",
+      "sourceNames": [
+        "To IV n Mack +..."
+      ],
+      "representativeName": "To IV n Mack +..."
+    },
+    {
+      "name": "To IV n Yak",
+      "slug": "to-iv-n-yak",
+      "sourceNames": [
+        "To IV n Yak",
+        "To IV n Yak +..."
+      ],
+      "representativeName": "To IV n Yak"
+    },
+    {
+      "name": "To Somewhere",
+      "slug": "to-somewhere",
+      "sourceNames": [
+        "To Somewhere"
+      ],
+      "representativeName": "To Somewhere"
+    },
+    {
+      "name": "Tritone",
+      "slug": "tritone",
+      "sourceNames": [
+        "Tritone Approach",
+        "Tritone Cadence",
+        "Tritone Launcher"
+      ],
+      "representativeName": "Tritone Cadence"
+    },
+    {
+      "name": "TTFA Dropback",
+      "slug": "ttfa-dropback",
+      "sourceNames": [
+        "TTFA Dropback",
+        "TTFA Dropback +..."
+      ],
+      "representativeName": "TTFA Dropback"
+    },
+    {
+      "name": "Two Goes",
+      "slug": "two-goes",
+      "sourceNames": [
+        "Two Goes Approach",
+        "Two Goes Approach +..."
+      ],
+      "representativeName": "Two Goes Approach"
+    },
+    {
+      "name": "Two Goes Dominant",
+      "slug": "two-goes-dominant",
+      "sourceNames": [
+        "Two Goes Dominant Approach",
+        "Two Goes Dominant Approach +..."
+      ],
+      "representativeName": "Two Goes Dominant Approach"
+    },
+    {
+      "name": "Two Goes Nowhere",
+      "slug": "two-goes-nowhere",
+      "sourceNames": [
+        "Two Goes Nowhere Cadence + Overrun"
+      ],
+      "representativeName": "Two Goes Nowhere Cadence + Overrun"
+    },
+    {
+      "name": "Two Goes Pullback",
+      "slug": "two-goes-pullback",
+      "sourceNames": [
+        "Two Goes Pullback"
+      ],
+      "representativeName": "Two Goes Pullback"
+    },
+    {
+      "name": "Two Goes Pullback Extended",
+      "slug": "two-goes-pullback-extended",
+      "sourceNames": [
+        "Two Goes Pullback Extended"
+      ],
+      "representativeName": "Two Goes Pullback Extended"
+    },
+    {
+      "name": "Two Goes Rainy",
+      "slug": "two-goes-rainy",
+      "sourceNames": [
+        "Two Goes Rainy Launcher"
+      ],
+      "representativeName": "Two Goes Rainy Launcher"
+    },
+    {
+      "name": "Two Goes Sad",
+      "slug": "two-goes-sad",
+      "sourceNames": [
+        "Two Goes Sad Approach",
+        "Two Goes Sad Approach +..."
+      ],
+      "representativeName": "Two Goes Sad Approach"
+    },
+    {
+      "name": "Two Goes Somewhere",
+      "slug": "two-goes-somewhere",
+      "sourceNames": [
+        "Two Goes Somewhere Cadence"
+      ],
+      "representativeName": "Two Goes Somewhere Cadence"
+    },
+    {
+      "name": "Two Goes Starlight",
+      "slug": "two-goes-starlight",
+      "sourceNames": [
+        "Two Goes Starlight Launcher"
+      ],
+      "representativeName": "Two Goes Starlight Launcher"
+    },
+    {
+      "name": "Two Goes Straight",
+      "slug": "two-goes-straight",
+      "sourceNames": [
+        "Two Goes Straight Approach",
+        "Two Goes Straight Cadence",
+        "Two Goes Straight Cadence + Overrun",
+        "Two Goes Straight Cadence with Overrun",
+        "Two Goes Straight Launcher"
+      ],
+      "representativeName": "Two Goes Straight Cadence"
+    },
+    {
+      "name": "Two Goes Tritone Straight",
+      "slug": "two-goes-tritone-straight",
+      "sourceNames": [
+        "Two Goes Tritone Straight Approach"
+      ],
+      "representativeName": "Two Goes Tritone Straight Approach"
+    },
+    {
+      "name": "Twopenny Ending",
+      "slug": "twopenny-ending",
+      "sourceNames": [
+        "Twopenny Ending",
+        "Twopenny Ending +..."
+      ],
+      "representativeName": "Twopenny Ending"
+    },
+    {
+      "name": "Whoopee Turnaround",
+      "slug": "whoopee-turnaround",
+      "sourceNames": [
+        "Whoopee Turnaround"
+      ],
+      "representativeName": "Whoopee Turnaround"
+    },
+    {
+      "name": "Wonderful Opening",
+      "slug": "wonderful-opening",
+      "sourceNames": [
+        "Wonderful Opening"
+      ],
+      "representativeName": "Wonderful Opening"
+    },
+    {
+      "name": "Yardbir...",
+      "slug": "yardbir-clipped",
+      "sourceNames": [
+        "Yardbir..."
+      ],
+      "representativeName": "Yardbir..."
+    },
+    {
+      "name": "Yardbird",
+      "slug": "yardbird",
+      "sourceNames": [
+        "Yardbird Approach",
+        "Yardbird Cadence",
+        "Yardbird Cadence + Dropback",
+        "Yardbird Launcher"
+      ],
+      "representativeName": "Yardbird Cadence"
+    },
+    {
+      "name": "Yardbird ...",
+      "slug": "yardbird-clipped",
+      "sourceNames": [
+        "Yardbird ..."
+      ],
+      "representativeName": "Yardbird ..."
+    },
+    {
+      "name": "Yardbird Sub",
+      "slug": "yardbird-sub",
+      "sourceNames": [
+        "Yardbird Sub Cadence",
+        "Yardbird Sub Cadence + Dropback",
+        "Yardbird Sub Cadence + Overrun",
+        "Yardbird Sub Cadence +..."
+      ],
+      "representativeName": "Yardbird Sub Cadence"
+    },
+    {
+      "name": "Yardbird Sub Turnaround",
+      "slug": "yardbird-sub-turnaround",
+      "sourceNames": [
+        "Yardbird Sub Turnaround"
+      ],
+      "representativeName": "Yardbird Sub Turnaround"
+    }
+  ]
+}
