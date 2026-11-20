@@ -33,6 +33,23 @@ test('Rawl playback, brick pages, deep links and existing chart views work toget
  assert.equal(w.document.querySelectorAll('.rawln-playhead').length,0);
  assert.deepEqual([...w.document.querySelectorAll('#rawl-view .rawln-row')].map(el=>[el.dataset.section,el.style.gridRow,el.style.gridColumn]),[['A','1','1 / span 8'],['A','2','1 / span 8'],['B','2','9 / span 8'],['A','3','1 / span 8']]);
  assert.ok($('#songs .catalog-family'));assert.equal($('#songs .number'),null);assert.ok($('.aaba-grouping'));assert.ok($('.catalog-subgroup'));assert.equal($('#song-heading').closest('.standard-heading').parentElement.id,'song-view');assert.ok($('#reader-tools').closest('footer'));assert.equal($('#reader-tools').querySelector('#transport')!==null,true);
+ const setSearch=value=>{
+  $('#search').value=value;
+  $('#search').dispatchEvent(new w.Event('input'));
+  return [...w.document.querySelectorAll('#songs .song-link')];
+ };
+ const bodyResults=setSearch('bOdY');
+ assert.equal(bodyResults[0].textContent,'Body and Soul');
+ assert.equal(bodyResults[0].querySelector('mark').textContent,'Body');
+ assert.ok(bodyResults.some(link=>link.closest('.catalog-family')&&!link.querySelector('mark')));
+ assert.equal(Number($('#count').textContent),bodyResults.length);
+ const spacedResults=setSearch('  body   SOUL  ');
+ assert.deepEqual(spacedResults.map(link=>link.textContent),['Body and Soul']);
+ assert.deepEqual([...spacedResults[0].querySelectorAll('mark')].map(mark=>mark.textContent),['Body','Soul']);
+ assert.equal(setSearch('Body and Soul')[0].querySelector('mark').textContent,'Body and Soul');
+ assert.equal(setSearch('   ').length, read('data/standards.json').songs.filter(song=>Number.isInteger(song.page)&&song.image).length);
+ assert.ok($('#songs .catalog-family'));
+
 
  for(const el of w.document.querySelectorAll('#rawl-view [data-note]')){const n=byId.get(el.dataset.note),mid=n.start+n.duration/2;let tonic=0;for(const change of performance.changes)if(change.beat<mid)tonic=change.tonic;assert.equal(Number(el.dataset.degree),(n.pitch-tonic+120)%12);}
  assert.ok($('#rawl-view .rawln-tonic-line[data-tonic="0"]'));

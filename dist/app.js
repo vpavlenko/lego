@@ -1,6 +1,7 @@
 import {brickNameHTML} from './brick-labels.js';
 import {mergePDFMelody,shiftedChanges} from './pdf-melody.js';
 import {groupAABA} from './aaba-groups.js';
+import {findTitleMatch,highlightTitle,normalizeSearch} from './title-search.js';
 import {transposeRoot,transposeChord,prettyRoot,chordParts,chordDisplay,roman,pitch,mod} from './harmony.mjs';
 import {RAWL_COLORS,colorIndex} from './rawl-colors.mjs';
 import {songModulations,modulationAt,recolorModulation,recolorBoundary} from './modulations.js';
@@ -45,12 +46,31 @@ const player=createPlayer({defaultTempo:DEFAULT_TEMPO,onState:state=>{
  if(player.state==='playing'&&performance&&beat!==null){const el=displayedRowAt(beat);if(el&&el!==lastPlaybackRow){lastPlaybackRow=el;const box=el.getBoundingClientRect();if(box.bottom>innerHeight||box.top<70)el.scrollIntoView({block:'nearest',behavior:'smooth'});}}
 },onError:error=>{console.error(error);$('#playback-error').hidden=false;}});
 function catalog(){
- const q=$('#search').value.toLocaleLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,''),isBricks=routeKind!=='song';
- const list=(isBricks?bricks:standards).filter(item=>(isBricks?[item.name,...item.aliases].join(' '):item.title+' '+item.bricks.flatMap(name=>[name,brickMap.get(name)?.name??name]).join(' ')).toLocaleLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').includes(q));
- $('#catalog-label').textContent=isBricks?'BRICKS':'SONGS';$('#songs').setAttribute('aria-label',isBricks?'Bricks':'Songs');$('#count').textContent=list.length;
- const link=item=>isBricks?`<a class="song-link${currentBrick?.slug===item.slug?' active':''}" href="#brick/${item.slug}"><span class="number">${item.standardCount??item.standards.length}</span><span>${brickNameHTML(item.name,item)}</span></a>`:`<a class="song-link${melodyClass(preferredArrangement(item.index))}${item.index===canonicalIndex(current)?' active':''}" data-standard="${item.index}" href="#${pad(preferredArrangement(item.index))}" ${item.index===canonicalIndex(current)?'aria-current="page"':''}><span>${esc(item.title)}</span></a>`;
+ const q=normalizeSearch($('#search').value).trim().replace(/\s+/g,' '),isBricks=routeKind!=='song';
+ const titleMatches=new Map();
+ const terms=q.split(' ');
+ let list;
+ if(isBricks){
+  list=bricks.filter(item=>normalizeSearch([item.name,...item.aliases].join(' ')).includes(q));
+ }else if(q){
+  list=standards.filter(song=>{
+   const match=findTitleMatch(song.title,q,terms);
+   if(match){
+    titleMatches.set(song,match);
+    return false;
+   }
+   const brickNames=song.bricks.flatMap(name=>[name,brickMap.get(name)?.name??name]);
+   return normalizeSearch([song.title,...brickNames].join(' ')).includes(q);
+  });
+ }else{
+  list=standards;
+ }
+ const ranked=[...titleMatches.keys()].sort((a,b)=>titleMatches.get(a).rank-titleMatches.get(b).rank);
+ $('#catalog-label').textContent=isBricks?'BRICKS':'SONGS';$('#songs').setAttribute('aria-label',isBricks?'Bricks':'Songs');$('#count').textContent=ranked.length+list.length;
+ const link=item=>isBricks?`<a class="song-link${currentBrick?.slug===item.slug?' active':''}" href="#brick/${item.slug}"><span class="number">${item.standardCount??item.standards.length}</span><span>${brickNameHTML(item.name,item)}</span></a>`:`<a class="song-link${melodyClass(preferredArrangement(item.index))}${item.index===canonicalIndex(current)?' active':''}" data-standard="${item.index}" href="#${pad(preferredArrangement(item.index))}" ${item.index===canonicalIndex(current)?'aria-current="page"':''}><span>${highlightTitle(item.title,titleMatches.get(item),esc)}</span></a>`;
  const grouped=isBricks?brickGroups.map(group=>{const members=group.slugs.map(slug=>list.find(brick=>brick.slug===slug)).filter(Boolean);return members.length?`<section class="catalog-family brick-type"><h2>${brickNameHTML(group.type)} <span>${members.length}</span></h2>${members.map(link).join('')}</section>`:'';}).join(''):familyOrder.map(family=>{const members=list.filter(song=>forms[song.index].family===family);if(!members.length)return '';if(family!=='AABA')return `<section class="catalog-family"><h2>${esc(family)} <span>${members.length}</span></h2>${members.map(link).join('')}</section>`;const allowed=new Set(members.map(song=>song.index)),groups=groupAABA(standards,forms,brickMap,aabaGrouping).map(group=>({...group,songs:group.songs.filter(song=>allowed.has(song.index))})).filter(group=>group.songs.length);return `<section class="catalog-family aaba-family"><h2>AABA <span>${members.length}</span><select class="aaba-grouping" aria-label="AABA grouping"><option value="b-key" ${aabaGrouping==='b-key'?'selected':''}>B key</option><option value="a-brick" ${aabaGrouping==='a-brick'?'selected':''}>A brick</option></select></h2>${groups.map(group=>`<section class="catalog-subgroup"><h3 ${Number.isFinite(group.degree)?`style="color:${RAWL_COLORS[group.degree].background}"`:''}><span class="subgroup-name">${brickNameHTML(group.label,aabaGrouping==='a-brick'?brickMap.get(group.label):undefined)}</span><span class="subgroup-count">${group.songs.length}</span></h3>${group.songs.map(link).join('')}</section>`).join('')}</section>`;}).join('');
- $('#songs').innerHTML=grouped||'<div class="empty">No matches</div>';
+ const titleResults=ranked.length?`<div class="title-matches">${ranked.map(link).join('')}</div>`:'';
+ $('#songs').innerHTML=(titleResults+grouped)||'<div class="empty">No matches</div>';
  $('#songs-nav').href='#'+pad(current);$('#songs-nav').setAttribute('aria-current',isBricks?'false':'page');$('#bricks-nav').setAttribute('aria-current',isBricks?'page':'false');
 }
 function at(c,scale,prefix=0){return `left:${(c.start+prefix)/(scale+prefix)*100}%;width:${Math.max(0,c.end-c.start)/(scale+prefix)*100}%`;}
@@ -146,7 +166,7 @@ async function openBrick(slug,params=new URLSearchParams()){
 export function route(initial=false,navigate=url=>location.replace(url)){const [path,query='']=location.hash.slice(1).split('?');if(path==='bricks')return navigate('./bricks.html');if(path.startsWith('brick/'))return openBrick(path.slice(6),new URLSearchParams(query));const requested=path===''?0:Number(path),index=Number.isInteger(requested)&&requested>=0&&requested<songs.length?requested:0,visible=preferredArrangement(index);if(index!==visible)history.replaceState(null,'','#'+pad(visible));void openSong(visible,new URLSearchParams(index===visible?query:''),initial);}
 $('#arrangement').onchange=e=>location.hash=pad(Number(e.target.value));
 $('#songs').addEventListener('change',event=>{if(event.target.matches('.aaba-grouping')){aabaGrouping=event.target.value;localStorage.setItem('insights-aaba-grouping',aabaGrouping);catalog();}});
-$('#search').addEventListener('input',catalog);
+$('#search').addEventListener('input',()=>{catalog();$('#songs').scrollTop=0;});
 
 $('#digital').onclick=()=>setView('analysis');$('#notation-view').onclick=()=>setView('rawl');$('#original').onclick=()=>setView('source');
 $('#melody-voice').onclick=()=>{melodyVisible=!melodyVisible;localStorage.setItem('insights-melody',melodyVisible?'visible':'hidden');melodyControls();if(view==='rawl')ensureRawl();};

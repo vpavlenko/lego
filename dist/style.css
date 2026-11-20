@@ -129,6 +129,12 @@ body.song-route .reader-chrome{height:32px}body.song-route main{padding-top:46px
 
 .song-link.no-melody,.standard-title.no-melody{color:#555}
 .song-link.no-melody:hover,.standard-title.no-melody:hover,.song-link.no-melody.active{color:#888}
+.title-matches+.catalog-family{margin-top:8px}
+.song-link mark{color:var(--bg);background:var(--fg)}
+.song-link[data-standard].active{color:var(--bg);background:var(--fg)}
+.song-link[data-standard].active mark{color:var(--fg);background:var(--bg)}
+.song-link:focus-visible{outline-offset:-2px}
+.song-link[data-standard].active:focus-visible{outline-color:var(--bg)}
 
 .brick-cork{color:#888;font-size:13px;margin:0 0 8px}.brick-cork>span{color:#555;margin-right:8px}
 
