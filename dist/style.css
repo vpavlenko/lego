@@ -120,6 +120,8 @@ body.song-route .reader-chrome{height:32px}body.song-route main{padding-top:46px
 .rawln-form>.rawln-row:before,.form-score>.score-row:before{left:calc(var(--pickup-label-offset,0%) - 22px);width:16px;height:16px;box-sizing:border-box;border:1px solid #555;display:flex;align-items:center;justify-content:center;font:11px/1 var(--mono);color:#999}
 
 .harmony-symbol sup{color:inherit}.chord-slash{color:#888}.chord-bass{font-size:inherit}
+.harmony-stripe .harmony-rns .harmony-cell,
+.harmony-rns .rawln-roman{font-family:system-ui,sans-serif}
 #rawl-view{padding-left:24px;margin-left:-24px}#score-scroll{padding-left:24px;margin-left:-24px}
 
 #arrangement{max-width:160px}
