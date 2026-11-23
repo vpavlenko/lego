@@ -42,7 +42,7 @@ function setup({defaultTempo}={}){
  const player=createPlayer({defaultTempo,onPosition:b=>positions.push(b)});player.load(data);return{player,engine,events,positions,setTime(r,o=r-.1){render=r;output=o;wall+=20;},tick(){pump?.();frame?.();}};
 }
 const settle=async()=>{await Promise.resolve();await Promise.resolve();};
-test('the website160BPM default leaves source tempo intact and live tempo edits retain sounding notes',async()=>{
+test('an explicit tempo override leaves source tempo intact and live tempo edits retain sounding notes',async()=>{
  const before=JSON.stringify(data),s=setup({defaultTempo:DEFAULT_TEMPO});
  assert.equal(s.player.tempo,160);assert.equal(s.player.data.tempo,160);assert.equal(data.tempo,120);assert.equal(JSON.stringify(data),before);
  await s.player.play();const start=s.events.find(event=>event.type==='on').time;s.setTime(start+.2,start+.1);s.tick();

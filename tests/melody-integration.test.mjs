@@ -51,7 +51,20 @@ test('all imported source arrangements and verified original matches export sepa
  const originalWithoutMelody=parseMidi(fs.readFileSync(new URL('midi/000.mid',root)));assert.equal(originalWithoutMelody.tracks.length,2);assert.ok(!originalWithoutMelody.tracks.flat().some(event=>event.type==='programChange'&&event.programNumber===65));
 });
 
-test('persisted melody toggle, PDF-only navigation and default160 tempo retain actual corpus melody playback',async()=>{
+test('every visible chart has a tempo record tied to its catalog identity and source',()=>{
+ const {tempos,version}=read('data/standard-tempos.json');
+ const songs=read('data/standards.json').songs.filter(song=>Number.isInteger(song.page)&&song.image);
+ assert.equal(version,1);
+ assert.deepEqual(Object.keys(tempos),songs.map(song=>String(song.index)));
+ for(const song of songs){
+  const {title,bpm,source}=tempos[song.index];
+  assert.equal(title,song.title);
+  assert.ok(Number.isInteger(bpm)&&bpm>=40&&bpm<=260,song.title);
+  assert.match(source.url,/^https:\/\//,song.title);
+ }
+});
+
+test('PDF-only navigation loads each chart’s sourced tempo and retains actual corpus melody playback',async()=>{
  const dom=new JSDOM(fs.readFileSync(new URL('index.html',root),'utf8'),{url:'http://localhost:5187/#073',pretendToBeVisual:true}),w=dom.window;
  Object.assign(globalThis,{window:w,document:w.document,location:w.location,localStorage:w.localStorage,history:w.history,innerWidth:1280,innerHeight:900,requestAnimationFrame:w.requestAnimationFrame.bind(w),cancelAnimationFrame:w.cancelAnimationFrame.bind(w)});
  Object.defineProperty(globalThis,'navigator',{value:w.navigator,configurable:true});globalThis.matchMedia=()=>({matches:false,addEventListener(){},removeEventListener(){}});
@@ -65,6 +78,8 @@ test('persisted melody toggle, PDF-only navigation and default160 tempo retain a
  try{
   await import('../dist/app.js?melody-integration');
   await wait(()=>!$('#play').disabled&&!$('#melody-voice').hidden&&$('#rawl-view [data-note]'));
+  const {tempos}=read('data/standard-tempos.json');
+  assert.equal(Number($('#tempo').value),tempos[73].bpm);
   assert.equal($('#title').textContent,'The Girl from Ipanema');assert.equal($('#melody-voice').getAttribute('aria-pressed'),'false');assert.equal(all('#rawl-view [data-voice="1"]').length,0);
   $('#play').click();await wait(()=>$('#play').textContent==='Pause');assert.equal(plays.at(-1).levels[1],0);assert.ok(plays.at(-1).plan.notes.some(note=>note.voice===1));$('#stop').click();
   $('#melody-voice').click();await wait(()=>$('#rawl-view [data-voice="1"]'));assert.equal(w.localStorage.getItem('insights-melody'),'visible');assert.equal($('#melody-voice').getAttribute('aria-pressed'),'true');
@@ -80,16 +95,30 @@ test('persisted melody toggle, PDF-only navigation and default160 tempo retain a
   const manifest=read('data/standards.json'),pdfSongs=manifest.songs.filter(song=>Number.isInteger(song.page)&&song.image);
   assert.equal(pdfSongs.length,242);assert.equal($('#count').textContent,'242');
   for(const link of all('#songs a.song-link')){const index=Number(link.getAttribute('href').slice(1));assert.ok(pdfSongs.some(song=>song.index===index),link.textContent);assert.equal(Number(link.dataset.standard),index);}
-  assert.equal($('#arrangement').hidden,true);assert.equal($('#arrangement').options.length,1);assert.equal($('#tempo').value,'160');
+  assert.equal($('#arrangement').hidden,true);assert.equal($('#arrangement').options.length,1);assert.equal(Number($('#tempo').value),tempos[73].bpm);
   w.location.hash='#468?brick=straight&beat=4';await wait(()=>$('#title').textContent==='Lady Be Good'&&!$('#play').disabled&&$('#rawl-view .rawln-annotation'));
   assert.equal(w.location.hash,'#116');assert.equal($('#arrangement').hidden,true);assert.equal($('#arrangement').options.length,1);assert.equal($('#arrangement').value,'116');assert.equal($('#pdf-link').hidden,false);assert.equal($('#melody-voice').hidden,true);assert.ok($('#songs a[data-standard="116"]').classList.contains('no-melody'));
   w.location.hash='#487';await wait(()=>$('#title').textContent==='A Night in Tunisia'&&!$('#play').disabled);assert.equal(w.location.hash,'#153');assert.equal($('#pdf-link').hidden,false);
   const withoutPDF=manifest.songs.find(song=>!song.image&&!Number.isInteger(song.arrangementOf));assert.ok(withoutPDF);
-  w.location.hash='#'+pad(withoutPDF.index);await wait(()=>$('#arrangement').value==='0'&&!$('#play').disabled&&$('#rawl-view [data-note][data-voice="1"]'));assert.equal(w.location.hash,'#000');assert.equal($('#pdf-link').hidden,false);assert.equal($('#tempo').value,'160');
+  w.location.hash='#'+pad(withoutPDF.index);await wait(()=>$('#arrangement').value==='0'&&!$('#play').disabled&&$('#rawl-view [data-note][data-voice="1"]'));assert.equal(w.location.hash,'#000');assert.equal($('#pdf-link').hidden,false);assert.equal(Number($('#tempo').value),tempos[0].bpm);
   w.location.hash='#028';await wait(()=>$('#title').textContent==='Body and Soul'&&!$('#play').disabled&&$('#rawl-view [data-note][data-voice="1"]'));
   assert.equal($('#arrangement').hidden,true);assert.equal($('#pdf-link').hidden,false);assert.equal($('#melody-voice').hidden,false);assert.equal($('#midi-download').getAttribute('href'),'./midi/pdf-melodies/028.mid');assert.ok($('#rawl-view .rawln-annotation'));
-  const body=displayed(28);$('#header-play').click();await wait(()=>$('#play').textContent==='Pause');assert.equal(plays.at(-1).plan.timeAt(1),.375);assert.deepEqual(plays.at(-1).plan.notes.map(n=>[n.voice,n.pitch,n.start,n.duration]),performedNotes(body).map(n=>[n.voice,n.pitch,n.start,n.duration]));$('#stop').click();
-  const playCount=plays.length;w.document.dispatchEvent(new w.KeyboardEvent('keydown',{key:'=',bubbles:true,cancelable:true}));assert.equal($('#tempo').value,'176');assert.equal(plays.length,playCount);w.document.dispatchEvent(new w.KeyboardEvent('keydown',{key:'-',bubbles:true,cancelable:true}));assert.equal($('#tempo').value,'160');
+  const body=displayed(28),bodyTempo=tempos[28].bpm;
+  assert.equal(Number($('#tempo').value),bodyTempo);
+  let downloaded;
+  const createObjectURL=URL.createObjectURL,clickAnchor=w.HTMLAnchorElement.prototype.click;
+  try{
+   URL.createObjectURL=blob=>{downloaded=blob;return createObjectURL(blob);};
+   w.HTMLAnchorElement.prototype.click=()=>{};
+   $('#midi-download').dispatchEvent(new w.MouseEvent('click',{cancelable:true}));
+  }finally{
+   URL.createObjectURL=createObjectURL;
+   w.HTMLAnchorElement.prototype.click=clickAnchor;
+  }
+  const midi=parseMidi(new Uint8Array(await downloaded.arrayBuffer()));
+  assert.equal(midi.tracks[0].find(event=>event.type==='setTempo').microsecondsPerBeat,Math.round(60000000/bodyTempo));
+  $('#header-play').click();await wait(()=>$('#play').textContent==='Pause');assert.equal(plays.at(-1).plan.timeAt(1),60/bodyTempo);assert.deepEqual(plays.at(-1).plan.notes.map(n=>[n.voice,n.pitch,n.start,n.duration]),performedNotes(body).map(n=>[n.voice,n.pitch,n.start,n.duration]));$('#stop').click();
+  const playCount=plays.length;w.document.dispatchEvent(new w.KeyboardEvent('keydown',{key:'=',bubbles:true,cancelable:true}));assert.equal(Number($('#tempo').value),bodyTempo+16);assert.equal(plays.length,playCount);w.document.dispatchEvent(new w.KeyboardEvent('keydown',{key:'-',bubbles:true,cancelable:true}));assert.equal(Number($('#tempo').value),bodyTempo);
   for(const link of all('#songs a.song-link:not(.no-melody)')){const index=Number(link.getAttribute('href').slice(1)),p=displayed(index);assert.ok(p.notes.some(n=>n.voice===1),link.textContent);}
   $('#original').click();assert.equal($('#source-view').hidden,false);assert.equal($('#source-image').hidden,false);assert.equal($('#source-encoded').hidden,true);assert.match($('#source-page').textContent,/PDF/);
   $('#notation-view').click();w.location.hash='';await wait(()=>$('#arrangement').value==='0'&&!$('#play').disabled&&$('#rawl-view [data-note][data-voice="1"]'));assert.equal($('#pdf-link').hidden,false);assert.equal($('#arrangement').hidden,true);
