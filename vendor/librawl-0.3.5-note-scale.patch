@@ -1,0 +1,46 @@
+diff --git a/src/notation/RawlNotation.jsx b/src/notation/RawlNotation.jsx
+index 05760b3..07ea177 100644
+--- a/src/notation/RawlNotation.jsx
++++ b/src/notation/RawlNotation.jsx
+@@ -2 +2 @@ import React,{forwardRef,useImperativeHandle,useLayoutEffect,useMemo,useRef,useS
+-import {pitchRange,staveGeometry,tonalSegments,tonalLines,tonicAt,mod,NOTE_HEIGHT,TONIC_NAMES,measureHeaderLayout} from './geometry.mjs';
++import {pitchRange,staveGeometry,tonalSegments,tonalLines,tonicAt,mod,TONIC_NAMES,measureHeaderLayout} from './geometry.mjs';
+@@ -65 +65 @@ function BeatNoteLayer({visible,row,axis,tonic,changes,mutedVoices,hoveredKey,se
+- return <div ref={host} style={{display:'contents'}}><PlaybackSectionContext.Provider value={section}><NoteLayer notes={nativeNotes} midiNumberToY={pitch=>axis.pitchToY(pitch)+NOTE_HEIGHT/2} noteHeight={NOTE_HEIGHT/2} secondsToX={beat=>(beat-row.start)/span*pixelWidth} handleNoteClick={note=>onNote?.(sourceById.get(note.id))} handleMouseEnter={hover} handleMouseLeave={leave} onNoteAudition={onNoteAudition?note=>onNoteAudition(sourceById.get(note.id)):undefined} auditionEnabled={auditionEnabled} getNoteAttributes={note=>{
++ return <div ref={host} style={{display:'contents'}}><PlaybackSectionContext.Provider value={section}><NoteLayer notes={nativeNotes} midiNumberToY={pitch=>axis.pitchToY(pitch)+axis.glyphHeight/2} noteHeight={axis.glyphHeight/2} secondsToX={beat=>(beat-row.start)/span*pixelWidth} handleNoteClick={note=>onNote?.(sourceById.get(note.id))} handleMouseEnter={hover} handleMouseLeave={leave} onNoteAudition={onNoteAudition?note=>onNoteAudition(sourceById.get(note.id)):undefined} auditionEnabled={auditionEnabled} getNoteAttributes={note=>{
+@@ -72 +72 @@ function BeatNoteLayer({visible,row,axis,tonic,changes,mutedVoices,hoveredKey,se
+-export const RawlNotation=forwardRef(function RawlNotation({notes,beats,rows,tonic=0,changes=EMPTY_CHANGES,barBeats=4,beatBeats=1,phraseStarts,measureMap,hideInitialTonic=false,position=null,mutedVoices=[],onSeek,onNote,onNoteAudition,onNoteHover,onMeasureSelect,selectedMeasure=null,onChangesChange,recolorable=true,renderHeader,renderFooter,className='',style},ref){
++export const RawlNotation=forwardRef(function RawlNotation({notes,beats,rows,tonic=0,changes=EMPTY_CHANGES,barBeats=4,beatBeats=1,phraseStarts,measureMap,hideInitialTonic=false,noteScale=1,position=null,mutedVoices=[],onSeek,onNote,onNoteAudition,onNoteHover,onMeasureSelect,selectedMeasure=null,onChangesChange,recolorable=true,renderHeader,renderFooter,className='',style},ref){
+@@ -79 +79 @@ export const RawlNotation=forwardRef(function RawlNotation({notes,beats,rows,ton
+-  const visible=notes.filter(n=>n.start<row.end-1e-6&&n.start+n.duration>row.start+1e-6),range=pitchRange(visible),axis=staveGeometry(range);
++  const visible=notes.filter(n=>n.start<row.end-1e-6&&n.start+n.duration>row.start+1e-6),range=pitchRange(visible),axis=staveGeometry(range,{noteScale});
+@@ -81 +81 @@ export const RawlNotation=forwardRef(function RawlNotation({notes,beats,rows,ton
+- }),[notes,rows,beats,tonic,changes]);
++ }),[notes,rows,beats,tonic,changes,noteScale]);
+diff --git a/src/notation/geometry.mjs b/src/notation/geometry.mjs
+index 2f98c19..894b2ac 100644
+--- a/src/notation/geometry.mjs
++++ b/src/notation/geometry.mjs
+@@ -8,4 +8,5 @@ export function pitchRange(notes,span=null,fallback={low:48,high:84}){
+-export function staveGeometry(range,{above=0,transpose=0}={}){
+- const low=range.low+transpose,high=range.high+transpose,noteTop=TOP_CLEARANCE+above;
+- const noteHeight=(high-low)*PITCH_STEP+TOP_CLEARANCE+NOTE_HEIGHT+BOTTOM_CLEARANCE;
+- return {low,high,noteTop,noteHeight,notesBottom:noteHeight+above,guideTop:Math.max(0,noteTop-16),markerTop:noteTop-14,pitchToY:pitch=>noteTop+(high-pitch)*PITCH_STEP};
++export function staveGeometry(range,{above=0,transpose=0,noteScale=1}={}){
++ const scale=Number.isFinite(noteScale)&&noteScale>0?noteScale:1,pitchStep=PITCH_STEP*scale,glyphHeight=NOTE_HEIGHT*scale;
++ const low=range.low+transpose,high=range.high+transpose,noteTop=TOP_CLEARANCE+above+Math.max(0,glyphHeight-NOTE_HEIGHT);
++ const notesBottom=noteTop+(high-low)*pitchStep+glyphHeight+BOTTOM_CLEARANCE,noteHeight=notesBottom-above;
++ return {low,high,noteTop,noteHeight,notesBottom,pitchStep,glyphHeight,guideTop:Math.max(0,noteTop-16),markerTop:noteTop-14,pitchToY:pitch=>noteTop+(high-pitch)*pitchStep};
+@@ -72 +73 @@ export function tonalLines(range,axis,tonic){
+- const result=[];const rawlY=p=>axis.pitchToY(p)+PITCH_STEP;
++ const result=[];const rawlY=p=>axis.pitchToY(p)+axis.pitchStep;
+diff --git a/src/notation/index.d.ts b/src/notation/index.d.ts
+index f89f847..b7f9a70 100644
+--- a/src/notation/index.d.ts
++++ b/src/notation/index.d.ts
+@@ -9 +9 @@ export interface RawlNotationProps {
+- barBeats?:number; beatBeats?:number; phraseStarts?:number[]; measureMap?:SourceMeasure[]; hideInitialTonic?:boolean; position?:number|null; mutedVoices?:number[]; className?:string; style?:React.CSSProperties;
++ barBeats?:number; beatBeats?:number; phraseStarts?:number[]; measureMap?:SourceMeasure[]; hideInitialTonic?:boolean; noteScale?:number; position?:number|null; mutedVoices?:number[]; className?:string; style?:React.CSSProperties;
+@@ -23 +23 @@ export function pitchRange(notes:MidiNote[],span?:ScoreRow|null,fallback?:{low:n
+-export function staveGeometry(range:{low:number;high:number},options?:{above?:number;transpose?:number}):{low:number;high:number;noteTop:number;noteHeight:number;notesBottom:number;guideTop:number;markerTop:number;pitchToY:(pitch:number)=>number};
++export function staveGeometry(range:{low:number;high:number},options?:{above?:number;transpose?:number;noteScale?:number}):{low:number;high:number;noteTop:number;noteHeight:number;notesBottom:number;pitchStep:number;glyphHeight:number;guideTop:number;markerTop:number;pitchToY:(pitch:number)=>number};

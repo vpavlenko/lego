@@ -41,12 +41,13 @@ The existing Sites identity is retained in `.openai/hosting.json`.
   latency. Seek, tempo changes, voice muting and route changes cancel stale work.
 
 The controlled React notation component and SoundFont engine now come from
-`librawl`, pinned as `vendor/librawl-0.2.0.tgz` with lockfile integrity. React and
-ReactDOM are both 19.3.1. `packages/rawl-notation/` contains compatibility
-re-exports and generated CSS; no separate renderer or geometry implementation
-remains there. `src/audio-player.mjs` injects Lego's existing playback plan and
-callbacks into the library transport. The build copies the library's exact CSS,
-palette, Sax browser profile, GPL license, source notice and provenance manifest.
+`librawl`, pinned as `vendor/librawl-0.3.5-note-scale.tgz` with lockfile
+integrity. React and ReactDOM are both 19.3.1. `packages/rawl-notation/`
+contains compatibility re-exports and generated CSS; no separate renderer or
+geometry implementation remains there. `src/audio-player.mjs` injects Lego's
+existing playback plan and callbacks into the library transport. The build
+copies the library's exact CSS, palette, Sax browser profile, GPL license,
+source notice and provenance manifest.
 
 Lego retains harmony realization, source arrangements, musical analysis, routing,
 controls and MIDI export. Its controlled beat-based view now adapts notes into
@@ -57,9 +58,18 @@ playback behavior; Lego's existing classes, callbacks, geometry and melody layer
 order are preserved by adapter attributes. The generated compatibility stylesheet
 includes the native color and voice-shape rules.
 
-The 0.2 package is frozen and verified locally. Rawl and Caplin consumer
-validation and publication are tracked separately; this consumer does not adopt
-Rawl's native MIDI backend.
+The pinned package backports the note scale option from librawl commit
+`b2083c0adffbb032aa334130ab87ada85d7395cf` onto
+`v0.3.5` (`39275211820230239fead8df2f3defb9bc3e2d0e`). Apply
+`vendor/librawl-0.3.5-note-scale.patch` with `git apply --unidiff-zero` to
+that checkout and run `npm ci` and `npm run build`. Replace the original
+archive's `dist/` copies of `components.{js,cjs}`, `geometry.{js,cjs}`,
+`index.{js,cjs}`, `notation.d.ts`, and `provenance.json` with the rebuilt
+files, then pack that directory with `npm pack` and save the result as
+`vendor/librawl-0.3.5-note-scale.tgz`.
+
+Rawl and Caplin consumer validation and publication are tracked separately;
+this consumer does not adopt Rawl's native MIDI backend.
 
 ## Melodies and arrangements
 
