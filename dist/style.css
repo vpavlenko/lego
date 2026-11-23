@@ -138,6 +138,6 @@ body.song-route .reader-chrome{height:32px}body.song-route main{padding-top:46px
 .song-link:focus-visible{outline-offset:-2px}
 .song-link[data-standard].active:focus-visible{outline-color:var(--bg)}
 
-.brick-cork{color:#888;font-size:13px;margin:0 0 8px}.brick-cork>span{color:#555;margin-right:8px}
+.brick-cork{color:#888;font-size:13px;margin:0 0 8px}.brick-cork>span:first-child{color:#555;margin-right:8px}
 
 .brick-heading{display:flex;align-items:baseline;gap:20px;flex-wrap:wrap}.brick-heading h1{margin-bottom:6px}.brick-definition{display:flex;align-items:baseline;flex-wrap:wrap;gap:0;font-size:15px;line-height:1.6}.definition-separator{color:#555;margin:0 2px}
