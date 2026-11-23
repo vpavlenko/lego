@@ -1,7 +1,7 @@
 import React,{useEffect,useState,useRef} from 'react';
 import {createRoot} from 'react-dom/client';
 import {RawlNotation,RawlMeasureHeader} from 'librawl';
-import {pitch,mod,chordParts,chordDisplay,roman} from '../dist/harmony.mjs';
+import {pitch,mod,chordParts,chordDisplay,roman,romanDisplayParts} from '../dist/harmony.mjs';
 import {modulationAt} from './music/modulations.mjs';
 import {notationRows} from './music/notation-rows.mjs';
 import {brickNameParts} from './music/brick-labels.mjs';
@@ -25,12 +25,12 @@ function HostView({song,performance,brickMap,onSeek,onNote,onNoteHover,onMeasure
  const footer=(row,{changes=performance.changes}={})=>{
   const span=row.end-row.start,chords=performance.chords.filter(c=>c.start<row.end&&c.end>row.start);
   const cells=chords.map(c=>{
-   const base=modulationAt(changes,c.start).root,parts=chordParts(c.symbol),degree=mod(pitch(c.symbol)-pitch(base));
-   return {c,parts,display:chordDisplay(c.symbol,base),degree,rn:roman(c.symbol,base),style:{left:(Math.max(c.start,row.start)-row.start)/span*100+'%',width:(Math.min(c.end,row.end)-Math.max(c.start,row.start))/span*100+'%',color:RAWL_COLORS[degree].background}};
+   const base=modulationAt(changes,c.start).root,parts=chordParts(c.symbol),degree=mod(pitch(c.symbol)-pitch(base)),display=chordDisplay(c.symbol,base);
+   return {c,parts,display,degree,rn:romanDisplayParts(roman(c.symbol,base),display.bass),style:{left:(Math.max(c.start,row.start)-row.start)/span*100+'%',width:(Math.min(c.end,row.end)-Math.max(c.start,row.start))/span*100+'%',color:RAWL_COLORS[degree].background}};
   });
   return <div className="harmony-stripe">
    <div className="harmony-chords">{cells.map(({c,parts,display,degree,style})=><div key={c.id} className={'rawln-chord harmony-cell'+(c.clipped?' uncertain':'')} data-degree={degree} style={style} title={c.symbol}><span className="harmony-symbol">{display.root}{display.rootSuffix}{display.figures.length>0&&<sup>{display.figures.map((figure,i)=><span key={i} className="chord-figure" data-degree={figure.degree??undefined} style={{color:figure.degree===null?'#888':RAWL_COLORS[figure.degree].background}}>{figure.text}</span>)}</sup>}{display.bass&&<><span className="chord-slash">/</span><span className="chord-bass" data-degree={display.bass.degree} style={{color:RAWL_COLORS[display.bass.degree].background}}>{display.bass.text}</span></>}</span></div>)}</div>
-   <div className="harmony-rns">{cells.map(({c,rn,display,degree,style})=><div key={c.id} className={'rawln-rn harmony-cell'+(c.clipped?' uncertain':'')} data-degree={degree} style={style} title={rn}>{display?.bass?<>{rn.slice(0,rn.lastIndexOf('/'))}<span className="chord-slash">/</span><span className="chord-bass" data-degree={display.bass.degree} style={{color:RAWL_COLORS[display.bass.degree].background}}>{rn.slice(rn.lastIndexOf('/')+1)}</span></>:rn}</div>)}</div>
+   <div className="harmony-rns">{cells.map(({c,rn,display,degree,style})=><div key={c.id} className={'rawln-rn harmony-cell'+(c.clipped?' uncertain':'')} data-degree={degree} style={style} title={rn.label}>{rn.bass?<>{rn.numeral}<span className="chord-slash">/</span><span className="chord-bass" data-degree={display.bass.degree} style={{color:RAWL_COLORS[display.bass.degree].background}}>{rn.bass}</span></>:rn.numeral}</div>)}</div>
   </div>;
  };
  return <RawlNotation className={(form?.layoutAligned??form?.aligned)&&!compact?'rawln-form':''} style={(form?.layoutAligned??form?.aligned)&&!compact?{gridTemplateColumns:`repeat(${form.layoutColumns??form.columns},minmax(0,1fr))`,minWidth:Math.max(1,(form.layoutColumns??form.columns)/(form.layoutSections??form.sections)[0].bars)*300}:undefined} ref={notation} notes={display.notes} beats={performance.beats} rows={rows} tonic={0} changes={changes} barBeats={performance.barBeats} beatBeats={4/(song.meter?.[1]??4)} phraseStarts={phraseStarts} measureMap={performance.measureMap} hideInitialTonic={compact} noteScale={noteScale} mutedVoices={mutedVoices} onSeek={onSeek} onNote={note=>onNote?.(sourceNote(note))} onNoteAudition={note=>onNote?.(sourceNote(note))} onNoteHover={note=>onNoteHover?.(sourceNote(note))} onMeasureSelect={onMeasureSelect} selectedMeasure={selectedMeasure} renderHeader={compact?undefined:header} renderFooter={footer}/>;

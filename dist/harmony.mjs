@@ -36,6 +36,14 @@ export function roman(chord,base='C'){
  return root+q+bass;
 }
 
+const CIRCLED_BASS_DEGREES={I:'①',II:'②',III:'③',IV:'④',V:'⑤',VI:'⑥',VII:'⑦'};
+export function romanDisplayParts(notation,slashBass){
+ const match=slashBass&&/\/([♭♯]*)(I|II|III|IV|V|VI|VII)$/.exec(notation);
+ if(!match)return {numeral:notation,bass:null,label:notation};
+ const numeral=notation.slice(0,match.index),bass=match[1]+CIRCLED_BASS_DEGREES[match[2]];
+ return {numeral,bass,label:numeral+'/'+bass};
+}
+
 // Jazz superscripts name sounding chord tones, colored against the current
 // notation tonic (the same semantic rule used by Caplin's Roman figures).
 export function chordDisplay(chord,base='C'){
