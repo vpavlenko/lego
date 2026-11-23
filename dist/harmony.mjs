@@ -39,15 +39,16 @@ export function roman(chord,base='C'){
 // Jazz superscripts name sounding chord tones, colored against the current
 // notation tonic (the same semantic rule used by Caplin's Roman figures).
 export function chordDisplay(chord,base='C'){
- const m=/^([A-G][b#]*)(.*?)(?:\/([A-G][b#]*))?$/.exec(chord);if(!m)return {root:chord,degree:null,figures:[],bass:null};
+ const m=/^([A-G][b#]*)(.*?)(?:\/([A-G][b#]*))?$/.exec(chord);if(!m)return {root:chord,rootSuffix:'',degree:null,figures:[],bass:null};
  const root=pitch(m[1]),q=m[2],reference=pitch(base)??0,minor=/^m(?!aj)|^-/.test(q),diminished=/^(?:o|dim|°)/.test(q),augmented=/aug|\+|#5/.test(q),major7=/(?:M|maj|Δ)(?:7|9|11|13)|^mM/.test(q);
  const interval=(n,altered)=>n===7?(altered?11:diminished?9:major7?11:10):n===3?(altered?4:minor?3:4):n===5?(altered?7:diminished||/m7b5|ø/.test(q)?6:augmented?8:7):({1:0,2:2,4:5,6:9,8:12,9:14,11:17,13:21}[n]??null);
+ const rootSuffix=/^(?:mM|m(?!aj)|M(?!aj))/.exec(q)?.[0]??'';
  const figures=[],push=(text,degree=null)=>figures.push({text,degree});
- for(const token of q.matchAll(/([b#♭♯]{0,2})(69|13|11|[1-9])|(?:dim|aug|sus|maj|add|alt|omit|no)|[\s\S]/g)){
+ for(const token of q.slice(rootSuffix.length).matchAll(/([b#♭♯]{0,2})(69|13|11|[1-9])|(?:dim|aug|sus|maj|add|alt|omit|no)|[\s\S]/g)){
   const text=token[0];if(token[2]){for(const digit of token[2]==='69'?['6','9']:[token[2]]){const n=Number(digit),value=interval(n,!!token[1]),offset=[...token[1]].reduce((sum,char)=>sum+('b♭'.includes(char)?-1:1),0);push(prettyRoot(token[1])+digit,value===null?null:mod(root+value+offset-reference));}}
   else if(/^(?:o|dim|°|ø)$/.test(text))push(text==='dim'?'o':text,mod(root+6-reference));
   else if(/^(?:aug|\+)$/.test(text))push(text,mod(root+8-reference));
   else push(text,/[()\/]/.test(text)?null:mod(root-reference));
  }
- return {root:prettyRoot(m[1]),degree:mod(root-reference),figures,bass:m[3]?{text:prettyRoot(m[3]),degree:mod(pitch(m[3])-reference)}:null};
+ return {root:prettyRoot(m[1]),rootSuffix,degree:mod(root-reference),figures,bass:m[3]?{text:prettyRoot(m[3]),degree:mod(pitch(m[3])-reference)}:null};
 }

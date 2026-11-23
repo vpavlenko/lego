@@ -2,3 +2,28 @@ import test from 'node:test';import assert from 'node:assert/strict';import {cho
 const figures=(symbol,tonic='C')=>chordDisplay(symbol,tonic).figures.filter(f=>/[0-9]/.test(f.text)).map(f=>[f.text,f.degree]);
 test('jazz superscripts represent sounding pitches relative to the active tonic',()=>{assert.deepEqual(figures('C7'),[['7',10]]);assert.deepEqual(figures('Cm7'),[['7',10]]);assert.deepEqual(figures('CM7'),[['7',11]]);assert.deepEqual(figures('Co7'),[['7',9]]);assert.deepEqual(figures('C7b9'),[['7',10],['♭9',1]]);assert.deepEqual(figures('FM7#11'),[['7',4],['♯11',11]]);assert.deepEqual(figures('FM7#11','F'),[['7',11],['♯11',6]]);assert.deepEqual(figures('C13b9'),[['13',9],['♭9',1]]);assert.deepEqual(figures('Cm69'),[['6',9],['9',2]]);});
 test('explicit bass has its own degree and stays outside the quality superscript',()=>{const a=chordDisplay('G7/C');assert.deepEqual(a.bass,{text:'C',degree:0});assert.equal(a.degree,7);assert.equal(a.figures.map(f=>f.text).join(''),'7');const b=chordDisplay('G7/Bb','F');assert.deepEqual(b.bass,{text:'B♭',degree:5});assert.equal(b.degree,2);assert.equal(chordDisplay('FM7#11').bass,null);});
+test('letter qualities join the baseline root while figures and slash bass keep their pitch colors',()=>{
+ const major=chordDisplay('CM7');
+ assert.equal(major.root,'C');
+ assert.equal(major.rootSuffix,'M');
+ assert.deepEqual(major.figures,[{text:'7',degree:11}]);
+ const minor=chordDisplay('Em7');
+ assert.equal(minor.root,'E');
+ assert.equal(minor.rootSuffix,'m');
+ assert.deepEqual(minor.figures,[{text:'7',degree:2}]);
+ const inversion=chordDisplay('F#mM7/Bb');
+ assert.equal(inversion.root,'F♯');
+ assert.equal(inversion.rootSuffix,'mM');
+ assert.deepEqual(inversion.figures,[{text:'7',degree:5}]);
+ assert.deepEqual(inversion.bass,{text:'B♭',degree:10});
+ const longMajor=chordDisplay('Cmaj7');
+ assert.equal(longMajor.rootSuffix,'');
+ assert.deepEqual(longMajor.figures,[{text:'maj',degree:0},{text:'7',degree:11}]);
+ const capitalMajor=chordDisplay('CMaj7');
+ assert.equal(capitalMajor.rootSuffix,'');
+ assert.equal(capitalMajor.figures.map(f=>f.text).join(''),'Maj7');
+ const minorTriad=chordDisplay('Em/G');
+ assert.equal(minorTriad.rootSuffix,'m');
+ assert.deepEqual(minorTriad.figures,[]);
+ assert.deepEqual(minorTriad.bass,{text:'G',degree:7});
+});
