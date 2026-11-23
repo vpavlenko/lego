@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {cleanModulationRegions} from '../src/music/modulation-regions.mjs';
+import {cleanModulationRegions,reviewDisplayModulationOnsets} from '../src/music/modulation-regions.mjs';
 import {songModulations} from '../src/music/modulations.mjs';
 import {tonicAt} from '../packages/rawl-notation/src/geometry.mjs';
 import {transposeChord,pitch} from '../dist/harmony.mjs';
@@ -105,4 +105,29 @@ test('every supplied source chart keeps all musical data and has no singleton mo
   absorbed+=result.stats.mergedOneHarmonyRegions;forward+=result.decisions.filter(d=>d.direction==='next').length;backward+=result.decisions.filter(d=>d.direction==='previous').length;
  }
  assert.deepEqual(songs,before);assert.ok(absorbed>0&&forward>0&&backward>0);
+});
+
+test('reviewed slash-bass approaches start the incoming cadence at the next barline',()=>{
+ const standards=read('../dist/data/standards.json').songs;
+ const stored=read('../dist/data/modulations.json').changes;
+ for(const [index,tonic,moves] of [
+  [28,9,[[18,20],[50,52],[114,116]]],
+  [45,4,[[102,104,104]]],
+  [110,9,[[82,84]]],
+  [147,9,[[102,104]]],
+  [149,9,[[50,52],[114,116]]],
+  [231,5,[[2,4],[34,36],[98,100]]],
+ ]){
+  const song=standards[index],source=freeze(songModulations(song)),projection=freeze(clean(song,source));
+  const reviewed=reviewDisplayModulationOnsets(song,source,projection,vocabulary);
+  assert.deepEqual(reviewed.onsetReviews.map(({sourceBeat,beat})=>[sourceBeat,beat]),moves.map(([before,after,from=before])=>[from,after]));
+  assert.deepEqual(reviewed.changes,stored[index]);
+  for(const [before,after,from=before] of moves){
+   assert.ok(source.some(event=>event.beat===from&&event.tonic===tonic));
+   assert.ok(reviewed.changes.some(event=>event.beat===after&&event.tonic===tonic&&event.sourceBeat===from));
+   assert.ok(!reviewed.changes.some(event=>event.beat===before));
+  }
+  assert.deepEqual(reviewed.changes.filter(event=>event.join),projection.changes.filter(event=>event.join));
+  if(index===231)assert.deepEqual(reviewed.changes[0],source[0]);
+ }
 });

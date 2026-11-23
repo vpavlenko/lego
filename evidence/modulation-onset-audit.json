@@ -1,0 +1,2126 @@
+{
+  "baseline": {
+    "site": "30c42d8d906dcb8a762e6f8126bf8cb519298f07",
+    "github": "3d55d2c73a9f03d4f251a465b0ace261c3ec8835",
+    "modulationMapSha256": "7c196c942379e02ba81827437087b5e750b2aa58caf82ece98e0845d54f9444a"
+  },
+  "sourcePdf": "dist/source/InsightsRoadmapsConsolidated.pdf",
+  "sourcePdfSha256": "a156993c7f515981eae35ab40400bd590a4fb76022366ac2366eeb3d36fc0b9b",
+  "scope": "Screened every noninitial displayed flag. Candidates are off-bar flags on the last chord of a bar followed by a ii or iiø, a V or tritone substitute, and a tonic. The ii–V must begin on the next bar and remain inside the incoming region. The tonic may land at its end and serve as a pivot at the next flag. The strict analog adds a change of bass alone, no named join at the displayed flag, and no direct ii, V, or I function for that pre-bar chord.",
+  "counts": {
+    "charts": 507,
+    "printedCharts": 242,
+    "otherCharts": 265,
+    "nonInitialFlags": 1568,
+    "printedNonInitialFlags": 1568,
+    "otherNonInitialFlags": 0,
+    "offBarFlags": 238,
+    "midChordFlags": 0,
+    "offBarFlagsWithoutNextBar": 5,
+    "meterMappedCharts": 82,
+    "precedingChordBeforeNextBarCadence": 22,
+    "tonicPivotAtNextFlag": 3,
+    "exactInversionOnly": 10,
+    "reviewedTimingAdjustments": 11,
+    "reviewedPrintedCharts": 16
+  },
+  "openingException": {
+    "chart": 231,
+    "title": "Whisper Not",
+    "pdfPage": 141,
+    "printedRow": 1,
+    "sourceBeat": 2,
+    "baselineDisplayBeat": 0,
+    "displayBeat": 4,
+    "nextMeasure": {
+      "number": 2,
+      "start": 4,
+      "end": 8
+    },
+    "sourceChords": [
+      "Cm7",
+      "Cm7/Bb",
+      "Am7b5",
+      "D7",
+      "Gm7"
+    ],
+    "rationale": "The previous projection displayed F minor from beat 0. The printed opening Cm7 and Cm7/Bb establish a local C-minor setting, normalized to B♭ minor in the reader. The revised display uses that opening setting and starts F minor at measure 2 with the first iiø.",
+    "decision": "restore-opening-context-and-move"
+  },
+  "launcherWithoutTonic": {
+    "chart": 87,
+    "title": "I Guess I'll Hang My Tears Out to Dry",
+    "pdfPage": 56,
+    "printedRow": 4,
+    "flagMeasure": {
+      "number": 31,
+      "start": 120,
+      "end": 124
+    },
+    "beatInMeasure": 4,
+    "flag": {
+      "beat": 123,
+      "tonic": 4,
+      "root": "E",
+      "mode": "Minor",
+      "sourceBeat": 124
+    },
+    "nextMeasure": {
+      "number": 32,
+      "start": 124,
+      "end": 128
+    },
+    "sourceChords": [
+      "Dm7",
+      "Dm7/C",
+      "Bm7b5",
+      "Bb7",
+      "Am7b5"
+    ],
+    "displayChords": [
+      "Am7",
+      "Am7/G",
+      "F#m7b5",
+      "F7",
+      "Em7b5"
+    ],
+    "rationale": "A similar bass continuation precedes the printed Dizzy Launcher, but the incoming reduced dominant resolves to a half-diminished chord starting the following region. The tonal resolution differs from the directed ii–V–tonic cases."
+  },
+  "candidates": [
+    {
+      "chart": 28,
+      "title": "Body and Soul",
+      "pdfPage": 19,
+      "sourceImage": "dist/source/roadmap-028.png",
+      "imageSha256": "4a35562dbaadfe8d7f5192b0bd99d32eba4de188b9b025bb9a740bce3e93a8cd",
+      "printedRow": 2,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 5,
+        "start": 16,
+        "end": 20
+      },
+      "nextMeasure": {
+        "number": 6,
+        "start": 20,
+        "end": 24
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "C",
+      "flag": {
+        "beat": 18,
+        "tonic": 9,
+        "root": "A",
+        "mode": "Minor"
+      },
+      "sourceOnsets": [
+        {
+          "beat": 16,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor"
+        },
+        {
+          "beat": 18,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor"
+        }
+      ],
+      "chords": [
+        {
+          "sourceRow": 2,
+          "start": 16,
+          "end": 18,
+          "source": "Ebm7",
+          "display": "Dm7",
+          "degree": 5
+        },
+        {
+          "sourceRow": 2,
+          "start": 18,
+          "end": 20,
+          "source": "Ebm7/Db",
+          "display": "Dm7/C",
+          "degree": 5
+        },
+        {
+          "sourceRow": 2,
+          "start": 20,
+          "end": 22,
+          "source": "Cm7b5",
+          "display": "Bm7b5",
+          "degree": 2
+        },
+        {
+          "sourceRow": 2,
+          "start": 22,
+          "end": 24,
+          "source": "F7",
+          "display": "E7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 2,
+          "start": 24,
+          "end": 26,
+          "source": "Bbm7",
+          "display": "Am7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": true,
+      "decision": "move",
+      "displayBeat": 20,
+      "rationale": "The slash bass continues E♭m7 immediately before the B♭-minor cadence. The separate Highjump back to D♭ starts with its own ii–subV–I and stays at m7, m15, and m31 beat 3."
+    },
+    {
+      "chart": 28,
+      "title": "Body and Soul",
+      "pdfPage": 19,
+      "sourceImage": "dist/source/roadmap-028.png",
+      "imageSha256": "4a35562dbaadfe8d7f5192b0bd99d32eba4de188b9b025bb9a740bce3e93a8cd",
+      "printedRow": 4,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 13,
+        "start": 48,
+        "end": 52
+      },
+      "nextMeasure": {
+        "number": 14,
+        "start": 52,
+        "end": 56
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "C",
+      "flag": {
+        "beat": 50,
+        "tonic": 9,
+        "root": "A",
+        "mode": "Minor"
+      },
+      "sourceOnsets": [
+        {
+          "beat": 48,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor"
+        },
+        {
+          "beat": 50,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor"
+        }
+      ],
+      "chords": [
+        {
+          "sourceRow": 4,
+          "start": 48,
+          "end": 50,
+          "source": "Ebm7",
+          "display": "Dm7",
+          "degree": 5
+        },
+        {
+          "sourceRow": 4,
+          "start": 50,
+          "end": 52,
+          "source": "Ebm7/Db",
+          "display": "Dm7/C",
+          "degree": 5
+        },
+        {
+          "sourceRow": 4,
+          "start": 52,
+          "end": 54,
+          "source": "Cm7b5",
+          "display": "Bm7b5",
+          "degree": 2
+        },
+        {
+          "sourceRow": 4,
+          "start": 54,
+          "end": 56,
+          "source": "F7",
+          "display": "E7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 4,
+          "start": 56,
+          "end": 58,
+          "source": "Bbm7",
+          "display": "Am7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": true,
+      "decision": "move",
+      "displayBeat": 52,
+      "rationale": "The slash bass continues E♭m7 immediately before the B♭-minor cadence. The separate Highjump back to D♭ starts with its own ii–subV–I and stays at m7, m15, and m31 beat 3."
+    },
+    {
+      "chart": 28,
+      "title": "Body and Soul",
+      "pdfPage": 19,
+      "sourceImage": "dist/source/roadmap-028.png",
+      "imageSha256": "4a35562dbaadfe8d7f5192b0bd99d32eba4de188b9b025bb9a740bce3e93a8cd",
+      "printedRow": 8,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 29,
+        "start": 112,
+        "end": 116
+      },
+      "nextMeasure": {
+        "number": 30,
+        "start": 116,
+        "end": 120
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "C",
+      "flag": {
+        "beat": 114,
+        "tonic": 9,
+        "root": "A",
+        "mode": "Minor"
+      },
+      "sourceOnsets": [
+        {
+          "beat": 112,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor"
+        },
+        {
+          "beat": 114,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor"
+        }
+      ],
+      "chords": [
+        {
+          "sourceRow": 8,
+          "start": 112,
+          "end": 114,
+          "source": "Ebm7",
+          "display": "Dm7",
+          "degree": 5
+        },
+        {
+          "sourceRow": 8,
+          "start": 114,
+          "end": 116,
+          "source": "Ebm7/Db",
+          "display": "Dm7/C",
+          "degree": 5
+        },
+        {
+          "sourceRow": 8,
+          "start": 116,
+          "end": 118,
+          "source": "Cm7b5",
+          "display": "Bm7b5",
+          "degree": 2
+        },
+        {
+          "sourceRow": 8,
+          "start": 118,
+          "end": 120,
+          "source": "F7",
+          "display": "E7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 8,
+          "start": 120,
+          "end": 122,
+          "source": "Bbm7",
+          "display": "Am7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": true,
+      "decision": "move",
+      "displayBeat": 116,
+      "rationale": "The slash bass continues E♭m7 immediately before the B♭-minor cadence. The separate Highjump back to D♭ starts with its own ii–subV–I and stays at m7, m15, and m31 beat 3."
+    },
+    {
+      "chart": 35,
+      "title": "Chelsea Bridge",
+      "pdfPage": 24,
+      "sourceImage": "dist/source/roadmap-035.png",
+      "imageSha256": "56f38bc85e06189be3ce630390ffb8b87d899875377f6370a80fa84ee6382d85",
+      "printedRow": 2,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 16,
+        "start": 60,
+        "end": 64
+      },
+      "nextMeasure": {
+        "number": 17,
+        "start": 64,
+        "end": 68
+      },
+      "beatInMeasure": 4,
+      "previousDisplayTonic": "Eb",
+      "flag": {
+        "beat": 63,
+        "tonic": 6,
+        "root": "F#",
+        "mode": "Major",
+        "sourceBeat": 64
+      },
+      "sourceOnsets": [
+        {
+          "beat": 63,
+          "tonic": 11,
+          "root": "B",
+          "mode": "Major",
+          "join": true,
+          "name": "Bootstrap",
+          "from": "Eb",
+          "sourceDelta": -4
+        },
+        {
+          "beat": 64,
+          "tonic": 6,
+          "root": "F#",
+          "mode": "Major"
+        }
+      ],
+      "chords": [
+        {
+          "sourceRow": 2,
+          "start": 60,
+          "end": 63,
+          "source": "Db",
+          "display": "Eb",
+          "degree": 9
+        },
+        {
+          "sourceRow": 2,
+          "start": 63,
+          "end": 64,
+          "source": "Db7",
+          "display": "Eb7",
+          "degree": 9
+        },
+        {
+          "sourceRow": 3,
+          "start": 64,
+          "end": 66,
+          "source": "F#m7",
+          "display": "G#m7",
+          "degree": 2
+        },
+        {
+          "sourceRow": 3,
+          "start": 66,
+          "end": 68,
+          "source": "B7",
+          "display": "C#7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 3,
+          "start": 68,
+          "end": 70,
+          "source": "EM7",
+          "display": "F#M7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": false,
+      "decision": "retain-reviewed-approach",
+      "rationale": "The existing Chelsea Bridge review places the enharmonic V/ii with its ensuing ii–V–I. The printed Bootstrap belongs to the original one-chord context, and the projected flag preserves the direction of its resolution."
+    },
+    {
+      "chart": 45,
+      "title": "The Days of Wine and Roses",
+      "pdfPage": 31,
+      "sourceImage": "dist/source/roadmap-045.png",
+      "imageSha256": "c6cea633e90bf314042efa5c0778d6d7bd1ed486dd3a031c3fc2d8be7dcdee3a",
+      "printedRow": 4,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 26,
+        "start": 100,
+        "end": 104
+      },
+      "nextMeasure": {
+        "number": 27,
+        "start": 104,
+        "end": 108
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "C",
+      "flag": {
+        "beat": 102,
+        "tonic": 4,
+        "root": "E",
+        "mode": "Minor",
+        "sourceBeat": 104
+      },
+      "sourceOnsets": [
+        {
+          "beat": 102,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor"
+        },
+        {
+          "beat": 104,
+          "tonic": 4,
+          "root": "E",
+          "mode": "Minor",
+          "join": true,
+          "name": "Backslider",
+          "from": "A",
+          "sourceDelta": -5
+        }
+      ],
+      "nextFlag": {
+        "beat": 112,
+        "tonic": 0,
+        "root": "C",
+        "mode": "Major"
+      },
+      "pivotArrival": true,
+      "chords": [
+        {
+          "sourceRow": 4,
+          "start": 100,
+          "end": 102,
+          "source": "Dm7",
+          "display": "Am7",
+          "degree": 5
+        },
+        {
+          "sourceRow": 4,
+          "start": 102,
+          "end": 104,
+          "source": "Dm7/C",
+          "display": "Am7/G",
+          "degree": 5
+        },
+        {
+          "sourceRow": 4,
+          "start": 104,
+          "end": 108,
+          "source": "Bm7b5",
+          "display": "F#m7b5",
+          "degree": 2
+        },
+        {
+          "sourceRow": 4,
+          "start": 108,
+          "end": 112,
+          "source": "E7",
+          "display": "B7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 4,
+          "start": 112,
+          "end": 114,
+          "source": "Am7",
+          "display": "Em7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": true,
+      "decision": "move",
+      "displayBeat": 104,
+      "rationale": "The projected early E-minor flag came from absorbing the single Dm7/C cell. The printed A-minor Sad Launcher begins at the next bar on Bm7♭5 and E7. Its Am7 resolution is also the pivot into the following printed F context."
+    },
+    {
+      "chart": 55,
+      "title": "Dream Dancing",
+      "pdfPage": 37,
+      "sourceImage": "dist/source/roadmap-055.png",
+      "imageSha256": "212b971cd8a66fe5678392b9a483345bfcae546c36e4bbf1da70aee038543019",
+      "printedRow": 4,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 25,
+        "start": 96,
+        "end": 100
+      },
+      "nextMeasure": {
+        "number": 26,
+        "start": 100,
+        "end": 104
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "C",
+      "flag": {
+        "beat": 98,
+        "tonic": 5,
+        "root": "F",
+        "mode": "Major",
+        "join": true,
+        "name": "Cherokee",
+        "from": "C",
+        "sourceDelta": 5
+      },
+      "sourceOnsets": [
+        {
+          "beat": 98,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Major",
+          "join": true,
+          "name": "Cherokee",
+          "from": "C",
+          "sourceDelta": 5
+        }
+      ],
+      "chords": [
+        {
+          "sourceRow": 4,
+          "start": 96,
+          "end": 98,
+          "source": "CM7",
+          "display": "CM7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 4,
+          "start": 98,
+          "end": 100,
+          "source": "Ab7",
+          "display": "Ab7",
+          "degree": 3
+        },
+        {
+          "sourceRow": 4,
+          "start": 100,
+          "end": 102,
+          "source": "Gm7",
+          "display": "Gm7",
+          "degree": 2
+        },
+        {
+          "sourceRow": 4,
+          "start": 102,
+          "end": 104,
+          "source": "C7",
+          "display": "C7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 4,
+          "start": 104,
+          "end": 108,
+          "source": "FM7",
+          "display": "FM7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": false,
+      "decision": "retain-named-approach",
+      "rationale": "The printed Cherokee begins with A♭7, the chromatic substitute of V/ii approaching Gm7–C7–FM7 in the Foggy Cadence."
+    },
+    {
+      "chart": 58,
+      "title": "Easy Living",
+      "pdfPage": 39,
+      "sourceImage": "dist/source/roadmap-058.png",
+      "imageSha256": "3944011beab1d4fa3d17c3ba892ba3be0b59ed65392500e5f56700ecc5923ee9",
+      "printedRow": 2,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 15,
+        "start": 56,
+        "end": 60
+      },
+      "nextMeasure": {
+        "number": 16,
+        "start": 60,
+        "end": 64
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "C",
+      "flag": {
+        "beat": 58,
+        "tonic": 8,
+        "root": "Ab",
+        "mode": "Major",
+        "join": true,
+        "name": "Highjump",
+        "from": "C",
+        "sourceDelta": -4
+      },
+      "sourceOnsets": [
+        {
+          "beat": 58,
+          "tonic": 8,
+          "root": "Ab",
+          "mode": "Major",
+          "join": true,
+          "name": "Highjump",
+          "from": "C",
+          "sourceDelta": -4
+        }
+      ],
+      "chords": [
+        {
+          "sourceRow": 2,
+          "start": 56,
+          "end": 58,
+          "source": "FM7",
+          "display": "CM7",
+          "degree": 4
+        },
+        {
+          "sourceRow": 2,
+          "start": 58,
+          "end": 60,
+          "source": "Bbm7",
+          "display": "Fm7",
+          "degree": 9
+        },
+        {
+          "sourceRow": 2,
+          "start": 60,
+          "end": 62,
+          "source": "Ebm7",
+          "display": "Bbm7",
+          "degree": 2
+        },
+        {
+          "sourceRow": 2,
+          "start": 62,
+          "end": 64,
+          "source": "Ab7",
+          "display": "Eb7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 3,
+          "start": 64,
+          "end": 66,
+          "source": "DbM7",
+          "display": "AbM7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": false,
+      "decision": "retain-named-pivot",
+      "rationale": "The printed Highjump and Extended Launcher start at B♭m7, vi in the incoming D♭ region, before the ii–V–I."
+    },
+    {
+      "chart": 67,
+      "title": "Fly Me To The Moon",
+      "pdfPage": 44,
+      "sourceImage": "dist/source/roadmap-067.png",
+      "imageSha256": "e49f9875365158a70d2709e0f4dac62f986a0dbe3831931fb6702f878867c82c",
+      "printedRow": 1,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 8,
+        "start": 28,
+        "end": 32
+      },
+      "nextMeasure": {
+        "number": 9,
+        "start": 32,
+        "end": 36
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "A",
+      "flag": {
+        "beat": 30,
+        "tonic": 0,
+        "root": "C",
+        "mode": "Major",
+        "sourceBeat": 32
+      },
+      "sourceOnsets": [
+        {
+          "beat": 30,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Bootstrap",
+          "from": "A",
+          "sourceDelta": 5
+        },
+        {
+          "beat": 32,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major"
+        }
+      ],
+      "chords": [
+        {
+          "sourceRow": 1,
+          "start": 28,
+          "end": 30,
+          "source": "Am",
+          "display": "Am",
+          "degree": 9
+        },
+        {
+          "sourceRow": 1,
+          "start": 30,
+          "end": 32,
+          "source": "A7",
+          "display": "A7",
+          "degree": 9
+        },
+        {
+          "sourceRow": 2,
+          "start": 32,
+          "end": 36,
+          "source": "Dm7",
+          "display": "Dm7",
+          "degree": 2
+        },
+        {
+          "sourceRow": 2,
+          "start": 36,
+          "end": 40,
+          "source": "G7",
+          "display": "G7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 2,
+          "start": 40,
+          "end": 44,
+          "source": "CM7",
+          "display": "CM7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": false,
+      "decision": "retain-applied-dominant",
+      "rationale": "The printed Bootstrap starts at A7 and launches Dm7. A7 is V/ii in the projected C-major region, leading directly to Dm7–G7–CM7."
+    },
+    {
+      "chart": 104,
+      "title": "Imagination",
+      "pdfPage": 67,
+      "sourceImage": "dist/source/roadmap-104.png",
+      "imageSha256": "a0e371c56d841d8a627dc2a572174a8bf8a88f2043293176ffc785d9b7c68d51",
+      "printedRow": 5,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 33,
+        "start": 128,
+        "end": 132
+      },
+      "nextMeasure": {
+        "number": 34,
+        "start": 132,
+        "end": 136
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "D",
+      "flag": {
+        "beat": 130,
+        "tonic": 0,
+        "root": "C",
+        "mode": "Major",
+        "join": true,
+        "name": "Downwinder",
+        "from": "D",
+        "sourceDelta": -2
+      },
+      "sourceOnsets": [
+        {
+          "beat": 130,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Downwinder",
+          "from": "D",
+          "sourceDelta": -2
+        }
+      ],
+      "chords": [
+        {
+          "sourceRow": 5,
+          "start": 128,
+          "end": 130,
+          "source": "Fm7",
+          "display": "Dm7",
+          "degree": 2
+        },
+        {
+          "sourceRow": 5,
+          "start": 130,
+          "end": 132,
+          "source": "B7",
+          "display": "G#7",
+          "degree": 8
+        },
+        {
+          "sourceRow": 5,
+          "start": 132,
+          "end": 134,
+          "source": "Fm7/Bb",
+          "display": "Dm7/G",
+          "degree": 2
+        },
+        {
+          "sourceRow": 5,
+          "start": 134,
+          "end": 136,
+          "source": "Bb7",
+          "display": "G7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 5,
+          "start": 136,
+          "end": 144,
+          "source": "EbM7",
+          "display": "CM7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": false,
+      "decision": "retain-named-approach",
+      "rationale": "The printed Downwinder and Nowhere Cadence include the B7 chromatic approach to the B♭ bass, followed by B♭7 and E♭M7."
+    },
+    {
+      "chart": 110,
+      "title": "It Might As Well Be Spring",
+      "pdfPage": 71,
+      "sourceImage": "dist/source/roadmap-110.png",
+      "imageSha256": "963b871da4238258aaf62954c1a98fe2a45f5a5afff6de628ddbc95aa9d9a513",
+      "printedRow": 3,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 21,
+        "start": 80,
+        "end": 84
+      },
+      "nextMeasure": {
+        "number": 22,
+        "start": 84,
+        "end": 88
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "F",
+      "flag": {
+        "beat": 82,
+        "tonic": 9,
+        "root": "A",
+        "mode": "Minor"
+      },
+      "sourceOnsets": [
+        {
+          "beat": 80,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor",
+          "join": true,
+          "name": "Backslider",
+          "from": "F",
+          "sourceDelta": -3
+        },
+        {
+          "beat": 82,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor"
+        }
+      ],
+      "nextFlag": {
+        "beat": 88,
+        "tonic": 0,
+        "root": "C",
+        "mode": "Major"
+      },
+      "pivotArrival": true,
+      "chords": [
+        {
+          "sourceRow": 3,
+          "start": 80,
+          "end": 82,
+          "source": "Dm7",
+          "display": "Dm7",
+          "degree": 5
+        },
+        {
+          "sourceRow": 3,
+          "start": 82,
+          "end": 84,
+          "source": "Dm7/C",
+          "display": "Dm7/C",
+          "degree": 5
+        },
+        {
+          "sourceRow": 3,
+          "start": 84,
+          "end": 86,
+          "source": "Bm7b5",
+          "display": "Bm7b5",
+          "degree": 2
+        },
+        {
+          "sourceRow": 3,
+          "start": 86,
+          "end": 88,
+          "source": "E7",
+          "display": "E7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 3,
+          "start": 88,
+          "end": 90,
+          "source": "Am7",
+          "display": "Am7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": true,
+      "decision": "move",
+      "displayBeat": 84,
+      "rationale": "The Dm7/C bass change continues Dm7, with Bm7♭5–E7 beginning at the next bar. Their Am7 resolution also opens the following printed C-major Slow Launcher."
+    },
+    {
+      "chart": 123,
+      "title": "Love Came on Stealthy Fingers",
+      "pdfPage": 79,
+      "sourceImage": "dist/source/roadmap-123.png",
+      "imageSha256": "649a5b088a97ab3e5d88d75770beca8dcccce0903967a815f8c5b7a35beac57e",
+      "printedRow": 3,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 21,
+        "start": 80,
+        "end": 84
+      },
+      "nextMeasure": {
+        "number": 22,
+        "start": 84,
+        "end": 88
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "C",
+      "flag": {
+        "beat": 82,
+        "tonic": 2,
+        "root": "D",
+        "mode": "Major",
+        "sourceBeat": 84
+      },
+      "sourceOnsets": [
+        {
+          "beat": 82,
+          "tonic": 4,
+          "root": "E",
+          "mode": "Minor",
+          "join": true,
+          "name": "Woody",
+          "from": "C",
+          "sourceDelta": 4
+        },
+        {
+          "beat": 84,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Major"
+        }
+      ],
+      "chords": [
+        {
+          "sourceRow": 3,
+          "start": 80,
+          "end": 82,
+          "source": "BbM7",
+          "display": "CM7",
+          "degree": 10
+        },
+        {
+          "sourceRow": 3,
+          "start": 82,
+          "end": 84,
+          "source": "Dm7b5",
+          "display": "Em7b5",
+          "degree": 2
+        },
+        {
+          "sourceRow": 3,
+          "start": 84,
+          "end": 86,
+          "source": "Dm7b5",
+          "display": "Em7b5",
+          "degree": 2
+        },
+        {
+          "sourceRow": 3,
+          "start": 86,
+          "end": 88,
+          "source": "G7",
+          "display": "A7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 3,
+          "start": 88,
+          "end": 90,
+          "source": "CM7",
+          "display": "DM7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": false,
+      "decision": "retain-predominant",
+      "rationale": "The preceding chord is already Dm7♭5, the same incoming iiø repeated on the barline, so the pre-bar flag coincides with the first occurrence of the predominant."
+    },
+    {
+      "chart": 146,
+      "title": "My Old Flame",
+      "pdfPage": 93,
+      "sourceImage": "dist/source/roadmap-146.png",
+      "imageSha256": "8542af372ea09501010aecc57502b967828b9db1603fbb0c41fcf0b8a6c8551d",
+      "printedRow": 2,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 14,
+        "start": 52,
+        "end": 56
+      },
+      "nextMeasure": {
+        "number": 15,
+        "start": 56,
+        "end": 60
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "Eb",
+      "flag": {
+        "beat": 54,
+        "tonic": 0,
+        "root": "C",
+        "mode": "Major",
+        "join": true,
+        "name": "New Horizon",
+        "from": "Eb",
+        "sourceDelta": -3
+      },
+      "sourceOnsets": [
+        {
+          "beat": 54,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "New Horizon",
+          "from": "Eb",
+          "sourceDelta": -3
+        }
+      ],
+      "chords": [
+        {
+          "sourceRow": 2,
+          "start": 52,
+          "end": 54,
+          "source": "Bb",
+          "display": "Eb",
+          "degree": 3
+        },
+        {
+          "sourceRow": 2,
+          "start": 54,
+          "end": 56,
+          "source": "Eb7",
+          "display": "Ab7",
+          "degree": 8
+        },
+        {
+          "sourceRow": 2,
+          "start": 56,
+          "end": 58,
+          "source": "Am7",
+          "display": "Dm7",
+          "degree": 2
+        },
+        {
+          "sourceRow": 2,
+          "start": 58,
+          "end": 60,
+          "source": "D7",
+          "display": "G7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 2,
+          "start": 60,
+          "end": 62,
+          "source": "GM7",
+          "display": "CM7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": false,
+      "decision": "retain-pivot-uncertain",
+      "rationale": "E♭7 can continue the old B♭ region as IV7 or begin the printed New Horizon and Nowhere Cadence toward G. The named boundary makes this different from an inversion-only lead-in."
+    },
+    {
+      "chart": 146,
+      "title": "My Old Flame",
+      "pdfPage": 93,
+      "sourceImage": "dist/source/roadmap-146.png",
+      "imageSha256": "8542af372ea09501010aecc57502b967828b9db1603fbb0c41fcf0b8a6c8551d",
+      "printedRow": 4,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 30,
+        "start": 116,
+        "end": 120
+      },
+      "nextMeasure": {
+        "number": 31,
+        "start": 120,
+        "end": 124
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "Eb",
+      "flag": {
+        "beat": 118,
+        "tonic": 0,
+        "root": "C",
+        "mode": "Major",
+        "join": true,
+        "name": "New Horizon",
+        "from": "Eb",
+        "sourceDelta": -3
+      },
+      "sourceOnsets": [
+        {
+          "beat": 118,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "New Horizon",
+          "from": "Eb",
+          "sourceDelta": -3
+        }
+      ],
+      "chords": [
+        {
+          "sourceRow": 4,
+          "start": 116,
+          "end": 118,
+          "source": "Bb",
+          "display": "Eb",
+          "degree": 3
+        },
+        {
+          "sourceRow": 4,
+          "start": 118,
+          "end": 120,
+          "source": "Eb7",
+          "display": "Ab7",
+          "degree": 8
+        },
+        {
+          "sourceRow": 4,
+          "start": 120,
+          "end": 122,
+          "source": "Am7",
+          "display": "Dm7",
+          "degree": 2
+        },
+        {
+          "sourceRow": 4,
+          "start": 122,
+          "end": 124,
+          "source": "D7",
+          "display": "G7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 4,
+          "start": 124,
+          "end": 128,
+          "source": "GM7",
+          "display": "CM7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": false,
+      "decision": "retain-pivot-uncertain",
+      "rationale": "E♭7 can continue the old B♭ region as IV7 or begin the printed New Horizon and Nowhere Cadence toward G. The named boundary makes this different from an inversion-only lead-in."
+    },
+    {
+      "chart": 147,
+      "title": "My Romance",
+      "pdfPage": 93,
+      "sourceImage": "dist/source/roadmap-147.png",
+      "imageSha256": "4d9548a3732f007e764d630b44599691906fdb4fafd7b4355956d3b721b3278a",
+      "printedRow": 1,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 6,
+        "start": 20,
+        "end": 24
+      },
+      "nextMeasure": {
+        "number": 7,
+        "start": 24,
+        "end": 28
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "A",
+      "flag": {
+        "beat": 22,
+        "tonic": 0,
+        "root": "C",
+        "mode": "Major",
+        "join": true,
+        "name": "Bootstrap",
+        "from": "A",
+        "sourceDelta": 3
+      },
+      "sourceOnsets": [
+        {
+          "beat": 22,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Bootstrap",
+          "from": "A",
+          "sourceDelta": 3
+        }
+      ],
+      "chords": [
+        {
+          "sourceRow": 1,
+          "start": 20,
+          "end": 22,
+          "source": "Am7",
+          "display": "Am7",
+          "degree": 9
+        },
+        {
+          "sourceRow": 1,
+          "start": 22,
+          "end": 24,
+          "source": "A7",
+          "display": "A7",
+          "degree": 9
+        },
+        {
+          "sourceRow": 1,
+          "start": 24,
+          "end": 26,
+          "source": "Dm7",
+          "display": "Dm7",
+          "degree": 2
+        },
+        {
+          "sourceRow": 1,
+          "start": 26,
+          "end": 28,
+          "source": "G7",
+          "display": "G7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 1,
+          "start": 28,
+          "end": 30,
+          "source": "CM7",
+          "display": "CM7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": false,
+      "decision": "retain-applied-dominant",
+      "rationale": "The printed Bootstrap and Extended Cadence begin on A7, the V/ii that directly launches Dm7–G7–CM7."
+    },
+    {
+      "chart": 147,
+      "title": "My Romance",
+      "pdfPage": 93,
+      "sourceImage": "dist/source/roadmap-147.png",
+      "imageSha256": "4d9548a3732f007e764d630b44599691906fdb4fafd7b4355956d3b721b3278a",
+      "printedRow": 3,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 22,
+        "start": 84,
+        "end": 88
+      },
+      "nextMeasure": {
+        "number": 23,
+        "start": 88,
+        "end": 92
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "A",
+      "flag": {
+        "beat": 86,
+        "tonic": 0,
+        "root": "C",
+        "mode": "Major",
+        "join": true,
+        "name": "Bootstrap",
+        "from": "A",
+        "sourceDelta": 3
+      },
+      "sourceOnsets": [
+        {
+          "beat": 86,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Bootstrap",
+          "from": "A",
+          "sourceDelta": 3
+        }
+      ],
+      "chords": [
+        {
+          "sourceRow": 3,
+          "start": 84,
+          "end": 86,
+          "source": "Am7",
+          "display": "Am7",
+          "degree": 9
+        },
+        {
+          "sourceRow": 3,
+          "start": 86,
+          "end": 88,
+          "source": "A7",
+          "display": "A7",
+          "degree": 9
+        },
+        {
+          "sourceRow": 3,
+          "start": 88,
+          "end": 90,
+          "source": "Dm7",
+          "display": "Dm7",
+          "degree": 2
+        },
+        {
+          "sourceRow": 3,
+          "start": 90,
+          "end": 92,
+          "source": "G7",
+          "display": "G7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 3,
+          "start": 92,
+          "end": 94,
+          "source": "CM7",
+          "display": "CM7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": false,
+      "decision": "retain-applied-dominant",
+      "rationale": "The printed Bootstrap and Extended Cadence begin on A7, the V/ii that directly launches Dm7–G7–CM7."
+    },
+    {
+      "chart": 147,
+      "title": "My Romance",
+      "pdfPage": 93,
+      "sourceImage": "dist/source/roadmap-147.png",
+      "imageSha256": "4d9548a3732f007e764d630b44599691906fdb4fafd7b4355956d3b721b3278a",
+      "printedRow": 4,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 26,
+        "start": 100,
+        "end": 104
+      },
+      "nextMeasure": {
+        "number": 27,
+        "start": 104,
+        "end": 108
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "D",
+      "flag": {
+        "beat": 102,
+        "tonic": 9,
+        "root": "A",
+        "mode": "Minor"
+      },
+      "sourceOnsets": [
+        {
+          "beat": 102,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor"
+        }
+      ],
+      "nextFlag": {
+        "beat": 108,
+        "tonic": 7,
+        "root": "G",
+        "mode": "Major"
+      },
+      "pivotArrival": true,
+      "chords": [
+        {
+          "sourceRow": 4,
+          "start": 100,
+          "end": 102,
+          "source": "Dm7",
+          "display": "Dm7",
+          "degree": 5
+        },
+        {
+          "sourceRow": 4,
+          "start": 102,
+          "end": 104,
+          "source": "Dm7/C",
+          "display": "Dm7/C",
+          "degree": 5
+        },
+        {
+          "sourceRow": 4,
+          "start": 104,
+          "end": 106,
+          "source": "Bm7b5",
+          "display": "Bm7b5",
+          "degree": 2
+        },
+        {
+          "sourceRow": 4,
+          "start": 106,
+          "end": 108,
+          "source": "E7",
+          "display": "E7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 4,
+          "start": 108,
+          "end": 110,
+          "source": "Am7",
+          "display": "Am7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": true,
+      "decision": "move",
+      "displayBeat": 104,
+      "rationale": "Dm7/C extends the preceding D-minor chord by descent in the bass. Bm7♭5–E7 starts in the next bar and resolves to Am7, which also pivots into the following printed G-major Tritone Launcher."
+    },
+    {
+      "chart": 149,
+      "title": "Nancy with the Laughing Face",
+      "pdfPage": 94,
+      "sourceImage": "dist/source/roadmap-149.png",
+      "imageSha256": "1d74e55af12bfdd0855d2a3310df575554d329782c54449f5c7c7bc99b9d80c2",
+      "printedRow": 2,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 13,
+        "start": 48,
+        "end": 52
+      },
+      "nextMeasure": {
+        "number": 14,
+        "start": 52,
+        "end": 56
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "C",
+      "flag": {
+        "beat": 50,
+        "tonic": 9,
+        "root": "A",
+        "mode": "Minor"
+      },
+      "sourceOnsets": [
+        {
+          "beat": 48,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor"
+        },
+        {
+          "beat": 50,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor"
+        }
+      ],
+      "chords": [
+        {
+          "sourceRow": 2,
+          "start": 48,
+          "end": 50,
+          "source": "Fm7",
+          "display": "Dm7",
+          "degree": 5
+        },
+        {
+          "sourceRow": 2,
+          "start": 50,
+          "end": 52,
+          "source": "Fm7/Eb",
+          "display": "Dm7/C",
+          "degree": 5
+        },
+        {
+          "sourceRow": 2,
+          "start": 52,
+          "end": 54,
+          "source": "Dm7b5",
+          "display": "Bm7b5",
+          "degree": 2
+        },
+        {
+          "sourceRow": 2,
+          "start": 54,
+          "end": 56,
+          "source": "G7",
+          "display": "E7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 2,
+          "start": 56,
+          "end": 58,
+          "source": "Cm7",
+          "display": "Am7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": true,
+      "decision": "move",
+      "displayBeat": 52,
+      "rationale": "The only pre-bar change is Fm7 adopting E♭ bass. Printed C Minor and Autumnal Cadence appear there, but Dm7♭5 begins the directed iiø–V–i at the next bar."
+    },
+    {
+      "chart": 149,
+      "title": "Nancy with the Laughing Face",
+      "pdfPage": 94,
+      "sourceImage": "dist/source/roadmap-149.png",
+      "imageSha256": "1d74e55af12bfdd0855d2a3310df575554d329782c54449f5c7c7bc99b9d80c2",
+      "printedRow": 4,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 29,
+        "start": 112,
+        "end": 116
+      },
+      "nextMeasure": {
+        "number": 30,
+        "start": 116,
+        "end": 120
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "C",
+      "flag": {
+        "beat": 114,
+        "tonic": 9,
+        "root": "A",
+        "mode": "Minor"
+      },
+      "sourceOnsets": [
+        {
+          "beat": 112,
+          "tonic": 2,
+          "root": "D",
+          "mode": "Minor"
+        },
+        {
+          "beat": 114,
+          "tonic": 9,
+          "root": "A",
+          "mode": "Minor"
+        }
+      ],
+      "chords": [
+        {
+          "sourceRow": 4,
+          "start": 112,
+          "end": 114,
+          "source": "Fm7",
+          "display": "Dm7",
+          "degree": 5
+        },
+        {
+          "sourceRow": 4,
+          "start": 114,
+          "end": 116,
+          "source": "Fm7/Eb",
+          "display": "Dm7/C",
+          "degree": 5
+        },
+        {
+          "sourceRow": 4,
+          "start": 116,
+          "end": 118,
+          "source": "Dm7b5",
+          "display": "Bm7b5",
+          "degree": 2
+        },
+        {
+          "sourceRow": 4,
+          "start": 118,
+          "end": 120,
+          "source": "G7",
+          "display": "E7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 4,
+          "start": 120,
+          "end": 122,
+          "source": "Cm7",
+          "display": "Am7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": true,
+      "decision": "move",
+      "displayBeat": 116,
+      "rationale": "The only pre-bar change is Fm7 adopting E♭ bass. Printed C Minor and Autumnal Cadence appear there, but Dm7♭5 begins the directed iiø–V–i at the next bar."
+    },
+    {
+      "chart": 169,
+      "title": "Poor Butterfly",
+      "pdfPage": 106,
+      "sourceImage": "dist/source/roadmap-169.png",
+      "imageSha256": "606096d2e1b732952a97e3700f99533f5a317f6a834e3725ce61746a00075b8c",
+      "printedRow": 4,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 29,
+        "start": 112,
+        "end": 116
+      },
+      "nextMeasure": {
+        "number": 30,
+        "start": 116,
+        "end": 120
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "D",
+      "flag": {
+        "beat": 114,
+        "tonic": 0,
+        "root": "C",
+        "mode": "Major",
+        "join": true,
+        "name": "Homer",
+        "from": "D",
+        "sourceDelta": -2
+      },
+      "sourceOnsets": [
+        {
+          "beat": 114,
+          "tonic": 0,
+          "root": "C",
+          "mode": "Major",
+          "join": true,
+          "name": "Homer",
+          "from": "D",
+          "sourceDelta": -2
+        }
+      ],
+      "chords": [
+        {
+          "sourceRow": 4,
+          "start": 112,
+          "end": 114,
+          "source": "Bbm7",
+          "display": "Dm7",
+          "degree": 2
+        },
+        {
+          "sourceRow": 4,
+          "start": 114,
+          "end": 116,
+          "source": "F7",
+          "display": "A7",
+          "degree": 9
+        },
+        {
+          "sourceRow": 4,
+          "start": 116,
+          "end": 118,
+          "source": "Bbm7",
+          "display": "Dm7",
+          "degree": 2
+        },
+        {
+          "sourceRow": 4,
+          "start": 118,
+          "end": 120,
+          "source": "Eb7",
+          "display": "G7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 4,
+          "start": 120,
+          "end": 122,
+          "source": "AbM7",
+          "display": "CM7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": false,
+      "decision": "retain-pivot-uncertain",
+      "rationale": "F7 is V/i of the outgoing B♭ minor and V/ii of the incoming A♭ major. Its immediate resolution and printed Homer/Extended Approach support the existing overlap."
+    },
+    {
+      "chart": 197,
+      "title": "Stars Fell on Alabama",
+      "pdfPage": 121,
+      "sourceImage": "dist/source/roadmap-197.png",
+      "imageSha256": "1f8902d23ca8d5763c791a752bcf4c87429989e1abead79a3b1115539753fb5c",
+      "printedRow": 3,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 22,
+        "start": 84,
+        "end": 88
+      },
+      "nextMeasure": {
+        "number": 23,
+        "start": 88,
+        "end": 92
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "A",
+      "flag": {
+        "beat": 86,
+        "tonic": 4,
+        "root": "E",
+        "mode": "Minor",
+        "join": true,
+        "name": "New Horizon",
+        "from": "A",
+        "sourceDelta": -5
+      },
+      "sourceOnsets": [
+        {
+          "beat": 86,
+          "tonic": 4,
+          "root": "E",
+          "mode": "Minor",
+          "join": true,
+          "name": "New Horizon",
+          "from": "A",
+          "sourceDelta": -5
+        }
+      ],
+      "chords": [
+        {
+          "sourceRow": 3,
+          "start": 84,
+          "end": 86,
+          "source": "Am",
+          "display": "Am",
+          "degree": 5
+        },
+        {
+          "sourceRow": 3,
+          "start": 86,
+          "end": 88,
+          "source": "Am7/G",
+          "display": "Am7/G",
+          "degree": 5
+        },
+        {
+          "sourceRow": 3,
+          "start": 88,
+          "end": 90,
+          "source": "F#m7",
+          "display": "F#m7",
+          "degree": 2
+        },
+        {
+          "sourceRow": 3,
+          "start": 90,
+          "end": 92,
+          "source": "B7",
+          "display": "B7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 3,
+          "start": 92,
+          "end": 94,
+          "source": "EM7",
+          "display": "EM7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": false,
+      "decision": "retain-pivot-uncertain",
+      "rationale": "Am7/G carries over an A-minor triad and adds a seventh; the printed New Horizon deliberately starts on it before F♯m7–B7–EM7. The printed E Minor label and E-major arrival make this an ambiguous analogy."
+    },
+    {
+      "chart": 231,
+      "title": "Whisper Not",
+      "pdfPage": 141,
+      "sourceImage": "dist/source/roadmap-231.png",
+      "imageSha256": "0c10d377b6c49a6cf33311555e1ede347a7a7db6fe0d4bba31c6100aa319547b",
+      "printedRow": 2,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 9,
+        "start": 32,
+        "end": 36
+      },
+      "nextMeasure": {
+        "number": 10,
+        "start": 36,
+        "end": 40
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "Bb",
+      "flag": {
+        "beat": 34,
+        "tonic": 5,
+        "root": "F",
+        "mode": "Minor"
+      },
+      "sourceOnsets": [
+        {
+          "beat": 34,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Minor"
+        }
+      ],
+      "chords": [
+        {
+          "sourceRow": 2,
+          "start": 32,
+          "end": 34,
+          "source": "Cm7",
+          "display": "Bbm7",
+          "degree": 5
+        },
+        {
+          "sourceRow": 2,
+          "start": 34,
+          "end": 36,
+          "source": "Cm7/Bb",
+          "display": "Bbm7/Ab",
+          "degree": 5
+        },
+        {
+          "sourceRow": 2,
+          "start": 36,
+          "end": 38,
+          "source": "Am7b5",
+          "display": "Gm7b5",
+          "degree": 2
+        },
+        {
+          "sourceRow": 2,
+          "start": 38,
+          "end": 40,
+          "source": "D7",
+          "display": "C7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 2,
+          "start": 40,
+          "end": 44,
+          "source": "Gm7",
+          "display": "Fm7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": true,
+      "decision": "move",
+      "displayBeat": 36,
+      "rationale": "The only pre-bar change is Cm7 adopting B♭ bass. Printed G Minor and Autumnal Cadence appear there, but Am7♭5 begins the directed iiø–V–i at the next bar."
+    },
+    {
+      "chart": 231,
+      "title": "Whisper Not",
+      "pdfPage": 141,
+      "sourceImage": "dist/source/roadmap-231.png",
+      "imageSha256": "0c10d377b6c49a6cf33311555e1ede347a7a7db6fe0d4bba31c6100aa319547b",
+      "printedRow": 4,
+      "meter": [
+        4,
+        4
+      ],
+      "barBasis": "printed meter",
+      "flagMeasure": {
+        "number": 25,
+        "start": 96,
+        "end": 100
+      },
+      "nextMeasure": {
+        "number": 26,
+        "start": 100,
+        "end": 104
+      },
+      "beatInMeasure": 3,
+      "previousDisplayTonic": "Bb",
+      "flag": {
+        "beat": 98,
+        "tonic": 5,
+        "root": "F",
+        "mode": "Minor"
+      },
+      "sourceOnsets": [
+        {
+          "beat": 98,
+          "tonic": 5,
+          "root": "F",
+          "mode": "Minor"
+        }
+      ],
+      "chords": [
+        {
+          "sourceRow": 4,
+          "start": 96,
+          "end": 98,
+          "source": "Cm7",
+          "display": "Bbm7",
+          "degree": 5
+        },
+        {
+          "sourceRow": 4,
+          "start": 98,
+          "end": 100,
+          "source": "Cm7/Bb",
+          "display": "Bbm7/Ab",
+          "degree": 5
+        },
+        {
+          "sourceRow": 4,
+          "start": 100,
+          "end": 102,
+          "source": "Am7b5",
+          "display": "Gm7b5",
+          "degree": 2
+        },
+        {
+          "sourceRow": 4,
+          "start": 102,
+          "end": 104,
+          "source": "D7",
+          "display": "C7",
+          "degree": 7
+        },
+        {
+          "sourceRow": 4,
+          "start": 104,
+          "end": 108,
+          "source": "Gm7",
+          "display": "Fm7",
+          "degree": 0
+        }
+      ],
+      "inversionOnly": true,
+      "decision": "move",
+      "displayBeat": 100,
+      "rationale": "The only pre-bar change is Cm7 adopting B♭ bass. Printed G Minor and Autumnal Cadence appear there, but Am7♭5 begins the directed iiø–V–i at the next bar."
+    }
+  ]
+}

@@ -138,3 +138,48 @@ export function cleanModulationRegions(song,sourceChanges,vocabulary={}){
  const outputRegions=changes.map((event,i)=>describeRegion(event,changes[i+1]?.beat??beats,cells)),remaining=outputRegions.filter((r,i)=>i>0&&r.unique.length===1);
  return {changes,decisions,stats:{sourceRegions:sourceChanges.length,colorRegions:regions.length,sameTonicBoundaries:onsets.length-events.length,oneHarmonyRegions:regions.filter(r=>r.unique.length===1).length,homeSingletonRegions:home&&regions[0].unique.length===1?1:0,mergedOneHarmonyRegions:decisions.filter(d=>d.direction!=='home').length,outputRegions:changes.length,remainingOneHarmonyModulations:remaining.length}};
 }
+
+const dmToAm=['Dm7','Dm7/C','Bm7b5','E7','Am7'];
+const displayOnsetReviews=[
+ {song:28,title:'Body and Soul',page:19,beats:[18,50,114],from:0,to:9,symbols:dmToAm},
+ {song:45,title:'The Days of Wine and Roses',page:31,beats:[102],from:0,to:4,symbols:['Am7','Am7/G','F#m7b5','B7','Em7']},
+ {song:110,title:'It Might As Well Be Spring',page:71,beats:[82],from:5,to:9,symbols:dmToAm},
+ {song:147,title:'My Romance',page:93,beats:[102],from:2,to:9,symbols:dmToAm},
+ {song:149,title:'Nancy with the Laughing Face',page:94,beats:[50,114],from:0,to:9,symbols:dmToAm},
+ {song:231,title:'Whisper Not',page:141,beats:[2,34,98],from:10,to:5,symbols:['Bbm7','Bbm7/Ab','Gm7b5','C7','Fm7']},
+];
+
+// Reviewed offsets apply only to the public tonal map. The printed key
+// changes and stored performances keep the source timing.
+export function reviewDisplayModulationOnsets(song,sourceChanges,projection,vocabulary={}){
+ const review=displayOnsetReviews.find(entry=>entry.song===song.index);
+ if(!review)return projection;
+ const mismatch=beat=>new Error(`Reviewed modulation context changed in ${song.title} at beat ${beat}`);
+ if(song.title!==review.title||song.page!==review.page)throw mismatch(review.beats[0]);
+ const cells=cellsFor(song,vocabulary.qualities??vocabulary);
+ const barBeats=song.meter[0]*4/song.meter[1];
+ const changes=[...projection.changes],onsetReviews=[];
+ for(const leadInBeat of review.beats){
+  const earlier=cells.findIndex(cell=>Math.abs(cell.start-leadInBeat)<EPS);
+  const cadence=cells[earlier+1];
+  const index=changes.findIndex(event=>event.beat===leadInBeat||(event.beat===0&&event.sourceBeat===leadInBeat));
+  const event=changes[index];
+  const sourceBeat=event?.sourceBeat??event?.beat;
+  const original=sourceChanges.find(change=>change.beat===sourceBeat);
+  const previous=event?.beat===0?sourceChanges.find(change=>change.beat===0):changes[index-1];
+  if(earlier<1||!cadence||!event||event.join||event.tonic!==review.to||original?.tonic!==review.to||(original.join&&sourceBeat!==cadence.start)||
+     cadence.start<=leadInBeat||
+     previous?.tonic!==review.from||cadence.start>=(changes[index+1]?.beat??Infinity)||
+     Math.abs(cadence.start/barBeats-Math.round(cadence.start/barBeats))>EPS||
+     !review.symbols.every((symbol,i)=>cells[earlier-1+i]?.symbol===symbol))throw mismatch(leadInBeat);
+  const moved={...event,beat:cadence.start,sourceBeat};
+  if(event.beat===0)changes.splice(index,1,previous,moved);
+  else changes[index]=moved;
+  onsetReviews.push({sourceBeat,previousDisplayBeat:event.beat,beat:cadence.start,tonic:review.to,page:review.page,symbols:review.symbols});
+ }
+ const beats=song.bars*barBeats;
+ const remainingOneHarmonyModulations=changes.filter((event,i)=>
+  i>0&&describeRegion(event,changes[i+1]?.beat??beats,cells).unique.length===1).length;
+ if(remainingOneHarmonyModulations)throw new Error('Reviewed modulation creates a one-chord region in '+song.title);
+ return {...projection,changes,onsetReviews,stats:{...projection.stats,outputRegions:changes.length,remainingOneHarmonyModulations}};
+}

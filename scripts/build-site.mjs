@@ -24,7 +24,7 @@ import {phraseGrid} from '../src/music/phrases.mjs';
 import {alignRepeatedSubphrases} from '../src/music/section-layout.mjs';
 import {sourceMeasureMap} from '../src/music/measure-map.mjs';
 import {groupBricks} from '../src/music/brick-groups.mjs';
-import {cleanModulationRegions} from '../src/music/modulation-regions.mjs';
+import {cleanModulationRegions,reviewDisplayModulationOnsets} from '../src/music/modulation-regions.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const require=createRequire(import.meta.url),libraryFile=specifier=>require.resolve('librawl/'+specifier),libraryDist=path.dirname(libraryFile('style.css'));
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
@@ -55,7 +55,7 @@ for(const alignment of pdfAlignments){
  if(alignment.targetSha256!==fingerprint(JSON.stringify(song))||alignment.evidence.sourceNotesSha256!==fingerprint(JSON.stringify(entry?.notes)))throw Error('PDF melody pinned musical data changed: '+alignment.song);
 }
 fs.writeFileSync(path.join(root,'dist/data/performance-styles.json'),JSON.stringify({version:1,styles:songs.map(song=>{const alignment=pdfBySong.get(song.index),entry=melodies.get(alignment?.melodyId??song.melodyId??melodyMatches.get(song.index)?.melodyId),style=performanceStyle(song,entry,styleReferences,swingReviews);return alignment?mappedMelodyStyle(style,alignment):style;})}));
-function realizedView(song,record=false){const performance=realizeSong(song,qualities),projection=cleanModulationRegions(song,performance.changes,vocabulary);if(projection.stats.remainingOneHarmonyModulations)throw Error('Unresolved one-chord modulation in '+song.title);if(record)modulationRecords.push({song:song.index,title:song.title,...projection});return {...performance,sourceChanges:performance.changes,changes:projection.changes};}
+function realizedView(song,record=false){const performance=realizeSong(song,qualities),projection=cleanModulationRegions(song,performance.changes,vocabulary);if(projection.stats.remainingOneHarmonyModulations)throw Error('Unresolved one-chord modulation in '+song.title);if(record)modulationRecords.push({song:song.index,title:song.title,...reviewDisplayModulationOnsets(song,performance.changes,projection,vocabulary)});return {...performance,sourceChanges:performance.changes,changes:projection.changes};}
 fs.copyFileSync(path.join(root,'src/music/rawl-links.json'),path.join(root,'dist/data/rawl-links.json'));
 const brickMap=new Map(bricks.bricks.flatMap(b=>[b.name,...b.aliases,...(b.sourceNames??[])].map(name=>[name,b])));
 const phraseReferences=read('evidence/rawl-phrase-sources.json').records;

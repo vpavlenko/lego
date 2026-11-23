@@ -3087,10 +3087,11 @@
           "mode": "Major"
         },
         {
-          "beat": 18,
+          "beat": 20,
           "tonic": 9,
           "root": "A",
-          "mode": "Minor"
+          "mode": "Minor",
+          "sourceBeat": 18
         },
         {
           "beat": 26,
@@ -3103,10 +3104,11 @@
           "sourceDelta": 3
         },
         {
-          "beat": 50,
+          "beat": 52,
           "tonic": 9,
           "root": "A",
-          "mode": "Minor"
+          "mode": "Minor",
+          "sourceBeat": 50
         },
         {
           "beat": 58,
@@ -3151,10 +3153,11 @@
           "mode": "Major"
         },
         {
-          "beat": 114,
+          "beat": 116,
           "tonic": 9,
           "root": "A",
-          "mode": "Minor"
+          "mode": "Minor",
+          "sourceBeat": 114
         },
         {
           "beat": 122,
@@ -3463,7 +3466,51 @@
         "mergedOneHarmonyRegions": 3,
         "outputRegions": 11,
         "remainingOneHarmonyModulations": 0
-      }
+      },
+      "onsetReviews": [
+        {
+          "sourceBeat": 18,
+          "previousDisplayBeat": 18,
+          "beat": 20,
+          "tonic": 9,
+          "page": 19,
+          "symbols": [
+            "Dm7",
+            "Dm7/C",
+            "Bm7b5",
+            "E7",
+            "Am7"
+          ]
+        },
+        {
+          "sourceBeat": 50,
+          "previousDisplayBeat": 50,
+          "beat": 52,
+          "tonic": 9,
+          "page": 19,
+          "symbols": [
+            "Dm7",
+            "Dm7/C",
+            "Bm7b5",
+            "E7",
+            "Am7"
+          ]
+        },
+        {
+          "sourceBeat": 114,
+          "previousDisplayBeat": 114,
+          "beat": 116,
+          "tonic": 9,
+          "page": 19,
+          "symbols": [
+            "Dm7",
+            "Dm7/C",
+            "Bm7b5",
+            "E7",
+            "Am7"
+          ]
+        }
+      ]
     },
     {
       "song": 29,
@@ -6034,7 +6081,7 @@
           "mode": "Major"
         },
         {
-          "beat": 102,
+          "beat": 104,
           "tonic": 4,
           "root": "E",
           "mode": "Minor",
@@ -6153,7 +6200,23 @@
         "mergedOneHarmonyRegions": 1,
         "outputRegions": 9,
         "remainingOneHarmonyModulations": 0
-      }
+      },
+      "onsetReviews": [
+        {
+          "sourceBeat": 104,
+          "previousDisplayBeat": 102,
+          "beat": 104,
+          "tonic": 4,
+          "page": 31,
+          "symbols": [
+            "Am7",
+            "Am7/G",
+            "F#m7b5",
+            "B7",
+            "Em7"
+          ]
+        }
+      ]
     },
     {
       "song": 46,
@@ -15359,10 +15422,11 @@
           "sourceDelta": 5
         },
         {
-          "beat": 82,
+          "beat": 84,
           "tonic": 9,
           "root": "A",
-          "mode": "Minor"
+          "mode": "Minor",
+          "sourceBeat": 82
         },
         {
           "beat": 88,
@@ -15604,7 +15668,23 @@
         "mergedOneHarmonyRegions": 2,
         "outputRegions": 12,
         "remainingOneHarmonyModulations": 0
-      }
+      },
+      "onsetReviews": [
+        {
+          "sourceBeat": 82,
+          "previousDisplayBeat": 82,
+          "beat": 84,
+          "tonic": 9,
+          "page": 71,
+          "symbols": [
+            "Dm7",
+            "Dm7/C",
+            "Bm7b5",
+            "E7",
+            "Am7"
+          ]
+        }
+      ]
     },
     {
       "song": 111,
@@ -21025,10 +21105,11 @@
           "sourceBeat": 96
         },
         {
-          "beat": 102,
+          "beat": 104,
           "tonic": 9,
           "root": "A",
-          "mode": "Minor"
+          "mode": "Minor",
+          "sourceBeat": 102
         },
         {
           "beat": 108,
@@ -21339,7 +21420,23 @@
         "mergedOneHarmonyRegions": 3,
         "outputRegions": 11,
         "remainingOneHarmonyModulations": 0
-      }
+      },
+      "onsetReviews": [
+        {
+          "sourceBeat": 102,
+          "previousDisplayBeat": 102,
+          "beat": 104,
+          "tonic": 9,
+          "page": 93,
+          "symbols": [
+            "Dm7",
+            "Dm7/C",
+            "Bm7b5",
+            "E7",
+            "Am7"
+          ]
+        }
+      ]
     },
     {
       "song": 148,
@@ -21439,10 +21536,11 @@
           "mode": "Major"
         },
         {
-          "beat": 50,
+          "beat": 52,
           "tonic": 9,
           "root": "A",
-          "mode": "Minor"
+          "mode": "Minor",
+          "sourceBeat": 50
         },
         {
           "beat": 58,
@@ -21497,10 +21595,11 @@
           "sourceDelta": 3
         },
         {
-          "beat": 114,
+          "beat": 116,
           "tonic": 9,
           "root": "A",
-          "mode": "Minor"
+          "mode": "Minor",
+          "sourceBeat": 114
         },
         {
           "beat": 122,
@@ -21809,7 +21908,37 @@
         "mergedOneHarmonyRegions": 3,
         "outputRegions": 14,
         "remainingOneHarmonyModulations": 0
-      }
+      },
+      "onsetReviews": [
+        {
+          "sourceBeat": 50,
+          "previousDisplayBeat": 50,
+          "beat": 52,
+          "tonic": 9,
+          "page": 94,
+          "symbols": [
+            "Dm7",
+            "Dm7/C",
+            "Bm7b5",
+            "E7",
+            "Am7"
+          ]
+        },
+        {
+          "sourceBeat": 114,
+          "previousDisplayBeat": 114,
+          "beat": 116,
+          "tonic": 9,
+          "page": 94,
+          "symbols": [
+            "Dm7",
+            "Dm7/C",
+            "Bm7b5",
+            "E7",
+            "Am7"
+          ]
+        }
+      ]
     },
     {
       "song": 150,
@@ -33326,6 +33455,12 @@
       "changes": [
         {
           "beat": 0,
+          "tonic": 10,
+          "root": "Bb",
+          "mode": "Minor"
+        },
+        {
+          "beat": 4,
           "tonic": 5,
           "root": "F",
           "mode": "Minor",
@@ -33358,10 +33493,11 @@
           "sourceDelta": -5
         },
         {
-          "beat": 34,
+          "beat": 36,
           "tonic": 5,
           "root": "F",
-          "mode": "Minor"
+          "mode": "Minor",
+          "sourceBeat": 34
         },
         {
           "beat": 44,
@@ -33398,10 +33534,11 @@
           "mode": "Minor"
         },
         {
-          "beat": 98,
+          "beat": 100,
           "tonic": 5,
           "root": "F",
-          "mode": "Minor"
+          "mode": "Minor",
+          "sourceBeat": 98
         },
         {
           "beat": 108,
@@ -33528,9 +33665,53 @@
         "oneHarmonyRegions": 1,
         "homeSingletonRegions": 0,
         "mergedOneHarmonyRegions": 1,
-        "outputRegions": 13,
+        "outputRegions": 14,
         "remainingOneHarmonyModulations": 0
-      }
+      },
+      "onsetReviews": [
+        {
+          "sourceBeat": 2,
+          "previousDisplayBeat": 0,
+          "beat": 4,
+          "tonic": 5,
+          "page": 141,
+          "symbols": [
+            "Bbm7",
+            "Bbm7/Ab",
+            "Gm7b5",
+            "C7",
+            "Fm7"
+          ]
+        },
+        {
+          "sourceBeat": 34,
+          "previousDisplayBeat": 34,
+          "beat": 36,
+          "tonic": 5,
+          "page": 141,
+          "symbols": [
+            "Bbm7",
+            "Bbm7/Ab",
+            "Gm7b5",
+            "C7",
+            "Fm7"
+          ]
+        },
+        {
+          "sourceBeat": 98,
+          "previousDisplayBeat": 98,
+          "beat": 100,
+          "tonic": 5,
+          "page": 141,
+          "symbols": [
+            "Bbm7",
+            "Bbm7/Ab",
+            "Gm7b5",
+            "C7",
+            "Fm7"
+          ]
+        }
+      ]
     },
     {
       "song": 232,
